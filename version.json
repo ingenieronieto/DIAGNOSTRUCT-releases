@@ -1,0 +1,14 @@
+{
+  "version": "1.79.0",
+  "fecha": "2026-08-03",
+  "minima": "1.70.0",
+  "notas": [
+    "Ya puedes actualizar la app desde el menú, sin buscar el archivo.",
+    "Fotos de lesiones y madera: no se pierden sin señal, se suben al reconectar.",
+    "Planos disponibles sin internet para localizar en campo.",
+    "El marcado sobre plano sin señal ya no se borra.",
+    "Menú unificado y barra superior sin cruzarse con la del celular."
+  ],
+  "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.79.0.apk"
+}
