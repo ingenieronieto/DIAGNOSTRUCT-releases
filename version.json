@@ -1,14 +1,14 @@
 {
-  "version": "1.79.0",
+  "version": "1.80.0",
   "fecha": "2026-08-03",
   "minima": "1.70.0",
   "notas": [
-    "Ya puedes actualizar la app desde el menú, sin buscar el archivo.",
+    "Nuevos ensayos: Extracción de barras de acero (EXA) e Inclinometría / desplome (INC).",
+    "Plan de auscultamiento: las reparaciones ya no cuentan como ensayo y las marcas se ven al imprimir.",
+    "Actualizar la app desde el menú, sin descargar archivos a mano.",
     "Fotos de lesiones y madera: no se pierden sin señal, se suben al reconectar.",
-    "Planos disponibles sin internet para localizar en campo.",
-    "El marcado sobre plano sin señal ya no se borra.",
-    "Menú unificado y barra superior sin cruzarse con la del celular."
+    "Planos disponibles sin internet para localizar en campo."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.79.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.80.0.apk"
 }
