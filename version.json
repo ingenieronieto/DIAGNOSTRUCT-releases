@@ -1,14 +1,14 @@
 {
-  "version": "1.86.0",
+  "version": "1.87.0",
   "fecha": "2026-08-03",
   "minima": "1.70.0",
   "notas": [
-    "Corregido: la app mostraba un número de versión desactualizado y avisaba de una actualización que ya tenías.",
-    "Los cambios del proyecto ya no se pierden sin señal: se guardan y se suben al reconectar.",
+    "ARREGLADO: Inclinometría y Extracción de barras no guardaban sus datos (desplome, altura, cargas, longitudes). Se perdían al recargar, con o sin internet.",
+    "Corregido el número de versión que mostraba la app y el aviso de actualización repetido.",
+    "Los cambios del proyecto ya no se pierden sin señal.",
     "Los firmantes están disponibles sin internet para los informes.",
-    "El contador de pendientes incluye los modelos 3D y el botón sí los sube.",
-    "Si al equipo le falta espacio para guardar, ahora te avisa."
+    "El contador de pendientes incluye los modelos 3D y el botón sí los sube."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.86.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.87.0.apk"
 }
