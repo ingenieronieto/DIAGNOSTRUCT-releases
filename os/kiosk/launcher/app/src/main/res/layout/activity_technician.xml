@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tecnico_titulo"
+            android:textColor="@color/texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Estado bloqueado: solo se pide el PIN -->
+        <LinearLayout
+            android:id="@+id/locked_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tecnico_pin_etiqueta"
+                android:textColor="@color/texto_tenue"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pin_input"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:autofillHints="password"
+                android:gravity="center"
+                android:hint="@string/tecnico_pin_etiqueta"
+                android:importantForAutofill="no"
+                android:inputType="numberPassword"
+                android:letterSpacing="0.3"
+                android:maxLength="12"
+                android:textColor="@color/texto"
+                android:textColorHint="@color/texto_tenue"
+                android:textSize="24sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action_unlock"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="56dp"
+                android:text="@string/tecnico_entrar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action_cancel"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:minHeight="56dp"
+                android:text="@string/tecnico_cancelar" />
+        </LinearLayout>
+
+        <!-- Estado desbloqueado: acciones de mantenimiento -->
+        <LinearLayout
+            android:id="@+id/unlocked_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action_open_app"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="56dp"
+                android:text="@string/tecnico_abrir_app" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action_wifi"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="56dp"
+                android:text="@string/tecnico_wifi" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action_update"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="56dp"
+                android:text="@string/tecnico_actualizar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action_reapply"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="56dp"
+                android:text="@string/tecnico_reaplicar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/action_toggle_kiosk"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:minHeight="56dp"
+                android:text="@string/tecnico_entrar_mantenimiento" />
+
+            <TextView
+                android:id="@+id/diagnostics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="@color/superficie"
+                android:fontFamily="monospace"
+                android:padding="16dp"
+                android:textColor="@color/texto_tenue"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

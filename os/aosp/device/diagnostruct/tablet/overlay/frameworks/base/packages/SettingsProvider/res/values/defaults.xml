@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Valores por defecto del sistema en el primer arranque.
+
+  Aviso: un overlay solo puede redefinir recursos que EXISTAN en el paquete
+  original de su rama de AOSP. Un nombre que no exista rompe la compilacion con
+  un error de recurso no encontrado. Antes de añadir entradas aqui, compruebelas
+  en frameworks/base/packages/SettingsProvider/res/values/defaults.xml.
+-->
+<resources>
+    <!--
+      Diez minutos de pantalla. Una inspeccion tiene tiempos muertos largos
+      (montar el equipo, esperar a que baje el andamio) y que la pantalla se
+      apague cada treinta segundos obliga a desbloquear sin parar.
+    -->
+    <integer name="def_screen_off_timeout">600000</integer>
+</resources>

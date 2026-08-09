@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.DiagnostructOs" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/marca</item>
+        <item name="colorOnPrimary">@color/sobre_marca</item>
+        <item name="android:statusBarColor">@color/fondo</item>
+        <item name="android:navigationBarColor">@color/fondo</item>
+    </style>
+
+    <!-- Pantalla de inicio: a pantalla completa y sin animacion de entrada. -->
+    <style name="Theme.DiagnostructOs.Kiosk">
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="p">shortEdges</item>
+    </style>
+</resources>

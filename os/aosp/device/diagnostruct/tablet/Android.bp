@@ -1,0 +1,66 @@
+// Integracion de los dos APK en la imagen del sistema.
+//
+// Ambos entran ya firmados (`presigned`): DIAGNOSTRUCT se publica firmado desde
+// su repositorio privado, y el launcher se firma con la clave de la empresa. Es
+// importante que el launcher conserve SU firma y no la de la plataforma: asi el
+// mismo APK sirve para las tablets con ROM propia y para las de fabrica, y una
+// tablet aprovisionada por QR puede recibir actualizaciones del mismo binario.
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+// Pantalla de inicio y administrador del equipo.
+android_app_import {
+    name: "DiagnostructOS",
+    apk: "apk/DIAGNOSTRUCT-OS.apk",
+    presigned: true,
+    privileged: true,
+    product_specific: true,
+    dex_preopt: {
+        enabled: true,
+    },
+
+    // Deja fuera del build a los launchers de AOSP. Sin ningun otro inicio
+    // instalado, esta aplicacion es la unica pantalla de inicio posible y el
+    // sistema no llega ni a preguntar cual usar.
+    overrides: [
+        "Launcher3",
+        "Launcher3QuickStep",
+    ],
+
+    required: [
+        "privapp-permissions-diagnostruct.xml",
+    ],
+}
+
+// La aplicacion de campo.
+android_app_import {
+    name: "DiagnostructSDK",
+    apk: "apk/DIAGNOSTRUCT-SDK.apk",
+    presigned: true,
+    privileged: false,
+    product_specific: true,
+    dex_preopt: {
+        enabled: true,
+    },
+}
+
+// Permisos privilegiados del launcher. Sin esta lista, un APK en `priv-app`
+// que pida permisos de firma privilegiada impide arrancar el sistema.
+prebuilt_etc {
+    name: "privapp-permissions-diagnostruct.xml",
+    src: "permissions/privapp-permissions-diagnostruct.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
+
+// Permisos de ejecucion concedidos en el primer arranque, para que el tecnico
+// no se encuentre dialogos de camara y ubicacion la primera vez que abre la
+// aplicacion en mitad de una inspeccion.
+prebuilt_etc {
+    name: "default-permissions-diagnostruct.xml",
+    src: "permissions/default-permissions-diagnostruct.xml",
+    sub_dir: "default-permissions",
+    product_specific: true,
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Manifiesto local de repo: añade el arbol de producto de DIAGNOSTRUCT a un
+  arbol de AOSP sin tener que copiar archivos a mano.
+
+  Uso, dentro del arbol de AOSP ya inicializado:
+
+      mkdir -p .repo/local_manifests
+      cp os/aosp/manifests/diagnostruct.xml .repo/local_manifests/
+      repo sync -c -j8 device/diagnostruct/tablet
+
+  El arbol queda entonces enlazado al repositorio de releases, y basta un
+  `repo sync` para arrastrar los cambios del sistema.
+
+  Alternativa sin repo: `os/aosp/build.sh` copia el arbol con rsync antes de
+  compilar, que es lo mas comodo mientras se itera.
+-->
+<manifest>
+    <remote name="diagnostruct"
+            fetch="https://github.com/ingenieronieto/"
+            revision="main" />
+
+    <project name="DIAGNOSTRUCT-releases"
+             path="device/diagnostruct/releases"
+             remote="diagnostruct"
+             revision="main">
+        <!--
+          Del repositorio solo interesa el arbol de producto; el resto es
+          distribucion de APK y documentacion.
+        -->
+        <linkfile src="os/aosp/device/diagnostruct/tablet" dest="device/diagnostruct/tablet" />
+    </project>
+</manifest>

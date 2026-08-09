@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondo">#0F1922</color>
+    <color name="superficie">#17242F</color>
+    <color name="marca">#F2A104</color>
+    <color name="sobre_marca">#0F1922</color>
+    <color name="texto">#F5F7FA</color>
+    <color name="texto_tenue">#9AA9B6</color>
+</resources>

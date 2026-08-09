@@ -1,0 +1,75 @@
+name: DIAGNOSTRUCT OS · launcher
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "os/kiosk/launcher/**"
+      - ".github/workflows/os-launcher.yml"
+  pull_request:
+    paths:
+      - "os/kiosk/launcher/**"
+      - ".github/workflows/os-launcher.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Compilar el launcher
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: os/kiosk/launcher
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Preparar el SDK de Android
+        uses: android-actions/setup-android@v3
+        with:
+          packages: "platforms;android-36 build-tools;36.0.0 platform-tools"
+
+      # El repositorio no incluye gradle-wrapper.jar: es un binario que no se
+      # puede auditar en un repositorio publico. Se usa Gradle directamente.
+      - name: Preparar Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.13"
+
+      - name: Compilar (debug)
+        run: gradle --no-daemon assembleDebug
+
+      # El build de release aplica R8. Compilarlo en CI es lo que detecta que
+      # una clase instanciada por nombre desde el manifiesto se ha quedado sin
+      # su regla de conservacion, que en tiempo de ejecucion seria un fallo
+      # dificil de diagnosticar en una tablet en obra.
+      - name: Compilar (release, con R8)
+        run: gradle --no-daemon assembleRelease
+
+      - name: Analisis estatico
+        run: gradle --no-daemon lintDebug
+
+      - name: Publicar los APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostruct-os-apk
+          path: |
+            os/kiosk/launcher/app/build/outputs/apk/debug/*.apk
+            os/kiosk/launcher/app/build/outputs/apk/release/*.apk
+          if-no-files-found: error
+
+      - name: Publicar el informe de lint
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: informe-lint
+          path: os/kiosk/launcher/app/build/reports/lint-results-*.html
+          if-no-files-found: ignore
