@@ -1,0 +1,57 @@
+# Historial de versiones — copia de seguridad y restauración
+
+Cada versión publicada de `DIAGNOSTRUCT-SDK.apk` queda guardada para siempre en
+el historial de este repositorio. Aunque el archivo siempre se llame igual y se
+reemplace en cada publicación, **ninguna versión anterior se pierde**: se puede
+descargar apuntando al commit en el que se publicó.
+
+## Versiones publicadas
+
+| Versión | Publicada | Commit | Tamaño | SHA-256 del APK |
+|---|---|---|---|---|
+| 1.85.0 | 2026-08-09 | `219cc43008c45f25ac05e3f204abf25ef24482be` | 15,3 MB | `2d57216165e48934a5695de1464378583d211b1e9af366b2a459a0645578fa4a` |
+| 1.84.0 | 2026-08-09 | `52c2707e4be28f84f31745e7ea179ad361a390b3` | 15,3 MB | `6e6930f32bdc01e6a7bb4cc33c48fabcf4bded650185e818142a81e6c64e0dd6` |
+| 1.83.0 | 2026-08-08 | `a942d674c44008eb14d6126fec49968f26cb49eb` | 15,3 MB | `5aa98a3c6f9a1f359054bd238db0df68fd450ab352a98943cd616d09536ff944` |
+| 1.82.0 | 2026-08-08 | `b4a867a89437d6cced7a213f47d94590435dee1e` | 15,3 MB | `207fc01ececdf4a48008d329fa25fe1d910b339af7cdb8d0793434f2027a1fae` |
+| 1.81.0 | 2026-08-08 | `1e4eb334447bf6e063f8d7ef566362803877a162` | 15,3 MB | `44177d0fb784a2b324e493e13b752b4f3367a8713b3dc63c3eb24fded3865f6b` |
+| 1.80.0 | 2026-08-08 | `d2646bb2a3e1a6a8db5c789d9bcba1ee7c2d0ecf` | 13,9 MB | `d156c807f1f2869efa1359b748718485930eaffd660ad76caf50a19dc86188f0` |
+| 1.79.0 | 2026-08-08 | `d28f19ac52053700c52d6cd99ca2c483a994d3ea` | 13,9 MB | `4032ab2f778aa71e68ac7b806e4187fa10feed64093a3fbbf4a91797b6ac6939` |
+
+## Cómo descargar una versión anterior
+
+Reemplazar `<COMMIT>` por el de la tabla:
+
+```
+https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/<COMMIT>/DIAGNOSTRUCT-SDK.apk
+```
+
+Ejemplo — volver a la 1.84.0:
+
+```
+https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/52c2707e4be28f84f31745e7ea179ad361a390b3/DIAGNOSTRUCT-SDK.apk
+```
+
+Ese enlace se puede abrir directamente desde el celular. Conviene comprobar que
+el archivo descargado coincide con el SHA-256 de la tabla antes de instalarlo.
+
+## Cómo volver a una versión anterior en el celular
+
+1. Descargar el APK de la versión deseada con el enlace de arriba.
+2. Instalarlo **encima** de la actual (no desinstalar).
+3. No desinstalar nunca la app si hay ensayos sin subir: al desinstalar, Android
+   borra los datos de la aplicación y **se pierde todo lo que esté pendiente de
+   sincronizar**.
+
+> ⚠️ Instalar encima conserva proyectos, ensayos y fotos. **Desinstalar los
+> borra.** Ante cualquier problema de sincronización, actualizar o reinstalar
+> encima; nunca desinstalar primero.
+
+## Restaurar el manifiesto de versión
+
+Si hiciera falta que la app deje de ofrecer una versión, basta con dejar
+`version.json` apuntando a la versión anterior. El contenido de `version.json`
+de cada publicación también está en el historial:
+
+```
+git show <COMMIT>:version.json
+```
