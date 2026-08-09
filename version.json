@@ -1,14 +1,14 @@
 {
-  "version": "1.84.0",
+  "version": "1.85.0",
   "fecha": "2026-08-03",
   "minima": "1.70.0",
   "notas": [
-    "Ahora VES cuántas cosas te faltan por subir, abajo a la izquierda.",
-    "Ese aviso se toca y sube TODO lo pendiente de una vez.",
-    "El contador ya suma todo: ensayos, fotos, lesiones, madera, anamnesis y lecturas de control.",
-    "Si algo falla al subir, el aviso te lo dice (antes quedaba oculto).",
-    "Los botones flotantes ya no tapan la última fila en las pantallas de panel."
+    "Los cambios del proyecto ya no se pierden sin señal: se guardan y se suben al reconectar.",
+    "Los firmantes están disponibles sin internet para los informes.",
+    "El contador de pendientes ahora incluye los modelos 3D y el botón sí los sube.",
+    "Si al equipo le falta espacio para guardar, ahora te avisa (antes fallaba en silencio).",
+    "Se dejó de guardar información innecesaria en el equipo, que podía llenarlo."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.84.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.85.0.apk"
 }
