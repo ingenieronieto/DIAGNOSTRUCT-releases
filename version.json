@@ -1,14 +1,14 @@
 {
-  "version": "1.83.0",
+  "version": "1.84.0",
   "fecha": "2026-08-03",
   "minima": "1.70.0",
   "notas": [
-    "Control A.V.F. ya abre y funciona sin internet (antes no abría).",
-    "Lecturas de asentamiento, verticalidad y fisurómetros: se toman sin señal y se suben solas.",
-    "Protección: si no se pueden leer las lecturas guardadas, la tabla queda solo lectura para no borrar el histórico.",
-    "El menú plegable vuelve a estar en la hoja de tipo de estudio.",
-    "Niveletas, dianas, fisurómetros y campañas se ven sin conexión."
+    "Ahora VES cuántas cosas te faltan por subir, abajo a la izquierda.",
+    "Ese aviso se toca y sube TODO lo pendiente de una vez.",
+    "El contador ya suma todo: ensayos, fotos, lesiones, madera, anamnesis y lecturas de control.",
+    "Si algo falla al subir, el aviso te lo dice (antes quedaba oculto).",
+    "Los botones flotantes ya no tapan la última fila en las pantallas de panel."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.83.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.84.0.apk"
 }
