@@ -1,16 +1,14 @@
 {
-  "version": "1.81.0",
+  "version": "1.82.0",
   "fecha": "2026-08-03",
   "minima": "1.70.0",
   "notas": [
-    "Adjuntar fotos es INSTANTÁNEO, con o sin señal (ya no se queda esperando).",
-    "Sin internet: la app abre al instante y entra directo con tu sesión.",
-    "Se muestran proyectos, ensayos, estructuras y planos guardados en el equipo.",
-    "El indicador de conexión ahora comprueba internet de verdad, no lo que dice el celular.",
-    "El contador de pendientes suma TODO lo que falta por subir.",
-    "La barra de la app ya no se cruza con la hora y las notificaciones.",
-    "Los botones flotantes ya no tapan las opciones de la lista de ensayos."
+    "Anamnesis: ya no se pierde lo escrito sin señal (antes desaparecía).",
+    "Inventario de madera, lesiones, humedad y tratamientos: se pueden crear y editar sin internet.",
+    "Estructuras nuevas se pueden crear en campo sin señal.",
+    "Borrar un ensayo ya funciona sin conexión.",
+    "Todo lo hecho sin señal se sube solo al reconectar."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.81.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.82.0.apk"
 }
