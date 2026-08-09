@@ -1,14 +1,14 @@
 {
-  "version": "1.85.0",
+  "version": "1.86.0",
   "fecha": "2026-08-03",
   "minima": "1.70.0",
   "notas": [
+    "Corregido: la app mostraba un número de versión desactualizado y avisaba de una actualización que ya tenías.",
     "Los cambios del proyecto ya no se pierden sin señal: se guardan y se suben al reconectar.",
     "Los firmantes están disponibles sin internet para los informes.",
-    "El contador de pendientes ahora incluye los modelos 3D y el botón sí los sube.",
-    "Si al equipo le falta espacio para guardar, ahora te avisa (antes fallaba en silencio).",
-    "Se dejó de guardar información innecesaria en el equipo, que podía llenarlo."
+    "El contador de pendientes incluye los modelos 3D y el botón sí los sube.",
+    "Si al equipo le falta espacio para guardar, ahora te avisa."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.85.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.86.0.apk"
 }
