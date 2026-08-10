@@ -22,6 +22,14 @@
     <!-- Solo se usa como respaldo cuando el equipo aun no es Device Owner. -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
+    <!--
+      Retirar lo instalado cuando su firma no es la esperada. Como propietario
+      del equipo y autor de la sesion de instalacion, el borrado sale en
+      silencio; el permiso privilegiado DELETE_PACKAGES solo hace falta en la
+      variante con ROM propia, donde se concede desde privapp-permissions.
+    -->
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
     <application
         android:name=".DiagnostructOsApp"
         android:allowBackup="false"
