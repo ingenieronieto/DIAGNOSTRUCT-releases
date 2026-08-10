@@ -8,59 +8,66 @@
     android:orientation="vertical"
     android:padding="32dp">
 
+    <!--
+      La marca lleva su propio fondo, del mismo color que la pantalla, asi que
+      se funde con ella y solo se ve la plomada.
+    -->
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="132dp"
-        android:layout_height="132dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:contentDescription="@string/logo_descripcion"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/marca_diagnostruct" />
 
     <TextView
         android:id="@+id/state_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:letterSpacing="0.08"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.14"
         android:textColor="@color/texto"
-        android:textSize="26sp"
-        android:textStyle="bold"
+        android:textSize="24sp"
         tools:text="DIAGNOSTRUCT" />
 
     <TextView
         android:id="@+id/state_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="14dp"
         android:gravity="center"
-        android:maxWidth="520dp"
+        android:lineSpacingMultiplier="1.35"
+        android:maxWidth="460dp"
         android:textColor="@color/texto_tenue"
-        android:textSize="16sp"
-        tools:text="Abriendo la aplicacion…" />
+        android:textSize="15sp"
+        tools:text="Abriendo la aplicación…" />
 
     <ProgressBar
         android:id="@+id/progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:indeterminateTint="@color/marca" />
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="30dp"
+        android:indeterminateTint="@color/acento" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/action_retry"
+        style="@style/Boton.Acento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:minWidth="220dp"
-        android:minHeight="56dp"
+        android:layout_marginTop="34dp"
+        android:minWidth="200dp"
+        android:minHeight="52dp"
         android:text="@string/accion_reintentar"
         android:visibility="gone" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/action_technician"
-        style="@style/Widget.Material3.Button.TextButton"
+        style="@style/Boton.Plano"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:minHeight="56dp"
+        android:layout_marginTop="6dp"
+        android:minWidth="200dp"
+        android:minHeight="52dp"
         android:text="@string/accion_panel_tecnico"
         android:visibility="gone" />
 

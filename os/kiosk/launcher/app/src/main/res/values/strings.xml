@@ -18,7 +18,7 @@
     <string name="estado_mantenimiento_detalle">El kiosco esta desactivado. El equipo se comporta como una tablet normal hasta que se vuelva a activar.</string>
     <string name="accion_reintentar">Reintentar</string>
     <string name="accion_panel_tecnico">Panel tecnico</string>
-    <string name="logo_descripcion">Logotipo de DIAGNOSTRUCT</string>
+    <string name="logo_descripcion">Marca de DIAGNOSTRUCT</string>
 
     <!-- Panel tecnico -->
     <string name="tecnico_titulo">Panel tecnico</string>

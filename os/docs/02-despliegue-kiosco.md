@@ -124,7 +124,7 @@ levanta. Desde el panel:
 **El PIN de fabrica (`285713`) no protege nada**: esta escrito en un repositorio
 publico. En el alta por QR se fija con `--pin`; en el alta por USB hay que
 cambiarlo desde el propio panel antes de entregar el equipo. Mientras siga
-puesto, el panel muestra un aviso en naranja.
+puesto, el panel lo avisa en azul, debajo de las acciones.
 
 ## Actualizaciones
 

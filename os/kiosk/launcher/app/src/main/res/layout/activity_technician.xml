@@ -10,22 +10,23 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:padding="32dp">
+        android:padding="36dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.12"
             android:text="@string/tecnico_titulo"
             android:textColor="@color/texto"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="21sp" />
 
         <!-- Estado bloqueado: solo se pide el PIN -->
         <LinearLayout
             android:id="@+id/locked_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="40dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -34,39 +35,39 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tecnico_pin_etiqueta"
                 android:textColor="@color/texto_tenue"
-                android:textSize="15sp" />
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/pin_input"
-                android:layout_width="260dp"
+                style="@style/Campo"
+                android:layout_width="240dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="16dp"
                 android:autofillHints="password"
-                android:gravity="center"
-                android:hint="@string/tecnico_pin_etiqueta"
+                android:background="@drawable/campo_linea"
                 android:importantForAutofill="no"
                 android:inputType="numberPassword"
-                android:letterSpacing="0.3"
+                android:letterSpacing="0.35"
                 android:maxLength="12"
-                android:textColor="@color/texto"
-                android:textColorHint="@color/texto_tenue"
-                android:textSize="24sp" />
+                android:paddingVertical="10dp"
+                android:textSize="22sp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_unlock"
-                android:layout_width="260dp"
+                style="@style/Boton.Acento"
+                android:layout_width="240dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:minHeight="56dp"
+                android:layout_marginTop="26dp"
+                android:minHeight="52dp"
                 android:text="@string/tecnico_entrar" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_cancel"
-                style="@style/Widget.Material3.Button.TextButton"
-                android:layout_width="260dp"
+                style="@style/Boton.Plano"
+                android:layout_width="240dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:minHeight="56dp"
+                android:minHeight="52dp"
                 android:text="@string/tecnico_cancelar" />
         </LinearLayout>
 
@@ -75,98 +76,102 @@
             android:id="@+id/unlocked_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="28dp"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:visibility="gone">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_open_app"
-                android:layout_width="340dp"
+                style="@style/Boton.Acento"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:minHeight="56dp"
+                android:minHeight="52dp"
                 android:text="@string/tecnico_abrir_app" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_wifi"
-                android:layout_width="340dp"
+                style="@style/Boton"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:minHeight="56dp"
+                android:minHeight="52dp"
                 android:text="@string/tecnico_wifi" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_update"
-                android:layout_width="340dp"
+                style="@style/Boton"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:minHeight="56dp"
+                android:minHeight="52dp"
                 android:text="@string/tecnico_actualizar" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_reapply"
-                android:layout_width="340dp"
+                style="@style/Boton"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:minHeight="56dp"
+                android:minHeight="52dp"
                 android:text="@string/tecnico_reaplicar" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_toggle_kiosk"
-                style="@style/Widget.Material3.Button.OutlinedButton"
-                android:layout_width="340dp"
+                style="@style/Boton"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:minHeight="56dp"
+                android:layout_marginTop="8dp"
+                android:minHeight="52dp"
                 android:text="@string/tecnico_entrar_mantenimiento" />
 
             <!-- Cambio del PIN de mantenimiento -->
             <TextView
                 android:id="@+id/pin_warning"
-                android:layout_width="340dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingMultiplier="1.3"
                 android:text="@string/tecnico_pin_por_defecto"
-                android:textColor="@color/marca"
-                android:textSize="14sp"
+                android:textColor="@color/acento"
+                android:textSize="13sp"
                 android:visibility="gone" />
 
             <EditText
                 android:id="@+id/new_pin_input"
-                android:layout_width="340dp"
+                style="@style/Campo"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="12dp"
                 android:autofillHints="password"
-                android:gravity="center"
+                android:background="@drawable/campo_linea"
                 android:hint="@string/tecnico_pin_nuevo"
                 android:importantForAutofill="no"
                 android:inputType="numberPassword"
-                android:letterSpacing="0.3"
                 android:maxLength="12"
-                android:textColor="@color/texto"
-                android:textColorHint="@color/texto_tenue"
-                android:textSize="20sp" />
+                android:paddingVertical="10dp"
+                android:textSize="16sp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_change_pin"
-                style="@style/Widget.Material3.Button.OutlinedButton"
-                android:layout_width="340dp"
+                style="@style/Boton"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:minHeight="56dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="52dp"
                 android:text="@string/tecnico_cambiar_pin" />
 
             <TextView
                 android:id="@+id/diagnostics"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="32dp"
                 android:background="@color/superficie"
                 android:fontFamily="monospace"
-                android:padding="16dp"
+                android:lineSpacingMultiplier="1.4"
+                android:padding="18dp"
                 android:textColor="@color/texto_tenue"
-                android:textSize="13sp" />
+                android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
