@@ -36,6 +36,12 @@
     <string name="tecnico_kiosco_activo">Kiosco activo</string>
     <string name="tecnico_sin_ajustes_wifi">Este equipo no expone los ajustes de Wi-Fi</string>
     <string name="tecnico_app_ausente">no instalada</string>
+    <string name="tecnico_pin_nuevo">PIN nuevo (minimo 4 cifras)</string>
+    <string name="tecnico_cambiar_pin">Cambiar el PIN</string>
+    <string name="tecnico_pin_por_defecto">Este equipo sigue con el PIN de fabrica. Cambielo antes de entregarlo.</string>
+    <string name="tecnico_pin_corto">El PIN necesita al menos 4 cifras</string>
+    <string name="tecnico_pin_igual">El PIN nuevo es el mismo que el actual</string>
+    <string name="tecnico_pin_cambiado">PIN cambiado</string>
     <string name="tecnico_diagnostico">Propietario del dispositivo: %1$s\nKiosco activo: %2$s\nPaquete: %3$s\nVersion instalada: %4$s\n\nAutorizadas en modo bloqueado:\n%5$s</string>
 
     <!-- Aprovisionamiento -->

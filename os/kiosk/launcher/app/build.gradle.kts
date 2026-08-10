@@ -83,6 +83,15 @@ android {
         buildConfig = true
         viewBinding = true
     }
+
+    testOptions {
+        unitTests {
+            // Las clases de android.jar son stubs que lanzan al invocarse. Las
+            // pruebas de aqui solo cubren logica pura, pero este ajuste evita
+            // que una llamada incidental a la plataforma tumbe la ejecucion.
+            isReturnDefaultValues = true
+        }
+    }
 }
 
 dependencies {
@@ -94,4 +103,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.work.runtime.ktx)
     implementation(libs.kotlinx.coroutines.android)
+
+    testImplementation(libs.junit)
+    testImplementation(libs.json)
 }

@@ -47,6 +47,12 @@ jobs:
       - name: Compilar (debug)
         run: gradle --no-daemon assembleDebug
 
+      # Cubren la comparacion de versiones y el parseo del manifiesto. Un fallo
+      # ahi no da error visible en la tablet: la actualizacion simplemente no
+      # llega nunca, y el equipo se queda atras sin que nadie se entere.
+      - name: Pruebas unitarias
+        run: gradle --no-daemon testDebugUnitTest
+
       # El build de release aplica R8. Compilarlo en CI es lo que detecta que
       # una clase instanciada por nombre desde el manifiesto se ha quedado sin
       # su regla de conservacion, que en tiempo de ejecucion seria un fallo
@@ -66,10 +72,12 @@ jobs:
             os/kiosk/launcher/app/build/outputs/apk/release/*.apk
           if-no-files-found: error
 
-      - name: Publicar el informe de lint
+      - name: Publicar los informes
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: informe-lint
-          path: os/kiosk/launcher/app/build/reports/lint-results-*.html
+          name: informes
+          path: |
+            os/kiosk/launcher/app/build/reports/lint-results-*.html
+            os/kiosk/launcher/app/build/reports/tests/**
           if-no-files-found: ignore

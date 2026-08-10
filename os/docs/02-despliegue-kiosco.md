@@ -109,6 +109,12 @@ introduciendo el PIN. Desde ahi:
 | Buscar actualizacion ahora | Forzar la puesta al dia sin esperar las seis horas |
 | Reaplicar politica | Recomponer el kiosco tras una actualizacion del fabricante |
 | Entrar en mantenimiento | Levantar el kiosco entero para poder trabajar sobre el equipo |
+| Cambiar el PIN | Sustituir el PIN de fabrica, que esta publicado en este repositorio |
+
+**El PIN de fabrica (`285713`) no protege nada**: esta escrito en un repositorio
+publico. En el alta por QR se fija con `--pin`; en el alta por USB hay que
+cambiarlo desde el propio panel antes de entregar el equipo. Mientras siga
+puesto, el panel muestra un aviso en naranja.
 
 ## Actualizaciones
 

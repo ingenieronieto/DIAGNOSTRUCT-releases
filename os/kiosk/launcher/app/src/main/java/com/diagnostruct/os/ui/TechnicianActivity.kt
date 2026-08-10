@@ -55,6 +55,32 @@ class TechnicianActivity : AppCompatActivity() {
             AppLauncher.launchApp(this)
             finish()
         }
+        binding.actionChangePin.setOnClickListener { changePin() }
+    }
+
+    /**
+     * Cambia el PIN de mantenimiento.
+     *
+     * Existe porque el alta por USB no puede fijarlo (solo el QR lo lleva), y
+     * sin esto una tablet dada de alta con cable se quedaria con el PIN de
+     * fabrica para siempre, que ademas esta publicado en este repositorio.
+     */
+    private fun changePin() {
+        val nuevo = binding.newPinInput.text?.toString()?.trim().orEmpty()
+        when {
+            nuevo.length < MIN_PIN_LENGTH -> {
+                toast(getString(R.string.tecnico_pin_corto))
+                return
+            }
+            nuevo == KioskConfig.technicianPin(this) -> {
+                toast(getString(R.string.tecnico_pin_igual))
+                return
+            }
+        }
+        KioskConfig.setTechnicianPin(this, nuevo)
+        binding.newPinInput.text?.clear()
+        toast(getString(R.string.tecnico_pin_cambiado))
+        refreshDiagnostics()
     }
 
     private fun attemptUnlock() {
@@ -123,6 +149,11 @@ class TechnicianActivity : AppCompatActivity() {
         } else {
             getString(R.string.tecnico_volver_kiosco)
         }
+
+        // El PIN de fabrica esta publicado en el repositorio, que es publico:
+        // mientras siga puesto, el panel no protege nada.
+        val porDefecto = KioskConfig.technicianPin(this) == KioskConfig.DEFAULT_PIN
+        binding.pinWarning.visibility = if (porDefecto) View.VISIBLE else View.GONE
     }
 
     private fun installedAppVersion(): String? = runCatching {
@@ -140,6 +171,8 @@ class TechnicianActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
     companion object {
+        private const val MIN_PIN_LENGTH = 4
+
         fun start(context: Context) {
             context.startActivity(Intent(context, TechnicianActivity::class.java))
         }
