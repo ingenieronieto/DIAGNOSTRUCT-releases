@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #
-# Convierte una tablet Android de fabrica en un equipo DIAGNOSTRUCT.
+# Convierte una tablet Android de fábrica en un equipo DIAGNOSTRUCT.
 #
 # Requisitos en la tablet:
-#   - Recien restablecida de fabrica, SIN ninguna cuenta añadida. Android se
+#   - Recién restablecida de fábrica, SIN ninguna cuenta añadida. Android se
 #     niega a asignar propietario del dispositivo si ya hay cuentas.
-#   - Depuracion USB activada (Ajustes > Opciones de desarrollo).
+#   - Depuración USB activada (Ajustes > Opciones de desarrollo).
 #
 # Uso: ./provisionar.sh [ruta-launcher.apk] [ruta-diagnostruct.apk]
 
@@ -26,7 +26,7 @@ info()  { printf '\033[36m%s\033[0m\n' "$*"; }
 command -v adb >/dev/null || { rojo "Falta adb en el PATH."; exit 1; }
 
 [[ -f "$LAUNCHER_APK" ]] || { rojo "No existe el APK del launcher: $LAUNCHER_APK"; exit 1; }
-[[ -f "$APP_APK" ]]      || { rojo "No existe el APK de la aplicacion: $APP_APK"; exit 1; }
+[[ -f "$APP_APK" ]]      || { rojo "No existe el APK de la aplicación: $APP_APK"; exit 1; }
 
 info "Esperando a la tablet…"
 adb wait-for-device
@@ -39,18 +39,18 @@ if [[ "$DISPOSITIVOS" -ne 1 ]]; then
 fi
 
 # Una sola cuenta basta para que `dpm set-device-owner` falle. Es mejor
-# detectarlo aqui que a mitad del proceso, con el equipo ya medio configurado.
+# detectarlo aquí que a mitad del proceso, con el equipo ya medio configurado.
 info "Comprobando que no haya cuentas dadas de alta…"
 CUENTAS=$(adb shell dumpsys account 2>/dev/null | grep -c "Account {" || true)
 if [[ "${CUENTAS:-0}" -gt 0 ]]; then
-  rojo "La tablet tiene $CUENTAS cuenta(s). Restablezca de fabrica y no añada ninguna."
+  rojo "La tablet tiene $CUENTAS cuenta(s). Restablezca de fábrica y no añada ninguna."
   exit 1
 fi
 
 info "Instalando el sistema DIAGNOSTRUCT OS…"
 adb install -r -g "$LAUNCHER_APK"
 
-info "Instalando la aplicacion DIAGNOSTRUCT…"
+info "Instalando la aplicación DIAGNOSTRUCT…"
 adb install -r -g "$APP_APK"
 
 info "Asignando propietario del dispositivo…"
@@ -69,9 +69,10 @@ adb shell monkey -p "$PAQUETE_LAUNCHER" -c android.intent.category.HOME 1 >/dev/
 verde ""
 verde "Equipo aprovisionado."
 verde "  Launcher:    $PAQUETE_LAUNCHER"
-verde "  Aplicacion:  $PAQUETE_APP"
+verde "  Aplicación: $PAQUETE_APP"
 verde ""
 verde "Antes de entregar la tablet:"
-verde "  1. Mantenga pulsado el logotipo, entre con el PIN de fabrica (285713)"
-verde "     y cambielo desde 'Cambiar el PIN'. El de fabrica es publico."
+verde "  1. Apague y encienda la tablet. Durante la cuenta atrás de 3 s,"
+verde "     toque «Panel técnico», entre con el PIN de fábrica (285713) y"
+verde "     cámbielo desde «Cambiar el PIN». El de fábrica es público."
 verde "  2. Compruebe el equipo con: ./diagnostico.sh"

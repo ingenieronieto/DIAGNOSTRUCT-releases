@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """Genera el QR de alta de DIAGNOSTRUCT OS.
 
-Se escanea desde la pantalla de bienvenida de una tablet recien restablecida
+Se escanea desde la pantalla de bienvenida de una tablet recién restablecida
 (seis toques sobre la pantalla de bienvenida abren el lector). El equipo se
 descarga el launcher, lo instala, lo deja como propietario del dispositivo y
-aplica la politica del kiosco sin que nadie toque nada mas.
+aplica la política del kiosco sin que nadie toque nada más.
 
 Uso:
     ./generar-qr.py --apk ../launcher/app/build/outputs/apk/release/app-release.apk \\
                     --url https://ejemplo.com/DIAGNOSTRUCT-OS.apk \\
                     --ssid OBRA-WIFI --clave "secreto" --pin 481920
 
-El checksum de firma se calcula con `apksigner` (Android SDK) o, si no esta,
-con `keytool` (JDK). Sin el, el equipo rechaza el APK descargado.
+El checksum de firma se calcula con `apksigner` (Android SDK) o, si no está,
+con `keytool` (JDK). Sin él, el equipo rechaza el APK descargado.
 """
 
 from __future__ import annotations
@@ -61,7 +61,7 @@ def sha256_del_certificado(apk: Path) -> str:
             return encontrado.group(1).replace(":", "")
 
     raise RuntimeError(
-        "No se encontro `apksigner` ni `keytool`. Instale el SDK de Android o un JDK."
+        "No se encontró `apksigner` ni `keytool`. Instale el SDK de Android o un JDK."
     )
 
 
@@ -77,7 +77,7 @@ def construir_payload(args: argparse.Namespace, checksum: str) -> dict:
         "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": args.url,
         "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": checksum,
         # Sin esto el alta desactiva casi todas las aplicaciones de sistema,
-        # incluidas la camara y el WebView, y DIAGNOSTRUCT se queda sin poder
+        # incluidas la cámara y el WebView, y DIAGNOSTRUCT se queda sin poder
         # hacer fotos ni dibujar su interfaz.
         "android.app.extra.PROVISIONING_LEAVE_ALL_SYSTEM_APPS_ENABLED": True,
         "android.app.extra.PROVISIONING_SKIP_ENCRYPTION": False,
@@ -114,13 +114,13 @@ def escribir_qr(texto: str, destino: Path) -> bool:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--apk", required=True, type=Path, help="APK firmado del launcher")
-    parser.add_argument("--url", required=True, help="URL publica desde la que la tablet lo descargara")
+    parser.add_argument("--url", required=True, help="URL pública desde la que la tablet lo descargará")
     parser.add_argument("--ssid", help="Red Wi-Fi a la que conectarse durante el alta")
     parser.add_argument("--clave", help="Clave de esa red")
     parser.add_argument("--seguridad", default="WPA", choices=["NONE", "WPA", "WEP", "EAP"])
-    parser.add_argument("--pin", help="PIN del panel tecnico")
+    parser.add_argument("--pin", help="PIN del panel técnico")
     parser.add_argument("--salida", type=Path, default=Path("alta-diagnostruct"),
-                        help="Ruta base de salida, sin extension")
+                        help="Ruta base de salida, sin extensión")
     args = parser.parse_args()
 
     if not args.apk.is_file():
@@ -128,8 +128,8 @@ def main() -> int:
         return 1
 
     if not args.url.startswith("https://"):
-        # El equipo descarga este APK y lo convierte en dueño de si mismo:
-        # servirlo por HTTP permitiria sustituirlo en transito.
+        # El equipo descarga este APK y lo convierte en dueño de sí mismo:
+        # servirlo por HTTP permitiría sustituirlo en tránsito.
         print("La URL de descarga debe ser HTTPS.", file=sys.stderr)
         return 1
 
@@ -149,7 +149,7 @@ def main() -> int:
     if escribir_qr(texto, destino_png):
         print(f"QR escrito en   {destino_png}")
     else:
-        print("Falta el paquete `qrcode` (pip install 'qrcode[pil]'); solo se genero el JSON.")
+        print("Falta el paquete `qrcode` (pip install 'qrcode[pil]'); solo se generó el JSON.")
 
     print(f"JSON escrito en {destino_json}")
     print(f"Checksum firma  {checksum}")

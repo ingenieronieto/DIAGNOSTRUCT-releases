@@ -3,8 +3,8 @@
 # Devuelve la tablet a un estado normal: levanta el kiosco, renuncia a la
 # propiedad del dispositivo y desinstala el launcher.
 #
-# Pensado para retirar un equipo del parque o para depurar. La aplicacion
-# DIAGNOSTRUCT y sus datos NO se tocan: los proyectos y las fotos siguen ahi.
+# Pensado para retirar un equipo del parque o para depurar. La aplicación
+# DIAGNOSTRUCT y sus datos NO se tocan: los proyectos y las fotos siguen ahí.
 
 set -uo pipefail
 
@@ -33,9 +33,9 @@ if adb shell dpm remove-active-admin "$ADMIN" 2>&1 | grep -qi "success"; then
   verde "Administrador retirado."
 else
   # `remove-active-admin` no siempre puede con un propietario de dispositivo.
-  # La app expone la renuncia desde el panel tecnico, que es la via limpia.
+  # La app expone la renuncia desde el panel técnico, que es la vía limpia.
   rojo "No se pudo retirar por ADB."
-  rojo "Use el panel tecnico de la tablet, o restablezca de fabrica."
+  rojo "Use el panel técnico de la tablet, o restablezca de fábrica."
 fi
 
 info "Desinstalando el launcher…"
@@ -44,4 +44,4 @@ adb uninstall "$PAQUETE_LAUNCHER" >/dev/null 2>&1 \
   || rojo "No se pudo desinstalar el launcher (puede seguir siendo administrador)."
 
 verde ""
-verde "Hecho. La aplicacion DIAGNOSTRUCT y sus datos siguen en el equipo."
+verde "Hecho. La aplicación DIAGNOSTRUCT y sus datos siguen en el equipo."
