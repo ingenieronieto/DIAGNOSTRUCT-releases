@@ -30,20 +30,28 @@ class KioskPolicy(context: Context) {
     val isDeviceOwner: Boolean
         get() = runCatching { dpm.isDeviceOwnerApp(context.packageName) }.getOrDefault(false)
 
-    /** Aplica la configuracion completa. Es idempotente. */
-    fun applyAll() {
+    /**
+     * Aplica la configuracion completa. Es idempotente.
+     *
+     * Devuelve cierto solo si todos los pasos salieron bien, para que quien la
+     * encola pueda reintentar. Sin ese dato el reintento seria imposible: cada
+     * paso se aisla del resto, asi que un fallo aislado no se propaga solo.
+     */
+    fun applyAll(): Boolean {
         if (!isDeviceOwner) {
             Log.w(TAG, "El equipo no es Device Owner: no se aplica ninguna politica")
-            return
+            return false
         }
-        runStep("actividad de inicio") { setPersistentHome() }
-        runStep("modo bloqueado") { configureLockTask() }
-        runStep("permisos de la aplicacion") { grantAppPermissions() }
-        runStep("restricciones de usuario") { applyUserRestrictions() }
-        runStep("ajustes del sistema") { applySystemSettings() }
-        runStep("proteccion de la aplicacion") { protectApp() }
-        runStep("actualizaciones del sistema") { deferSystemUpdates() }
-        runStep("ocultado de aplicaciones") { hideNonEssentialApps() }
+        var ok = true
+        ok = runStep("actividad de inicio") { setPersistentHome() } && ok
+        ok = runStep("modo bloqueado") { configureLockTask() } && ok
+        ok = runStep("permisos de la aplicacion") { grantAppPermissions() } && ok
+        ok = runStep("restricciones de usuario") { applyUserRestrictions() } && ok
+        ok = runStep("ajustes del sistema") { applySystemSettings() } && ok
+        ok = runStep("proteccion de la aplicacion") { protectApp() } && ok
+        ok = runStep("actualizaciones del sistema") { deferSystemUpdates() } && ok
+        ok = runStep("ocultado de aplicaciones") { hideNonEssentialApps() } && ok
+        return ok
     }
 
     /**
@@ -232,9 +240,10 @@ class KioskPolicy(context: Context) {
      * Ejecuta un paso aislando su fallo: que una politica no se pueda aplicar
      * en un fabricante concreto no debe impedir que se apliquen las demas.
      */
-    private fun runStep(name: String, step: () -> Unit) {
-        runCatching(step).onFailure { Log.e(TAG, "Fallo aplicando: $name", it) }
-    }
+    private fun runStep(name: String, step: () -> Unit): Boolean =
+        runCatching(step)
+            .onFailure { Log.e(TAG, "Fallo aplicando: $name", it) }
+            .isSuccess
 
     companion object {
         private const val TAG = "KioskPolicy"

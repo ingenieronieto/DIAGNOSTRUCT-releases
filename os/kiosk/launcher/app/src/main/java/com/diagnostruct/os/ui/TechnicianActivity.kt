@@ -11,11 +11,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.diagnostruct.os.KioskConfig
 import com.diagnostruct.os.R
 import com.diagnostruct.os.databinding.ActivityTechnicianBinding
-import com.diagnostruct.os.kiosk.AppLauncher
 import com.diagnostruct.os.policy.EssentialPackages
 import com.diagnostruct.os.policy.KioskPolicy
 import com.diagnostruct.os.policy.PolicyScheduler
 import com.diagnostruct.os.update.UpdateScheduler
+import kotlin.math.ceil
 
 /**
  * Panel de mantenimiento, protegido por PIN.
@@ -51,10 +51,7 @@ class TechnicianActivity : AppCompatActivity() {
             refreshDiagnostics()
         }
         binding.actionToggleKiosk.setOnClickListener { toggleKiosk() }
-        binding.actionOpenApp.setOnClickListener {
-            AppLauncher.launchApp(this)
-            finish()
-        }
+        binding.actionOpenApp.setOnClickListener { backToApp() }
         binding.actionChangePin.setOnClickListener { changePin() }
     }
 
@@ -72,7 +69,7 @@ class TechnicianActivity : AppCompatActivity() {
                 toast(getString(R.string.tecnico_pin_corto))
                 return
             }
-            nuevo == KioskConfig.technicianPin(this) -> {
+            KioskConfig.verifyPin(this, nuevo) -> {
                 toast(getString(R.string.tecnico_pin_igual))
                 return
             }
@@ -83,13 +80,33 @@ class TechnicianActivity : AppCompatActivity() {
         refreshDiagnostics()
     }
 
+    /**
+     * Comprueba el PIN con freno a la fuerza bruta.
+     *
+     * Sin espera creciente, un PIN de cuatro cifras se agota probando a mano en
+     * una tarde, y detras esta el control total del equipo.
+     */
     private fun attemptUnlock() {
-        val entered = binding.pinInput.text?.toString().orEmpty()
-        if (entered != KioskConfig.technicianPin(this)) {
-            binding.pinInput.text?.clear()
-            toast(getString(R.string.tecnico_pin_incorrecto))
+        val esperaMs = KioskConfig.lockoutRemainingMs(this)
+        if (esperaMs > 0) {
+            toast(getString(R.string.tecnico_pin_bloqueado, ceil(esperaMs / 1000.0).toInt()))
             return
         }
+
+        val entered = binding.pinInput.text?.toString().orEmpty()
+        binding.pinInput.text?.clear()
+
+        if (!KioskConfig.verifyPin(this, entered)) {
+            val castigoMs = KioskConfig.registerFailedAttempt(this)
+            if (castigoMs > 0) {
+                toast(getString(R.string.tecnico_pin_bloqueado, (castigoMs / 1000).toInt()))
+            } else {
+                toast(getString(R.string.tecnico_pin_incorrecto))
+            }
+            return
+        }
+
+        KioskConfig.clearFailedAttempts(this)
         showUnlocked()
     }
 
@@ -125,13 +142,32 @@ class TechnicianActivity : AppCompatActivity() {
     }
 
     /**
-     * Ajustes de Wi-Fi. Hay que soltar el anclaje antes: Ajustes no esta en la
-     * lista de aplicaciones autorizadas y el sistema bloquearia el intento.
+     * Ajustes de Wi-Fi.
+     *
+     * Hay que soltar el anclaje antes, porque Ajustes no esta en la lista de
+     * aplicaciones autorizadas. Y hay que abrir una tregua antes de soltarlo:
+     * si no, el aviso de salida del anclaje hace que el kiosco reabra la
+     * aplicacion y expulse al tecnico de Ajustes antes de que toque nada.
      */
     private fun openWifiSettings() {
+        KioskConfig.startMaintenanceWindow(this, MAINTENANCE_MINUTES)
         runCatching { stopLockTask() }
         runCatching { startActivity(EssentialPackages.wifiSettingsIntent()) }
-            .onFailure { toast(getString(R.string.tecnico_sin_ajustes_wifi)) }
+            .onSuccess { toast(getString(R.string.tecnico_wifi_tregua, MAINTENANCE_MINUTES)) }
+            .onFailure {
+                KioskConfig.endMaintenanceWindow(this)
+                toast(getString(R.string.tecnico_sin_ajustes_wifi))
+            }
+    }
+
+    /**
+     * Cierra la tregua y devuelve el control a la pantalla de inicio, que es
+     * quien sabe reabrir la aplicacion anclada. Lanzarla desde aqui la dejaria
+     * suelta.
+     */
+    private fun backToApp() {
+        KioskConfig.endMaintenanceWindow(this)
+        finish()
     }
 
     private fun refreshDiagnostics() {
@@ -152,8 +188,8 @@ class TechnicianActivity : AppCompatActivity() {
 
         // El PIN de fabrica esta publicado en el repositorio, que es publico:
         // mientras siga puesto, el panel no protege nada.
-        val porDefecto = KioskConfig.technicianPin(this) == KioskConfig.DEFAULT_PIN
-        binding.pinWarning.visibility = if (porDefecto) View.VISIBLE else View.GONE
+        binding.pinWarning.visibility =
+            if (KioskConfig.isDefaultPin(this)) View.VISIBLE else View.GONE
     }
 
     private fun installedAppVersion(): String? = runCatching {
@@ -172,6 +208,9 @@ class TechnicianActivity : AppCompatActivity() {
 
     companion object {
         private const val MIN_PIN_LENGTH = 4
+
+        /** Duracion de la tregua al salir a Ajustes. */
+        private const val MAINTENANCE_MINUTES = 10
 
         fun start(context: Context) {
             context.startActivity(Intent(context, TechnicianActivity::class.java))

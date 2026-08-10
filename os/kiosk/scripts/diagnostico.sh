@@ -34,8 +34,18 @@ else
 fi
 
 titulo "Propietario del dispositivo"
-if adb shell dumpsys device_policy 2>/dev/null | grep -q "$PAQUETE_LAUNCHER"; then
+# `dpm list-owners` responde justo esto y nada mas. El respaldo por dumpsys se
+# acota a la seccion del propietario: un grep del paquete sobre todo el volcado
+# da positivo por cualquier mencion suelta y no prueba nada.
+PROPIETARIO=$(adb shell dpm list-owners 2>/dev/null | tr -d '\r')
+if [[ -z "$PROPIETARIO" ]] || echo "$PROPIETARIO" | grep -qi "unknown command"; then
+  PROPIETARIO=$(adb shell dumpsys device_policy 2>/dev/null | tr -d '\r' \
+    | sed -n '/Device Owner:/,/^$/p')
+fi
+if echo "$PROPIETARIO" | grep -q "$PAQUETE_LAUNCHER"; then
   ok "DIAGNOSTRUCT OS es propietario del dispositivo"
+elif [[ -n "$PROPIETARIO" ]]; then
+  error "El propietario es otro: $(echo "$PROPIETARIO" | head -2 | tr '\n' ' ')"
 else
   error "El equipo NO tiene propietario asignado; el kiosco no puede blindarlo"
 fi

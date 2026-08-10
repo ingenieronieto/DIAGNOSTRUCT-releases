@@ -35,10 +35,16 @@ class DiagnostructDeviceAdminReceiver : DeviceAdminReceiver() {
     }
 
     override fun onLockTaskModeExiting(context: Context, intent: Intent) {
-        // Salir del anclaje solo deberia ocurrir desde el panel tecnico. Por
-        // cualquier otra via se vuelve de inmediato a la aplicacion.
         Log.w(TAG, "Se salio del modo bloqueado")
-        if (KioskConfig.kioskEnabled(context)) AppLauncher.returnToKiosk(context)
+
+        // Si la salida la pidio el panel tecnico hay una tregua abierta, y
+        // reabrir ahora expulsaria al tecnico de donde acaba de entrar.
+        if (!KioskConfig.kioskEnabled(context) || KioskConfig.maintenanceActive(context)) return
+
+        // Intento de mejor esfuerzo: desde un receptor, Android 10 y posteriores
+        // suelen bloquear el arranque de actividades en segundo plano. La via
+        // que si funciona es la pantalla de inicio, que reancla al reanudarse.
+        AppLauncher.returnToKiosk(context)
     }
 
     /**

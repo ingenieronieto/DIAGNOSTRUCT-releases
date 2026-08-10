@@ -109,14 +109,18 @@ object SilentInstaller {
     private fun openConnection(url: String): HttpURLConnection {
         var current = URL(url)
         repeat(MAX_REDIRECTS) {
-            val connection = (current.openConnection() as HttpURLConnection).apply {
+            // Se comprueba el esquema ANTES de abrir nada: asi un destino en
+            // claro no llega siquiera a establecer conexion.
+            require(current.protocol.equals("https", ignoreCase = true)) {
+                "Solo se aceptan descargas por HTTPS"
+            }
+            val connection = (current.openConnection() as HttpsURLConnection).apply {
                 connectTimeout = CONNECT_TIMEOUT_MS
                 readTimeout = READ_TIMEOUT_MS
                 instanceFollowRedirects = false
                 setRequestProperty("Accept-Encoding", "identity")
                 setRequestProperty("User-Agent", "DiagnostructOS")
             }
-            require(connection is HttpsURLConnection) { "Solo se aceptan descargas por HTTPS" }
             when (val code = connection.responseCode) {
                 HttpURLConnection.HTTP_OK -> return connection
                 HttpURLConnection.HTTP_MOVED_PERM,

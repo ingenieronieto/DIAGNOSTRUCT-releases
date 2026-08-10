@@ -7,6 +7,7 @@ import android.util.Log
 import com.diagnostruct.os.policy.PolicyScheduler
 import com.diagnostruct.os.update.UpdateScheduler
 
+
 /**
  * Reconstruye el kiosco en cada arranque. La politica ya es persistente en el
  * sistema, pero volver a aplicarla cuesta poco y cubre los casos en los que una
@@ -29,7 +30,10 @@ class BootReceiver : BroadcastReceiver() {
         runCatching { PolicyScheduler.applyNow(context) }
             .onFailure { Log.e(TAG, "No se pudo encolar la politica en el arranque", it) }
         runCatching { UpdateScheduler.schedule(context) }
-        AppLauncher.returnToKiosk(context)
+
+        // No se lanza nada desde aqui: el sistema abre por su cuenta la
+        // actividad de inicio al terminar el arranque, y ademas Android bloquea
+        // el arranque de actividades en segundo plano desde un receptor.
     }
 
     private companion object {

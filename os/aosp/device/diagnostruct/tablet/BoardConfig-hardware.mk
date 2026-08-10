@@ -1,11 +1,13 @@
-# Configuracion de placa.
+# Plantilla de configuracion de placa. NO la lee el build.
 #
-# Este archivo es el unico del arbol que depende del hardware. Con el producto
-# de referencia sobre el emulador no hace falta tocarlo: la base generica de
-# AOSP ya define arquitectura, particiones y kernel.
+# El nombre lleva sufijo a proposito. El build solo carga un archivo llamado
+# exactamente `BoardConfig.mk`, y solo desde un directorio que se llame igual
+# que `PRODUCT_DEVICE`. El producto de referencia hereda el dispositivo del
+# objetivo generico de AOSP, asi que usa la placa de ese objetivo y este archivo
+# queda fuera; llamarlo `BoardConfig.mk` haria creer que esta en uso.
 #
-# Al pasar a la tablet definitiva, sustituya el contenido por el BoardConfig del
-# arbol de dispositivo del fabricante. Lo que sigue son los minimos que el
+# Al pasar a la tablet definitiva: parta del BoardConfig del arbol de
+# dispositivo del fabricante y añada lo que sigue, que son los minimos que el
 # sistema DIAGNOSTRUCT da por hechos.
 
 # La aplicacion trae bibliotecas nativas para arm64-v8a, armeabi-v7a, x86 y

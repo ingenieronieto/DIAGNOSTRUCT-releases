@@ -24,20 +24,12 @@ object AppLauncher {
     fun isAppInstalled(context: Context): Boolean = appIntent(context) != null
 
     /**
-     * Abre DIAGNOSTRUCT. Devuelve falso si no esta instalada, para que la
-     * pantalla de inicio pueda mostrar el aviso en vez de quedarse en blanco.
+     * Vuelve a la pantalla de inicio del kiosco, que reanclara la aplicacion.
+     *
+     * Nadie abre la aplicacion directamente salvo la pantalla de inicio: es la
+     * unica que sabe pedir el anclaje al lanzar. Abrirla desde otro sitio la
+     * dejaria suelta y el kiosco se quedaria sin efecto.
      */
-    fun launchApp(context: Context): Boolean {
-        val intent = appIntent(context) ?: run {
-            Log.e(TAG, "${KioskConfig.APP_PACKAGE} no esta instalada")
-            return false
-        }
-        return runCatching { context.startActivity(intent); true }
-            .onFailure { Log.e(TAG, "No se pudo abrir la aplicacion", it) }
-            .getOrDefault(false)
-    }
-
-    /** Vuelve a la pantalla de inicio del kiosco, que reanclara la aplicacion. */
     fun returnToKiosk(context: Context) {
         val intent = Intent(context, KioskLauncherActivity::class.java).apply {
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

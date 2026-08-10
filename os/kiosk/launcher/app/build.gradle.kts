@@ -41,6 +41,18 @@ android {
             "VERSION_MANIFEST_URL",
             "\"https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/version.json\""
         )
+        // SHA-256 del certificado con el que se firma DIAGNOSTRUCT.
+        //
+        // En una actualizacion Android ya exige que la firma coincida con la de
+        // lo instalado, pero en la PRIMERA instalacion no hay con que comparar:
+        // sin este anclaje, quien controlase la URL de descarga colocaria un APK
+        // cualquiera con ese nombre de paquete, y el kiosco le concederia camara
+        // y ubicacion de antemano. Dejarlo vacio desactiva la comprobacion.
+        buildConfigField(
+            "String",
+            "APP_SIGNATURE_SHA256",
+            "\"fcf11d36ec6ca25b0208eaa7147b84f503ec24b479f02ae0ea7696468f2b8b60\""
+        )
     }
 
     signingConfigs {

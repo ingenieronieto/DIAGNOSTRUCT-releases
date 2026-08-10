@@ -24,14 +24,21 @@ class PolicyWorker(
 ) : CoroutineWorker(appContext, params) {
 
     override suspend fun doWork(): Result = withContext(Dispatchers.Default) {
-        runCatching { KioskPolicy(applicationContext).applyAll() }
-            .fold(
-                onSuccess = { Result.success() },
-                onFailure = { error ->
-                    Log.e(TAG, "No se pudo aplicar la politica", error)
-                    Result.retry()
-                },
-            )
+        val policy = KioskPolicy(applicationContext)
+
+        // Sin propiedad del dispositivo no hay nada que aplicar, y reintentar no
+        // lo arreglaria: eso se resuelve volviendo a dar de alta el equipo.
+        if (!policy.isDeviceOwner) {
+            Log.w(TAG, "Sin Device Owner: no hay politica que aplicar")
+            return@withContext Result.success()
+        }
+
+        if (policy.applyAll()) {
+            Result.success()
+        } else {
+            Log.w(TAG, "Algun paso de la politica fallo; se reintentara")
+            Result.retry()
+        }
     }
 
     private companion object {

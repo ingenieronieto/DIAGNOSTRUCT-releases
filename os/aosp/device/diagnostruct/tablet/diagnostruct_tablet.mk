@@ -28,8 +28,20 @@ $(call inherit-product, device/diagnostruct/tablet/diagnostruct_kiosk.mk)
 # 3. Identidad del producto
 # ---------------------------------------------------------------------------
 
+# `PRODUCT_DEVICE` NO se define aqui, y es a proposito.
+#
+# El build resuelve la configuracion de placa buscando
+# `device/*/$(TARGET_DEVICE)/BoardConfig.mk`, es decir, exige que exista un
+# directorio con el mismo nombre que el dispositivo. Fijarlo a
+# `diagnostruct_tablet` mientras el arbol vive en `device/diagnostruct/tablet/`
+# rompe el build con "No config file found for TARGET_DEVICE". Heredando el del
+# objetivo generico se usa su placa, que es justo lo que se quiere en el
+# producto de emulador.
+#
+# En el producto de hardware real, defina aqui el dispositivo del fabricante y
+# use su BoardConfig; `BoardConfig-hardware.mk` es la plantilla de referencia.
+
 PRODUCT_NAME := diagnostruct_tablet
-PRODUCT_DEVICE := diagnostruct_tablet
 PRODUCT_BRAND := DIAGNOSTRUCT
 PRODUCT_MODEL := DIAGNOSTRUCT Field Tablet
 PRODUCT_MANUFACTURER := INGNIETO

@@ -99,13 +99,23 @@ sorpresas en obra.
 **El tecnico** enciende la tablet y ya esta dentro de DIAGNOSTRUCT. No hay
 pantalla de bloqueo, ni ajustes, ni forma de salir.
 
-**El panel de servicio** se abre manteniendo pulsado el logotipo en la pantalla
-de inicio (aparece un instante al arrancar, o de forma fija si algo falla) e
-introduciendo el PIN. Desde ahi:
+**El panel de servicio** se abre desde la pantalla de inicio, que aparece
+**tres segundos cada vez que se enciende la tablet** con un boton «Panel
+tecnico» visible. Esa ventana es la via prevista: una vez la aplicacion queda
+anclada, el boton de inicio no responde y no hay forma de volver a la pantalla
+de inicio. Si algo falla, la pantalla se queda fija y el acceso deja de tener
+prisa.
+
+> Para entrar en una tablet ya en marcha: apagarla y encenderla, y tocar «Panel
+> tecnico» durante la cuenta atras. Tambien vale mantener pulsado el logotipo.
+
+El PIN **frena los intentos**: a partir del cuarto fallo hay que esperar, y la
+espera se dobla en cada intento hasta un cuarto de hora. Reiniciar el equipo la
+levanta. Desde el panel:
 
 | Accion | Para que |
 |---|---|
-| Ajustes de Wi-Fi | Cambiar de red al llegar a una obra nueva |
+| Ajustes de Wi-Fi | Cambiar de red al llegar a una obra nueva. Abre una tregua de 10 minutos durante la que el kiosco no reancla nada; se cierra con «Volver a DIAGNOSTRUCT». |
 | Buscar actualizacion ahora | Forzar la puesta al dia sin esperar las seis horas |
 | Reaplicar politica | Recomponer el kiosco tras una actualizacion del fabricante |
 | Entrar en mantenimiento | Levantar el kiosco entero para poder trabajar sobre el equipo |
@@ -123,6 +133,16 @@ cuando ve una version mayor que la instalada, la descarga y la instala en
 silencio. El APK se transmite directamente de la red al instalador, sin
 guardarse antes en disco, porque estas tablets se quedan sin espacio con
 facilidad.
+
+Antes de conceder permisos o abrir nada, el equipo **comprueba que lo instalado
+lleva el certificado de firma esperado**; si no coincide, lo retira. Importa en
+la primera instalacion: al actualizar, Android ya exige que la firma case con la
+de lo que hay puesto, pero cuando no hay nada instalado no existe esa referencia.
+
+> Si algun dia se cambia la clave con la que se firma DIAGNOSTRUCT, hay que
+> actualizar `APP_SIGNATURE_SHA256` en `app/build.gradle.kts` **y** desplegar el
+> launcher nuevo antes de publicar el APK firmado con la clave nueva. En otro
+> caso las tablets rechazaran la actualizacion.
 
 Publicar una version nueva sigue siendo lo de siempre: reemplazar el APK en la
 raiz del repositorio y subir el numero en `version.json`.

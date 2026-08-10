@@ -60,15 +60,17 @@ PRODUCT_PACKAGES += \
 # Comportamiento del sistema
 # ---------------------------------------------------------------------------
 
+# Estas tablets se encienden en obra, sin nadie mirando el asistente inicial.
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.diagnostruct.kiosk=1 \
     ro.setupwizard.mode=DISABLED \
     setupwizard.feature.skip_button_use_mobile_data=false \
     ro.com.android.dataroaming=false
 
-# Estas tablets viven en obra, sin nadie mirando la pantalla de arranque.
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.usb.config=none
+# Aqui NO se toca persist.sys.usb.config: dejar el USB en `none` desde el
+# producto puede quitar tambien ADB, que es la unica via de rescate si el kiosco
+# falla. El acceso a archivos por USB ya lo cierra DISALLOW_USB_FILE_TRANSFER,
+# que ademas se puede levantar desde el panel tecnico.
 
 PRODUCT_PACKAGE_OVERLAYS += \
     device/diagnostruct/tablet/overlay
@@ -77,6 +79,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Idioma
 # ---------------------------------------------------------------------------
 
+# `ro.product.locale` la deriva el build de esta lista; fijarla ademas a mano
+# genera una propiedad duplicada.
 PRODUCT_LOCALES := es_CO es_ES en_US
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.product.locale=es-CO

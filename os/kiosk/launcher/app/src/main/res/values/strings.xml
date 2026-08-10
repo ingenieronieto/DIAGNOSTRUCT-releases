@@ -12,6 +12,8 @@
     <string name="estado_sin_app_detalle">La aplicacion todavia no esta en el equipo. Se descargara sola en cuanto haya conexion.</string>
     <string name="estado_fallo_titulo">La aplicacion no arranca</string>
     <string name="estado_fallo_detalle">DIAGNOSTRUCT se ha cerrado varias veces seguidas. Reintente, o entre al panel tecnico para revisar el equipo.</string>
+    <string name="estado_arranque_detalle">Abriendo DIAGNOSTRUCT en %1$d s. Toque «Panel tecnico» si necesita entrar.</string>
+    <string name="estado_tregua_titulo">Mantenimiento en curso</string>
     <string name="estado_mantenimiento_titulo">Modo mantenimiento</string>
     <string name="estado_mantenimiento_detalle">El kiosco esta desactivado. El equipo se comporta como una tablet normal hasta que se vuelva a activar.</string>
     <string name="accion_reintentar">Reintentar</string>
@@ -42,6 +44,13 @@
     <string name="tecnico_pin_corto">El PIN necesita al menos 4 cifras</string>
     <string name="tecnico_pin_igual">El PIN nuevo es el mismo que el actual</string>
     <string name="tecnico_pin_cambiado">PIN cambiado</string>
+    <string name="tecnico_pin_bloqueado">Demasiados intentos. Espere %1$d s.</string>
+    <string name="tecnico_wifi_tregua">El kiosco espera %1$d minutos. Vuelva con «Volver a DIAGNOSTRUCT» al terminar.</string>
+
+    <plurals name="estado_tregua_detalle">
+        <item quantity="one">El kiosco esta en pausa durante %1$d minuto mas, a peticion del panel tecnico.</item>
+        <item quantity="other">El kiosco esta en pausa durante %1$d minutos mas, a peticion del panel tecnico.</item>
+    </plurals>
     <string name="tecnico_diagnostico">Propietario del dispositivo: %1$s\nKiosco activo: %2$s\nPaquete: %3$s\nVersion instalada: %4$s\n\nAutorizadas en modo bloqueado:\n%5$s</string>
 
     <!-- Aprovisionamiento -->

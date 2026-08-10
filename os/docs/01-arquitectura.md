@@ -83,6 +83,14 @@ queda inservible, tambien para quien tiene que arreglarlo.
 segundos, se detiene y muestra una pantalla de aviso con acceso al panel
 tecnico.
 
+### La pantalla de inicio se detiene tres segundos al encender
+
+Es la unica puerta fiable al panel tecnico. Con la aplicacion anclada el boton
+de inicio no responde, asi que no hay manera de volver a la pantalla de inicio:
+sin esa ventana, un tecnico en obra no podria ni cambiar de red Wi-Fi. Se paga
+una vez por encendido, no cada vez que se vuelve de la aplicacion, y se anula
+poniendo `BOOT_WINDOW_SECONDS` a cero.
+
 ### La depuracion USB no se bloquea por defecto
 
 `DISALLOW_DEBUGGING_FEATURES` esta disponible pero desactivado. Activarlo antes
