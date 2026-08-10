@@ -55,11 +55,15 @@ object SignaturePin {
             // Se aceptan tanto los firmantes actuales como el historial de
             // rotacion: si algun dia se cambia la clave de firma de la
             // aplicacion, las tablets ya desplegadas la seguiran reconociendo.
-            (signing.apkContentsSigners.orEmpty() + signing.signingCertificateHistory.orEmpty())
-                .toList()
+            //
+            // Se convierte a lista antes de unir: `orEmpty()` sobre un array
+            // devuelve `Array<out T>`, y `plus` esta declarado sobre el `Array<T>`
+            // invariante, asi que unir los dos arrays no compila.
+            signing.apkContentsSigners?.toList().orEmpty() +
+                signing.signingCertificateHistory?.toList().orEmpty()
         } else {
             @Suppress("DEPRECATION")
-            pm.getPackageInfo(pkg, PackageManager.GET_SIGNATURES).signatures.orEmpty().toList()
+            pm.getPackageInfo(pkg, PackageManager.GET_SIGNATURES).signatures?.toList().orEmpty()
         }
     }.getOrElse {
         Log.w(TAG, "No se pudo consultar la firma de $pkg", it)
