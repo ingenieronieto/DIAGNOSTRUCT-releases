@@ -32,12 +32,36 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:letterSpacing">0.01</item>
         <item name="rippleColor">@color/linea</item>
+        <item name="iconSize">20dp</item>
+        <item name="iconPadding">12dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/texto_tenue</item>
     </style>
 
     <!-- La accion principal de cada pantalla, y solo esa, lleva el azul. -->
     <style name="Boton.Acento">
         <item name="strokeColor">@color/acento</item>
         <item name="android:textColor">@color/acento</item>
+        <item name="iconTint">@color/acento</item>
+    </style>
+
+    <!--
+      Las acciones del panel se leen como una lista, no como botones sueltos:
+      icono y texto alineados a la izquierda, para poder recorrerlas de un
+      vistazo en lugar de leer cinco etiquetas centradas.
+    -->
+    <style name="Boton.Lista">
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="iconGravity">start</item>
+        <item name="iconPadding">16dp</item>
+    </style>
+
+    <style name="Boton.Lista.Acento">
+        <item name="strokeColor">@color/acento</item>
+        <item name="android:textColor">@color/acento</item>
+        <item name="iconTint">@color/acento</item>
     </style>
 
     <!-- Acciones secundarias: sin contorno, para que no compitan. -->
@@ -45,6 +69,10 @@
         <item name="android:textColor">@color/texto_tenue</item>
         <item name="android:textAllCaps">false</item>
         <item name="rippleColor">@color/linea</item>
+        <item name="iconSize">20dp</item>
+        <item name="iconPadding">12dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/texto_tenue</item>
     </style>
 
     <style name="Campo">

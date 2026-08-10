@@ -9,6 +9,7 @@ import android.os.SystemClock
 import android.util.Log
 import android.view.View
 import androidx.activity.OnBackPressedCallback
+import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
@@ -93,6 +94,7 @@ class KioskLauncherActivity : AppCompatActivity() {
                 detail = getString(R.string.estado_mantenimiento_detalle),
                 busy = false,
                 showActions = true,
+                icon = R.drawable.ic_mantenimiento,
             )
             return
         }
@@ -107,6 +109,7 @@ class KioskLauncherActivity : AppCompatActivity() {
                 detail = resources.getQuantityString(R.plurals.estado_tregua_detalle, minutos, minutos),
                 busy = false,
                 showActions = true,
+                icon = R.drawable.ic_pausa,
             )
             return
         }
@@ -119,6 +122,7 @@ class KioskLauncherActivity : AppCompatActivity() {
                 detail = getString(R.string.estado_sin_app_detalle),
                 busy = true,
                 showActions = true,
+                icon = R.drawable.ic_descarga,
             )
             UpdateScheduler.checkNow(this)
             return
@@ -202,6 +206,7 @@ class KioskLauncherActivity : AppCompatActivity() {
         detail = getString(R.string.estado_fallo_detalle),
         busy = false,
         showActions = true,
+        icon = R.drawable.ic_alerta,
     )
 
     /**
@@ -230,12 +235,30 @@ class KioskLauncherActivity : AppCompatActivity() {
             .isSuccess
     }
 
-    private fun showState(title: String, detail: String, busy: Boolean, showActions: Boolean) {
+    /**
+     * Pinta un estado. [icon] es opcional: solo llevan señal los estados que el
+     * tecnico debe reconocer sin leer. Durante el arranque normal no se dibuja,
+     * para que la pantalla siga siendo la marca y nada mas.
+     */
+    private fun showState(
+        title: String,
+        detail: String,
+        busy: Boolean,
+        showActions: Boolean,
+        @DrawableRes icon: Int = NO_ICON,
+    ) {
         binding.stateTitle.text = title
         binding.stateDetail.text = detail
         binding.progress.visibility = if (busy) View.VISIBLE else View.GONE
         binding.actionRetry.visibility = if (showActions) View.VISIBLE else View.GONE
         binding.actionTechnician.visibility = if (showActions) View.VISIBLE else View.GONE
+
+        if (icon == NO_ICON) {
+            binding.stateIcon.visibility = View.GONE
+        } else {
+            binding.stateIcon.setImageResource(icon)
+            binding.stateIcon.visibility = View.VISIBLE
+        }
     }
 
     private fun goFullScreen() {
@@ -256,6 +279,9 @@ class KioskLauncherActivity : AppCompatActivity() {
 
         /** Segundos de acceso al panel tras encender. Poner a 0 lo desactiva. */
         const val BOOT_WINDOW_SECONDS = 3
+
+        /** Estado sin señal: la pantalla se queda solo con la marca. */
+        const val NO_ICON = 0
 
         /**
          * Vive en el companion a proposito: se quiere una ventana por arranque

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondo"
@@ -59,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="26dp"
                 android:minHeight="52dp"
-                android:text="@string/tecnico_entrar" />
+                android:text="@string/tecnico_entrar"
+                app:icon="@drawable/ic_entrar" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_cancel"
@@ -68,7 +70,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:minHeight="52dp"
-                android:text="@string/tecnico_cancelar" />
+                android:text="@string/tecnico_cancelar"
+                app:icon="@drawable/ic_cancelar" />
         </LinearLayout>
 
         <!-- Estado desbloqueado: acciones de mantenimiento -->
@@ -83,47 +86,52 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_open_app"
-                style="@style/Boton.Acento"
+                style="@style/Boton.Lista.Acento"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:minHeight="52dp"
-                android:text="@string/tecnico_abrir_app" />
+                android:text="@string/tecnico_abrir_app"
+                app:icon="@drawable/ic_volver" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_wifi"
-                style="@style/Boton"
+                style="@style/Boton.Lista"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:minHeight="52dp"
-                android:text="@string/tecnico_wifi" />
+                android:text="@string/tecnico_wifi"
+                app:icon="@drawable/ic_wifi" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_update"
-                style="@style/Boton"
+                style="@style/Boton.Lista"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:minHeight="52dp"
-                android:text="@string/tecnico_actualizar" />
+                android:text="@string/tecnico_actualizar"
+                app:icon="@drawable/ic_actualizar" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_reapply"
-                style="@style/Boton"
+                style="@style/Boton.Lista"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:minHeight="52dp"
-                android:text="@string/tecnico_reaplicar" />
+                android:text="@string/tecnico_reaplicar"
+                app:icon="@drawable/ic_politica" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_toggle_kiosk"
-                style="@style/Boton"
+                style="@style/Boton.Lista"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:minHeight="52dp"
-                android:text="@string/tecnico_entrar_mantenimiento" />
+                android:text="@string/tecnico_entrar_mantenimiento"
+                app:icon="@drawable/ic_mantenimiento" />
 
             <!-- Cambio del PIN de mantenimiento -->
             <TextView
@@ -154,12 +162,13 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/action_change_pin"
-                style="@style/Boton"
+                style="@style/Boton.Lista"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:minHeight="52dp"
-                android:text="@string/tecnico_cambiar_pin" />
+                android:text="@string/tecnico_cambiar_pin"
+                app:icon="@drawable/ic_pin" />
 
             <TextView
                 android:id="@+id/diagnostics"
