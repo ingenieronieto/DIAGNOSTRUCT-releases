@@ -1,13 +1,12 @@
 {
-  "version": "1.93.0",
+  "version": "1.94.0",
   "fecha": "2026-08-11",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLADO YA: los botones del menú (INICIO, NORMAS, DIAGNÓSTICO, CONFIGURACIÓN, VOLVER...) dejaron de responder en la 1.92. Una regla de pantalla pensada para las barras de Guardar afectaba también al menú y dejaba el velo de fondo por encima, comiéndose los toques.",
-    "El ZIP de fotos pide los enlaces en lotes de cien: bajaba 5 fotos de 201 porque el servidor rechazaba la ráfaga de peticiones.",
-    "Si un enlace no sirve se pide uno nuevo y se reintenta; ninguna foto se descarta en silencio.",
-    "Si alguna no se puede bajar, el aviso dice POR QUÉ."
+    "NUEVO: pantalla de fotos retenidas. Las fotos que el servidor rechaza varias veces quedaban guardadas en el equipo pero invisibles. Ahora se ven desde el aviso rojo, con el motivo del rechazo, y se pueden guardar en el teléfono, reintentar una a una o descartar.",
+    "IMPORTANTE: una foto que el servidor no acepta ya no se pierde: se puede sacar del equipo antes de descartarla.",
+    "Los tipos de ensayo nuevos ya guardan (inclinometría, extracción de barras, durometría, tintas penetrantes y ultrasonido en metales). Requiere el SQL del 2026-08-11."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.93.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.94.0.apk"
 }
