@@ -1,14 +1,17 @@
 {
-  "version": "1.87.0",
-  "fecha": "2026-08-03",
+  "version": "1.90.0",
+  "fecha": "2026-08-10",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLADO: Inclinometría y Extracción de barras no guardaban sus datos (desplome, altura, cargas, longitudes). Se perdían al recargar, con o sin internet.",
-    "Corregido el número de versión que mostraba la app y el aviso de actualización repetido.",
-    "Los cambios del proyecto ya no se pierden sin señal.",
-    "Los firmantes están disponibles sin internet para los informes.",
-    "El contador de pendientes incluye los modelos 3D y el botón sí los sube."
+    "ARREGLADO: las fotos de lesiones y de madera ya se pueden adjuntar. No se podía desde la versión 1.81, con internet o sin él.",
+    "ARREGLADO: en el celular ya se puede imprimir y guardar en PDF. Antes el botón no hacía nada.",
+    "ARREGLADO: la entrega de reportes se imprimía en blanco.",
+    "ARREGLADO: el ZIP con todas las fotos y la copia de seguridad ahora sí quedan guardados en el equipo (y se pueden mandar por WhatsApp o Drive).",
+    "Exportar a Excel, PNG, DXF y JSON ya funciona desde el celular. El Excel de ensayos, además, ya no necesita internet.",
+    "Las fichas creadas sin señal ya no se pueden duplicar al subirse.",
+    "Arreglada la pantalla en el celular: el menú ya no lo tapa la barra del sistema, las tablas se pueden desplazar y el botón Guardar no queda debajo del chat.",
+    "Ya nada se borra solo: lo que el servidor rechaza queda en pausa, nunca se descarta."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.87.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.90.0.apk"
 }
