@@ -1,12 +1,14 @@
 {
-  "version": "1.94.0",
+  "version": "1.95.0",
   "fecha": "2026-08-11",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO: pantalla de fotos retenidas. Las fotos que el servidor rechaza varias veces quedaban guardadas en el equipo pero invisibles. Ahora se ven desde el aviso rojo, con el motivo del rechazo, y se pueden guardar en el teléfono, reintentar una a una o descartar.",
-    "IMPORTANTE: una foto que el servidor no acepta ya no se pierde: se puede sacar del equipo antes de descartarla.",
-    "Los tipos de ensayo nuevos ya guardan (inclinometría, extracción de barras, durometría, tintas penetrantes y ultrasonido en metales). Requiere el SQL del 2026-08-11."
+    "ARREGLADO: el f'c aparente salía en blanco en algunos informes de esclerometría y regatas. Una misma clave servía para dos cosas distintas y se pisaban entre sí.",
+    "ARREGLADO: Ferroscan perdía el nombre del escaneo (que el formulario exige para poder guardar) y sus dos fotos.",
+    "ARREGLADO: en núcleos se perdían el año de construcción y el recubrimiento de diseño, con lo que el veredicto de carbonatación desaparecía al reabrir la ficha.",
+    "ARREGLADO: el historial de ediciones no se guardaba nunca, así que ese bloque del informe salía siempre vacío.",
+    "ARREGLADO: tres pantallas que se caían en blanco (mapa de ferroscan, vista PM-Link y el consolidado del proyecto al llegar la primera foto)."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.94.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.95.0.apk"
 }
