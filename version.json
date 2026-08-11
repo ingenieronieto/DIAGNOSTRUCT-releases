@@ -1,13 +1,13 @@
 {
-  "version": "1.92.0",
+  "version": "1.93.0",
   "fecha": "2026-08-11",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLADO: el ZIP bajaba 5 fotos de 201. Se pedía un enlace de descarga por cada foto, y el servidor rechazaba el resto de la ráfaga. Ahora se piden en lotes de cien: son dos o tres peticiones y tarda segundos.",
-    "Si un enlace está vencido se pide uno nuevo y se reintenta. Los archivos nunca se perdieron.",
-    "Las fotos de lesiones se buscaban en el almacén equivocado; ya no.",
-    "Si alguna foto no se puede bajar, el aviso dice POR QUÉ, no solo cuántas."
+    "ARREGLADO YA: los botones del menú (INICIO, NORMAS, DIAGNÓSTICO, CONFIGURACIÓN, VOLVER...) dejaron de responder en la 1.92. Una regla de pantalla pensada para las barras de Guardar afectaba también al menú y dejaba el velo de fondo por encima, comiéndose los toques.",
+    "El ZIP de fotos pide los enlaces en lotes de cien: bajaba 5 fotos de 201 porque el servidor rechazaba la ráfaga de peticiones.",
+    "Si un enlace no sirve se pide uno nuevo y se reintenta; ninguna foto se descarta en silencio.",
+    "Si alguna no se puede bajar, el aviso dice POR QUÉ."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.92.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.93.0.apk"
 }
