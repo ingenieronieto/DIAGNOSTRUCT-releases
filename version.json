@@ -1,17 +1,15 @@
 {
-  "version": "1.90.0",
-  "fecha": "2026-08-10",
+  "version": "1.91.0",
+  "fecha": "2026-08-11",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLADO: las fotos de lesiones y de madera ya se pueden adjuntar. No se podía desde la versión 1.81, con internet o sin él.",
-    "ARREGLADO: en el celular ya se puede imprimir y guardar en PDF. Antes el botón no hacía nada.",
-    "ARREGLADO: la entrega de reportes se imprimía en blanco.",
-    "ARREGLADO: el ZIP con todas las fotos y la copia de seguridad ahora sí quedan guardados en el equipo (y se pueden mandar por WhatsApp o Drive).",
-    "Exportar a Excel, PNG, DXF y JSON ya funciona desde el celular. El Excel de ensayos, además, ya no necesita internet.",
-    "Las fichas creadas sin señal ya no se pueden duplicar al subirse.",
-    "Arreglada la pantalla en el celular: el menú ya no lo tapa la barra del sistema, las tablas se pueden desplazar y el botón Guardar no queda debajo del chat.",
-    "Ya nada se borra solo: lo que el servidor rechaza queda en pausa, nunca se descarta."
+    "ARREGLADO: el ZIP de fotos bajaba solo unas pocas. Las fotos antiguas guardaban un enlace de descarga que caduca; ahora, si el enlace está vencido, se pide uno nuevo y la foto se recupera. Los archivos nunca se perdieron.",
+    "Si alguna foto igual no se puede bajar, el aviso ahora dice POR QUÉ, no solo cuántas.",
+    "Las fotos de lesiones y de madera ya se pueden adjuntar (no se podía desde la 1.81, con internet o sin él).",
+    "Imprimir la entrega ya no sale en blanco, y 'imprimir todas' saca todas las hojas.",
+    "Exportar a Excel, CSV, PNG y DXF ya funciona desde el celular.",
+    "Las fichas creadas sin señal ya no se duplican al subir."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.90.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.91.0.apk"
 }
