@@ -1,15 +1,13 @@
 {
-  "version": "1.91.0",
+  "version": "1.92.0",
   "fecha": "2026-08-11",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLADO: el ZIP de fotos bajaba solo unas pocas. Las fotos antiguas guardaban un enlace de descarga que caduca; ahora, si el enlace está vencido, se pide uno nuevo y la foto se recupera. Los archivos nunca se perdieron.",
-    "Si alguna foto igual no se puede bajar, el aviso ahora dice POR QUÉ, no solo cuántas.",
-    "Las fotos de lesiones y de madera ya se pueden adjuntar (no se podía desde la 1.81, con internet o sin él).",
-    "Imprimir la entrega ya no sale en blanco, y 'imprimir todas' saca todas las hojas.",
-    "Exportar a Excel, CSV, PNG y DXF ya funciona desde el celular.",
-    "Las fichas creadas sin señal ya no se duplican al subir."
+    "ARREGLADO: el ZIP bajaba 5 fotos de 201. Se pedía un enlace de descarga por cada foto, y el servidor rechazaba el resto de la ráfaga. Ahora se piden en lotes de cien: son dos o tres peticiones y tarda segundos.",
+    "Si un enlace está vencido se pide uno nuevo y se reintenta. Los archivos nunca se perdieron.",
+    "Las fotos de lesiones se buscaban en el almacén equivocado; ya no.",
+    "Si alguna foto no se puede bajar, el aviso dice POR QUÉ, no solo cuántas."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.91.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.92.0.apk"
 }
