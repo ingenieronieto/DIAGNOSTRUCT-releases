@@ -1,0 +1,514 @@
+<title>DIAGNOSTRUCT · Brochure</title>
+<style>
+  @page { size: A4; margin: 0; }
+
+  :root{
+    --navy:#1F3864;
+    --navy-soft:#eaeff7;
+    --navy-line:#c8d4e6;
+    --ink:#16202f;
+    --muted:#5c6a7e;
+    --rule:#dfe4ec;
+    --accent:#2563EB;
+    --paper:#ffffff;
+    --sans:Calibri,"Carlito","Segoe UI",system-ui,-apple-system,sans-serif;
+  }
+
+  *{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    background:#8b93a3;
+    font-family:var(--sans);
+    color:var(--ink);
+    font-size:10.5pt;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .hoja{
+    width:210mm;
+    height:297mm;
+    background:var(--paper);
+    margin:0 auto 8mm;
+    padding:16mm 18mm 14mm;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* ---------- Portada ---------- */
+  .portada{ padding:0; justify-content:flex-start; }
+
+  .portada__banda{
+    background:var(--navy);
+    color:#fff;
+    padding:22mm 18mm 16mm;
+    position:relative;
+  }
+  .portada__banda::after{
+    content:"";
+    position:absolute; left:0; right:0; bottom:0;
+    height:2.4mm; background:var(--accent);
+  }
+  .marca-fila{ display:flex; align-items:center; gap:7mm; }
+  .marca-plate{
+    width:26mm; height:26mm; flex:none;
+    border:0.4mm solid rgba(255,255,255,.32); border-radius:2mm;
+    display:grid; place-items:center; background:#09090B;
+  }
+  .marca-plate svg{ width:20mm; height:20mm; display:block; }
+  .marca-txt .casa{
+    font-size:12pt; font-weight:700; letter-spacing:.09em; margin:0;
+  }
+  .marca-txt .casa small{
+    display:block; font-weight:400; font-size:9pt;
+    letter-spacing:.05em; color:#b9c8e2; font-style:italic; margin-top:1mm;
+  }
+
+  .portada h1{
+    font-size:40pt; font-weight:700; letter-spacing:.02em;
+    margin:14mm 0 0; line-height:1;
+  }
+  .portada .lema{
+    font-size:13.5pt; font-weight:300; color:#cfdcf0;
+    margin:5mm 0 0; max-width:135mm; line-height:1.35;
+  }
+  .portada__sello{
+    display:inline-flex; align-items:baseline; gap:3mm;
+    margin-top:9mm; padding:2mm 5mm;
+    border:0.35mm solid rgba(255,255,255,.4); border-radius:1.5mm;
+    font-size:9.5pt; letter-spacing:.06em;
+  }
+  .portada__sello b{ font-size:11pt; }
+
+  .portada__cuerpo{ padding:12mm 18mm 0; flex:1; display:flex; flex-direction:column; }
+
+  .entrada{
+    font-size:12pt; line-height:1.55; color:var(--ink);
+    max-width:150mm; margin:0 0 9mm;
+  }
+  .entrada strong{ color:var(--navy); }
+
+  .cifras{
+    display:grid; grid-template-columns:repeat(4,1fr);
+    gap:0; border-top:0.5mm solid var(--navy); border-bottom:0.3mm solid var(--rule);
+  }
+  .cifra{ padding:5mm 4mm 5mm 0; }
+  .cifra + .cifra{ padding-left:5mm; border-left:0.3mm solid var(--rule); }
+  .cifra .n{ font-size:22pt; font-weight:700; color:var(--navy); line-height:1; }
+  .cifra .t{ font-size:8.5pt; color:var(--muted); margin-top:2mm; line-height:1.35; }
+
+  /* ---------- Estructura general de página ---------- */
+  .cabecera{
+    display:flex; justify-content:space-between; align-items:baseline;
+    border-bottom:0.6mm solid var(--navy); padding-bottom:3mm; margin-bottom:8mm;
+  }
+  .cabecera .izq{ font-size:9pt; font-weight:700; letter-spacing:.12em; color:var(--navy); }
+  .cabecera .der{ font-size:8.5pt; color:var(--muted); font-style:italic; }
+
+  h2{
+    font-size:18pt; font-weight:700; color:var(--navy);
+    margin:0 0 3mm; letter-spacing:-.01em; line-height:1.15;
+  }
+  .bajada{ font-size:10.5pt; color:var(--muted); margin:0 0 7mm; max-width:150mm; }
+
+  h3{
+    font-size:11pt; font-weight:700; color:var(--navy);
+    margin:0 0 2mm;
+  }
+
+  p{ margin:0 0 3mm; }
+
+  .lista{ list-style:none; margin:0; padding:0; }
+  .lista li{
+    position:relative; padding-left:6mm; margin-bottom:2.2mm; line-height:1.45;
+  }
+  .lista li::before{
+    content:"♣"; position:absolute; left:0; top:0;
+    color:var(--accent); font-size:9pt;
+  }
+  .lista li b{ color:var(--navy); }
+
+  /* ---------- Bloques ---------- */
+  .dos{ display:grid; grid-template-columns:1fr 1fr; gap:8mm; }
+
+  .tarjeta{
+    border:0.3mm solid var(--rule); border-left:1.2mm solid var(--navy);
+    border-radius:0 1.5mm 1.5mm 0;
+    padding:5mm 5mm 4mm; background:#fcfdff;
+    break-inside:avoid;
+  }
+  .tarjeta h3{ margin-bottom:2.5mm; }
+  .tarjeta p{ font-size:9.5pt; color:var(--muted); margin:0; }
+
+  .modulo{ margin-bottom:6mm; break-inside:avoid; }
+  .modulo__t{
+    display:flex; align-items:baseline; gap:3mm;
+    border-bottom:0.3mm solid var(--navy-line); padding-bottom:1.5mm; margin-bottom:3mm;
+  }
+  .modulo__t h3{ margin:0; }
+  .modulo__t span{ font-size:8pt; color:var(--muted); font-style:italic; margin-left:auto; }
+  .modulo .lista li{ font-size:9.5pt; margin-bottom:1.6mm; }
+
+  /* ---------- Tabla de ensayos ---------- */
+  table{ width:100%; border-collapse:collapse; font-size:9.5pt; }
+  thead th{
+    background:var(--navy); color:#fff; text-align:left;
+    padding:2.5mm 3mm; font-weight:700; font-size:8.5pt;
+    letter-spacing:.06em; text-transform:uppercase;
+  }
+  tbody td{ padding:2.2mm 3mm; border-bottom:0.25mm solid var(--rule); vertical-align:top; }
+  tbody tr:nth-child(even){ background:#f7f9fc; }
+  td.norma{ color:var(--muted); font-size:8.5pt; white-space:nowrap; }
+
+  .nota{
+    background:var(--navy-soft); border-left:1.2mm solid var(--accent);
+    padding:4mm 5mm; font-size:9.5pt; color:var(--ink); margin-top:6mm;
+  }
+  .nota b{ color:var(--navy); }
+
+  /* ---------- Ficha y cierre ---------- */
+  .ficha{ display:grid; grid-template-columns:auto 1fr; gap:2mm 6mm; font-size:9.5pt; }
+  .ficha dt{ color:var(--muted); font-size:8.5pt; text-transform:uppercase; letter-spacing:.06em; padding-top:.6mm; }
+  .ficha dd{ margin:0; }
+
+  .contacto{
+    margin-top:auto; background:var(--navy); color:#fff;
+    padding:8mm 9mm; border-radius:2mm;
+  }
+  .contacto h3{ color:#fff; font-size:13pt; margin-bottom:3mm; }
+  .contacto p{ color:#cfdcf0; font-size:10pt; margin-bottom:5mm; max-width:120mm; }
+  .contacto__datos{ display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; font-size:9.5pt; }
+  .contacto__datos div span{
+    display:block; color:#93a9cc; font-size:8pt;
+    text-transform:uppercase; letter-spacing:.08em; margin-bottom:1mm;
+  }
+
+  .pie{
+    margin-top:6mm; padding-top:3mm; border-top:0.3mm solid var(--rule);
+    text-align:center; font-style:italic; font-size:8.5pt; color:var(--muted); line-height:1.5;
+  }
+  .pie span{ display:block; }
+
+  .folio{
+    position:absolute; right:18mm; bottom:8mm;
+    font-size:8pt; color:var(--muted); letter-spacing:.1em;
+  }
+
+  @media print{
+    body{ background:#fff; }
+    .hoja{ margin:0; box-shadow:none; page-break-after:always; }
+    .hoja:last-child{ page-break-after:auto; }
+  }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="marca" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="#09090B"/>
+      <circle cx="50" cy="14" r="4" fill="#FFFFFF"/>
+      <line x1="50" y1="18" x2="18" y2="78" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="50" y1="18" x2="82" y2="78" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="18" y1="78" x2="30" y2="84" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+      <line x1="82" y1="78" x2="70" y2="84" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+      <text x="50" y="54" text-anchor="middle" dominant-baseline="central"
+            font-family="Georgia, 'Times New Roman', serif" font-size="42"
+            font-weight="700" fill="#FFFFFF" font-style="italic">π</text>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ══════════════════ 1 · PORTADA ══════════════════ -->
+<section class="hoja portada">
+  <div class="portada__banda">
+    <div class="marca-fila">
+      <div class="marca-plate"><svg role="img" aria-label="Marca"><use href="#marca"/></svg></div>
+      <div class="marca-txt">
+        <p class="casa">ING. NIETO PATÓLOGO
+          <small>QATRO S.A.S. · Patología y diagnóstico estructural</small>
+        </p>
+      </div>
+    </div>
+
+    <h1>DIAGNOSTRUCT</h1>
+    <p class="lema">Del ensayo en obra al informe firmado, sin pasar por la libreta.</p>
+
+    <div class="portada__sello">
+      <span>VERSIÓN</span><b>1.95.0</b><span>· 11 de agosto de 2026</span>
+    </div>
+  </div>
+
+  <div class="portada__cuerpo">
+    <p class="entrada">
+      DIAGNOSTRUCT es la aplicación con la que levantamos, calculamos y
+      documentamos un estudio de patología estructural completo.
+      <strong>Toda la jornada de campo entra por el celular</strong> —ensayos,
+      lesiones, fotos, topografía— y sale como informe imprimible con el marco
+      normativo colombiano ya aplicado.
+    </p>
+
+    <div class="cifras">
+      <div class="cifra">
+        <div class="n">12</div>
+        <div class="t">Ensayos ED y END con formulario, lista y hoja de reporte</div>
+      </div>
+      <div class="cifra">
+        <div class="n">3</div>
+        <div class="t">Superconjuntos: patología, vulnerabilidad y reforzamiento</div>
+      </div>
+      <div class="cifra">
+        <div class="n">0</div>
+        <div class="t">Señal necesaria en obra: trabaja completa sin conexión</div>
+      </div>
+      <div class="cifra">
+        <div class="n">4</div>
+        <div class="t">Formatos de exportación del modelo 3D</div>
+      </div>
+    </div>
+
+    <div class="pie" style="margin-top:auto">
+      <span>Ing. Francisco A. Nieto F.</span>
+      <span>MP 091037-0603457 CND</span>
+      <span>Tel. 300 453 1084</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 2 · QUÉ RESUELVE ══════════════════ -->
+<section class="hoja">
+  <div class="cabecera">
+    <div class="izq">DIAGNOSTRUCT</div>
+    <div class="der">El problema que resuelve</div>
+  </div>
+
+  <h2>Un estudio de patología no se pierde<br>en el camino de vuelta</h2>
+  <p class="bajada">
+    Entre la obra y el informe se cae la mitad del trabajo: lecturas en libreta que
+    hay que volver a digitar, fotos sueltas en la galería del celular, un Excel por
+    ensayo y semanas de gabinete armando el documento. DIAGNOSTRUCT cierra ese
+    camino.
+  </p>
+
+  <div class="dos" style="margin-bottom:8mm">
+    <div class="tarjeta">
+      <h3>Se captura una sola vez</h3>
+      <p>El dato entra en obra, en el formulario del ensayo, con su foto y su
+      ubicación sobre el plano. De ahí sale directo al análisis, a la hoja de
+      reporte y al consolidado del proyecto. No se vuelve a digitar nunca.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>La norma va incorporada</h3>
+      <p>Los criterios de aceptación, las correcciones y el análisis estadístico
+      están dentro del cálculo, no en la cabeza del que redacta. El veredicto sale
+      con el ensayo.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom:3mm">Cómo se comporta en obra</h3>
+  <ul class="lista" style="margin-bottom:8mm">
+    <li><b>Sin señal, igual funciona.</b> Es una aplicación instalable (PWA) que
+    guarda todo en el equipo y lo sube solo cuando vuelve la conexión. Sótanos,
+    bodegas y zonas rurales no interrumpen la jornada.</li>
+    <li><b>Cola de sincronización aislada por tipo de dato.</b> Las lesiones y los
+    ensayos tienen colas separadas, y las fotos su propio almacén, para que un
+    problema de subida no arrastre lo demás.</li>
+    <li><b>Lo pendiente se ve.</b> Lo que aún no ha subido queda marcado en
+    pantalla, así nadie se va de la obra creyendo que ya está todo guardado.</li>
+    <li><b>Se instala encima.</b> Cada versión nueva se instala sobre la anterior y
+    conserva proyectos, ensayos y fotos.</li>
+  </ul>
+
+  <h3 style="margin-bottom:3mm">Cómo se comporta en gabinete</h3>
+  <ul class="lista">
+    <li><b>Cada empresa, aislada.</b> El aislamiento entre empresas se hace en la
+    base de datos (RLS en Postgres), no solo en la pantalla.</li>
+    <li><b>Formatos imprimibles unificados.</b> Todas las hojas de reporte comparten
+    el mismo formato y salen en tamaño de papel real, listas para el informe.</li>
+    <li><b>Consolidado del proyecto.</b> Reúne los ensayos, las lesiones y las fotos
+    de todas las estructuras en un solo documento.</li>
+    <li><b>Chat interno por empresa</b>, general y por proyecto, para coordinar la
+    jornada sin salir de la aplicación.</li>
+  </ul>
+
+  <div class="folio">2</div>
+</section>
+
+<!-- ══════════════════ 3 · MÓDULOS ══════════════════ -->
+<section class="hoja">
+  <div class="cabecera">
+    <div class="izq">DIAGNOSTRUCT</div>
+    <div class="der">Alcance de la aplicación</div>
+  </div>
+
+  <h2>Tres superconjuntos de estudio</h2>
+  <p class="bajada">
+    Patología → Vulnerabilidad → Reforzamiento. El mismo orden en que avanza un
+    peritaje, y el mismo en que se recorre la aplicación.
+  </p>
+
+  <div class="modulo">
+    <div class="modulo__t"><h3>Patología constructiva</h3><span>El grueso del trabajo de campo</span></div>
+    <ul class="lista">
+      <li><b>Diagnóstico estructural</b> — historia clínica de la edificación:
+      identificación, análisis del entorno, anamnesis y diagnóstico.</li>
+      <li><b>Plan de auscultamiento</b> — planeación de la jornada: cantidades,
+      rendimientos, cronograma día a día y ubicación de cada ensayo sobre el plano.</li>
+      <li><b>Ensayos ED y END</b> — destructivos y no destructivos, in-situ y de
+      laboratorio, cada uno con formulario, lista y hoja de reporte imprimible.</li>
+      <li><b>Cartilla de lesiones</b> — inventario de patologías de concreto y
+      mampostería con matriz 4×4 de afectación, y glosario de patología, corrosión
+      y rehabilitación.</li>
+      <li><b>Estudio fitosanitario</b> — elementos en madera: inventario,
+      mediciones de humedad sobre el plano y plan de tratamientos (NSR-10 Título G).</li>
+      <li><b>Control A.V.F.</b> — asentamiento, verticalidad y fisuras: dianas,
+      niveletas y fisurómetros sobre el plano, con mapa de calor, conjunto 3D e
+      historial por control.</li>
+      <li><b>Modelado estructural 3D</b> — nodos, barras, placas, cargas y apoyos
+      del estado encontrado.</li>
+      <li><b>Registro fotográfico</b> — un solo álbum con las fotos de campo, las
+      de ensayos y las de lesiones.</li>
+    </ul>
+  </div>
+
+  <div class="modulo">
+    <div class="modulo__t"><h3>Vulnerabilidad sísmica</h3><span>Marco NSR-10</span></div>
+    <ul class="lista">
+      <li><b>Espectro de diseño</b> — NSR-10 A.2.6 y microzonificaciones, con fuerza
+      horizontal equivalente y distribución vertical.</li>
+      <li><b>Vida útil de la estructura</b> — durabilidad y estimación de vida útil
+      residual (Código Estructural RD 470/2021 y EHE-08).</li>
+    </ul>
+  </div>
+
+  <div class="modulo">
+    <div class="modulo__t"><h3>Diseño estructural y de reforzamiento</h3><span>La salida del estudio</span></div>
+    <ul class="lista">
+      <li><b>Diseño de elementos</b> — cuantía de refuerzo y Steel Framing.</li>
+      <li><b>Diseño de mezcla de concreto</b> — dosificación ACI 211.1 con
+      sobre-resistencia según NSR-10.</li>
+    </ul>
+  </div>
+
+  <div class="nota">
+    <b>Exportación del modelo 3D.</b> El levantamiento sale a <b>SAP2000</b>,
+    <b>ETABS</b>, <b>OpenSees</b> y <b>DXF</b>, de modo que el modelo del estado
+    encontrado se entrega listo para el análisis en la herramienta de cálculo que
+    use el proyecto.
+  </div>
+
+  <div class="folio">3</div>
+</section>
+
+<!-- ══════════════════ 4 · ENSAYOS ══════════════════ -->
+<section class="hoja">
+  <div class="cabecera">
+    <div class="izq">DIAGNOSTRUCT</div>
+    <div class="der">Ensayos disponibles</div>
+  </div>
+
+  <h2>Doce ensayos, con su norma</h2>
+  <p class="bajada">
+    Cada uno trae su formulario de campo, su lista de resultados y su hoja de
+    reporte imprimible. El criterio de aceptación va dentro del cálculo.
+  </p>
+
+  <table>
+    <thead>
+      <tr><th style="width:52%">Ensayo</th><th>Referencia normativa</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Esclerometría</td><td class="norma">ASTM C805 / C805M</td></tr>
+      <tr><td>Extracción de núcleos de concreto</td><td class="norma">ASTM C42 · NTC 3658 · NSR-10 C.5.6.5</td></tr>
+      <tr><td>Identificación de refuerzo (regatas)</td><td class="norma">NSR-10 C.7.7</td></tr>
+      <tr><td>Ferroscan · Profometer (FRS)</td><td class="norma">NSR-10 C.7.7</td></tr>
+      <tr><td>Perfil de carbonatación</td><td class="norma">AATH 2020 · ALCONPAT</td></tr>
+      <tr><td>Potencial de corrosión</td><td class="norma">ASTM C876 · NTC 4019</td></tr>
+      <tr><td>Ultrasonido en concreto</td><td class="norma">ASTM C597</td></tr>
+      <tr><td>Ultrasonido en metales</td><td class="norma">ASME V (Art. 23)</td></tr>
+      <tr><td>Tintas penetrantes</td><td class="norma">ASTM E165 · ISO 3452</td></tr>
+      <tr><td>Durometría</td><td class="norma">ASTM A956 / A956M</td></tr>
+      <tr><td>Extracción de barras de acero</td><td class="norma">NTC 2289</td></tr>
+      <tr><td>Inclinometría (desplome)</td><td class="norma">Control topográfico</td></tr>
+    </tbody>
+  </table>
+
+  <div class="dos" style="margin-top:8mm">
+    <div class="tarjeta">
+      <h3>Aceptación de núcleos</h3>
+      <p>Criterio NSR-10 C.5.6.5 aplicado automáticamente: promedio ≥ 85% de f'c y
+      ningún individual por debajo del 75%. Con corrección por esbeltez según
+      NTC 3658.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>Análisis estadístico</h3>
+      <p>Depuración de datos atípicos por el criterio de Chauvenet y análisis según
+      NTC 2275, sobre el conjunto de resultados del proyecto.</p>
+    </div>
+  </div>
+
+  <div class="nota">
+    <b>Sobre los núcleos.</b> La extracción en obra y la redacción del informe son
+    trabajo propio de la oficina; el laboratorio externo interviene únicamente en el
+    ensayo de compresión de la probeta.
+  </div>
+
+  <div class="folio">4</div>
+</section>
+
+<!-- ══════════════════ 5 · FICHA Y CONTACTO ══════════════════ -->
+<section class="hoja">
+  <div class="cabecera">
+    <div class="izq">DIAGNOSTRUCT</div>
+    <div class="der">Ficha técnica</div>
+  </div>
+
+  <h2>Cómo está hecha y cómo se entrega</h2>
+  <p class="bajada">
+    Aplicación instalable en tablet y celular Android, con servidor propio y
+    actualización automática.
+  </p>
+
+  <dl class="ficha" style="margin-bottom:8mm">
+    <dt>Versión</dt><dd>1.95.0 — 11 de agosto de 2026</dd>
+    <dt>Plataforma</dt><dd>Aplicación web instalable (PWA) y APK de Android</dd>
+    <dt>Uso sin conexión</dt><dd>Completo en campo, con sincronización al recuperar la señal</dd>
+    <dt>Datos</dt><dd>Servidor propio sobre Postgres, con aislamiento por empresa a nivel de base de datos</dd>
+    <dt>Almacenamiento</dt><dd>Fotos y anexos en el servidor del proyecto, ligados a cada ensayo o lesión</dd>
+    <dt>Actualización</dt><dd>La aplicación revisa si hay versión nueva al abrirse y al recuperar la señal; se instala encima, sin perder datos</dd>
+    <dt>Versión mínima</dt><dd>1.70.0 para seguir recibiendo actualizaciones</dd>
+    <dt>Marco normativo</dt><dd>NSR-10, NTC, AIS, ACI, ASTM, ASME y EHE-08 según el módulo</dd>
+    <dt>Idioma</dt><dd>Español</dd>
+  </dl>
+
+  <h3 style="margin-bottom:3mm">Equipos de campo</h3>
+  <p style="color:var(--muted); font-size:9.5pt; margin-bottom:7mm">
+    Las tablets de trabajo se entregan configuradas en modo kiosco: encienden
+    directamente en DIAGNOSTRUCT, se actualizan solas y reservan el acceso al
+    sistema a un panel técnico protegido con PIN. El equipo llega listo para la
+    obra, sin configuración por parte del usuario.
+  </p>
+
+  <div class="contacto">
+    <h3>Hablemos del estudio que necesita</h3>
+    <p>Evaluación patológica, vulnerabilidad sísmica, control de asentamiento y
+    verticalidad, y diseño de reforzamiento estructural.</p>
+    <div class="contacto__datos">
+      <div><span>Profesional</span>Ing. Francisco A. Nieto F.</div>
+      <div><span>Matrícula</span>MP 091037-0603457 CND</div>
+      <div><span>Teléfono</span>300 453 1084</div>
+      <div><span>Correo</span>nietoingeniero@gmail.com</div>
+      <div><span>Marca</span>ING. NIETO PATÓLOGO</div>
+      <div><span>Empresa</span>QATRO S.A.S.</div>
+    </div>
+  </div>
+
+  <div class="pie">
+    <span>Ing. Francisco A. Nieto F.</span>
+    <span>MP 091037-0603457 CND</span>
+    <span>Tel. 300 453 1084</span>
+  </div>
+
+  <div class="folio">5</div>
+</section>
