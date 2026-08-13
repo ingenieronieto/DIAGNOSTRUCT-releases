@@ -1,14 +1,14 @@
 {
-  "version": "1.85.0",
-  "fecha": "2026-08-03",
+  "version": "1.95.0",
+  "fecha": "2026-08-11",
   "minima": "1.70.0",
   "notas": [
-    "Los cambios del proyecto ya no se pierden sin señal: se guardan y se suben al reconectar.",
-    "Los firmantes están disponibles sin internet para los informes.",
-    "El contador de pendientes ahora incluye los modelos 3D y el botón sí los sube.",
-    "Si al equipo le falta espacio para guardar, ahora te avisa (antes fallaba en silencio).",
-    "Se dejó de guardar información innecesaria en el equipo, que podía llenarlo."
+    "ARREGLADO: el f'c aparente salía en blanco en algunos informes de esclerometría y regatas. Una misma clave servía para dos cosas distintas y se pisaban entre sí.",
+    "ARREGLADO: Ferroscan perdía el nombre del escaneo (que el formulario exige para poder guardar) y sus dos fotos.",
+    "ARREGLADO: en núcleos se perdían el año de construcción y el recubrimiento de diseño, con lo que el veredicto de carbonatación desaparecía al reabrir la ficha.",
+    "ARREGLADO: el historial de ediciones no se guardaba nunca, así que ese bloque del informe salía siempre vacío.",
+    "ARREGLADO: tres pantallas que se caían en blanco (mapa de ferroscan, vista PM-Link y el consolidado del proyecto al llegar la primera foto)."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.85.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.95.0.apk"
 }

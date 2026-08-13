@@ -12,6 +12,7 @@ Aquí solo se publica su instalador ya compilado.
 |---|---|
 | `version.json` | Le dice a la app qué versión hay publicada y de dónde bajarla. |
 | `DIAGNOSTRUCT-SDK.apk` | El instalador de Android (siempre el más reciente, con este mismo nombre). |
+| `HISTORIAL-VERSIONES.md` | Copia de seguridad: commit y SHA-256 de cada versión publicada, y cómo volver a una anterior. |
 | [`os/`](os/) | **DIAGNOSTRUCT OS**: el sistema que deja la tablet dedicada a la app y nada más. |
 
 > Como el repositorio es público, aquí no entra ninguna clave: ni la de firma
@@ -31,6 +32,17 @@ versión mayor, avisa dentro de la app con un botón para actualizar.
 
 En las tablets con DIAGNOSTRUCT OS no hay que avisar a nadie: el equipo lee este
 mismo `version.json` cada seis horas y se actualiza solo, en silencio.
+
+## Copia de seguridad
+
+Todas las versiones publicadas quedan guardadas en el historial de este
+repositorio. En [`HISTORIAL-VERSIONES.md`](HISTORIAL-VERSIONES.md) está el
+commit y el SHA-256 de cada una, con el enlace de descarga directa para volver
+a cualquier versión anterior.
+
+> ⚠️ Si hay ensayos sin subir, **nunca desinstalar la app**: Android borra los
+> datos de la aplicación al desinstalar y lo pendiente se pierde. Para volver a
+> una versión anterior, instalar el APK **encima** de la actual.
 
 ## El sistema de las tablets
 
