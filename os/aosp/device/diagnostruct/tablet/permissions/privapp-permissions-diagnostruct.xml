@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Permisos privilegiados del launcher del kiosco.
+
+  Un APK colocado en `priv-app` que pida un permiso de firma privilegiada sin
+  estar en una lista como esta hace que el sistema no arranque. Por eso la lista
+  es corta y explicita: solo lo que el kiosco usa de verdad.
+-->
+<permissions>
+    <privapp-permissions package="com.diagnostruct.os">
+        <!-- Enumerar las aplicaciones con icono para poder ocultarlas. -->
+        <permission name="android.permission.QUERY_ALL_PACKAGES" />
+
+        <!-- Instalar y actualizar DIAGNOSTRUCT sin dialogos. -->
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.DELETE_PACKAGES" />
+
+        <!-- Alta del propio launcher como administrador del equipo. -->
+        <permission name="android.permission.MANAGE_DEVICE_ADMINS" />
+
+        <!-- Aplicar los ajustes del sistema que fija la politica del kiosco. -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+
+        <!-- Volver a anclar la aplicacion cuando algo la saca de pantalla. -->
+        <permission name="android.permission.MANAGE_ACTIVITY_TASKS" />
+        <permission name="android.permission.REORDER_TASKS" />
+    </privapp-permissions>
+</permissions>

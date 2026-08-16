@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!--
+      La marca lleva su propio fondo, del mismo color que la pantalla, asi que
+      se funde con ella y solo se ve la plomada.
+    -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:contentDescription="@string/logo_descripcion"
+        android:src="@drawable/marca_diagnostruct" />
+
+    <!--
+      Señal de estado. Solo aparece cuando pasa algo que el tecnico debe
+      reconocer sin leer: la aplicacion no arranca, falta instalarla, o el
+      kiosco esta en pausa. En marcha normal no se dibuja nada aqui.
+    -->
+    <ImageView
+        android:id="@+id/state_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="@null"
+        android:tint="@color/acento"
+        android:visibility="gone"
+        tools:ignore="UseAppTint"
+        tools:src="@drawable/ic_alerta"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/state_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.14"
+        android:textColor="@color/texto"
+        android:textSize="24sp"
+        tools:text="DIAGNOSTRUCT" />
+
+    <TextView
+        android:id="@+id/state_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.35"
+        android:maxWidth="460dp"
+        android:textColor="@color/texto_tenue"
+        android:textSize="15sp"
+        tools:text="Abriendo la aplicación…" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="30dp"
+        android:indeterminateTint="@color/acento" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_retry"
+        style="@style/Boton.Acento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:minWidth="200dp"
+        android:minHeight="52dp"
+        android:text="@string/accion_reintentar"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_technician"
+        style="@style/Boton.Plano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:minWidth="200dp"
+        android:minHeight="52dp"
+        android:text="@string/accion_panel_tecnico"
+        android:visibility="gone" />
+
+</LinearLayout>

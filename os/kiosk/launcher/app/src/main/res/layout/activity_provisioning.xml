@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:contentDescription="@string/logo_descripcion"
+        android:src="@drawable/marca_diagnostruct" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.1"
+        android:text="@string/provision_titulo"
+        android:textColor="@color/texto"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.35"
+        android:maxWidth="460dp"
+        android:text="@string/provision_aplicando"
+        android:textColor="@color/texto_tenue"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:indeterminateTint="@color/acento" />
+
+</LinearLayout>

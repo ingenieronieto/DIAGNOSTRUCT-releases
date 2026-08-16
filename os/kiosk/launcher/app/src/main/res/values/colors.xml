@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Paleta de DIAGNOSTRUCT, tomada de la propia marca (assets/public/favicon.svg
+  del APK publicado): fondo casi negro, trazo blanco y azul solo en las puntas
+  de la plomada.
+
+  El azul es el unico color del sistema, y se reserva para lo que de verdad
+  necesita destacar: el progreso y los avisos. Todo lo demas es blanco, gris y
+  fondo. Si algo empieza a llevar color porque si, esta mal.
+-->
+<resources>
+    <!-- Fondo exacto de la marca: la imagen del logotipo funde con la pantalla. -->
+    <color name="fondo">#09090B</color>
+    <color name="superficie">#131317</color>
+    <color name="linea">#2A2A31</color>
+
+    <color name="acento">#2563EB</color>
+
+    <color name="texto">#FAFAFA</color>
+    <color name="texto_tenue">#8B8B94</color>
+</resources>

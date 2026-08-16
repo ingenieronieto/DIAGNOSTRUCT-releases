@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DIAGNOSTRUCT OS</string>
+
+    <string name="si">sí</string>
+    <string name="no">no</string>
+
+    <!-- Pantalla de inicio -->
+    <string name="estado_abriendo_titulo">DIAGNOSTRUCT</string>
+    <string name="estado_abriendo_detalle">Abriendo la aplicación…</string>
+    <string name="estado_arranque_detalle">Abriendo DIAGNOSTRUCT en %1$d s. Toque «Panel técnico» si necesita entrar.</string>
+    <string name="estado_tregua_titulo">Mantenimiento en curso</string>
+    <string name="estado_mantenimiento_titulo">Modo mantenimiento</string>
+    <string name="estado_sin_app_titulo">Instalando DIAGNOSTRUCT</string>
+    <string name="estado_sin_app_detalle">La aplicación todavía no está en el equipo. Se descargará sola en cuanto haya conexión.</string>
+    <string name="estado_fallo_titulo">La aplicación no arranca</string>
+    <string name="estado_fallo_detalle">DIAGNOSTRUCT se ha cerrado varias veces seguidas. Reintente, o entre al panel técnico para revisar el equipo.</string>
+    <string name="estado_mantenimiento_detalle">El kiosco está desactivado. El equipo se comporta como una tablet normal hasta que se vuelva a activar.</string>
+    <string name="accion_reintentar">Reintentar</string>
+    <string name="accion_panel_tecnico">Panel técnico</string>
+    <string name="logo_descripcion">Marca de DIAGNOSTRUCT</string>
+
+    <!-- Panel técnico -->
+    <string name="tecnico_titulo">Panel técnico</string>
+    <string name="tecnico_pin_etiqueta">PIN de mantenimiento</string>
+    <string name="tecnico_entrar">Entrar</string>
+    <string name="tecnico_cancelar">Cancelar</string>
+    <string name="tecnico_pin_incorrecto">PIN incorrecto</string>
+    <string name="tecnico_wifi">Ajustes de Wi-Fi</string>
+    <string name="tecnico_actualizar">Buscar actualización ahora</string>
+    <string name="tecnico_reaplicar">Reaplicar política del kiosco</string>
+    <string name="tecnico_abrir_app">Volver a DIAGNOSTRUCT</string>
+    <string name="tecnico_entrar_mantenimiento">Entrar en mantenimiento</string>
+    <string name="tecnico_volver_kiosco">Volver al modo kiosco</string>
+    <string name="tecnico_buscando_actualizacion">Buscando actualización…</string>
+    <string name="tecnico_politica_aplicada">Política aplicada</string>
+    <string name="tecnico_mantenimiento_activo">Mantenimiento activo: el kiosco está levantado</string>
+    <string name="tecnico_kiosco_activo">Kiosco activo</string>
+    <string name="tecnico_sin_ajustes_wifi">Este equipo no expone los ajustes de Wi-Fi</string>
+    <string name="tecnico_app_ausente">no instalada</string>
+    <string name="tecnico_pin_nuevo">PIN nuevo (mínimo 4 cifras)</string>
+    <string name="tecnico_cambiar_pin">Cambiar el PIN</string>
+    <string name="tecnico_pin_por_defecto">Este equipo sigue con el PIN de fábrica. Cámbielo antes de entregarlo.</string>
+    <string name="tecnico_pin_corto">El PIN necesita al menos 4 cifras</string>
+    <string name="tecnico_pin_igual">El PIN nuevo es el mismo que el actual</string>
+    <string name="tecnico_pin_cambiado">PIN cambiado</string>
+    <string name="tecnico_pin_bloqueado">Demasiados intentos. Espere %1$d s.</string>
+    <string name="tecnico_wifi_tregua">El kiosco espera %1$d minutos. Vuelva con «Volver a DIAGNOSTRUCT» al terminar.</string>
+    <string name="tecnico_diagnostico">Propietario del dispositivo: %1$s\nKiosco activo: %2$s\nPaquete: %3$s\nVersión instalada: %4$s\n\nAutorizadas en modo bloqueado:\n%5$s</string>
+
+    <plurals name="estado_tregua_detalle">
+        <item quantity="one">El kiosco está en pausa durante %1$d minuto más, a petición del panel técnico.</item>
+        <item quantity="other">El kiosco está en pausa durante %1$d minutos más, a petición del panel técnico.</item>
+    </plurals>
+
+    <!-- Aprovisionamiento -->
+    <string name="provision_titulo">Preparando el equipo</string>
+    <string name="provision_aplicando">Aplicando la configuración de DIAGNOSTRUCT OS…</string>
+    <string name="provision_listo">Equipo listo. DIAGNOSTRUCT se abrirá automáticamente.</string>
+    <string name="provision_sin_propiedad">El equipo no ha quedado como totalmente gestionado. Hay que restablecerlo de fábrica y repetir el alta.</string>
+
+    <!-- Administrador de dispositivo -->
+    <string name="admin_etiqueta">DIAGNOSTRUCT OS</string>
+    <string name="admin_descripcion">Deja el equipo dedicado a DIAGNOSTRUCT: bloquea la aplicación en pantalla, oculta el resto y mantiene la versión al día.</string>
+</resources>

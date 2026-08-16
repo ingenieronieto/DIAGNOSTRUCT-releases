@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Permisos de ejecucion concedidos en el primer arranque.
+
+  DIAGNOSTRUCT los declara todos en su manifiesto; aqui solo se adelanta la
+  concesion. El motivo es practico: el tecnico abre la aplicacion por primera
+  vez delante del cliente, en una obra, y encadenar cuatro dialogos de permisos
+  antes de poder hacer la primera foto no es aceptable.
+
+  `fixed="false"` deja que el usuario pueda revocarlos despues si hiciera falta.
+-->
+<exceptions>
+    <exception package="com.ingnieto.diagnostruct">
+        <permission name="android.permission.CAMERA" fixed="false" />
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false" />
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false" />
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+        <permission name="android.permission.READ_MEDIA_IMAGES" fixed="false" />
+        <permission name="android.permission.POST_NOTIFICATIONS" fixed="false" />
+    </exception>
+
+    <exception package="com.diagnostruct.os">
+        <permission name="android.permission.POST_NOTIFICATIONS" fixed="false" />
+    </exception>
+</exceptions>
