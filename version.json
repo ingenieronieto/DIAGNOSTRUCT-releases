@@ -1,14 +1,23 @@
 {
-  "version": "1.95.0",
-  "fecha": "2026-08-11",
+  "version": "1.96.10",
+  "fecha": "2026-08-16",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLADO: el f'c aparente salía en blanco en algunos informes de esclerometría y regatas. Una misma clave servía para dos cosas distintas y se pisaban entre sí.",
-    "ARREGLADO: Ferroscan perdía el nombre del escaneo (que el formulario exige para poder guardar) y sus dos fotos.",
-    "ARREGLADO: en núcleos se perdían el año de construcción y el recubrimiento de diseño, con lo que el veredicto de carbonatación desaparecía al reabrir la ficha.",
-    "ARREGLADO: el historial de ediciones no se guardaba nunca, así que ese bloque del informe salía siempre vacío.",
-    "ARREGLADO: tres pantallas que se caían en blanco (mapa de ferroscan, vista PM-Link y el consolidado del proyecto al llegar la primera foto)."
+    "ARREGLADO: crear usuarios desde la app fallaba con 'Failed to send a request to the Edge Function' / error 401. La llamada salía sin el token de la sesión; ahora se adjunta explícitamente y la creación, invitación, borrado y cambio de contraseña de usuarios funcionan.",
+    "ARREGLADO: en la app nativa (APK) el autodiagnostico marcaba con advertencia el Service Worker y los permisos del navegador. Eran falsos positivos: en la APK el Service Worker esta deshabilitado a proposito (Capacitor sirve los assets localmente) y los permisos los gestiona Android. Ahora el diagnostico es consciente del contexto nativo y consulta los permisos por los plugins de Capacitor.",
+    "ARREGLADO: las fotos cargadas en lote (registro post-sismo) ya se ven en la lesion. Antes se guardaban pero la vista solo mostraba los 3 slots manuales (A/B/C); ahora hay una galeria 'Fotos importadas' con todas.",
+    "CLARIDAD: al cargar las fotos de lesiones, si el proyecto todavia no tiene las lesiones importadas, ahora lo dice claro ('0 de 35 — corre Importar UAN Quibdo primero') en vez del confuso '0 de 0'.",
+    "NUEVO (Admin): boton para cargar a la app las fotos post-sismo de UAN Quibdo y engancharlas a cada lesion por su numero (elegis la carpeta con las 196 fotos). Idempotente: reejecutar no duplica.",
+    "NUEVO: el importador de UAN Quibdó ahora carga tambien las 35 lesiones post-sismo (LS-01..LS-35), ademas de las que ya haya en el proyecto. Idempotente: reimportar no duplica. En la app aparecen las 44 lesiones.",
+    "GARANTIZADO: el ZIP de fotos ahora no pierde ninguna. Reintenta en varias pasadas las que falten, con enfriamiento entre pasadas y freno cuando la red corta. Si aun asi faltara alguna, el ZIP se marca 'INCOMPLETO', trae adentro la lista de las que faltan y avisa que NO se use para validacion: nunca se presenta un ZIP incompleto como completo.",
+    "ARREGLADO: el ZIP de fotos dejaba caer muchas con 'Failed to fetch' (bajaban 25 de 109). Ahora cada foto se reintenta ante un corte de red con esperas crecientes, así el almacenamiento vuelve a soltar las descargas y bajan todas.",
+    "ARREGLADO: el Informe gerencial de campo se caía en blanco (la ubicación del proyecto es un objeto y se intentaba mostrar como texto). Ya muestra la ubicación correctamente.",
+    "MEJORADO: el Informe gerencial de campo ahora es de varias hojas: resumen ejecutivo, descripción de la zona y del proyecto, el desarrollo del trabajo día a día, y el detalle estructura por estructura con la información escrita del diagnóstico, los ensayos y las lesiones.",
+    "NUEVO: módulo Informe gerencial de campo. Resume el avance del proyecto: cobertura por estructura, ensayos por tipo y veredictos, lesiones por severidad, hallazgos críticos y pendientes. Imprimible con la marca de la empresa.",
+    "NUEVO: grupo Entregas, reportes e informes. Junta en un solo lugar (transversal a diagnóstico, vulnerabilidad y reforzamiento) el Registro fotográfico, los Reportes y entregas y el Informe gerencial.",
+    "NUEVO: antes de descargar el ZIP de fotos ahora se ve cuántas están listas (X/Y y %), para saber si están todas antes de bajarlo.",
+    "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.95.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.96.10.apk"
 }
