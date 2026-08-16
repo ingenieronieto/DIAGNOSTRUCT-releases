@@ -42,12 +42,15 @@ if [[ -z "$PROPIETARIO" ]] || echo "$PROPIETARIO" | grep -qi "unknown command"; 
   PROPIETARIO=$(adb shell dumpsys device_policy 2>/dev/null | tr -d '\r' \
     | sed -n '/Device Owner:/,/^$/p')
 fi
+# `dpm list-owners` responde literalmente «no owners» cuando no hay ninguno:
+# tratarlo como texto no vacío haría decir «el propietario es otro», que manda
+# a buscar un dueño inexistente justo en el paso donde más gente se pierde.
 if echo "$PROPIETARIO" | grep -q "$PAQUETE_LAUNCHER"; then
   ok "DIAGNOSTRUCT OS es propietario del dispositivo"
-elif [[ -n "$PROPIETARIO" ]]; then
-  error "El propietario es otro: $(echo "$PROPIETARIO" | head -2 | tr '\n' ' ')"
-else
+elif [[ -z "$PROPIETARIO" ]] || echo "$PROPIETARIO" | grep -qi "no owners"; then
   error "El equipo NO tiene propietario asignado; el kiosco no puede blindarlo"
+else
+  error "El propietario es otro: $(echo "$PROPIETARIO" | head -2 | tr '\n' ' ')"
 fi
 
 titulo "Paquetes"
@@ -94,6 +97,27 @@ if adb shell pm list features | tr -d '\r' | grep -q "android.hardware.camera"; 
   ok "Cámara por hardware"
 else
   error "El equipo no declara cámara"
+fi
+
+# Resolución del sensor. Es el techo físico del equipo: ninguna aplicación de
+# cámara ni ajuste lo sube. Se avisa por debajo de 12 MP, pero no se marca
+# fallo: un equipo con menos sigue siendo apto, solo obliga a acercarse más de
+# la cuenta para que una fisura fina salga legible.
+RESOLUCION=$(adb shell dumpsys media.camera 2>/dev/null | tr -d '\r' \
+  | grep -A1 "android.sensor.info.pixelArraySize" \
+  | sed -n 's/^ *\[\([0-9]\{1,\}\) \([0-9]\{1,\}\) *\]$/\1 \2/p' \
+  | awk '{ if ($1 * $2 > max) { max = $1 * $2; mejor = $1 " " $2 } } END { print mejor }')
+if [[ -n "$RESOLUCION" ]]; then
+  ANCHO=${RESOLUCION% *}
+  ALTO=${RESOLUCION#* }
+  # Redondeo, no truncado: 3264x2448 son 7,99 MP y truncar los mostraria como
+  # «7 MP», que no es lo que dice la ficha de ninguna tablet de 8 MP.
+  MP=$(( (ANCHO * ALTO + 500000) / 1000000 ))
+  if [[ "$MP" -ge 12 ]]; then
+    ok "Sensor de ${MP} MP (${ANCHO}x${ALTO})"
+  else
+    aviso "Sensor de ${MP} MP (${ANCHO}x${ALTO}): justo para fisuras finas; se recomiendan 12 MP"
+  fi
 fi
 
 titulo "Permisos concedidos a $PAQUETE_APP"

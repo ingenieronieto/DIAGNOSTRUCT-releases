@@ -13,6 +13,8 @@ minSdk 24, targetSdk 36) y de lo que exige el sistema de kiosco.
 | **Aplicacion de camara** | La captura de fotos se hace por intent a la camara del sistema. |
 | **GPS por hardware** | Declarado como `android.hardware.location.gps`. |
 | **Camara trasera con autofoco** | Las fotos son prueba pericial: las fisuras tienen que salir nitidas. |
+| **Camara trasera de 12 MP o mas** | Medido en campo: una Lenovo TB328XU da 3264x2448 (8 MP), y es el techo fisico del equipo. Ningun ajuste ni aplicacion de camara lo sube. Para una fisura fina, 8 MP obliga a acercarse tanto que se pierde el contexto de la pieza. |
+| **Sin SIM al aprovisionar** | No es una propiedad de la tablet, sino del procedimiento: una SIM insertada crea cuentas de agenda (`USIM Account`, `SDN Account`) y Android las cuenta como cuentas de usuario, que impiden asignar el propietario del dispositivo. Se saca la SIM para dar de alta y se vuelve a poner despues. |
 | **64 GB de almacenamiento** | Fotos y modelos 3D. El changelog de la v1.85 ya avisa de equipos llenandose. |
 | **4 GB de RAM** | El WebView con fotogrametria consume bastante. |
 
@@ -64,7 +66,7 @@ o tres equipos antes de comprometer el presupuesto del parque.
 
 ## Como validar un modelo antes de comprar el lote
 
-Compre **una** unidad y pase el diagnostico:
+Compre **una** unidad y pase el diagnostico. **Saque la SIM antes**, si la lleva:
 
 ```bash
 cd os/kiosk/scripts
