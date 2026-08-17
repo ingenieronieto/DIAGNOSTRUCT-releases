@@ -1,8 +1,10 @@
 {
-  "version": "1.96.10",
+  "version": "1.97.0",
   "fecha": "2026-08-16",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO: en el login, cada equipo recuerda las cuentas que ya iniciaron sesion ahi y las muestra como lista para elegir, asi no hay que reescribir el correo cada vez (sigue pidiendo la contrasena; no se guardan contrasenas).",
+    "NUEVO (Admin): pestana 'Dispositivos' en el panel de super-admin: registra que usuario abrio la app en cada dispositivo y cuando (requiere correr el SQL de accesos_dispositivo en Supabase).",
     "ARREGLADO: crear usuarios desde la app fallaba con 'Failed to send a request to the Edge Function' / error 401. La llamada salía sin el token de la sesión; ahora se adjunta explícitamente y la creación, invitación, borrado y cambio de contraseña de usuarios funcionan.",
     "ARREGLADO: en la app nativa (APK) el autodiagnostico marcaba con advertencia el Service Worker y los permisos del navegador. Eran falsos positivos: en la APK el Service Worker esta deshabilitado a proposito (Capacitor sirve los assets localmente) y los permisos los gestiona Android. Ahora el diagnostico es consciente del contexto nativo y consulta los permisos por los plugins de Capacitor.",
     "ARREGLADO: las fotos cargadas en lote (registro post-sismo) ya se ven en la lesion. Antes se guardaban pero la vista solo mostraba los 3 slots manuales (A/B/C); ahora hay una galeria 'Fotos importadas' con todas.",
@@ -19,5 +21,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.96.10.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.97.0.apk"
 }
