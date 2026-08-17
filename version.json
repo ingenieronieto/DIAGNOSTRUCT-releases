@@ -1,8 +1,10 @@
 {
-  "version": "1.97.2",
+  "version": "1.97.3",
   "fecha": "2026-08-16",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO: la actualizacion se colgaba en la APK. Al tocar 'Actualizar ahora' el WebView intentaba abrir el instalador con window.open y se quedaba pegado; ahora se abre en el navegador del sistema y descarga bien.",
+    "ARREGLADO: en la APK no funcionaban los cuadros para escribir texto (nombrar/renombrar estructuras, planos y modelos 3D, motivos de rechazo, meses de vigencia, etc.). Se usaba window.prompt, que el WebView de Android ignora; ahora todos usan un cuadro propio dentro de la app.",
     "ARREGLADO: en la lista de ensayos de esclerometria se perdia el lado derecho de la tabla (la columna Estado y los botones Ver/Editar/Borrar quedaban fuera de pantalla en la tablet). Ahora la tabla tiene desplazamiento horizontal como las demas listas y no se corta ninguna columna.",
     "ARREGLADO: en la APK no se podia cambiar la contrasena de un usuario (el cuadro para escribir la nueva clave no aparecia). Se usaba window.prompt, que el WebView de Android no soporta; ahora hay un cuadro propio dentro de la app.",
     "NUEVO: en el login, cada equipo recuerda las cuentas que ya iniciaron sesion ahi y las muestra como lista para elegir, asi no hay que reescribir el correo cada vez (sigue pidiendo la contrasena; no se guardan contrasenas).",
@@ -23,5 +25,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.97.2.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.97.3.apk"
 }
