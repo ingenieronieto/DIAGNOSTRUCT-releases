@@ -1,8 +1,10 @@
 {
-  "version": "1.97.0",
+  "version": "1.97.2",
   "fecha": "2026-08-16",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO: en la lista de ensayos de esclerometria se perdia el lado derecho de la tabla (la columna Estado y los botones Ver/Editar/Borrar quedaban fuera de pantalla en la tablet). Ahora la tabla tiene desplazamiento horizontal como las demas listas y no se corta ninguna columna.",
+    "ARREGLADO: en la APK no se podia cambiar la contrasena de un usuario (el cuadro para escribir la nueva clave no aparecia). Se usaba window.prompt, que el WebView de Android no soporta; ahora hay un cuadro propio dentro de la app.",
     "NUEVO: en el login, cada equipo recuerda las cuentas que ya iniciaron sesion ahi y las muestra como lista para elegir, asi no hay que reescribir el correo cada vez (sigue pidiendo la contrasena; no se guardan contrasenas).",
     "NUEVO (Admin): pestana 'Dispositivos' en el panel de super-admin: registra que usuario abrio la app en cada dispositivo y cuando (requiere correr el SQL de accesos_dispositivo en Supabase).",
     "ARREGLADO: crear usuarios desde la app fallaba con 'Failed to send a request to the Edge Function' / error 401. La llamada salía sin el token de la sesión; ahora se adjunta explícitamente y la creación, invitación, borrado y cambio de contraseña de usuarios funcionan.",
@@ -21,5 +23,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.97.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.1.97.2.apk"
 }
