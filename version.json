@@ -1,8 +1,16 @@
 {
-  "version": "1.99.0",
-  "fecha": "2026-08-17",
+  "version": "2.0.0",
+  "fecha": "2026-08-26",
   "minima": "1.70.0",
   "notas": [
+    "VERSION 2.0: esta version se trata de UNA sola cosa, poder trabajar sin senal de verdad. Si la app te dejaba afuera en obra, esto es lo que lo arregla.",
+    "ARREGLADO - LO MAS IMPORTANTE: la app te sacaba y despues no te dejaba volver a entrar. Con senal que va y viene, no lograba renovar la sesion y te cerraba; para saber si habia internet le preguntaba al equipo, y una tablet con el wifi prendido dice CONECTADO aunque no pase nada. Al intentar entrar de nuevo, la consulta de tu perfil se caia por la misma senal y la app te decia 'tu perfil no esta configurado, contacta al administrador' - un problema de conexion disfrazado de problema de cuenta. Y como se salia por ahi, nunca alcanzaba a guardar tus datos para entrar sin internet. Quedabas encerrado.",
+    "IMPORTANTE: entra UNA VEZ donde haya buena senal antes de salir a obra. Con eso la app guarda lo que necesita y despues entras sin internet.",
+    "NUEVO - LLEVAR A OBRA: en Copia de seguridad hay un boton que baja el proyecto COMPLETO al equipo antes de salir (ensayos, estructuras, lesiones, inspecciones, firmantes, modelos 3D y las fotos), con barra de progreso. Antes, lo que quedaba disponible sin senal dependia de que pantallas hubieras abierto; ahora se baja todo de una. Si algo no se pudo bajar TE LO DICE, no te deja creer que esta completo.",
+    "ARREGLADO: ocho pantallas salian vacias sin senal porque no guardaban nada en el equipo (fotos generales, secciones, inspecciones, diagnostico, codigos, propiedades de madera, solicitudes y modelo 3D). Ahora guardan copia. Y si no hay senal y tampoco hay copia, te avisa en vez de mostrarte una lista vacia, que se lee como si el proyecto no tuviera datos.",
+    "ARREGLADO: la app iba lentisima en obra. Cada consulta esperaba 8 segundos antes de rendirse, y abrir un proyecto son varias seguidas. Ahora, cuando detecta que no hay salida, las siguientes ni se intentan por un rato y va directo a lo guardado.",
+    "ARREGLADO: al volver a la app despues de usar la camara o WhatsApp, se quedaba cargando. Android cierra la app cuando te vas a otra, y al volver pedia todo de nuevo. Ahora vuelve mostrando lo que ya tiene guardado.",
+    "ARREGLADO: la camara abria en modo selfie. Se pedia la trasera como sugerencia y no como exigencia, y si el equipo no la resolvia entregaba la de por defecto, que en varias tablets es la frontal. Ahora la exige, y prueba cinco formas antes de conformarse con otra.",
     "NUEVO: la camara de la app ahora tiene ZOOM, LINTERNA, cambiar a la camara frontal y ENFOQUE AL TOCAR la pantalla. Cada control aparece solo si el equipo lo soporta.",
     "IMPORTANTE - MEJOR CALIDAD DE FOTO: la app no le pedia resolucion a la camara y el equipo entregaba la minima (640x480 en muchos Android). Ahora se pide 2560x1440. Las fotos nuevas entran con hasta 3,7 megapixeles donde antes entraban con 0,3. Esto importa para documentar fisuras finas. Las fotos viejas quedan como estan.",
     "NUEVO: arriba del visor se muestra la resolucion real que esta entregando la camara, y se marca en amarillo si es baja. Asi se ve en el momento si la foto va a servir.",
@@ -51,5 +59,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.1.99.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.0.0.apk"
 }
