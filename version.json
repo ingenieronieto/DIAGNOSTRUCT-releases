@@ -1,8 +1,12 @@
 {
-  "version": "2.2.0",
+  "version": "2.3.0",
   "fecha": "2026-08-26",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - LOS CUATRO CONTADORES DE ARRIBA (proyectos, activos, ensayos, planos) salian como cuatro franjas de lado a lado, apiladas, que se comian toda la pantalla antes de llegar a los proyectos. Ahora van los cuatro en una sola fila.",
+    "ARREGLADO - LA CAMARA ABRIA EN SELFIE, y esta vez con la causa de fondo, que la destapo el informe del propio equipo. El telefono listaba bien las dos camaras, pero Android NO permite tener dos abiertas a la vez: la app pedia la trasera mientras la frontal seguia viva, la peticion fallaba, y se quedaba con la frontal. Ahora suelta la camara actual antes de pedir la otra.",
+    "NUEVO - ENFOQUE POR DISTANCIA: tu telefono no permite 'enfocar donde toco' (no expone punto de interes, solo enfoque manual). Por eso tocar la pantalla no hacia nada, y no habia forma de arreglarlo por ese camino. Ahora, en los equipos asi, aparece una barra CERCA-LEJOS para ajustar el enfoque a mano, que para fotografiar una fisura de cerca sirve mas que el toque.",
+    "La marca de enfoque solo se dibuja si el toque de verdad enfoca en tu equipo. Antes aparecia siempre y hacia creer que habia enfocado cuando no habia pasado nada.",
     "CAMARA - TERCER INTENTO, Y AHORA CON UN BOTON PARA DIAGNOSTICAR. Los arreglos anteriores no funcionaron porque se hicieron a ciegas: en el computador no hay ningun telefono con el que probar. En el visor hay ahora un boton [?] que muestra QUE HACE la camara de TU equipo. Si algo sigue fallando, abrilo, toca COPIAR y pegalo en el chat: con eso el arreglo sale de datos y no de suposiciones.",
     "ARREGLADO - LA CAMARA TRASERA: se encontro el fallo de fondo. La app pedia la trasera y despues comprobaba cual le habian dado, pero en Android esa comprobacion casi siempre devuelve 'no se sabe', y el codigo trataba ese 'no se sabe' como 'esta bien' y se quedaba con la primera que le dieran, que suele ser la frontal. O sea: la comprobacion existia pero nunca comprobaba nada. Ahora, cuando no se sabe, se busca el identificador de la camara en la lista del sistema y se lee su nombre.",
     "ARREGLADO - EL ENFOQUE AL TOCAR: la app preguntaba primero si el equipo sabia enfocar, y en Android esa pregunta suele devolver vacio; entonces no intentaba NADA y tocar la pantalla no hacia nada. Ahora lo intenta igual: si el equipo lo rechaza no pasa nada malo, pero no intentarlo era garantizar que no funcionara. Se agrego ademas un ultimo recurso que mueve el zoom un paso para disparar el reenfoque.",
@@ -77,5 +81,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.2.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.3.0.apk"
 }
