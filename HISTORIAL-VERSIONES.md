@@ -1,4 +1,4 @@
-# Historial de versiones — copia de seguridad y restauración
+﻿# Historial de versiones — copia de seguridad y restauración
 
 Cada versión publicada de `DIAGNOSTRUCT-SDK.apk` queda guardada para siempre en
 el historial de este repositorio. Aunque el archivo siempre se llame igual y se
@@ -9,6 +9,7 @@ descargar apuntando al commit en el que se publicó.
 
 | Versión | Publicada | Commit | Tamaño | SHA-256 del APK |
 |---|---|---|---|---|
+| 2.0.0 | 2026-08-26 | `3eee87629619f0a6dff13733ed6d2babc11435c7` | 14,1 MB | `00db5e6e6b362c36f623594fd18b7deb555aa56b5b6f852af1a51ccd58baeeb6` |
 | 1.99.0 | 2026-08-17 | `ef038fc3869b37f1be983c7cbdfabcf43ce02007` | 14,1 MB | `3b4dac7467327e1b901d97ecb48fadf2c6d324629d85ea4add2753b3a345bc7b` |
 | 1.87.0 | 2026-08-09 | `d1c013a11e16d6a62d0978e234de8abb65a115d0` | 13,9 MB | `3e58828177bc14f8428a9a36a1a649f62d678e2bd468e0e642814d5d52caee95` |
 | 1.86.0 | 2026-08-09 | `87ab0660b809dec63b525381b5aeaf8db9e9f96c` | 13,9 MB | `29a2e3a54d1802acbdeb8a7220725f0a4a841dea31598a61acacf675985471f0` |
