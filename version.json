@@ -1,8 +1,15 @@
 {
-  "version": "2.0.1",
+  "version": "2.1.0",
   "fecha": "2026-08-26",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - LAS FOTOS QUE SALIAN COMO ENLACE ROTO: los enlaces de las fotos caducan a los 7 dias, y se guardaban tal cual. Al abrir un proyecto de mas de una semana salia imagen rota. TU FOTO NUNCA SE PERDIO: sigue intacta en el servidor, lo que vencio es el permiso temporal para verla. Por eso al imprimir el consolidado si aparecian: ese camino volvia a firmar los enlaces. Ahora la pantalla tambien los renueva sola.",
+    "Si una foto no se puede mostrar, ahora dice 'la foto NO se perdio, esta en el servidor' en vez de dejar el icono de imagen rota, que hace pensar que se perdio el trabajo.",
+    "ARREGLADO: las fotos que bajaba 'Llevar a obra' no se veian sin senal. Se guardaban usando el enlace como nombre, y como ese enlace cambia en cada firma, al volver a campo no se encontraban. Se bajaban y aun asi no aparecian. Ahora se guardan por la ruta del archivo.",
+    "ARREGLADO: la camara seguia abriendo en modo selfie. El arreglo anterior tenia un agujero: si al pedir la trasera el equipo entregaba la frontal, la app se quedaba con esa sin comprobar. Ahora verifica que camara le dieron y si no es la correcta sigue buscando.",
+    "ARREGLADO: el enfoque al tocar la pantalla no hacia nada. Se pedia un modo de enfoque que Android rechaza si no se le manda tambien la distancia. Ahora usa el modo correcto y solo pide lo que el equipo dice soportar.",
+    "ARREGLADO: las fotos salian acostadas. El sensor del celular entrega siempre un cuadro apaisado y la camara del sistema lo endereza sola; al capturar desde la app no lo hacia nadie. Ahora la foto sale derecha sin importar como se tenga el telefono.",
+    "MEJORADO: el boton de preparar para obra ocupaba media tarjeta y en el celular se partia en dos renglones. Ahora es una pastilla chica con un icono y una palabra, que cambia de color segun el estado: gris sin preparar, verde listo, ambar si algo quedo sin bajar.",
     "ARREGLADO: el boton PREPARAR PARA OBRA no aparecia por ningun lado. Estaba dentro del panel de Copia de seguridad, que solo se abre desde el aviso de cosas pendientes por subir... y ese aviso desaparece cuando ya esta todo sincronizado. Justo cuando uno va a preparar la salida a obra, con todo al dia, no habia forma de llegar. Ahora esta en la TARJETA DE CADA PROYECTO, en la pantalla donde se elige el proyecto.",
     "En cada tarjeta se ve si el proyecto esta listo para obra y de cuando: 'listo - hace 2 h' en verde, o 'preparado hace 1 d - 3 sin bajar' si algo falto. Sin conexion el boton se apaga y dice por que, en vez de quedarse mudo. Tocarlo no abre el proyecto.",
     "VERSION 2.0: esta version se trata de UNA sola cosa, poder trabajar sin senal de verdad. Si la app te dejaba afuera en obra, esto es lo que lo arregla.",
@@ -61,5 +68,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.0.1.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.1.0.apk"
 }
