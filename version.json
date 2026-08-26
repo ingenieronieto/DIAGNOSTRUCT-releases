@@ -1,8 +1,9 @@
 {
-  "version": "2.3.0",
+  "version": "2.3.1",
   "fecha": "2026-08-26",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - UNA CUENTA SIN EMPRESA VEIA LA PANTALLA VACIA, como si no hubiera proyectos. En realidad el servidor no le muestra ninguno porque la cuenta no esta vinculada a una empresa, y la app no distinguia una cosa de la otra. Ahora lo dice con todas las letras y explica que lo tiene que vincular un administrador desde Usuarios.",
     "ARREGLADO - LOS CUATRO CONTADORES DE ARRIBA (proyectos, activos, ensayos, planos) salian como cuatro franjas de lado a lado, apiladas, que se comian toda la pantalla antes de llegar a los proyectos. Ahora van los cuatro en una sola fila.",
     "ARREGLADO - LA CAMARA ABRIA EN SELFIE, y esta vez con la causa de fondo, que la destapo el informe del propio equipo. El telefono listaba bien las dos camaras, pero Android NO permite tener dos abiertas a la vez: la app pedia la trasera mientras la frontal seguia viva, la peticion fallaba, y se quedaba con la frontal. Ahora suelta la camara actual antes de pedir la otra.",
     "NUEVO - ENFOQUE POR DISTANCIA: tu telefono no permite 'enfocar donde toco' (no expone punto de interes, solo enfoque manual). Por eso tocar la pantalla no hacia nada, y no habia forma de arreglarlo por ese camino. Ahora, en los equipos asi, aparece una barra CERCA-LEJOS para ajustar el enfoque a mano, que para fotografiar una fisura de cerca sirve mas que el toque.",
@@ -81,5 +82,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.3.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.3.1.apk"
 }
