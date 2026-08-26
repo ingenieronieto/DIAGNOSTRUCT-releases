@@ -9,6 +9,7 @@ descargar apuntando al commit en el que se publicó.
 
 | Versión | Publicada | Commit | Tamaño | SHA-256 del APK |
 |---|---|---|---|---|
+| 1.99.0 | 2026-08-17 | `ef038fc3869b37f1be983c7cbdfabcf43ce02007` | 14,1 MB | `3b4dac7467327e1b901d97ecb48fadf2c6d324629d85ea4add2753b3a345bc7b` |
 | 1.87.0 | 2026-08-09 | `d1c013a11e16d6a62d0978e234de8abb65a115d0` | 13,9 MB | `3e58828177bc14f8428a9a36a1a649f62d678e2bd468e0e642814d5d52caee95` |
 | 1.86.0 | 2026-08-09 | `87ab0660b809dec63b525381b5aeaf8db9e9f96c` | 13,9 MB | `29a2e3a54d1802acbdeb8a7220725f0a4a841dea31598a61acacf675985471f0` |
 | 1.85.0 | 2026-08-09 | `219cc43008c45f25ac05e3f204abf25ef24482be` | 15,3 MB | `2d57216165e48934a5695de1464378583d211b1e9af366b2a459a0645578fa4a` |
@@ -57,3 +58,8 @@ de cada publicación también está en el historial:
 ```
 git show <COMMIT>:version.json
 ```
+
+> **Ojo con el hueco.** Entre la 1.88.0 y la 1.97.3 se publicaron diez versiones que
+> **no quedaron registradas acá**. El APK de cada una sí está a salvo en el historial de
+> commits de este repo (por eso nada se perdió), pero para encontrarlas hay que buscar el
+> commit, no esta tabla. Al publicar, agregar la fila SIEMPRE.
