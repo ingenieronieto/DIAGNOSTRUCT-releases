@@ -1,8 +1,10 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "fecha": "2026-08-26",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO: el boton PREPARAR PARA OBRA no aparecia por ningun lado. Estaba dentro del panel de Copia de seguridad, que solo se abre desde el aviso de cosas pendientes por subir... y ese aviso desaparece cuando ya esta todo sincronizado. Justo cuando uno va a preparar la salida a obra, con todo al dia, no habia forma de llegar. Ahora esta en la TARJETA DE CADA PROYECTO, en la pantalla donde se elige el proyecto.",
+    "En cada tarjeta se ve si el proyecto esta listo para obra y de cuando: 'listo - hace 2 h' en verde, o 'preparado hace 1 d - 3 sin bajar' si algo falto. Sin conexion el boton se apaga y dice por que, en vez de quedarse mudo. Tocarlo no abre el proyecto.",
     "VERSION 2.0: esta version se trata de UNA sola cosa, poder trabajar sin senal de verdad. Si la app te dejaba afuera en obra, esto es lo que lo arregla.",
     "ARREGLADO - LO MAS IMPORTANTE: la app te sacaba y despues no te dejaba volver a entrar. Con senal que va y viene, no lograba renovar la sesion y te cerraba; para saber si habia internet le preguntaba al equipo, y una tablet con el wifi prendido dice CONECTADO aunque no pase nada. Al intentar entrar de nuevo, la consulta de tu perfil se caia por la misma senal y la app te decia 'tu perfil no esta configurado, contacta al administrador' - un problema de conexion disfrazado de problema de cuenta. Y como se salia por ahi, nunca alcanzaba a guardar tus datos para entrar sin internet. Quedabas encerrado.",
     "IMPORTANTE: entra UNA VEZ donde haya buena senal antes de salir a obra. Con eso la app guarda lo que necesita y despues entras sin internet.",
@@ -59,5 +61,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.0.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.0.1.apk"
 }
