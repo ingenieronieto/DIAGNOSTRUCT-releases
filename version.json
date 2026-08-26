@@ -1,8 +1,16 @@
 {
-  "version": "2.1.1",
+  "version": "2.2.0",
   "fecha": "2026-08-26",
   "minima": "1.70.0",
   "notas": [
+    "CAMARA - TERCER INTENTO, Y AHORA CON UN BOTON PARA DIAGNOSTICAR. Los arreglos anteriores no funcionaron porque se hicieron a ciegas: en el computador no hay ningun telefono con el que probar. En el visor hay ahora un boton [?] que muestra QUE HACE la camara de TU equipo. Si algo sigue fallando, abrilo, toca COPIAR y pegalo en el chat: con eso el arreglo sale de datos y no de suposiciones.",
+    "ARREGLADO - LA CAMARA TRASERA: se encontro el fallo de fondo. La app pedia la trasera y despues comprobaba cual le habian dado, pero en Android esa comprobacion casi siempre devuelve 'no se sabe', y el codigo trataba ese 'no se sabe' como 'esta bien' y se quedaba con la primera que le dieran, que suele ser la frontal. O sea: la comprobacion existia pero nunca comprobaba nada. Ahora, cuando no se sabe, se busca el identificador de la camara en la lista del sistema y se lee su nombre.",
+    "ARREGLADO - EL ENFOQUE AL TOCAR: la app preguntaba primero si el equipo sabia enfocar, y en Android esa pregunta suele devolver vacio; entonces no intentaba NADA y tocar la pantalla no hacia nada. Ahora lo intenta igual: si el equipo lo rechaza no pasa nada malo, pero no intentarlo era garantizar que no funcionara. Se agrego ademas un ultimo recurso que mueve el zoom un paso para disparar el reenfoque.",
+    "IMPORTANTE - SE CORRIGIO LA MATRIZ 4x4 QUE DECIDE EL NIVEL DE RECUPERACION DE CADA LESION. El porcentaje se calculaba con un contador del bucle que arma la tabla, no combinando los dos ejes. En la practica mandaba el estado de la superficie y el grado casi no pesaba. Se veia en las esquinas: una superficie OPTIMA con grado 4 -patologia severa que compromete la integridad- daba 25 % y MANTENIMIENTO, y una superficie DESTRUIDA con grado 1 -patologia incipiente- daba 81 % y DEMOLICION. Ahora el porcentaje sale de ponderar los dos ejes, con el grado pesando mas que la superficie (60/40), porque lo que decide la intervencion es el compromiso del elemento.",
+    "OJO CON LOS INFORMES YA ENTREGADOS: las lesiones guardadas conservan el porcentaje con el que se imprimieron; no se toca nada en la base. Pero si vuelves a editar la superficie o el grado de una lesion vieja, se recalcula con la matriz nueva y puede cambiar el nivel de recuperacion. Revisa antes de reimprimir un informe firmado.",
+    "NUEVO: cada celda de la matriz ahora define un RANGO de mas o menos 10 puntos alrededor de su valor, no un numero exacto. El porcentaje que pone el ingeniero ya no se reemplaza: se acota. Si cae fuera del rango de su celda es senal de que uno de los dos ejes quedo mal calificado.",
+    "NUEVO: la app puede decir, dejando la superficie fija, que GRADO corresponde al porcentaje que se escribio. Sirve para detectar lesiones graves anotadas con grado corto. En la cartilla de UAN Quibdo destapo siete lesiones calificadas CRITICAS que estaban registradas con grado 3 cuando su propio porcentaje solo cabe en grado 4.",
+    "NUEVO: suite de pruebas de la matriz (npm run test:matriz), con las seis condiciones que no se pueden romper: las cuatro esquinas, que el porcentaje crezca con los dos ejes, y que el grado pese mas que la superficie.",
     "ARREGLADO: la lista de proyectos se veia deforme en el celular. Las tarjetas se estiraban mas alla del ancho de la pantalla y quedaban cortadas por el costado, con el texto aplastado en una columna angosta. Pasaba con los nombres de proyecto largos. Ahora la tarjeta se ajusta a la pantalla y el nombre largo se recorta con puntos suspensivos.",
     "ARREGLADO - LAS FOTOS QUE SALIAN COMO ENLACE ROTO: los enlaces de las fotos caducan a los 7 dias, y se guardaban tal cual. Al abrir un proyecto de mas de una semana salia imagen rota. TU FOTO NUNCA SE PERDIO: sigue intacta en el servidor, lo que vencio es el permiso temporal para verla. Por eso al imprimir el consolidado si aparecian: ese camino volvia a firmar los enlaces. Ahora la pantalla tambien los renueva sola.",
     "Si una foto no se puede mostrar, ahora dice 'la foto NO se perdio, esta en el servidor' en vez de dejar el icono de imagen rota, que hace pensar que se perdio el trabajo.",
@@ -69,5 +77,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.1.1.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.2.0.apk"
 }
