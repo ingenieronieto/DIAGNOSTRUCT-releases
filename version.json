@@ -1,8 +1,9 @@
 {
-  "version": "2.1.0",
+  "version": "2.1.1",
   "fecha": "2026-08-26",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO: la lista de proyectos se veia deforme en el celular. Las tarjetas se estiraban mas alla del ancho de la pantalla y quedaban cortadas por el costado, con el texto aplastado en una columna angosta. Pasaba con los nombres de proyecto largos. Ahora la tarjeta se ajusta a la pantalla y el nombre largo se recorta con puntos suspensivos.",
     "ARREGLADO - LAS FOTOS QUE SALIAN COMO ENLACE ROTO: los enlaces de las fotos caducan a los 7 dias, y se guardaban tal cual. Al abrir un proyecto de mas de una semana salia imagen rota. TU FOTO NUNCA SE PERDIO: sigue intacta en el servidor, lo que vencio es el permiso temporal para verla. Por eso al imprimir el consolidado si aparecian: ese camino volvia a firmar los enlaces. Ahora la pantalla tambien los renueva sola.",
     "Si una foto no se puede mostrar, ahora dice 'la foto NO se perdio, esta en el servidor' en vez de dejar el icono de imagen rota, que hace pensar que se perdio el trabajo.",
     "ARREGLADO: las fotos que bajaba 'Llevar a obra' no se veian sin senal. Se guardaban usando el enlace como nombre, y como ese enlace cambia en cada firma, al volver a campo no se encontraban. Se bajaban y aun asi no aparecian. Ahora se guardan por la ruta del archivo.",
@@ -68,5 +69,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.1.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.1.1.apk"
 }
