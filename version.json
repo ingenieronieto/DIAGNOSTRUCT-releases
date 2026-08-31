@@ -1,8 +1,15 @@
 {
-  "version": "2.3.1",
+  "version": "2.4.0",
   "fecha": "2026-08-26",
   "minima": "1.70.0",
   "notas": [
+    "CRITICO - ENSAYOS QUE NO SUBIAN NUNCA Y SE IBAN A PAUSA. Si creabas un ensayo SIN senal y despues lo editabas antes de que subiera, la edicion quedaba pidiendole al servidor un identificador local que la base no entiende ('invalid input syntax for type uuid'). El servidor lo rechazaba SIEMPRE, las 10 veces, y el ensayo terminaba en pausa con el trabajo de campo adentro. NO era falta de senal. Ahora, al subir un ensayo creado sin senal, se anota que su identificador local equivale al de la base, y las ediciones se traducen antes de enviarse.",
+    "RESCATE de los que ya estaban atascados: los ensayos que subieron antes de este arreglo no dejaron esa equivalencia anotada. Ahora se los busca por su codigo visible (TNT-001, RGT-012...) y se repara solo.",
+    "ARREGLADO: una edicion que esperaba a que subiera su propia creacion gastaba intentos y se pausaba por culpa de otro. Ahora espera sin gastarlos.",
+    "ARREGLADO - LAS FOTOS DE TINTAS PENETRANTES NO SE GUARDABAN. Se veian mientras el formulario estaba abierto y desaparecian al guardar, en silencio: la foto se marcaba como local pero nunca se registraba en la cola, asi que nadie la subia, y al guardar se le quitaba la imagen. Perdida total. OJO: lo arreglado vale de aqui en adelante; las fotos que ya se perdieron hay que volver a tomarlas.",
+    "ARREGLADO: al subir una foto se borraban los marcadores de discontinuidades que se hubieran puesto encima.",
+    "ARREGLADO - LA CAMARA SE TRABABA AL DISPARAR. La foto se codificaba a 3,7 megapixeles y despues todo lo que sigue la reducia igual: el doble de trabajo para tirar la mitad. Y la copia al equipo se hacia ANTES de devolver el control, congelando la pantalla justo despues de tomar la foto. Ahora se captura al tamano final (44 % menos de trabajo) y la copia no hace esperar a nadie.",
+    "ARREGLADO: el boton Archivo de la camara flotante abria la camara otra vez en vez del explorador, asi que no habia forma de elegir una foto tomada con otro equipo. Ahora se llama Galeria y abre el selector del sistema.",
     "ARREGLADO - UNA CUENTA SIN EMPRESA VEIA LA PANTALLA VACIA, como si no hubiera proyectos. En realidad el servidor no le muestra ninguno porque la cuenta no esta vinculada a una empresa, y la app no distinguia una cosa de la otra. Ahora lo dice con todas las letras y explica que lo tiene que vincular un administrador desde Usuarios.",
     "ARREGLADO - LOS CUATRO CONTADORES DE ARRIBA (proyectos, activos, ensayos, planos) salian como cuatro franjas de lado a lado, apiladas, que se comian toda la pantalla antes de llegar a los proyectos. Ahora van los cuatro en una sola fila.",
     "ARREGLADO - LA CAMARA ABRIA EN SELFIE, y esta vez con la causa de fondo, que la destapo el informe del propio equipo. El telefono listaba bien las dos camaras, pero Android NO permite tener dos abiertas a la vez: la app pedia la trasera mientras la frontal seguia viva, la peticion fallaba, y se quedaba con la frontal. Ahora suelta la camara actual antes de pedir la otra.",
@@ -82,5 +89,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.3.1.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.0.apk"
 }
