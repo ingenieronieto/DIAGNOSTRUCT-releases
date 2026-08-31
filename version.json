@@ -1,8 +1,10 @@
 {
-  "version": "2.4.0",
+  "version": "2.4.1",
   "fecha": "2026-08-26",
   "minima": "1.70.0",
   "notas": [
+    "RECUPERA ENSAYOS PERDIDOS. Se detecto en el equipo de Pacho: dos esclerometrias de Alpina (ESC 16 y ESC 20) existian en la tablet pero NUNCA llegaron al servidor. Su creacion se perdio y solo quedo la edicion, pidiendo actualizar un ensayo que la base nunca tuvo: iba a esperar para siempre. Los datos estaban completos en la cola (22 campos y sus fotos), asi que ahora, cuando una edicion apunta a un ensayo que NO existe ni en el servidor ni en la cola, se sube como ensayo NUEVO en vez de quedarse esperando.",
+    "Se convierte solo cuando se puede AFIRMAR que el ensayo no existe: si la lista del proyecto todavia no cargo, o si su creacion sigue en la cola, se espera. Convertir a ciegas duplicaria el ensayo.",
     "CRITICO - ENSAYOS QUE NO SUBIAN NUNCA Y SE IBAN A PAUSA. Si creabas un ensayo SIN senal y despues lo editabas antes de que subiera, la edicion quedaba pidiendole al servidor un identificador local que la base no entiende ('invalid input syntax for type uuid'). El servidor lo rechazaba SIEMPRE, las 10 veces, y el ensayo terminaba en pausa con el trabajo de campo adentro. NO era falta de senal. Ahora, al subir un ensayo creado sin senal, se anota que su identificador local equivale al de la base, y las ediciones se traducen antes de enviarse.",
     "RESCATE de los que ya estaban atascados: los ensayos que subieron antes de este arreglo no dejaron esa equivalencia anotada. Ahora se los busca por su codigo visible (TNT-001, RGT-012...) y se repara solo.",
     "ARREGLADO: una edicion que esperaba a que subiera su propia creacion gastaba intentos y se pausaba por culpa de otro. Ahora espera sin gastarlos.",
@@ -89,5 +91,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.0.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.1.apk"
 }
