@@ -1,8 +1,12 @@
 {
-  "version": "2.4.2",
+  "version": "2.4.3",
   "fecha": "2026-09-02",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - EL ZIP DECIA 234 FOTOS LISTAS Y SOLO BAJABA 178. Las que no traian enlace de descarga se descartaban en silencio: no entraban al ZIP y tampoco salian como fallidas, asi que parecia que el proceso tiraba fotos a su antojo. Ahora entran con la ruta del archivo y se les pide un enlace nuevo al bajarlas.",
+    "La foto que no se pueda localizar queda listada DENTRO del ZIP, en _FALTAN_ESTAS_FOTOS.txt, con el motivo. Ninguna desaparece sin dejar rastro.",
+    "La descarga va mucho mas rapida: baja de seis en seis en vez de una por una, con pausa entre cada una.",
+    "Las fotos cuyo archivo todavia no aparece en el servidor se siguen reintentando hasta el final del barrido, pero al final de cada vuelta, para no frenar a las que si van a bajar.",
     "NUEVO - VER SIN EDITAR, EN TODOS LOS ENSAYOS. El boton Ver ahora aparece SIEMPRE, en los doce tipos. Antes se escondia en los ensayos incompletos de nucleos, extraccion de barras, durometria e inclinometria: un nucleo que todavia estaba en campo, sin datos de laboratorio, no tenia Ver, y la unica forma de mirarlo era abrirlo en EDICION. Consultar un ensayo obligaba a entrar por la puerta de editarlo, y cualquier toque accidental quedaba registrado como modificacion. Eso ensuciaba la trazabilidad justo en los ensayos que mas se revisan.",
     "ARREGLADO: dentro del reporte, el desplegable que elige de que ensayo se muestra la hoja bloqueaba los incompletos (nucleos, barras, durometria, inclinometria y tintas). Aunque el boton Ver apareciera, no se podia volver a elegir ese ensayo en la lista. Ahora se puede, con la etiqueta que avisa del estado: (solo campo), (sin datos), (sin lecturas), (incompleto).",
     "SIN CAMBIO: imprimir un nucleo de campo como resultado de laboratorio sigue bloqueado. Se puede CONSULTAR el ensayo a medias; lo que no se puede es presentarlo como resultado terminado.",
@@ -94,5 +98,5 @@
     "ARREGLADO: la impresión de la entrega salía casi al doble de páginas (una de 73 salía en ~150). Cada formato de ensayo vuelve a caber en una hoja A4."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.2.apk"
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.3.apk"
 }
