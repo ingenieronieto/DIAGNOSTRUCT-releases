@@ -1,12 +1,11 @@
 {
-  "version": "2.4.5",
+  "version": "2.4.6",
   "fecha": "2026-09-02",
   "minima": "1.70.0",
   "notas": [
-    "Cartilla de lesiones de Clinica Farallones completa: 102 fichas sobre los 17 niveles del edificio (3 sotanos, pisos 1 a 12, terraza y fachadas), con 1.270 fotos ya repartidas por ficha. Antes eran 29 fichas de solo cinco niveles.",
-    "El importador del proyecto y el cargador de fotos quedaron al dia con esa cartilla, y el emparejamiento foto-ficha ahora va por nombre de archivo: si la carpeta del registro se reorganiza, las fotos siguen encontrando su lugar."
+    "Clinica Farallones: se corrigieron dos fichas del entrepiso de los sotanos con lo que dice el plano de lesiones. Donde la fotografia solo mostraba humedad y desprendimiento, el plano marca corrosion con perdida de seccion; las fichas S1-L01 y S2-L05 quedaron con esa clasificacion y marcadas como que requieren ensayo."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.5.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.6.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
