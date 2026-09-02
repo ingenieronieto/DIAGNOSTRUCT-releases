@@ -1,12 +1,12 @@
 {
-  "version": "2.4.4",
+  "version": "2.4.5",
   "fecha": "2026-09-02",
   "minima": "1.70.0",
   "notas": [
-    "El aviso de actualizacion ahora muestra SOLO lo que trae la version que llega. Antes arrastraba todo lo publicado desde siempre: llego a mostrar 93 entradas de golpe, casi todas de versiones ya instaladas, y asi no se leia.",
-    "NUEVO: en Datos y respaldo esta el listado completo de versiones publicadas, con lo que cambio en cada una. Se despliega la que interesa y marca cual es la instalada en el equipo."
+    "Cartilla de lesiones de Clinica Farallones completa: 102 fichas sobre los 17 niveles del edificio (3 sotanos, pisos 1 a 12, terraza y fachadas), con 1.270 fotos ya repartidas por ficha. Antes eran 29 fichas de solo cinco niveles.",
+    "El importador del proyecto y el cargador de fotos quedaron al dia con esa cartilla, y el emparejamiento foto-ficha ahora va por nombre de archivo: si la carpeta del registro se reorganiza, las fotos siguen encontrando su lugar."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.4.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.5.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
