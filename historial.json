@@ -2,6 +2,14 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.12",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Arreglado el recorte de fotos, que fallaba con Failed to fetch. La aplicacion guardaba una copia ILEGIBLE de las imagenes (de cero bytes) y despues se la servia a si misma.",
+        "El mismo fallo impedia que los PLANOS quedaran guardados para trabajar SIN SENAL: se guardaban vacios y el aviso no salia por ninguna parte. Al abrir la aplicacion se borran solas esas copias malas y los planos vuelven a descargarse bien."
+      ]
+    },
+    {
       "version": "2.4.11",
       "fecha": "2026-09-03",
       "notas": [

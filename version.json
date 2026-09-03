@@ -1,11 +1,12 @@
 {
-  "version": "2.4.11",
+  "version": "2.4.12",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Ya se pueden RECORTAR las fotos de una lesion. Cuando una misma toma muestra varios elementos, cada ficha puede llevar su propio acercamiento: se arrastra sobre la foto para encuadrar el elemento y el recorte queda como foto de esa ficha. La foto original no se toca, asi que las otras fichas que la usan siguen igual. El recorte se saca de la imagen original y no de la reducida que se ve en pantalla, para no perder la definicion que sirve para ver la fisura."
+    "Arreglado el recorte de fotos, que fallaba con Failed to fetch. La aplicacion guardaba una copia ILEGIBLE de las imagenes (de cero bytes) y despues se la servia a si misma.",
+    "El mismo fallo impedia que los PLANOS quedaran guardados para trabajar SIN SENAL: se guardaban vacios y el aviso no salia por ninguna parte. Al abrir la aplicacion se borran solas esas copias malas y los planos vuelven a descargarse bien."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.11.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.12.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
