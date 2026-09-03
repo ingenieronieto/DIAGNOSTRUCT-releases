@@ -2,6 +2,14 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.9",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Ya se ve el plano al ubicar una lesion. El recuadro de ubicacion mostraba el icono de imagen rota: pedia la imagen por un nombre de campo que no existe. Pasaba tambien en el mapa de humedad y en el informe fitosanitario.",
+        "Nuevo boton para DUPLICAR una ficha de lesion. Cuando una misma fotografia muestra varios elementos afectados, cada uno necesita su ficha: el boton crea otra con los mismos datos, la misma ubicacion en planta y las mismas fotos, y solo queda cambiar el elemento y su clasificacion."
+      ]
+    },
+    {
       "version": "2.4.8",
       "fecha": "2026-09-03",
       "notas": [
