@@ -2,6 +2,13 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.7",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Clinica Farallones: las fichas de lesion ya traen su PLANO adjunto. Se anadieron las 11 plantas (sotanos 1 a 3 y pisos 1 a 8): 67 de las 102 fichas quedan con su plano y 22 de ellas ademas con la marca de ubicacion ya puesta, calculada desde los bloques del DWG. Las otras 45 se ubican con un clic. Es lo que llena el recuadro UBICACION DE LESION de la cartilla."
+      ]
+    },
+    {
       "version": "2.4.6",
       "fecha": "2026-09-02",
       "notas": [

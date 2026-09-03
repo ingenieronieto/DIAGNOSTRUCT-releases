@@ -1,11 +1,11 @@
 {
-  "version": "2.4.6",
-  "fecha": "2026-09-02",
+  "version": "2.4.7",
+  "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Clinica Farallones: se corrigieron dos fichas del entrepiso de los sotanos con lo que dice el plano de lesiones. Donde la fotografia solo mostraba humedad y desprendimiento, el plano marca corrosion con perdida de seccion; las fichas S1-L01 y S2-L05 quedaron con esa clasificacion y marcadas como que requieren ensayo."
+    "Clinica Farallones: las fichas de lesion ya traen su PLANO adjunto. Se anadieron las 11 plantas (sotanos 1 a 3 y pisos 1 a 8): 67 de las 102 fichas quedan con su plano y 22 de ellas ademas con la marca de ubicacion ya puesta, calculada desde los bloques del DWG. Las otras 45 se ubican con un clic. Es lo que llena el recuadro UBICACION DE LESION de la cartilla."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.6.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.7.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
