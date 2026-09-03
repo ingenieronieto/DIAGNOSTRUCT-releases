@@ -1,11 +1,11 @@
 {
-  "version": "2.4.14",
+  "version": "2.4.15",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Corregido el aviso rojo al marcar una lesion. La aplicacion no reconocia la forma exacta en que el servidor avisa de que la columna todavia no existe, asi que en vez de seguir sin ese campo mostraba el error. Ahora marca y nombre se comportan como estaba previsto: si la base no tiene todavia las columnas, la aplicacion guarda el resto y no molesta. Para que la marca y el nombre queden guardados de verdad hay que correr el ALTER TABLE."
+    "Arreglado de raiz el recorte de fotos. Ahora recorta sobre la imagen que YA ESTA en pantalla, que es la fuente mas segura: sus pixeles estan en memoria aunque el enlace de la foto haya caducado. Eso era lo que fallaba con las fotos que todavia viven en el equipo. Si aun asi no pudiera abrirla, el aviso dice exactamente que se intento y que traia la foto."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.14.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.15.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
