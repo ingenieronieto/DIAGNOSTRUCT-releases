@@ -2,6 +2,13 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.8",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Se corrigio un fallo que borraba datos sin avisar: volver a pulsar Importar Clinica Farallones dejaba en blanco el plano, la marca y las fotos de las 102 fichas, porque la reimportacion pisaba esas columnas con vacio. Ahora la importacion respeta lo que se haya puesto despues. El boton de adjuntar planos tampoco pisa una marca que el ingeniero ya haya movido en sitio. Y las 11 plantas de Farallones salen del precache de la aplicacion web: dejan de descargarse 5 MB en todos los equipos que no trabajan ese proyecto."
+      ]
+    },
+    {
       "version": "2.4.7",
       "fecha": "2026-09-03",
       "notas": [
