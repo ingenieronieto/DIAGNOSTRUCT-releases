@@ -1,12 +1,15 @@
 {
-  "version": "2.4.12",
+  "version": "2.4.13",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Arreglado el recorte de fotos, que fallaba con Failed to fetch. La aplicacion guardaba una copia ILEGIBLE de las imagenes (de cero bytes) y despues se la servia a si misma.",
-    "El mismo fallo impedia que los PLANOS quedaran guardados para trabajar SIN SENAL: se guardaban vacios y el aviso no salia por ninguna parte. Al abrir la aplicacion se borran solas esas copias malas y los planos vuelven a descargarse bien."
+    "Cada lesion se puede MARCAR con un chulito: queda resaltada en verde. Hay botones para marcar todas y desmarcar todas, con el contador de cuantas van.",
+    "El informe puede imprimir SOLO las lesiones marcadas: hay un interruptor en la barra. Por defecto siguen saliendo todas.",
+    "Se le puede poner NOMBRE propio a cada lesion, ademas del LES-00x.",
+    "Impresion de una lesion por hoja: se limito el alto de las fotos, que con las tres llenas podian empujar la ficha a una segunda pagina. Ademas la vista previa AVISA en rojo si alguna ficha no cabe, y dice por cuantos milimetros.",
+    "Para que la marca y el nombre se guarden hay que correr un ALTER TABLE en la base. Mientras no se corra, la aplicacion sigue funcionando igual: guarda todo lo demas y no se rompe."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.12.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.13.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
