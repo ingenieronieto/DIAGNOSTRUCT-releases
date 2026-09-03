@@ -1,13 +1,11 @@
 {
-  "version": "2.4.10",
+  "version": "2.4.11",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "La ficha de la lesion ahora se abre justo debajo de la que se selecciona, no al final de la lista. Con cien lesiones habia que bajar hasta el fondo cada vez.",
-    "Los cuadros FOTO A, B y C se llenan solos con las fotos que la lesion ya tiene del registro fotografico. Salian vacios aunque la lesion tuviera catorce fotos enganchadas, porque solo buscaban las subidas a mano. El informe impreso y la pantalla usan ahora la misma regla: antes la pantalla mostraba los cuadros vacios y el informe si sacaba las fotos.",
-    "Corregido un fallo en el arranque de sesion que impedia cargar del servidor los modulos de la empresa y la empresa del usuario."
+    "Ya se pueden RECORTAR las fotos de una lesion. Cuando una misma toma muestra varios elementos, cada ficha puede llevar su propio acercamiento: se arrastra sobre la foto para encuadrar el elemento y el recorte queda como foto de esa ficha. La foto original no se toca, asi que las otras fichas que la usan siguen igual. El recorte se saca de la imagen original y no de la reducida que se ve en pantalla, para no perder la definicion que sirve para ver la fisura."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.10.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.11.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
