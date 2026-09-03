@@ -1,12 +1,12 @@
 {
-  "version": "2.4.23",
+  "version": "2.4.24",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Cada lesion sale SIEMPRE en una sola hoja. El recuadro del plano ya no tiene un alto fijo: se ajusta solo a lo que sobre en la hoja, mas grande cuando la descripcion es corta y mas pequeno cuando es larga. Se acabo el aviso de que la ficha se parte en dos paginas.",
-    "En papel Oficio el plano aprovecha la hoja mas grande y sale mas grande."
+    "Ya se puede ORDENAR la cartilla por los mismos campos por los que se filtra: piso, elemento, tipo de lesion, nivel de recuperacion, grado y porcentaje de afectacion, en los dos sentidos.",
+    "El nivel de recuperacion se ordena por GRAVEDAD (demolicion primero) y el grado por numero, no alfabeticamente: ordenar esos dos como texto pondria lo mas grave junto a lo mas leve."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.23.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.24.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

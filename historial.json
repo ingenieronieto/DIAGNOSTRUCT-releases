@@ -2,6 +2,14 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.24",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Ya se puede ORDENAR la cartilla por los mismos campos por los que se filtra: piso, elemento, tipo de lesion, nivel de recuperacion, grado y porcentaje de afectacion, en los dos sentidos.",
+        "El nivel de recuperacion se ordena por GRAVEDAD (demolicion primero) y el grado por numero, no alfabeticamente: ordenar esos dos como texto pondria lo mas grave junto a lo mas leve."
+      ]
+    },
+    {
       "version": "2.4.23",
       "fecha": "2026-09-03",
       "notas": [
