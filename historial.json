@@ -2,6 +2,15 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.17",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Ya se pueden FILTRAR las lesiones e imprimirlas POR PAQUETES: por piso, por elemento, por tipo de lesion, por nivel de recuperacion y por grado. Los filtros se combinan y cada opcion dice cuantas lesiones tiene antes de elegirla.",
+        "El paquete sale ordenado como se lee el edificio: de los sotanos hacia arriba, y dentro de cada piso por numero de ficha. El informe pone en su cabecera de que paquete se trata.",
+        "El mismo filtro esta en la cartilla, para trabajar sobre un piso o un elemento sin el resto de la lista estorbando. Con el filtro puesto, marcar todas solo toca las que se estan viendo."
+      ]
+    },
+    {
       "version": "2.4.16",
       "fecha": "2026-09-03",
       "notas": [
