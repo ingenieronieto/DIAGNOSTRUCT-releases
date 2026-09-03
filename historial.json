@@ -2,6 +2,14 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.23",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Cada lesion sale SIEMPRE en una sola hoja. El recuadro del plano ya no tiene un alto fijo: se ajusta solo a lo que sobre en la hoja, mas grande cuando la descripcion es corta y mas pequeno cuando es larga. Se acabo el aviso de que la ficha se parte en dos paginas.",
+        "En papel Oficio el plano aprovecha la hoja mas grande y sale mas grande."
+      ]
+    },
+    {
       "version": "2.4.22",
       "fecha": "2026-09-03",
       "notas": [

@@ -1,11 +1,12 @@
 {
-  "version": "2.4.22",
+  "version": "2.4.23",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLADO el informe que salia en blanco al imprimir. Una ficha con menos de tres fotos hacia fallar el dibujo de las marcas sobre el plano, y al fallar se caia el informe entero sin dejar rastro. Ademas, las marcas de foto sobre el plano vuelven a salir de TODAS las fotos de la ficha, no solo de las tres que se imprimen."
+    "Cada lesion sale SIEMPRE en una sola hoja. El recuadro del plano ya no tiene un alto fijo: se ajusta solo a lo que sobre en la hoja, mas grande cuando la descripcion es corta y mas pequeno cuando es larga. Se acabo el aviso de que la ficha se parte en dos paginas.",
+    "En papel Oficio el plano aprovecha la hoja mas grande y sale mas grande."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.22.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.23.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
