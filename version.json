@@ -1,11 +1,11 @@
 {
-  "version": "2.4.15",
+  "version": "2.4.16",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Arreglado de raiz el recorte de fotos. Ahora recorta sobre la imagen que YA ESTA en pantalla, que es la fuente mas segura: sus pixeles estan en memoria aunque el enlace de la foto haya caducado. Eso era lo que fallaba con las fotos que todavia viven en el equipo. Si aun asi no pudiera abrirla, el aviso dice exactamente que se intento y que traia la foto."
+    "Nueva revision de fotos en el panel de administracion: comprueba una por una que las fotos de las lesiones existan DE VERDAD en el servidor, y lista las fichas con problemas. Una ficha puede verse perfecta con una foto que solo esta guardada en ese equipo: si se cambia de maquina o la abre otra persona, esa foto no aparece, y hasta ahora nada avisaba. La revision no borra nada."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.15.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.16.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

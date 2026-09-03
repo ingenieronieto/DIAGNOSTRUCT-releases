@@ -2,6 +2,13 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.16",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Nueva revision de fotos en el panel de administracion: comprueba una por una que las fotos de las lesiones existan DE VERDAD en el servidor, y lista las fichas con problemas. Una ficha puede verse perfecta con una foto que solo esta guardada en ese equipo: si se cambia de maquina o la abre otra persona, esa foto no aparece, y hasta ahora nada avisaba. La revision no borra nada."
+      ]
+    },
+    {
       "version": "2.4.15",
       "fecha": "2026-09-03",
       "notas": [
