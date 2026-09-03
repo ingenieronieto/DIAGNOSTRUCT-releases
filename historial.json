@@ -2,6 +2,20 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.22",
+      "fecha": "2026-09-03",
+      "notas": [
+        "ARREGLADO el informe que salia en blanco al imprimir. Una ficha con menos de tres fotos hacia fallar el dibujo de las marcas sobre el plano, y al fallar se caia el informe entero sin dejar rastro. Ademas, las marcas de foto sobre el plano vuelven a salir de TODAS las fotos de la ficha, no solo de las tres que se imprimen."
+      ]
+    },
+    {
+      "version": "2.4.21",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Correcciones internas: reintento por cada columna nueva que falte en la base, y aviso visible si el informe falla al abrirse."
+      ]
+    },
+    {
       "version": "2.4.20",
       "fecha": "2026-09-03",
       "notas": [
