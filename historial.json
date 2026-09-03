@@ -2,6 +2,13 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.18",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Nueva limpieza de fotos huerfanas. Al borrar fotos del almacen, las fichas se quedaban apuntando a archivos que ya no existen: la ficha mostraba un hueco y la direccion contestaba 404. Ahora, despues de revisar, un boton quita de las fichas esas referencias que quedaron colgando. No borra ningun archivo: los archivos ya no estan, por eso salen rotas."
+      ]
+    },
+    {
       "version": "2.4.17",
       "fecha": "2026-09-03",
       "notas": [
