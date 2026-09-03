@@ -2,6 +2,15 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.20",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Ya se puede BLINDAR una ficha de lesion, con el candado de su fila. Una ficha blindada no la toca ninguna operacion masiva: ni volver a importar las fichas, ni adjuntar planos y marcas, ni la limpieza de fotos. Se protegen asi las fotos, el plano, la marca y la informacion que ya estan verificadas.",
+        "Al blindarla se guarda ademas una copia de como quedo, con su fecha, para poder volver a ese estado.",
+        "Quitar el blindaje pide confirmacion; ponerlo no. Para que funcione hay que correr un ALTER TABLE; mientras no se corra la aplicacion sigue trabajando igual."
+      ]
+    },
+    {
       "version": "2.4.19",
       "fecha": "2026-09-03",
       "notas": [

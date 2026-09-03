@@ -1,11 +1,13 @@
 {
-  "version": "2.4.19",
+  "version": "2.4.20",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "La limpieza de fotos huerfanas ahora es segura. Antes de escribir vuelve a leer las fichas del servidor, asi que lo que se haya marcado, renombrado o editado entre revisar y limpiar NO se pierde. Y antes de quitar cada foto la vuelve a pedir al servidor: si responde, no se toca. Solo se toca la lista de fotos de la ficha; ni la marca de revisada, ni el nombre, ni las fotos que si estan."
+    "Ya se puede BLINDAR una ficha de lesion, con el candado de su fila. Una ficha blindada no la toca ninguna operacion masiva: ni volver a importar las fichas, ni adjuntar planos y marcas, ni la limpieza de fotos. Se protegen asi las fotos, el plano, la marca y la informacion que ya estan verificadas.",
+    "Al blindarla se guarda ademas una copia de como quedo, con su fecha, para poder volver a ese estado.",
+    "Quitar el blindaje pide confirmacion; ponerlo no. Para que funcione hay que correr un ALTER TABLE; mientras no se corra la aplicacion sigue trabajando igual."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.19.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.20.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
