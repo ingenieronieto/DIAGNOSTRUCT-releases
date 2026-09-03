@@ -1,12 +1,13 @@
 {
-  "version": "2.4.9",
+  "version": "2.4.10",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Ya se ve el plano al ubicar una lesion. El recuadro de ubicacion mostraba el icono de imagen rota: pedia la imagen por un nombre de campo que no existe. Pasaba tambien en el mapa de humedad y en el informe fitosanitario.",
-    "Nuevo boton para DUPLICAR una ficha de lesion. Cuando una misma fotografia muestra varios elementos afectados, cada uno necesita su ficha: el boton crea otra con los mismos datos, la misma ubicacion en planta y las mismas fotos, y solo queda cambiar el elemento y su clasificacion."
+    "La ficha de la lesion ahora se abre justo debajo de la que se selecciona, no al final de la lista. Con cien lesiones habia que bajar hasta el fondo cada vez.",
+    "Los cuadros FOTO A, B y C se llenan solos con las fotos que la lesion ya tiene del registro fotografico. Salian vacios aunque la lesion tuviera catorce fotos enganchadas, porque solo buscaban las subidas a mano. El informe impreso y la pantalla usan ahora la misma regla: antes la pantalla mostraba los cuadros vacios y el informe si sacaba las fotos.",
+    "Corregido un fallo en el arranque de sesion que impedia cargar del servidor los modulos de la empresa y la empresa del usuario."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.9.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.10.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

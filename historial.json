@@ -2,6 +2,15 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.10",
+      "fecha": "2026-09-03",
+      "notas": [
+        "La ficha de la lesion ahora se abre justo debajo de la que se selecciona, no al final de la lista. Con cien lesiones habia que bajar hasta el fondo cada vez.",
+        "Los cuadros FOTO A, B y C se llenan solos con las fotos que la lesion ya tiene del registro fotografico. Salian vacios aunque la lesion tuviera catorce fotos enganchadas, porque solo buscaban las subidas a mano. El informe impreso y la pantalla usan ahora la misma regla: antes la pantalla mostraba los cuadros vacios y el informe si sacaba las fotos.",
+        "Corregido un fallo en el arranque de sesion que impedia cargar del servidor los modulos de la empresa y la empresa del usuario."
+      ]
+    },
+    {
       "version": "2.4.9",
       "fecha": "2026-09-03",
       "notas": [
