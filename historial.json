@@ -2,6 +2,13 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.14",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Corregido el aviso rojo al marcar una lesion. La aplicacion no reconocia la forma exacta en que el servidor avisa de que la columna todavia no existe, asi que en vez de seguir sin ese campo mostraba el error. Ahora marca y nombre se comportan como estaba previsto: si la base no tiene todavia las columnas, la aplicacion guarda el resto y no molesta. Para que la marca y el nombre queden guardados de verdad hay que correr el ALTER TABLE."
+      ]
+    },
+    {
       "version": "2.4.13",
       "fecha": "2026-09-03",
       "notas": [

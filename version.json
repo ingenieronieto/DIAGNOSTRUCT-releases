@@ -1,15 +1,11 @@
 {
-  "version": "2.4.13",
+  "version": "2.4.14",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Cada lesion se puede MARCAR con un chulito: queda resaltada en verde. Hay botones para marcar todas y desmarcar todas, con el contador de cuantas van.",
-    "El informe puede imprimir SOLO las lesiones marcadas: hay un interruptor en la barra. Por defecto siguen saliendo todas.",
-    "Se le puede poner NOMBRE propio a cada lesion, ademas del LES-00x.",
-    "Impresion de una lesion por hoja: se limito el alto de las fotos, que con las tres llenas podian empujar la ficha a una segunda pagina. Ademas la vista previa AVISA en rojo si alguna ficha no cabe, y dice por cuantos milimetros.",
-    "Para que la marca y el nombre se guarden hay que correr un ALTER TABLE en la base. Mientras no se corra, la aplicacion sigue funcionando igual: guarda todo lo demas y no se rompe."
+    "Corregido el aviso rojo al marcar una lesion. La aplicacion no reconocia la forma exacta en que el servidor avisa de que la columna todavia no existe, asi que en vez de seguir sin ese campo mostraba el error. Ahora marca y nombre se comportan como estaba previsto: si la base no tiene todavia las columnas, la aplicacion guarda el resto y no molesta. Para que la marca y el nombre queden guardados de verdad hay que correr el ALTER TABLE."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.13.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.14.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
