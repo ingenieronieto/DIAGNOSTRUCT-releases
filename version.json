@@ -1,12 +1,11 @@
 {
-  "version": "2.4.24",
+  "version": "2.4.25",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Ya se puede ORDENAR la cartilla por los mismos campos por los que se filtra: piso, elemento, tipo de lesion, nivel de recuperacion, grado y porcentaje de afectacion, en los dos sentidos.",
-    "El nivel de recuperacion se ordena por GRAVEDAD (demolicion primero) y el grado por numero, no alfabeticamente: ordenar esos dos como texto pondria lo mas grave junto a lo mas leve."
+    "Los recortes ahora se confirman: despues de recortar, la aplicacion fuerza la subida y COMPRUEBA contra el servidor que el archivo quedo alli. Si llego, lo dice. Si no, avisa de que el recorte esta guardado en el equipo pero todavia no en el servidor, y que hasta entonces no sale en el informe ni se ve desde otra maquina. Antes se subia en segundo plano sin comprobar nada, y un recorte que no llegaba se veia perfecto en la ficha y no estaba en ningun lado."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.24.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.25.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
