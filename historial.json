@@ -2,6 +2,13 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.19",
+      "fecha": "2026-09-03",
+      "notas": [
+        "La limpieza de fotos huerfanas ahora es segura. Antes de escribir vuelve a leer las fichas del servidor, asi que lo que se haya marcado, renombrado o editado entre revisar y limpiar NO se pierde. Y antes de quitar cada foto la vuelve a pedir al servidor: si responde, no se toca. Solo se toca la lista de fotos de la ficha; ni la marca de revisada, ni el nombre, ni las fotos que si estan."
+      ]
+    },
+    {
       "version": "2.4.18",
       "fecha": "2026-09-03",
       "notas": [

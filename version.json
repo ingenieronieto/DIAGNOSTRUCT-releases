@@ -1,11 +1,11 @@
 {
-  "version": "2.4.18",
+  "version": "2.4.19",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "Nueva limpieza de fotos huerfanas. Al borrar fotos del almacen, las fichas se quedaban apuntando a archivos que ya no existen: la ficha mostraba un hueco y la direccion contestaba 404. Ahora, despues de revisar, un boton quita de las fichas esas referencias que quedaron colgando. No borra ningun archivo: los archivos ya no estan, por eso salen rotas."
+    "La limpieza de fotos huerfanas ahora es segura. Antes de escribir vuelve a leer las fichas del servidor, asi que lo que se haya marcado, renombrado o editado entre revisar y limpiar NO se pierde. Y antes de quitar cada foto la vuelve a pedir al servidor: si responde, no se toca. Solo se toca la lista de fotos de la ficha; ni la marca de revisada, ni el nombre, ni las fotos que si estan."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.18.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.19.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
