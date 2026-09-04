@@ -1,11 +1,14 @@
 {
-  "version": "2.4.28",
-  "fecha": "2026-09-03",
+  "version": "2.4.29",
+  "fecha": "2026-09-04",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - EL FORMATO DE CARBONATACION DECIA QUE NO HABIA NUCLEOS TENIENDOLOS. Al crear un FDC salia 'No hay nucleos disponibles en este proyecto' aunque los nucleos estuvieran extraidos y guardados. No faltaba ningun dato: el formulario estaba mirando la lista equivocada. En la app conviven dos listas, la del proyecto entero y la del tipo de ensayo que se tiene abierto, y al formulario se le pasaba la segunda: estando en FDC solo traia FDC, asi que buscaba nucleos donde por definicion no podia haber ninguno.",
+    "El mismo error tapaba el nucleo asociado en la LISTA de carbonataciones y en la HOJA IMPRESA del FDC: salian en blanco por la misma razon. Los tres quedaron arreglados de una.",
+    "Se agrego una prueba que falla si el error vuelve a colarse. Era un cambio de una sola palabra, invisible al leer el diff, y aparecia en las trece veces que la app pasa esa lista.",
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.28.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.29.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
