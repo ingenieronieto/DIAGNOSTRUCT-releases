@@ -2,6 +2,14 @@
   "generado": "2026-09-04",
   "versiones": [
     {
+      "version": "2.4.32",
+      "fecha": "2026-09-04",
+      "notas": [
+        "CADA EDIFICACION ARRANCA EN 001, SIEMPRE. Antes se contaba desde el mayor numero del bloque, asi que una edificacion con ensayos heredados del criterio viejo nunca llegaba a tener un 001. Ahora se toma el primer numero libre y el bloque empieza su propia cuenta; el numero heredado sigue ocupado y se salta cuando la cuenta llegue ahi.",
+        "OJO: si se BORRA un ensayo, su numero lo toma el siguiente que se cree. Y el reinicio solo se ve si la estructura tiene codigo corto cargado."
+      ]
+    },
+    {
       "version": "2.4.31",
       "fecha": "2026-09-04",
       "notas": [

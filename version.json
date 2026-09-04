@@ -1,8 +1,11 @@
 {
-  "version": "2.4.31",
+  "version": "2.4.32",
   "fecha": "2026-09-04",
   "minima": "1.70.0",
   "notas": [
+    "CAMBIADO - CADA EDIFICACION ARRANCA EN 001, SIEMPRE. La version anterior contaba desde el mayor numero del bloque, asi que una edificacion que ya traia ensayos numerados con el criterio viejo (por proyecto) nunca llegaba a tener un 001: si el bloque B heredaba un ESC 003, su primer ensayo propio salia 004. Ahora se toma el primer numero libre del bloque, y ese bloque empieza en 001. El numero heredado sigue ocupado: cuando la cuenta propia llegue ahi, lo salta.",
+    "CONSECUENCIA A TENER EN CUENTA: si se BORRA un ensayo, su numero queda libre y lo toma el siguiente que se cree. Eso es lo que deja la numeracion densa, sin huecos, pero si ese ensayo ya salio en un informe entregado el mismo numero va a aparecer en dos papeles distintos.",
+    "OJO: el reinicio solo se ve si la estructura tiene CODIGO CORTO cargado. Sin codigo el ID cae a la forma corta (ESC 001) y puede chocar con uno viejo del proyecto, asi que sube hasta encontrar uno libre. Con codigo no hay choque posible porque el ID ya nombra la edificacion. Conviene revisar que cada estructura tenga su codigo.",
     "ARREGLADO - LOS ID DE ENSAYO: NI SEGUIAN CONSECUTIVO NI DECIAN DE QUE EDIFICACION ERAN. Convivian dos criterios: carbonatacion, potencial de corrosion, tintas, ultrasonido de metales y de concreto ya contaban por edificacion y ponian el codigo del bloque en el ID (FDC-BLQ-A 007); los otros siete contaban por PROYECTO y no nombraban la edificacion (ESC 007 a secas). Por eso el consecutivo saltaba: tres esclerometrias en el bloque A y la primera del B salia 004, como si el B ya tuviera tres. Ahora los doce modulos cuentan por edificacion y por tipo, y el ID lleva el codigo del bloque.",
     "ARREGLADO - ID REPETIDOS. El siguiente numero salia del mayor `numero` de los ensayos, contando como cero a los que no lo tienen (importados, restaurados de una copia, creados sin senal). Con todos en cero el maximo era cero y CADA ensayo nuevo se llamaba 001. Dos ensayos distintos con el mismo codigo en un informe firmado no se pueden desempatar despues. Ahora, cuando falta el campo, el numero se deduce del propio ID.",
     "GARANTIA: antes de asignarlo se comprueba que ese ID no exista ya en el proyecto, y si existe se sigue subiendo. Pase lo que pase con los datos, dos ensayos no salen con el mismo codigo.",
@@ -19,6 +22,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.31.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.32.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
