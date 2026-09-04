@@ -2,6 +2,13 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.28",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
+      ]
+    },
+    {
       "version": "2.4.27",
       "fecha": "2026-09-03",
       "notas": [

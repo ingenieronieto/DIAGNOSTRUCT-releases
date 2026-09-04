@@ -1,11 +1,11 @@
 {
-  "version": "2.4.27",
+  "version": "2.4.28",
   "fecha": "2026-09-03",
   "minima": "1.70.0",
   "notas": [
-    "La ficha ya no se derrama a una segunda hoja. El ajuste del recuadro del plano ahora se fuerza JUSTO ANTES de imprimir: quien pulsaba Imprimir enseguida mandaba a la impresora fichas que todavia no se habian ajustado, y la ultima franja se iba a otra pagina. Ademas se deja un colchon de 4 mm, porque el navegador redondea al maquetar para la impresora y un solo milimetro de sobra ya provoca el salto."
+    "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.27.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.28.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
