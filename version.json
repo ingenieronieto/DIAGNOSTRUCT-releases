@@ -1,14 +1,18 @@
 {
-  "version": "2.4.29",
+  "version": "2.4.30",
   "fecha": "2026-09-04",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - EL NUCLEO SE ELIGE PRIMERO Y DE EL BAJA TODA LA LOCALIZACION. En el formato de carbonatacion (FDC) la pregunta del nucleo paso al comienzo. Al elegirlo se llenan solas la estructura, el nivel, el eje, la ubicacion, el elemento, la georreferencia y la marca en el plano. El FDC no tiene punto propio: se mide sobre la cara fresca de un testigo ya extraido, asi que el punto lo definio el nucleo. Antes habia que teclear todo eso a mano y despues declarar de que nucleo salia; ademas de repetir trabajo en obra, cada transcripcion es una ocasion de equivocarse, y basta un piso mal escrito para que el ensayo quede colgado de un elemento que no es el que se perforo.",
+    "Los dos formatos no usan las mismas palabras, asi que la copia se traduce: el nivel del nucleo se escribe libre (PISO 1, 1, S1, Sotano 2) y el del FDC es una lista cerrada. Se entienden esas formas, incluida la abreviada y el negativo para sotanos.",
+    "IMPORTANTE - NO SE INVENTA PRECISION QUE EL NUCLEO NO TIENE. Si el nucleo dice VIGA y el catalogo del FDC distingue principal, secundaria e invertida, el campo queda VACIO y se avisa en pantalla ('el nucleo dice VIGA, precisa cual es') en vez de elegir una por el ingeniero. Lo mismo con MURO. Un dato que entra solo y esta mal es peor que un campo en blanco que se ve. Las equivalencias claras si viajan solas: COLUMNA, VIGUETA, MURO CONTENCION y PLACA.",
+    "Un nivel que la estructura no tiene tampoco se acepta: si el nucleo dice Piso 9 en un edificio de 5, eso no es un piso 9 sino un dato mal escrito, y se pide elegirlo a mano.",
     "ARREGLADO - EL FORMATO DE CARBONATACION DECIA QUE NO HABIA NUCLEOS TENIENDOLOS. Al crear un FDC salia 'No hay nucleos disponibles en este proyecto' aunque los nucleos estuvieran extraidos y guardados. No faltaba ningun dato: el formulario estaba mirando la lista equivocada. En la app conviven dos listas, la del proyecto entero y la del tipo de ensayo que se tiene abierto, y al formulario se le pasaba la segunda: estando en FDC solo traia FDC, asi que buscaba nucleos donde por definicion no podia haber ninguno.",
     "El mismo error tapaba el nucleo asociado en la LISTA de carbonataciones y en la HOJA IMPRESA del FDC: salian en blanco por la misma razon. Los tres quedaron arreglados de una.",
     "Se agrego una prueba que falla si el error vuelve a colarse. Era un cambio de una sola palabra, invisible al leer el diff, y aparecia en las trece veces que la app pasa esa lista.",
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.29.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.30.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

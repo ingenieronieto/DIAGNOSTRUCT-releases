@@ -2,6 +2,14 @@
   "generado": "2026-09-04",
   "versiones": [
     {
+      "version": "2.4.30",
+      "fecha": "2026-09-04",
+      "notas": [
+        "NUEVO - EL NUCLEO SE ELIGE PRIMERO Y DE EL BAJA TODA LA LOCALIZACION. En el formato de carbonatacion (FDC) la pregunta del nucleo paso al comienzo: al elegirlo se llenan solas la estructura, el nivel, el eje, la ubicacion, el elemento, la georreferencia y la marca en el plano. El FDC se mide sobre la cara fresca de un testigo ya extraido, asi que el punto lo definio el nucleo; antes habia que teclear todo eso a mano y basta un piso mal escrito para que el ensayo quede colgado de un elemento que no es.",
+        "NO SE INVENTA PRECISION QUE EL NUCLEO NO TIENE: si el nucleo dice VIGA y el catalogo del FDC distingue principal, secundaria e invertida, el campo queda vacio y se pide precisarlo, en vez de elegir una por el ingeniero."
+      ]
+    },
+    {
       "version": "2.4.29",
       "fecha": "2026-09-04",
       "notas": [
