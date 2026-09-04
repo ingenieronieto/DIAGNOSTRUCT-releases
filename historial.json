@@ -2,6 +2,20 @@
   "generado": "2026-09-02",
   "versiones": [
     {
+      "version": "2.4.27",
+      "fecha": "2026-09-03",
+      "notas": [
+        "La ficha ya no se derrama a una segunda hoja. El ajuste del recuadro del plano ahora se fuerza JUSTO ANTES de imprimir: quien pulsaba Imprimir enseguida mandaba a la impresora fichas que todavia no se habian ajustado, y la ultima franja se iba a otra pagina. Ademas se deja un colchon de 4 mm, porque el navegador redondea al maquetar para la impresora y un solo milimetro de sobra ya provoca el salto."
+      ]
+    },
+    {
+      "version": "2.4.26",
+      "fecha": "2026-09-03",
+      "notas": [
+        "Reponer las fotos borradas del almacen desde la carpeta del registro fotografico."
+      ]
+    },
+    {
       "version": "2.4.25",
       "fecha": "2026-09-03",
       "notas": [
