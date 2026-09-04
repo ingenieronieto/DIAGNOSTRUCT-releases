@@ -2,6 +2,15 @@
   "generado": "2026-09-04",
   "versiones": [
     {
+      "version": "2.4.31",
+      "fecha": "2026-09-04",
+      "notas": [
+        "ARREGLADO - LOS ID DE ENSAYO. Convivian dos criterios: cinco modulos contaban por edificacion y ponian el codigo del bloque en el ID; los otros siete contaban por PROYECTO y no nombraban la edificacion. Por eso el consecutivo saltaba al cambiar de bloque. Ahora los doce cuentan por edificacion y por tipo, con el codigo del bloque en el ID.",
+        "ARREGLADO - ID REPETIDOS: si a los ensayos les faltaba el campo `numero` (importados, restaurados de copia, creados sin senal) todos contaban como cero y cada ensayo nuevo se llamaba 001. Ahora el numero se deduce del propio ID, y antes de asignarlo se comprueba que no exista ya en el proyecto.",
+        "NUEVO - AVISO de los ID repetidos que YA estan guardados, con la lista y cuantos ensayos usa cada uno. No se renumeran solos: cambiar el ID de un ensayo ya emitido descuadra los informes donde aparece."
+      ]
+    },
+    {
       "version": "2.4.30",
       "fecha": "2026-09-04",
       "notas": [

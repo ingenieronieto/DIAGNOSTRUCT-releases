@@ -1,8 +1,14 @@
 {
-  "version": "2.4.30",
+  "version": "2.4.31",
   "fecha": "2026-09-04",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - LOS ID DE ENSAYO: NI SEGUIAN CONSECUTIVO NI DECIAN DE QUE EDIFICACION ERAN. Convivian dos criterios: carbonatacion, potencial de corrosion, tintas, ultrasonido de metales y de concreto ya contaban por edificacion y ponian el codigo del bloque en el ID (FDC-BLQ-A 007); los otros siete contaban por PROYECTO y no nombraban la edificacion (ESC 007 a secas). Por eso el consecutivo saltaba: tres esclerometrias en el bloque A y la primera del B salia 004, como si el B ya tuviera tres. Ahora los doce modulos cuentan por edificacion y por tipo, y el ID lleva el codigo del bloque.",
+    "ARREGLADO - ID REPETIDOS. El siguiente numero salia del mayor `numero` de los ensayos, contando como cero a los que no lo tienen (importados, restaurados de una copia, creados sin senal). Con todos en cero el maximo era cero y CADA ensayo nuevo se llamaba 001. Dos ensayos distintos con el mismo codigo en un informe firmado no se pueden desempatar despues. Ahora, cuando falta el campo, el numero se deduce del propio ID.",
+    "GARANTIA: antes de asignarlo se comprueba que ese ID no exista ya en el proyecto, y si existe se sigue subiendo. Pase lo que pase con los datos, dos ensayos no salen con el mismo codigo.",
+    "Cuatro modulos (extraccion de barras, durometria, inclinometria) ya tenian escrita la cuenta por edificacion, pero arriba llevaban una linea que la anulaba siempre. Ese codigo nunca se llego a ejecutar.",
+    "NUEVO - AVISO DE ID REPETIDOS QUE YA ESTAN GUARDADOS. Lo anterior vale de aqui en adelante; los ensayos que ya se guardaron con el ID repetido siguen como estan. Ahora, si el proyecto tiene alguno, sale una franja arriba de la lista que los enumera y dice cuantos ensayos usa cada uno. NO se renumeran solos a proposito: cambiar el ID de un ensayo ya emitido descuadra los informes donde aparece, y cual conservar es decision del ingeniero.",
+    "OJO CON LOS PROYECTOS EN CURSO: un bloque que ya tenga ensayos numerados con el criterio viejo NO reinicia en 001, sigue por encima de su mayor numero. Reiniciar dejaria dos numeraciones cruzadas dentro de la misma edificacion.",
     "NUEVO - EL NUCLEO SE ELIGE PRIMERO Y DE EL BAJA TODA LA LOCALIZACION. En el formato de carbonatacion (FDC) la pregunta del nucleo paso al comienzo. Al elegirlo se llenan solas la estructura, el nivel, el eje, la ubicacion, el elemento, la georreferencia y la marca en el plano. El FDC no tiene punto propio: se mide sobre la cara fresca de un testigo ya extraido, asi que el punto lo definio el nucleo. Antes habia que teclear todo eso a mano y despues declarar de que nucleo salia; ademas de repetir trabajo en obra, cada transcripcion es una ocasion de equivocarse, y basta un piso mal escrito para que el ensayo quede colgado de un elemento que no es el que se perforo.",
     "Los dos formatos no usan las mismas palabras, asi que la copia se traduce: el nivel del nucleo se escribe libre (PISO 1, 1, S1, Sotano 2) y el del FDC es una lista cerrada. Se entienden esas formas, incluida la abreviada y el negativo para sotanos.",
     "IMPORTANTE - NO SE INVENTA PRECISION QUE EL NUCLEO NO TIENE. Si el nucleo dice VIGA y el catalogo del FDC distingue principal, secundaria e invertida, el campo queda VACIO y se avisa en pantalla ('el nucleo dice VIGA, precisa cual es') en vez de elegir una por el ingeniero. Lo mismo con MURO. Un dato que entra solo y esta mal es peor que un campo en blanco que se ve. Las equivalencias claras si viajan solas: COLUMNA, VIGUETA, MURO CONTENCION y PLACA.",
@@ -13,6 +19,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.30.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.31.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
