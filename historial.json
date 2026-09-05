@@ -2,6 +2,17 @@
   "generado": "2026-09-04",
   "versiones": [
     {
+      "version": "2.5.0",
+      "fecha": "2026-09-04",
+      "notas": [
+        "NUEVO - REGISTRO DE REPARACIONES. Los ensayos que abren la estructura (nucleos, regatas, extraccion de barras y potencial de corrosion) llevan ahora el registro de que el dano se cerro: resane, panete y pintura, con fecha, material, quien la ejecuto y foto. Nueva pestana Reparaciones, con el numero de pendientes a la vista y cierre EN LOTE.",
+        "OJO: todos los ensayos guardados hasta hoy cuentan como SIN REPARAR, porque ninguno tiene el dato. Se cierran en lote en un minuto.",
+        "AVISO ANTES DE ENTREGAR: al imprimir la entrega se avisa cuantos huecos siguen abiertos. Avisa, no bloquea.",
+        "ARREGLADO: guardar o borrar cualquier ensayo borraba de la memoria los ensayos de los OTROS tipos hasta recargar la app. Los datos nunca se perdieron (estan en el servidor) pero los conteos y las listas quedaban mal mientras tanto.",
+        "ARREGLADO: en regatas el esquema dibujaba la seccion acostada al medir el alto. Ahora se dibuja siempre de pie, con el lado mayor en vertical, y la cara evaluada se marca sobre el dibujo."
+      ]
+    },
+    {
       "version": "2.4.32",
       "fecha": "2026-09-04",
       "notas": [

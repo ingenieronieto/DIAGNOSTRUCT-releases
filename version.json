@@ -1,8 +1,18 @@
 {
-  "version": "2.4.32",
+  "version": "2.5.0",
   "fecha": "2026-09-04",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - REGISTRO DE REPARACIONES. Los ensayos que abren la estructura -nucleos, regatas, extraccion de barras y potencial de corrosion- ahora llevan el registro de que el dano se cerro: resane, panete y pintura, con fecha, material, quien la ejecuto y foto del resane terminado. Hasta ahora la app solo sabia PLANIFICAR las reparaciones (ocupan horas en el cronograma del plan de auscultamiento); de la ejecucion no quedaba nada, y al cerrar una campana no habia forma de responder si quedo algun hueco abierto en la obra salvo acordandose.",
+    "PESTANA REPARACIONES, CON EL NUMERO DE PENDIENTES A LA VISTA. Se cierran EN LOTE: se marcan las que se hicieron en la jornada y se les pone la fecha, el material y la cuadrilla una sola vez. Las reparaciones no se hacen ensayo por ensayo sino en una pasada al final con otra cuadrilla, y abrir veinte formularios para escribir veinte veces lo mismo era garantizar que nadie lo registrara. Lo unico que queda por ensayo es la foto, porque cada una es distinta.",
+    "CADA PASO TIENE TRES VALORES: pendiente, hecho y NO APLICA. El tercero hace falta de verdad: un elemento en concreto a la vista no lleva panete ni pintura, y sin ese valor habria que marcarlos como hechos -mentir en el registro- para poder dar la reparacion por cerrada.",
+    "EL ESTADO SE DEDUCE DE LOS PASOS, no es un campo aparte, asi que no puede existir un ensayo que diga 'reparada' con todo pendiente. Un registro que puede mentir no sirve para demostrar nada.",
+    "OJO: todos los ensayos guardados hasta hoy cuentan como SIN REPARAR, porque ninguno tiene el dato. Es lo correcto -dar por reparado lo que nunca se toco seria el peor resultado- pero significa que al abrir un proyecto viejo va a aparecer todo pendiente. Se cierra en lote en un minuto.",
+    "AVISO ANTES DE ENTREGAR: al ir a imprimir la entrega se avisa cuantos huecos siguen abiertos y cuales son. AVISA, NO BLOQUEA: el informe puede salir antes de que pase la cuadrilla de resane. Cuando esta todo cerrado no aparece nada, a proposito: un cartel verde permanente ensena a ignorar los carteles.",
+    "El informe gerencial trae ahora el indicador 'Destructivos reparados' (4/6), solo en los proyectos que tienen ensayos destructivos.",
+    "ARREGLADO - UN FALLO SERIO QUE SE ENCONTRO DE PASO: guardar o borrar CUALQUIER ensayo borraba de la memoria todos los ensayos de los OTROS tipos hasta recargar la app. La lista del proyecto entero se estaba reemplazando por la del tipo que se tenia abierto en pantalla. Los datos nunca se perdieron -estan en el servidor y volvian al recargar- pero los conteos y las listas quedaban mal mientras tanto.",
+    "ARREGLADO - LA SECCION SE DIBUJABA ACOSTADA. En regatas, al medir el alto del elemento, el esquema volcaba la seccion: una viga de 0,30 x 0,60 salia de 0,60 de ancho por 0,30 de alto. Eso no es la misma viga, es la seccion girada 90 grados, y se lee como otro elemento. La orientacion la mandaba la cara evaluada, no la geometria. Ahora la seccion se dibuja SIEMPRE de pie, con el lado mayor en vertical, como en cualquier plano estructural.",
+    "La cara evaluada no se perdio: ahora se MARCA sobre el dibujo, con dos lineas azules sobre los lados que le corresponden (BASE marca arriba y abajo, ALTO marca los costados). El giro anterior no senalaba nada: no habia ninguna marca, solo cambiaba que lado quedaba plano.",
     "CAMBIADO - CADA EDIFICACION ARRANCA EN 001, SIEMPRE. La version anterior contaba desde el mayor numero del bloque, asi que una edificacion que ya traia ensayos numerados con el criterio viejo (por proyecto) nunca llegaba a tener un 001: si el bloque B heredaba un ESC 003, su primer ensayo propio salia 004. Ahora se toma el primer numero libre del bloque, y ese bloque empieza en 001. El numero heredado sigue ocupado: cuando la cuenta propia llegue ahi, lo salta.",
     "CONSECUENCIA A TENER EN CUENTA: si se BORRA un ensayo, su numero queda libre y lo toma el siguiente que se cree. Eso es lo que deja la numeracion densa, sin huecos, pero si ese ensayo ya salio en un informe entregado el mismo numero va a aparecer en dos papeles distintos.",
     "OJO: el reinicio solo se ve si la estructura tiene CODIGO CORTO cargado. Sin codigo el ID cae a la forma corta (ESC 001) y puede chocar con uno viejo del proyecto, asi que sube hasta encontrar uno libre. Con codigo no hay choque posible porque el ID ya nombra la edificacion. Conviene revisar que cada estructura tenga su codigo.",
@@ -22,6 +32,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.4.32.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.5.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
