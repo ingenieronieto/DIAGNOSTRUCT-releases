@@ -1,8 +1,16 @@
 {
-  "version": "2.9.0",
+  "version": "2.10.0",
   "fecha": "2026-09-06",
   "minima": "1.70.0",
   "notas": [
+    "LA RUTA GUIADA SE AMPLIO CON CINCO PREGUNTAS MAS: que tan extendido esta el deterioro, en que ambiente esta el elemento, como esta el concreto donde se va a apoyar la intervencion, si hay que conservar resistencia al fuego y por cuanto tiempo tiene que durar la proteccion. Solo aparecen cuando aplican: la del fuego va con el reforzamiento y la de la vida util con la proteccion.",
+    "NUEVO - LO QUE APLICA PERO NO VALE SOLO. Hasta ahora el arbol sabia dos cosas: descartar y ordenar. Faltaba la tercera, que es la que mas informes arruina: intervenciones que SI aplican pero que exigen algo antes. Aplicar fibra sobre concreto disgregado no es un error de criterio -la fibra era la opcion correcta- es un error de ORDEN: habia que reponer la seccion primero, y esa reposicion es otra intervencion con su costo y su plazo.",
+    "ESO YA NO SE QUEDA EN PANTALLA: entra en el parrafo que va al informe. Antes vivia en la prosa de las notas, donde se lee y se olvida. Ahora la alternativa sale marcada NO VALE SOLA, con lo que exige y su norma (ICRI 310.2 para el sustrato, ACI 440.2R para el fuego, ACI 562 para el ciclo de vida), y eso queda escrito.",
+    "LA EXTENSION DESCARTA POR ABSURDO EN LAS DOS DIRECCIONES. Empaquetar en seco una estructura completa no es una opcion lenta, es una que no existe; y traer un equipo de concreto lanzado para tapar una cangrejera, tampoco. Es el mismo error con distinto signo y hasta ahora las dos opciones seguian en la lista.",
+    "EL AMBIENTE DESCARTA LO QUE NO SOBREVIVE AHI. Un refuerzo galvanizado aguanta bien la carbonatacion de un interior y se consume en ambiente marino: no es una opcion mas cara, es la equivocada (NSR-10 C.4). En marino queda el inoxidable.",
+    "EL ORDEN DE OBRA QUEDO EXPLICITO. Cortar la entrada de agua va ANTES de reparar el concreto; retirar la raiz va antes de reparar la cimentacion; poner el fisurometro va antes de decidir si sellar. Al reves, la reparacion se vuelve a perder. Ahora esas cuatro lo dicen solas.",
+    "CORREGIDO - EL APUNTALAMIENTO ENCABEZABA LAS INTERVENCIONES PROGRAMADAS. Encaja con todo -por eso puntuaba alto- y no resuelve nada: compra tiempo. Un informe que recomienda apuntalar y nada mas deja el problema donde estaba. Sigue apareciendo, porque muchas veces va por delante de la definitiva, pero ya no primero y con la condicion escrita al lado.",
+    "CORREGIDO - la ruta escrita en el informe decia 'deterioro localizada'.",
     "NUEVO - RUTA GUIADA PARA ELEGIR LA INTERVENCION, en la pantalla del informe. Se contestan ocho preguntas -que tiene que lograr la intervencion, de que es el elemento, que lo esta deteriorando, cual es, si se admite aumentar el peso, como se llega, si se puede desocupar y con que urgencia- y la ruta lleva a las intervenciones que quedan en pie. No hay que interpretar una lista al final: la respuesta sale del camino que se tomo, y ese camino queda escrito en el informe para que quien lo lea pueda discutir una respuesta concreta en vez de la conclusion entera.",
     "LO QUE SE DESCARTA DICE POR QUE SE DESCARTO. Cada opcion que sale de la lista trae su razon -anade masa y se pidio reforzar sin aumentar el peso; necesita acceso por todas las caras; exige desocupar; no es una medida inmediata- y se pueden abrir todas. Una opcion que desaparece sin explicacion parece un olvido.",
     "LA PREGUNTA DEL PESO ES LA QUE MAS DESCARTA, y es la que mas se olvida: un encamisado en concreto anade masa, y mas masa es mas fuerza sismica. Puede resolver la columna y empeorar el conjunto. Contestando que no se admite peso, media lista se cae sola y queda lo que de verdad sirve, empezando por el refuerzo con fibra.",
@@ -52,6 +60,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.9.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.10.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
