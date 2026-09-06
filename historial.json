@@ -2,6 +2,15 @@
   "generado": "2026-09-05",
   "versiones": [
     {
+      "version": "2.6.1",
+      "fecha": "2026-09-05",
+      "notas": [
+        "CORRECCION - NINGUNA MATRICULA PROFESIONAL ESCRITA EN EL CODIGO. Cuatro entregables salian con el nombre y la matricula de una persona fija, sin importar quien los emitiera: el reporte de ferroscan cuando la empresa no tenia firmantes cargados, la memoria de calculo -que venia PRECARGADA con dos firmantes-, la marca de agua repetida sobre el plano de ensayos, y la cabecera del formato de checklist de peritaje. Una matricula compromete a quien la lleva, y bastaba con no mirar ese campo para firmar con la de otro.",
+        "AHORA EL FIRMANTE SALE DE LA EMPRESA, Y SI NO, DEL USUARIO. Es el mismo criterio que ya usaba el bloque de firmas de los informes: firmante de la empresa, si no el usuario que ejecuto, y si no hay ninguno se deja el hueco a la vista -el reporte dice SIN FIRMANTE CONFIGURADO- en vez de pedir prestada una identidad. La memoria de calculo arranca con los firmantes en blanco.",
+        "Y UNA PRUEBA PARA QUE NO VUELVA. Recorre todo el codigo buscando matriculas y correos. Admite un unico ejemplo inventado para las ayudas de los formularios, asi que cualquier otro numero que aparezca es una matricula de verdad y la prueba falla. La unica excepcion declarada es la marca de autoria del software, que es otra cosa."
+      ]
+    },
+    {
       "version": "2.6.0",
       "fecha": "2026-09-05",
       "notas": [

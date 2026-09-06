@@ -1,8 +1,11 @@
 {
-  "version": "2.6.0",
+  "version": "2.6.1",
   "fecha": "2026-09-05",
   "minima": "1.70.0",
   "notas": [
+    "CORRECCION - NINGUNA MATRICULA PROFESIONAL ESCRITA EN EL CODIGO. Cuatro entregables salian con el nombre y la matricula de una persona fija, sin importar quien los emitiera: el reporte de ferroscan cuando la empresa no tenia firmantes cargados, la memoria de calculo -que venia PRECARGADA con dos firmantes-, la marca de agua repetida sobre el plano de ensayos, y la cabecera del formato de checklist de peritaje. Una matricula compromete a quien la lleva, y bastaba con no mirar ese campo para firmar con la de otro.",
+    "AHORA EL FIRMANTE SALE DE LA EMPRESA, Y SI NO, DEL USUARIO. Es el mismo criterio que ya usaba el bloque de firmas de los informes: firmante de la empresa, si no el usuario que ejecuto, y si no hay ninguno se deja el hueco a la vista -el reporte dice SIN FIRMANTE CONFIGURADO- en vez de pedir prestada una identidad. La memoria de calculo arranca con los firmantes en blanco.",
+    "Y UNA PRUEBA PARA QUE NO VUELVA. Recorre todo el codigo buscando matriculas y correos. Admite un unico ejemplo inventado para las ayudas de los formularios, asi que cualquier otro numero que aparezca es una matricula de verdad y la prueba falla. La unica excepcion declarada es la marca de autoria del software, que es otra cosa.",
     "NUEVO - AYUDAS EN LOS FORMULARIOS DE ENSAYO. Cada dato de ingreso y cada resultado lleva ahora un icono de ayuda que explica QUE es y DE DONDE sale: con que formula se calculo y que numeral de la norma lo define. Un numero grande sin explicacion no se puede revisar, y el que lee el informe no tiene como saber si esta bien. Cubre los 12 formularios: acero, durometria, frente de carbonatacion, inclinometria, nucleo en campo, nucleo en laboratorio, PDC, regatas, tintas penetrantes, UTM, VPU y el generico.",
     "LAS PRUEBAS DE LA APP SE CORREN DESDE LA APP. Pestana PRUEBAS en el panel de super-admin: se lanzan las suites y se ve cuales pasan, sin tener el codigo a mano ni una terminal. Sirve para comprobar en el sitio, antes de una jornada, que la version instalada esta sana. Las 20 suites existentes se adaptaron para poder correr tambien dentro del navegador.",
     "NUEVO - REGISTRO DE REPARACIONES. Los ensayos que abren la estructura -nucleos, regatas, extraccion de barras y potencial de corrosion- ahora llevan el registro de que el dano se cerro: resane, panete y pintura, con fecha, material, quien la ejecuto y foto del resane terminado. Hasta ahora la app solo sabia PLANIFICAR las reparaciones (ocupan horas en el cronograma del plan de auscultamiento); de la ejecucion no quedaba nada, y al cerrar una campana no habia forma de responder si quedo algun hueco abierto en la obra salvo acordandose.",
@@ -34,6 +37,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.6.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.6.1.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
