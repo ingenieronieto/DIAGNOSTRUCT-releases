@@ -2,6 +2,15 @@
   "generado": "2026-09-06",
   "versiones": [
     {
+      "version": "2.8.0",
+      "fecha": "2026-09-06",
+      "notas": [
+        "NUEVO - PANTALLA DEL INFORME DE PATOLOGIA, en Entregas. Esta partida en dos: arriba lo que la app YA SABE -ficha tecnica, parametros sismicos, cuantos ensayos se ejecutaron, la resistencia media- que sale resuelto y solo hay que revisarlo; abajo lo unico que no sale de ninguna tabla, que es el juicio del ingeniero: hallazgos, diagnosis, riesgos, alternativas, conclusiones y recomendaciones.",
+        "CADA CAMPO DICE QUE VA AHI. La diagnosis pide la causa y no el sintoma: que mecanismo produjo lo que se vio y con que evidencia se sostiene. Esa indicacion es la diferencia entre un texto util y uno de relleno. Un diagnostico no se autogenera.",
+        "EL BOTON DE GENERAR NO SE HABILITA MIENTRAS FALTE ALGO INDISPENSABLE, y la lista de pendientes se recalcula mientras se escribe, asi que van desapareciendo. Un informe que no sale se arregla; uno que sale con un hueco mudo se firma. Lo escrito se guarda en el proyecto y no se pierde al salir."
+      ]
+    },
+    {
       "version": "2.7.1",
       "fecha": "2026-09-06",
       "notas": [
