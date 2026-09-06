@@ -1,8 +1,10 @@
 {
-  "version": "2.5.0",
-  "fecha": "2026-09-04",
+  "version": "2.6.0",
+  "fecha": "2026-09-05",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - AYUDAS EN LOS FORMULARIOS DE ENSAYO. Cada dato de ingreso y cada resultado lleva ahora un icono de ayuda que explica QUE es y DE DONDE sale: con que formula se calculo y que numeral de la norma lo define. Un numero grande sin explicacion no se puede revisar, y el que lee el informe no tiene como saber si esta bien. Cubre los 12 formularios: acero, durometria, frente de carbonatacion, inclinometria, nucleo en campo, nucleo en laboratorio, PDC, regatas, tintas penetrantes, UTM, VPU y el generico.",
+    "LAS PRUEBAS DE LA APP SE CORREN DESDE LA APP. Pestana PRUEBAS en el panel de super-admin: se lanzan las suites y se ve cuales pasan, sin tener el codigo a mano ni una terminal. Sirve para comprobar en el sitio, antes de una jornada, que la version instalada esta sana. Las 20 suites existentes se adaptaron para poder correr tambien dentro del navegador.",
     "NUEVO - REGISTRO DE REPARACIONES. Los ensayos que abren la estructura -nucleos, regatas, extraccion de barras y potencial de corrosion- ahora llevan el registro de que el dano se cerro: resane, panete y pintura, con fecha, material, quien la ejecuto y foto del resane terminado. Hasta ahora la app solo sabia PLANIFICAR las reparaciones (ocupan horas en el cronograma del plan de auscultamiento); de la ejecucion no quedaba nada, y al cerrar una campana no habia forma de responder si quedo algun hueco abierto en la obra salvo acordandose.",
     "PESTANA REPARACIONES, CON EL NUMERO DE PENDIENTES A LA VISTA. Se cierran EN LOTE: se marcan las que se hicieron en la jornada y se les pone la fecha, el material y la cuadrilla una sola vez. Las reparaciones no se hacen ensayo por ensayo sino en una pasada al final con otra cuadrilla, y abrir veinte formularios para escribir veinte veces lo mismo era garantizar que nadie lo registrara. Lo unico que queda por ensayo es la foto, porque cada una es distinta.",
     "CADA PASO TIENE TRES VALORES: pendiente, hecho y NO APLICA. El tercero hace falta de verdad: un elemento en concreto a la vista no lleva panete ni pintura, y sin ese valor habria que marcarlos como hechos -mentir en el registro- para poder dar la reparacion por cerrada.",
@@ -32,6 +34,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.5.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.6.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

@@ -1,6 +1,14 @@
 {
-  "generado": "2026-09-04",
+  "generado": "2026-09-05",
   "versiones": [
+    {
+      "version": "2.6.0",
+      "fecha": "2026-09-05",
+      "notas": [
+        "NUEVO - AYUDA EN TODOS LOS CAMPOS. Los doce formularios de ensayo llevan ahora explicacion en cada dato de ingreso y en cada resultado: que dato va ahi, en que unidad, y de donde sale el numero calculado (la formula o la norma). Faltaban 135 de 271 campos, o sea mas de la mitad.",
+        "NUEVO - PANEL DE PRUEBAS EN EL SUPER-ADMIN. Se pueden correr las pruebas de la app desde la propia aplicacion, sin tener el codigo a mano, para comprobar que la version instalada en el equipo es sana. Trece corren ahi mismo; las otras diecinueve leen el codigo fuente o simulan el navegador, asi que solo corren desde la terminal y quedan listadas aparte con su comando."
+      ]
+    },
     {
       "version": "2.5.0",
       "fecha": "2026-09-04",
