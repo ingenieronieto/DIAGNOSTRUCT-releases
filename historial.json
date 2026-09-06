@@ -2,6 +2,15 @@
   "generado": "2026-09-05",
   "versiones": [
     {
+      "version": "2.7.0",
+      "fecha": "2026-09-05",
+      "notas": [
+        "EL REGISTRO FOTOGRAFICO SUBE A PATOLOGIA CONSTRUCTIVA, DE SEGUNDO. La foto se toma mientras se inspecciona, no cuando se entrega: estaba en el grupo de Entregas, que es donde se cierra el trabajo, y para entonces ya no hay nada que fotografiar. Ahora queda justo despues del diagnostico estructural, que es cuando se usa.",
+        "NUEVO - INFORME DE PATOLOGIA, EN EL GRUPO DE ENTREGAS. Arma el informe completo del estudio: ficha tecnica, condiciones de la estructura, caracterizacion de materiales con los ensayos ejecutados, diagnosis, evaluacion de riesgo, alternativas de intervencion y conclusiones. Va en Entregas y no en Patologia porque es una entrega: se arma cuando el estudio ya esta hecho, con lo que produjeron los modulos anteriores. Aparece marcado EN CONSTRUCCION mientras se termina de portar el generador, que ya quedo separado en un modulo que no depende de una terminal.",
+        "CORRECCION - NINGUNA MATRICULA PROFESIONAL ESCRITA EN EL CODIGO. Cuatro entregables salian con el nombre y la matricula de una persona fija, sin importar quien los emitiera: el reporte de ferroscan cuando la empresa no tenia firmantes cargados, la memoria de calculo -que venia PRECARGADA con dos firmantes-, la marca de agua repetida sobre el plano de ensayos, y la cabecera del formato de checklist de peritaje. Una matricula compromete a quien la lleva, y bastaba con no mirar ese campo para firmar con la de otro."
+      ]
+    },
+    {
       "version": "2.6.1",
       "fecha": "2026-09-05",
       "notas": [

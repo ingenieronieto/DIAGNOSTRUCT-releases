@@ -1,8 +1,10 @@
 {
-  "version": "2.6.1",
+  "version": "2.7.0",
   "fecha": "2026-09-05",
   "minima": "1.70.0",
   "notas": [
+    "EL REGISTRO FOTOGRAFICO SUBE A PATOLOGIA CONSTRUCTIVA, DE SEGUNDO. La foto se toma mientras se inspecciona, no cuando se entrega: estaba en el grupo de Entregas, que es donde se cierra el trabajo, y para entonces ya no hay nada que fotografiar. Ahora queda justo despues del diagnostico estructural, que es cuando se usa.",
+    "NUEVO - INFORME DE PATOLOGIA, EN EL GRUPO DE ENTREGAS. Arma el informe completo del estudio: ficha tecnica, condiciones de la estructura, caracterizacion de materiales con los ensayos ejecutados, diagnosis, evaluacion de riesgo, alternativas de intervencion y conclusiones. Va en Entregas y no en Patologia porque es una entrega: se arma cuando el estudio ya esta hecho, con lo que produjeron los modulos anteriores. Aparece marcado EN CONSTRUCCION mientras se termina de portar el generador, que ya quedo separado en un modulo que no depende de una terminal.",
     "CORRECCION - NINGUNA MATRICULA PROFESIONAL ESCRITA EN EL CODIGO. Cuatro entregables salian con el nombre y la matricula de una persona fija, sin importar quien los emitiera: el reporte de ferroscan cuando la empresa no tenia firmantes cargados, la memoria de calculo -que venia PRECARGADA con dos firmantes-, la marca de agua repetida sobre el plano de ensayos, y la cabecera del formato de checklist de peritaje. Una matricula compromete a quien la lleva, y bastaba con no mirar ese campo para firmar con la de otro.",
     "AHORA EL FIRMANTE SALE DE LA EMPRESA, Y SI NO, DEL USUARIO. Es el mismo criterio que ya usaba el bloque de firmas de los informes: firmante de la empresa, si no el usuario que ejecuto, y si no hay ninguno se deja el hueco a la vista -el reporte dice SIN FIRMANTE CONFIGURADO- en vez de pedir prestada una identidad. La memoria de calculo arranca con los firmantes en blanco.",
     "Y UNA PRUEBA PARA QUE NO VUELVA. Recorre todo el codigo buscando matriculas y correos. Admite un unico ejemplo inventado para las ayudas de los formularios, asi que cualquier otro numero que aparezca es una matricula de verdad y la prueba falla. La unica excepcion declarada es la marca de autoria del software, que es otra cosa.",
@@ -37,6 +39,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.6.1.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.7.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
