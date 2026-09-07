@@ -1,8 +1,14 @@
 {
-  "version": "2.11.1",
+  "version": "2.12.0",
   "fecha": "2026-09-07",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - LA PANTALLA DEL INFORME NUNCA VIO LAS LESIONES. Leia `proyectoActivo.lesiones`, que NO existe: la app arma el proyecto sin lesiones -igual que sin ensayos- y se cargan aparte. Las tres cosas que dependen de ellas trabajaban sobre una lista vacia: las alternativas que propone la evidencia, los hallazgos criticos y el borrador de hallazgos, que salia vacio sin decir por que. En UAN Quibdo, con 44 lesiones registradas, no aparecia ninguna.",
+    "AHORA SI SE VEN: '20 lesion(es) de grado 3 o 4, sobre 44 registradas' aparece como hallazgo critico, y hay una intervencion que se propone porque la matriz de afectacion situa al menos una lesion en nivel DEMOLICION. Eso estaba invisible. Un proyecto con lesiones rendia lo mismo que uno sin ninguna y nada en la pantalla lo delataba: el informe salia silenciosamente mas pobre que sus propios datos.",
+    "ARREGLADO - EL GUARDIAN DE EMPRESA BLOQUEABA INFORMES LEGITIMOS. Compara que el proyecto y la sesion sean de la misma empresa, para que un informe no salga sellado por quien no hizo el trabajo. Pero comparaba contra `config.empresa.nombre`, y ese NO es el nombre de la empresa de la sesion: es el bloque de MARCA -nombre, logo, NIT, telefono- que se escribe en Configuracion. Un tenant con la marca puesta a otro nombre quedaba bloqueado con un mensaje que contradecia lo que muestra la barra de super-admin.",
+    "Ahora compara la empresa activa de verdad, por identificador. La proteccion sigue: si el proyecto es de una empresa y la sesion opera bajo otra, no emite.",
+    "EL GPS RECONOCE LAS CIUDADES GRANDES. Probado contra el servicio real: de siete puntos, tres no casaban y eran justo las capitales. El servicio les pone adornos que la norma no usa -'Perimetro Urbano Medellin', 'Bogota ciudad', 'Zapayan (Punta de Piedras)'- y a Bogota le da un departamento propio que el Apendice A-4 no tiene. Se quitan esos adornos y DESPUES se exige coincidencia exacta: no se acepta lo parecido, porque un municipio equivocado da un Aa equivocado y eso no se ve en el informe.",
+    "Y una guarda mas: 'Santander' es subcadena de 'Norte de Santander'. Si el departamento se resolviera por parecido sin exigir un unico candidato, Cucuta habria terminado con el Aa de otro sitio.",
     "ARREGLADO - LOS ENLACES DE LOS PENDIENTES NO LLEVABAN A NINGUNA PARTE. Cada cosa que falta para poder emitir es un enlace que lleva al campo que la resuelve, pero el identificador se armaba en dos sitios distintos y no coincidian: TODOS los enlaces de los datos del proyecto -la fecha de inspeccion, el ano de construccion, el perfil de suelo, Aa, Av- se pulsaban y no pasaba nada. Los de la narrativa si funcionaban, porque ahi el prefijo cuadraba por casualidad, y eso es lo que hizo que el fallo pasara desapercibido: al probar uno cualquiera parecia andar.",
     "Un enlace que no hace nada es peor que no tenerlo: se pulsa, no pasa nada, y uno concluye que el campo no existe. Ahora el identificador se arma en UN solo sitio y hay una prueba que falla si alguien vuelve a escribirlo a mano.",
     "EL MUNICIPIO YA VIENE PUESTO. La ficha del proyecto casi siempre trae la ciudad, asi que la pantalla arranca con el departamento y el municipio resueltos y solo hay que confirmarlos: en un proyecto de Quibdo, Aa y Av salen sin tocar nada. Ante un homonimo -La Union esta en cuatro departamentos- se deja en blanco a proposito, porque elegir uno seria sortear un Aa entre cuatro. La ciudad se lee tanto de 'ciudad' como de 'lugar', que son los dos campos donde la guarda la app segun como se creo el proyecto.",
@@ -72,6 +78,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.11.1.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.12.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
