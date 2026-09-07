@@ -1,8 +1,17 @@
 {
-  "version": "2.10.0",
-  "fecha": "2026-09-06",
+  "version": "2.11.0",
+  "fecha": "2026-09-07",
   "minima": "1.70.0",
   "notas": [
+    "Aa Y Av YA NO SE ESCRIBEN: SE ELIGE EL MUNICIPIO. Eran dos campos de texto libre, y es el peor sitio posible para uno: de esos dos numeros cuelga todo el analisis sismico, un digito mal tecleado no se nota al leer el informe, y nada en el documento permite comprobarlo despues. La NSR-10 los da tabulados por municipio en el Apendice A-4, asi que la pregunta correcta no era cuanto vale Aa sino donde queda la obra.",
+    "SE ELIGE DEPARTAMENTO Y MUNICIPIO Y SALEN SOLOS Aa, Av, LA ZONA DE AMENAZA, Ae, Ad Y EL CODIGO DANE, con la cita del apendice al pie. Los 1093 registros de la norma ya estaban en la app; lo que faltaba era ponerlos donde se llena el informe. Funciona sin senal, porque la tabla esta en el equipo.",
+    "BOTON DE UBICARME CON EL GPS. Toma las coordenadas, propone el municipio y deja el enlace para verlo en el mapa. PROPONE, NO DECIDE: el municipio hay que confirmarlo, porque lo resuelve un servicio externo que puede equivocarse en un limite municipal, y ahi un municipio de mas es un Aa distinto. Los numeros siempre salen de la tabla de la norma, nunca del mapa: las figuras A.2-1 a A.2-4 sirven para ver donde cae uno, pero interpolar un color seria inventar precision que la norma no da.",
+    "ARREGLADO DE PASO - BOGOTA SALIA DOS VECES EN LA LISTA. El portado del apendice trae 1093 filas para 1092 municipios. Los dos valores coinciden, asi que nunca dio un resultado malo, pero verla repetida hace dudar de la tabla entera. Y no se encontraba al buscarla: la norma la escribe 'Bogota  D. C.' con dos espacios, y nadie la busca asi.",
+    "LA FECHA DE INSPECCION SE ELIGE EN UN CALENDARIO Y LOS ANOS DE CONSTRUCCION EN UNA LISTA. Un ano tecleado a mano entra mal (201, 1.985) y una fecha tecleada entra en cualquier formato y despues no se puede ordenar ni comparar.",
+    "EL PERFIL DE SUELO ES UNA LISTA CON LOS SEIS DE LA NSR-10 (Tabla A.2.4-1) Y UNO MAS: NO IDENTIFICADO. Ese ultimo existe porque la alternativa es peor: la app rellenaba D por defecto y ese valor llego a imprimirse como si alguien lo hubiera determinado. Un campo que dice que no se sabe es un dato; uno que miente, no. El grupo de uso tambien quedo en lista (A.2.5.1).",
+    "EN LA RUTA GUIADA, QUE ELEMENTOS SE VAN A INTERVENIR ES AHORA DE SELECCION MULTIPLE, porque el informe tiene que decir el alcance completo: columnas Y vigas Y entrepiso. Y como casi ninguna tecnica los resuelve todos, la que cubre solo una parte LO DICE: 'cubre solo columnas del alcance marcado, la cimentacion queda sin resolver y necesita otra intervencion'. Sin eso, una alternativa parcial aparenta cubrir todo y el presupuesto sale corto.",
+    "EL AMBIENTE TAMBIEN ES DE SELECCION MULTIPLE Y SE AMPLIO A SIETE: interior protegido, intemperie, marino o industrial agresivo, enterrado o sumergido, y tres nuevos - humedo permanente (sotano, cuarto de maquinas), contacto con quimicos o aguas residuales, y trafico o abrasion (piso industrial, parqueadero, tablero de puente). Una fachada es intemperie por fuera e interior por dentro, y la tecnica que sirve para una puede no servir para la otra: cuando pasa, lo dice.",
+    "NUEVA OPCION EN QUE ORIGINA LA INTERVENCION: ACTUALIZAR A LA NORMATIVA VIGENTE. No toda causa es un deterioro. Una estructura sana disenada bajo una norma anterior -o sin norma- se interviene igual, y ese motivo lleva a reforzar, no a reparar. La pregunta se llamaba 'que esta deteriorando el elemento' y por eso no cabia.",
     "LA RUTA GUIADA SE AMPLIO CON CINCO PREGUNTAS MAS: que tan extendido esta el deterioro, en que ambiente esta el elemento, como esta el concreto donde se va a apoyar la intervencion, si hay que conservar resistencia al fuego y por cuanto tiempo tiene que durar la proteccion. Solo aparecen cuando aplican: la del fuego va con el reforzamiento y la de la vida util con la proteccion.",
     "NUEVO - LO QUE APLICA PERO NO VALE SOLO. Hasta ahora el arbol sabia dos cosas: descartar y ordenar. Faltaba la tercera, que es la que mas informes arruina: intervenciones que SI aplican pero que exigen algo antes. Aplicar fibra sobre concreto disgregado no es un error de criterio -la fibra era la opcion correcta- es un error de ORDEN: habia que reponer la seccion primero, y esa reposicion es otra intervencion con su costo y su plazo.",
     "ESO YA NO SE QUEDA EN PANTALLA: entra en el parrafo que va al informe. Antes vivia en la prosa de las notas, donde se lee y se olvida. Ahora la alternativa sale marcada NO VALE SOLA, con lo que exige y su norma (ICRI 310.2 para el sustrato, ACI 440.2R para el fuego, ACI 562 para el ciclo de vida), y eso queda escrito.",
@@ -60,6 +69,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.10.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.11.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
