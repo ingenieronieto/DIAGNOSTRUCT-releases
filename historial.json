@@ -2,6 +2,14 @@
   "generado": "2026-09-08",
   "versiones": [
     {
+      "version": "2.23.1",
+      "fecha": "2026-09-08",
+      "notas": [
+        "ARREGLADO - LA LISTA DE ENSAYOS ERA HTML INVALIDO Y EL CLIC PODIA IRSE A OTRO LADO. Cada fila del catalogo era un boton y adentro llevaba la insignia de NOVEDAD, que tambien es un boton. HTML no permite un boton dentro de otro: el navegador reacomoda el arbol por su cuenta y deja de estar claro donde cae el toque. En la tablet, con el dedo, eso es abrir el ensayo equivocado.",
+        "La vista de TARJETAS ya se habia arreglado; la de LISTA no, y es la que sale en pantalla angosta, que es la de campo. Ahora la fila conserva todo lo que hacia: se puede tabular, abre con Enter y con el toque, y avisa cuando esta deshabilitada."
+      ]
+    },
+    {
       "version": "2.23.0",
       "fecha": "2026-09-08",
       "notas": [

@@ -1,8 +1,10 @@
 {
-  "version": "2.23.0",
+  "version": "2.23.1",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - LA LISTA DE ENSAYOS ERA HTML INVALIDO Y EL CLIC PODIA IRSE A OTRO LADO. Cada fila del catalogo era un boton, y adentro llevaba la insignia de NOVEDAD, que tambien es un boton. HTML no permite un boton dentro de otro: el navegador reacomoda el arbol por su cuenta y a partir de ahi ya no se sabe donde cae el toque. En la tablet, con el dedo, eso es abrir el ensayo equivocado.",
+    "La vista de TARJETAS ya se habia arreglado hace tiempo; la de LISTA se quedo sin arreglar, y es la que sale por defecto. Ahora la fila es un elemento con rol de boton: se puede tabular, abre con Enter y con espacio, avisa cuando esta deshabilitada y marca el foco igual que el paso del raton.",
     "NUEVA CAUSA EN EL ARBOL DE DECISION: PROBLEMA DE ORIGEN GEOTECNICO. Asentamiento diferencial, arcilla expansiva, socavacion, remocion en masa o nivel freatico. La distincion es de fondo: la causa esta DEBAJO de la estructura, no en el elemento, y la fisura es solo el sintoma. Mientras el terreno siga moviendose lo reparado se vuelve a abrir, asi que primero se estabiliza el suelo y despues se repara. Y eso exige estudio geotecnico, no criterio visual.",
     "Queda cableada en los perfiles de intervencion a los que aplica, de modo que al contestar el arbol las alternativas que salgan tengan en cuenta ese origen.",
     "Ajuste del comentario de cabecera de la prueba de carga diferida, para que sus dos cifras no se contradigan.",
@@ -140,6 +142,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.23.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.23.1.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
