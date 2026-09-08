@@ -1,8 +1,15 @@
 {
-  "version": "2.19.0",
+  "version": "2.20.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "EL INFORME YA TRAE LA IMAGEN DE LOCALIZACION. Se compone al emitir con las teselas de OpenStreetMap alrededor del punto de la obra y la marca encima. La atribucion va IMPRESA en la imagen, que es la condicion de uso de esas teselas: una imagen pegada en un informe firmado tiene que poder decir de donde salio.",
+    "EL CLIMA DEL SITIO SALE DE LAS COORDENADAS. Se piden cinco anos de datos diarios al archivo de Open-Meteo (reanalisis ERA5) y se promedian por mes. De ahi salen el mes mas calido y el mas frio con sus temperaturas, el mes de mas y menos lluvia con sus milimetros, el rango anual, el viento por mes y la altitud del punto. Antes esas cifras venian de un proyecto.json escrito a mano y la aplicacion no las llenaba nunca.",
+    "CINCO GRAFICAS DIBUJADAS CON ESOS MISMOS DATOS: climograma, temperatura, precipitacion, humedad y viento. Se dibujan en blanco y negro con tres grises, la paleta de los documentos, y a mano en un lienzo justamente para no heredar la estetica de una libreria de graficos, que se reconoce a un kilometro. Como salen de los mismos numeros que cita el texto, la grafica y el parrafo no se pueden contradecir.",
+    "LO QUE EL INGENIERO ESCRIBIO MANDA. Si el proyecto ya trae un valor, el dato calculado NO lo pisa: esto rellena lo que falta, no corrige lo que hay. Un informe firmado no puede cambiarle una cifra al que lo firma sin avisarle.",
+    "LO QUE NO SE RELLENA, Y POR QUE. Las temporadas -cuando empieza la epoca calurosa, la fresca o la mojada- dependen de un umbral que habria que elegir, y elegirlo seria inventar un criterio y presentarlo como dato medido. Esos campos siguen en manos del ingeniero y el informe deja el hueco antes que rellenarlo con algo plausible. Lo mismo la zona de vida de Holdridge, que llega en la proxima.",
+    "AMBAS COSAS NECESITAN SENAL, y ahi esta la diferencia con los mapas de Aa y Av: esos viajan dentro de la aplicacion y se marcan sin conexion. El mapa del sitio y el clima se bajan de internet. Sin datos no salen, y el aviso lo dice con esas palabras para que se distinga «falta el punto» de «falta conexion».",
+    "PRUEBA NUEVA (46 suites, 31 en verde). La agregacion del clima falla en SILENCIO y de tres maneras, las tres con resultado creible: sumar cinco anos de lluvia da 3.600 mm donde hay 720; devolver la unidad aqui hace que el documento escriba «26 m s. n. m. metros sobre el nivel del mar»; y un signo al reves hace que el informe llame «el mes mas caluroso» al mas frio. Por eso la agregacion se separo del fetch: lo que se puede verificar sin red, se verifica.",
     "LOS MAPAS DE Aa Y Av SALEN MARCADOS. El informe lleva las figuras A.2.3-1 y A.2.3-2 de la NSR-10 con un PUNTO ROJO en las coordenadas de la obra y un RECUADRO sobre la fila de la leyenda que le corresponde al valor. Sin esas marcas el mapa es decorativo: muestra el pais entero y no dice nada del proyecto. Con ellas, quien lee puede comprobar de un vistazo que el Aa citado es el de ESE sitio.",
     "FUNCIONA SIN SENAL: los dos mapas base viajan en la aplicacion (307 KB). Se marca con la retícula del propio mapa -39,35 pixeles por grado-, calibrada contra las ciudades rotuladas. Si la obra no esta en una de esas ciudades el punto puede quedar a unos milimetros; se corrige moviendo la imagen en Word, y por eso el punto se dibuja aparte y bien visible.",
     "ARREGLADO - LAS COORDENADAS NO LLEGABAN AL INFORME. La rama de localizacion no estaba cableada en el adaptador, asi que el punto que se guarda al elegir el municipio -con el mapa o con el GPS- no viajaba al documento. Por eso los mapas salian sin marcar.",
@@ -117,6 +124,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.19.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.20.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
