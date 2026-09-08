@@ -2,6 +2,17 @@
   "generado": "2026-09-07",
   "versiones": [
     {
+      "version": "2.15.0",
+      "fecha": "2026-09-07",
+      "notas": [
+        "NUEVO - ORDENAR LAS TABLAS POR CUALQUIER COLUMNA. Se toca el encabezado -ID, fecha, ubicacion, elemento, el resultado, el veredicto- y la lista se ordena por ahi. Va en las once listas de ensayos.",
+        "Tres toques y no dos: ascendente, descendente y VOLVER AL ORDEN NATURAL, que es el de captura de la campana.",
+        "Lo que esta vacio se va al final, suba o baje el orden: ordenar por MPa deja arriba los ensayos que TIENEN resultado, no una pila de guiones. Un cero no es un vacio.",
+        "Los ID se ordenan por su numero y no letra por letra, y las fechas como fechas: como texto puro, 'ESC-L2 010' iria antes que 'ESC-L2 008' y marzo de 2020 despues de enero de 2026.",
+        "El veredicto y el estado se ordenan por gravedad y no por alfabeto: ascendente deja arriba lo que hay que ir a mirar. En nucleos cada sub-muestra sigue pegada a su padre."
+      ]
+    },
+    {
       "version": "2.14.0",
       "fecha": "2026-09-07",
       "notas": [

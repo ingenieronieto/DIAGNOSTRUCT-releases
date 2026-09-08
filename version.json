@@ -1,8 +1,16 @@
 {
-  "version": "2.14.0",
+  "version": "2.15.0",
   "fecha": "2026-09-07",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - ORDENAR LAS TABLAS POR CUALQUIER COLUMNA. Se toca el encabezado -ID, fecha, ubicacion, elemento, el resultado, el veredicto- y la lista se ordena por ahi. Va en las ONCE listas de ensayos: esclerometria, extraccion de barras, durometria, carbonatacion, inclinometria, nucleos, potencial de corrosion, regatas, tintas penetrantes, ultrasonido de espesores y ultrasonido en concreto.",
+    "TRES TOQUES, NO DOS: ascendente, descendente y VOLVER AL ORDEN NATURAL, que es el de captura de la campana. Sin el tercero no habria forma de volver salvo recargando.",
+    "LO QUE ESTA VACIO SE VA AL FINAL, suba o baje el orden. Ordenar por MPa deja arriba los ensayos que TIENEN resultado, no una pila de guiones. Un cero no cuenta como vacio: 0 MPa es un dato.",
+    "LOS ID SE ORDENAN POR SU NUMERO, no letra por letra. Como texto puro, 'ESC-L2 010' iria antes que 'ESC-L2 008' y la columna se veria absurda estando bien ordenada.",
+    "LAS FECHAS SE ORDENAN COMO FECHAS. Se guardan AAAA-MM-DD y se muestran DD/MM/AAAA: ordenar el texto de pantalla pondria marzo de 2020 despues de enero de 2026.",
+    "EL VEREDICTO Y EL ESTADO SE ORDENAN POR GRAVEDAD, no por alfabeto. Ascendente deja arriba lo que hay que ir a mirar: primero lo que no tiene datos, despues lo critico. En potencial de corrosion la corrosion localizada va primero aunque su nombre no sea el primero de la lista, porque es la de riesgo alto.",
+    "EN NUCLEOS SE ORDENAN LOS PADRES Y CADA SUB-MUESTRA SIGUE PEGADA AL SUYO. Ordenar la lista ya aplanada separaria una sub-muestra de su nucleo y la fila quedaria colgando debajo de otro ensayo.",
+    "El orden se aplica DESPUES de los filtros, y no se pierde el orden de captura entre los que empatan: dos ensayos del mismo elemento conservan entre si el orden en que se tomaron.",
     "NUEVO - PONER EN ORDEN LOS ID DE UN PROYECTO VIEJO. Los ensayos guardados antes del arreglo de la numeracion se contaban por PROYECTO y su ID no nombraba la edificacion, asi que el consecutivo saltaba al cambiar de bloque y el numero por si solo no ubicaba nada. En un proyecto real habia dos ensayos distintos llamados los dos ESC 003, en edificaciones distintas. Ahora, cuando un proyecto viene asi, sale un aviso arriba de la lista con el boton PONER LOS ID EN ORDEN.",
     "SE VE ANTES DE APLICAR: la ventana muestra la lista completa de que ID pasa a ser cual, en que edificacion y de que ensayo, y recien despues se aplica, con una confirmacion de por medio. Renumerar toca datos de campo y no se deshace de memoria.",
     "EL ORDEN LO DA LA FECHA DEL ENSAYO, no el numero viejo: ese numero venia de una cuenta del proyecto entero y ordenar por el mezclaria bloques. Asi el primero que se hizo en cada edificacion queda 001.",
@@ -90,6 +98,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.14.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.15.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
