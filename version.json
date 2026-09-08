@@ -1,8 +1,11 @@
 {
-  "version": "2.22.0",
+  "version": "2.23.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "NUEVA CAUSA EN EL ARBOL DE DECISION: PROBLEMA DE ORIGEN GEOTECNICO. Asentamiento diferencial, arcilla expansiva, socavacion, remocion en masa o nivel freatico. La distincion es de fondo: la causa esta DEBAJO de la estructura, no en el elemento, y la fisura es solo el sintoma. Mientras el terreno siga moviendose lo reparado se vuelve a abrir, asi que primero se estabiliza el suelo y despues se repara. Y eso exige estudio geotecnico, no criterio visual.",
+    "Queda cableada en los perfiles de intervencion a los que aplica, de modo que al contestar el arbol las alternativas que salgan tengan en cuenta ese origen.",
+    "Ajuste del comentario de cabecera de la prueba de carga diferida, para que sus dos cifras no se contradigan.",
     "ARREGLADO - EL BOTON 'PONER LOS ID EN ORDEN' NO HACIA NADA. Lo reporto Pacho. App.jsx tiene 19 return excluyentes entre si -la pantalla de acceso, la de proyectos, la de trabajo- y cada uno pinta un arbol distinto, pero el estado es UNO SOLO y lo comparten todos. El boton vivia en la ultima rama y el panel que abre estaba en otra: al pulsarlo el estado cambiaba y no habia nada montado que lo pintara.",
     "LO PEOR ERA QUE NO DABA NINGUN ERROR. No fallaba la consola, ni el build, ni ninguna prueba. Simplemente no pasaba nada, que desde afuera se ve igual que una funcion que no existe. Venia roto de antes; se comprobo contra la version ya publicada.",
     "PRUEBA NUEVA para que no se repita (test/modales-alcanzables): comprueba que todo panel se pinte en una rama donde su boton pueda encenderlo. Se valido corriendola contra la version anterior, donde falla diciendo exactamente 'se enciende en la rama 18 y se pinta en la 14'.",
@@ -137,6 +140,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.22.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.23.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

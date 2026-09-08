@@ -2,6 +2,15 @@
   "generado": "2026-09-08",
   "versiones": [
     {
+      "version": "2.23.0",
+      "fecha": "2026-09-08",
+      "notas": [
+        "NUEVA CAUSA EN EL ARBOL DE DECISION: PROBLEMA DE ORIGEN GEOTECNICO. Asentamiento diferencial, arcilla expansiva, socavacion, remocion en masa o nivel freatico. La distincion es de fondo: la causa esta DEBAJO de la estructura, no en el elemento, y la fisura es solo el sintoma. Mientras el terreno siga moviendose lo reparado se vuelve a abrir, asi que primero se estabiliza el suelo y despues se repara. Y eso exige estudio geotecnico, no criterio visual.",
+        "Queda cableada en los perfiles de intervencion a los que aplica, de modo que al contestar el arbol las alternativas que salgan tengan en cuenta ese origen.",
+        "Ajuste del comentario de cabecera de la prueba de carga diferida, para que sus dos cifras no se contradigan."
+      ]
+    },
+    {
       "version": "2.22.0",
       "fecha": "2026-09-08",
       "notas": [
