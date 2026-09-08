@@ -2,6 +2,17 @@
   "generado": "2026-09-08",
   "versiones": [
     {
+      "version": "2.25.0",
+      "fecha": "2026-09-08",
+      "notas": [
+        "ARREGLADO - EL CONTADOR DE FOTOS PROMETIA MAS DE LO QUE EL ZIP TRAIA. En Alpina decia '246/246 fotos listas (100%)' y la descarga bajaba 185. No era un error de cuenta: habia DOS recorridos distintos de las mismas fotos, uno para el contador y otro para armar el ZIP, y aplicaban reglas distintas.",
+        "Las 61 de diferencia eran fotos marcadas como locales pero SIN enlace y SIN ruta: el contador las daba por listas -esta marcada local, luego esta en el equipo- y el recolector las descartaba, porque sin enlace y sin ruta no hay archivo que meter. Esperar no las recupera.",
+        "AHORA EL INVENTARIO ES UNO SOLO y las dos cuentas salen de el, asi que no pueden discrepar. Cuando hay fotos sin archivo el chip lo dice en rojo: 'el ZIP trae 185 de 246 - 61 sin archivo', y NO dice 100%. El porcentaje se mide contra el total: medirlo contra las descargables dejaria un proyecto al que le faltan 61 archivos diciendo 100%.",
+        "ARREGLADO - EL AVISO DE LA DESCARGA SE CONTRADECIA SOLO. Decia 'ZIP INCOMPLETO' y debajo 'Bajaron 185 de 185. FALTAN 0'. Contaba solo las que fallaban al BAJAR; las que no se podian ni intentar no aparecian por ningun lado. Ahora se dicen los dos motivos por separado, porque se arreglan distinto: las de red se reintentan solas, las que no tienen archivo no se recuperan reintentando.",
+        "El nombre del archivo tambien contaba mal: el ZIP se llamaba 'INCOMPLETO (faltan 0)'."
+      ]
+    },
+    {
       "version": "2.24.0",
       "fecha": "2026-09-08",
       "notas": [
