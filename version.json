@@ -1,8 +1,13 @@
 {
-  "version": "2.13.0",
+  "version": "2.14.0",
   "fecha": "2026-09-07",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - PONER EN ORDEN LOS ID DE UN PROYECTO VIEJO. Los ensayos guardados antes del arreglo de la numeracion se contaban por PROYECTO y su ID no nombraba la edificacion, asi que el consecutivo saltaba al cambiar de bloque y el numero por si solo no ubicaba nada. En un proyecto real habia dos ensayos distintos llamados los dos ESC 003, en edificaciones distintas. Ahora, cuando un proyecto viene asi, sale un aviso arriba de la lista con el boton PONER LOS ID EN ORDEN.",
+    "SE VE ANTES DE APLICAR: la ventana muestra la lista completa de que ID pasa a ser cual, en que edificacion y de que ensayo, y recien despues se aplica, con una confirmacion de por medio. Renumerar toca datos de campo y no se deshace de memoria.",
+    "EL ORDEN LO DA LA FECHA DEL ENSAYO, no el numero viejo: ese numero venia de una cuenta del proyecto entero y ordenar por el mezclaria bloques. Asi el primero que se hizo en cada edificacion queda 001.",
+    "IMPORTANTE - EL ID VIEJO NO SE PIERDE: cada ensayo conserva el que tenia. Es lo que permite rastrear un informe YA ENTREGADO que diga ESC 003. Si se renumera dos veces se conserva el original, que es el que salio impreso. Aun asi conviene revisar los informes emitidos antes de reimprimirlos.",
+    "No se tocan los ensayos sin edificacion asignada ni los de una estructura sin codigo corto: se listan aparte con el motivo. Si a la estructura se le pone el codigo y se vuelve a entrar, ya entran.",
     "ARREGLADO - EL BOTON DE ACTUALIZAR EN LAS TABLETS DEL KIOSCO. En los equipos que administra DIAGNOSTRUCT OS esta prohibido instalar aplicaciones a mano, y esa prohibicion nos alcanzaba: al tocar 'Actualizar ahora' la app bajaba el APK, se lo entregaba al instalador de Android y el sistema lo descartaba SIN DECIR NADA. El que lo tocaba veia que no pasaba nada y concluia que la app estaba rota. No lo estaba: esos equipos se actualizan solos, en silencio, cada pocas horas, y mejor que nadie.",
     "Ahora la app mide si el equipo tiene permitido instalar y, cuando no, en vez del boton muestra 'este equipo la instala solo, entra en las proximas horas'. Ya no se intenta abrir el instalador para que el sistema lo rechace.",
     "Se mide la restriccion REAL de instalacion, no 'si hay kiosco': un equipo administrado que si permita instalar sigue viendo su boton como siempre. Y ante la duda -si la consulta falla o el APK es viejo- el boton se queda, porque esconderlo por error dejaria a un equipo sin forma de actualizarse.",
@@ -85,6 +90,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.13.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.14.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

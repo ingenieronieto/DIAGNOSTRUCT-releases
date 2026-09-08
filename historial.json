@@ -2,6 +2,14 @@
   "generado": "2026-09-07",
   "versiones": [
     {
+      "version": "2.14.0",
+      "fecha": "2026-09-07",
+      "notas": [
+        "NUEVO - PONER EN ORDEN LOS ID DE UN PROYECTO VIEJO. Los ensayos guardados antes del arreglo de la numeracion no nombraban la edificacion en su ID y el consecutivo saltaba entre bloques; llego a haber dos ensayos distintos llamados los dos ESC 003. Ahora sale un aviso con el boton PONER LOS ID EN ORDEN, que muestra la lista completa de que ID pasa a ser cual ANTES de aplicar nada.",
+        "El ID viejo no se pierde: cada ensayo conserva el que tenia, para poder rastrear un informe ya entregado. Aun asi conviene revisar los informes emitidos antes de reimprimirlos."
+      ]
+    },
+    {
       "version": "2.13.0",
       "fecha": "2026-09-07",
       "notas": [
