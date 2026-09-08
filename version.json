@@ -1,8 +1,14 @@
 {
-  "version": "2.20.0",
+  "version": "2.21.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "LA ZONA DE VIDA DE HOLDRIDGE SALE DEL PUNTO. Cierra los cinco pasos: el informe ya no reclama nada del bloque de entorno. Se calcula la BIOTEMPERATURA -que no es la temperatura media: es el promedio de las temperaturas diarias recortando cada dia al rango 0-30 C, porque fuera de ahi la planta no crece-, la evapotranspiracion potencial y su relacion con la lluvia anual. De ahi salen el piso altitudinal y la provincia de humedad.",
+    "NINGUN UMBRAL SE INVENTO, y se puede comprobar. Los cortes de biotemperatura -1,5 3 6 12 18 24 C- salen de DOS fuentes que coinciden: el eje de la tabla de biogeografia.net que paso Pacho y la ficha del sistema de Holdridge. La formula de la evapotranspiracion (biotemperatura x 58,93) es de esa misma pagina. Los cortes de la relacion ETP/lluvia son la progresion logaritmica del sistema.",
+    "LO QUE NO SE AFIRMA, Y POR QUE. El nombre colombiano completo lleva la FORMACION -bosque, monte espinoso, matorral desertico, paramo-, y esa sale de la reticula del diagrama triangular. Esa reticula no se consiguio con respaldo: la pagina del enlace usa nombres de regiones latitudinales europeas, no los pisos altitudinales colombianos, y la referencia que aplica -Espinal y Montenegro / IGAC- no esta en la biblioteca del Drive. Ponerla de memoria es como se termina escribiendo 'monte espinoso tropical' para una obra en Quibdo, con la firma de Pacho debajo. El informe dice la provincia y el piso, que son los que los datos sostienen, y muestra los TRES NUMEROS con que se llego ahi para que quien lea pueda comprobarlo.",
+    "DIAGRAMA NUEVO: situa la obra en el plano de biotemperatura contra precipitacion, con las bandas de los pisos y las rectas de la relacion de evapotranspiracion. No es el triangulo completo del sistema -para eso haria falta la reticula que falta-, es el plano de los dos ejes que si sostienen los datos.",
+    "COMPROBADO CONTRA CUATRO SITIOS REALES. Quibdo da superhumeda tropical (la referencia dice bosque pluvial tropical) y Medellin humeda premontano (bosque humedo premontano): coinciden. Uribia da semiarida tropical, que es el monte espinoso de la Guajira. Bogota da HUMEDA montano bajo donde la clasificacion tradicional dice bosque SECO montano bajo: la relacion da 0,93 y el corte seco/humedo esta en 1,00, o sea a siete centesimas. Es un sitio de frontera y por eso el informe muestra los numeros: ahi el criterio lo pone el ingeniero, no la cuenta.",
+    "PRUEBA AMPLIADA a 101 asserts. Vigila que la biotemperatura recorte de verdad -un sitio a 40/30 cuenta como 30, no como 35, y sin ese recorte la zona se corre un piso entero-, que los siete pisos y las ocho provincias caigan en sus umbrales, que MAS relacion sea MAS SECO (leerlo al reves invierte el diagnostico de durabilidad completo) y que en ningun texto se cuele una formacion que no se tiene.",
     "EL INFORME YA TRAE LA IMAGEN DE LOCALIZACION. Se compone al emitir con las teselas de OpenStreetMap alrededor del punto de la obra y la marca encima. La atribucion va IMPRESA en la imagen, que es la condicion de uso de esas teselas: una imagen pegada en un informe firmado tiene que poder decir de donde salio.",
     "EL CLIMA DEL SITIO SALE DE LAS COORDENADAS. Se piden cinco anos de datos diarios al archivo de Open-Meteo (reanalisis ERA5) y se promedian por mes. De ahi salen el mes mas calido y el mas frio con sus temperaturas, el mes de mas y menos lluvia con sus milimetros, el rango anual, el viento por mes y la altitud del punto. Antes esas cifras venian de un proyecto.json escrito a mano y la aplicacion no las llenaba nunca.",
     "CINCO GRAFICAS DIBUJADAS CON ESOS MISMOS DATOS: climograma, temperatura, precipitacion, humedad y viento. Se dibujan en blanco y negro con tres grises, la paleta de los documentos, y a mano en un lienzo justamente para no heredar la estetica de una libreria de graficos, que se reconoce a un kilometro. Como salen de los mismos numeros que cita el texto, la grafica y el parrafo no se pueden contradecir.",
@@ -124,6 +130,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.20.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.21.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
