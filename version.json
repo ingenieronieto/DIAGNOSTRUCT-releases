@@ -1,8 +1,12 @@
 {
-  "version": "2.18.0",
+  "version": "2.19.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "LOS MAPAS DE Aa Y Av SALEN MARCADOS. El informe lleva las figuras A.2.3-1 y A.2.3-2 de la NSR-10 con un PUNTO ROJO en las coordenadas de la obra y un RECUADRO sobre la fila de la leyenda que le corresponde al valor. Sin esas marcas el mapa es decorativo: muestra el pais entero y no dice nada del proyecto. Con ellas, quien lee puede comprobar de un vistazo que el Aa citado es el de ESE sitio.",
+    "FUNCIONA SIN SENAL: los dos mapas base viajan en la aplicacion (307 KB). Se marca con la retícula del propio mapa -39,35 pixeles por grado-, calibrada contra las ciudades rotuladas. Si la obra no esta en una de esas ciudades el punto puede quedar a unos milimetros; se corrige moviendo la imagen en Word, y por eso el punto se dibuja aparte y bien visible.",
+    "ARREGLADO - LAS COORDENADAS NO LLEGABAN AL INFORME. La rama de localizacion no estaba cableada en el adaptador, asi que el punto que se guarda al elegir el municipio -con el mapa o con el GPS- no viajaba al documento. Por eso los mapas salian sin marcar.",
+    "La calibracion se COPIO del generador de escritorio, no se recalculo, y hay una prueba que lee ese archivo de Python y compara los diez numeros de cada mapa. Si alguno de los dos lados se mueve, los informes de la tablet y los del portatil dejarian de coincidir y nadie lo notaria: un punto mal puesto no se ve como un error, se ve como un mapa normal con el punto en otro municipio.",
     "YA HAY DONDE ESCRIBIR LO QUE EL INFORME PEDIA. El estado de ocupacion -estado actual, ocupacion, acceso, servicios basicos, mantenimiento y condicion general- y la caracterizacion geotecnica -si hay estudio geotecnico, suelo de fundacion, nivel freatico y riesgos- no existian en NINGUNA pantalla de la app. El modulo del informe se porto de la herramienta de escritorio, que se alimenta de un proyecto.json escrito a mano, y esos campos nunca se recogieron: por eso el generador los reclamaba en cada emision. Ahora estan en la pantalla del informe y se guardan en el proyecto, asi que quedan para la proxima vez y funcionan sin senal.",
     "ARREGLADO DE PASO - EL INFORME DECIA SIEMPRE QUE NO HABIA ESTUDIO GEOTECNICO. La rama de geologia no estaba cableada en el adaptador, asi que el campo llegaba vacio SIEMPRE y el documento incluia la advertencia -y toda la condicion sobre la cimentacion- hubiera estudio o no. Ahora la advertencia sale solo cuando corresponde.",
     "LA FOTOGRAFIA DEL ESTADO ACTUAL se elige del album del proyecto. No se sube desde el equipo, a diferencia de la de fachada: la del estado se tomo durante la inspeccion, la de fachada a veces llega por fuera.",
@@ -113,6 +117,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.18.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.19.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
