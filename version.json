@@ -1,8 +1,12 @@
 {
-  "version": "2.15.0",
+  "version": "2.16.0",
   "fecha": "2026-09-07",
   "minima": "1.70.0",
   "notas": [
+    "EL PUNTO DE LA OBRA SE ELIGE EN UN MAPA, NO CON EL GPS. Lo pidio Pacho y tenia razon: el boton de GPS toma donde esta PARADO el que usa la app, y el informe se escribe en la oficina, a horas del edificio. Ponia las coordenadas de la oficina. Ahora se busca el sitio, el mapa vuela hasta alla y el punto se marca con un clic.",
+    "De ese punto salen dos cosas: la georreferencia del proyecto y la propuesta de municipio con la que se leen Aa y Av de la tabla de la norma. Sigue habiendo que CONFIRMAR el municipio: cerca de un limite municipal el servicio puede devolver el de al lado, y ahi el Aa es otro.",
+    "TRES VIAS, Y LA PANTALLA DICE CUAL USAR. Las listas de departamento y municipio son lo mas rapido si ya sabes donde queda, y son las unicas que FUNCIONAN SIN SENAL, porque la tabla del Apendice A-4 esta en el equipo. El mapa necesita internet para las teselas. Y el boton de GPS quedo renombrado 'Estoy en la obra: usar el GPS', para que se sepa cuando aplica.",
+    "OJO AL BUSCAR: el nombre exacto de una sede casi nunca esta en el mapa. Lo que si esta son los municipios, las calles y los sitios conocidos. Buscando 'Quibdo' o 'Catedral Quibdo' se llega igual, y desde ahi se marca el punto exacto.",
     "NUEVO - ORDENAR LAS TABLAS POR CUALQUIER COLUMNA. Se toca el encabezado -ID, fecha, ubicacion, elemento, el resultado, el veredicto- y la lista se ordena por ahi. Va en las ONCE listas de ensayos: esclerometria, extraccion de barras, durometria, carbonatacion, inclinometria, nucleos, potencial de corrosion, regatas, tintas penetrantes, ultrasonido de espesores y ultrasonido en concreto.",
     "TRES TOQUES, NO DOS: ascendente, descendente y VOLVER AL ORDEN NATURAL, que es el de captura de la campana. Sin el tercero no habria forma de volver salvo recargando.",
     "LO QUE ESTA VACIO SE VA AL FINAL, suba o baje el orden. Ordenar por MPa deja arriba los ensayos que TIENEN resultado, no una pila de guiones. Un cero no cuenta como vacio: 0 MPa es un dato.",
@@ -98,6 +102,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.15.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.16.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
