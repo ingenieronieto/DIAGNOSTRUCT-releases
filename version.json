@@ -1,8 +1,15 @@
 {
-  "version": "2.16.0",
-  "fecha": "2026-09-07",
+  "version": "2.17.0",
+  "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "LA PORTADA DEL INFORME QUEDO CLONADA DEL MAESTRO. Se saco el PNG de pagina completa que viene dentro del .docx de referencia (1654 x 2338 a 200 ppp) y se midio sobre los pixeles: los colores exactos, donde empieza y termina cada banda, la pendiente de cada diagonal. Despues se comparo la portada dibujada contra el maestro punto por punto: barra superior, banda del proyecto, franja gris y regla del titulo caen todas dentro de 1 o 2 pixeles.",
+    "Las dos diagonales tienen pendientes DISTINTAS -la banda del proyecto baja a -0,5 y la franja gris a -0,2119- y se dejaron asi. Igualarlas quedaria mas prolijo pero ya no seria la portada del maestro.",
+    "SE INCORPORO MONTSERRAT A LA APP. La portada se dibuja en un canvas y sin la fuente cargada usaba la del sistema: una portada con otra letra ya no es la misma portada. Salvedad: no hay archivo de italicas, asi que la cursiva del bloque de firmas la sintetiza el navegador.",
+    "OJO - LA PORTADA PIDE DATOS QUE LA APP TODAVIA NO TIENE: el CODIGO y la VERSION del documento, que van arriba a la derecha. No se inventan: salen con guion y levantan un aviso. Es lo que identifica la copia controlada.",
+    "TAMANOS DE LETRA DEL INFORME: el cuerpo pasa a 10 pt y el contenido dentro de los cuadros a 8 pt. Los titulos de cuadro -encabezado de columna y etiquetas en negrilla- conservan el suyo.",
+    "LOS AVISOS DEL GENERADOR YA DICEN DONDE SE ARREGLAN. Eran veintitantas lineas de texto plano que nombraban un campo del contrato y no decian donde se toca eso; una lista que solo se puede leer se ignora. Ahora cada aviso queda en una de tres clases: los que se resuelven con el PUNTO de la obra (los dos mapas sismicos marcados, la imagen de localizacion, el clima y las cuatro graficas del entorno, la zona de vida), los que hay que ESCRIBIR, y los que se resuelven CARGANDO ENSAYOS.",
+    "HALLAZGO - VARIOS DE ESOS CAMPOS NO EXISTEN EN LA APP. imgClima, zonaVida, tieneEstudioGeotecnico, serviciosBasicos y condicionGeneral no estan en ninguna pantalla: el modulo del informe se porto de la herramienta de escritorio, que se alimenta de un proyecto.json escrito a mano, y la app nunca lleno ese contrato. Por eso salen tantos avisos: no es que falte llenarlos, es que todavia no hay donde. A esos NO se les puso hipervinculo, porque un enlace que no lleva a ningun lado es peor que no tenerlo; dicen con palabras donde se resuelven.",
     "EL PUNTO DE LA OBRA SE ELIGE EN UN MAPA, NO CON EL GPS. Lo pidio Pacho y tenia razon: el boton de GPS toma donde esta PARADO el que usa la app, y el informe se escribe en la oficina, a horas del edificio. Ponia las coordenadas de la oficina. Ahora se busca el sitio, el mapa vuela hasta alla y el punto se marca con un clic.",
     "De ese punto salen dos cosas: la georreferencia del proyecto y la propuesta de municipio con la que se leen Aa y Av de la tabla de la norma. Sigue habiendo que CONFIRMAR el municipio: cerca de un limite municipal el servicio puede devolver el de al lado, y ahi el Aa es otro.",
     "TRES VIAS, Y LA PANTALLA DICE CUAL USAR. Las listas de departamento y municipio son lo mas rapido si ya sabes donde queda, y son las unicas que FUNCIONAN SIN SENAL, porque la tabla del Apendice A-4 esta en el equipo. El mapa necesita internet para las teselas. Y el boton de GPS quedo renombrado 'Estoy en la obra: usar el GPS', para que se sepa cuando aplica.",
@@ -102,6 +109,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.16.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.17.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
