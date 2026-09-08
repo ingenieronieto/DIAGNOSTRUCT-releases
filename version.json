@@ -1,8 +1,15 @@
 {
-  "version": "2.21.0",
+  "version": "2.22.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - EL BOTON 'PONER LOS ID EN ORDEN' NO HACIA NADA. Lo reporto Pacho. App.jsx tiene 19 return excluyentes entre si -la pantalla de acceso, la de proyectos, la de trabajo- y cada uno pinta un arbol distinto, pero el estado es UNO SOLO y lo comparten todos. El boton vivia en la ultima rama y el panel que abre estaba en otra: al pulsarlo el estado cambiaba y no habia nada montado que lo pintara.",
+    "LO PEOR ERA QUE NO DABA NINGUN ERROR. No fallaba la consola, ni el build, ni ninguna prueba. Simplemente no pasaba nada, que desde afuera se ve igual que una funcion que no existe. Venia roto de antes; se comprobo contra la version ya publicada.",
+    "PRUEBA NUEVA para que no se repita (test/modales-alcanzables): comprueba que todo panel se pinte en una rama donde su boton pueda encenderlo. Se valido corriendola contra la version anterior, donde falla diciendo exactamente 'se enciende en la rama 18 y se pinta en la 14'.",
+    "MAS RAPIDO AL ORDENAR LAS TABLAS. El valor de cada fila se lee UNA sola vez en vez de dentro del comparador. Con 300 ensayos son 300 lecturas y no unas 2.500, y no es leer un campo: varias columnas CALCULAN -inclinacion, FDC, resistencia de nucleo-, asi que antes se recalculaba el mismo ensayo una y otra vez para compararlo con cada vecino.",
+    "MAS RAPIDO AL ARRANCAR: los paneles pesados se cargan aparte, cuando se abren, en vez de venir todos en el arranque.",
+    "Ajustes en tintas penetrantes y en las listas de acero, durometria, inclinometria y nucleos.",
+    "OJO CON ESTA VERSION: junta el arreglo del boton con trabajo de la sesion paralela que estaba sin commitear. Pacho pidio subirlo todo junto. Build limpio y 33 suites en verde antes de subirlo.",
     "LA ZONA DE VIDA DE HOLDRIDGE SALE DEL PUNTO. Cierra los cinco pasos: el informe ya no reclama nada del bloque de entorno. Se calcula la BIOTEMPERATURA -que no es la temperatura media: es el promedio de las temperaturas diarias recortando cada dia al rango 0-30 C, porque fuera de ahi la planta no crece-, la evapotranspiracion potencial y su relacion con la lluvia anual. De ahi salen el piso altitudinal y la provincia de humedad.",
     "NINGUN UMBRAL SE INVENTO, y se puede comprobar. Los cortes de biotemperatura -1,5 3 6 12 18 24 C- salen de DOS fuentes que coinciden: el eje de la tabla de biogeografia.net que paso Pacho y la ficha del sistema de Holdridge. La formula de la evapotranspiracion (biotemperatura x 58,93) es de esa misma pagina. Los cortes de la relacion ETP/lluvia son la progresion logaritmica del sistema.",
     "LO QUE NO SE AFIRMA, Y POR QUE. El nombre colombiano completo lleva la FORMACION -bosque, monte espinoso, matorral desertico, paramo-, y esa sale de la reticula del diagrama triangular. Esa reticula no se consiguio con respaldo: la pagina del enlace usa nombres de regiones latitudinales europeas, no los pisos altitudinales colombianos, y la referencia que aplica -Espinal y Montenegro / IGAC- no esta en la biblioteca del Drive. Ponerla de memoria es como se termina escribiendo 'monte espinoso tropical' para una obra en Quibdo, con la firma de Pacho debajo. El informe dice la provincia y el piso, que son los que los datos sostienen, y muestra los TRES NUMEROS con que se llego ahi para que quien lea pueda comprobarlo.",
@@ -130,6 +137,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.21.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.22.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
