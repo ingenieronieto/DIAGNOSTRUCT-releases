@@ -1,8 +1,11 @@
 {
-  "version": "2.30.0",
+  "version": "2.31.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "LAS FICHAS DE LESION DE ZAPAYAN YA TIENEN FOTO. Entraron sin ninguna, y una ficha sin foto es media ficha: el informe imprime la descripcion de algo que nadie puede ver. Son 79 fotogramas, dos por ficha, del minuto exacto que cada una declara. La campana no dejo registro fotografico de lesiones -la carpeta LES del proyecto trae seis imagenes sueltas de WhatsApp sin relacion con las fichas- asi que la evidencia es el propio video.",
+    "CADA FOTO VA A SU FICHA POR EL NOMBRE DEL ARCHIVO, NO POR EL ORDEN. El nombre lleva el codigo de la ficha, asi que no importa como ordene la carpeta el navegador ni si falta alguna: cada una va a su sitio o se reporta como faltante. Repartir por posicion es como una foto termina en la ficha equivocada, y eso es una lesion atribuida a un elemento que no es.",
+    "Cada foto sube con un slot estable, asi que volver a cargarlas no duplica: las que ya estan se saltan. Las fichas blindadas no se tocan. Y trae la casilla de reponer faltantes, que le pregunta al servidor si el archivo existe de verdad en vez de creerle a la ficha.",
     "ARREGLADA LA IMPORTACION DE LA CARTILLA DE ZAPAYAN, QUE MORIA EN LA FICHA 14. La base rechazaba el valor de `material_lesion` y solo alcanzaban a entrar 13 de las 40. Ese campo no separa por material del elemento: separa ESTUDIOS. CONCRETO es la cartilla de patologia y MADERA es el estudio fitosanitario, que es otro trabajo. Una lesion sobre un elemento de acero -la cubierta metalica, las rejas- es patologia igual y va en la cartilla de concreto. Se le habia puesto ACERO y OTRO, que son materiales validos en el catalogo de la pantalla pero que ahi no van. De que esta hecho el elemento sigue en `materialConstitutivo`, que si admite ACERO y OTRO.",
     "La prueba ahora fija los dos estudios que la base acepta. Antes validaba contra el catalogo de materiales de la pantalla y por eso dejaba pasar ACERO sin decir nada: el error solo aparecia en la tablet, a mitad de la importacion.",
     "EL BLOQUE DE CADA LESION DE ZAPAYAN SALE DEL AUDIO DEL VIDEO. Los seis videos del registro tienen narracion y en ella se va diciendo en que bloque se esta parado: «Bloque 1, auditorio», «bloque 1A», «seguimos bloque 3», «bloque 4 presenta lo mismo». Transcrito el audio, esa narracion da una linea de tiempo y el minuto de cada ficha cae dentro de un tramo. Antes 38 de las 40 fichas no tenian bloque porque la cartilla se levanto mirando solo los fotogramas.",
@@ -178,6 +181,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.30.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.31.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
