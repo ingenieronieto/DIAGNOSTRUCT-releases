@@ -5,11 +5,11 @@
       "version": "2.26.0",
       "fecha": "2026-09-08",
       "notas": [
-        "LA CARTILLA DE LESIONES DE ZAPAYAN ENTRA A LA APP: 40 fichas levantadas sobre el registro en video de la campana. Caen sobre las SEIS estructuras que el proyecto ya tiene cargadas -bloques 1, 1A, 2, 3, 4 y 5-; el importador NO crea estructuras, y si le piden un bloque que no existe se detiene y dice cual falta en vez de inventarlo.",
-        "SOLO DOS FICHAS TRAEN BLOQUE CIERTO. LES-02 y LES-11 salen del pano rotulado 9 ESC1B4, que es el Bloque 4. Las otras 38 no se pueden amarrar desde la imagen, asi que no entran solas: hay que decir a que bloque van. Repartirlas a ojo llenaria el diagnostico de un bloque con lesiones de otro, y eso en un informe firmado no es un dato incompleto sino uno falso.",
-        "B1 Y B1A NO SE CRUZAN. Los dos codigos se parecen lo suficiente como para confundirse con cualquier comparacion laxa; el emparejamiento es por igualdad y hay pruebas que lo verifican en los dos ordenes de la lista, porque con el orden favorable el error pasa desapercibido.",
-        "ARREGLADO ANTES DE QUE LLEGARA A UN INFORME: el importador leia mal dos campos de la afectacion y las 40 fichas habrian entrado con el porcentaje en blanco. Como el consolidado cuenta las graves por ese porcentaje, habria reportado CERO lesiones graves teniendo 25.",
-        "SI LA IMPORTACION SE CORTA A LA MITAD, AHORA LO DICE. Son cuarenta escrituras seguidas desde una tablet en obra: al fallar informa cuantas alcanzaron a entrar y en cual se detuvo, en vez de dejar un error pelado que no deja saber si reimportar duplica."
+        "IMPORTANTE - LAS FOTOS QUE NO HABIAN SUBIDO YA NO SE DAN POR PERDIDAS. En Alpina el ZIP dejaba fuera 61 fotos y decia que no tenian archivo. Si lo tenian: al guardar un ensayo, a la foto que todavia no subio se le quita la direccion temporal -no sirve en otro equipo- y en la ficha queda solo su referencia local. El inventario no miraba ese campo, asi que las contaba como inexistentes. Son fotos de obra, de las que no se pueden volver a tomar.",
+        "AHORA EL ZIP LAS RESCATA: antes de pedirle nada al servidor busca la copia guardada en ESTE equipo, en los dos almacenes locales que hay. Es mas rapido y no depende de la senal. Ojo: solo funciona desde el equipo donde se tomaron; desde otro no hay forma, y el aviso ahora lo dice en vez de callarlo.",
+        "Y CUANDO UNA FOTO DE VERDAD NO DEJA RASTRO, SE DICE CUAL ES: a que ensayo o lesion pertenece, en que casilla estaba y que campos guardo la ficha. Antes era un nombre suelto en la consola.",
+        "NUEVO - CUADRO DE DESCARGA CON DATOS REALES. Al bajar el ZIP se ve cuantos archivos van, cuantos MB llegaron y a que velocidad, medido de verdad. Lo que falta va marcado con ~ porque es una estimacion: el servidor no dice cuanto pesa una foto antes de bajarla, asi que se calcula con el promedio de las ya bajadas. Cuando todavia no hay con que medir dice 'midiendo...' en vez de un cero que parezca dato.",
+        "El cuadro tambien avisa cuando la app esta esperando para reintentar tras un corte, con los segundos que faltan, para que no parezca colgada justo cuando esta haciendo lo correcto. Y esta ajustado a cada pantalla: en el celular la etiqueta va encima del valor y ningun numero se parte en dos lineas."
       ]
     },
     {
