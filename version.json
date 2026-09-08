@@ -1,8 +1,10 @@
 {
-  "version": "2.29.0",
+  "version": "2.30.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADA LA IMPORTACION DE LA CARTILLA DE ZAPAYAN, QUE MORIA EN LA FICHA 14. La base rechazaba el valor de `material_lesion` y solo alcanzaban a entrar 13 de las 40. Ese campo no separa por material del elemento: separa ESTUDIOS. CONCRETO es la cartilla de patologia y MADERA es el estudio fitosanitario, que es otro trabajo. Una lesion sobre un elemento de acero -la cubierta metalica, las rejas- es patologia igual y va en la cartilla de concreto. Se le habia puesto ACERO y OTRO, que son materiales validos en el catalogo de la pantalla pero que ahi no van. De que esta hecho el elemento sigue en `materialConstitutivo`, que si admite ACERO y OTRO.",
+    "La prueba ahora fija los dos estudios que la base acepta. Antes validaba contra el catalogo de materiales de la pantalla y por eso dejaba pasar ACERO sin decir nada: el error solo aparecia en la tablet, a mitad de la importacion.",
     "EL BLOQUE DE CADA LESION DE ZAPAYAN SALE DEL AUDIO DEL VIDEO. Los seis videos del registro tienen narracion y en ella se va diciendo en que bloque se esta parado: «Bloque 1, auditorio», «bloque 1A», «seguimos bloque 3», «bloque 4 presenta lo mismo». Transcrito el audio, esa narracion da una linea de tiempo y el minuto de cada ficha cae dentro de un tramo. Antes 38 de las 40 fichas no tenian bloque porque la cartilla se levanto mirando solo los fotogramas.",
     "CADA FICHA GUARDA LA FRASE QUE LA UBICA Y EL SEGUNDO EN QUE SE DIJO, para poder ir a comprobarla contra la grabacion en vez de creerle a nadie. Coincide con lo unico que ya se sabia por imagen: las dos fichas del pano rotulado 9 ESC1B4 caen dentro del tramo del Bloque 4.",
     "24 FICHAS ENTRAN FIRMES Y 16 MARCADAS PARA CONFIRMAR. La firmeza se mide contra la ultima vez que se NOMBRO el bloque, no contra un corte inventado. Es la diferencia entre 13 fichas del bloque 1A que se daban por firmes colgando de una sola frase de doce segundos -una de ellas a cinco minutos de distancia- y decir de frente cuales hay que confirmar en sitio.",
@@ -176,6 +178,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.29.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.30.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
