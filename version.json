@@ -1,8 +1,13 @@
 {
-  "version": "2.27.0",
+  "version": "2.28.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - INFORME DE LAS FOTOS QUE NO ESTAN EN EL SERVIDOR. El aviso de fotos faltantes ahora se toca y abre la lista: de que ensayo o lesion es cada una, en que casilla, donde y cuando se tomo, quien levanto ese ensayo (con nombre, no el identificador) y si el archivo esta EN ESTE EQUIPO, comprobado de verdad.",
+    "OJO CON LO QUE NO SE PUEDE SABER: la app NO guarda en ninguna parte que equipo tomo cada foto, y el informe no lo inventa. Lo que hace es que cada equipo responda por si mismo: se abre la misma pantalla en la tablet y dice 'tengo 61 de 61'. El que las tiene es el que lo dice.",
+    "SE SEPARAN LAS DOS CLASES, porque se arreglan distinto: las que NO SUBIERON todavia (el archivo esta en el equipo donde se tomo, se recuperan) y las que NO DEJARON RASTRO (ni enlace, ni ruta, ni copia: esas no se recuperan esperando, y se dice sin adornos).",
+    "NUEVO - BOTON PARA RESCATARLAS AHORA. Guarda en un ZIP las fotos que esten en este equipo, sin pedirle nada al servidor y sin tocar la base. Cada archivo sale nombrado <ensayo>__<casilla> para saber donde iba, y adentro va un LEEME que explica que son. Importa porque esa copia vive en el navegador: se va si se borran los datos del sitio, si se reinstala la app o si se formatea el equipo.",
+    "CAMBIADO - UN SOLO CUADRO PARA SEMBRAR E IMPORTAR PROYECTOS. Eran cinco tarjetas abiertas a la vez con todos sus botones a la vista. Ahora se elige el proyecto en una lista y solo aparecen SUS opciones; antes de elegir, se lee que trae cada uno. Sin elegir no se muestra ninguna, para no tocar el boton de un proyecto creyendo que es el de otro.",
     "LA CARTILLA DE LESIONES DE ZAPAYAN ENTRA A LA APP: 40 fichas levantadas sobre el registro en video de la campana. Caen sobre las SEIS estructuras que el proyecto ya tiene cargadas -bloques 1, 1A, 2, 3, 4 y 5-; el importador NO crea estructuras, y si le piden un bloque que no existe se detiene y dice cual falta en vez de inventarlo.",
     "SOLO DOS FICHAS TRAEN BLOQUE CIERTO. LES-02 y LES-11 salen del pano rotulado 9 ESC1B4, que es el Bloque 4. Las otras 38 no se pueden amarrar desde la imagen, asi que no entran solas: hay que decir a que bloque van. Repartirlas a ojo llenaria el diagnostico de un bloque con lesiones de otro, y eso en un informe firmado no es un dato incompleto sino uno falso.",
     "B1 Y B1A NO SE CRUZAN. Los dos codigos se parecen lo suficiente como para confundirse con cualquier comparacion laxa; el emparejamiento es por igualdad y hay pruebas que lo verifican en los dos ordenes de la lista, porque con el orden favorable el error pasa desapercibido.",
@@ -165,6 +170,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.27.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.28.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
