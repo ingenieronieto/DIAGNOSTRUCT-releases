@@ -1,8 +1,15 @@
 {
-  "version": "2.23.1",
+  "version": "2.24.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDA LA CAUSA GEOTECNICA DE LA 2.23.0. La opcion entraba, pero el motor seguia proponiendo inyectar y sellar fisuras sin decir una palabra del suelo. Un informe firmado podia recomendar resina epoxica sobre una fisura de asentamiento activo con la ruta al lado declarando que la causa era el terreno.",
+    "AHORA toda tecnica que repare el sintoma sale condicionada: va DESPUES de estabilizar el terreno y apoyada en estudio geotecnico (NSR-10 Titulo H). Las que si atacan la causa -drenaje perimetral, tala de arboles agresivos- salen sin ese aviso.",
+    "APUNTALAR, MEDIR CON FISUROMETROS O CON INCLINOMETROS NO ESTABILIZA EL SUELO, y ahora lo dicen. Es la recomendacion que encabeza la lista y la unica que sale cuando se pide aumentar capacidad en la cimentacion: si ella no lo advierte, el informe no lo advierte en ninguna parte.",
+    "EL AVISO VIAJA POR LAS DOS VIAS. Antes solo lo llevaban las alternativas que salian del arbol contestado; las que se marcan porque la cartilla registro fisuras entraban al informe sin el. Ahora las dos lo llevan.",
+    "LO PROVISIONAL SE DECLARA PROVISIONAL. El apuntalamiento se anunciaba como provisional solo si se contestaba que la intervencion era programada, y esa pregunta es opcional. Sin contestarla encabezaba listas de reforzamiento por norma o de carbonatacion como si fuera una solucion.",
+    "El arbol muestra el porque de la opcion marcada. Ese texto estaba escrito y no se pintaba en ninguna pantalla.",
+    "La causa se imprime dicha y no como identificador: el informe decia 'mecanismo: geotecnico', sin tilde, en un documento con firma y matricula.",
     "ARREGLADO - LA LISTA DE ENSAYOS ERA HTML INVALIDO Y EL CLIC PODIA IRSE A OTRO LADO. Cada fila del catalogo era un boton, y adentro llevaba la insignia de NOVEDAD, que tambien es un boton. HTML no permite un boton dentro de otro: el navegador reacomoda el arbol por su cuenta y a partir de ahi ya no se sabe donde cae el toque. En la tablet, con el dedo, eso es abrir el ensayo equivocado.",
     "La vista de TARJETAS ya se habia arreglado hace tiempo; la de LISTA se quedo sin arreglar, y es la que sale por defecto. Ahora la fila es un elemento con rol de boton: se puede tabular, abre con Enter y con espacio, avisa cuando esta deshabilitada y marca el foco igual que el paso del raton.",
     "NUEVA CAUSA EN EL ARBOL DE DECISION: PROBLEMA DE ORIGEN GEOTECNICO. Asentamiento diferencial, arcilla expansiva, socavacion, remocion en masa o nivel freatico. La distincion es de fondo: la causa esta DEBAJO de la estructura, no en el elemento, y la fisura es solo el sintoma. Mientras el terreno siga moviendose lo reparado se vuelve a abrir, asi que primero se estabiliza el suelo y despues se repara. Y eso exige estudio geotecnico, no criterio visual.",
@@ -142,6 +149,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.23.1.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.24.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

@@ -2,6 +2,17 @@
   "generado": "2026-09-08",
   "versiones": [
     {
+      "version": "2.24.0",
+      "fecha": "2026-09-08",
+      "notas": [
+        "CORREGIDA LA CAUSA GEOTECNICA DE LA 2.23.0. La opcion entraba, pero el motor seguia proponiendo inyectar y sellar fisuras sin decir una palabra del suelo. Un informe firmado podia recomendar resina epoxica sobre una fisura de asentamiento activo con la ruta al lado declarando que la causa era el terreno.",
+        "AHORA toda tecnica que repare el sintoma sale condicionada: va DESPUES de estabilizar el terreno y apoyada en estudio geotecnico (NSR-10 Titulo H). Las que si atacan la causa -drenaje perimetral, tala de arboles agresivos- salen sin ese aviso.",
+        "APUNTALAR, MEDIR CON FISUROMETROS O CON INCLINOMETROS NO ESTABILIZA EL SUELO, y ahora lo dicen. Es la recomendacion que encabeza la lista y la unica que sale cuando se pide aumentar capacidad en la cimentacion: si ella no lo advierte, el informe no lo advierte en ninguna parte.",
+        "EL AVISO VIAJA POR LAS DOS VIAS. Antes solo lo llevaban las alternativas que salian del arbol contestado; las que se marcan porque la cartilla registro fisuras entraban al informe sin el. Ahora las dos lo llevan.",
+        "LO PROVISIONAL SE DECLARA PROVISIONAL. El apuntalamiento se anunciaba como provisional solo si se contestaba que la intervencion era programada, y esa pregunta es opcional. Sin contestarla encabezaba listas de reforzamiento por norma o de carbonatacion como si fuera una solucion."
+      ]
+    },
+    {
       "version": "2.23.1",
       "fecha": "2026-09-08",
       "notas": [
