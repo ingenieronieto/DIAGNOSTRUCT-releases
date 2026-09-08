@@ -1,8 +1,12 @@
 {
-  "version": "2.17.0",
+  "version": "2.18.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "YA HAY DONDE ESCRIBIR LO QUE EL INFORME PEDIA. El estado de ocupacion -estado actual, ocupacion, acceso, servicios basicos, mantenimiento y condicion general- y la caracterizacion geotecnica -si hay estudio geotecnico, suelo de fundacion, nivel freatico y riesgos- no existian en NINGUNA pantalla de la app. El modulo del informe se porto de la herramienta de escritorio, que se alimenta de un proyecto.json escrito a mano, y esos campos nunca se recogieron: por eso el generador los reclamaba en cada emision. Ahora estan en la pantalla del informe y se guardan en el proyecto, asi que quedan para la proxima vez y funcionan sin senal.",
+    "ARREGLADO DE PASO - EL INFORME DECIA SIEMPRE QUE NO HABIA ESTUDIO GEOTECNICO. La rama de geologia no estaba cableada en el adaptador, asi que el campo llegaba vacio SIEMPRE y el documento incluia la advertencia -y toda la condicion sobre la cimentacion- hubiera estudio o no. Ahora la advertencia sale solo cuando corresponde.",
+    "LA FOTOGRAFIA DEL ESTADO ACTUAL se elige del album del proyecto. No se sube desde el equipo, a diferencia de la de fachada: la del estado se tomo durante la inspeccion, la de fachada a veces llega por fuera.",
+    "LOS AVISOS DEL GENERADOR YA LLEVAN A DONDE SE ARREGLAN. Cuatro de ellos -perfil de suelo, estado de ocupacion, estudio geotecnico y foto del estado- ahora son enlaces que caen en su campo. Los que se corrigen en otro modulo lo dicen con palabras, y los que se resuelven con el punto de la obra quedan agrupados aparte: esos no hay que escribirlos, salen de las coordenadas.",
     "LA PORTADA DEL INFORME QUEDO CLONADA DEL MAESTRO. Se saco el PNG de pagina completa que viene dentro del .docx de referencia (1654 x 2338 a 200 ppp) y se midio sobre los pixeles: los colores exactos, donde empieza y termina cada banda, la pendiente de cada diagonal. Despues se comparo la portada dibujada contra el maestro punto por punto: barra superior, banda del proyecto, franja gris y regla del titulo caen todas dentro de 1 o 2 pixeles.",
     "Las dos diagonales tienen pendientes DISTINTAS -la banda del proyecto baja a -0,5 y la franja gris a -0,2119- y se dejaron asi. Igualarlas quedaria mas prolijo pero ya no seria la portada del maestro.",
     "SE INCORPORO MONTSERRAT A LA APP. La portada se dibuja en un canvas y sin la fuente cargada usaba la del sistema: una portada con otra letra ya no es la misma portada. Salvedad: no hay archivo de italicas, asi que la cursiva del bloque de firmas la sintetiza el navegador.",
@@ -109,6 +113,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.17.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.18.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
