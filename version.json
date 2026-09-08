@@ -1,8 +1,11 @@
 {
-  "version": "2.12.0",
+  "version": "2.12.1",
   "fecha": "2026-09-07",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - LA MARCA DE UNA EMPRESA SE COLABA EN OTRA. La configuracion de empresa -nombre, logo, NIT, telefono, textos del informe- se guardaba en el equipo bajo UNA SOLA clave para todas las empresas. Al cambiar de empresa activa se limpiaban cinco claves de navegacion y esa no, asi que la app recargaba, leia la configuracion de la empresa ANTERIOR y la aplicaba: el nombre y el logo de una firma quedaban puestos operando bajo la otra.",
+    "Y si la consulta a la base fallaba, el codigo se quedaba con esa configuracion ajena sin avisar de nada. Ahora con senal manda la base; si falla, quedan los valores por defecto, que son neutros. Mostrar 'Estudios de Patologia' es un hueco visible; mostrar el nombre de otra firma es un dato falso. Sin senal se sigue usando el cache, que es para lo que existe.",
+    "OJO - ESTO NO ARREGLA UNA CONFIGURACION YA CONTAMINADA. Si la fila de configuracion de una empresa quedo con el nombre o el logo de otra -residuo del fallo U5.7, cuando guardar config bajo una empresa podia escribir en la de otra- eso es un DATO y se corrige en Configuracion: Nombre de la empresa y logo. Lo que se arreglo aqui es que no vuelva a colarse.",
     "ARREGLADO - LA PANTALLA DEL INFORME NUNCA VIO LAS LESIONES. Leia `proyectoActivo.lesiones`, que NO existe: la app arma el proyecto sin lesiones -igual que sin ensayos- y se cargan aparte. Las tres cosas que dependen de ellas trabajaban sobre una lista vacia: las alternativas que propone la evidencia, los hallazgos criticos y el borrador de hallazgos, que salia vacio sin decir por que. En UAN Quibdo, con 44 lesiones registradas, no aparecia ninguna.",
     "AHORA SI SE VEN: '20 lesion(es) de grado 3 o 4, sobre 44 registradas' aparece como hallazgo critico, y hay una intervencion que se propone porque la matriz de afectacion situa al menos una lesion en nivel DEMOLICION. Eso estaba invisible. Un proyecto con lesiones rendia lo mismo que uno sin ninguna y nada en la pantalla lo delataba: el informe salia silenciosamente mas pobre que sus propios datos.",
     "ARREGLADO - EL GUARDIAN DE EMPRESA BLOQUEABA INFORMES LEGITIMOS. Compara que el proyecto y la sesion sean de la misma empresa, para que un informe no salga sellado por quien no hizo el trabajo. Pero comparaba contra `config.empresa.nombre`, y ese NO es el nombre de la empresa de la sesion: es el bloque de MARCA -nombre, logo, NIT, telefono- que se escribe en Configuracion. Un tenant con la marca puesta a otro nombre quedaba bloqueado con un mensaje que contradecia lo que muestra la barra de super-admin.",
@@ -78,6 +81,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.12.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.12.1.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
