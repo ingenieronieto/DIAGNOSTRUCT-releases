@@ -1,8 +1,12 @@
 {
-  "version": "2.12.1",
+  "version": "2.13.0",
   "fecha": "2026-09-07",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLADO - EL BOTON DE ACTUALIZAR EN LAS TABLETS DEL KIOSCO. En los equipos que administra DIAGNOSTRUCT OS esta prohibido instalar aplicaciones a mano, y esa prohibicion nos alcanzaba: al tocar 'Actualizar ahora' la app bajaba el APK, se lo entregaba al instalador de Android y el sistema lo descartaba SIN DECIR NADA. El que lo tocaba veia que no pasaba nada y concluia que la app estaba rota. No lo estaba: esos equipos se actualizan solos, en silencio, cada pocas horas, y mejor que nadie.",
+    "Ahora la app mide si el equipo tiene permitido instalar y, cuando no, en vez del boton muestra 'este equipo la instala solo, entra en las proximas horas'. Ya no se intenta abrir el instalador para que el sistema lo rechace.",
+    "Se mide la restriccion REAL de instalacion, no 'si hay kiosco': un equipo administrado que si permita instalar sigue viendo su boton como siempre. Y ante la duda -si la consulta falla o el APK es viejo- el boton se queda, porque esconderlo por error dejaria a un equipo sin forma de actualizarse.",
+    "ARREGLADO - GUARDAR LA CONFIGURACION NO ACTUALIZABA LA COPIA LOCAL. El cache que se usa SIN SENAL solo se escribia al LEER de la base. Al corregir el nombre o el logo de la empresa, la pantalla quedaba bien pero el cache seguia con lo viejo: al abrir la app sin senal reaparecia la marca anterior. Asi se descubrio, con la marca de OTRA empresa puesta. Ahora al guardar se deja la copia local al dia.",
     "ARREGLADO - LA MARCA DE UNA EMPRESA SE COLABA EN OTRA. La configuracion de empresa -nombre, logo, NIT, telefono, textos del informe- se guardaba en el equipo bajo UNA SOLA clave para todas las empresas. Al cambiar de empresa activa se limpiaban cinco claves de navegacion y esa no, asi que la app recargaba, leia la configuracion de la empresa ANTERIOR y la aplicaba: el nombre y el logo de una firma quedaban puestos operando bajo la otra.",
     "Y si la consulta a la base fallaba, el codigo se quedaba con esa configuracion ajena sin avisar de nada. Ahora con senal manda la base; si falla, quedan los valores por defecto, que son neutros. Mostrar 'Estudios de Patologia' es un hueco visible; mostrar el nombre de otra firma es un dato falso. Sin senal se sigue usando el cache, que es para lo que existe.",
     "OJO - ESTO NO ARREGLA UNA CONFIGURACION YA CONTAMINADA. Si la fila de configuracion de una empresa quedo con el nombre o el logo de otra -residuo del fallo U5.7, cuando guardar config bajo una empresa podia escribir en la de otra- eso es un DATO y se corrige en Configuracion: Nombre de la empresa y logo. Lo que se arreglo aqui es que no vuelva a colarse.",
@@ -81,6 +85,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.12.1.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.13.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

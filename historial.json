@@ -2,6 +2,14 @@
   "generado": "2026-09-07",
   "versiones": [
     {
+      "version": "2.13.0",
+      "fecha": "2026-09-07",
+      "notas": [
+        "ARREGLADO - EL BOTON DE ACTUALIZAR EN LAS TABLETS DEL KIOSCO. En los equipos que administra DIAGNOSTRUCT OS esta prohibido instalar aplicaciones a mano, y esa prohibicion nos alcanzaba: al tocar 'Actualizar ahora' el sistema descartaba la instalacion sin decir nada, y parecia que la app estaba rota. Ahora, cuando el equipo no permite instalar, en vez del boton se muestra 'este equipo la instala solo, entra en las proximas horas'.",
+        "Se mide la restriccion real de instalacion, no si hay kiosco: un equipo administrado que si permita instalar sigue viendo su boton. Y ante la duda el boton se queda, para no dejar a nadie sin forma de actualizarse."
+      ]
+    },
+    {
       "version": "2.12.1",
       "fecha": "2026-09-07",
       "notas": [
