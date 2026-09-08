@@ -1,0 +1,8 @@
+# `gradlew` es un script de shell: si Git le mete finales de linea de Windows,
+# en Linux o macOS deja de arrancar ("bad interpreter"). Se fuerza LF pase lo que
+# pase por la configuracion de cada equipo.
+gradlew text eol=lf
+*.sh    text eol=lf
+
+# El wrapper es binario: que Git no intente "arreglarle" los finales de linea.
+gradle/wrapper/gradle-wrapper.jar binary

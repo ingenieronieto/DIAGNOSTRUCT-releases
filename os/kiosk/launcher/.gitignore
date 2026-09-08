@@ -9,3 +9,8 @@ captures/
 keystore.properties
 *.jks
 *.keystore
+
+# Salida de compilacion en modo release. `build/` ya esta arriba, pero el APK
+# firmado sale en `app/release/` y son ~2 MB de binario que se regeneran en cada
+# compilacion: no tienen por que viajar en el repositorio.
+app/release/
