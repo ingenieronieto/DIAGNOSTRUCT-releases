@@ -1,8 +1,14 @@
 {
-  "version": "2.28.0",
+  "version": "2.29.0",
   "fecha": "2026-09-08",
   "minima": "1.70.0",
   "notas": [
+    "EL BLOQUE DE CADA LESION DE ZAPAYAN SALE DEL AUDIO DEL VIDEO. Los seis videos del registro tienen narracion y en ella se va diciendo en que bloque se esta parado: «Bloque 1, auditorio», «bloque 1A», «seguimos bloque 3», «bloque 4 presenta lo mismo». Transcrito el audio, esa narracion da una linea de tiempo y el minuto de cada ficha cae dentro de un tramo. Antes 38 de las 40 fichas no tenian bloque porque la cartilla se levanto mirando solo los fotogramas.",
+    "CADA FICHA GUARDA LA FRASE QUE LA UBICA Y EL SEGUNDO EN QUE SE DIJO, para poder ir a comprobarla contra la grabacion en vez de creerle a nadie. Coincide con lo unico que ya se sabia por imagen: las dos fichas del pano rotulado 9 ESC1B4 caen dentro del tramo del Bloque 4.",
+    "24 FICHAS ENTRAN FIRMES Y 16 MARCADAS PARA CONFIRMAR. La firmeza se mide contra la ultima vez que se NOMBRO el bloque, no contra un corte inventado. Es la diferencia entre 13 fichas del bloque 1A que se daban por firmes colgando de una sola frase de doce segundos -una de ellas a cinco minutos de distancia- y decir de frente cuales hay que confirmar en sitio.",
+    "ARREGLADO: la evidencia del bloque se estaba escribiendo en la columna `respaldo`, que NO es un campo de evidencia sino donde el blindaje guarda la copia de la ficha. Al blindar una ficha -que es lo que se hace con las que ya se verificaron- el snapshot pisaba la evidencia y desaparecia; y como esa columna es opcional, si no existe se descarta en silencio y la pantalla igual dice «importadas 40».",
+    "ARREGLADO: el importador no encontraba el proyecto. Buscaba el nombre en la raiz y la aplicacion lo guarda en `datos.nombre`, asi que respondia «no se encontro el proyecto» con el proyecto delante. La prueba no lo veia porque usaba una forma que la aplicacion no produce nunca.",
+    "LA PRUEBA AHORA RECONSTRUYE EL BLOQUE EN VEZ DE LEERLO. Antes solo comprobaba que el campo existiera: intercambiando el bloque 1 con el 1A -28 fichas cambiando de estructura- la bateria seguia en verde. Ahora se vuelve a derivar el bloque desde el minuto de cada ficha y ese intercambio falla nombrando las 28.",
     "NUEVO - INFORME DE LAS FOTOS QUE NO ESTAN EN EL SERVIDOR. El aviso de fotos faltantes ahora se toca y abre la lista: de que ensayo o lesion es cada una, en que casilla, donde y cuando se tomo, quien levanto ese ensayo (con nombre, no el identificador) y si el archivo esta EN ESTE EQUIPO, comprobado de verdad.",
     "OJO CON LO QUE NO SE PUEDE SABER: la app NO guarda en ninguna parte que equipo tomo cada foto, y el informe no lo inventa. Lo que hace es que cada equipo responda por si mismo: se abre la misma pantalla en la tablet y dice 'tengo 61 de 61'. El que las tiene es el que lo dice.",
     "SE SEPARAN LAS DOS CLASES, porque se arreglan distinto: las que NO SUBIERON todavia (el archivo esta en el equipo donde se tomo, se recuperan) y las que NO DEJARON RASTRO (ni enlace, ni ruta, ni copia: esas no se recuperan esperando, y se dice sin adornos).",
@@ -170,6 +176,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.28.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.29.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
