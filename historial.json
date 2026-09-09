@@ -1,6 +1,17 @@
 {
-  "generado": "2026-09-08",
+  "generado": "2026-09-09",
   "versiones": [
+    {
+      "version": "2.33.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "NUEVO - TOCAR UNA FOTO DE LA HOJA DEL ENSAYO LA ABRE EN GRANDE. En la hoja las fotos van en miniaturas de 4x3 y ahi no se distingue lo que hay que ver: la fisura del nucleo, el viraje de la fenolftaleina, el numero de la cinta metrica. Ahora se toca y se abre a pantalla completa, con el rotulo de la casilla.",
+        "Se acerca con la rueda, con dos dedos, con los botones o tocando dos veces; con zoom se arrastra para recorrer la foto, que es como se sigue una fisura de punta a punta. Cierra con Esc, con el boton o tocando fuera: tres salidas porque en la tablet se usa con el dedo y en la oficina con el raton.",
+        "Va en las SIETE hojas de reporte a la vez (nucleos, acero, durometria, inclinometria, potencial de corrosion, regatas y la general) porque se puso en el punto por donde pasan todas sus fotos.",
+        "OJO CON EL ENCUADRE: esas mismas fotos se arrastran para reencuadrarlas en modo edicion. Se mide cuanto se movio el dedo: menos de 6 pixeles es un clic y abre; mas, es un encuadre y no abre. Un clic ya no altera el encuadre guardado.",
+        "ARREGLADO - LA DESCARGA DEL ZIP SE QUEDABA COLGADA POR UNAS POCAS FOTOS. Con 291 de 300 bajadas y 9 que no aparecian en el servidor, el bucle les daba diez vueltas con enfriamientos y reintentos -casi veinte minutos- y en todo ese rato NO entregaba nada: las 291 quedaban de rehenes de las 9. Ahora hay un boton 'Terminar ahora con lo que hay', un tope de cinco minutos por si nadie mira, y el aviso final dice POR QUE se detuvo: lo cortaste vos, se acabo el tiempo, o de verdad faltan."
+      ]
+    },
     {
       "version": "2.28.0",
       "fecha": "2026-09-08",
