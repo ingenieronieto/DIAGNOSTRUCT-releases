@@ -1,8 +1,15 @@
 {
-  "version": "2.31.0",
-  "fecha": "2026-09-08",
+  "version": "2.32.0",
+  "fecha": "2026-09-09",
   "minima": "1.70.0",
   "notas": [
+    "CON MALA SEÑAL, «REPONER FALTANTES» YA NO RESUBE LAS FOTOS. Antes preguntaba al servidor si el archivo seguía ahí y CUALQUIER fallo -un corte, un 403, el portal cautivo de la obra- contaba como «no está». Con la casilla marcada eso resubía las 79, dejaba las anteriores huérfanas en el almacén y lo cantaba en verde: «79 repuestas». El ingeniero leía que había reparado 79 fotos cuando no había ninguna rota. Ahora distingue tres respuestas -está, no está, no pude preguntar- y ante la duda no toca nada y lo dice.",
+    "UNA FICHA QUE YA REVISASTE Y QUE TIENE FOTO PROPIA NO RECIBE FOTOGRAMAS. Antes solo se respetaban las blindadas, así que una ficha cerrada en campo terminaba con cuatro fotos -dos tuyas y dos de video- sin nada que las distinga en la ficha impresa. Ahora se salta y se cuenta aparte.",
+    "CADA FOTO DICE QUE ES UN FOTOGRAMA DEL VIDEO, no una fotografía de campo. La campaña de Zapayán no dejó registro fotográfico de lesiones, y un informe firmado no puede presentar las dos cosas como si fueran lo mismo.",
+    "La extensión ya no deja fotos fuera: si los fotogramas se reexportan en PNG o JPEG, enganchan igual. Antes se comparaba el nombre completo y las 79 se habrían quedado sin subir.",
+    "Si falta la columna `bloqueada` en la base, el importador ya no revienta con jerga de PostgREST: reintenta sin ella.",
+    "El cuadro de resultados deja de pintarse en verde cuando no entró ninguna foto, y el texto que indica la carpeta traía un carácter de control que lo hacía leer «Cartilla de lesionesotos».",
+    "PRUEBA NUEVA (test/zapayan-fotos): ejecuta el importador de verdad con el almacén y la base simulados. Antes ninguna prueba lo tocaba: se podía borrar la línea que protege las fichas blindadas y las 52 suites seguían en verde. Ahora esa mutación falla, y también la de la red mala, que reproduce las 79 fotos duplicadas.",
     "LAS FICHAS DE LESION DE ZAPAYAN YA TIENEN FOTO. Entraron sin ninguna, y una ficha sin foto es media ficha: el informe imprime la descripcion de algo que nadie puede ver. Son 79 fotogramas, dos por ficha, del minuto exacto que cada una declara. La campana no dejo registro fotografico de lesiones -la carpeta LES del proyecto trae seis imagenes sueltas de WhatsApp sin relacion con las fichas- asi que la evidencia es el propio video.",
     "CADA FOTO VA A SU FICHA POR EL NOMBRE DEL ARCHIVO, NO POR EL ORDEN. El nombre lleva el codigo de la ficha, asi que no importa como ordene la carpeta el navegador ni si falta alguna: cada una va a su sitio o se reporta como faltante. Repartir por posicion es como una foto termina en la ficha equivocada, y eso es una lesion atribuida a un elemento que no es.",
     "Cada foto sube con un slot estable, asi que volver a cargarlas no duplica: las que ya estan se saltan. Las fichas blindadas no se tocan. Y trae la casilla de reponer faltantes, que le pregunta al servidor si el archivo existe de verdad en vez de creerle a la ficha.",
@@ -181,6 +188,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.31.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.32.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
