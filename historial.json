@@ -2,6 +2,17 @@
   "generado": "2026-09-09",
   "versiones": [
     {
+      "version": "2.40.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "CORREGIDO - GUARDAR EL LABORATORIO DE UN NUCLEO PODIA BORRAR FOTOS. Lo introdujo la 2.37.0 y se corrige aca. El formulario guardaba la bolsa de fotos del ensayo tal como estaba AL ABRIRLO, y esa bolsa es de todos: se refresca sola cada tres minutos, se reescribe cuando vuelve la senal, y en la tablet se recarga al volver de la camara. Como el formulario se queda abierto mientras se ensaya, guardar pisaba lo que hubiera entrado entretanto. En un equipo dejaba una foto apuntando a un archivo que ya no existe y el ensayo trabado en la cola de subida; con dos equipos, lo que subia el de campo desaparecia al guardar el laboratorio. Ahora el formulario guarda UNICAMENTE su foto, mezclada contra la version fresca.",
+        "CORREGIDO - LA FOTO DEL ANTES PODIA NO SALIR EN EL INFORME. La hoja decidia si el nucleo se rompio en laboratorio propio mirando solo la foto de la falla. Quien subia la del antes y todavia no tenia la del despues no veia nada: los cuadros ni se armaban, asi que su foto recien subida no salia y tampoco el aviso de que faltaba la otra. Ahora cuenta cualquiera de las dos.",
+        "CORREGIDO - EL CAMPO DONDE SE ROMPIO PEDIA SER OBLIGATORIO Y NO LO ERA. Tenia el asterisco pero nadie lo validaba, y de ese dato depende que salga el par antes/despues. Ahora si se exige.",
+        "CORREGIDO - EL RECORTE DE LAS FOTOS DE LA ROTURA. El del cuadro ANTES se guardaba con la clave de la foto que le tocara estar dentro: en los ensayos viejos escribia sobre la foto de campo, asi que recortar en el informe movia esa foto en su propia ficha, y al subir despues la de laboratorio el recorte hecho se perdia. Ahora el recorte es del cuadro. El cuadro DESPUES, que no se dejaba recortar desde el informe, ya se deja.",
+        "Las observaciones de laboratorio vuelven a ocupar el ancho completo: habian quedado a media caja al agregar la foto nueva."
+      ]
+    },
+    {
       "version": "2.39.0",
       "fecha": "2026-09-09",
       "notas": [
