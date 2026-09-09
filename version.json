@@ -1,14 +1,13 @@
 {
-  "version": "2.37.0",
+  "version": "2.38.0",
   "fecha": "2026-09-09",
   "minima": "1.70.0",
   "notas": [
-    "AGREGADO - LA FOTO DEL NUCLEO ANTES DE LA FALLA. El informe mostraba como 'antes' la foto de campo del nucleo extraido, que la tomo otra persona en otro momento. El par que prueba el patron de fractura lo toma quien rompe el nucleo: ahora el formulario de laboratorio pide las dos, antes y despues, una al lado de la otra. Los ensayos viejos siguen cayendo a la foto de campo, para no dejar en blanco un informe ya emitido.",
-    "CORREGIDO - LAS SUB-MUESTRAS DECIAN 'SIN ENSAYO DE CARBONATACION ASOCIADO' TENIENDOLO. El perfil de carbonatacion se asocia siempre al nucleo PADRE, pero al informe entran las sub-muestras. Buscando solo por el ensayo propio, el cuadro salia vacio en todas ellas con el FDC guardado un nivel mas arriba. La sub-muestra es un trozo del mismo testigo, asi que ese perfil es el suyo y ahora sale.",
-    "CORREGIDO - HABIA FOTOS QUE NO SE CONTABAN NI ENTRABAN AL ZIP. El inventario solo recorria la bolsa de fotos del ensayo, y tres se guardan fuera: el patron de fractura del nucleo y las dos del ferroscan (general y elemento). No se contaban, no se descargaban y tampoco aparecian en la lista de las que faltan: se perdian sin que nada lo dijera. Ya se inventarian.",
-    "El cuadro de despues de la falla pasa a rotularse 'NUCLEO DESPUES DE LA FALLA' en vez de 'POST-FALLA', para que se lea como lo que es: la pareja del de antes."
+    "CORREGIDO - REIMPORTAR LA CARTILLA YA NO BORRA LAS FICHAS QUE USTED YA REVISO. La cartilla de Zapayan paso de 40 fichas a 49, y para meter las nueve nuevas hay que reimportar. El importador mandaba cada ficha como 'sin revisar' -porque una ficha nace asi- y eso devolvia a sin revisar las cuarenta que ya estaban verificadas una por una contra el video. Es el mismo accidente que en Clinica Farallones borro 1.270 fotos y 67 planos, en otra columna. Ahora la importacion no manda lo que usted edita: al crear una ficha nueva nace sin marcar, y al actualizar una que ya existe se respeta lo que usted marco.",
+    "La regla de que columnas NO puede pisar una importacion quedo en un solo sitio y con prueba propia, y cubre tambien el blindaje: reimportar no toca una ficha blindada, ni su respaldo, ni sus fotos, ni su plano con la marca.",
+    "NUEVO - UN INFORME PARA VARIAS EDIFICACIONES. Zapayan son seis bloques en un mismo informe. Queda declarado que secciones se escriben una sola vez para todo el proyecto -ficha tecnica, objetivos, alcance, marco normativo, bibliografia- y cuales se separan por bloque: condiciones de la estructura, caracterizacion de materiales, inspeccion posterior al evento, diagnosis, evaluacion de riesgo, calificacion y concepto, evaluacion de alternativas, conclusiones y recomendaciones. El informe conserva UN indice: cada seccion sale una vez, con subtitulos numerados por bloque."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.37.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.38.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

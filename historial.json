@@ -2,6 +2,15 @@
   "generado": "2026-09-09",
   "versiones": [
     {
+      "version": "2.38.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "CORREGIDO - REIMPORTAR LA CARTILLA YA NO BORRA LAS FICHAS QUE USTED YA REVISO. La cartilla de Zapayan paso de 40 fichas a 49, y para meter las nueve nuevas hay que reimportar. El importador mandaba cada ficha como 'sin revisar' -porque una ficha nace asi- y eso devolvia a sin revisar las cuarenta que ya estaban verificadas una por una contra el video. Es el mismo accidente que en Clinica Farallones borro 1.270 fotos y 67 planos, en otra columna. Ahora la importacion no manda lo que usted edita: al crear una ficha nueva nace sin marcar, y al actualizar una que ya existe se respeta lo que usted marco.",
+        "La regla de que columnas NO puede pisar una importacion quedo en un solo sitio y con prueba propia, y cubre tambien el blindaje: reimportar no toca una ficha blindada, ni su respaldo, ni sus fotos, ni su plano con la marca.",
+        "NUEVO - UN INFORME PARA VARIAS EDIFICACIONES. Zapayan son seis bloques en un mismo informe. Queda declarado que secciones se escriben una sola vez para todo el proyecto -ficha tecnica, objetivos, alcance, marco normativo, bibliografia- y cuales se separan por bloque: condiciones de la estructura, caracterizacion de materiales, inspeccion posterior al evento, diagnosis, evaluacion de riesgo, calificacion y concepto, evaluacion de alternativas, conclusiones y recomendaciones. El informe conserva UN indice: cada seccion sale una vez, con subtitulos numerados por bloque."
+      ]
+    },
+    {
       "version": "2.37.0",
       "fecha": "2026-09-09",
       "notas": [
