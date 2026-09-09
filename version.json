@@ -1,8 +1,13 @@
 {
-  "version": "2.34.0",
+  "version": "2.35.0",
   "fecha": "2026-09-09",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - EL CUADRO DE CARBONATACION DE LA HOJA DE NUCLEOS MOSTRABA OTRA FOTO. Decia ENSAYO CARBONATACION y traia la 'vista general del elemento' del propio nucleo: la imagen no correspondia a lo que el rotulo anunciaba. Ahora sale del ensayo de perfil de carbonatacion (FDC) que se hizo SOBRE ese nucleo, que es donde esta el testigo con fenolftaleina. Si el nucleo no tiene FDC asociado, el cuadro lo dice en vez de rellenar con cualquier cosa.",
+    "CAMBIADO - LAS FOTOS DE ANTES Y DESPUES DE LA FALLA SOLO SALEN SI SE ROMPIO EN LABORATORIO PROPIO. Cuando lo rompe un tercero ese par no existe: llega su informe digital y sus imagenes se relacionan aparte. Poner una foto de campo como 'antes' de una falla que hizo otro es armar una pareja que nadie tomo.",
+    "Para eso el formulario de laboratorio pide ahora DONDE SE ROMPIO: propio o de terceros. En los ensayos viejos, que no tienen ese dato, se decide por la evidencia: si hay foto de la falla es que lo rompimos nosotros. El formulario de campo sigue pidiendo las mismas tres fotos que pedia; lo que cambia es cuales llegan al informe.",
+    "NUEVO - EN EL CATALOGO SE VE DE UN VISTAZO QUE ENSAYOS YA TIENEN INFORMACION. Cada tipo que ya tenga ensayos en el proyecto lleva su conteo en verde y la tarjeta se distingue por el borde. Hay ademas un filtro para dejar solo esos: al catalogo se entra casi siempre a SEGUIR donde uno se quedo, y con doce tarjetas iguales habia que leerlas todas.",
+    "El conteo es el MISMO que usa la barra de arriba, no una cuenta aparte: dos cuentas del mismo dato terminan discrepando.",
     "LA CARTILLA DE ZAPAYAN PASA DE 40 A 49 FICHAS. Faltaba barrer dos partes del video: la 6 no habia aportado ninguna ficha y la 2 solo una, y entre las dos son el 18 % del registro. Se volvieron a extraer los fotogramas al doble de densidad y se cruzaron con lo que dice la narracion, que en esas dos partes nombra lesiones que no estaban levantadas.",
     "LO QUE APARECIO Y NO ESTABA: las viguetas del alero oxidadas con el cielo raso caido, nidos de avispa en ese mismo hueco, la cimentacion corrida descubierta sin junta de dilatacion, la fisura de la junta entre columna y muro, un arbol pegado a la fachada con las raices contra la cimentacion, una bajante de aguas lluvias que descarga al pie del muro, la fisura de piso a techo en la junta de la ventana, el desprendimiento de la franja alta de los dormitorios por filtracion de cubierta, y la fisura de los encuentros entre elementos estructurales.",
     "LA BAJANTE Y EL ARBOL SON CAUSAS, NO SINTOMAS. La bajante descarga concentrada contra la cimentacion y es la fuente de la humedad por ascenso capilar que la narracion repite en todo ese costado; el arbol empuja con la raiz y seca el suelo de forma desigual. Reparar el zocalo sin tocarlas es garantizar que vuelva.",
@@ -198,6 +203,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.34.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.35.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
