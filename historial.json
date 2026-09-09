@@ -2,6 +2,15 @@
   "generado": "2026-09-09",
   "versiones": [
     {
+      "version": "2.41.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "CORREGIDO - LA COMPROBACION DE LA ACTUALIZACION YA NO PUEDE DAR UN FALSO NEGATIVO. Al publicar la 2.38.0, la comprobacion de que la tablet baja el archivo correcto dio un resultado FALSO: GitHub respondio con un error 503 desde su nodo de Bogota, la descarga guardo los 470 bytes de la pagina de error como si fueran el instalador, y la huella calculada no coincidio con la publicada. Sobre una publicacion que estaba impecable. Ese diagnostico es justo el que lleva a romperla, como ya paso con la 2.26.0.",
+        "Ahora la comprobacion es un comando y no se hace a mano. Antes de calcular ninguna huella exige que el servidor responda bien, que el archivo pese mas de 5 MB y que empiece por los bytes que identifican a todo instalador de Android. Ante un servidor caido reintenta en vez de opinar; ante un archivo que no existe, para. Y compara contra la fila del historial, asi que cierra el circulo entero: lo que se anuncia, lo que se entrega y lo que quedo registrado.",
+        "Contesta una de tres cosas, y las tres se distinguen: esta bien, hay que arreglar la publicacion, o no se pudo comprobar y no hay que tocar nada. La tercera es la que faltaba."
+      ]
+    },
+    {
       "version": "2.40.0",
       "fecha": "2026-09-09",
       "notas": [
