@@ -1,8 +1,13 @@
 {
-  "version": "2.33.0",
+  "version": "2.34.0",
   "fecha": "2026-09-09",
   "minima": "1.70.0",
   "notas": [
+    "LA CARTILLA DE ZAPAYAN PASA DE 40 A 49 FICHAS. Faltaba barrer dos partes del video: la 6 no habia aportado ninguna ficha y la 2 solo una, y entre las dos son el 18 % del registro. Se volvieron a extraer los fotogramas al doble de densidad y se cruzaron con lo que dice la narracion, que en esas dos partes nombra lesiones que no estaban levantadas.",
+    "LO QUE APARECIO Y NO ESTABA: las viguetas del alero oxidadas con el cielo raso caido, nidos de avispa en ese mismo hueco, la cimentacion corrida descubierta sin junta de dilatacion, la fisura de la junta entre columna y muro, un arbol pegado a la fachada con las raices contra la cimentacion, una bajante de aguas lluvias que descarga al pie del muro, la fisura de piso a techo en la junta de la ventana, el desprendimiento de la franja alta de los dormitorios por filtracion de cubierta, y la fisura de los encuentros entre elementos estructurales.",
+    "LA BAJANTE Y EL ARBOL SON CAUSAS, NO SINTOMAS. La bajante descarga concentrada contra la cimentacion y es la fuente de la humedad por ascenso capilar que la narracion repite en todo ese costado; el arbol empuja con la raiz y seca el suelo de forma desigual. Reparar el zocalo sin tocarlas es garantizar que vuelva.",
+    "Las nueve nuevas entran con su bloque, su foto y la frase del audio que las ubica, igual que las otras cuarenta. La cartilla en Word queda en 56 paginas.",
+    "Las pruebas ya no llevan la cuenta escrita a mano: la sacan del propio dataset, y comprueban que la numeracion vaya corrida sin huecos y que cada ficha traiga sus dos fotogramas. Antes habia que editar el test cada vez que crecia la cartilla, que es la forma de que deje de comprobar nada.",
     "NUEVO - TOCAR UNA FOTO DE LA HOJA DEL ENSAYO LA ABRE EN GRANDE. En la hoja las fotos van en miniaturas de 4x3 y ahi no se distingue lo que hay que ver: la fisura del nucleo, el viraje de la fenolftaleina, el numero de la cinta metrica. Ahora se toca y se abre a pantalla completa, con el rotulo de la casilla.",
     "Se acerca con la rueda, con dos dedos, con los botones o tocando dos veces; con zoom se arrastra para recorrer la foto, que es como se sigue una fisura de punta a punta. Cierra con Esc, con el boton o tocando fuera: tres salidas porque en la tablet se usa con el dedo y en la oficina con el raton.",
     "Va en las SIETE hojas de reporte a la vez (nucleos, acero, durometria, inclinometria, potencial de corrosion, regatas y la general) porque se puso en el punto por donde pasan todas sus fotos.",
@@ -193,6 +198,6 @@
     "Ya se puede BUSCAR una foto concreta para reponerla, sin repasar las 1.270: se escribe el codigo de la ficha, el numero de la foto o parte del nombre del archivo. Si no coincide con nada, lo dice en vez de trabajar en vano."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.33.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.34.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
