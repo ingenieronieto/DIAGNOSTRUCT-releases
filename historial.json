@@ -2,6 +2,16 @@
   "generado": "2026-09-09",
   "versiones": [
     {
+      "version": "2.37.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "AGREGADO - LA FOTO DEL NUCLEO ANTES DE LA FALLA. El informe mostraba como 'antes' la foto de campo del nucleo extraido, que la tomo otra persona en otro momento. El par que prueba el patron de fractura lo toma quien rompe el nucleo: ahora el formulario de laboratorio pide las dos, antes y despues, una al lado de la otra. Los ensayos viejos siguen cayendo a la foto de campo, para no dejar en blanco un informe ya emitido.",
+        "CORREGIDO - LAS SUB-MUESTRAS DECIAN 'SIN ENSAYO DE CARBONATACION ASOCIADO' TENIENDOLO. El perfil de carbonatacion se asocia siempre al nucleo PADRE, pero al informe entran las sub-muestras. Buscando solo por el ensayo propio, el cuadro salia vacio en todas ellas con el FDC guardado un nivel mas arriba. La sub-muestra es un trozo del mismo testigo, asi que ese perfil es el suyo y ahora sale.",
+        "CORREGIDO - HABIA FOTOS QUE NO SE CONTABAN NI ENTRABAN AL ZIP. El inventario solo recorria la bolsa de fotos del ensayo, y tres se guardan fuera: el patron de fractura del nucleo y las dos del ferroscan (general y elemento). No se contaban, no se descargaban y tampoco aparecian en la lista de las que faltan: se perdian sin que nada lo dijera. Ya se inventarian.",
+        "El cuadro de despues de la falla pasa a rotularse 'NUCLEO DESPUES DE LA FALLA' en vez de 'POST-FALLA', para que se lea como lo que es: la pareja del de antes."
+      ]
+    },
+    {
       "version": "2.36.0",
       "fecha": "2026-09-09",
       "notas": [

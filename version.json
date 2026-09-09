@@ -1,16 +1,14 @@
 {
-  "version": "2.36.0",
+  "version": "2.37.0",
   "fecha": "2026-09-09",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - LA EXTRACCION DE BARRAS DE ACERO YA SE PUEDE GUARDAR EN OBRA. La barra se saca en campo y la ensaya el laboratorio dias despues, pero el formulario exigia la carga de fluencia y la carga maxima desde el primer momento. En obra no habia forma de cerrar: o se dejaba el formulario abierto en el celular esperando el resultado, o se escribia una carga cualquiera para poder guardar. Ahora la extraccion se guarda con sus fotos y sin cargas, y el ensayo queda esperando el laboratorio.",
-    "Cuando llega el certificado se abre el mismo ensayo, se toca 'Ya tengo el resultado' y ahi si se piden las cargas, la fecha del ensayo y que laboratorio lo hizo. Si se toco por error, hay como volver atras. En la lista, esos ensayos dicen 'Esperando laboratorio' en vez de 'Sin datos': no es lo mismo una ficha a medio llenar que una barra que todavia no volvio.",
-    "CORREGIDO - LA HOJA YA NO IMPRIME UN VEREDICTO SOBRE UN ENSAYO QUE NO SE HIZO. Una barra pendiente sacaba la caja grande con 'VEREDICTO NSR-10' y una tabla de criterios en guiones. Ahora esa hoja dice 'MUESTRA EXTRAIDA - PENDIENTE DE LABORATORIO', documenta la extraccion con sus fotos y su punto en el plano, y no emite veredicto. La cabecera rotula la fecha de EXTRACCION, no la del ensayo, y sale tambien al imprimir todas.",
-    "CORREGIDO - EL INFORME GERENCIAL CONTABA LAS BARRAS SIN ENSAYAR COMO RESULTADO UTILIZABLE. Con cuatro barras en el laboratorio decia 'de los 14 ensayos, 14 tienen hoy un resultado utilizable', y esa frase pasa a las conclusiones del documento firmado. Ahora se descuentan, aparecen como punto de atencion de severidad alta y como pendiente accionable, igual que los nucleos sin laboratorio.",
-    "CORREGIDO - LOS ENSAYOS DE ACERO YA GUARDADOS NO PIERDEN SU RESULTADO AL ABRIRLOS. Abrir uno ya ensayado para corregirle una foto lo mostraba como si estuviera pendiente y, al guardar, le borraba el fy, el fu y el veredicto del certificado. Un resultado que ya existe no se borra por omision.",
-    "CORREGIDO - EL ORDEN DE LA CAMPANIA ES EL DE LA EXTRACCION. Al renumerar, los ensayos que todavia esperaban laboratorio se iban al final del bloque y el primero que se saco recibia el ultimo consecutivo. Afectaba tambien a los nucleos. Ademas, las fechas de proyectos importados (DD/MM/AAAA) se comparaban como texto contra las de la app y ordenaban por casualidad."
+    "AGREGADO - LA FOTO DEL NUCLEO ANTES DE LA FALLA. El informe mostraba como 'antes' la foto de campo del nucleo extraido, que la tomo otra persona en otro momento. El par que prueba el patron de fractura lo toma quien rompe el nucleo: ahora el formulario de laboratorio pide las dos, antes y despues, una al lado de la otra. Los ensayos viejos siguen cayendo a la foto de campo, para no dejar en blanco un informe ya emitido.",
+    "CORREGIDO - LAS SUB-MUESTRAS DECIAN 'SIN ENSAYO DE CARBONATACION ASOCIADO' TENIENDOLO. El perfil de carbonatacion se asocia siempre al nucleo PADRE, pero al informe entran las sub-muestras. Buscando solo por el ensayo propio, el cuadro salia vacio en todas ellas con el FDC guardado un nivel mas arriba. La sub-muestra es un trozo del mismo testigo, asi que ese perfil es el suyo y ahora sale.",
+    "CORREGIDO - HABIA FOTOS QUE NO SE CONTABAN NI ENTRABAN AL ZIP. El inventario solo recorria la bolsa de fotos del ensayo, y tres se guardan fuera: el patron de fractura del nucleo y las dos del ferroscan (general y elemento). No se contaban, no se descargaban y tampoco aparecian en la lista de las que faltan: se perdian sin que nada lo dijera. Ya se inventarian.",
+    "El cuadro de despues de la falla pasa a rotularse 'NUCLEO DESPUES DE LA FALLA' en vez de 'POST-FALLA', para que se lea como lo que es: la pareja del de antes."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.36.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.37.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
