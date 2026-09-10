@@ -1,12 +1,13 @@
 {
-  "version": "2.45.0",
+  "version": "2.46.0",
   "fecha": "2026-09-09",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - SI TU EMPRESA RENOMBRABA EL ELEMENTO, EL CHEQUEO DE CUANTIA SE APAGABA EN SILENCIO. La lista de elementos la edita cada empresa desde su panel, pero el codigo comparaba con el texto exacto 'COLUMNA'. Una empresa que escribiera 'Columna', o que dejara un espacio de mas al pegarla, dejaba de tener chequeo de cuantia: el informe salia con 'Datos insuficientes' y el conteo de barras se iba al criterio de viga, que no cuenta las esquineras. Ahora el nombre se compara normalizado. Lo que NO se hace es adivinar sinonimos: si la llamas 'PILAR', no se reconoce, y tiene que ser asi, porque reclasificar por parecido de nombre no lo podria auditar nadie.",
-    "CORREGIDO - EL f'c DEL RHO MINIMO DE VIGAS IBA POR DOS CAMINOS DISTINTOS. El informe gerencial usaba el f'c de la ESTRUCTURA y la hoja individual del ensayo el del PROYECTO, asi que un bloque con f'c medido por nucleos podia salir con un rho minimo en el consolidado y otro distinto en su propia hoja. Ahora manda el de la estructura en las dos rutas, y solo si no hay se cae al del proyecto: el proyecto lleva un valor esperado para todo, la estructura lleva el suyo."
+    "CORREGIDO - LA EXPORTACION A EXCEL SALIA VACIA, Y NO ERA DE AHORA. El archivo se generaba, se descargaba y adentro las columnas que importan estaban en blanco: elemento, ubicacion, nivel, eje, posicion, IR, f'c y observaciones, en TODOS los tipos de ensayo. La causa: el armado de cada fila buscaba los datos dentro de dos contenedores que la app dejo de producir hace tiempo, mientras los campos viven en la raiz del ensayo. Como no da error, nadie lo noto: el que abria el archivo creia que el proyecto no tenia datos. Ademas las fotos salian como texto ilegible en vez de su direccion. Quedo con prueba propia, para que no vuelva a pasar en silencio.",
+    "NUEVO - LA EXPORTACION YA INCLUYE INCLINOMETRIA. Seis columnas nuevas al final -pendiente en mm/m, desplome, relacion 1/n, hacia donde se inclina, si va hacia afuera o hacia adentro del bloque, y su clasificacion- y una columna con el ID del ensayo, que faltaba. Van al final para no correr las columnas de los demas tipos, que ya estan en informes entregados.",
+    "NUEVO - EL FORMATO PERSONALIZADO YA CONOCE INCLINOMETRIA. El boton «Formato personalizado» del reporte imprimia el bloque de resultados vacio para este ensayo, porque el modulo no tenia su parte en el armado de datos. Ahora muestra la pendiente, el desplome, la relacion, el angulo, el rumbo, el afuera/adentro y la clasificacion; y la tabla de abajo cambia segun como se midio: con inclinometro digital muestra posicion, referencia, lectura y desvio, y con plomada muestra el desplome en X y en Y."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.45.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.46.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
