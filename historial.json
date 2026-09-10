@@ -2,6 +2,16 @@
   "generado": "2026-09-09",
   "versiones": [
     {
+      "version": "2.43.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "CORREGIDO - LAS MEDICIONES TOMADAS SIN SENAL YA NO PIERDEN LA DIRECCION. Si usted capturo inclinometrias en obra sin internet y la app se actualizo antes de que hubiera senal, al subirlas se les borraba el rumbo: quedaban guardadas sin direccion y sin forma de recuperarlo. La conversion de las mediciones al formato nuevo estaba solo en el formulario, y la cola de subida no pasa por ahi. Ahora se hace tambien al guardar contra el servidor, que es por donde entra todo.",
+        "CORREGIDO - LA COINCIDENCIA DE RUMBOS DEJA DE AFIRMAR DE MAS. En la pestana Analisis, el porcentaje que dice cuanto concuerdan las direcciones de un bloque estaba pesado por la magnitud de cada medicion. Dos lecturas EXACTAMENTE OPUESTAS -una columna severa y otra casi a plomo- daban 82 % y la pantalla concluia que el bloque entero se iba para un lado y que habia que mirar la cimentacion. Ahora esa cuenta va sin ponderar, una medicion una, y ese caso da 0 %. La direccion del conjunto si sigue pesando la magnitud, que es lo correcto: son dos preguntas distintas y ahora se calculan por separado. Ademas se subio el umbral: dos rumbos separados 83 grados -casi un cuadrante- ya no se llaman el mismo lado.",
+        "CORREGIDO - LA HOJA DE UN ENSAYO VIEJO VUELVE A DECIR COMO SE MIDIO. Las mediciones tomadas antes de la 2.41.0 usaban la cara del elemento y las flechas del equipo. La hoja habia dejado de imprimir esas dos filas y afirmaba el metodo nuevo, asi que reimprimir un ensayo ya entregado daba un documento distinto del que tiene el cliente. Ahora cada hoja describe el procedimiento que de verdad se uso.",
+        "CORREGIDO - El borrador de un formulario a medio llenar tambien se convierte al formato nuevo, en vez de pedir que se redibuje la direccion que ya estaba adentro. Un ensayo viejo que traiga la cara pero no la flecha ahora lo avisa con el dato en la mano -en vez de dejarlo en blanco-, porque con la cara sola el lado son dos posibilidades opuestas y no se adivina. El afuera/adentro deja de marcarse como pendiente en las mediciones de plomada, donde nunca se pregunta. Y la pantalla de analisis se carga solo al abrirla, para no pesar en el arranque de la tablet."
+      ]
+    },
+    {
       "version": "2.41.0",
       "fecha": "2026-09-09",
       "notas": [
