@@ -2,6 +2,15 @@
   "generado": "2026-09-10",
   "versiones": [
     {
+      "version": "2.49.0",
+      "fecha": "2026-09-10",
+      "notas": [
+        "CORREGIDO - SE ESTABAN PERDIENDO FOTOS EN CAMPO. Es lo mas grave que se ha corregido en la app y hay que leerlo. La rutina que limpia del equipo las copias locales que ya no hacen falta decidia con una sola pregunta: alguien referencia esta foto? Y miraba dos sitios, la cola de sincronizacion y los ensayos ya cargados, que son los dos cosas YA GUARDADAS. Una foto recien tomada en un formulario ABIERTO no esta en ninguno de los dos: vive en el formulario. Y esa rutina corre cada vez que vuelve la senal, o sea en obra todo el rato. Se borraba el archivo y al guardar el ensayo quedaba apuntando a una foto que ya no existia. Ahora una copia local reciente NO se toca aunque nadie la referencie todavia: ante la duda, la foto se queda.",
+        "CORREGIDO - AL MOVER UNA FOTO SE BORRABA SOLA. El boton QUITAR va encima de la foto, arriba a la derecha, y es chico; la misma foto se arrastra para encuadrarla. Con el dedo era facilisimo agarrar el boton al intentar mover la foto, y borraba de una, sin preguntar nada.",
+        "AGREGADO - QUITAR UNA FOTO AHORA PREGUNTA ANTES, en los doce formularios de ensayo. Y avisa distinto cuando la foto todavia no ha subido, porque en ese caso la copia del equipo es la unica que existe. El boton destacado es CONSERVARLA."
+      ]
+    },
+    {
       "version": "2.48.0",
       "fecha": "2026-09-10",
       "notas": [

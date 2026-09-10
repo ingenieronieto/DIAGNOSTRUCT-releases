@@ -1,16 +1,13 @@
 {
-  "version": "2.48.0",
+  "version": "2.49.0",
   "fecha": "2026-09-10",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - MODULO DE NIVELACION DE PISOS. La hermana horizontal de la inclinometria: mide cuanto se sale de la horizontal una losa de contrapiso o de entrepiso. Se planta el nivel laser de pendulo libre a un lado, se marca en el plano donde quedo y a que altura proyecta, y se avanza tomando lecturas con el metro cada 2 m, 3 m o lo que decida el operario. Pueden ser tres lecturas o treinta.",
-    "IMPORTANTE - EL SIGNO. La lectura es una distancia HACIA ABAJO: cuanto MAS mide, MAS abajo esta el piso. Por eso un desnivel POSITIVO significa que el piso BAJO respecto del punto base. Es al reves de lo que uno esperaria de un numero que crece, y el modulo lo dice en pantalla y en la hoja para que no se invierta la lectura de un informe.",
-    "NUEVO - VARIAS LINEAS POR EDIFICACION, CADA UNA CON SU COLOR. Se pueden correr 2, 3 o 4 lineas -una por crujia, o una longitudinal y otra transversal- y cada una se dibuja en el plano con su color, desde donde se planto el laser hasta donde llego el recorrido. Las lecturas se reparten solas sobre ese trazo segun su distancia: no hay que picarlas una por una en la pantalla. En los cruces de ejes se marca la casilla de punto contra columna, que es el que despues se cruza con la inclinometria de esa columna.",
-    "NUEVO - GRAFICA DE CORTE TRANSVERSAL. El perfil del piso, desnivel contra longitud, con todas las lineas superpuestas en su color. Es lo que deja ver de un vistazo si la losa cae hacia un lado, si hace una cuchara en el centro o si tiene un escalon en un punto. La escala vertical va exagerada -si no, 30 mm en 12 m se verian como una linea recta- y el grafico dice cuantas veces.",
-    "LO QUE DECIDE EL DIAGNOSTICO no es el desnivel total sino la distorsion angular entre puntos consecutivos: 40 mm en 20 m son 1/500 y no pasa nada, los mismos 40 mm en 2 m son 1/50 y es dano estructural. Por eso se evalua tramo a tramo contra la tabla de Bjerrum (1963), y el veredicto de la linea lo manda el PEOR tramo, no el promedio.",
-    "CORREGIDO - CUANDO UN PROYECTO NO TIENE ESTRUCTURAS, AHORA SE DICE. El formulario de inclinometria caia en silencio a un campo de texto libre, que se ve igual que si el proyecto no tuviera edificaciones cargadas; y si la carga fallaba por falta de senal, tampoco avisaba. Sin estructura no se puede localizar el ensayo en un plano ni agruparlo por bloque en el analisis, asi que ahora lo dice con todas las letras."
+    "CORREGIDO - SE ESTABAN PERDIENDO FOTOS EN CAMPO. Es lo mas grave que se ha corregido en la app y hay que leerlo. La rutina que limpia del equipo las copias locales que ya no hacen falta decidia con una sola pregunta: alguien referencia esta foto? Y miraba dos sitios, la cola de sincronizacion y los ensayos ya cargados, que son los dos cosas YA GUARDADAS. Una foto recien tomada en un formulario ABIERTO no esta en ninguno de los dos: vive en el formulario. Y esa rutina corre cada vez que vuelve la senal, o sea en obra todo el rato. Se borraba el archivo y al guardar el ensayo quedaba apuntando a una foto que ya no existia. Ahora una copia local reciente NO se toca aunque nadie la referencie todavia: ante la duda, la foto se queda.",
+    "CORREGIDO - AL MOVER UNA FOTO SE BORRABA SOLA. El boton QUITAR va encima de la foto, arriba a la derecha, y es chico; la misma foto se arrastra para encuadrarla. Con el dedo era facilisimo agarrar el boton al intentar mover la foto, y borraba de una, sin preguntar nada.",
+    "AGREGADO - QUITAR UNA FOTO AHORA PREGUNTA ANTES, en los doce formularios de ensayo. Y avisa distinto cuando la foto todavia no ha subido, porque en ese caso la copia del equipo es la unica que existe. El boton destacado es CONSERVARLA."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.48.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.49.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
