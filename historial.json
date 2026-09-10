@@ -2,6 +2,15 @@
   "generado": "2026-09-10",
   "versiones": [
     {
+      "version": "2.55.0",
+      "fecha": "2026-09-10",
+      "notas": [
+        "AGREGADO - LA CARTILLA DE LESIONES YA DEJA ELEGIR A QUE EDIFICACION PERTENECE CADA LESION. El campo existia en los datos pero no en el formulario: la lesion se quedaba con la edificacion que estuviera activa al crearla y no habia forma de moverla. En un proyecto de varios bloques, capturar una en el bloque equivocado obligaba a levantarla de nuevo. Ahora la Edificacion es el primer campo de la localizacion, se puede cambiar, y antes de guardar avisa a donde se va a mover.",
+        "Ojo con la diferencia: el selector de arriba de la cartilla elige QUE EDIFICACION ESTAS MIRANDO; el campo nuevo dice a cual PERTENECE la lesion. Al mover una, sale de la cartilla actual y la numeracion se reordena sin dejar huecos.",
+        "CORREGIDO - MOVER UNA LESION SIN SENAL NO LLEGABA AL SERVIDOR. La cola offline borraba la edificacion del envio junto con el proyecto, asi que el cambio se veia en pantalla y al recargar volvia a la de antes, sin ningun aviso. Ahora si viaja; y si la edificacion elegida tampoco se ha subido todavia, el cambio espera a que suba en vez de escribir una referencia que la base rechaza."
+      ]
+    },
+    {
       "version": "2.54.0",
       "fecha": "2026-09-10",
       "notas": [
