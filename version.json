@@ -1,13 +1,12 @@
 {
-  "version": "2.44.0",
+  "version": "2.45.0",
   "fecha": "2026-09-09",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - CON DOS PERFILES DE CARBONATACION SOBRE EL MISMO NUCLEO, LA HOJA MOSTRABA UNO AL AZAR. Nada impide levantar dos FDC sobre el mismo testigo (dos caras, dos profundidades), y el informe elegia el primero del orden de la base: un orden arbitrario que ni siquiera es estable entre recargas, asi que dos aperturas del mismo informe podian mostrar fotos distintas bajo el mismo rotulo. Ahora se elige siempre el mismo, el cuadro dice CUAL perfil esta mostrando, y si hay mas de uno lo avisa en la propia hoja en vez de callarlo.",
-    "El formulario de carbonatacion ahora marca en la lista los nucleos que YA TIENEN un FDC, con el codigo del que ya existe. No los esconde: a veces el segundo perfil es legitimo, y esconderlos dejaria fuera de la lista al nucleo del FDC que se esta editando. Se avisa y decide quien sabe.",
-    "El historial de versiones de las tablets recupero SEIS versiones que no estaba mostrando (2.27.0, 2.29.0, 2.30.0, 2.31.0, 2.32.0 y 2.34.0): el 'que cambio' de esas seis simplemente no existia en el equipo. Y las siete filas que tenian el commit sin registrar ya lo traen, que es lo que permite recuperar el APK de una version vieja."
+    "CORREGIDO - SI TU EMPRESA RENOMBRABA EL ELEMENTO, EL CHEQUEO DE CUANTIA SE APAGABA EN SILENCIO. La lista de elementos la edita cada empresa desde su panel, pero el codigo comparaba con el texto exacto 'COLUMNA'. Una empresa que escribiera 'Columna', o que dejara un espacio de mas al pegarla, dejaba de tener chequeo de cuantia: el informe salia con 'Datos insuficientes' y el conteo de barras se iba al criterio de viga, que no cuenta las esquineras. Ahora el nombre se compara normalizado. Lo que NO se hace es adivinar sinonimos: si la llamas 'PILAR', no se reconoce, y tiene que ser asi, porque reclasificar por parecido de nombre no lo podria auditar nadie.",
+    "CORREGIDO - EL f'c DEL RHO MINIMO DE VIGAS IBA POR DOS CAMINOS DISTINTOS. El informe gerencial usaba el f'c de la ESTRUCTURA y la hoja individual del ensayo el del PROYECTO, asi que un bloque con f'c medido por nucleos podia salir con un rho minimo en el consolidado y otro distinto en su propia hoja. Ahora manda el de la estructura en las dos rutas, y solo si no hay se cae al del proyecto: el proyecto lleva un valor esperado para todo, la estructura lleva el suyo."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.44.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.45.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
