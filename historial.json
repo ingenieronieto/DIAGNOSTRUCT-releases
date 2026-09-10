@@ -84,6 +84,17 @@
       ]
     },
     {
+      "version": "2.34.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "LA CARTILLA DE ZAPAYAN PASA DE 40 A 49 FICHAS. Faltaba barrer dos partes del video: la 6 no habia aportado ninguna ficha y la 2 solo una, y entre las dos son el 18 % del registro. Se volvieron a extraer los fotogramas al doble de densidad y se cruzaron con lo que dice la narracion, que en esas dos partes nombra lesiones que no estaban levantadas.",
+        "LO QUE APARECIO Y NO ESTABA: las viguetas del alero oxidadas con el cielo raso caido, nidos de avispa en ese mismo hueco, la cimentacion corrida descubierta sin junta de dilatacion, la fisura de la junta entre columna y muro, un arbol pegado a la fachada con las raices contra la cimentacion, una bajante de aguas lluvias que descarga al pie del muro, la fisura de piso a techo en la junta de la ventana, el desprendimiento de la franja alta de los dormitorios por filtracion de cubierta, y la fisura de los encuentros entre elementos estructurales.",
+        "LA BAJANTE Y EL ARBOL SON CAUSAS, NO SINTOMAS. La bajante descarga concentrada contra la cimentacion y es la fuente de la humedad por ascenso capilar que la narracion repite en todo ese costado; el arbol empuja con la raiz y seca el suelo de forma desigual. Reparar el zocalo sin tocarlas es garantizar que vuelva.",
+        "Las nueve nuevas entran con su bloque, su foto y la frase del audio que las ubica, igual que las otras cuarenta. La cartilla en Word queda en 56 paginas.",
+        "Las pruebas ya no llevan la cuenta escrita a mano: la sacan del propio dataset, y comprueban que la numeracion vaya corrida sin huecos y que cada ficha traiga sus dos fotogramas. Antes habia que editar el test cada vez que crecia la cartilla, que es la forma de que deje de comprobar nada."
+      ]
+    },
+    {
       "version": "2.33.0",
       "fecha": "2026-09-09",
       "notas": [
@@ -95,6 +106,48 @@
       ]
     },
     {
+      "version": "2.32.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "CON MALA SEÑAL, «REPONER FALTANTES» YA NO RESUBE LAS FOTOS. Antes preguntaba al servidor si el archivo seguía ahí y CUALQUIER fallo -un corte, un 403, el portal cautivo de la obra- contaba como «no está». Con la casilla marcada eso resubía las 79, dejaba las anteriores huérfanas en el almacén y lo cantaba en verde: «79 repuestas». El ingeniero leía que había reparado 79 fotos cuando no había ninguna rota. Ahora distingue tres respuestas -está, no está, no pude preguntar- y ante la duda no toca nada y lo dice.",
+        "UNA FICHA QUE YA REVISASTE Y QUE TIENE FOTO PROPIA NO RECIBE FOTOGRAMAS. Antes solo se respetaban las blindadas, así que una ficha cerrada en campo terminaba con cuatro fotos -dos tuyas y dos de video- sin nada que las distinga en la ficha impresa. Ahora se salta y se cuenta aparte.",
+        "CADA FOTO DICE QUE ES UN FOTOGRAMA DEL VIDEO, no una fotografía de campo. La campaña de Zapayán no dejó registro fotográfico de lesiones, y un informe firmado no puede presentar las dos cosas como si fueran lo mismo.",
+        "La extensión ya no deja fotos fuera: si los fotogramas se reexportan en PNG o JPEG, enganchan igual. Antes se comparaba el nombre completo y las 79 se habrían quedado sin subir.",
+        "Si falta la columna `bloqueada` en la base, el importador ya no revienta con jerga de PostgREST: reintenta sin ella.",
+        "El cuadro de resultados deja de pintarse en verde cuando no entró ninguna foto, y el texto que indica la carpeta traía un carácter de control que lo hacía leer «Cartilla de lesionesotos».",
+        "PRUEBA NUEVA (test/zapayan-fotos): ejecuta el importador de verdad con el almacén y la base simulados. Antes ninguna prueba lo tocaba: se podía borrar la línea que protege las fichas blindadas y las 52 suites seguían en verde. Ahora esa mutación falla, y también la de la red mala, que reproduce las 79 fotos duplicadas."
+      ]
+    },
+    {
+      "version": "2.31.0",
+      "fecha": "2026-09-08",
+      "notas": [
+        "LAS FICHAS DE LESION DE ZAPAYAN YA TIENEN FOTO. Entraron sin ninguna, y una ficha sin foto es media ficha: el informe imprime la descripcion de algo que nadie puede ver. Son 79 fotogramas, dos por ficha, del minuto exacto que cada una declara. La campana no dejo registro fotografico de lesiones -la carpeta LES del proyecto trae seis imagenes sueltas de WhatsApp sin relacion con las fichas- asi que la evidencia es el propio video.",
+        "CADA FOTO VA A SU FICHA POR EL NOMBRE DEL ARCHIVO, NO POR EL ORDEN. El nombre lleva el codigo de la ficha, asi que no importa como ordene la carpeta el navegador ni si falta alguna: cada una va a su sitio o se reporta como faltante. Repartir por posicion es como una foto termina en la ficha equivocada, y eso es una lesion atribuida a un elemento que no es.",
+        "Cada foto sube con un slot estable, asi que volver a cargarlas no duplica: las que ya estan se saltan. Las fichas blindadas no se tocan. Y trae la casilla de reponer faltantes, que le pregunta al servidor si el archivo existe de verdad en vez de creerle a la ficha."
+      ]
+    },
+    {
+      "version": "2.30.0",
+      "fecha": "2026-09-08",
+      "notas": [
+        "ARREGLADA LA IMPORTACION DE LA CARTILLA DE ZAPAYAN, QUE MORIA EN LA FICHA 14. La base rechazaba el valor de `material_lesion` y solo alcanzaban a entrar 13 de las 40. Ese campo no separa por material del elemento: separa ESTUDIOS. CONCRETO es la cartilla de patologia y MADERA es el estudio fitosanitario, que es otro trabajo. Una lesion sobre un elemento de acero -la cubierta metalica, las rejas- es patologia igual y va en la cartilla de concreto. Se le habia puesto ACERO y OTRO, que son materiales validos en el catalogo de la pantalla pero que ahi no van. De que esta hecho el elemento sigue en `materialConstitutivo`, que si admite ACERO y OTRO.",
+        "La prueba ahora fija los dos estudios que la base acepta. Antes validaba contra el catalogo de materiales de la pantalla y por eso dejaba pasar ACERO sin decir nada: el error solo aparecia en la tablet, a mitad de la importacion."
+      ]
+    },
+    {
+      "version": "2.29.0",
+      "fecha": "2026-09-08",
+      "notas": [
+        "EL BLOQUE DE CADA LESION DE ZAPAYAN SALE DEL AUDIO DEL VIDEO. Los seis videos del registro tienen narracion y en ella se va diciendo en que bloque se esta parado: «Bloque 1, auditorio», «bloque 1A», «seguimos bloque 3», «bloque 4 presenta lo mismo». Transcrito el audio, esa narracion da una linea de tiempo y el minuto de cada ficha cae dentro de un tramo. Antes 38 de las 40 fichas no tenian bloque porque la cartilla se levanto mirando solo los fotogramas.",
+        "CADA FICHA GUARDA LA FRASE QUE LA UBICA Y EL SEGUNDO EN QUE SE DIJO, para poder ir a comprobarla contra la grabacion en vez de creerle a nadie. Coincide con lo unico que ya se sabia por imagen: las dos fichas del pano rotulado 9 ESC1B4 caen dentro del tramo del Bloque 4.",
+        "24 FICHAS ENTRAN FIRMES Y 16 MARCADAS PARA CONFIRMAR. La firmeza se mide contra la ultima vez que se NOMBRO el bloque, no contra un corte inventado. Es la diferencia entre 13 fichas del bloque 1A que se daban por firmes colgando de una sola frase de doce segundos -una de ellas a cinco minutos de distancia- y decir de frente cuales hay que confirmar en sitio.",
+        "ARREGLADO: la evidencia del bloque se estaba escribiendo en la columna `respaldo`, que NO es un campo de evidencia sino donde el blindaje guarda la copia de la ficha. Al blindar una ficha -que es lo que se hace con las que ya se verificaron- el snapshot pisaba la evidencia y desaparecia; y como esa columna es opcional, si no existe se descarta en silencio y la pantalla igual dice «importadas 40».",
+        "ARREGLADO: el importador no encontraba el proyecto. Buscaba el nombre en la raiz y la aplicacion lo guarda en `datos.nombre`, asi que respondia «no se encontro el proyecto» con el proyecto delante. La prueba no lo veia porque usaba una forma que la aplicacion no produce nunca.",
+        "LA PRUEBA AHORA RECONSTRUYE EL BLOQUE EN VEZ DE LEERLO. Antes solo comprobaba que el campo existiera: intercambiando el bloque 1 con el 1A -28 fichas cambiando de estructura- la bateria seguia en verde. Ahora se vuelve a derivar el bloque desde el minuto de cada ficha y ese intercambio falla nombrando las 28."
+      ]
+    },
+    {
       "version": "2.28.0",
       "fecha": "2026-09-08",
       "notas": [
@@ -103,6 +156,18 @@
         "SE SEPARAN LAS DOS CLASES, porque se arreglan distinto: las que NO SUBIERON todavia (el archivo esta en el equipo donde se tomo, se recuperan) y las que NO DEJARON RASTRO (ni enlace, ni ruta, ni copia: esas no se recuperan esperando, y se dice sin adornos).",
         "NUEVO - BOTON PARA RESCATARLAS AHORA. Guarda en un ZIP las fotos que esten en este equipo, sin pedirle nada al servidor y sin tocar la base. Cada archivo sale nombrado <ensayo>__<casilla> para saber donde iba, y adentro va un LEEME que explica que son. Importa porque esa copia vive en el navegador: se va si se borran los datos del sitio, si se reinstala la app o si se formatea el equipo.",
         "CAMBIADO - UN SOLO CUADRO PARA SEMBRAR E IMPORTAR PROYECTOS. Eran cinco tarjetas abiertas a la vez con todos sus botones a la vista. Ahora se elige el proyecto en una lista y solo aparecen SUS opciones; antes de elegir, se lee que trae cada uno. Sin elegir no se muestra ninguna, para no tocar el boton de un proyecto creyendo que es el de otro."
+      ]
+    },
+    {
+      "version": "2.27.0",
+      "fecha": "2026-09-08",
+      "notas": [
+        "LA CARTILLA DE LESIONES DE ZAPAYAN ENTRA A LA APP: 40 fichas levantadas sobre el registro en video de la campana. Caen sobre las SEIS estructuras que el proyecto ya tiene cargadas -bloques 1, 1A, 2, 3, 4 y 5-; el importador NO crea estructuras, y si le piden un bloque que no existe se detiene y dice cual falta en vez de inventarlo.",
+        "SOLO DOS FICHAS TRAEN BLOQUE CIERTO. LES-02 y LES-11 salen del pano rotulado 9 ESC1B4, que es el Bloque 4. Las otras 38 no se pueden amarrar desde la imagen, asi que no entran solas: hay que decir a que bloque van. Repartirlas a ojo llenaria el diagnostico de un bloque con lesiones de otro, y eso en un informe firmado no es un dato incompleto sino uno falso.",
+        "B1 Y B1A NO SE CRUZAN. Los dos codigos se parecen lo suficiente como para confundirse con cualquier comparacion laxa; el emparejamiento es por igualdad y hay pruebas que lo verifican en los dos ordenes de la lista, porque con el orden favorable el error pasa desapercibido.",
+        "ARREGLADO ANTES DE QUE LLEGARA A UN INFORME: el importador leia mal dos campos de la afectacion y las 40 fichas habrian entrado con el porcentaje en blanco. Como el consolidado cuenta las graves por ese porcentaje, habria reportado CERO lesiones graves teniendo 25.",
+        "SI LA IMPORTACION SE CORTA A LA MITAD, AHORA LO DICE. Son cuarenta escrituras seguidas desde una tablet en obra: al fallar informa cuantas alcanzaron a entrar y en cual se detuvo, en vez de dejar un error pelado que no deja saber si reimportar duplica.",
+        "La clasificacion de las 40 fichas se valida contra el catalogo de la aplicacion. En el armado se habian colado trece clasificaciones que no existen -una familia inventada, subtipos puestos en el tipo equivocado- y ninguna habria dado error: habrian dejado la casilla vacia."
       ]
     },
     {
