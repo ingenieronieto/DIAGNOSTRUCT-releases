@@ -2,6 +2,16 @@
   "generado": "2026-09-10",
   "versiones": [
     {
+      "version": "2.50.0",
+      "fecha": "2026-09-10",
+      "notas": [
+        "CORREGIDO - LA APP ABRIA EN PANTALLA EN BLANCO. Si actualizaste a la 2.37.0, 2.40.0, 2.44.0, 2.45.0 o 2.49.0 y la app no abria, era esto, y se arregla instalando esta version. El APK de esas cinco se habia compilado SIN la configuracion de conexion, asi que reventaba antes de dibujar nada: ni siquiera alcanzaba a salir el aviso de error. No se perdio informacion: es un problema del paquete, no de los datos; lo que este en la nube esta, y lo que quedo en el equipo sigue en el equipo.",
+        "Para que no vuelva a pasar, ahora hay un comprobador que revisa el APK ANTES de publicarlo: que traiga la configuracion, que sea la version que se cree, que este firmado con la llave correcta y que no le falten los plugins de la camara. Publicar un APK que no pase esa revision ya no es posible por descuido.",
+        "CORREGIDO - EL AVISO DE SINCRONIZACION SE QUEDABA PRENDIDO. Al proteger las copias de fotos recientes (2.49.0), esas quedaban contadas como pendientes de subir durante doce horas, y como el aviso solo se apaga cuando el contador llega a cero, el equipo decia que algo no habia subido con todo ya arriba. Ahora se cuenta lo que de verdad espera llegar al servidor.",
+        "AGREGADO - NADA SE BORRA DEL EQUIPO HASTA QUE EL SERVIDOR CONFIRME QUE LO TIENE. Antes, que la subida no diera error alcanzaba para borrar la copia local. No es lo mismo: la senal se corta a mitad de la transferencia y el archivo queda a medias o no queda. Ahora se le pregunta al servidor si lo tiene y si pesa lo que debia, y solo entonces se borra la copia del equipo. Ademas cada foto lleva su huella digital desde que se toma, para poder comprobar despues que lo que esta en la nube es lo que salio del equipo."
+      ]
+    },
+    {
       "version": "2.49.0",
       "fecha": "2026-09-10",
       "notas": [
