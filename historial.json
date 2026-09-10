@@ -2,6 +2,14 @@
   "generado": "2026-09-09",
   "versiones": [
     {
+      "version": "2.47.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "SEGURIDAD - EL ARCHIVO EXPORTADO YA NO PUEDE EJECUTAR NADA AL ABRIRLO. Excel y LibreOffice, al abrir un CSV, interpretan como formula cualquier celda que empiece por = + - @ o un tabulador. Alguien que escribiera eso en las observaciones de un ensayo dejaba esa orden dentro del archivo, y quien lo abriera -usted, o el cliente al que se le manda el informe- la ejecutaba. Como la aplicacion la usan varias personas y varias empresas, el que teclea el ensayo no siempre es el que abre el Excel. Ahora esas celdas se marcan como texto.",
+        "Los numeros negativos NO se tocan: los sotanos se escriben -1 y -2, y los desplomes pueden ser negativos. Marcarlos como texto habria convertido un dato correcto en algo que ya no se puede sumar en la hoja. Se distingue una formula de un numero antes de tocar nada, y queda con prueba propia."
+      ]
+    },
+    {
       "version": "2.46.0",
       "fecha": "2026-09-09",
       "notas": [
