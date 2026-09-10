@@ -2,6 +2,15 @@
   "generado": "2026-09-10",
   "versiones": [
     {
+      "version": "2.53.0",
+      "fecha": "2026-09-10",
+      "notas": [
+        "CORREGIDO - EL CORTE DE LA NIVELACION MOSTRABA HUNDIMIENTOS QUE NUNCA PASARON. La linea del recorrido se dibujaba pasando por TODOS los puntos, y en una linea de nivelacion hay dos clases de lectura mezcladas: las del PISO, que son el recorrido, y las tomadas CONTRA UNA COLUMNA, que se miden en la misma estacion hacia abajo para leer el desplome de esa zona. Con un punto de piso y dos contra la columna a la misma distancia, el trazo bajaba hasta el fondo de la columna y desde ahi arrancaba hacia el punto siguiente: el perfil terminaba diciendo que la losa se hundia siete centimetros y volvia a subir. Ahora el recorrido lo forman solo los puntos de piso, y el tramo siguiente sale del piso, como debe ser.",
+        "CAMBIADO - EL CORTE SE LEE COMO UN CORTE. Las lecturas contra columna cuelgan de su estacion como una acotacion vertical, con su valor al lado, en vez de ser vertices del recorrido. Y debajo del perfil se pinta el terreno con una trama, para que se vea de que lado esta el piso: sin algo solido debajo, el dibujo se leia como una grafica de lineas cualquiera.",
+        "CORREGIDO - DOS LECTURAS A LA MISMA DISTANCIA YA SE LEEN LAS DOS. Un escalon real del piso se dibujaba con los dos rotulos uno encima del otro y se perdia uno. Ahora se escalonan, y el recorrido sigue sin partirse."
+      ]
+    },
+    {
       "version": "2.52.0",
       "fecha": "2026-09-10",
       "notas": [

@@ -1,12 +1,13 @@
 {
-  "version": "2.52.0",
+  "version": "2.53.0",
   "fecha": "2026-09-10",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - LAS NIVELACIONES PERDIAN SUS LECTURAS. Y la buena noticia: NO se perdieron. Se guardaban bien en la base y no se leian de vuelta. Al reabrir el ensayo volvia sin lineas, el formulario arrancaba con una vacia, y guardar otra vez escribia esa vacia encima de las lecturas buenas. Con este arreglo, toda nivelacion que NO se haya vuelto a guardar reaparece sola al abrirla: las lecturas estaban ahi todo el tiempo. Lo mismo le pasaba al tipo de losa.",
-    "Para que no vuelva a pasar con ningun modulo, hay una comprobacion nueva que exige que TODO campo que se guarde de un ensayo se pueda volver a leer. No es un descuido de una persona: son dos funciones largas en el mismo archivo y hay que acordarse de tocar las dos cada vez que se agrega un modulo. Ahora avisa sola."
+    "CORREGIDO - EL CORTE DE LA NIVELACION MOSTRABA HUNDIMIENTOS QUE NUNCA PASARON. La linea del recorrido se dibujaba pasando por TODOS los puntos, y en una linea de nivelacion hay dos clases de lectura mezcladas: las del PISO, que son el recorrido, y las tomadas CONTRA UNA COLUMNA, que se miden en la misma estacion hacia abajo para leer el desplome de esa zona. Con un punto de piso y dos contra la columna a la misma distancia, el trazo bajaba hasta el fondo de la columna y desde ahi arrancaba hacia el punto siguiente: el perfil terminaba diciendo que la losa se hundia siete centimetros y volvia a subir. Ahora el recorrido lo forman solo los puntos de piso, y el tramo siguiente sale del piso, como debe ser.",
+    "CAMBIADO - EL CORTE SE LEE COMO UN CORTE. Las lecturas contra columna cuelgan de su estacion como una acotacion vertical, con su valor al lado, en vez de ser vertices del recorrido. Y debajo del perfil se pinta el terreno con una trama, para que se vea de que lado esta el piso: sin algo solido debajo, el dibujo se leia como una grafica de lineas cualquiera.",
+    "CORREGIDO - DOS LECTURAS A LA MISMA DISTANCIA YA SE LEEN LAS DOS. Un escalon real del piso se dibujaba con los dos rotulos uno encima del otro y se perdia uno. Ahora se escalonan, y el recorrido sigue sin partirse."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.52.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.53.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
