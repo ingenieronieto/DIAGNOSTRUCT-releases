@@ -2,6 +2,15 @@
   "generado": "2026-09-10",
   "versiones": [
     {
+      "version": "2.54.0",
+      "fecha": "2026-09-10",
+      "notas": [
+        "CORREGIDO - URGENTE - FOTOS QUE SE QUEDABAN EN 'SIN SUBIR' AUNQUE SI HABIAN SUBIDO. Lo introduje hoy mismo en la 2.50.0 y hay que instalar esta version. Al agregar la regla de 'nada se borra hasta que el servidor confirme', hice que la subida FALLARA cuando no se podia confirmar. Y no poder confirmar no es lo mismo que el archivo no este: la consulta al servidor vuelve vacia tanto si el archivo falta como si este usuario no tiene permiso para listar esa carpeta, y desde afuera se ven igual. Con eso, subidas que SI habian funcionado se marcaban como fallidas, la foto quedaba pendiente para siempre y el contador de 'sin subir' crecia solo.",
+        "La regla correcta, y es la que queda: la subida ya dice si salio bien. La comprobacion solo puede AGREGAR el permiso de borrar la copia del equipo, nunca quitarle validez a la subida. Lo unico que si invalida una subida es una prueba positiva de que quedo mal: que el servidor conteste un tamano distinto, o cero. Las fotos que quedaron marcadas se suben solas al abrir la app con esta version.",
+        "AGREGADO - UN GUARDADO YA NO VACIA EN SILENCIO LO QUE TENIA CONTENIDO. Es la proteccion de fondo detras de las lecturas de nivelacion perdidas. Si al guardar un ensayo unas lecturas o unas fotos quedan en cero, se archiva una copia dentro del propio ensayo, con su fecha, y queda constancia en su registro. NO bloquea el borrado: borrar de verdad sigue funcionando igual. Lo que evita es la perdida silenciosa, que es la que no se nota hasta que ya es tarde."
+      ]
+    },
+    {
       "version": "2.53.0",
       "fecha": "2026-09-10",
       "notas": [

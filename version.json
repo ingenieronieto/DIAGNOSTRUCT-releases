@@ -1,13 +1,13 @@
 {
-  "version": "2.53.0",
+  "version": "2.54.0",
   "fecha": "2026-09-10",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - EL CORTE DE LA NIVELACION MOSTRABA HUNDIMIENTOS QUE NUNCA PASARON. La linea del recorrido se dibujaba pasando por TODOS los puntos, y en una linea de nivelacion hay dos clases de lectura mezcladas: las del PISO, que son el recorrido, y las tomadas CONTRA UNA COLUMNA, que se miden en la misma estacion hacia abajo para leer el desplome de esa zona. Con un punto de piso y dos contra la columna a la misma distancia, el trazo bajaba hasta el fondo de la columna y desde ahi arrancaba hacia el punto siguiente: el perfil terminaba diciendo que la losa se hundia siete centimetros y volvia a subir. Ahora el recorrido lo forman solo los puntos de piso, y el tramo siguiente sale del piso, como debe ser.",
-    "CAMBIADO - EL CORTE SE LEE COMO UN CORTE. Las lecturas contra columna cuelgan de su estacion como una acotacion vertical, con su valor al lado, en vez de ser vertices del recorrido. Y debajo del perfil se pinta el terreno con una trama, para que se vea de que lado esta el piso: sin algo solido debajo, el dibujo se leia como una grafica de lineas cualquiera.",
-    "CORREGIDO - DOS LECTURAS A LA MISMA DISTANCIA YA SE LEEN LAS DOS. Un escalon real del piso se dibujaba con los dos rotulos uno encima del otro y se perdia uno. Ahora se escalonan, y el recorrido sigue sin partirse."
+    "CORREGIDO - URGENTE - FOTOS QUE SE QUEDABAN EN 'SIN SUBIR' AUNQUE SI HABIAN SUBIDO. Lo introduje hoy mismo en la 2.50.0 y hay que instalar esta version. Al agregar la regla de 'nada se borra hasta que el servidor confirme', hice que la subida FALLARA cuando no se podia confirmar. Y no poder confirmar no es lo mismo que el archivo no este: la consulta al servidor vuelve vacia tanto si el archivo falta como si este usuario no tiene permiso para listar esa carpeta, y desde afuera se ven igual. Con eso, subidas que SI habian funcionado se marcaban como fallidas, la foto quedaba pendiente para siempre y el contador de 'sin subir' crecia solo.",
+    "La regla correcta, y es la que queda: la subida ya dice si salio bien. La comprobacion solo puede AGREGAR el permiso de borrar la copia del equipo, nunca quitarle validez a la subida. Lo unico que si invalida una subida es una prueba positiva de que quedo mal: que el servidor conteste un tamano distinto, o cero. Las fotos que quedaron marcadas se suben solas al abrir la app con esta version.",
+    "AGREGADO - UN GUARDADO YA NO VACIA EN SILENCIO LO QUE TENIA CONTENIDO. Es la proteccion de fondo detras de las lecturas de nivelacion perdidas. Si al guardar un ensayo unas lecturas o unas fotos quedan en cero, se archiva una copia dentro del propio ensayo, con su fecha, y queda constancia en su registro. NO bloquea el borrado: borrar de verdad sigue funcionando igual. Lo que evita es la perdida silenciosa, que es la que no se nota hasta que ya es tarde."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.53.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.54.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
