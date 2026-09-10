@@ -2,6 +2,14 @@
   "generado": "2026-09-10",
   "versiones": [
     {
+      "version": "2.52.0",
+      "fecha": "2026-09-10",
+      "notas": [
+        "CORREGIDO - LAS NIVELACIONES PERDIAN SUS LECTURAS. Y la buena noticia: NO se perdieron. Se guardaban bien en la base y no se leian de vuelta. Al reabrir el ensayo volvia sin lineas, el formulario arrancaba con una vacia, y guardar otra vez escribia esa vacia encima de las lecturas buenas. Con este arreglo, toda nivelacion que NO se haya vuelto a guardar reaparece sola al abrirla: las lecturas estaban ahi todo el tiempo. Lo mismo le pasaba al tipo de losa.",
+        "Para que no vuelva a pasar con ningun modulo, hay una comprobacion nueva que exige que TODO campo que se guarde de un ensayo se pueda volver a leer. No es un descuido de una persona: son dos funciones largas en el mismo archivo y hay que acordarse de tocar las dos cada vez que se agrega un modulo. Ahora avisa sola."
+      ]
+    },
+    {
       "version": "2.51.0",
       "fecha": "2026-09-10",
       "notas": [
