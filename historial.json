@@ -2,6 +2,15 @@
   "generado": "2026-09-10",
   "versiones": [
     {
+      "version": "2.51.0",
+      "fecha": "2026-09-10",
+      "notas": [
+        "CAMBIADO - LAS FOTOS QUE ESPERAN SUBIR YA NO VIVEN DONDE ANDROID PUEDE BORRARLAS. Es el arreglo de fondo del problema de las fotos perdidas. Hasta ahora se guardaban en el almacen del navegador (IndexedDB), y dentro de la app eso es memoria DESALOJABLE: el sistema la puede vaciar por falta de espacio, en una limpieza de mantenimiento o al borrar datos, sin avisar. La forma estandar de pedir que no lo hagan casi nunca funciona ahi dentro. O sea que una tablet con el disco lleno podia perder la cola de fotos entera y no era culpa de nadie: era donde estaban guardadas.",
+        "Ahora cada foto pendiente es un ARCHIVO de verdad en el almacenamiento privado de la app, que el sistema no desaloja: vive y muere con la app. Al lado de cada imagen queda una ficha con de que ensayo es, que casilla, cuando se tomo, su huella y su tamano, para que la carpeta se explique sola aunque se pierda cualquier indice. En el navegador se sigue usando IndexedDB, que es lo unico que hay.",
+        "La app MUDA SOLA lo que tuvieras pendiente al actualizar. Cada foto se borra del almacen viejo unicamente despues de quedar escrita en el nuevo: si algo falla a mitad, la foto se queda donde estaba y se reintenta al siguiente arranque. Nunca queda en ninguno de los dos."
+      ]
+    },
+    {
       "version": "2.50.0",
       "fecha": "2026-09-10",
       "notas": [

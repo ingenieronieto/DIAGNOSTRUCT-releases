@@ -1,14 +1,13 @@
 {
-  "version": "2.50.0",
+  "version": "2.51.0",
   "fecha": "2026-09-10",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - LA APP ABRIA EN PANTALLA EN BLANCO. Si actualizaste a la 2.37.0, 2.40.0, 2.44.0, 2.45.0 o 2.49.0 y la app no abria, era esto, y se arregla instalando esta version. El APK de esas cinco se habia compilado SIN la configuracion de conexion, asi que reventaba antes de dibujar nada: ni siquiera alcanzaba a salir el aviso de error. No se perdio informacion: es un problema del paquete, no de los datos; lo que este en la nube esta, y lo que quedo en el equipo sigue en el equipo.",
-    "Para que no vuelva a pasar, ahora hay un comprobador que revisa el APK ANTES de publicarlo: que traiga la configuracion, que sea la version que se cree, que este firmado con la llave correcta y que no le falten los plugins de la camara. Publicar un APK que no pase esa revision ya no es posible por descuido.",
-    "CORREGIDO - EL AVISO DE SINCRONIZACION SE QUEDABA PRENDIDO. Al proteger las copias de fotos recientes (2.49.0), esas quedaban contadas como pendientes de subir durante doce horas, y como el aviso solo se apaga cuando el contador llega a cero, el equipo decia que algo no habia subido con todo ya arriba. Ahora se cuenta lo que de verdad espera llegar al servidor.",
-    "AGREGADO - NADA SE BORRA DEL EQUIPO HASTA QUE EL SERVIDOR CONFIRME QUE LO TIENE. Antes, que la subida no diera error alcanzaba para borrar la copia local. No es lo mismo: la senal se corta a mitad de la transferencia y el archivo queda a medias o no queda. Ahora se le pregunta al servidor si lo tiene y si pesa lo que debia, y solo entonces se borra la copia del equipo. Ademas cada foto lleva su huella digital desde que se toma, para poder comprobar despues que lo que esta en la nube es lo que salio del equipo."
+    "CAMBIADO - LAS FOTOS QUE ESPERAN SUBIR YA NO VIVEN DONDE ANDROID PUEDE BORRARLAS. Es el arreglo de fondo del problema de las fotos perdidas. Hasta ahora se guardaban en el almacen del navegador (IndexedDB), y dentro de la app eso es memoria DESALOJABLE: el sistema la puede vaciar por falta de espacio, en una limpieza de mantenimiento o al borrar datos, sin avisar. La forma estandar de pedir que no lo hagan casi nunca funciona ahi dentro. O sea que una tablet con el disco lleno podia perder la cola de fotos entera y no era culpa de nadie: era donde estaban guardadas.",
+    "Ahora cada foto pendiente es un ARCHIVO de verdad en el almacenamiento privado de la app, que el sistema no desaloja: vive y muere con la app. Al lado de cada imagen queda una ficha con de que ensayo es, que casilla, cuando se tomo, su huella y su tamano, para que la carpeta se explique sola aunque se pierda cualquier indice. En el navegador se sigue usando IndexedDB, que es lo unico que hay.",
+    "La app MUDA SOLA lo que tuvieras pendiente al actualizar. Cada foto se borra del almacen viejo unicamente despues de quedar escrita en el nuevo: si algo falla a mitad, la foto se queda donde estaba y se reintenta al siguiente arranque. Nunca queda en ninguno de los dos."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.50.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.51.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
