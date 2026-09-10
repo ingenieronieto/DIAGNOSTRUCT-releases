@@ -2,6 +2,15 @@
   "generado": "2026-09-09",
   "versiones": [
     {
+      "version": "2.46.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "CORREGIDO - LA EXPORTACION A EXCEL SALIA VACIA, Y NO ERA DE AHORA. El archivo se generaba, se descargaba y adentro las columnas que importan estaban en blanco: elemento, ubicacion, nivel, eje, posicion, IR, f'c y observaciones, en TODOS los tipos de ensayo. La causa: el armado de cada fila buscaba los datos dentro de dos contenedores que la app dejo de producir hace tiempo, mientras los campos viven en la raiz del ensayo. Como no da error, nadie lo noto: el que abria el archivo creia que el proyecto no tenia datos. Ademas las fotos salian como texto ilegible en vez de su direccion. Quedo con prueba propia, para que no vuelva a pasar en silencio.",
+        "NUEVO - LA EXPORTACION YA INCLUYE INCLINOMETRIA. Seis columnas nuevas al final -pendiente en mm/m, desplome, relacion 1/n, hacia donde se inclina, si va hacia afuera o hacia adentro del bloque, y su clasificacion- y una columna con el ID del ensayo, que faltaba. Van al final para no correr las columnas de los demas tipos, que ya estan en informes entregados.",
+        "NUEVO - EL FORMATO PERSONALIZADO YA CONOCE INCLINOMETRIA. El boton «Formato personalizado» del reporte imprimia el bloque de resultados vacio para este ensayo, porque el modulo no tenia su parte en el armado de datos. Ahora muestra la pendiente, el desplome, la relacion, el angulo, el rumbo, el afuera/adentro y la clasificacion; y la tabla de abajo cambia segun como se midio: con inclinometro digital muestra posicion, referencia, lectura y desvio, y con plomada muestra el desplome en X y en Y."
+      ]
+    },
+    {
       "version": "2.45.0",
       "fecha": "2026-09-09",
       "notas": [
