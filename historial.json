@@ -2,6 +2,15 @@
   "generado": "2026-09-09",
   "versiones": [
     {
+      "version": "2.44.0",
+      "fecha": "2026-09-09",
+      "notas": [
+        "CORREGIDO - CON DOS PERFILES DE CARBONATACION SOBRE EL MISMO NUCLEO, LA HOJA MOSTRABA UNO AL AZAR. Nada impide levantar dos FDC sobre el mismo testigo (dos caras, dos profundidades), y el informe elegia el primero del orden de la base: un orden arbitrario que ni siquiera es estable entre recargas, asi que dos aperturas del mismo informe podian mostrar fotos distintas bajo el mismo rotulo. Ahora se elige siempre el mismo, el cuadro dice CUAL perfil esta mostrando, y si hay mas de uno lo avisa en la propia hoja en vez de callarlo.",
+        "El formulario de carbonatacion ahora marca en la lista los nucleos que YA TIENEN un FDC, con el codigo del que ya existe. No los esconde: a veces el segundo perfil es legitimo, y esconderlos dejaria fuera de la lista al nucleo del FDC que se esta editando. Se avisa y decide quien sabe.",
+        "El historial de versiones de las tablets recupero SEIS versiones que no estaba mostrando (2.27.0, 2.29.0, 2.30.0, 2.31.0, 2.32.0 y 2.34.0): el 'que cambio' de esas seis simplemente no existia en el equipo. Y las siete filas que tenian el commit sin registrar ya lo traen, que es lo que permite recuperar el APK de una version vieja."
+      ]
+    },
+    {
       "version": "2.43.0",
       "fecha": "2026-09-09",
       "notas": [

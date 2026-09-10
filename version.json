@@ -1,14 +1,13 @@
 {
-  "version": "2.43.0",
+  "version": "2.44.0",
   "fecha": "2026-09-09",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - LAS MEDICIONES TOMADAS SIN SENAL YA NO PIERDEN LA DIRECCION. Si usted capturo inclinometrias en obra sin internet y la app se actualizo antes de que hubiera senal, al subirlas se les borraba el rumbo: quedaban guardadas sin direccion y sin forma de recuperarlo. La conversion de las mediciones al formato nuevo estaba solo en el formulario, y la cola de subida no pasa por ahi. Ahora se hace tambien al guardar contra el servidor, que es por donde entra todo.",
-    "CORREGIDO - LA COINCIDENCIA DE RUMBOS DEJA DE AFIRMAR DE MAS. En la pestana Analisis, el porcentaje que dice cuanto concuerdan las direcciones de un bloque estaba pesado por la magnitud de cada medicion. Dos lecturas EXACTAMENTE OPUESTAS -una columna severa y otra casi a plomo- daban 82 % y la pantalla concluia que el bloque entero se iba para un lado y que habia que mirar la cimentacion. Ahora esa cuenta va sin ponderar, una medicion una, y ese caso da 0 %. La direccion del conjunto si sigue pesando la magnitud, que es lo correcto: son dos preguntas distintas y ahora se calculan por separado. Ademas se subio el umbral: dos rumbos separados 83 grados -casi un cuadrante- ya no se llaman el mismo lado.",
-    "CORREGIDO - LA HOJA DE UN ENSAYO VIEJO VUELVE A DECIR COMO SE MIDIO. Las mediciones tomadas antes de la 2.41.0 usaban la cara del elemento y las flechas del equipo. La hoja habia dejado de imprimir esas dos filas y afirmaba el metodo nuevo, asi que reimprimir un ensayo ya entregado daba un documento distinto del que tiene el cliente. Ahora cada hoja describe el procedimiento que de verdad se uso.",
-    "CORREGIDO - El borrador de un formulario a medio llenar tambien se convierte al formato nuevo, en vez de pedir que se redibuje la direccion que ya estaba adentro. Un ensayo viejo que traiga la cara pero no la flecha ahora lo avisa con el dato en la mano -en vez de dejarlo en blanco-, porque con la cara sola el lado son dos posibilidades opuestas y no se adivina. El afuera/adentro deja de marcarse como pendiente en las mediciones de plomada, donde nunca se pregunta. Y la pantalla de analisis se carga solo al abrirla, para no pesar en el arranque de la tablet."
+    "CORREGIDO - CON DOS PERFILES DE CARBONATACION SOBRE EL MISMO NUCLEO, LA HOJA MOSTRABA UNO AL AZAR. Nada impide levantar dos FDC sobre el mismo testigo (dos caras, dos profundidades), y el informe elegia el primero del orden de la base: un orden arbitrario que ni siquiera es estable entre recargas, asi que dos aperturas del mismo informe podian mostrar fotos distintas bajo el mismo rotulo. Ahora se elige siempre el mismo, el cuadro dice CUAL perfil esta mostrando, y si hay mas de uno lo avisa en la propia hoja en vez de callarlo.",
+    "El formulario de carbonatacion ahora marca en la lista los nucleos que YA TIENEN un FDC, con el codigo del que ya existe. No los esconde: a veces el segundo perfil es legitimo, y esconderlos dejaria fuera de la lista al nucleo del FDC que se esta editando. Se avisa y decide quien sabe.",
+    "El historial de versiones de las tablets recupero SEIS versiones que no estaba mostrando (2.27.0, 2.29.0, 2.30.0, 2.31.0, 2.32.0 y 2.34.0): el 'que cambio' de esas seis simplemente no existia en el equipo. Y las siete filas que tenian el commit sin registrar ya lo traen, que es lo que permite recuperar el APK de una version vieja."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.43.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.44.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
