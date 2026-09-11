@@ -2,6 +2,13 @@
   "generado": "2026-09-10",
   "versiones": [
     {
+      "version": "2.57.0",
+      "fecha": "2026-09-10",
+      "notas": [
+        "LIMPIEZA - LA CARTILLA DE LESIONES QUEDA SIN CODIGO QUE NADIE USABA. Se quitaron dos piezas del reporte que no se mostraban en ninguna parte. Una de ellas contaba los niveles de recuperacion comparando el texto exacto, el mismo error que ya se habia corregido en el consolidado: si alguien la volvia a usar, volvia el error. No cambia nada de lo que se ve ni de lo que se imprime."
+      ]
+    },
+    {
       "version": "2.56.0",
       "fecha": "2026-09-10",
       "notas": [
