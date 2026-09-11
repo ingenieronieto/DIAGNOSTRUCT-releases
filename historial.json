@@ -2,6 +2,13 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.64.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "MEJORADO - EN EL VERIFICADOR DE FOTOS Y PLANOS, CADA ENSAYO PENDIENTE ES UN ENLACE. Al tocarlo se abre ese ensayo en su formulario para completar lo que le falta; la fila dice que hay que hacer: agregar foto, marcar en plano o las dos. En nucleos abre la etapa de campo, que es donde van las fotos y la localizacion."
+      ]
+    },
+    {
       "version": "2.63.0",
       "fecha": "2026-09-11",
       "notas": [
