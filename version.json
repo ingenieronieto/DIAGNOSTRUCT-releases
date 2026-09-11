@@ -1,12 +1,13 @@
 {
-  "version": "2.60.0",
+  "version": "2.61.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - EXTRACCION DE BARRAS: LA HOJA Y LA LISTA YA NO SE CONTRADICEN CON EL VEREDICTO. Los valores y el veredicto salian de lo guardado en el ensayo, y las marcas de cada criterio del calculo del dia. Con la tabla de alargamiento corregida el 16 de agosto, una barra #8 con 7,5 % guardada antes imprimia CUMPLE arriba y la marca en rojo abajo, y la correccion no llegaba a ningun ensayo ya guardado. Ahora valores, marcas y veredicto salen de una sola evaluacion: de las cargas si estan, de los valores guardados si no, y siempre con las tablas vigentes.",
-    "AGREGADO - EXTRACCION DE BARRAS: AVISO CUANDO LA LONGITUD FINAL ES MENOR QUE LA INICIAL. Eso da un alargamiento negativo, que casi siempre es un error de digitacion."
+    "MEJORADO - LA HOJA DEL NUCLEO INDIVIDUAL OCUPA LA PAGINA ENTERA Y SE LEE MEJOR. Antes todo salia diminuto y media hoja quedaba en blanco. Ahora la letra es mas grande, el plano y las fotos crecen hasta llenar la pagina, y el punto del nucleo cae en el plano exactamente donde se marco. Con dos fotos van una sobre otra; con cuatro, en dos por dos.",
+    "CAMBIADO - UN NUCLEO SIN LABORATORIO MUESTRA EL AVISO PENDIENTE DE LABORATORIO (con la carbonatacion, si la hay) en vez de un recuadro vacio y de un esquema con medidas que nadie tomo.",
+    "CORREGIDO - LA HOJA DEL NUCLEO IMPRIMIA LAS FECHAS UN DIA ANTES: una extraccion del 07/08 salia como 06/08. Una fecha sin hora ya se escribe tal cual."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.60.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.61.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

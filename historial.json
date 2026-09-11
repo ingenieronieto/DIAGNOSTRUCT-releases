@@ -2,6 +2,15 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.61.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "MEJORADO - LA HOJA DEL NUCLEO INDIVIDUAL OCUPA LA PAGINA ENTERA Y SE LEE MEJOR. Antes todo salia diminuto y media hoja quedaba en blanco. Ahora la letra es mas grande, el plano y las fotos crecen hasta llenar la pagina, y el punto del nucleo cae en el plano exactamente donde se marco. Con dos fotos van una sobre otra; con cuatro, en dos por dos.",
+        "CAMBIADO - UN NUCLEO SIN LABORATORIO MUESTRA EL AVISO PENDIENTE DE LABORATORIO (con la carbonatacion, si la hay) en vez de un recuadro vacio y de un esquema con medidas que nadie tomo.",
+        "CORREGIDO - LA HOJA DEL NUCLEO IMPRIMIA LAS FECHAS UN DIA ANTES: una extraccion del 07/08 salia como 06/08. Una fecha sin hora ya se escribe tal cual."
+      ]
+    },
+    {
       "version": "2.60.0",
       "fecha": "2026-09-11",
       "notas": [
