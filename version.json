@@ -1,12 +1,12 @@
 {
-  "version": "2.62.0",
+  "version": "2.63.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - LAS FECHAS SE IMPRIMIAN UN DIA ANTES. Una fecha sin hora (la de extraccion, la del ensayo, el vencimiento de la calibracion de un equipo) se leia como medianoche en hora universal, que en Colombia es el dia anterior. Pasaba en las hojas de acero, durometria, ferroscan, inclinometria, nivelacion, nucleos, tintas penetrantes, en las calibraciones y en el formato personalizado. Los informes ya impresos llevan la fecha corrida: conviene reimprimirlos.",
-    "CORREGIDO - EL FILTRO DE FECHAS DE LAS LISTAS DEJABA FUERA LOS ENSAYOS DEL MISMO DIA que se pedia."
+    "NUEVO - VERIFICADOR DE FOTOS Y PLANOS, en Entregas, reportes e informes. Revisa todos los ensayos del proyecto y muestra, por tipo, cuales estan sin fotografia y cuales sin localizacion en plano, con semaforo: ROJO si falta en un solo ensayo, VERDE si todo esta completo. Al tocar un tipo se ve la lista de ensayos con lo que le falta a cada uno. Cuenta las fotos de ferroscan y la de falla del nucleo, que se guardan aparte; una foto que todavia no subio cuenta como tomada. La foto del resane sola no cuenta, y un marcador sobre un plano borrado tampoco. La nivelacion cuenta como ubicada cuando tiene lecturas en el plano.",
+    "CAMBIADO - INCLINOMETRIA: LA HOJA CIERRA CON EL MISMO PIE DE FIRMAS QUE LOS DEMAS FORMATOS. Se quito el parrafo de metodo que iba al final, y el reporte individual trae el selector de firmantes como VPU, FDC y PDC."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.62.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.63.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

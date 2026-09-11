@@ -2,6 +2,14 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.63.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "NUEVO - VERIFICADOR DE FOTOS Y PLANOS, en Entregas, reportes e informes. Revisa todos los ensayos del proyecto y muestra, por tipo, cuales estan sin fotografia y cuales sin localizacion en plano, con semaforo: ROJO si falta en un solo ensayo, VERDE si todo esta completo. Al tocar un tipo se ve la lista de ensayos con lo que le falta a cada uno. Cuenta las fotos de ferroscan y la de falla del nucleo, que se guardan aparte; una foto que todavia no subio cuenta como tomada. La foto del resane sola no cuenta, y un marcador sobre un plano borrado tampoco. La nivelacion cuenta como ubicada cuando tiene lecturas en el plano.",
+        "CAMBIADO - INCLINOMETRIA: LA HOJA CIERRA CON EL MISMO PIE DE FIRMAS QUE LOS DEMAS FORMATOS. Se quito el parrafo de metodo que iba al final, y el reporte individual trae el selector de firmantes como VPU, FDC y PDC."
+      ]
+    },
+    {
       "version": "2.62.0",
       "fecha": "2026-09-11",
       "notas": [
