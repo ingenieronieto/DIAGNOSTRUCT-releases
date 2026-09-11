@@ -1,13 +1,12 @@
 {
-  "version": "2.55.0",
+  "version": "2.56.0",
   "fecha": "2026-09-10",
   "minima": "1.70.0",
   "notas": [
-    "AGREGADO - LA CARTILLA DE LESIONES YA DEJA ELEGIR A QUE EDIFICACION PERTENECE CADA LESION. El campo existia en los datos pero no en el formulario: la lesion se quedaba con la edificacion que estuviera activa al crearla y no habia forma de moverla. En un proyecto de varios bloques, capturar una en el bloque equivocado obligaba a levantarla de nuevo. Ahora la Edificacion es el primer campo de la localizacion, se puede cambiar, y antes de guardar avisa a donde se va a mover.",
-    "Ojo con la diferencia: el selector de arriba de la cartilla elige QUE EDIFICACION ESTAS MIRANDO; el campo nuevo dice a cual PERTENECE la lesion. Al mover una, sale de la cartilla actual y la numeracion se reordena sin dejar huecos.",
-    "CORREGIDO - MOVER UNA LESION SIN SENAL NO LLEGABA AL SERVIDOR. La cola offline borraba la edificacion del envio junto con el proyecto, asi que el cambio se veia en pantalla y al recargar volvia a la de antes, sin ningun aviso. Ahora si viaja; y si la edificacion elegida tampoco se ha subido todavia, el cambio espera a que suba en vez de escribir una referencia que la base rechaza."
+    "CORREGIDO - REINTENTAR UNA SUBIDA YA NO DEJA FOTOS DUPLICADAS EN EL SERVIDOR. Cada intento de subir una foto le inventaba un nombre nuevo (con la hora y un numero al azar). Si la foto llegaba pero la respuesta se perdia en el camino -con senal de obra pasa seguido-, el reintento la subia otra vez con otro nombre y quedaba una copia huerfana por cada vez. Ahora el nombre sale del identificador que la foto recibe al tomarla y es el mismo en todos los intentos.",
+    "Cuando el servidor contesta que la foto YA EXISTE, eso se toma como lo que es: la prueba de que el intento anterior si llego. Se confirma que pese lo que debe y se sigue. Si lo que quedo alla esta a medias, se sube aparte con otro nombre, para que la foto no quede chocando para siempre contra su propia copia rota."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.55.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.56.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

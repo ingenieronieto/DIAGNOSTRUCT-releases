@@ -2,6 +2,14 @@
   "generado": "2026-09-10",
   "versiones": [
     {
+      "version": "2.56.0",
+      "fecha": "2026-09-10",
+      "notas": [
+        "CORREGIDO - REINTENTAR UNA SUBIDA YA NO DEJA FOTOS DUPLICADAS EN EL SERVIDOR. Cada intento de subir una foto le inventaba un nombre nuevo (con la hora y un numero al azar). Si la foto llegaba pero la respuesta se perdia en el camino -con senal de obra pasa seguido-, el reintento la subia otra vez con otro nombre y quedaba una copia huerfana por cada vez. Ahora el nombre sale del identificador que la foto recibe al tomarla y es el mismo en todos los intentos.",
+        "Cuando el servidor contesta que la foto YA EXISTE, eso se toma como lo que es: la prueba de que el intento anterior si llego. Se confirma que pese lo que debe y se sigue. Si lo que quedo alla esta a medias, se sube aparte con otro nombre, para que la foto no quede chocando para siempre contra su propia copia rota."
+      ]
+    },
+    {
       "version": "2.55.0",
       "fecha": "2026-09-10",
       "notas": [
