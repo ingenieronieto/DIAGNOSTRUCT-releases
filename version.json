@@ -1,11 +1,12 @@
 {
-  "version": "2.64.0",
+  "version": "2.65.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "MEJORADO - EN EL VERIFICADOR DE FOTOS Y PLANOS, CADA ENSAYO PENDIENTE ES UN ENLACE. Al tocarlo se abre ese ensayo en su formulario para completar lo que le falta; la fila dice que hay que hacer: agregar foto, marcar en plano o las dos. En nucleos abre la etapa de campo, que es donde van las fotos y la localizacion."
+    "CORREGIDO - EL ENLACE DEL VERIFICADOR AHORA SI ABRE EL ENSAYO. En la version anterior llevaba a la pantalla de elegir tipo de estudio. Ahora entra a Ensayos ED y END y abre el ensayo pendiente en su formulario, para completar lo que falta y guardar.",
+    "CORREGIDO - TOCAR UN ENSAYO EN EL PLANO del Diagnostico estructural o del Plan de auscultamiento tambien llevaba al selector de estudio; ahora abre su reporte."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.64.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.65.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

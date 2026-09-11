@@ -2,6 +2,14 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.65.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "CORREGIDO - EL ENLACE DEL VERIFICADOR AHORA SI ABRE EL ENSAYO. En la version anterior llevaba a la pantalla de elegir tipo de estudio. Ahora entra a Ensayos ED y END y abre el ensayo pendiente en su formulario, para completar lo que falta y guardar.",
+        "CORREGIDO - TOCAR UN ENSAYO EN EL PLANO del Diagnostico estructural o del Plan de auscultamiento tambien llevaba al selector de estudio; ahora abre su reporte."
+      ]
+    },
+    {
       "version": "2.64.0",
       "fecha": "2026-09-11",
       "notas": [
