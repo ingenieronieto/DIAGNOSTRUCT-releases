@@ -2,6 +2,14 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.62.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "CORREGIDO - LAS FECHAS SE IMPRIMIAN UN DIA ANTES. Una fecha sin hora (la de extraccion, la del ensayo, el vencimiento de la calibracion de un equipo) se leia como medianoche en hora universal, que en Colombia es el dia anterior. Pasaba en las hojas de acero, durometria, ferroscan, inclinometria, nivelacion, nucleos, tintas penetrantes, en las calibraciones y en el formato personalizado. Los informes ya impresos llevan la fecha corrida: conviene reimprimirlos.",
+        "CORREGIDO - EL FILTRO DE FECHAS DE LAS LISTAS DEJABA FUERA LOS ENSAYOS DEL MISMO DIA que se pedia."
+      ]
+    },
+    {
       "version": "2.61.0",
       "fecha": "2026-09-11",
       "notas": [

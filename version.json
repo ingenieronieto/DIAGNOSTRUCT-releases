@@ -1,13 +1,12 @@
 {
-  "version": "2.61.0",
+  "version": "2.62.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "MEJORADO - LA HOJA DEL NUCLEO INDIVIDUAL OCUPA LA PAGINA ENTERA Y SE LEE MEJOR. Antes todo salia diminuto y media hoja quedaba en blanco. Ahora la letra es mas grande, el plano y las fotos crecen hasta llenar la pagina, y el punto del nucleo cae en el plano exactamente donde se marco. Con dos fotos van una sobre otra; con cuatro, en dos por dos.",
-    "CAMBIADO - UN NUCLEO SIN LABORATORIO MUESTRA EL AVISO PENDIENTE DE LABORATORIO (con la carbonatacion, si la hay) en vez de un recuadro vacio y de un esquema con medidas que nadie tomo.",
-    "CORREGIDO - LA HOJA DEL NUCLEO IMPRIMIA LAS FECHAS UN DIA ANTES: una extraccion del 07/08 salia como 06/08. Una fecha sin hora ya se escribe tal cual."
+    "CORREGIDO - LAS FECHAS SE IMPRIMIAN UN DIA ANTES. Una fecha sin hora (la de extraccion, la del ensayo, el vencimiento de la calibracion de un equipo) se leia como medianoche en hora universal, que en Colombia es el dia anterior. Pasaba en las hojas de acero, durometria, ferroscan, inclinometria, nivelacion, nucleos, tintas penetrantes, en las calibraciones y en el formato personalizado. Los informes ya impresos llevan la fecha corrida: conviene reimprimirlos.",
+    "CORREGIDO - EL FILTRO DE FECHAS DE LAS LISTAS DEJABA FUERA LOS ENSAYOS DEL MISMO DIA que se pedia."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.61.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.62.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
