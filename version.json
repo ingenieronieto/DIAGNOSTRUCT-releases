@@ -1,12 +1,11 @@
 {
-  "version": "2.67.0",
+  "version": "2.68.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIADO - LAS LISTAS DE ENSAYOS SE ORGANIZAN POR ESTRUCTURA. Las doce listas abren ordenadas por la estructura a la que quedo asociado cada ensayo, y no por la ubicacion escrita. En esclerometria, regatas, nucleos, durometria, barras, inclinometria y nivelacion la columna UBICACION pasa a ser ESTRUCTURA. Un ensayo sin estructura muestra su ubicacion escrita, en gris, y va al final de la lista. Tocando el encabezado se sigue pudiendo ordenar por cualquier otra columna.",
-    "NUEVO - CARTILLA DE LESIONES: PESTANA ANALISIS CON UN PLANO POR PISO Y POR EDIFICACION. Dibuja cada plano con sus lesiones marcadas y rotuladas, coloreadas por nivel de recuperacion, y abajo las que faltan ubicar. Se imprime un plano por pagina."
+    "NUEVO - CARTILLA DE LESIONES: REORDENAR Y RENUMERAR SIN HUECOS. Boton Reordenar en la cartilla: flechas para subir y bajar cada ficha, vista previa del numero nuevo, y Guardar orden y renumerar. La numeracion queda corrida por proyecto y agrupada por edificacion, asi que un bloque ya no salta de LES-002 a LES-008. Necesita senal y no renumera si hay fichas sin subir; si algo falla a la mitad, devuelve los numeros anteriores."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.67.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.68.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
