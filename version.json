@@ -1,13 +1,12 @@
 {
-  "version": "2.59.0",
+  "version": "2.60.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - NIVELACION: EL PLANO YA DIBUJA LA LINEA DE MEDICION. Solo se veia un punto: la linea se definia como un segmento de origen a fin, y el boton para marcar el fin aparecia unicamente cuando la linea ya tenia fin, asi que nunca se podia completar. Ahora cada lectura se ubica en el plano donde se tomo: se toca «Ubicar en plano» y el plano va pidiendo las lecturas una por una, en el orden del recorrido, pasando sola a la siguiente. La linea se dibuja uniendolas, asi que sirve tambien para recorridos que no son rectos, como las lecturas en el centro de la edificacion o contra las columnas en los cruces de ejes. Cada lectura tiene ademas su propio boton para reubicarla o quitarla del plano.",
-    "CORREGIDO - NIVELACION: TODAS LAS ALTURAS SE VEN MEDIDAS CONTRA EL NIVEL BASE. El calculo ya restaba cada lectura contra la del punto base, pero el perfil dibujaba las lecturas contra columna colgando de la lectura de piso de su estacion, una debajo de la otra, y eso se leia como si cada una se hubiera medido desde la anterior. Ahora cada lectura lleva su cota trazada desde la linea base, con su valor y su signo: + cuando el piso esta mas abajo que la base, - cuando esta mas arriba. Las lecturas de una misma estacion se separan para que cada cota se lea sola.",
-    "MEJORADO - NIVELACION: LA ESCALA DEL PERFIL SE LEE MEJOR. La grafica se escalaba entera con la pantalla, letra incluida, y en una pantalla ancha el rotulo del eje salia gigante mientras la escala quedaba con dos marcas. Ahora se dibuja al ancho real: la letra conserva su tamano y lo que crece es la rejilla, con marcas en milimetros y en metros. La linea del nivel base va marcada, y con varias lineas los rotulos se alternan para no montarse."
+    "CORREGIDO - EXTRACCION DE BARRAS: LA HOJA Y LA LISTA YA NO SE CONTRADICEN CON EL VEREDICTO. Los valores y el veredicto salian de lo guardado en el ensayo, y las marcas de cada criterio del calculo del dia. Con la tabla de alargamiento corregida el 16 de agosto, una barra #8 con 7,5 % guardada antes imprimia CUMPLE arriba y la marca en rojo abajo, y la correccion no llegaba a ningun ensayo ya guardado. Ahora valores, marcas y veredicto salen de una sola evaluacion: de las cargas si estan, de los valores guardados si no, y siempre con las tablas vigentes.",
+    "AGREGADO - EXTRACCION DE BARRAS: AVISO CUANDO LA LONGITUD FINAL ES MENOR QUE LA INICIAL. Eso da un alargamiento negativo, que casi siempre es un error de digitacion."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.59.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.60.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

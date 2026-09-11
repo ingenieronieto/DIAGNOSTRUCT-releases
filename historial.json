@@ -2,6 +2,14 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.60.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "CORREGIDO - EXTRACCION DE BARRAS: LA HOJA Y LA LISTA YA NO SE CONTRADICEN CON EL VEREDICTO. Los valores y el veredicto salian de lo guardado en el ensayo, y las marcas de cada criterio del calculo del dia. Con la tabla de alargamiento corregida el 16 de agosto, una barra #8 con 7,5 % guardada antes imprimia CUMPLE arriba y la marca en rojo abajo, y la correccion no llegaba a ningun ensayo ya guardado. Ahora valores, marcas y veredicto salen de una sola evaluacion: de las cargas si estan, de los valores guardados si no, y siempre con las tablas vigentes.",
+        "AGREGADO - EXTRACCION DE BARRAS: AVISO CUANDO LA LONGITUD FINAL ES MENOR QUE LA INICIAL. Eso da un alargamiento negativo, que casi siempre es un error de digitacion."
+      ]
+    },
+    {
       "version": "2.59.0",
       "fecha": "2026-09-11",
       "notas": [
