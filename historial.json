@@ -2,6 +2,14 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.67.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "CAMBIADO - LAS LISTAS DE ENSAYOS SE ORGANIZAN POR ESTRUCTURA. Las doce listas abren ordenadas por la estructura a la que quedo asociado cada ensayo, y no por la ubicacion escrita. En esclerometria, regatas, nucleos, durometria, barras, inclinometria y nivelacion la columna UBICACION pasa a ser ESTRUCTURA. Un ensayo sin estructura muestra su ubicacion escrita, en gris, y va al final de la lista. Tocando el encabezado se sigue pudiendo ordenar por cualquier otra columna.",
+        "NUEVO - CARTILLA DE LESIONES: PESTANA ANALISIS CON UN PLANO POR PISO Y POR EDIFICACION. Dibuja cada plano con sus lesiones marcadas y rotuladas, coloreadas por nivel de recuperacion, y abajo las que faltan ubicar. Se imprime un plano por pagina."
+      ]
+    },
+    {
       "version": "2.66.0",
       "fecha": "2026-09-11",
       "notas": [

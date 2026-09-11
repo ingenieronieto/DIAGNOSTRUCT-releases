@@ -1,11 +1,12 @@
 {
-  "version": "2.66.0",
+  "version": "2.67.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "AGREGADO - AL QUITAR UNA FOTO SE PUEDE VERLA ANTES DE DECIDIR. La pregunta de quitar una foto tiene una tercera opcion, VERLA, que la abre en grande con zoom. Al cerrarla, la pregunta sigue ahi para conservarla o quitarla."
+    "CAMBIADO - LAS LISTAS DE ENSAYOS SE ORGANIZAN POR ESTRUCTURA. Las doce listas abren ordenadas por la estructura a la que quedo asociado cada ensayo, y no por la ubicacion escrita. En esclerometria, regatas, nucleos, durometria, barras, inclinometria y nivelacion la columna UBICACION pasa a ser ESTRUCTURA. Un ensayo sin estructura muestra su ubicacion escrita, en gris, y va al final de la lista. Tocando el encabezado se sigue pudiendo ordenar por cualquier otra columna.",
+    "NUEVO - CARTILLA DE LESIONES: PESTANA ANALISIS CON UN PLANO POR PISO Y POR EDIFICACION. Dibuja cada plano con sus lesiones marcadas y rotuladas, coloreadas por nivel de recuperacion, y abajo las que faltan ubicar. Se imprime un plano por pagina."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.66.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.67.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
