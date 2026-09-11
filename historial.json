@@ -2,6 +2,15 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.70.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "NUEVO - FOTOS DE ENSAYO CON PORCENTAJE: al tomar la foto se ve el guardado en el equipo en % y enseguida la subida al servidor en % (EQUIPO 100% - SERVIDOR n%). La foto empieza a subir de una vez, sin esperar a guardar el ensayo; si falla dice el motivo y reintenta sola al volver la senal. Al guardar un ensayo con fotos sin subir, la app avisa cuantas y por que.",
+        "CORREGIDO - una foto que ya estaba en el servidor podia quedar como local si el enlace para verla no alcanzaba a pedirse; ahora basta con que este arriba.",
+        "NUEVO - CARBONATACION (FDC): sin vista general propia, el formulario y la hoja muestran la vista general del nucleo asociado."
+      ]
+    },
+    {
       "version": "2.69.0",
       "fecha": "2026-09-11",
       "notas": [

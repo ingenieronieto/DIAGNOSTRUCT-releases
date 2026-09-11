@@ -1,12 +1,13 @@
 {
-  "version": "2.69.0",
+  "version": "2.70.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - VERIFICADOR DE ENSAYOS: ya no da verde con fotos faltantes. Antes bastaba con que el ensayo tuviera alguna foto; ahora exige cada foto obligatoria de su formulario (en nucleos: vista general, sitio de extraccion y nucleo extraido) y dice cual falta. Una foto tomada que no ha subido sale como SIN SUBIR hasta que ese equipo sincronice.",
-    "CORREGIDO - INFORME DE PATOLOGIA: generar el .docx ya no se cae con el error r.readUInt16BE is not a function."
+    "NUEVO - FOTOS DE ENSAYO CON PORCENTAJE: al tomar la foto se ve el guardado en el equipo en % y enseguida la subida al servidor en % (EQUIPO 100% - SERVIDOR n%). La foto empieza a subir de una vez, sin esperar a guardar el ensayo; si falla dice el motivo y reintenta sola al volver la senal. Al guardar un ensayo con fotos sin subir, la app avisa cuantas y por que.",
+    "CORREGIDO - una foto que ya estaba en el servidor podia quedar como local si el enlace para verla no alcanzaba a pedirse; ahora basta con que este arriba.",
+    "NUEVO - CARBONATACION (FDC): sin vista general propia, el formulario y la hoja muestran la vista general del nucleo asociado."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.69.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.70.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
