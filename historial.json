@@ -2,6 +2,13 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.66.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "AGREGADO - AL QUITAR UNA FOTO SE PUEDE VERLA ANTES DE DECIDIR. La pregunta de quitar una foto tiene una tercera opcion, VERLA, que la abre en grande con zoom. Al cerrarla, la pregunta sigue ahi para conservarla o quitarla."
+      ]
+    },
+    {
       "version": "2.65.0",
       "fecha": "2026-09-11",
       "notas": [

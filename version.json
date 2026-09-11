@@ -1,12 +1,11 @@
 {
-  "version": "2.65.0",
+  "version": "2.66.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - EL ENLACE DEL VERIFICADOR AHORA SI ABRE EL ENSAYO. En la version anterior llevaba a la pantalla de elegir tipo de estudio. Ahora entra a Ensayos ED y END y abre el ensayo pendiente en su formulario, para completar lo que falta y guardar.",
-    "CORREGIDO - TOCAR UN ENSAYO EN EL PLANO del Diagnostico estructural o del Plan de auscultamiento tambien llevaba al selector de estudio; ahora abre su reporte."
+    "AGREGADO - AL QUITAR UNA FOTO SE PUEDE VERLA ANTES DE DECIDIR. La pregunta de quitar una foto tiene una tercera opcion, VERLA, que la abre en grande con zoom. Al cerrarla, la pregunta sigue ahi para conservarla o quitarla."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.65.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.66.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
