@@ -2,6 +2,14 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.69.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "CORREGIDO - VERIFICADOR DE ENSAYOS: ya no da verde con fotos faltantes. Antes bastaba con que el ensayo tuviera alguna foto; ahora exige cada foto obligatoria de su formulario (en nucleos: vista general, sitio de extraccion y nucleo extraido) y dice cual falta. Una foto tomada que no ha subido sale como SIN SUBIR hasta que ese equipo sincronice.",
+        "CORREGIDO - INFORME DE PATOLOGIA: generar el .docx ya no se cae con el error r.readUInt16BE is not a function."
+      ]
+    },
+    {
       "version": "2.68.0",
       "fecha": "2026-09-11",
       "notas": [

@@ -1,11 +1,12 @@
 {
-  "version": "2.68.0",
+  "version": "2.69.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - CARTILLA DE LESIONES: REORDENAR Y RENUMERAR SIN HUECOS. Boton Reordenar en la cartilla: flechas para subir y bajar cada ficha, vista previa del numero nuevo, y Guardar orden y renumerar. La numeracion queda corrida por proyecto y agrupada por edificacion, asi que un bloque ya no salta de LES-002 a LES-008. Necesita senal y no renumera si hay fichas sin subir; si algo falla a la mitad, devuelve los numeros anteriores."
+    "CORREGIDO - VERIFICADOR DE ENSAYOS: ya no da verde con fotos faltantes. Antes bastaba con que el ensayo tuviera alguna foto; ahora exige cada foto obligatoria de su formulario (en nucleos: vista general, sitio de extraccion y nucleo extraido) y dice cual falta. Una foto tomada que no ha subido sale como SIN SUBIR hasta que ese equipo sincronice.",
+    "CORREGIDO - INFORME DE PATOLOGIA: generar el .docx ya no se cae con el error r.readUInt16BE is not a function."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.68.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.69.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
