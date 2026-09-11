@@ -1,6 +1,15 @@
 {
-  "generado": "2026-09-10",
+  "generado": "2026-09-11",
   "versiones": [
+    {
+      "version": "2.58.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "CAMBIADO - EL NUCLEO YA NO MIDE CARBONATACION: LA LEE DE SU ENSAYO DE CARBONATACION (FDC). El formulario del nucleo tenia cuatro casillas propias y el FDC, medido sobre el mismo testigo, guardaba otro valor. Ahora el nucleo muestra, de solo lectura, el FDC hecho sobre el: profundidad, recubrimiento, K, anos hasta el acero y estado, con el mismo calculo del FDC. Los nucleos viejos que ya tenian las casillas llenas y no tienen FDC las siguen mostrando, marcadas como medidas en el nucleo.",
+        "CORREGIDO - EL CAJON DE LA FOTO DE CARBONATACION DEL INFORME DEL NUCLEO SALIA SIEMPRE VACIO, aunque el FDC existiera. Las pantallas que imprimen esa hoja no le pasaban la lista de ensayos y nunca encontraba su FDC.",
+        "AGREGADO - CADA FICHA DE LESION TRAE UNA DESCRIPCION ARMADA CON LO QUE SE MARCO: clasificacion, elemento, material, nivel, superficie y grado, estabilidad y exposicion al agua. Con el boton EDITAR el patologo la redacta a su criterio, partiendo de esa base; desde ahi manda su texto. Las descripciones ya escritas a mano no se tocan."
+      ]
+    },
     {
       "version": "2.57.0",
       "fecha": "2026-09-10",
