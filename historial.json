@@ -2,6 +2,15 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.71.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "CORREGIDO - FOTOS QUE SE QUEDABAN EN EL EQUIPO: si la foto no alcanzaba a subir al guardar el ensayo, nadie la reintentaba nunca (el ensayo ya estaba en el servidor, asi que no estaba en la cola). Ahora las sube el boton de sincronizar y tambien el panel Fotos que no estan en el servidor, con un boton Subir al servidor. Al subirlas quedan anotadas en su ensayo sin perder lo que la foto traia.",
+        "NUEVO - REINTENTO CADA 3 MINUTOS: antes solo se reintentaba al cambiar la conexion, asi que una foto que fallaba con la senal puesta esperaba a que alguien tocara el boton. Ahora, con la app a la vista y algo pendiente, se reintenta solo.",
+        "En la tablet, cada foto tomada con la app queda ademas como archivo en la carpeta Documentos del equipo."
+      ]
+    },
+    {
       "version": "2.70.0",
       "fecha": "2026-09-11",
       "notas": [

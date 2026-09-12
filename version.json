@@ -1,13 +1,13 @@
 {
-  "version": "2.70.0",
+  "version": "2.71.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - FOTOS DE ENSAYO CON PORCENTAJE: al tomar la foto se ve el guardado en el equipo en % y enseguida la subida al servidor en % (EQUIPO 100% - SERVIDOR n%). La foto empieza a subir de una vez, sin esperar a guardar el ensayo; si falla dice el motivo y reintenta sola al volver la senal. Al guardar un ensayo con fotos sin subir, la app avisa cuantas y por que.",
-    "CORREGIDO - una foto que ya estaba en el servidor podia quedar como local si el enlace para verla no alcanzaba a pedirse; ahora basta con que este arriba.",
-    "NUEVO - CARBONATACION (FDC): sin vista general propia, el formulario y la hoja muestran la vista general del nucleo asociado."
+    "CORREGIDO - FOTOS QUE SE QUEDABAN EN EL EQUIPO: si la foto no alcanzaba a subir al guardar el ensayo, nadie la reintentaba nunca (el ensayo ya estaba en el servidor, asi que no estaba en la cola). Ahora las sube el boton de sincronizar y tambien el panel Fotos que no estan en el servidor, con un boton Subir al servidor. Al subirlas quedan anotadas en su ensayo sin perder lo que la foto traia.",
+    "NUEVO - REINTENTO CADA 3 MINUTOS: antes solo se reintentaba al cambiar la conexion, asi que una foto que fallaba con la senal puesta esperaba a que alguien tocara el boton. Ahora, con la app a la vista y algo pendiente, se reintenta solo.",
+    "En la tablet, cada foto tomada con la app queda ademas como archivo en la carpeta Documentos del equipo."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.70.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.71.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
