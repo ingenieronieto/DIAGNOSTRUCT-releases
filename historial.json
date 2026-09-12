@@ -2,6 +2,15 @@
   "generado": "2026-09-11",
   "versiones": [
     {
+      "version": "2.73.0",
+      "fecha": "2026-09-11",
+      "notas": [
+        "NUEVO - LAS LAMINAS DE PM-LINK SE CARGAN A SU FICHA DE FERROSCAN. Cada escaneo del Profometer tiene su lamina: el perfil de recubrimiento dibujado, las barras detectadas y los estadisticos del equipo. Es la evidencia de donde salio cada numero, y permite mirar si una lectura baja es una barra de verdad o el borde del escaneo. Boton en el panel de administracion: se elige la carpeta y cada lamina va a su ficha.",
+        "El emparejamiento es POR EL NOMBRE DEL ARCHIVO que declara cada ficha, no por el orden en que el navegador entregue la carpeta. La numeracion va corrida -FRS 001 es el escaneo Zapayan-000- y repartir por orden alfabetico meteria la lamina de un escaneo en la ficha del siguiente: en un informe firmado, eso es un recubrimiento atribuido a otro elemento. La correspondencia se comprobo abriendo el archivo, no se dedujo.",
+        "Reejecutar no duplica: la ficha que ya tiene su lamina se salta. Si una subida se corta -34 imagenes seguidas desde una tablet en obra- se anota cual fallo y se sigue con las demas, en vez de perder las que ya entraron."
+      ]
+    },
+    {
       "version": "2.72.0",
       "fecha": "2026-09-11",
       "notas": [
