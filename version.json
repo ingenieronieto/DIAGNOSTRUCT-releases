@@ -1,13 +1,14 @@
 {
-  "version": "2.73.0",
+  "version": "2.74.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - LAS LAMINAS DE PM-LINK SE CARGAN A SU FICHA DE FERROSCAN. Cada escaneo del Profometer tiene su lamina: el perfil de recubrimiento dibujado, las barras detectadas y los estadisticos del equipo. Es la evidencia de donde salio cada numero, y permite mirar si una lectura baja es una barra de verdad o el borde del escaneo. Boton en el panel de administracion: se elige la carpeta y cada lamina va a su ficha.",
-    "El emparejamiento es POR EL NOMBRE DEL ARCHIVO que declara cada ficha, no por el orden en que el navegador entregue la carpeta. La numeracion va corrida -FRS 001 es el escaneo Zapayan-000- y repartir por orden alfabetico meteria la lamina de un escaneo en la ficha del siguiente: en un informe firmado, eso es un recubrimiento atribuido a otro elemento. La correspondencia se comprobo abriendo el archivo, no se dedujo.",
-    "Reejecutar no duplica: la ficha que ya tiene su lamina se salta. Si una subida se corta -34 imagenes seguidas desde una tablet en obra- se anota cual fallo y se sigue con las demas, en vez de perder las que ya entraron."
+    "Version de documentacion: no cambia nada de lo que se ve en la app. Quedan escritas en el CLAUDE.md del repositorio tres lecciones del dia, para que la proxima sesion no las vuelva a aprender a los golpes.",
+    "La cuarta trampa al compilar el APK: un fallo del plugin de camara que dice 'cannot find symbol' y no 'Cannot snapshot', por lo que parece un problema de Java y no lo es. Se cura igual que las otras tres.",
+    "Un solo worktree compilando a la vez: los worktrees comparten el node_modules del repositorio, asi que dos compilaciones en paralelo se borran mutuamente lo que la otra acaba de generar, y cada una cree que el problema es suyo.",
+    "Con varias sesiones abiertas, cada una empuja SU commit y no la rama entera: empujar la rama se lleva lo que haya debajo, que puede ser trabajo de otra sesion que todavia no estaba autorizado a publicarse."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.73.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.74.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
