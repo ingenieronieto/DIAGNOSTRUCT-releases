@@ -1,13 +1,15 @@
 {
-  "version": "2.71.0",
+  "version": "2.72.0",
   "fecha": "2026-09-11",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - FOTOS QUE SE QUEDABAN EN EL EQUIPO: si la foto no alcanzaba a subir al guardar el ensayo, nadie la reintentaba nunca (el ensayo ya estaba en el servidor, asi que no estaba en la cola). Ahora las sube el boton de sincronizar y tambien el panel Fotos que no estan en el servidor, con un boton Subir al servidor. Al subirlas quedan anotadas en su ensayo sin perder lo que la foto traia.",
-    "NUEVO - REINTENTO CADA 3 MINUTOS: antes solo se reintentaba al cambiar la conexion, asi que una foto que fallaba con la senal puesta esperaba a que alguien tocara el boton. Ahora, con la app a la vista y algo pendiente, se reintenta solo.",
-    "En la tablet, cada foto tomada con la app queda ademas como archivo en la carpeta Documentos del equipo."
+    "NUEVO - LOS 33 FERROSCAN DE ZAPAYAN ENTRAN A LA APP. Los escaneos del Profometer PM-650 AI levantados del 5 al 8 de agosto quedan cargados sobre las seis estructuras que el proyecto ya tiene, con sus 507 barras detectadas y el recubrimiento de cada una. Boton en el panel de administracion; reimportar no duplica.",
+    "Los numeros salen del CSV de PM-Link y se contrastaron UNO A UNO contra los estadisticos que imprime el propio equipo: mismo numero de lecturas, misma mediana, mismo minimo y mismo maximo en los 33 escaneos. No se usaron los del archivo .pqm, cuya interpretacion numerica nunca se valido.",
+    "CORREGIDO - LA CARGA POR LOTES DESCARTABA ESCANEOS QUE SI TENIAN BARRAS. Un escaneo trae las barras que detecta el carro y, aparte, las instantaneas que el operario dispara a mano. Se contaban las instantaneas para decidir si el escaneo servia, asi que quince de treinta y tres se descartaban -uno con 26 barras- con el mensaje 'sin barras detectadas', que decia justo lo contrario de lo que pasaba.",
+    "LO QUE EL ROTULO NO DICE, ENTRA MARCADO. Tres escaneos no se leen solos: uno no nombra el bloque, otro dice 'Vta' sin aclarar si es vigueta o viga tapa, y el tercero es una columna en la junta entre dos bloques. Entran con la duda escrita en la ficha para confirmar en sitio, en vez de entrar callandola. Un cuarto escaneo quedo fuera: es un disparo en vacio, sin barras ni lecturas.",
+    "Con el minimo de 40 mm de la NSR-10 C.7.7.1 para vigas y columnas no expuestas, 16 de los 33 escaneos traen alguna lectura por debajo, y son 63 de las 507 barras. La mas superficial mide 6 mm."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.71.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.72.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
