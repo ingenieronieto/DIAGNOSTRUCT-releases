@@ -1,15 +1,15 @@
 {
-  "version": "2.76.0",
+  "version": "2.77.0",
   "fecha": "2026-09-13",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - LA FICHA NO PIERDE SUS FOTOS (auditoria de fotos, grupo 2): al guardar un ensayo, una lesion o una ficha de madera ya no se borra la referencia a una foto que el servidor tiene; dos fotos tomadas seguidas ya no se pisan; las marcas de tintas penetrantes se conservan.",
-    "NUEVO - PANEL «FOTOS QUE NO ESTAN EN EL SERVIDOR»: muestra lo que espera en este equipo (ensayos, lesiones, madera y fotos generales) y un boton para subirlo todo de una vez. El contador tambien cuenta las copias que el servidor todavia no confirmo.",
-    "CORREGIDO - TINTAS Y MADERA: al reemplazar una foto se ve la nueva aunque la vieja siga en el servidor, y la foto aparece aunque no haya señal.",
-    "CORREGIDO - RECORTE Y PLANOS: tocar fuera del recuadro ya no descarta la foto recien tomada; reemplazar un plano pregunta antes; un corte de red al subir un plano ya no borra el archivo.",
-    "MEJORADO - Menos consultas al servidor al revisar las fotos ya subidas que siguen en el equipo."
+    "CORREGIDO - DOS EQUIPOS SOBRE EL MISMO ENSAYO: si un equipo guarda con una version vieja, ya no le quita a la ficha la foto que el otro equipo agrego. Quitar o cambiar una foto a proposito sigue funcionando.",
+    "CORREGIDO - EDICION SIN SEÑAL: una edicion con fotos que espera subir ya no se reemplaza en pantalla por la version del servidor, y si el ensayo se vuelve a guardar antes de subir, la foto del primer guardado no se pierde.",
+    "CORREGIDO - FOTOS GENERALES: cada foto se muestra una sola vez aunque este en el servidor y en el equipo, y una foto borrada ya no reaparece al sincronizar.",
+    "CORREGIDO - SUB-MUESTRAS: la foto heredada del nucleo no se borra del equipo mientras alguna de las dos fichas la siga esperando.",
+    "MEJORADO - El boton «Subir ahora lo que tiene este equipo» guarda con el usuario de la sesion y reintenta tambien las fotos de lesion retenidas."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.76.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.77.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

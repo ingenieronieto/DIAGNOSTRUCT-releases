@@ -2,6 +2,17 @@
   "generado": "2026-09-13",
   "versiones": [
     {
+      "version": "2.77.0",
+      "fecha": "2026-09-13",
+      "notas": [
+        "CORREGIDO - DOS EQUIPOS SOBRE EL MISMO ENSAYO: si un equipo guarda con una version vieja, ya no le quita a la ficha la foto que el otro equipo agrego. Quitar o cambiar una foto a proposito sigue funcionando.",
+        "CORREGIDO - EDICION SIN SEÑAL: una edicion con fotos que espera subir ya no se reemplaza en pantalla por la version del servidor, y si el ensayo se vuelve a guardar antes de subir, la foto del primer guardado no se pierde.",
+        "CORREGIDO - FOTOS GENERALES: cada foto se muestra una sola vez aunque este en el servidor y en el equipo, y una foto borrada ya no reaparece al sincronizar.",
+        "CORREGIDO - SUB-MUESTRAS: la foto heredada del nucleo no se borra del equipo mientras alguna de las dos fichas la siga esperando.",
+        "MEJORADO - El boton «Subir ahora lo que tiene este equipo» guarda con el usuario de la sesion y reintenta tambien las fotos de lesion retenidas."
+      ]
+    },
+    {
       "version": "2.76.0",
       "fecha": "2026-09-13",
       "notas": [
