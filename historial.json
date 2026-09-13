@@ -2,6 +2,17 @@
   "generado": "2026-09-13",
   "versiones": [
     {
+      "version": "2.76.0",
+      "fecha": "2026-09-13",
+      "notas": [
+        "CORREGIDO - LA FICHA NO PIERDE SUS FOTOS (auditoria de fotos, grupo 2): al guardar un ensayo, una lesion o una ficha de madera ya no se borra la referencia a una foto que el servidor tiene; dos fotos tomadas seguidas ya no se pisan; las marcas de tintas penetrantes se conservan.",
+        "NUEVO - PANEL «FOTOS QUE NO ESTAN EN EL SERVIDOR»: muestra lo que espera en este equipo (ensayos, lesiones, madera y fotos generales) y un boton para subirlo todo de una vez. El contador tambien cuenta las copias que el servidor todavia no confirmo.",
+        "CORREGIDO - TINTAS Y MADERA: al reemplazar una foto se ve la nueva aunque la vieja siga en el servidor, y la foto aparece aunque no haya señal.",
+        "CORREGIDO - RECORTE Y PLANOS: tocar fuera del recuadro ya no descarta la foto recien tomada; reemplazar un plano pregunta antes; un corte de red al subir un plano ya no borra el archivo.",
+        "MEJORADO - Menos consultas al servidor al revisar las fotos ya subidas que siguen en el equipo."
+      ]
+    },
+    {
       "version": "2.75.0",
       "fecha": "2026-09-13",
       "notas": [

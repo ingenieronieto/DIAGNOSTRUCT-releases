@@ -1,15 +1,15 @@
 {
-  "version": "2.75.0",
+  "version": "2.76.0",
   "fecha": "2026-09-13",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - NINGUNA FOTO SE PIERDE (auditoria de fotos): la limpieza del equipo ya no borra fotos que no subieron; solo borra las que el servidor confirmo que tiene. Antes, una foto sin subir de un proyecto que no estaba abierto se borraba a las 12 horas.",
-    "NUEVO - RESCATE DE FOTOS: toda foto guardada en el equipo termina en el servidor, del proyecto que sea. Se anota en su ficha, y si ninguna ficha la nombra se sube igual.",
-    "CORREGIDO - LESIONES Y MADERA: recortar, reemplazar o quitar una foto ya no borra el archivo del servidor (recortar borraba la foto original y, en una ficha duplicada, la de la ficha original). Quitar ahora pregunta antes.",
-    "CORREGIDO - FERROSCAN: las fotos del formulario se guardan y suben (antes se perdian al tomarlas).",
-    "NUEVO - En la tablet, las fotos de lesiones, madera y fotos generales tienen copia en archivo, que Android no borra; antes de borrar la copia del equipo se comprueba que la foto llego completa al servidor."
+    "CORREGIDO - LA FICHA NO PIERDE SUS FOTOS (auditoria de fotos, grupo 2): al guardar un ensayo, una lesion o una ficha de madera ya no se borra la referencia a una foto que el servidor tiene; dos fotos tomadas seguidas ya no se pisan; las marcas de tintas penetrantes se conservan.",
+    "NUEVO - PANEL «FOTOS QUE NO ESTAN EN EL SERVIDOR»: muestra lo que espera en este equipo (ensayos, lesiones, madera y fotos generales) y un boton para subirlo todo de una vez. El contador tambien cuenta las copias que el servidor todavia no confirmo.",
+    "CORREGIDO - TINTAS Y MADERA: al reemplazar una foto se ve la nueva aunque la vieja siga en el servidor, y la foto aparece aunque no haya señal.",
+    "CORREGIDO - RECORTE Y PLANOS: tocar fuera del recuadro ya no descarta la foto recien tomada; reemplazar un plano pregunta antes; un corte de red al subir un plano ya no borra el archivo.",
+    "MEJORADO - Menos consultas al servidor al revisar las fotos ya subidas que siguen en el equipo."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.75.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.76.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
