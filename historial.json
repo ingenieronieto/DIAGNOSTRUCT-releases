@@ -1,6 +1,17 @@
 {
-  "generado": "2026-09-11",
+  "generado": "2026-09-13",
   "versiones": [
+    {
+      "version": "2.75.0",
+      "fecha": "2026-09-13",
+      "notas": [
+        "CORREGIDO - NINGUNA FOTO SE PIERDE (auditoria de fotos): la limpieza del equipo ya no borra fotos que no subieron; solo borra las que el servidor confirmo que tiene. Antes, una foto sin subir de un proyecto que no estaba abierto se borraba a las 12 horas.",
+        "NUEVO - RESCATE DE FOTOS: toda foto guardada en el equipo termina en el servidor, del proyecto que sea. Se anota en su ficha, y si ninguna ficha la nombra se sube igual.",
+        "CORREGIDO - LESIONES Y MADERA: recortar, reemplazar o quitar una foto ya no borra el archivo del servidor (recortar borraba la foto original y, en una ficha duplicada, la de la ficha original). Quitar ahora pregunta antes.",
+        "CORREGIDO - FERROSCAN: las fotos del formulario se guardan y suben (antes se perdian al tomarlas).",
+        "NUEVO - En la tablet, las fotos de lesiones, madera y fotos generales tienen copia en archivo, que Android no borra; antes de borrar la copia del equipo se comprueba que la foto llego completa al servidor."
+      ]
+    },
     {
       "version": "2.74.0",
       "fecha": "2026-09-11",
