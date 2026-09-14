@@ -2,6 +2,14 @@
   "generado": "2026-09-13",
   "versiones": [
     {
+      "version": "2.78.0",
+      "fecha": "2026-09-13",
+      "notas": [
+        "CORREGIDO - SUBIR LAS LAMINAS DE PM-LINK YA NO PUEDE BORRAR UNA FOTO QUE OTRO EQUIPO AGREGO MIENTRAS TANTO. La carga lee las fichas de ferroscan al principio y despues tarda minutos subiendo las 34 laminas desde una tablet. Si en ese rato alguien en campo le agregaba a una ficha la foto durante la medicion, al guardar la lamina se escribia la version leida al principio, que todavia no tenia esa foto: la borraba.",
+        "Ahora la carga usa la mezcla de tres vias que trajo la version anterior: ve que ella no toco esa casilla y respeta lo que cambio en el servidor. La lamina entra y la foto de campo se conserva. Lo comprueba una prueba que corre contra la mezcla real de la app, y que demuestra tambien que sin esta proteccion la foto se perdia."
+      ]
+    },
+    {
       "version": "2.77.0",
       "fecha": "2026-09-13",
       "notas": [
