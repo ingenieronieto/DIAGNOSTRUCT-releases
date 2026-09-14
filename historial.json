@@ -2,6 +2,13 @@
   "generado": "2026-09-14",
   "versiones": [
     {
+      "version": "2.80.0",
+      "fecha": "2026-09-14",
+      "notas": [
+        "CORREGIDO - PANEL DE FOTOS FALTANTES: si el equipo no puede leer lo que tiene guardado de fotos de ensayo o de fotos generales, el panel lo dice en vez de afirmar que no hay nada esperando por subir."
+      ]
+    },
+    {
       "version": "2.79.0",
       "fecha": "2026-09-14",
       "notas": [
