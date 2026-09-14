@@ -2,6 +2,17 @@
   "generado": "2026-09-14",
   "versiones": [
     {
+      "version": "2.83.0",
+      "fecha": "2026-09-14",
+      "notas": [
+        "NUEVO - INFORME DE PATOLOGIA, DOS ORDENES: con varias edificaciones se elige si el titulo es la edificacion (y dentro sus ensayos) o el ensayo (con su ficha una sola vez y debajo los resultados de cada edificacion).",
+        "NUEVO - SECCION RESULTADOS: despues de la diagnosis, por edificacion, tablas con los valores exactos de los ensayos para vulnerabilidad y reforzamiento: resistencia de nucleos y esclerometria, secciones transversales y refuerzo de las regatas, traccion del acero, recubrimiento, carbonatacion, corrosion y espesores.",
+        "NUEVO - CUADRO DE PROGRESO AL GENERAR EL INFORME: dice que se esta armando, del 0 al 100 %, con el tiempo transcurrido, hasta que se abre la ventana de guardar. La tabla de contenido sale en minuscula y sin negrilla.",
+        "CORREGIDO - GUARDAR EN EL COMPUTADOR: el archivo ya no se pierde si la ventana de guardar se deja abierta mas de 5 segundos; varios informes salen en un solo .zip y se puede volver a descargar.",
+        "CORREGIDO - LABORATORIO DE NUCLEOS: un incumplimiento de la NTC 3658 ya no aparece como «campo por llenar» ni bloquea el guardado en silencio. La barra dice que falta o que incumple, y el nucleo no conforme se guarda con confirmacion y queda advertido en el informe."
+      ]
+    },
+    {
       "version": "2.82.0",
       "fecha": "2026-09-14",
       "notas": [
