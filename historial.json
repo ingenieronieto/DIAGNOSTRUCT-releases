@@ -2,6 +2,15 @@
   "generado": "2026-09-14",
   "versiones": [
     {
+      "version": "2.88.0",
+      "fecha": "2026-09-14",
+      "notas": [
+        "CORREGIDO - ENTREGA: las cartillas de lesiones y de madera ya no se parten en dos hojas en carta; cada ficha va en el marco del papel elegido y se escala para caber.",
+        "CORREGIDO - ENTREGA: ya no sale una hoja en blanco con solo el pie al final de cada cartilla.",
+        "MEJORA - ENTREGA: el marco de cada formato ya no se ve y deja un margen para que el contenido no quede pegado al borde."
+      ]
+    },
+    {
       "version": "2.87.0",
       "fecha": "2026-09-14",
       "notas": [
