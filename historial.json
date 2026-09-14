@@ -2,6 +2,15 @@
   "generado": "2026-09-14",
   "versiones": [
     {
+      "version": "2.87.0",
+      "fecha": "2026-09-14",
+      "notas": [
+        "NUEVO - ENTREGA: cada formato de ensayo va en un marco del papel elegido (carta, oficio, media carta, tabloide o doble carta) y se escala para llenarlo; ya no salen diminutos.",
+        "NUEVO - CARTILLA DE LESIONES: al final del modulo, Renumerar registro fotografico (FOTO 001, 002... corrido a partir de la lesion) y Nombre de todas las lesiones (igual al ID, con texto o sin nombre).",
+        "CORREGIDO - CARTILLA DE LESIONES: las fotos ya no salen con «?»; el marcador del plano muestra todas las fotos de la ficha con su numero y avisa si la ubicacion no quedo guardada."
+      ]
+    },
+    {
       "version": "2.86.0",
       "fecha": "2026-09-14",
       "notas": [
