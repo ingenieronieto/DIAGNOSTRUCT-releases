@@ -2,6 +2,16 @@
   "generado": "2026-09-14",
   "versiones": [
     {
+      "version": "2.82.0",
+      "fecha": "2026-09-14",
+      "notas": [
+        "NUEVO - INFORME DE PATOLOGIA CON VARIAS EDIFICACIONES: se elige entre un solo informe para todas o un informe por estructura (un documento por edificacion). Un boton copia la ruta guiada y las alternativas de una edificacion a las demas, y otro copia tambien lo escrito.",
+        "CORREGIDO - CLIMA DEL INFORME: cuando el servicio de clima (Open-Meteo) falla, el aviso lo dice en vez de culpar a la señal, y se usan los datos consultados antes para ese punto.",
+        "CORREGIDO - AVISOS DEL INFORME: se muestran todos (antes solo 12), cada uno con como se arregla y un enlace al campo.",
+        "CORREGIDO - La fotografia del estado actual elegida del album ya entra al informe (salia como faltante). El codigo y la version del documento se escriben en «Lo que pide el informe» y van en la portada. La imagen de cada ficha de ensayo sale de una foto subida de ese tipo de ensayo."
+      ]
+    },
+    {
       "version": "2.81.0",
       "fecha": "2026-09-14",
       "notas": [
