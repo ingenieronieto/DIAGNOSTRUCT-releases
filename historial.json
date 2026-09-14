@@ -1,6 +1,16 @@
 {
-  "generado": "2026-09-13",
+  "generado": "2026-09-14",
   "versiones": [
+    {
+      "version": "2.79.0",
+      "fecha": "2026-09-14",
+      "notas": [
+        "NUEVO - INFORME DE PATOLOGIA COMPLETO: ahora redacta con los datos de la app el frente de carbonatacion, el ferroscan, las regatas y la tabla de nucleos (antes salian por diligenciar), y agrega pulso ultrasonico, potencial de corrosion, traccion de barras, tintas penetrantes y medicion de espesores, cada uno con su ficha, resultados y analisis.",
+        "CORREGIDO - ESCLEROMETRIA EN EL INFORME: ya no imprime 'se descartan undefined por atipicos', y las frases dependen de los numeros (homogeneo o disperso, por encima o por debajo del f'c, t de Student segun la cantidad de datos). Conviene revisar los informes de patologia ya entregados con esclerometria.",
+        "CORREGIDO - NUCLEOS: el nucleo cortado en sub-muestras ya no se cuenta como 'nucleo sin laboratorio' en el informe de patologia ni en el gerencial.",
+        "NUEVO - Los hallazgos criticos del informe avisan corrosion probable, barras que no cumplen su grado, secciones metalicas con mas del 50 % de perdida, zonas rechazadas por tintas y concreto de mala calidad por ultrasonido."
+      ]
+    },
     {
       "version": "2.78.0",
       "fecha": "2026-09-13",

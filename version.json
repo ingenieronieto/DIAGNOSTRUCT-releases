@@ -1,12 +1,14 @@
 {
-  "version": "2.78.0",
-  "fecha": "2026-09-13",
+  "version": "2.79.0",
+  "fecha": "2026-09-14",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - SUBIR LAS LAMINAS DE PM-LINK YA NO PUEDE BORRAR UNA FOTO QUE OTRO EQUIPO AGREGO MIENTRAS TANTO. La carga lee las fichas de ferroscan al principio y despues tarda minutos subiendo las 34 laminas desde una tablet. Si en ese rato alguien en campo le agregaba a una ficha la foto durante la medicion, al guardar la lamina se escribia la version leida al principio, que todavia no tenia esa foto: la borraba.",
-    "Ahora la carga usa la mezcla de tres vias que trajo la version anterior: ve que ella no toco esa casilla y respeta lo que cambio en el servidor. La lamina entra y la foto de campo se conserva. Lo comprueba una prueba que corre contra la mezcla real de la app, y que demuestra tambien que sin esta proteccion la foto se perdia."
+    "NUEVO - INFORME DE PATOLOGIA COMPLETO: ahora redacta con los datos de la app el frente de carbonatacion, el ferroscan, las regatas y la tabla de nucleos (antes salian por diligenciar), y agrega pulso ultrasonico, potencial de corrosion, traccion de barras, tintas penetrantes y medicion de espesores, cada uno con su ficha, resultados y analisis.",
+    "CORREGIDO - ESCLEROMETRIA EN EL INFORME: ya no imprime 'se descartan undefined por atipicos', y las frases dependen de los numeros (homogeneo o disperso, por encima o por debajo del f'c, t de Student segun la cantidad de datos). Conviene revisar los informes de patologia ya entregados con esclerometria.",
+    "CORREGIDO - NUCLEOS: el nucleo cortado en sub-muestras ya no se cuenta como 'nucleo sin laboratorio' en el informe de patologia ni en el gerencial.",
+    "NUEVO - Los hallazgos criticos del informe avisan corrosion probable, barras que no cumplen su grado, secciones metalicas con mas del 50 % de perdida, zonas rechazadas por tintas y concreto de mala calidad por ultrasonido."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.78.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.79.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
