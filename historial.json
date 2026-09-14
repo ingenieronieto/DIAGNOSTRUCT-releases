@@ -2,6 +2,14 @@
   "generado": "2026-09-14",
   "versiones": [
     {
+      "version": "2.86.0",
+      "fecha": "2026-09-14",
+      "notas": [
+        "CORREGIDO - INFORME DE PATOLOGIA: la ficha tecnica ya no imprime «function Object()» en Constructor cuando el proyecto no lo tiene escrito.",
+        "CORREGIDO - REORDENAR LESIONES: usa la funcion renumerar_lesiones de la base, que cambia solo el numero y el ID de todas las fichas a la vez (o todas o ninguna)."
+      ]
+    },
+    {
       "version": "2.85.0",
       "fecha": "2026-09-14",
       "notas": [

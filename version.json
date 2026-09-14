@@ -1,15 +1,12 @@
 {
-  "version": "2.85.0",
+  "version": "2.86.0",
   "fecha": "2026-09-14",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - ENTREGA OFICIAL: cada formato de ensayo sale en una sola hoja (esclerometria, regatas, nucleos, ferroscan, carbonatacion, potencial de corrosion, espesores, durometria, barras e inclinometria), con el mismo pie de firma de la esclerometria y la trazabilidad en dos lineas. El consolidado de nucleos sale en hoja horizontal con la foto del nucleo despues de la falla.",
-    "NUEVO - INFORME DE PATOLOGIA: usa el ferroscan importado y el clima, la lluvia, el viento, la altitud y los arboles registrados en Diagnostico estructural. El clima tiene tres servicios de respaldo y los promedios mensuales quedan guardados en el proyecto.",
-    "NUEVO - FOTOS GENERALES: subir una carpeta completa o varias fotos a la vez, sin repetir las que ya estan.",
-    "NUEVO - TRACCION DE BARRAS: casilla para la curva esfuerzo-deformacion del laboratorio, que sale en la hoja y en el informe.",
-    "CORREGIDO - Los avisos de sincronizacion ya no se enciman. Al reordenar lesiones, la app dice exactamente que ficha no dejo cambiar la base y por que."
+    "CORREGIDO - INFORME DE PATOLOGIA: la ficha tecnica ya no imprime «function Object()» en Constructor cuando el proyecto no lo tiene escrito.",
+    "CORREGIDO - REORDENAR LESIONES: usa la funcion renumerar_lesiones de la base, que cambia solo el numero y el ID de todas las fichas a la vez (o todas o ninguna)."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.85.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.86.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
