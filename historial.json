@@ -2,6 +2,15 @@
   "generado": "2026-09-14",
   "versiones": [
     {
+      "version": "2.84.0",
+      "fecha": "2026-09-14",
+      "notas": [
+        "CORREGIDO - SUB-MUESTRAS DE NUCLEOS: siempre en orden 1, 2, 3 y con el codigo de la estructura del nucleo padre (EXN-B1 001-1), sin huecos al borrar o crear.",
+        "NUEVO - LOTE COMPLETO: cuando todas las sub-muestras de un nucleo tienen su laboratorio, el lote sale Completo y ya no ofrece «+ Sub-muestra (n/5)».",
+        "NUEVO - LABORATORIO AUTOCOMPLETADO: humedad, temperatura, acondicionamiento, refrentado, fecha, horas, operario y donde se rompio se toman del primer nucleo ensayado del proyecto. Las medidas del nucleo, la carga maxima y el tipo de falla se llenan en cada uno."
+      ]
+    },
+    {
       "version": "2.83.0",
       "fecha": "2026-09-14",
       "notas": [

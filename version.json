@@ -1,15 +1,13 @@
 {
-  "version": "2.83.0",
+  "version": "2.84.0",
   "fecha": "2026-09-14",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - INFORME DE PATOLOGIA, DOS ORDENES: con varias edificaciones se elige si el titulo es la edificacion (y dentro sus ensayos) o el ensayo (con su ficha una sola vez y debajo los resultados de cada edificacion).",
-    "NUEVO - SECCION RESULTADOS: despues de la diagnosis, por edificacion, tablas con los valores exactos de los ensayos para vulnerabilidad y reforzamiento: resistencia de nucleos y esclerometria, secciones transversales y refuerzo de las regatas, traccion del acero, recubrimiento, carbonatacion, corrosion y espesores.",
-    "NUEVO - CUADRO DE PROGRESO AL GENERAR EL INFORME: dice que se esta armando, del 0 al 100 %, con el tiempo transcurrido, hasta que se abre la ventana de guardar. La tabla de contenido sale en minuscula y sin negrilla.",
-    "CORREGIDO - GUARDAR EN EL COMPUTADOR: el archivo ya no se pierde si la ventana de guardar se deja abierta mas de 5 segundos; varios informes salen en un solo .zip y se puede volver a descargar.",
-    "CORREGIDO - LABORATORIO DE NUCLEOS: un incumplimiento de la NTC 3658 ya no aparece como «campo por llenar» ni bloquea el guardado en silencio. La barra dice que falta o que incumple, y el nucleo no conforme se guarda con confirmacion y queda advertido en el informe."
+    "CORREGIDO - SUB-MUESTRAS DE NUCLEOS: siempre en orden 1, 2, 3 y con el codigo de la estructura del nucleo padre (EXN-B1 001-1), sin huecos al borrar o crear.",
+    "NUEVO - LOTE COMPLETO: cuando todas las sub-muestras de un nucleo tienen su laboratorio, el lote sale Completo y ya no ofrece «+ Sub-muestra (n/5)».",
+    "NUEVO - LABORATORIO AUTOCOMPLETADO: humedad, temperatura, acondicionamiento, refrentado, fecha, horas, operario y donde se rompio se toman del primer nucleo ensayado del proyecto. Las medidas del nucleo, la carga maxima y el tipo de falla se llenan en cada uno."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.83.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.84.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
