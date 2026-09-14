@@ -1,11 +1,12 @@
 {
-  "version": "2.80.0",
+  "version": "2.81.0",
   "fecha": "2026-09-14",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - PANEL DE FOTOS FALTANTES: si el equipo no puede leer lo que tiene guardado de fotos de ensayo o de fotos generales, el panel lo dice en vez de afirmar que no hay nada esperando por subir."
+    "NUEVO - INFORME DE PATOLOGIA POR BLOQUES: en un proyecto con dos o mas estructuras aparece 'Un solo informe con las N edificaciones'. Activado, las secciones que dependen de la edificacion (condiciones, caracterizacion, diagnosis, riesgo, calificacion del dano, alternativas, conclusiones y recomendaciones) salen con un subtitulo por bloque, cada uno con sus ensayos y sus lesiones; el juicio de cada bloque se escribe y se guarda en la pantalla.",
+    "CORREGIDO - INFORME DE PATOLOGIA: lo que escribe el ingeniero en la pantalla llega al Word. Las alternativas ya no salen como 'undefined', las recomendaciones ya no salen 'Por diligenciar' y los hallazgos criticos van en la Diagnosis aunque no haya evento."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.80.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.81.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
