@@ -1,13 +1,17 @@
 {
-  "version": "2.89.0",
-  "fecha": "2026-09-14",
+  "version": "2.90.0",
+  "fecha": "2026-09-15",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - INFORME DE PATOLOGIA: los proyectos de QATRO S.A.S. salen con la composicion del informe modelo de QATRO (portada, control de versiones, encabezado en tabla, pie, titulos, fichas de ensayo y cajas de conclusiones), con el mismo contenido de siempre.",
-    "NUEVO - INFORME QATRO: al abrirlo, Word pregunta si actualiza los campos; responder SI para que el indice y las listas de ilustraciones y tablas queden con sus numeros de pagina.",
-    "AVISO - INFORME QATRO: la portada no inventa la fecha de emision ni el codigo; si faltan en el proyecto, el informe lo dice."
+    "NUEVO - INFORME QATRO: la fecha de emision se escribe en «Lo que pide el informe», en Documento, y sale en la portada y en el control de versiones.",
+    "CORREGIDO - INFORME QATRO: si el formato QATRO falla, el informe sale igual con la composicion de siempre y lo avisa, en vez de no salir.",
+    "CORREGIDO - INFORME QATRO: el concepto de demolicion y los capitulos nuevos ya no quedan debajo de la responsabilidad profesional; las medidas por plazo van dentro de la caja de conclusiones y no como estructuras.",
+    "CORREGIDO - INFORME QATRO: las fotos WebP se pasan a JPG y las que Word no lee (HEIC en Android) ya no se pierden sin aviso; las fotos giradas por la camara ya no salen recortadas y las fotos grandes se reducen, asi el documento pesa menos.",
+    "MEJORA - INFORME QATRO: la plantilla baja 2,6 MB menos y la portada avisa que no lleva foto de fachada ni logos, como el modelo.",
+    "CORREGIDO - INFORME QATRO: las imagenes ya no dejan su pie huerfano en la hoja siguiente, y la tabla de firmas dice «Aprobado interventoria» (el modelo traia una errata).",
+    "NUEVO - INFORME QATRO: un capitulo «Analisis de resultados» (por estructura) sale con ese titulo, despues de los ensayos y antes de las conclusiones."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.89.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.90.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
