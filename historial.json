@@ -2,6 +2,15 @@
   "generado": "2026-09-15",
   "versiones": [
     {
+      "version": "2.92.1",
+      "fecha": "2026-09-15",
+      "notas": [
+        "CORREGIDO - INFORME (distorsiones): el analisis ya no llama «local» a una distorsion de losas grave ni afirma cimentacion o vuelco con inclinaciones dentro de tolerancia; la lectura conjunta de inclinacion y nivelacion va por gravedad y sin contradecirse.",
+        "CORREGIDO - INFORME (distorsiones): dos estructuras con el mismo nombre ya no se mezclan; en el informe por bloques cada una conserva su propio analisis.",
+        "CORREGIDO - INFORME (distorsiones): se avisan las lineas de nivelacion descartadas y los puntos a medias, con el motivo real; redaccion corregida (el muro, la linea A, a nivel)."
+      ]
+    },
+    {
       "version": "2.92.0",
       "fecha": "2026-09-15",
       "notas": [

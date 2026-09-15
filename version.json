@@ -1,14 +1,13 @@
 {
-  "version": "2.92.0",
+  "version": "2.92.1",
   "fecha": "2026-09-15",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - INFORME DE PATOLOGIA: capitulo «Caracterizacion de distorsiones», entre la caracterizacion de materiales y la diagnosis, con las inclinometrias y las nivelaciones del proyecto (antes no entraban al informe).",
-    "NUEVO - INFORME: cada ensayo con su ficha y sus resultados por estructura (desplome, pendiente, relacion 1/n y clasificacion; desnivel, tramo critico y distorsion angular de Bjerrum), con las mismas cifras de la pantalla del ensayo.",
-    "NUEVO - INFORME: el analisis lee juntas la inclinacion y la nivelacion de cada estructura; en el informe por bloques va en «Analisis de resultados». Tambien en el formato QATRO.",
-    "AVISO - INFORME: una inclinometria o nivelacion sin datos no sale como dentro de tolerancia: queda fuera y el informe lo dice."
+    "CORREGIDO - INFORME (distorsiones): el analisis ya no llama «local» a una distorsion de losas grave ni afirma cimentacion o vuelco con inclinaciones dentro de tolerancia; la lectura conjunta de inclinacion y nivelacion va por gravedad y sin contradecirse.",
+    "CORREGIDO - INFORME (distorsiones): dos estructuras con el mismo nombre ya no se mezclan; en el informe por bloques cada una conserva su propio analisis.",
+    "CORREGIDO - INFORME (distorsiones): se avisan las lineas de nivelacion descartadas y los puntos a medias, con el motivo real; redaccion corregida (el muro, la linea A, a nivel)."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.92.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.92.1.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
