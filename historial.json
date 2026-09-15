@@ -1,6 +1,15 @@
 {
-  "generado": "2026-09-14",
+  "generado": "2026-09-15",
   "versiones": [
+    {
+      "version": "2.89.0",
+      "fecha": "2026-09-14",
+      "notas": [
+        "NUEVO - INFORME DE PATOLOGIA: los proyectos de QATRO S.A.S. salen con la composicion del informe modelo de QATRO (portada, control de versiones, encabezado en tabla, pie, titulos, fichas de ensayo y cajas de conclusiones), con el mismo contenido de siempre.",
+        "NUEVO - INFORME QATRO: al abrirlo, Word pregunta si actualiza los campos; responder SI para que el indice y las listas de ilustraciones y tablas queden con sus numeros de pagina.",
+        "AVISO - INFORME QATRO: la portada no inventa la fecha de emision ni el codigo; si faltan en el proyecto, el informe lo dice."
+      ]
+    },
     {
       "version": "2.88.0",
       "fecha": "2026-09-14",

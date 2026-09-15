@@ -1,13 +1,13 @@
 {
-  "version": "2.88.0",
+  "version": "2.89.0",
   "fecha": "2026-09-14",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - ENTREGA: las cartillas de lesiones y de madera ya no se parten en dos hojas en carta; cada ficha va en el marco del papel elegido y se escala para caber.",
-    "CORREGIDO - ENTREGA: ya no sale una hoja en blanco con solo el pie al final de cada cartilla.",
-    "MEJORA - ENTREGA: el marco de cada formato ya no se ve y deja un margen para que el contenido no quede pegado al borde."
+    "NUEVO - INFORME DE PATOLOGIA: los proyectos de QATRO S.A.S. salen con la composicion del informe modelo de QATRO (portada, control de versiones, encabezado en tabla, pie, titulos, fichas de ensayo y cajas de conclusiones), con el mismo contenido de siempre.",
+    "NUEVO - INFORME QATRO: al abrirlo, Word pregunta si actualiza los campos; responder SI para que el indice y las listas de ilustraciones y tablas queden con sus numeros de pagina.",
+    "AVISO - INFORME QATRO: la portada no inventa la fecha de emision ni el codigo; si faltan en el proyecto, el informe lo dice."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.88.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.89.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
