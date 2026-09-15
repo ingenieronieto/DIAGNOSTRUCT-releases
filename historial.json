@@ -2,6 +2,18 @@
   "generado": "2026-09-15",
   "versiones": [
     {
+      "version": "2.93.0",
+      "fecha": "2026-09-15",
+      "notas": [
+        "CORREGIDO - MODELADO 3D: con el almacenamiento del navegador lleno el modelo no se guardaba («No se pudo escribir en localStorage») y no llegaba al servidor. Ahora se liberan copias que la app puede volver a bajar y, si aun asi no cabe, el modelo se sube igual al servidor.",
+        "NUEVO - MODELADO 3D: si un guardado falla queda una barra roja a la vista con «Reintentar guardar» y «Descargar respaldo (.json)»; el indicador ya no dice «sincronizado» con cambios sin guardar. Botones «Respaldo» y «Cargar respaldo» para sacar o recuperar el modelo en un archivo.",
+        "CORREGIDO - MODELADO 3D: el autoguardado podia subir una version vieja del modelo y marcar todo como guardado; ahora guarda siempre lo ultimo, un guardado a la vez, y si hubo cambios mientras guardaba siguen marcados como sin guardar.",
+        "CORREGIDO - MODELADO 3D: las cargas nodales y de barra se guardan en el servidor (antes solo quedaban en el equipo).",
+        "MEJORA: las copias de lectura para trabajar sin señal ya no llenan el navegador: una copia de mas de 1,5 MB no se guarda y las nuevas desplazan a las mas viejas.",
+        "AVISO - OBRA: sin señal ya no se borran las copias traidas con «Llevar a obra» para hacer espacio; si con señal se liberan, el proyecto deja de figurar como listo para obra."
+      ]
+    },
+    {
       "version": "2.92.1",
       "fecha": "2026-09-15",
       "notas": [
