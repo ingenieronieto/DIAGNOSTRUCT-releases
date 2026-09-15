@@ -1,14 +1,11 @@
 {
-  "version": "2.93.1",
+  "version": "2.93.2",
   "fecha": "2026-09-15",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - MODELADO 3D: los guardados de un mismo modelo (Guardar, autoguardado, Renombrar, sincronizacion) salen en fila y llegan en orden: uno viejo ya no pisa a uno nuevo en el servidor.",
-    "CORREGIDO - MODELADO 3D: la sincronizacion ya no da por subidos los cambios guardados mientras enviaba; las cargas sismicas y de tanque cuentan como cambios sin guardar; un guardado que termina con otro modelo abierto no toca su estado.",
-    "CORREGIDO - MODELADO 3D: un modelo creado sin señal ya no se duplica vacio en el servidor en cada sincronizacion, y el editor sigue con su id del servidor.",
-    "CORREGIDO - OBRA: «Llevar a obra» comprueba que la ficha y las estructuras quedaron guardadas antes de marcar el proyecto como listo."
+    "MEJORA - AVISOS: los avisos de la esquina (sin subir, sincronizando, pendientes) se pueden mover con la manija ⠿; quedan donde se sueltan y vuelven a la esquina con doble toque."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.93.1.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.93.2.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

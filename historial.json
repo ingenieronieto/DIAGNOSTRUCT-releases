@@ -2,6 +2,13 @@
   "generado": "2026-09-15",
   "versiones": [
     {
+      "version": "2.93.2",
+      "fecha": "2026-09-15",
+      "notas": [
+        "MEJORA - AVISOS: los avisos de la esquina (sin subir, sincronizando, pendientes) se pueden mover con la manija ⠿; quedan donde se sueltan y vuelven a la esquina con doble toque."
+      ]
+    },
+    {
       "version": "2.93.1",
       "fecha": "2026-09-15",
       "notas": [
