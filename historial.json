@@ -2,6 +2,14 @@
   "generado": "2026-09-15",
   "versiones": [
     {
+      "version": "2.94.0",
+      "fecha": "2026-09-15",
+      "notas": [
+        "CAMBIO - ESCLEROMETRIA: la correccion por carbonatacion respeta la posicion del esclerometro. La tabla de carbonatacion es la horizontal; para vertical, sobrecabeza y diagonales se aplica en proporcion a su propio fc aparente (decision de Pacho). Los ensayos horizontales no cambian; los de otras posiciones suben (ej. vertical IR 25 con 6 mm: de 10,9 a 13,5 MPa).",
+        "CORREGIDO - INFORMES: las fotos tomadas con el celular que venian giradas por el EXIF salen derechas en el Word (composicion de siempre y QATRO)."
+      ]
+    },
+    {
       "version": "2.93.2",
       "fecha": "2026-09-15",
       "notas": [
