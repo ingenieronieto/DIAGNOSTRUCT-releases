@@ -1,15 +1,14 @@
 {
-  "version": "2.91.0",
+  "version": "2.92.0",
   "fecha": "2026-09-15",
   "minima": "1.70.0",
   "notas": [
-    "INFORME DE PATOLOGIA: el analisis de cada ensayo pasa a un capitulo «Análisis de resultados», estructura por estructura; los resultados siguen por ensayo.",
-    "INFORME DE PATOLOGIA: correcciones de Pacho sobre Zapayan (orden de esclerometria y nucleos, tabla de carbonatacion en horizontal, textos de localizacion, zona sismica, clima y firma).",
-    "INFORME DE PATOLOGIA: en Resultados sale el esquema de la seccion transversal de cada regata.",
-    "FORMATO QATRO: ficha tecnica compacta, caracterizacion como capitulo principal, saltos de pagina por ensayo y logo del contratante en el encabezado.",
-    "FORMATOS DE ENSAYO: las fotos se ven completas, sin recorte, y todos los ensayos llevan su localizacion en plano."
+    "NUEVO - INFORME DE PATOLOGIA: capitulo «Caracterizacion de distorsiones», entre la caracterizacion de materiales y la diagnosis, con las inclinometrias y las nivelaciones del proyecto (antes no entraban al informe).",
+    "NUEVO - INFORME: cada ensayo con su ficha y sus resultados por estructura (desplome, pendiente, relacion 1/n y clasificacion; desnivel, tramo critico y distorsion angular de Bjerrum), con las mismas cifras de la pantalla del ensayo.",
+    "NUEVO - INFORME: el analisis lee juntas la inclinacion y la nivelacion de cada estructura; en el informe por bloques va en «Analisis de resultados». Tambien en el formato QATRO.",
+    "AVISO - INFORME: una inclinometria o nivelacion sin datos no sale como dentro de tolerancia: queda fuera y el informe lo dice."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.91.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.92.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
