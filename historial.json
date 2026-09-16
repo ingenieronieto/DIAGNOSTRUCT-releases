@@ -1,6 +1,13 @@
 {
-  "generado": "2026-09-15",
+  "generado": "2026-09-16",
   "versiones": [
+    {
+      "version": "2.95.0",
+      "fecha": "2026-09-16",
+      "notas": [
+        "NUEVO - ENTREGAS: modulo «Anexo de registro fotografico». Reune en un solo documento las fotos generales, las de los ensayos y las de las lesiones, con numeracion corrida (Fotografia 1, 2...), pie de foto con el ensayo o la lesion, su estructura y ubicacion, y cada familia en hoja nueva. Filtros por familia y estructura, 4 o 6 fotos por hoja, papel carta, A4, oficio o doble carta. Las lesiones llevan su FOTO 00N de la cartilla. Se imprime o se guarda en PDF."
+      ]
+    },
     {
       "version": "2.94.0",
       "fecha": "2026-09-15",
