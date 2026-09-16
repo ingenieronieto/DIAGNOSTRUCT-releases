@@ -2,6 +2,13 @@
   "generado": "2026-09-16",
   "versiones": [
     {
+      "version": "2.95.1",
+      "fecha": "2026-09-16",
+      "notas": [
+        "CAMBIO - ANEXO FOTOGRAFICO: las fotos generales se pueden quitar directamente desde el anexo con el boton «Quitar» (pide confirmacion; el boton no sale impreso). Las fotos de ensayos y de lesiones quedan bloqueadas en el anexo: se manejan solo desde su ficha."
+      ]
+    },
+    {
       "version": "2.95.0",
       "fecha": "2026-09-16",
       "notas": [

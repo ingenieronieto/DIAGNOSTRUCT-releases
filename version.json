@@ -1,11 +1,11 @@
 {
-  "version": "2.95.0",
+  "version": "2.95.1",
   "fecha": "2026-09-16",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - ENTREGAS: modulo «Anexo de registro fotografico». Reune en un solo documento las fotos generales, las de los ensayos y las de las lesiones, con numeracion corrida (Fotografia 1, 2...), pie de foto con el ensayo o la lesion, su estructura y ubicacion, y cada familia en hoja nueva. Filtros por familia y estructura, 4 o 6 fotos por hoja, papel carta, A4, oficio o doble carta. Las lesiones llevan su FOTO 00N de la cartilla. Se imprime o se guarda en PDF."
+    "CAMBIO - ANEXO FOTOGRAFICO: las fotos generales se pueden quitar directamente desde el anexo con el boton «Quitar» (pide confirmacion; el boton no sale impreso). Las fotos de ensayos y de lesiones quedan bloqueadas en el anexo: se manejan solo desde su ficha."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.1.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
