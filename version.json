@@ -1,12 +1,11 @@
 {
-  "version": "2.95.6",
+  "version": "2.95.7",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIO - HOJA DE UTM (espesores por ultrasonido): la localizacion en plano baja a la columna izquierda, debajo de los resultados calculados, y el registro fotografico se alinea al costado derecho: la vista general arriba y el ensayo en proceso abajo.",
-    "CAMBIO - LOCALIZACION EN PLANO (UTM): el plano ocupa TODO el ancho del recuadro, sin deformarse, y se desplaza para dejar el punto del ensayo en el centro del visor."
+    "CAMBIO - LOCALIZACION EN PLANO EN TODOS LOS ENSAYOS: el plano ocupa TODO el ancho de su recuadro, sin deformarse, y se desplaza para dejar el punto del ensayo en el centro del visor. Antes salia pequeno en una esquina. Aplica a esclerometria, regatas, ferroscan, carbonatacion, potencial de corrosion, tintas penetrantes, ultrasonido de concreto y de metales, durometria, barras de acero e inclinometria."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.6.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.7.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

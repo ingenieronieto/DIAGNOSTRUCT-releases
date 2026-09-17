@@ -2,6 +2,13 @@
   "generado": "2026-09-17",
   "versiones": [
     {
+      "version": "2.95.7",
+      "fecha": "2026-09-17",
+      "notas": [
+        "CAMBIO - LOCALIZACION EN PLANO EN TODOS LOS ENSAYOS: el plano ocupa TODO el ancho de su recuadro, sin deformarse, y se desplaza para dejar el punto del ensayo en el centro del visor. Antes salia pequeno en una esquina. Aplica a esclerometria, regatas, ferroscan, carbonatacion, potencial de corrosion, tintas penetrantes, ultrasonido de concreto y de metales, durometria, barras de acero e inclinometria."
+      ]
+    },
+    {
       "version": "2.95.6",
       "fecha": "2026-09-17",
       "notas": [
