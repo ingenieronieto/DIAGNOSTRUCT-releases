@@ -1,11 +1,12 @@
 {
-  "version": "2.95.3",
+  "version": "2.95.6",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIO - ANEXO FOTOGRAFICO: las fotos que no han subido al servidor pero estan en ESTE equipo ya salen en el anexo, con un boton para subirlas. Las que estan en otro equipo se listan una a una: ensayo o lesion, casilla, fecha y quien lo levanto, para saber que equipo buscar."
+    "CAMBIO - HOJA DE UTM (espesores por ultrasonido): la localizacion en plano baja a la columna izquierda, debajo de los resultados calculados, y el registro fotografico se alinea al costado derecho: la vista general arriba y el ensayo en proceso abajo.",
+    "CAMBIO - LOCALIZACION EN PLANO (UTM): el plano ocupa TODO el ancho del recuadro, sin deformarse, y se desplaza para dejar el punto del ensayo en el centro del visor."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.3.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.6.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

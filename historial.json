@@ -2,6 +2,14 @@
   "generado": "2026-09-17",
   "versiones": [
     {
+      "version": "2.95.6",
+      "fecha": "2026-09-17",
+      "notas": [
+        "CAMBIO - HOJA DE UTM (espesores por ultrasonido): la localizacion en plano baja a la columna izquierda, debajo de los resultados calculados, y el registro fotografico se alinea al costado derecho: la vista general arriba y el ensayo en proceso abajo.",
+        "CAMBIO - LOCALIZACION EN PLANO (UTM): el plano ocupa TODO el ancho del recuadro, sin deformarse, y se desplaza para dejar el punto del ensayo en el centro del visor."
+      ]
+    },
+    {
       "version": "2.95.3",
       "fecha": "2026-09-17",
       "notas": [
