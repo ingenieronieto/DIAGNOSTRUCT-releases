@@ -2,6 +2,14 @@
   "generado": "2026-09-17",
   "versiones": [
     {
+      "version": "2.95.10",
+      "fecha": "2026-09-17",
+      "notas": [
+        "ARREGLO CRITICO - LAS FOTOS NO SUBIAN: la busqueda de la ficha de cada foto consultaba columnas que NO EXISTEN en la tabla (ensayos.fotos, ensayos.laboratorio). Postgres respondia «column ensayos.fotos does not exist», el error tumbaba el rescate completo y NINGUNA foto pendiente llegaba a subir, de ningun tipo de ensayo. Ahora se busca dentro de datos, y una consulta que falle ya no detiene a las demas.",
+        "NUEVO - LISTA DE FOTOS SIN SUBIR: el aviso de pendientes ahora lista cada foto con su ensayo (enlace que abre el formulario), la casilla y la fecha, y un boton para reintentar esa foto sola."
+      ]
+    },
+    {
       "version": "2.95.9",
       "fecha": "2026-09-17",
       "notas": [

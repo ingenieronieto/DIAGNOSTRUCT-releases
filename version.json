@@ -1,11 +1,12 @@
 {
-  "version": "2.95.9",
+  "version": "2.95.10",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - RECUPERAR FOTOS DEL SERVIDOR: en el panel de fotos faltantes (chip de fotos) hay un boton que revisa el almacen ensayo por ensayo y vuelve a apuntar las fichas que quedaron SIN FOTO al archivo que si esta en el servidor. Solo rellena casillas vacias, nunca pisa una foto existente, y conserva los marcadores de tintas penetrantes."
+    "ARREGLO CRITICO - LAS FOTOS NO SUBIAN: la busqueda de la ficha de cada foto consultaba columnas que NO EXISTEN en la tabla (ensayos.fotos, ensayos.laboratorio). Postgres respondia «column ensayos.fotos does not exist», el error tumbaba el rescate completo y NINGUNA foto pendiente llegaba a subir, de ningun tipo de ensayo. Ahora se busca dentro de datos, y una consulta que falle ya no detiene a las demas.",
+    "NUEVO - LISTA DE FOTOS SIN SUBIR: el aviso de pendientes ahora lista cada foto con su ensayo (enlace que abre el formulario), la casilla y la fecha, y un boton para reintentar esa foto sola."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.9.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.10.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
