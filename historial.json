@@ -2,6 +2,13 @@
   "generado": "2026-09-17",
   "versiones": [
     {
+      "version": "2.96.0",
+      "fecha": "2026-09-17",
+      "notas": [
+        "NUEVO - LOCALIZACION DEL ENSAYO EN EL INFORME: cada ensayo abre con el subtitulo «Localizacion del ensayo» y los planos con sus puntos dibujados, antes de los resultados. Si el informe va POR ENSAYO salen los planos de todos los pisos de TODAS las edificaciones donde se ejecuto; si va POR ESTRUCTURA, todos los planos de esa edificacion. Un plano entra solo si ese ensayo dejo punto en el, y las laminas van ordenadas por bloque y piso."
+      ]
+    },
+    {
       "version": "2.95.10",
       "fecha": "2026-09-17",
       "notas": [

@@ -1,12 +1,11 @@
 {
-  "version": "2.95.10",
+  "version": "2.96.0",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLO CRITICO - LAS FOTOS NO SUBIAN: la busqueda de la ficha de cada foto consultaba columnas que NO EXISTEN en la tabla (ensayos.fotos, ensayos.laboratorio). Postgres respondia «column ensayos.fotos does not exist», el error tumbaba el rescate completo y NINGUNA foto pendiente llegaba a subir, de ningun tipo de ensayo. Ahora se busca dentro de datos, y una consulta que falle ya no detiene a las demas.",
-    "NUEVO - LISTA DE FOTOS SIN SUBIR: el aviso de pendientes ahora lista cada foto con su ensayo (enlace que abre el formulario), la casilla y la fecha, y un boton para reintentar esa foto sola."
+    "NUEVO - LOCALIZACION DEL ENSAYO EN EL INFORME: cada ensayo abre con el subtitulo «Localizacion del ensayo» y los planos con sus puntos dibujados, antes de los resultados. Si el informe va POR ENSAYO salen los planos de todos los pisos de TODAS las edificaciones donde se ejecuto; si va POR ESTRUCTURA, todos los planos de esa edificacion. Un plano entra solo si ese ensayo dejo punto en el, y las laminas van ordenadas por bloque y piso."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.10.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
