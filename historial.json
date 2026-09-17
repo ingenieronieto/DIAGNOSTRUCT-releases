@@ -2,6 +2,13 @@
   "generado": "2026-09-17",
   "versiones": [
     {
+      "version": "2.96.1",
+      "fecha": "2026-09-17",
+      "notas": [
+        "NUEVO - KIT DE TINTAS POR CAMPANA: los tres quimicos (removedor, penetrante, revelador) y el termometro se escriben UNA vez y quedan guardados en el proyecto. Cada ensayo de tintas nuevo nace con ese kit. Para los ensayos que ya existen hay un boton que lo aplica a todos, diciendo antes a cuantos les cambia algo; cada ensayo conserva su copia, porque es trazabilidad de la hoja firmada."
+      ]
+    },
+    {
       "version": "2.96.0",
       "fecha": "2026-09-17",
       "notas": [

@@ -1,11 +1,11 @@
 {
-  "version": "2.96.0",
+  "version": "2.96.1",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - LOCALIZACION DEL ENSAYO EN EL INFORME: cada ensayo abre con el subtitulo «Localizacion del ensayo» y los planos con sus puntos dibujados, antes de los resultados. Si el informe va POR ENSAYO salen los planos de todos los pisos de TODAS las edificaciones donde se ejecuto; si va POR ESTRUCTURA, todos los planos de esa edificacion. Un plano entra solo si ese ensayo dejo punto en el, y las laminas van ordenadas por bloque y piso."
+    "NUEVO - KIT DE TINTAS POR CAMPANA: los tres quimicos (removedor, penetrante, revelador) y el termometro se escriben UNA vez y quedan guardados en el proyecto. Cada ensayo de tintas nuevo nace con ese kit. Para los ensayos que ya existen hay un boton que lo aplica a todos, diciendo antes a cuantos les cambia algo; cada ensayo conserva su copia, porque es trazabilidad de la hoja firmada."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.1.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
