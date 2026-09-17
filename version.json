@@ -1,11 +1,12 @@
 {
-  "version": "2.95.7",
+  "version": "2.95.8",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIO - LOCALIZACION EN PLANO EN TODOS LOS ENSAYOS: el plano ocupa TODO el ancho de su recuadro, sin deformarse, y se desplaza para dejar el punto del ensayo en el centro del visor. Antes salia pequeno en una esquina. Aplica a esclerometria, regatas, ferroscan, carbonatacion, potencial de corrosion, tintas penetrantes, ultrasonido de concreto y de metales, durometria, barras de acero e inclinometria."
+    "ARREGLO - TINTAS PENETRANTES: la hoja impresa mostraba SIN FOTO cuando el enlace firmado ya habia vencido (en otro equipo o dias despues), aunque la foto estuviera en el servidor. Ahora la recupera con su ruta, o con la copia del equipo si no hay senal.",
+    "ARREGLO - FOTOS FANTASMA: las dos casillas en blanco con que arranca el formulario de tintas penetrantes se guardaban como si fueran fotos, y el inventario y el anexo las contaban como fotos perdidas. Ya no se guardan ni se cuentan."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.7.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.8.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
