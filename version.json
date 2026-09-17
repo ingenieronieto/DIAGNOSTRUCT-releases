@@ -1,12 +1,11 @@
 {
-  "version": "2.95.8",
+  "version": "2.95.9",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLO - TINTAS PENETRANTES: la hoja impresa mostraba SIN FOTO cuando el enlace firmado ya habia vencido (en otro equipo o dias despues), aunque la foto estuviera en el servidor. Ahora la recupera con su ruta, o con la copia del equipo si no hay senal.",
-    "ARREGLO - FOTOS FANTASMA: las dos casillas en blanco con que arranca el formulario de tintas penetrantes se guardaban como si fueran fotos, y el inventario y el anexo las contaban como fotos perdidas. Ya no se guardan ni se cuentan."
+    "NUEVO - RECUPERAR FOTOS DEL SERVIDOR: en el panel de fotos faltantes (chip de fotos) hay un boton que revisa el almacen ensayo por ensayo y vuelve a apuntar las fichas que quedaron SIN FOTO al archivo que si esta en el servidor. Solo rellena casillas vacias, nunca pisa una foto existente, y conserva los marcadores de tintas penetrantes."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.8.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.9.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

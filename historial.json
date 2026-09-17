@@ -2,6 +2,13 @@
   "generado": "2026-09-17",
   "versiones": [
     {
+      "version": "2.95.9",
+      "fecha": "2026-09-17",
+      "notas": [
+        "NUEVO - RECUPERAR FOTOS DEL SERVIDOR: en el panel de fotos faltantes (chip de fotos) hay un boton que revisa el almacen ensayo por ensayo y vuelve a apuntar las fichas que quedaron SIN FOTO al archivo que si esta en el servidor. Solo rellena casillas vacias, nunca pisa una foto existente, y conserva los marcadores de tintas penetrantes."
+      ]
+    },
+    {
       "version": "2.95.8",
       "fecha": "2026-09-17",
       "notas": [
