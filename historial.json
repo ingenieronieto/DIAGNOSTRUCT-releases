@@ -2,6 +2,13 @@
   "generado": "2026-09-16",
   "versiones": [
     {
+      "version": "2.95.2",
+      "fecha": "2026-09-16",
+      "notas": [
+        "CAMBIO - ANEXO FOTOGRAFICO: al imprimir se ve el avance, igual que en el informe de patologia: porcentaje, paso en curso (armando hojas, cargando fotografias N de M, abriendo la impresion), pasos hechos y tiempo. La ventana de impresion se abre al llegar al 100 %."
+      ]
+    },
+    {
       "version": "2.95.1",
       "fecha": "2026-09-16",
       "notas": [

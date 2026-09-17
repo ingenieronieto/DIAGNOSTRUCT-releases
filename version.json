@@ -1,11 +1,11 @@
 {
-  "version": "2.95.1",
+  "version": "2.95.2",
   "fecha": "2026-09-16",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIO - ANEXO FOTOGRAFICO: las fotos generales se pueden quitar directamente desde el anexo con el boton «Quitar» (pide confirmacion; el boton no sale impreso). Las fotos de ensayos y de lesiones quedan bloqueadas en el anexo: se manejan solo desde su ficha."
+    "CAMBIO - ANEXO FOTOGRAFICO: al imprimir se ve el avance, igual que en el informe de patologia: porcentaje, paso en curso (armando hojas, cargando fotografias N de M, abriendo la impresion), pasos hechos y tiempo. La ventana de impresion se abre al llegar al 100 %."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.1.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.95.2.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
