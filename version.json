@@ -1,11 +1,12 @@
 {
-  "version": "2.96.1",
+  "version": "2.96.2",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - KIT DE TINTAS POR CAMPANA: los tres quimicos (removedor, penetrante, revelador) y el termometro se escriben UNA vez y quedan guardados en el proyecto. Cada ensayo de tintas nuevo nace con ese kit. Para los ensayos que ya existen hay un boton que lo aplica a todos, diciendo antes a cuantos les cambia algo; cada ensayo conserva su copia, porque es trazabilidad de la hoja firmada."
+    "CAMBIO - TINTAS, REGISTRO FOTOGRAFICO IGUAL AL RESTO: la casilla de foto de tintas penetrantes es ahora la misma de todos los ensayos (camara del equipo con zoom y linterna, avance de guardado y subida, visor y confirmacion al quitar). Debajo quedan solo los marcadores de discontinuidades.",
+    "ARREGLO - MARCADORES CORRIDOS: el lienzo tenia alto fijo y la foto se mostraba con franjas arriba y abajo; como el marcador se coloca en porcentaje de la caja, quedaba corrido respecto de donde se toco, y asi se imprimia. Ahora el lienzo mide lo mismo que la foto."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.1.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.2.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
