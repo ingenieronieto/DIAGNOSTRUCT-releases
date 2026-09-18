@@ -2,6 +2,18 @@
   "generado": "2026-09-18",
   "versiones": [
     {
+      "version": "2.97.4",
+      "fecha": "2026-09-18",
+      "notas": [
+        "NUEVO - EVALUACION NSR-10 A.10: modulo propio en Patologia Constructiva. Cada estructura se califica segun A.10.2.2 en calidad del diseno y la construccion y en estado actual (buena, regular o mala), con sus coeficientes phi c y phi e de la Tabla A.10.4-1 (1,0 / 0,8 / 0,6) y su producto. Marca lo observado de la lista de la norma, sugiere la calificacion desde los ensayos y las lesiones y la lleva al informe de patologia con su tabla; la condicion general de cada estructura sale de esa calificacion.",
+        "CAMBIO - GEOLOGIA DEL TERRENO: sin estudio geotecnico, o con el estudio en ejecucion (opcion nueva), el informe ya no trae los factores genericos del terreno; solo la salvedad.",
+        "CAMBIO - INFORME DE PATOLOGIA, OBJETIVO: con dos o mas edificaciones el objetivo general nombra las estructuras evaluadas del proyecto (por ejemplo: de las estructuras Liquida 1, Liquida 2 y Patio de maniobras de Alpina Sopo).",
+        "ARREGLO - FORMATO QATRO: la ficha tecnica y la tabla ID TRABAJO salen siempre en una hoja: filas mas bajas, sin espacio entre parrafos, y la tabla ID TRABAJO ya no se parte.",
+        "CAMBIO - NORMATIVA APLICABLE: ademas de las generales, entra la norma de cada ensayo realizado: RILEM CPC-18 en carbonatacion, NSR-10 Capitulo C.7 en regatas y ferroscan, ASTM A956 e ISO 16859 en durometria y ACI 117 en inclinometria.",
+        "ARREGLO - BARRA SUPERIOR: el informe de patologia, el gerencial, el anexo fotografico y el verificador ya muestran la barra de arriba con VOLVER en rojo vino, sin un segundo boton Volver suelto."
+      ]
+    },
+    {
       "version": "2.97.2",
       "fecha": "2026-09-18",
       "notas": [
