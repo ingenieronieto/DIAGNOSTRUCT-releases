@@ -1,11 +1,11 @@
 {
-  "version": "2.96.3",
+  "version": "2.96.4",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIO - BOTON VOLVER EN AMBAR: el boton de volver iba en gris translucido sobre la barra oscura y costaba encontrarlo en obra. Ahora es ambar, el unico de ese color en la barra, en los tres sitios donde aparece: la barra de sesion, su menu y los selectores de proyecto y de tipo de ensayo."
+    "CAMBIO - BOTON VOLVER SIMETRICO: conserva el ambar, pero ahora tiene la misma altura, relleno, letra y esquinas que los demas botones de la barra."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.3.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.4.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

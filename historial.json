@@ -2,6 +2,13 @@
   "generado": "2026-09-17",
   "versiones": [
     {
+      "version": "2.96.4",
+      "fecha": "2026-09-17",
+      "notas": [
+        "CAMBIO - BOTON VOLVER SIMETRICO: conserva el ambar, pero ahora tiene la misma altura, relleno, letra y esquinas que los demas botones de la barra."
+      ]
+    },
+    {
       "version": "2.96.3",
       "fecha": "2026-09-17",
       "notas": [
