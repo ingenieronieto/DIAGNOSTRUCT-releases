@@ -2,6 +2,15 @@
   "generado": "2026-09-18",
   "versiones": [
     {
+      "version": "2.97.2",
+      "fecha": "2026-09-18",
+      "notas": [
+        "ARREGLO - INFORME DE PATOLOGIA, GUARDADO AUTOMATICO: la ruta guiada, las alternativas marcadas, los firmantes, la fachada, los logos, el modo del informe y lo escrito se guardan solos un momento despues de cada cambio y tambien al salir. Antes solo guardaba el boton del fondo y los firmantes no se guardaban nunca. Junto al boton se ve cuando se guardo.",
+        "ARREGLO - PORTADA QATRO: la vista previa de un proyecto de QATRO mostraba la portada de ING. NIETO cuando la empresa aun no tenia firmante. Ahora muestra la portada del modelo QATRO: fondo de lineas, logo arriba a la derecha, REF, ESTUDIO DE PATOLOGIA, EDIFICACION y el bloque TEMA, FECHA/LUGAR, CODIGO y CONCEPTO.",
+        "CAMBIO - PANTALLA DEL INFORME MAS LIVIANA: los archivos (fachada, logos, contratante) se eligen con un boton; cada alternativa propuesta ocupa una linea con su primera razon y el resto se abre con Ver por que; los campos del juicio crecen con lo escrito, cuentan los parrafos y avisan cuantos [COMPLETAR] quedan, con un boton que lleva al primero."
+      ]
+    },
+    {
       "version": "2.97.1",
       "fecha": "2026-09-18",
       "notas": [
