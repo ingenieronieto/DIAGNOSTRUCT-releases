@@ -1,12 +1,11 @@
 {
-  "version": "2.97.0",
+  "version": "2.97.1",
   "fecha": "2026-09-18",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - ENTREGAS REORGANIZADO: ahora son tres tarjetas. INFORMES reune el informe de patologia, el informe gerencial de campo y el informe del plan de auscultamiento (el mismo formato imprimible del plan, armado con el plan guardado del proyecto). ANEXOS reune el anexo de ensayos (antes Reportes y entregas), el anexo de registro fotografico, el anexo de la cartilla de lesiones y el anexo de la cartilla fitosanitaria, cada cartilla de todas las estructuras o de una sola. Volver desde un informe o un anexo regresa a su grupo.",
-    "CAMBIO - TARJETAS DEL SELECTOR DE ESTUDIO: los supermodulos van sin icono y cada modulo dice ACTIVO (o EN MANTENIMIENTO) en vez de FUNCIONAL. El verificador de fotos y planos se rellena en rojo si falta algo, en verde si todo esta completo y queda en blanco si el proyecto no tiene ensayos."
+    "CAMBIO - RUTA GUIADA DEL INFORME DE PATOLOGIA, PASO A PASO: una pregunta abierta a la vez y numerada; las contestadas se pliegan en una linea con su respuesta y un Cambiar; la explicacion larga queda detras de Por que importa; al elegir en una pregunta de una sola respuesta pasa sola a la siguiente, y las de varias respuestas llevan casillas y el boton Listo, siguiente. Arriba, una franja de avance y el conteo en vivo de intervenciones en pie y descartadas; abajo, Lo que queda en pie."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.97.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.97.1.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

@@ -2,6 +2,13 @@
   "generado": "2026-09-18",
   "versiones": [
     {
+      "version": "2.97.1",
+      "fecha": "2026-09-18",
+      "notas": [
+        "CAMBIO - RUTA GUIADA DEL INFORME DE PATOLOGIA, PASO A PASO: una pregunta abierta a la vez y numerada; las contestadas se pliegan en una linea con su respuesta y un Cambiar; la explicacion larga queda detras de Por que importa; al elegir en una pregunta de una sola respuesta pasa sola a la siguiente, y las de varias respuestas llevan casillas y el boton Listo, siguiente. Arriba, una franja de avance y el conteo en vivo de intervenciones en pie y descartadas; abajo, Lo que queda en pie."
+      ]
+    },
+    {
       "version": "2.97.0",
       "fecha": "2026-09-18",
       "notas": [
