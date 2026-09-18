@@ -2,6 +2,14 @@
   "generado": "2026-09-18",
   "versiones": [
     {
+      "version": "2.97.5",
+      "fecha": "2026-09-18",
+      "notas": [
+        "NUEVO - INFORME, MACRO DE GAUSS: en esclerometria y en nucleos salen las tablas y graficas de la MACRO GAUSS con los datos de DIAGNOSTRUCT: tabla del criterio de Chauvenet (promedio, S, varianza, media, Kn y limites en MPa y psi, con la verificacion de atipicos), grafica de resistencia por ensayo con los limites, tabla de evaluacion segun NTC 2275 (S corregida por NSR-10 C.5.3, coeficiente de variacion y limites) y campana de Gauss con el conteo de ensayos. Tambien por estructura.",
+        "NUEVO - INFORME, IMAGEN DE CADA FICHA: en la pantalla del informe se elige la foto que va en el cuadro IMAGEN de cada ficha de ensayo y se recorta con la forma del cuadro, para que lo llene en vez de quedar apretada. La foto del ensayo no se toca."
+      ]
+    },
+    {
       "version": "2.97.4",
       "fecha": "2026-09-18",
       "notas": [
