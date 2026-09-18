@@ -1,11 +1,11 @@
 {
-  "version": "2.96.4",
-  "fecha": "2026-09-17",
+  "version": "2.96.7",
+  "fecha": "2026-09-18",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIO - BOTON VOLVER SIMETRICO: conserva el ambar, pero ahora tiene la misma altura, relleno, letra y esquinas que los demas botones de la barra."
+    "CAMBIO - BARRA DE ARRIBA EN UNA FILA: VOLVER primero, en rojo vino; despues el proyecto y la empresa; luego todas las acciones a la vista y sin bordes (inicio, consolidado, normas, diagnostico, fotogrametria, copia de seguridad, actualizar); y a la derecha CONFIGURACION y las iniciales del usuario. Todos los botones miden lo mismo. En el celular sigue el menu lateral de siempre."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.4.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.7.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
