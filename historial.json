@@ -2,6 +2,14 @@
   "generado": "2026-09-18",
   "versiones": [
     {
+      "version": "2.97.0",
+      "fecha": "2026-09-18",
+      "notas": [
+        "NUEVO - ENTREGAS REORGANIZADO: ahora son tres tarjetas. INFORMES reune el informe de patologia, el informe gerencial de campo y el informe del plan de auscultamiento (el mismo formato imprimible del plan, armado con el plan guardado del proyecto). ANEXOS reune el anexo de ensayos (antes Reportes y entregas), el anexo de registro fotografico, el anexo de la cartilla de lesiones y el anexo de la cartilla fitosanitaria, cada cartilla de todas las estructuras o de una sola. Volver desde un informe o un anexo regresa a su grupo.",
+        "CAMBIO - TARJETAS DEL SELECTOR DE ESTUDIO: los supermodulos van sin icono y cada modulo dice ACTIVO (o EN MANTENIMIENTO) en vez de FUNCIONAL. El verificador de fotos y planos se rellena en rojo si falta algo, en verde si todo esta completo y queda en blanco si el proyecto no tiene ensayos."
+      ]
+    },
+    {
       "version": "2.96.7",
       "fecha": "2026-09-18",
       "notas": [
