@@ -2,6 +2,14 @@
   "generado": "2026-09-18",
   "versiones": [
     {
+      "version": "2.97.6",
+      "fecha": "2026-09-18",
+      "notas": [
+        "NUEVO - FERROSCAN, IMPORTAR UNA EXPORTACION COMPLETA DE PM-LINK: el importador por lotes lee un CSV con muchos escaneos y sus laminas (FRS 001.png...). Cada escaneo trae su estructura sugerida desde el comentario del operario (se confirma o se asigna en la fila, con un boton para copiarla hacia abajo), la fecha del escaneo, el ID por estructura (FRS-L1 001...) y su lamina como foto de la ficha. Reimportar no duplica.",
+        "ARREGLO - FERROSCAN POR LOTES: los escaneos sin instantaneas pero con barras detectadas ya no se descartan como sin barras; se cuentan las barras, como el importador de Zapayan."
+      ]
+    },
+    {
       "version": "2.97.5",
       "fecha": "2026-09-18",
       "notas": [

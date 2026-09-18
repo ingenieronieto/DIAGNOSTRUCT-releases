@@ -1,12 +1,12 @@
 {
-  "version": "2.97.5",
+  "version": "2.97.6",
   "fecha": "2026-09-18",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - INFORME, MACRO DE GAUSS: en esclerometria y en nucleos salen las tablas y graficas de la MACRO GAUSS con los datos de DIAGNOSTRUCT: tabla del criterio de Chauvenet (promedio, S, varianza, media, Kn y limites en MPa y psi, con la verificacion de atipicos), grafica de resistencia por ensayo con los limites, tabla de evaluacion segun NTC 2275 (S corregida por NSR-10 C.5.3, coeficiente de variacion y limites) y campana de Gauss con el conteo de ensayos. Tambien por estructura.",
-    "NUEVO - INFORME, IMAGEN DE CADA FICHA: en la pantalla del informe se elige la foto que va en el cuadro IMAGEN de cada ficha de ensayo y se recorta con la forma del cuadro, para que lo llene en vez de quedar apretada. La foto del ensayo no se toca."
+    "NUEVO - FERROSCAN, IMPORTAR UNA EXPORTACION COMPLETA DE PM-LINK: el importador por lotes lee un CSV con muchos escaneos y sus laminas (FRS 001.png...). Cada escaneo trae su estructura sugerida desde el comentario del operario (se confirma o se asigna en la fila, con un boton para copiarla hacia abajo), la fecha del escaneo, el ID por estructura (FRS-L1 001...) y su lamina como foto de la ficha. Reimportar no duplica.",
+    "ARREGLO - FERROSCAN POR LOTES: los escaneos sin instantaneas pero con barras detectadas ya no se descartan como sin barras; se cuentan las barras, como el importador de Zapayan."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.97.5.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.97.6.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
