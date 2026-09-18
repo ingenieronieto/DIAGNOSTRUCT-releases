@@ -1,12 +1,14 @@
 {
-  "version": "2.97.6",
+  "version": "2.97.7",
   "fecha": "2026-09-18",
   "minima": "1.70.0",
   "notas": [
+    "ARREGLO - FIRMA DE LA EMPRESA: el pie de todas las hojas de ensayo, la caratula del anexo de ensayos, el bloque de firmas de los informes, las cartillas de lesiones y de madera y el plan de auscultamiento firman con el firmante de la empresa cargado en Configuracion (el del proyecto, o el primero activo de la empresa), nunca con el nombre de quien tiene la sesion abierta.",
+    "CAMBIO - FORMATOS SIN ICONOS: las hojas de ensayo, sus vistas y el modulo de anexo de ensayos ya no llevan emojis ni iconos; los veredictos dicen CUMPLE o NO CUMPLE sin marcas.",
     "NUEVO - FERROSCAN, IMPORTAR UNA EXPORTACION COMPLETA DE PM-LINK: el importador por lotes lee un CSV con muchos escaneos y sus laminas (FRS 001.png...). Cada escaneo trae su estructura sugerida desde el comentario del operario (se confirma o se asigna en la fila, con un boton para copiarla hacia abajo), la fecha del escaneo, el ID por estructura (FRS-L1 001...) y su lamina como foto de la ficha. Reimportar no duplica.",
     "ARREGLO - FERROSCAN POR LOTES: los escaneos sin instantaneas pero con barras detectadas ya no se descartan como sin barras; se cuentan las barras, como el importador de Zapayan."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.97.6.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.97.7.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
