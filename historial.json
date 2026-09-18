@@ -2,6 +2,13 @@
   "generado": "2026-09-17",
   "versiones": [
     {
+      "version": "2.96.3",
+      "fecha": "2026-09-17",
+      "notas": [
+        "CAMBIO - BOTON VOLVER EN AMBAR: el boton de volver iba en gris translucido sobre la barra oscura y costaba encontrarlo en obra. Ahora es ambar, el unico de ese color en la barra, en los tres sitios donde aparece: la barra de sesion, su menu y los selectores de proyecto y de tipo de ensayo."
+      ]
+    },
+    {
       "version": "2.96.2",
       "fecha": "2026-09-17",
       "notas": [

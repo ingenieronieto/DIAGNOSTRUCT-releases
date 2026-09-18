@@ -1,12 +1,11 @@
 {
-  "version": "2.96.2",
+  "version": "2.96.3",
   "fecha": "2026-09-17",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIO - TINTAS, REGISTRO FOTOGRAFICO IGUAL AL RESTO: la casilla de foto de tintas penetrantes es ahora la misma de todos los ensayos (camara del equipo con zoom y linterna, avance de guardado y subida, visor y confirmacion al quitar). Debajo quedan solo los marcadores de discontinuidades.",
-    "ARREGLO - MARCADORES CORRIDOS: el lienzo tenia alto fijo y la foto se mostraba con franjas arriba y abajo; como el marcador se coloca en porcentaje de la caja, quedaba corrido respecto de donde se toco, y asi se imprimia. Ahora el lienzo mide lo mismo que la foto."
+    "CAMBIO - BOTON VOLVER EN AMBAR: el boton de volver iba en gris translucido sobre la barra oscura y costaba encontrarlo en obra. Ahora es ambar, el unico de ese color en la barra, en los tres sitios donde aparece: la barra de sesion, su menu y los selectores de proyecto y de tipo de ensayo."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.2.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.96.3.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
