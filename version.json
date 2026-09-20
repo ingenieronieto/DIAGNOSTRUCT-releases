@@ -1,14 +1,12 @@
 {
-  "version": "2.97.7",
-  "fecha": "2026-09-18",
+  "version": "2.98.0",
+  "fecha": "2026-09-19",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLO - FIRMA DE LA EMPRESA: el pie de todas las hojas de ensayo, la caratula del anexo de ensayos, el bloque de firmas de los informes, las cartillas de lesiones y de madera y el plan de auscultamiento firman con el firmante de la empresa cargado en Configuracion (el del proyecto, o el primero activo de la empresa), nunca con el nombre de quien tiene la sesion abierta.",
-    "CAMBIO - FORMATOS SIN ICONOS: las hojas de ensayo, sus vistas y el modulo de anexo de ensayos ya no llevan emojis ni iconos; los veredictos dicen CUMPLE o NO CUMPLE sin marcas.",
-    "NUEVO - FERROSCAN, IMPORTAR UNA EXPORTACION COMPLETA DE PM-LINK: el importador por lotes lee un CSV con muchos escaneos y sus laminas (FRS 001.png...). Cada escaneo trae su estructura sugerida desde el comentario del operario (se confirma o se asigna en la fila, con un boton para copiarla hacia abajo), la fecha del escaneo, el ID por estructura (FRS-L1 001...) y su lamina como foto de la ficha. Reimportar no duplica.",
-    "ARREGLO - FERROSCAN POR LOTES: los escaneos sin instantaneas pero con barras detectadas ya no se descartan como sin barras; se cuentan las barras, como el importador de Zapayan."
+    "NUEVO - FERROSCAN POR LOTES, LOS ESCANEOS SIN BARRAS TAMBIEN SE CREAN: un muro donde se buscaba refuerzo y el equipo no detecto ninguno es un resultado del ensayo, no un archivo roto. Antes se descartaban como escaneo vacio y no se podian importar. Ahora entran como ficha, marcadas SIN BARRAS DETECTADAS, con la observacion escrita y sin contarse como CUMPLE en el resumen por estructura.",
+    "NUEVO - FERROSCAN POR LOTES, MINIATURA DE LA LAMINA: cada fila de la previsualizacion muestra la lamina de PM-Link en miniatura y, al tocarla, se abre en grande en una ventana flotante para ver que se esta importando antes de crear las fichas."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.97.7.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.98.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

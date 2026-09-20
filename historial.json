@@ -1,6 +1,14 @@
 {
-  "generado": "2026-09-18",
+  "generado": "2026-09-19",
   "versiones": [
+    {
+      "version": "2.98.0",
+      "fecha": "2026-09-19",
+      "notas": [
+        "NUEVO - FERROSCAN POR LOTES, LOS ESCANEOS SIN BARRAS TAMBIEN SE CREAN: un muro donde se buscaba refuerzo y el equipo no detecto ninguno es un resultado del ensayo, no un archivo roto. Antes se descartaban como escaneo vacio y no se podian importar. Ahora entran como ficha, marcadas SIN BARRAS DETECTADAS, con la observacion escrita y sin contarse como CUMPLE en el resumen por estructura.",
+        "NUEVO - FERROSCAN POR LOTES, MINIATURA DE LA LAMINA: cada fila de la previsualizacion muestra la lamina de PM-Link en miniatura y, al tocarla, se abre en grande en una ventana flotante para ver que se esta importando antes de crear las fichas."
+      ]
+    },
     {
       "version": "2.97.7",
       "fecha": "2026-09-18",
