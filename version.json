@@ -1,12 +1,14 @@
 {
-  "version": "2.98.0",
+  "version": "2.99.0",
   "fecha": "2026-09-19",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - FERROSCAN POR LOTES, LOS ESCANEOS SIN BARRAS TAMBIEN SE CREAN: un muro donde se buscaba refuerzo y el equipo no detecto ninguno es un resultado del ensayo, no un archivo roto. Antes se descartaban como escaneo vacio y no se podian importar. Ahora entran como ficha, marcadas SIN BARRAS DETECTADAS, con la observacion escrita y sin contarse como CUMPLE en el resumen por estructura.",
-    "NUEVO - FERROSCAN POR LOTES, MINIATURA DE LA LAMINA: cada fila de la previsualizacion muestra la lamina de PM-Link en miniatura y, al tocarla, se abre en grande en una ventana flotante para ver que se esta importando antes de crear las fichas."
+    "NUEVO - MOTOR NSR-10 DE RECUBRIMIENTO: el recubrimiento minimo ya no sale de una tabla corta de siete casos. Se calcula con el elemento, su exposicion y el diametro de la barra, segun C.7.7.1: no expuesto, intemperie o suelo, vaciado contra el suelo (75 mm), ambiente corrosivo (C.7.7.6) y estructura ambiental (Tabla C.23-C.7.7.1). La regata y el ferroscan lo usan igual, y el dictamen cita el literal que aplica.",
+    "CORREGIDO - EL TECHO DE CUANTIA EN COLUMNAS ERA EL DEL ACI, NO EL DE LA NSR-10: la aplicacion comparaba contra 0.06. La NSR-10 fija 0.04 del area bruta (DES C.21.6.3.1, DMO C.21.3.5.2, DMI C.10.9.1). Una columna con 5 por ciento de cuantia salia CUMPLE citando el numeral que la excluye. La columna circular, que no miraba el techo, quedo igualada.",
+    "NUEVO - LA CAPACIDAD DE DISIPACION DE ENERGIA DECIDE LOS LIMITES: DMI, DMO o DES se declara una vez en el proyecto y con eso se verifican las regatas. En vigas el tope de 2,5 por ciento aplica en DES y DMO; en DMI el Reglamento no lo fija y el informe lo dice en vez de reprobar por un limite que no aplica. Sin declararla se evalua con DMI y queda la constancia.",
+    "CORREGIDO - UNA CASILLA VACIA YA NO REPRUEBA: sin recubrimiento ni cuantia capturados el dictamen decia NO CUMPLE, porque el cero de una casilla en blanco se leia como una medida. Ahora dice SIN DATO."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.98.0.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.0.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
