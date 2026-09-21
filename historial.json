@@ -2,6 +2,14 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.3",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - CUMPLE / NO CUMPLE OPCIONAL TAMBIEN EN LOS INFORMES: la misma opcion global apaga el dictamen en el informe de patologia (Word y formato QATRO) y en el informe gerencial. Quedan los valores medidos y los limites de la norma; salen las columnas VERIFICACION, VEREDICTO y CALIFICACION, la aceptacion de nucleos, los conteos de barras que cumplen y las zonas aprobadas o rechazadas de tintas. En el gerencial salen el indicador No cumple y los conteos por estructura y por ensayo.",
+        "CAMBIO - LA OPCION SE ENCUENTRA MAS FACIL: la pestana de Configuracion se llama ahora Informe y veredictos, y el selector CUMPLE / NO CUMPLE queda arriba, en su propio recuadro."
+      ]
+    },
+    {
       "version": "2.99.2",
       "fecha": "2026-09-21",
       "notas": [
