@@ -1,11 +1,11 @@
 {
-  "version": "2.99.12",
+  "version": "2.99.13",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIO - CARTILLA DE LESIONES, HERRAMIENTAS ARRIBA: los recuadros Registro fotografico (renumerar FOTO 001 en adelante) y Nombre de todas las lesiones van ahora arriba, antes de los filtros y de la lista de lesiones, y el aviso de Listo sale donde se ve."
+    "NUEVO - CARTILLA DE LESIONES, GUARDAR A MANO: el editor de cada lesion tiene los botones Guardar y Guardar y cerrar junto a Cerrar editor, y dice si hay cambios sin guardar o a que hora quedo guardado. El guardado automatico sigue. Cerrar el editor con cambios pendientes ahora los guarda primero; antes, cerrar enseguida despues de un cambio lo perdia."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.12.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.13.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

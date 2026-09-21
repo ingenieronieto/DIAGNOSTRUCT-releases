@@ -2,6 +2,13 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.13",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - CARTILLA DE LESIONES, GUARDAR A MANO: el editor de cada lesion tiene los botones Guardar y Guardar y cerrar junto a Cerrar editor, y dice si hay cambios sin guardar o a que hora quedo guardado. El guardado automatico sigue. Cerrar el editor con cambios pendientes ahora los guarda primero; antes, cerrar enseguida despues de un cambio lo perdia."
+      ]
+    },
+    {
       "version": "2.99.12",
       "fecha": "2026-09-21",
       "notas": [
