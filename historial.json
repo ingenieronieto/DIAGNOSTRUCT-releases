@@ -1,6 +1,15 @@
 {
-  "generado": "2026-09-19",
+  "generado": "2026-09-21",
   "versiones": [
+    {
+      "version": "2.99.1",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - CAPACIDAD DE DISIPACION EN LA FICHA DE CADA ESTRUCTURA: Diagnostico estructural, Identificacion, tiene un bloque propio para declarar DMI, DMO, DES o No se conoce. Muestra la que exige la NSR-10 (A.3.1.3, Tablas A.3-1 a A.3-4) con la zona de amenaza del proyecto y el sistema estructural, y se pone en rojo si la declarada queda por debajo o en verde si alcanza. Por el ano de construccion dice con que codigo pudo disenarse (antes de 1984, codigo de 1984 o NSR-98).",
+        "NUEVO - CAMPOS QUE INFLUYEN EN LA CATEGORIA, MARCADOS: ano de construccion, material principal y sistema estructural llevan la marca DMI-DMO-DES; la zona de amenaza del selector de municipio y los selectores de capacidad de las calculadoras de muros y de cuantia dicen que la categoria la fija la zona segun A.3.1.3.",
+        "NUEVO - EL TITULO A Y LAS REGATAS LA USAN: la sugerencia del Titulo A marca NO CUMPLE cuando la capacidad declarada esta por debajo de la exigida, y advierte cuando no se ha declarado. Las regatas se verifican con la capacidad de su estructura; la del proyecto queda como respaldo."
+      ]
+    },
     {
       "version": "2.99.0",
       "fecha": "2026-09-19",
