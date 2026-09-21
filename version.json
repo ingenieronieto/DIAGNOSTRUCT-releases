@@ -1,11 +1,11 @@
 {
-  "version": "2.99.8",
+  "version": "2.99.9",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
     "NUEVO - SEMBRAR LA CARTILLA DE ALPINA SOPO: en Administracion, Sembrar, la opcion Fabrica Alpina Sopo (QTR-073-FAL-001) carga las 62 fichas de lesion levantadas del registro fotografico general y sus 132 fotos. No crea proyecto ni estructuras: como las fotos no dicen si la lesion esta en Liquida 1, Liquida 2 o Patio de Maniobra, las fichas entran en la estructura que se elija, cada una con la nota de que esa asignacion es provisional, y se reasignan en la cartilla. Entran sin revisar. Reimportar no duplica."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.8.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.9.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
