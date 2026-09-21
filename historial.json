@@ -2,6 +2,14 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.15",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - LESIONES EN EL VERIFICADOR DE FOTOS Y PLANOS: ademas de los ensayos, ahora revisa las lesiones de la cartilla y lista las que no tienen ni una sola foto subida y las que no estan marcadas en un plano. El semaforo y la tarjeta de Entregas se ponen en rojo si falta en una sola lesion.",
+        "NUEVO - PESTANA LOCALIZACION EN LA CARTILLA DE LESIONES: igual a la de los ensayos. Muestra todos los planos del proyecto con todas las lesiones marcadas, y al pasar sobre una se ve su foto. Las que no tienen punto en plano se listan arriba."
+      ]
+    },
+    {
       "version": "2.99.14",
       "fecha": "2026-09-21",
       "notas": [

@@ -1,12 +1,12 @@
 {
-  "version": "2.99.14",
+  "version": "2.99.15",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - MOVER UNA LESION A OTRA EDIFICACION: al guardar, la lesion quedaba en la edificacion de antes aunque el editor decia que se movia. La actualizacion con senal borraba la edificacion del envio desde antes de que existiera el selector; ahora viaja y la lesion pasa a la cartilla de la otra edificacion. Sin senal ya funcionaba.",
-    "NUEVO - ELEMENTO CUBIERTA LIVIANA: en el elemento de la lesion (y en los ensayos que usan la misma lista) se agrego Cubierta liviana, junto a Cubierta de concreto."
+    "NUEVO - LESIONES EN EL VERIFICADOR DE FOTOS Y PLANOS: ademas de los ensayos, ahora revisa las lesiones de la cartilla y lista las que no tienen ni una sola foto subida y las que no estan marcadas en un plano. El semaforo y la tarjeta de Entregas se ponen en rojo si falta en una sola lesion.",
+    "NUEVO - PESTANA LOCALIZACION EN LA CARTILLA DE LESIONES: igual a la de los ensayos. Muestra todos los planos del proyecto con todas las lesiones marcadas, y al pasar sobre una se ve su foto. Las que no tienen punto en plano se listan arriba."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.14.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.15.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
