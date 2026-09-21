@@ -2,6 +2,14 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.6",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - REPORTE, FILTRO POR ESTRUCTURA Y VISTA EN CASCADA: en la pestana Reporte de todos los modulos de ensayo hay una barra con Estructura (solo las que tienen ensayos de ese modulo, con su conteo, y los que no tienen estructura asignada) y Vista (un formato a la vez, o todos los formatos en cascada, uno debajo del otro). En cascada, Imprimir saca todos los que se ven.",
+        "NUEVO - LOCALIZACION, FOTO AL PASAR SOBRE EL PUNTO: en la pestana Localizacion, al pasar sobre el punto de un ensayo se abre un globo con la foto del ensayo en ejecucion (en regatas, la vista general; en nucleos, el proceso de extraccion; en ferroscan, la lamina), con su ID y elemento."
+      ]
+    },
+    {
       "version": "2.99.5",
       "fecha": "2026-09-21",
       "notas": [
