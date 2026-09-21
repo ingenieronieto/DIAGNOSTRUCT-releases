@@ -1,12 +1,11 @@
 {
-  "version": "2.99.3",
+  "version": "2.99.4",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - CUMPLE / NO CUMPLE OPCIONAL TAMBIEN EN LOS INFORMES: la misma opcion global apaga el dictamen en el informe de patologia (Word y formato QATRO) y en el informe gerencial. Quedan los valores medidos y los limites de la norma; salen las columnas VERIFICACION, VEREDICTO y CALIFICACION, la aceptacion de nucleos, los conteos de barras que cumplen y las zonas aprobadas o rechazadas de tintas. En el gerencial salen el indicador No cumple y los conteos por estructura y por ensayo.",
-    "CAMBIO - LA OPCION SE ENCUENTRA MAS FACIL: la pestana de Configuracion se llama ahora Informe y veredictos, y el selector CUMPLE / NO CUMPLE queda arriba, en su propio recuadro."
+    "NUEVO - PESTANA LOCALIZACION EN CADA MODULO DE ENSAYO: junto a Consolidado fotografico aparece Localizacion. Muestra todos los planos del proyecto, ordenados por estructura y del sotano al piso mas alto, con los puntos de los ensayos del modulo que se esta viendo y de ningun otro: en Regatas solo regatas, en Ferroscan solo ferroscan. Los planos sin ensayos de ese tipo tambien salen, y los ensayos sin punto en plano se listan arriba en rojo. Tocar un punto abre el reporte de ese ensayo."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.3.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.4.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
