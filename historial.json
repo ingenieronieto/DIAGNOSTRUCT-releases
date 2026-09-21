@@ -2,6 +2,14 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.17",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - CUADRO ROJO DE LA LESION AL PASAR POR ENCIMA: en la pestana Localizacion de la cartilla, al pasar sobre una lesion se revela su cuadro rojo y se oculta al salir. Si en la ficha se dibujo la zona afectada, se ve la zona; si no, el cuadro del punto.",
+        "NUEVO - DIBUJAR LA ZONA AFECTADA EN LA FICHA: en Ubicacion en plano, el boton Dibujar zona afectada permite arrastrar un rectangulo sobre el plano. Requiere la columna zona_plano en la base (SQL entregado aparte); sin ella la lesion se guarda sin la zona."
+      ]
+    },
+    {
       "version": "2.99.16",
       "fecha": "2026-09-21",
       "notas": [
