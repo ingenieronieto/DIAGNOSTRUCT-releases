@@ -1,11 +1,12 @@
 {
-  "version": "2.99.13",
+  "version": "2.99.14",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - CARTILLA DE LESIONES, GUARDAR A MANO: el editor de cada lesion tiene los botones Guardar y Guardar y cerrar junto a Cerrar editor, y dice si hay cambios sin guardar o a que hora quedo guardado. El guardado automatico sigue. Cerrar el editor con cambios pendientes ahora los guarda primero; antes, cerrar enseguida despues de un cambio lo perdia."
+    "CORREGIDO - MOVER UNA LESION A OTRA EDIFICACION: al guardar, la lesion quedaba en la edificacion de antes aunque el editor decia que se movia. La actualizacion con senal borraba la edificacion del envio desde antes de que existiera el selector; ahora viaja y la lesion pasa a la cartilla de la otra edificacion. Sin senal ya funcionaba.",
+    "NUEVO - ELEMENTO CUBIERTA LIVIANA: en el elemento de la lesion (y en los ensayos que usan la misma lista) se agrego Cubierta liviana, junto a Cubierta de concreto."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.13.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.14.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

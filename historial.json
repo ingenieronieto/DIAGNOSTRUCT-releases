@@ -2,6 +2,14 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.14",
+      "fecha": "2026-09-21",
+      "notas": [
+        "CORREGIDO - MOVER UNA LESION A OTRA EDIFICACION: al guardar, la lesion quedaba en la edificacion de antes aunque el editor decia que se movia. La actualizacion con senal borraba la edificacion del envio desde antes de que existiera el selector; ahora viaja y la lesion pasa a la cartilla de la otra edificacion. Sin senal ya funcionaba.",
+        "NUEVO - ELEMENTO CUBIERTA LIVIANA: en el elemento de la lesion (y en los ensayos que usan la misma lista) se agrego Cubierta liviana, junto a Cubierta de concreto."
+      ]
+    },
+    {
       "version": "2.99.13",
       "fecha": "2026-09-21",
       "notas": [
