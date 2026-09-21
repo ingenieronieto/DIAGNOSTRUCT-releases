@@ -2,6 +2,13 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.10",
+      "fecha": "2026-09-21",
+      "notas": [
+        "CAMBIO - TARJETA DE LA EVALUACION NSR-10 A.10 IGUAL A LAS DEMAS: ahora es la misma tarjeta que el resto de Patologia constructiva, con las mismas letras, tamanos y botones. Solo se distingue por el fondo azul muy claro, el borde azul y la etiqueta PRIORITARIO en lugar de DISPONIBLE."
+      ]
+    },
+    {
       "version": "2.99.9",
       "fecha": "2026-09-21",
       "notas": [
