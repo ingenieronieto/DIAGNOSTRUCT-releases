@@ -2,6 +2,13 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.12",
+      "fecha": "2026-09-21",
+      "notas": [
+        "CAMBIO - CARTILLA DE LESIONES, HERRAMIENTAS ARRIBA: los recuadros Registro fotografico (renumerar FOTO 001 en adelante) y Nombre de todas las lesiones van ahora arriba, antes de los filtros y de la lista de lesiones, y el aviso de Listo sale donde se ve."
+      ]
+    },
+    {
       "version": "2.99.11",
       "fecha": "2026-09-21",
       "notas": [

@@ -1,11 +1,11 @@
 {
-  "version": "2.99.11",
+  "version": "2.99.12",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
-    "ARREGLO - SEMBRAR LA CARTILLA DE ALPINA SOPO: la importacion se detenia en LES-01 con el error lesiones_material_lesion_check. El campo de material de la lesion es el que separa la cartilla general de la de madera y solo admite CONCRETO o MADERA; las fichas de acero, mamposteria y otros materiales ahora entran en la cartilla general con su material real en el material constitutivo."
+    "CAMBIO - CARTILLA DE LESIONES, HERRAMIENTAS ARRIBA: los recuadros Registro fotografico (renumerar FOTO 001 en adelante) y Nombre de todas las lesiones van ahora arriba, antes de los filtros y de la lista de lesiones, y el aviso de Listo sale donde se ve."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.11.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.12.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
