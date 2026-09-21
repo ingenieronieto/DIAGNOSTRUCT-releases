@@ -2,6 +2,14 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.7",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - EXTRACCION DE ACERO ESTRUCTURAL: el modulo Extraccion de acero pregunta primero que se extrae, barra de refuerzo o acero estructural. En estructural se escoge el perfil (IPE, IPN, HEA, HEB, HEM, W, S, HP, armado, UPN, UPE, C, MC, T, angulos iguales, desiguales y dobles, PTE cuadrado, rectangular y circular, tuberia, PHR C, PHR G, Z, omega, steel deck, plancha, platina, barras), su designacion, las medidas de la seccion segun la forma, la zona de corte, la orientacion y la probeta. fy, fu y alargamiento se calculan con el area de la probeta y se comparan con el grado ASTM (A36, A572 Gr 50, A992, A500 Gr B y C, A53, A1011); si el grado no se conoce, se reportan sin dictamen. La hoja, la lista y el informe muestran el perfil.",
+        "NUEVO - ULTRASONIDO EN METALES, PERFILES Y ELEMENTOS COMPLETOS: se escoge el perfil de la misma lista de la extraccion, con su designacion, y se agregaron los tipos lamina delgada (PHR), perfil T y barra, y los elementos viga carrilera, riostra de cubierta, larguero, pilote metalico, perfil armado, lamina delgada, steel deck, conector de cortante y platina de conexion."
+      ]
+    },
+    {
       "version": "2.99.6",
       "fecha": "2026-09-21",
       "notas": [
