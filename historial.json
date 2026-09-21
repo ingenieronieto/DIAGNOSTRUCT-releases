@@ -2,6 +2,14 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.16",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - ABRIR UNA LESION DESDE EL VERIFICADOR: tocar una lesion pendiente abre la cartilla en su edificacion con la ficha en edicion, para agregarle la foto o marcarla en el plano.",
+        "MEJORADO - CUADRO ROJO SIN LOCALIZACION EN PLANO: en las pestanas Localizacion (ensayos y lesiones) cada ID va en su etiqueta, el cuadro se despliega con Ver todas y se estira arrastrando la esquina inferior derecha."
+      ]
+    },
+    {
       "version": "2.99.15",
       "fecha": "2026-09-21",
       "notas": [

@@ -1,12 +1,12 @@
 {
-  "version": "2.99.15",
+  "version": "2.99.16",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - LESIONES EN EL VERIFICADOR DE FOTOS Y PLANOS: ademas de los ensayos, ahora revisa las lesiones de la cartilla y lista las que no tienen ni una sola foto subida y las que no estan marcadas en un plano. El semaforo y la tarjeta de Entregas se ponen en rojo si falta en una sola lesion.",
-    "NUEVO - PESTANA LOCALIZACION EN LA CARTILLA DE LESIONES: igual a la de los ensayos. Muestra todos los planos del proyecto con todas las lesiones marcadas, y al pasar sobre una se ve su foto. Las que no tienen punto en plano se listan arriba."
+    "NUEVO - ABRIR UNA LESION DESDE EL VERIFICADOR: tocar una lesion pendiente abre la cartilla en su edificacion con la ficha en edicion, para agregarle la foto o marcarla en el plano.",
+    "MEJORADO - CUADRO ROJO SIN LOCALIZACION EN PLANO: en las pestanas Localizacion (ensayos y lesiones) cada ID va en su etiqueta, el cuadro se despliega con Ver todas y se estira arrastrando la esquina inferior derecha."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.15.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.16.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
