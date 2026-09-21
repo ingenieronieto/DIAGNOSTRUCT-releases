@@ -1,11 +1,11 @@
 {
-  "version": "2.99.4",
+  "version": "2.99.5",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - PESTANA LOCALIZACION EN CADA MODULO DE ENSAYO: junto a Consolidado fotografico aparece Localizacion. Muestra todos los planos del proyecto, ordenados por estructura y del sotano al piso mas alto, con los puntos de los ensayos del modulo que se esta viendo y de ningun otro: en Regatas solo regatas, en Ferroscan solo ferroscan. Los planos sin ensayos de ese tipo tambien salen, y los ensayos sin punto en plano se listan arriba en rojo. Tocar un punto abre el reporte de ese ensayo."
+    "NUEVO - FRENTE DE CARBONATACION, LOCALIZACION DEL NUCLEO: si el nucleo asociado tiene punto en plano, la localizacion del FDC es la del nucleo y queda bloqueada en el formulario (se corrige en el ensayo de extraccion y el FDC la sigue solo). Si el nucleo no tiene plano, el punto se marca dentro del FDC, con un aviso. La hoja del FDC, la pestana Localizacion y las laminas del informe usan la misma regla."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.4.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.5.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

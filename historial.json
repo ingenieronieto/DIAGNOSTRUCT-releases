@@ -2,6 +2,13 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.5",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - FRENTE DE CARBONATACION, LOCALIZACION DEL NUCLEO: si el nucleo asociado tiene punto en plano, la localizacion del FDC es la del nucleo y queda bloqueada en el formulario (se corrige en el ensayo de extraccion y el FDC la sigue solo). Si el nucleo no tiene plano, el punto se marca dentro del FDC, con un aviso. La hoja del FDC, la pestana Localizacion y las laminas del informe usan la misma regla."
+      ]
+    },
+    {
       "version": "2.99.4",
       "fecha": "2026-09-21",
       "notas": [
