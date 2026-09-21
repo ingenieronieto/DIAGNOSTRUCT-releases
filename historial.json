@@ -2,6 +2,13 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.2",
+      "fecha": "2026-09-21",
+      "notas": [
+        "NUEVO - CUMPLE / NO CUMPLE OPCIONAL EN LOS FORMATOS DE ENSAYO: en Configuracion, seccion del informe, hay una opcion global de la empresa. Apagada, las hojas de regatas, ferroscan, nucleos, traccion de acero, potencial de corrosion, espesores, pulso ultrasonico, profundidad de carbonatacion y tintas penetrantes muestran los valores medidos y el minimo de la norma, pero no el dictamen ni el veredicto del inspector. Por defecto sigue encendida, como estaba."
+      ]
+    },
+    {
       "version": "2.99.1",
       "fecha": "2026-09-21",
       "notas": [
