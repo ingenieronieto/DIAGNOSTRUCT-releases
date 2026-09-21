@@ -1,11 +1,11 @@
 {
-  "version": "2.99.10",
+  "version": "2.99.11",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
-    "CAMBIO - TARJETA DE LA EVALUACION NSR-10 A.10 IGUAL A LAS DEMAS: ahora es la misma tarjeta que el resto de Patologia constructiva, con las mismas letras, tamanos y botones. Solo se distingue por el fondo azul muy claro, el borde azul y la etiqueta PRIORITARIO en lugar de DISPONIBLE."
+    "ARREGLO - SEMBRAR LA CARTILLA DE ALPINA SOPO: la importacion se detenia en LES-01 con el error lesiones_material_lesion_check. El campo de material de la lesion es el que separa la cartilla general de la de madera y solo admite CONCRETO o MADERA; las fichas de acero, mamposteria y otros materiales ahora entran en la cartilla general con su material real en el material constitutivo."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.10.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.11.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

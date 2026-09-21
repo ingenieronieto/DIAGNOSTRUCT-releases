@@ -2,6 +2,13 @@
   "generado": "2026-09-21",
   "versiones": [
     {
+      "version": "2.99.11",
+      "fecha": "2026-09-21",
+      "notas": [
+        "ARREGLO - SEMBRAR LA CARTILLA DE ALPINA SOPO: la importacion se detenia en LES-01 con el error lesiones_material_lesion_check. El campo de material de la lesion es el que separa la cartilla general de la de madera y solo admite CONCRETO o MADERA; las fichas de acero, mamposteria y otros materiales ahora entran en la cartilla general con su material real en el material constitutivo."
+      ]
+    },
+    {
       "version": "2.99.10",
       "fecha": "2026-09-21",
       "notas": [
