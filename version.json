@@ -1,8 +1,10 @@
 {
-  "version": "2.99.24",
+  "version": "2.99.25",
   "fecha": "2026-09-22",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - LOS PATRONES DE FISURACION SALEN SEGUN EL ELEMENTO: la ficha ofrece los patrones que tiene sentido buscar en el elemento elegido (placa de entrepiso, contrapiso, viga, columna, muro, mamposteria, cimentacion, escalera) y deja ver los demas a un clic. El catalogo paso de 10 a 18 patrones: inferior en el centro del pano (momento positivo), superior sobre los apoyos (momento negativo), perimetral alrededor de la columna (punzonamiento), siguiendo nervios o instalaciones embebidas, diagonal en esquina reentrante, contrapiso sin juntas de control, vertical por aplastamiento en columnas y muros, y horizontal en la junta de pega de la mamposteria. Cada uno con su esquema y con su lectura en el plan de intervencion, el plan de monitoreo, los procesos de falla y la evaluacion A.10.",
+    "CORREGIDO - FILTRO POR PISO: los niveles que no son piso ni sotano («Cubierta», «Fachada norte») volvian a la lista en minuscula. Ahora se muestran como se escribieron.",
     "NUEVO - PATRON DE FISURACION CON ESQUEMAS: la ficha muestra un dibujo de como se ve cada patron (fisura en rojo sobre el elemento) y se elige tocando la tarjeta; son los mismos esquemas que salen en la lamina de la diagnosis del informe. Si el texto de la ficha ya delata un patron, su tarjeta sale marcada como RECONOCIDO EN EL TEXTO.",
     "NUEVO - PATRON «EN JUNTA CONSTRUCTIVA DE DILATACION»: antes se leia como un encuentro entre elementos. Ahora tiene patron propio, su esquema y su causa (junta de dilatacion trabajando), y arrastra al plan de intervencion (sello elastico y perfil de junta, nunca mortero rigido), al plan de monitoreo (testigo y fisurometro), a los procesos de falla y a la evaluacion A.10 (uniones).",
     "MEJOR - EL NIVEL DE LA LESION YA NO ES TEXTO LIBRE: en la ficha se elige de los niveles que declara la edificacion (Piso 1, Sotano 2...), que son los mismos con los que se suben los planos. Asi el plano se empareja por edificacion + nivel sin depender de como se escriba. Lo que ya estaba guardado con otro texto («Nivel 1») no se pierde: entra como una opcion mas y se sigue emparejando igual. El filtro por piso agrupa las dos formas en una sola casilla y en los listados ya no sale «Nivel Nivel 1» ni la clave interna «piso_1».",
@@ -20,6 +22,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.24.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.25.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
