@@ -1,12 +1,14 @@
 {
-  "version": "2.99.17",
+  "version": "2.99.18",
   "fecha": "2026-09-21",
   "minima": "1.70.0",
   "notas": [
-    "NUEVO - CUADRO ROJO DE LA LESION AL PASAR POR ENCIMA: en la pestana Localizacion de la cartilla, al pasar sobre una lesion se revela su cuadro rojo y se oculta al salir. Si en la ficha se dibujo la zona afectada, se ve la zona; si no, el cuadro del punto.",
-    "NUEVO - DIBUJAR LA ZONA AFECTADA EN LA FICHA: en Ubicacion en plano, el boton Dibujar zona afectada permite arrastrar un rectangulo sobre el plano. Requiere la columna zona_plano en la base (SQL entregado aparte); sin ella la lesion se guarda sin la zona."
+    "NUEVO - DIAGNOSIS EN REGISTRO TECNICO: el borrador redacta cada mecanismo con sus valores y su norma (recubrimiento NSR-10 C.7.7.1; carbonatacion RILEM CPC-18 y UNE-EN 14630, punto a punto, con x = K raiz de t y modelo de Tuutti; corrosion ASTM C876 separando probable de incierta; nucleos NTC 3658, NTC 673 y NSR-10 C.5.6.5.4; esclerometria como resistencia superficial aparente; ultrasonido ASTM C597 con la escala de Whitehurst; humedad NSR-10 C.4; fisuracion ACI 224.1R) y cierra con la cadena causal marcada [CONFIRMAR].",
+    "CONCORDANCIA CON CAMPO: la causa de cada fisura sale de la CAUSA PROBABLE escrita en la ficha, que se cita en el informe; junta fria, vanos y encuentros entre elementos quedan como causa propia, fuera de la cadena de deterioro. Auditado contra las 49 fichas de Zapayan y el criterio de los informes de la boveda.",
+    "NUEVO - ESQUEMAS DE DIAGNOSIS: arbol causal, carbonatacion contra recubrimiento, modelo de Tuutti, patrones de fisuracion y matriz lesion-causa, tambien en el formato QATRO.",
+    "NUEVO - PATRON DE FISURACION EN LA FICHA: en fisuras y grietas se elige el patron; los [CONFIRMAR] cuentan como pendientes junto a los [COMPLETAR]."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.17.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.18.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
