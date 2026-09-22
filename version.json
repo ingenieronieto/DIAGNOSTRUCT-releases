@@ -1,8 +1,10 @@
 {
-  "version": "2.99.26",
+  "version": "2.99.27",
   "fecha": "2026-09-22",
   "minima": "1.70.0",
   "notas": [
+    "MEJOR - LOS ESQUEMAS DE LOS PATRONES SE VEN COMO LO QUE SON: cada uno dibuja el elemento en obra (concreto con su agregado, mamposteria con sus hiladas, apoyos rayados, refuerzo y cargas) y la fisura ya no es una raya: nace ancha donde el esfuerzo la abre y muere en punta donde se detiene, con manchas de oxido y el recubrimiento a punto de saltar donde corresponde. La retraccion en mapa es una red cerrada de poligonos. Son los mismos esquemas de la lamina de diagnosis del informe.",
+    "MEJOR - LA DIAGONAL DE CORTANTE SE OFRECE TAMBIEN EN COLUMNAS Y MUROS (columna corta y muro de corte); antes solo salia en vigas, losas y escaleras.",
     "CORREGIDO - LA JUNTA CONSTRUCTIVA DE DILATACION SE OFRECE EN TODOS LOS ELEMENTOS: una junta de dilatacion parte la edificacion entera, asi que aparece se elija columna, viga, placa, contrapiso, muro, mamposteria, cimentacion o escalera. Antes faltaba en columna, cimentacion y escalera. La junta de vaciado se ofrece tambien en escaleras.",
     "NUEVO - LOS PATRONES DE FISURACION SALEN SEGUN EL ELEMENTO: la ficha ofrece los patrones que tiene sentido buscar en el elemento elegido (placa de entrepiso, contrapiso, viga, columna, muro, mamposteria, cimentacion, escalera) y deja ver los demas a un clic. El catalogo paso de 10 a 18 patrones: inferior en el centro del pano (momento positivo), superior sobre los apoyos (momento negativo), perimetral alrededor de la columna (punzonamiento), siguiendo nervios o instalaciones embebidas, diagonal en esquina reentrante, contrapiso sin juntas de control, vertical por aplastamiento en columnas y muros, y horizontal en la junta de pega de la mamposteria. Cada uno con su esquema y con su lectura en el plan de intervencion, el plan de monitoreo, los procesos de falla y la evaluacion A.10.",
     "CORREGIDO - FILTRO POR PISO: los niveles que no son piso ni sotano («Cubierta», «Fachada norte») volvian a la lista en minuscula. Ahora se muestran como se escribieron.",
@@ -23,6 +25,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.26.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.27.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
