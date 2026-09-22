@@ -1,8 +1,9 @@
 {
-  "version": "2.99.21",
+  "version": "2.99.22",
   "fecha": "2026-09-22",
   "minima": "1.70.0",
   "notas": [
+    "MEJOR - EL PLANO DE LA LESION SE ELIGE SOLO: en la ficha, «Plano de referencia» ya no lista los planos de las otras edificaciones, sino los de la edificacion de la lesion, y si la ficha trae el nivel se selecciona el plano de ese piso (o el unico de la edificacion). El plano ya guardado se sigue viendo aunque sea de otra edificacion, y si la edificacion no tiene planos se ofrecen todos con un aviso.",
     "NUEVO - EL ANALISIS DE LA CARTILLA VA EN EL INFORME: capitulo «Analisis estadistico de la cartilla de lesiones» con las tortas (grado, recuperacion, prioridad, familia), la matriz de afectacion poblada como mapa de color, las barras por piso y edificacion, el Pareto de causas probables leidas de la ficha, las tablas de distribucion, comparacion entre edificaciones, condiciones asociadas a las lesiones severas y completitud, y el avance esperado si no se interviene con las tasas declaradas. Las figuras van en blanco, negro y grises, con el rojo solo para lo critico.",
     "CORREGIDO - LA ZONA AFECTADA NO SALIA EN LA VISTA POR PISO Y EDIFICACION: el recuadro rojo de la lesion solo se dibujaba en «Todos los planos»; ahora sale tambien al ver un plano por piso o filtrar por edificacion.",
     "NUEVO - CARTILLA DE LESIONES, PESTANA ANALISIS: tablero estadistico de las fichas con tortas (grado, recuperacion, prioridad, familia, superficie, estabilidad), barras por tipo, elemento y piso, mapas de calor (matriz superficie x grado, elemento x familia, edificacion x prioridad), Pareto de causas probables leidas de la ficha, estadistica de afectacion por edificacion, asociaciones con las lesiones severas y el avance si no se interviene (escenario por grado a 5-20 anos con ritmo ajustable y lesiones que llegarian a grado 4). Localizacion junta las dos vistas de planos.",
@@ -16,6 +17,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.21.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.22.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
