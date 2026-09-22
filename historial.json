@@ -2,6 +2,21 @@
   "generado": "2026-09-22",
   "versiones": [
     {
+      "version": "2.99.20",
+      "fecha": "2026-09-22",
+      "notas": [
+        "NUEVO - CARTILLA DE LESIONES, PESTANA ANALISIS: tablero estadistico de las fichas con tortas (grado, recuperacion, prioridad, familia, superficie, estabilidad), barras por tipo, elemento y piso, mapas de calor (matriz superficie x grado, elemento x familia, edificacion x prioridad), Pareto de causas probables leidas de la ficha, estadistica de afectacion por edificacion, asociaciones con las lesiones severas y el avance si no se interviene (escenario por grado a 5-20 anos con ritmo ajustable y lesiones que llegarian a grado 4). Localizacion junta las dos vistas de planos.",
+        "NUEVO - RESUMEN EJECUTIVO: una pagina al inicio del informe con el semaforo por estructura (regla explicita: A.10, etapa de los procesos de falla, prioridades), la lamina resumen y la conclusion del ingeniero primero.",
+        "NUEVO - MAPAS DE PATOLOGIA POR PISO: cada plano con sus lesiones por grado y sus ensayos con el resultado codificado (despasivado, potencial bajo -350 mV), y la lectura de donde coinciden dano y ensayo critico. Mas la correlacion espacial lesion-ensayo: cada lesion ubicada se cruza con el ensayo mas cercano del mismo plano.",
+        "NUEVO - VIDA UTIL RESIDUAL POR CARBONATACION: anos hasta la despasivacion por punto con x = K*raiz(t), con esquema y tabla; la propagacion no se cuantifica (criterio Tuutti de los informes).",
+        "NUEVO - REPRESENTATIVIDAD DE LA CAMPANA: que sostiene la campana y que no (nucleos por zona, lecturas por punto, niveles sin ensayo, dispersion).",
+        "NUEVO - PLAN DE INTERVENCION con tecnica, principio EN 1504-9, corte previo de la causa y cantidades de la cartilla por prioridad; y PLAN DE MONITOREO (testigos, distorsiones, potencial) con frecuencia, duracion y umbral de alerta.",
+        "NUEVO - INDICE DE EVIDENCIAS al final: cada ensayo y lesion con su resultado y los capitulos donde se cita; senala evidencia no usada y citas sin respaldo.",
+        "NUEVO - AUDITOR INTERNO antes de generar: veredicto listo / emitir con advertencias / no emitir (marcas de borrador, contradicciones con resultados, normas mal citadas); con no emitir pide confirmacion.",
+        "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
+      ]
+    },
+    {
       "version": "2.99.19",
       "fecha": "2026-09-22",
       "notas": [
