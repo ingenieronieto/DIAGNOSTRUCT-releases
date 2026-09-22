@@ -1,8 +1,9 @@
 {
-  "version": "2.99.29",
+  "version": "2.99.30",
   "fecha": "2026-09-22",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - REFRESCAR DESCRIPCIONES AUTOMATICAS: boton en la cartilla que vuelve a redactar las descripciones que armo la ficha, con la redaccion de hoy (por ejemplo, para que digan el patron de fisuracion). Antes de guardar dice cuantas se cambiarian, cuantas tienen texto escrito a mano —que NO se tocan— y cuantas ya estan al dia, y muestra el antes y el despues de la primera.",
     "NUEVO - DANO POR FUEGO Y DESPRENDIMIENTO POR CORROSION EN LA CLASIFICACION DE LESIONES: en Quimica, «Alteracion termica (fuego)» con el color que delata la temperatura alcanzada (rosado/rojo 300-600 °C, gris blanquecino 600-950 °C, beige mas de 950 °C) y la calcinacion; en Mecanica, «Dano mecanico por fuego» (spalling explosivo y fisuracion en malla) y «Desprendimiento por corrosion» (fisura sobre la barra, delaminacion y recubrimiento caido). Cada tipo y subtipo nuevo trae su cuadro de ayuda con la definicion y el termino en ingles (Concrete Society TR68, ACI 201.1R y 222R). Entran en la descripcion automatica, en las etapas del proceso de falla por corrosion y en el plan de intervencion.",
     "NUEVO - EL PATRON DE FISURACION ELEGIDO SALE EN LA DESCRIPCION: al marcarlo en la ficha, la descripcion automatica lo dice en la misma oracion de la clasificacion («Fisuras en elemento portante, de trazo escalonado, siguiendo las juntas de la mamposteria»). Es una observacion de la fisura, no una causa: la causa la sigue escribiendo el patologo.",
     "CORREGIDO - EL NIVEL EN LA DESCRIPCION SALIA COMO CLAVE INTERNA: desde que el nivel se elige de la estructura, la descripcion decia «piso_1»; ahora dice «piso 1» (y «sotano 2»), y lo escrito a mano se respeta.",
@@ -28,6 +29,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.29.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.30.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
