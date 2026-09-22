@@ -1,6 +1,17 @@
 {
-  "generado": "2026-09-21",
+  "generado": "2026-09-22",
   "versiones": [
+    {
+      "version": "2.99.19",
+      "fecha": "2026-09-22",
+      "notas": [
+        "CAMBIO - EL INFORME DE PATOLOGIA YA NO TRAE EVALUACION DE RIESGO: sin evento, el capitulo es Grado de afectacion y prioridad de intervencion, con la matriz de afectacion de la cartilla (grado, estabilidad, nivel de recuperacion por elemento, con esquema) y la prioridad urgente / corto / mediano plazo por lesion. Con evento (post-sismo) se conserva la evaluacion de riesgo.",
+        "NUEVO - CORRELACION DE RESULTADOS: antes de la diagnosis, los resultados se leen contra el entorno (humedad, temperatura, lluvia, vegetacion), la estructura (epoca normativa, edad, sistema, A.10) y entre ensayos; cada lectura dice si la condicion explica, es coherente, contradice o falta un dato, con matriz esquematica. Con varias estructuras, tabla comparativa que separa construccion de ambiente.",
+        "NUEVO - ESQUEMAS DE PROCESOS DE FALLA EN LA DIAGNOSIS: cada mecanismo (corrosion por carbonatacion, humedad, asentamiento, juntas y encuentros, solicitacion) se dibuja como secuencia de etapas con la etapa en que esta la estructura segun la evidencia de campo (cumplidas, estado actual, aun no ocurre); la carbonatacion lleva el corte del elemento en cada etapa, y el texto dice la etapa, su evidencia y lo que sigue si no se interviene.",
+        "MEJORADO - EVALUACION NSR-10 A.10: norma de la epoca segun el ano de construccion, evidencia de campo bajo cada aspecto (corrosion, fisuras por patron, desplomes y nivelaciones), boton para marcar lo que sostiene la evidencia, redaccion del por que desde la evidencia, y aviso cuando la calificacion es mas favorable que la evidencia (el informe la marca [COMPLETAR] si no se justifica).",
+        "CORREGIDO - el hallazgo de elementos inestables no se disparaba: leia un campo que la ficha no usa."
+      ]
+    },
     {
       "version": "2.99.18",
       "fecha": "2026-09-21",
