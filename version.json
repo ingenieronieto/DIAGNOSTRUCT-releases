@@ -1,8 +1,10 @@
 {
-  "version": "2.99.23",
+  "version": "2.99.24",
   "fecha": "2026-09-22",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - PATRON DE FISURACION CON ESQUEMAS: la ficha muestra un dibujo de como se ve cada patron (fisura en rojo sobre el elemento) y se elige tocando la tarjeta; son los mismos esquemas que salen en la lamina de la diagnosis del informe. Si el texto de la ficha ya delata un patron, su tarjeta sale marcada como RECONOCIDO EN EL TEXTO.",
+    "NUEVO - PATRON «EN JUNTA CONSTRUCTIVA DE DILATACION»: antes se leia como un encuentro entre elementos. Ahora tiene patron propio, su esquema y su causa (junta de dilatacion trabajando), y arrastra al plan de intervencion (sello elastico y perfil de junta, nunca mortero rigido), al plan de monitoreo (testigo y fisurometro), a los procesos de falla y a la evaluacion A.10 (uniones).",
     "MEJOR - EL NIVEL DE LA LESION YA NO ES TEXTO LIBRE: en la ficha se elige de los niveles que declara la edificacion (Piso 1, Sotano 2...), que son los mismos con los que se suben los planos. Asi el plano se empareja por edificacion + nivel sin depender de como se escriba. Lo que ya estaba guardado con otro texto («Nivel 1») no se pierde: entra como una opcion mas y se sigue emparejando igual. El filtro por piso agrupa las dos formas en una sola casilla y en los listados ya no sale «Nivel Nivel 1» ni la clave interna «piso_1».",
     "MEJOR - EL PLANO DE LA LESION SE ELIGE SOLO: en la ficha, «Plano de referencia» ya no lista los planos de las otras edificaciones, sino los de la edificacion de la lesion, y si la ficha trae el nivel se selecciona el plano de ese piso (o el unico de la edificacion). El plano ya guardado se sigue viendo aunque sea de otra edificacion, y si la edificacion no tiene planos se ofrecen todos con un aviso.",
     "NUEVO - EL ANALISIS DE LA CARTILLA VA EN EL INFORME: capitulo «Analisis estadistico de la cartilla de lesiones» con las tortas (grado, recuperacion, prioridad, familia), la matriz de afectacion poblada como mapa de color, las barras por piso y edificacion, el Pareto de causas probables leidas de la ficha, las tablas de distribucion, comparacion entre edificaciones, condiciones asociadas a las lesiones severas y completitud, y el avance esperado si no se interviene con las tasas declaradas. Las figuras van en blanco, negro y grises, con el rojo solo para lo critico.",
@@ -18,6 +20,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.23.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.24.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
