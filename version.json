@@ -1,8 +1,9 @@
 {
-  "version": "2.99.22",
+  "version": "2.99.23",
   "fecha": "2026-09-22",
   "minima": "1.70.0",
   "notas": [
+    "MEJOR - EL NIVEL DE LA LESION YA NO ES TEXTO LIBRE: en la ficha se elige de los niveles que declara la edificacion (Piso 1, Sotano 2...), que son los mismos con los que se suben los planos. Asi el plano se empareja por edificacion + nivel sin depender de como se escriba. Lo que ya estaba guardado con otro texto («Nivel 1») no se pierde: entra como una opcion mas y se sigue emparejando igual. El filtro por piso agrupa las dos formas en una sola casilla y en los listados ya no sale «Nivel Nivel 1» ni la clave interna «piso_1».",
     "MEJOR - EL PLANO DE LA LESION SE ELIGE SOLO: en la ficha, «Plano de referencia» ya no lista los planos de las otras edificaciones, sino los de la edificacion de la lesion, y si la ficha trae el nivel se selecciona el plano de ese piso (o el unico de la edificacion). El plano ya guardado se sigue viendo aunque sea de otra edificacion, y si la edificacion no tiene planos se ofrecen todos con un aviso.",
     "NUEVO - EL ANALISIS DE LA CARTILLA VA EN EL INFORME: capitulo «Analisis estadistico de la cartilla de lesiones» con las tortas (grado, recuperacion, prioridad, familia), la matriz de afectacion poblada como mapa de color, las barras por piso y edificacion, el Pareto de causas probables leidas de la ficha, las tablas de distribucion, comparacion entre edificaciones, condiciones asociadas a las lesiones severas y completitud, y el avance esperado si no se interviene con las tasas declaradas. Las figuras van en blanco, negro y grises, con el rojo solo para lo critico.",
     "CORREGIDO - LA ZONA AFECTADA NO SALIA EN LA VISTA POR PISO Y EDIFICACION: el recuadro rojo de la lesion solo se dibujaba en «Todos los planos»; ahora sale tambien al ver un plano por piso o filtrar por edificacion.",
@@ -17,6 +18,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.22.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.23.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
