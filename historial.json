@@ -2,6 +2,18 @@
   "generado": "2026-09-23",
   "versiones": [
     {
+      "version": "2.99.33",
+      "fecha": "2026-09-23",
+      "notas": [
+        "NUEVO - LOS HALLAZGOS SE ARMAN CON LO DETECTADO: el campo «Hallazgos de la inspeccion» trae la lista de lo que encontraron las lesiones y los ensayos —lo critico, lo que registra la cartilla y el resultado de cada ensayo con su cifra y su norma—, se marca lo que va al informe y se escribe solo, un parrafo por hallazgo. Las cifras son las MISMAS del capitulo de resultados: no se vuelve a contar nada. Despues se edita como texto.",
+        "NUEVO - ALTERNATIVAS DE INTERVENCION, EN OPCIONES Y SELECCION MULTIPLE: las que propone la evidencia se marcan desde el mismo campo, cada una con la medicion que la disparo.",
+        "CORREGIDO - LA CAPACIDAD DE DISIPACION ES UNA POR EDIFICACION, NO DEL PROYECTO: se declara en la ficha de cada estructura (y ahora tambien desde el panel del informe, edificacion por edificacion). Un proyecto puede tener bloques de epocas y sistemas distintos, y aplicarle a todos la misma capacidad es juzgar con una regla que no es la suya. Sin declarar, la cuantia de ESA estructura se reporta sin veredicto; ya no hereda la de otra.",
+        "NUEVO - ESTADO, OCUPACION, ACCESO, SERVICIOS, MANTENIMIENTO Y CONDICION GENERAL SE ELIGEN DE UNA LISTA: van a una tabla del informe, y escritos a mano salian cada vez con otras palabras. La condicion general es una escala de buena a critica que dice que implica para la intervencion. Lo que una ficha vieja ya tenia escrito NO se pierde: entra como una opcion mas.",
+        "NUEVO - SUELO DE FUNDACION Y RIESGOS GEOTECNICOS CON SUS OPCIONES: el suelo, de roca a relleno antropico (no es el perfil sismico, que va aparte); los riesgos, de seleccion MULTIPLE —remocion en masa, licuacion, expansividad, colapsabilidad, socavacion, erosion, subsidencia, asentamientos, nivel freatico, inundacion, talud y falla geologica—, porque un talud puede tener varios a la vez. «Ninguno identificado» es excluyente y se puede dejar constancia de que no hay.",
+        "MEJOR - LAS CONTRADICCIONES SE RESUELVEN MARCANDO, NO ESCRIBIENDO DE CERO: cada lectura que no cierra ofrece las salidas conocidas del oficio ya redactadas con su norma (el potencial tomado sin prehumedecer, los puntos que no coinciden con el dano, la esclerometria leida como resistencia, el microclima del elemento, la fuente local de humedad, el error de captura...). Se marcan las que aplican, se agrega lo propio si se quiere, y la pantalla muestra como va a salir en el informe. Lo que quede por hacer para cerrarlas sale en el capitulo."
+      ]
+    },
+    {
       "version": "2.99.32",
       "fecha": "2026-09-23",
       "notas": [
