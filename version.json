@@ -1,8 +1,13 @@
 {
-  "version": "2.99.31",
-  "fecha": "2026-09-22",
+  "version": "2.99.32",
+  "fecha": "2026-09-23",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - LAS CONTRADICCIONES SE SUBSANAN ANTES DE IMPRIMIR: la pantalla del informe lista las lecturas que no cierran (contradice / revisar) y deja resolver cada una A DECISION DEL PROFESIONAL: queda explicada con su razon, se retira porque el dato no sirve, o se deja pendiente. Lo que escriba sale impreso junto a la lectura en el capitulo de correlacion; lo que deje pendiente sale como punto por resolver. La app no cierra ninguna sola.",
+    "CORREGIDO - SIN CAPACIDAD DE DISIPACION DECLARADA NO HAY VEREDICTO DE CUANTIA: con «No se conoce» en la ficha de la estructura, las regatas reportan la cuantia existente y los limites de referencia, pero NO dicen cumple ni no cumple, porque el limite que exige la NSR-10 depende de esa capacidad (A.3.1.3). El informe lo dice con todas sus letras y esas regatas no cuentan como incumplimientos.",
+    "MEJOR - COLOR EN LOS ESQUEMAS Y LAS GRAFICAS DEL INFORME: el semaforo del resumen ejecutivo va encendido (rojo, ambar, verde) con su halo, las prioridades y las etapas de los procesos de falla llevan color, y las laminas de la cartilla (tortas, matriz de afectacion, barras y Pareto) usan la escala de severidad. El texto y las tablas siguen en blanco y negro.",
+    "MEJOR - QUIEN FIRMA VA AL FINAL: el bloque de firmantes quedo justo antes del boton de generar, que es cuando se decide.",
+    "MEJOR - EL ARCHIVO SALE CON LA FECHA DEL DIA: «Informe de patologia - Proyecto 23092026.docx», para distinguir versiones del mismo informe sin abrirlas.",
     "MEJOR - TODA LA CLASIFICACION DE LESIONES TRAE SU AYUDA: cada tipo y cada subtipo de la ficha (humedad, suciedad, erosion, grieta, fisuras, segregacion, desprendimientos, antropica, alabeos, eflorescencias, corrosion, oxidacion, organismos y los nuevos de fuego y corrosion) tiene su simbolo de ayuda con la definicion del glosario. Se agregaron al glosario 15 terminos que faltaban (suciedad, lesion antropica, alabeo, organismos, elemento portante / no portante / de acabado, vandalismo, entorno vulnerable, escamacion y cambio de seccion por corrosion, corrosion por inmersion, organismos animales y de accion quimica, dano por intervencion estructural).",
     "NUEVO - REFRESCAR DESCRIPCIONES AUTOMATICAS: boton en la cartilla que vuelve a redactar las descripciones que armo la ficha, con la redaccion de hoy (por ejemplo, para que digan el patron de fisuracion). Antes de guardar dice cuantas se cambiarian, cuantas tienen texto escrito a mano —que NO se tocan— y cuantas ya estan al dia, y muestra el antes y el despues de la primera.",
     "NUEVO - DANO POR FUEGO Y DESPRENDIMIENTO POR CORROSION EN LA CLASIFICACION DE LESIONES: en Quimica, «Alteracion termica (fuego)» con el color que delata la temperatura alcanzada (rosado/rojo 300-600 °C, gris blanquecino 600-950 °C, beige mas de 950 °C) y la calcinacion; en Mecanica, «Dano mecanico por fuego» (spalling explosivo y fisuracion en malla) y «Desprendimiento por corrosion» (fisura sobre la barra, delaminacion y recubrimiento caido). Cada tipo y subtipo nuevo trae su cuadro de ayuda con la definicion y el termino en ingles (Concrete Society TR68, ACI 201.1R y 222R). Entran en la descripcion automatica, en las etapas del proceso de falla por corrosion y en el plan de intervencion.",
@@ -30,6 +35,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.31.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.32.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
