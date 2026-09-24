@@ -2,6 +2,14 @@
   "generado": "2026-09-24",
   "versiones": [
     {
+      "version": "2.99.36",
+      "fecha": "2026-09-24",
+      "notas": [
+        "CORREGIDO - EL PLANO DE LA FICHA DE LESION SE VE COMPLETO A LO ANCHO: quedaba ampliado al doble y centrado en la lesion, asi que solo se veian dos o tres ejes y no habia con que ubicarse. Ahora el plano entra de borde a borde del recuadro y el alto sale de esa misma escala; lo que sobra se recorta arriba y abajo, y la franja que se ve es la que tiene la lesion en el medio. Cerca de un borde la franja se queda pegada al borde del plano en vez de mostrar papel en blanco, y un plano apaisado que cabe entero se centra sin recortarse.",
+        "NUEVO - LA ZONA AFECTADA SALE EN LA LOCALIZACION DE LA FICHA: cuando la lesion se marco en el plano como un AREA y no como un punto, la ficha dibujaba igual el puntico. Ahora sale el rectangulo de la zona, el mismo que se ve en el modulo de localizacion en pantalla, y el encuadre del plano se centra en el medio del area. Las lesiones marcadas como punto siguen saliendo con su punto."
+      ]
+    },
+    {
       "version": "2.99.35",
       "fecha": "2026-09-24",
       "notas": [
