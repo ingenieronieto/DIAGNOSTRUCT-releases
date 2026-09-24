@@ -1,6 +1,13 @@
 {
-  "generado": "2026-09-23",
+  "generado": "2026-09-24",
   "versiones": [
+    {
+      "version": "2.99.35",
+      "fecha": "2026-09-24",
+      "notas": [
+        "CORREGIDO - EL PLANO DE LA FICHA DE LESION SE PARTIA EN DOS: el recuadro del plano era elastico (entre 25 y 80 mm) y una rutina lo encogia hasta que la ficha cupiera en la hoja; cuando ni encogiendolo alcanzaba, la ficha se partia en dos paginas y el plano salia cortado. Ademas cada ficha mostraba el plano a una escala distinta. Ahora el recuadro NO se mueve: alto fijo siempre, dentro y fuera de la entrega. El que se acomoda es el plano, que se amplia siempre lo mismo y se corre hasta dejar la lesion en el centro del recuadro, como en los planos de localizacion de los ensayos. Cerca de un borde el encuadre se mete hacia adentro para no mostrar papel en blanco, y una lesion sin marca sigue mostrando el plano entero."
+      ]
+    },
     {
       "version": "2.99.34",
       "fecha": "2026-09-23",
