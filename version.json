@@ -1,8 +1,12 @@
 {
-  "version": "2.99.33",
+  "version": "2.99.34",
   "fecha": "2026-09-23",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - LA CORROSION DEL ACERO ESTRUCTURAL NO SE JUZGA CON EL POTENCIAL DE MEDIA CELDA: la correlacion contaba TODA lesion con corrosion contra el potencial (ASTM C876), que solo aplica al acero de refuerzo EMBEBIDO EN CONCRETO. Con una cartilla de laminas de cubierta, rejas, correas y cerchas, eso inventaba una contradiccion que no existia («22 lesiones de corrosion y el potencial no detecta ninguna»). Ahora se separan por material: la del refuerzo va contra el potencial, y la de los elementos metalicos tiene su propia lectura, que es corrosion atmosferica y se cuantifica con la perdida de espesor por ultrasonido (ASTM E797).",
+    "NUEVO - LAS CONTRADICCIONES SE CORRIGEN, NO SE EXPLICAN: cada lectura que no cierra abre con EL DATO QUE LA ORIGINA, con su valor de hoy y editable ahi mismo (el año de construccion, el f'c especificado, la humedad y la temperatura del sitio, la precipitacion, el sistema estructural, el recubrimiento y la profundidad anotados en cada ficha de carbonatacion). Se corrige y la lectura se recalcula sola. Lo corregido se escribe donde vive el dato —la ficha de la estructura, el proyecto o la ficha del ensayo—, asi que tambien le sirve al proximo informe. Explicar quedo como segunda opcion, para cuando el dato esta bien y la contradiccion es real.",
+    "CORREGIDO - LAS EXPLICACIONES QUE SE OFRECEN SON LAS DE ESA LECTURA: a una lectura sobre acero liso y la norma de la epoca se le ofrecian las salidas de la esclerometria contra los nucleos, que no tienen nada que ver. Ahora salen por FACTOR: el acero liso ofrece «es transversal (estribos o espirales)» o «es una intervencion posterior»; la corrosion del acero estructural ofrece medir espesores.",
+    "MEJOR - LAS CONTRADICCIONES POR SUBSANAR QUEDARON JUSTO ANTES DE ARMAR EL INFORME: se ven y se resuelven en el orden en que se trabaja, sin tener que buscarlas despues del boton.",
     "NUEVO - LOS HALLAZGOS SE ARMAN CON LO DETECTADO: el campo «Hallazgos de la inspeccion» trae la lista de lo que encontraron las lesiones y los ensayos —lo critico, lo que registra la cartilla y el resultado de cada ensayo con su cifra y su norma—, se marca lo que va al informe y se escribe solo, un parrafo por hallazgo. Las cifras son las MISMAS del capitulo de resultados: no se vuelve a contar nada. Despues se edita como texto.",
     "NUEVO - ALTERNATIVAS DE INTERVENCION, EN OPCIONES Y SELECCION MULTIPLE: las que propone la evidencia se marcan desde el mismo campo, cada una con la medicion que la disparo.",
     "CORREGIDO - LA CAPACIDAD DE DISIPACION ES UNA POR EDIFICACION, NO DEL PROYECTO: se declara en la ficha de cada estructura (y ahora tambien desde el panel del informe, edificacion por edificacion). Un proyecto puede tener bloques de epocas y sistemas distintos, y aplicarle a todos la misma capacidad es juzgar con una regla que no es la suya. Sin declarar, la cuantia de ESA estructura se reporta sin veredicto; ya no hereda la de otra.",
@@ -41,6 +45,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.33.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.34.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
