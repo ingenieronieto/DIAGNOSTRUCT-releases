@@ -2,6 +2,13 @@
   "generado": "2026-09-26",
   "versiones": [
     {
+      "version": "2.99.38",
+      "fecha": "2026-09-26",
+      "notas": [
+        "CORREGIDO - EL ANEXO SALIA CON MAS PAGINAS QUE HOJAS Y LA NUMERACION NO CUADRABA («Pagina 186 de 164»): cada hoja media 0,8 mm menos que el papel, y esa fraccion no alcanza para absorber el redondeo de milimetros a pixeles que hace el navegador al maquetar. Cuando la caja no cabia, la hoja se partia en dos paginas fisicas: la segunda salia casi en blanco y el numero impreso dejaba de corresponder con la pagina real. Ahora la holgura es de 3 mm, imperceptible en una carta, y ademas la hoja lleva un alto maximo y la prohibicion de partirse en las dos formas de la regla CSS. El panel avisa tambien que en el dialogo de impresion hay que poner «Margenes: Ninguno»: con margenes el area imprimible se achica un centimetro por lado y ninguna holgura alcanza."
+      ]
+    },
+    {
       "version": "2.99.37",
       "fecha": "2026-09-26",
       "notas": [
