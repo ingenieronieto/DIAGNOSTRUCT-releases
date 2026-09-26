@@ -1,6 +1,14 @@
 {
-  "generado": "2026-09-24",
+  "generado": "2026-09-26",
   "versiones": [
+    {
+      "version": "2.99.37",
+      "fecha": "2026-09-26",
+      "notas": [
+        "CORREGIDO - LAS FOTOS DE ENSAYO SALIAN ROTAS AL IMPRIMIR EL ANEXO: el enlace firmado que guarda la ficha del ensayo vence, y el anexo lo pintaba tal cual. La foto fallaba, la app pedia un enlace nuevo y la rescataba, pero DE A UNA: con 417 fotos de ensayo la impresion salia antes de que terminaran las renovaciones y quedaban los iconos de imagen rota (se vio en el ferroscan de Zapayan). Ahora los enlaces de las fotos de ensayo se piden TODOS EN LOTE antes de pintar, igual que ya se hacia con las de lesiones. Alcanza a las casillas de cada ficha y a las tres fotos sueltas (general, elemento y falla de laboratorio), y tambien a las fichas viejas que guardaron la foto como texto suelto.",
+        "CORREGIDO - EL AVISO DE «FOTOS QUE NO CARGAN» DABA CERO CUANDO SI HABIA: el navegador marca una imagen como terminada aunque haya fallado, y la espera previa a imprimir las contaba como listas. Ahora una imagen rota se reconoce por su ancho en cero, asi que el aviso dice la verdad, y ademas la espera ya no se cierra con el primer fallo: le da tiempo a la renovacion del enlace, que es la que la recupera."
+      ]
+    },
     {
       "version": "2.99.36",
       "fecha": "2026-09-24",
