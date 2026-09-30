@@ -1,8 +1,9 @@
 {
-  "version": "2.99.39",
+  "version": "2.99.40",
   "fecha": "2026-09-30",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - LA HOJA DE REGATAS DEL ANEXO YA NO JUZGA LA CUANTIA: sale la cuantia existente como dato y nada mas, sin CUMPLE / NO CUMPLE, sin la cuantia minima ni la maxima de referencia y sin el texto del limite. Esa hoja va al anexo que se entrega al cliente, y el informe de patologia no juzga la estructura: la suficiencia del refuerzo la resuelve el analisis de vulnerabilidad. El recuadro deja de pintarse en verde o en rojo. En mamposteria dice lo que se encontro (confinada, reforzada o sin refuerzo) sin el «NO ESTRUCTURAL», porque ahi el valor del chequeo era fijo y no una medicion. Para que el anexo ya impreso quede asi, hay que volver a imprimirlo.",
     "NUEVO - LOS ENSAYOS DE LABORATORIO SOBRE LOS NUCLEOS YA SALEN EN EL INFORME: cloruros, densidad, absorcion y vacios permeables. Era el UNICO capitulo que habia que escribir a mano: se comparo el informe de Zapayan que quedo cerrado contra lo que emite la app, y todo lo demas ya salia solo. Ahora la hoja de laboratorio del nucleo tiene sus casillas —el contenido de ion cloruro con la base en que lo reporto el laboratorio y su profundidad de muestreo, y las cuatro masas de la ASTM C642— y el informe arma el capitulo con su ficha, sus dos tablas y su lectura por estructura en «Analisis de resultados». No son un ensayo aparte: se hacen sobre el MISMO testigo, asi que el resultado queda pegado a su nucleo, con su elemento, su nivel y su punto en el plano, y la localizacion no se repite.",
     "NUEVO - LA ASTM C642 SE CALCULA DE LAS CUATRO MASAS, Y SE VE MIENTRAS SE DIGITA: de la masa seca al horno, la saturada tras inmersion, la saturada tras hervir y la aparente sumergida salen las dos absorciones, las cuatro densidades y el volumen de vacios permeables. La hoja los muestra en vivo, con la misma cuenta que despues imprime el informe, asi que una masa mal copiada del reporte se nota ahi y no en el documento firmado. Si las masas son incoherentes —la saturada menor que la seca, la hervida menor que la de inmersion— lo dice, y esa observacion viaja al informe junto al dato.",
     "NUEVO - EL CLORURO SE JUZGA CON LA NORMA QUE CORRESPONDE, Y SIN INVENTAR VEREDICTOS: contra el umbral de iniciacion de la corrosion de la ACI 222R, que es el que dice si la pelicula pasiva del acero puede romperse, y contra los limites de la NSR-10 C.4.4.1, que rigen la DOSIFICACION y por tanto se citan como referencia de lo que la norma admitia al construir, no como incumplimiento de la obra. Si el laboratorio reporto en kg/m3 y el proyecto no declara el contenido de cemento, el valor se reporta SIN veredicto y se dice por que, en vez de convertirlo con una dosificacion supuesta. Si unos resultados llegaron en porcentaje y otros por volumen, no se promedia el conjunto.",
@@ -57,6 +58,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.39.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.40.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
