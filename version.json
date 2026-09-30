@@ -1,8 +1,10 @@
 {
-  "version": "2.99.41",
+  "version": "2.99.42",
   "fecha": "2026-09-30",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - LA HOJA DEL NUCLEO DEL ANEXO YA NO DICE «PENDIENTE DE LABORATORIO» CUANDO EL TESTIGO YA SE ENSAYO: decidia por la resistencia, asi que un nucleo mandado a medir absorcion o cloruros salia impreso como si el laboratorio no hubiera reportado. En un anexo que se entrega al cliente eso es falso, y ademas contradecia a la lista de nucleos. Ahora se distinguen los dos casos: el testigo que ESPERA el resultado sigue diciendo «pendiente», y el que no se iba a romper dice «TESTIGO NO SOMETIDO A COMPRESION», nombra los ensayos que si se le hicieron y aclara que no aporta f'c ni entra en la verificacion del numeral C.5.6.5 de la NSR-10. Un nucleo recien extraido, sin nada cargado, sigue diciendo «pendiente».",
+    "NUEVO - LA HOJA DEL NUCLEO IMPRIME LA DURABILIDAD: densidad seca, absorcion tras hervir, vacios permeables y contenido de ion cloruro, con su lectura frente al umbral de iniciacion. Se registran desde la 2.99.39 y se digitaban, pero no llegaban a la hoja que se entrega. Las cuentas son las mismas del formulario y del informe, asi que los tres no pueden decir numeros distintos del mismo testigo. La hoja advierte que la ASTM C642 es un metodo de ensayo y no fija criterios de aceptacion: la lectura de los vacios es de referencia, no un limite normativo.",
     "NUEVO - EN LA EXTRACCION DE NUCLEOS SE ELIGE A QUE SE SOMETE EL TESTIGO EN EL LABORATORIO: resistencia a la compresion (NTC 673 / NTC 3658), contenido de ion cloruro (NTC 4049) y densidad, absorcion y vacios permeables (ASTM C642). Se marca lo que el laboratorio hizo DE VERDAD, y la hoja pide solo eso. Antes la compresion era obligatoria para guardar, asi que un testigo mandado a medir absorcion no se podia registrar sin inventarle una carga de rotura y un tipo de falla — y ese numero inventado salia impreso en la tabla de resistencias del informe y entraba en la verificacion del numeral C.5.6.5 de la NSR-10.",
     "MEJOR - LO QUE NO APLICA DESAPARECE, NO SE DEJA EN BLANCO: sin compresion marcada no salen las medidas del nucleo, ni la carga maxima, ni el tipo de falla, ni el par de fotos de la rotura, ni los avisos de geometria de la NTC 3658 (que revisan la esbeltez para romperlo, y no aplican a un testigo que nadie va a romper). Las casillas de durabilidad salen solo si se marco ese ensayo. La fecha y el operario se siguen pidiendo siempre, porque valen para cualquier ensayo de laboratorio.",
     "CORREGIDO - LA LISTA DE NUCLEOS YA NO DEJA EN «PENDIENTE DE LABORATORIO» UN TESTIGO QUE YA SE ENSAYO: decidia por la carga de rotura, asi que un nucleo con su absorcion o sus cloruros completos seguia apareciendo sin ensayar y con el boton «Ensayar». Ahora la lista y la hoja leen la MISMA regla, que es que los ensayos marcados tengan su dato.",
@@ -62,6 +64,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.41.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.42.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

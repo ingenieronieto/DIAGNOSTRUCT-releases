@@ -9,6 +9,7 @@ descargar apuntando al commit en el que se publicó.
 
 | Versión | Publicada | Commit | Tamaño | SHA-256 del APK |
 |---|---|---|---|---|
+| 2.99.42 | 2026-09-30 | `9d5a6c2` | 24.6 MB | `7b0eb206f64d68802b68a476d6a723d3bda58829e5cecb1eada01277425357f7` |
 | 2.99.41 | 2026-09-30 | `2db2eda` | 24.6 MB | `f8f8499d3d926cc04aa7413a4f4fa7fb4a646f4003b775fa96bd80aab245fab0` |
 | 2.99.40 | 2026-09-30 | `2155567` | 24.6 MB | `ca283a91ed08f5446d8ae7566d3458556f731b60b8cc37cbf0dd2b49c0a33ce3` |
 | 2.99.39 | 2026-09-30 | `ff064d1` | 24.6 MB | `3a9b94f49aa60740bc883f933b601451af2944f239c61ab1a786107d6bb6286d` |
