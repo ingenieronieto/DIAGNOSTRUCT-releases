@@ -1,8 +1,12 @@
 {
-  "version": "2.99.43",
+  "version": "2.99.44",
   "fecha": "2026-10-06",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - ANTES DE IMPRIMIR EL ANEXO SE PREGUNTA: «¿DESEA HACER CHEQUEO DE RESULTADOS SEGUN NSR-10?». Si se responde que SI, el anexo sale con los CUMPLE / NO CUMPLE, las calificaciones y los criterios de aceptacion (recubrimientos minimos, cuantias, resistencias). Si se responde que NO, salen las mediciones y la normativa con que se EJECUTO cada ensayo, y nada que juzgue el resultado. La respuesta NO se guarda: cada entrega vuelve a decidir, porque depende del encargo. Y sin un si explicito no se juzga: cancelar o cerrar no imprime.",
+    "CORREGIDO - LO QUE SE TAPA ES MAS QUE EL CUMPLE: sin autorizacion desaparecen tambien el RECUBRIMIENTO MINIMO de referencia, la calificacion (ADECUADO / ACEPTABLE / DEFICIENTE / CRITICO), el listado de barras bajo el minimo y la cita del numeral que fija el criterio (NSR-10 C.7.7 en el encabezado y en el titulo). Un minimo de 40 mm no es un dato del ensayo: es el liston contra el que se lo juzga, y Pacho lo senalo sobre la hoja de ferroscan.",
+    "MEJOR - LA NORMATIVA DE EJECUCION NO SE TOCA NUNCA: NTC 3692, NTC 673, NTC 3658, ASTM C805, ASTM C876 y las demas siguen en la hoja con o sin chequeo. Dicen COMO se midio, no que tan bueno es el resultado, y sin ellas el resultado no seria trazable.",
+    "MEJOR - LAS NUEVE HOJAS DEL ANEXO OBEDECEN LA MISMA RESPUESTA: ferroscan, regatas, nucleos, barras de acero, carbonatacion, potencial de corrosion, ultrasonido en metales, ultrasonido en concreto y tintas penetrantes. Antes el CUMPLE dependia de una opcion de empresa que se configuraba una vez y se olvidaba; ahora es una decision por entrega. La opcion de empresa sigue existiendo, pero para el INFORME de patologia, que es otro entregable.",
     "CORREGIDO - LOS FERROSCAN YA NO SALEN CON CUMPLE / NO CUMPLE: ni en la hoja del anexo ni en la pantalla. Se quitaron el veredicto grande del encabezado, el CUMPLE / NO CUMPLE del analisis por barra, la CALIFICACION (ADECUADO / ACEPTABLE / DEFICIENTE / CRITICO) y la nota del «veredicto estricto». Es el mismo criterio de la hoja de regatas: el anexo se entrega al cliente y el informe de patologia no dictamina sobre la estructura. Y NO es una opcion de empresa que se pueda volver a encender: no va nunca.",
     "MEJOR - TAMPOCO SE DICE CON COLOR: la hoja y la pantalla quedaron en tinta y papel. El verde de aprobacion y el rojo de alarma de los fondos, las tres bandas de distribucion y el listado de barras eran la misma afirmacion dicha con color, asi que se fueron con el texto.",
     "MEJOR - LO QUE SI QUEDA ES LA MEDICION: recubrimiento minimo medido, medio, maximo, el minimo que exige la NSR-10 C.7.7 como referencia, cuantas barras quedan por debajo y cuales, con su posicion y su recubrimiento. Las tres bandas pasaron a describir en vez de calificar: «igual o mayor al minimo», «hasta 5 mm bajo el minimo» y «mas de 5 mm bajo el minimo». Sin esos numeros la hoja no sirve, y son los que el informe lee para la durabilidad.",
@@ -68,6 +72,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.43.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.44.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
