@@ -1,8 +1,12 @@
 {
-  "version": "2.99.42",
-  "fecha": "2026-09-30",
+  "version": "2.99.43",
+  "fecha": "2026-10-06",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - LOS FERROSCAN YA NO SALEN CON CUMPLE / NO CUMPLE: ni en la hoja del anexo ni en la pantalla. Se quitaron el veredicto grande del encabezado, el CUMPLE / NO CUMPLE del analisis por barra, la CALIFICACION (ADECUADO / ACEPTABLE / DEFICIENTE / CRITICO) y la nota del «veredicto estricto». Es el mismo criterio de la hoja de regatas: el anexo se entrega al cliente y el informe de patologia no dictamina sobre la estructura. Y NO es una opcion de empresa que se pueda volver a encender: no va nunca.",
+    "MEJOR - TAMPOCO SE DICE CON COLOR: la hoja y la pantalla quedaron en tinta y papel. El verde de aprobacion y el rojo de alarma de los fondos, las tres bandas de distribucion y el listado de barras eran la misma afirmacion dicha con color, asi que se fueron con el texto.",
+    "MEJOR - LO QUE SI QUEDA ES LA MEDICION: recubrimiento minimo medido, medio, maximo, el minimo que exige la NSR-10 C.7.7 como referencia, cuantas barras quedan por debajo y cuales, con su posicion y su recubrimiento. Las tres bandas pasaron a describir en vez de calificar: «igual o mayor al minimo», «hasta 5 mm bajo el minimo» y «mas de 5 mm bajo el minimo». Sin esos numeros la hoja no sirve, y son los que el informe lee para la durabilidad.",
+    "MEJOR - EN PANTALLA, LA PASTILLA DE CADA FICHA MUESTRA EL RECUBRIMIENTO MINIMO MEDIDO en vez del dictamen, y el contador de fichas dice cuantas traen lecturas bajo el minimo en lugar de repartir palomas y cruces.",
     "CORREGIDO - LA HOJA DEL NUCLEO DEL ANEXO YA NO DICE «PENDIENTE DE LABORATORIO» CUANDO EL TESTIGO YA SE ENSAYO: decidia por la resistencia, asi que un nucleo mandado a medir absorcion o cloruros salia impreso como si el laboratorio no hubiera reportado. En un anexo que se entrega al cliente eso es falso, y ademas contradecia a la lista de nucleos. Ahora se distinguen los dos casos: el testigo que ESPERA el resultado sigue diciendo «pendiente», y el que no se iba a romper dice «TESTIGO NO SOMETIDO A COMPRESION», nombra los ensayos que si se le hicieron y aclara que no aporta f'c ni entra en la verificacion del numeral C.5.6.5 de la NSR-10. Un nucleo recien extraido, sin nada cargado, sigue diciendo «pendiente».",
     "NUEVO - LA HOJA DEL NUCLEO IMPRIME LA DURABILIDAD: densidad seca, absorcion tras hervir, vacios permeables y contenido de ion cloruro, con su lectura frente al umbral de iniciacion. Se registran desde la 2.99.39 y se digitaban, pero no llegaban a la hoja que se entrega. Las cuentas son las mismas del formulario y del informe, asi que los tres no pueden decir numeros distintos del mismo testigo. La hoja advierte que la ASTM C642 es un metodo de ensayo y no fija criterios de aceptacion: la lectura de los vacios es de referencia, no un limite normativo.",
     "NUEVO - EN LA EXTRACCION DE NUCLEOS SE ELIGE A QUE SE SOMETE EL TESTIGO EN EL LABORATORIO: resistencia a la compresion (NTC 673 / NTC 3658), contenido de ion cloruro (NTC 4049) y densidad, absorcion y vacios permeables (ASTM C642). Se marca lo que el laboratorio hizo DE VERDAD, y la hoja pide solo eso. Antes la compresion era obligatoria para guardar, asi que un testigo mandado a medir absorcion no se podia registrar sin inventarle una carga de rotura y un tipo de falla — y ese numero inventado salia impreso en la tabla de resistencias del informe y entraba en la verificacion del numeral C.5.6.5 de la NSR-10.",
@@ -64,6 +68,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.42.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.43.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
