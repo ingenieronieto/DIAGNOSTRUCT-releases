@@ -1,8 +1,11 @@
 {
-  "version": "2.99.45",
+  "version": "2.99.46",
   "fecha": "2026-10-06",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - EL NUCLEO MADRE SALIA COMO UNA HOJA MAS, DUPLICANDO EL ENSAYO: cuando un nucleo se corta en sub-muestras, el anexo imprimia el padre Y las hijas, asi que el mismo nucleo salia dos veces con las MISMAS fotos, una con resultados de laboratorio y otra sin ellos (EXN-L1 001 junto a EXN-L1 001-2). El padre es el ORIGEN FISICO del testigo, no un ensayo: quien se rompe a compresion son las sub-muestras. El analisis y el consolidado ya lo excluian; el anexo era el unico que lo listaba. Ahora usa la misma regla, asi que tampoco cuenta de mas en el total de la entrega. Un nucleo sin sub-muestras, o un padre que si se rompio el mismo, siguen saliendo.",
+    "CORREGIDO - «PENDIENTE DE LABORATORIO» SE DECIA SOBRE ENSAYOS YA HECHOS: la hoja mostraba ese cuadro cuando faltaba CUALQUIERA de los cinco datos que necesita la resistencia (los dos diametros, las dos alturas y la carga), asi que un testigo con su carga cargada pero sin una altura salia como si el laboratorio no hubiera reportado, y mandaba a buscar donde no era. Ahora se distinguen los dos casos: sin ningun dato dice «pendiente de laboratorio»; con el resultado a medias dice «RESULTADO INCOMPLETO» y NOMBRA que falta, que es lo unico que permite arreglarlo.",
+    "CORREGIDO - DOS CRITERIOS DE ACEPTACION SE COLABAN CON EL CHEQUEO APAGADO: en la hoja de nucleos, el numeral NSR-10 C.5.6.3.3 y el limite «Minimo (0.85·f'c)»; en la de barras, la nota «Aceptacion segun NTC 2289 y NSR-10 C.3.5 / C.21». Ahora cuelgan de la respuesta, como el recubrimiento minimo del ferroscan. La resistencia del nucleo y la norma de EJECUCION del ensayo (NTC 673, NTC 3353 / ASTM A370) salen siempre: son medicion y trazabilidad, no juicio.",
     "CORREGIDO - LA HOJA DE FERROSCAN DECIA «MINIMO MEDIDO: 40 mm» Y ESE 40 NO ERA EL MEDIDO: era el minimo que EXIGE la NSR-10 al elemento (40 mm para vigas y columnas). Doblemente mal: es el criterio que la entrega sin chequeo NO debe mostrar, y encima rotulado como si fuera una medicion. En la viga de Sotano gerencia el recubrimiento menor real era 10,8 mm y la hoja anunciaba 40. Ahora, sin chequeo, el encabezado da el RANGO del barrido —«27 lecturas, entre 10,8 y 85,4 mm»—, que contiene el minimo medido y no repite la casilla MINIMO MEDIDO de al lado.",
     "CORREGIDO - LA PASTILLA DE CADA FICHA EN PANTALLA TENIA EL MISMO ERROR: mostraba «min 40» leyendo el minimo exigido en vez del medido. Ahora sale el medido.",
     "MEJOR - QUEDA VIGILADO: `validacion.min` es el minimo EXIGIDO y `stats.min` el MEDIDO; dos campos con nombres parecidos y significados opuestos. La suite comprueba que la hoja y la pantalla no vuelvan a usar el primero donde va el segundo.",
@@ -75,6 +78,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.45.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.46.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
