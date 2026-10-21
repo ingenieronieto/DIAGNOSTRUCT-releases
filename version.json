@@ -1,8 +1,16 @@
 {
-  "version": "2.99.49",
-  "fecha": "2026-10-19",
+  "version": "2.99.50",
+  "fecha": "2026-10-21",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - CRONOGRAMA CON VISITA TECNICA INICIAL Y LEVANTAMIENTO DE LESIONES (Plan de auscultamiento): las dos actividades van arriba de la lista y se miden en horas de toda la cuadrilla (una visita de 4 h dura 4 h aunque vayan dos personas).",
+    "NUEVO - PAUSAS EN EL CRONOGRAMA: cada actividad tiene «Pausa despues (dias habiles)» y un motivo opcional. Visita el dia 1 con pausa 2: los dias 2 y 3 quedan sin labores y los ensayos arrancan el dia 4. Los dias de pausa salen en gris en el Gantt, en la agenda y en el reporte impreso.",
+    "CORREGIDO - EL MAPA DEL PLAN YA NO TOMA UNA ACTIVIDAD COMO ENSAYO A UBICAR: la visita, el levantamiento y la reparacion no se marcan en los planos.",
+    "MEJOR - LAS PRUEBAS CORREN EN CUALQUIER EQUIPO: npm test corre las 135 suites aunque una falle y lista todas las que fallan, y GitHub las corre en cada cambio. La publicacion automatica del APK, que fallaba siempre y habria publicado un APK en blanco, queda desactivada.",
+    "NUEVO - DIAGNOSTRUCT ESCRITORIO (Windows): la misma app con un motor de calculo que maneja ETABS por su API (f'c medido, espectro y casos de A.10, analisis y tablas) y corre OpenSees. Lo que calcula se publica en el proyecto y la tablet y la web lo ven en Vulnerabilidad Sismica → Estacion de analisis → Publicados. Requiere el SQL de resultados_escritorio.",
+    "NUEVO - OPENSEES POR ESCENARIO (escritorio): cada columna y viga de A.10 con su dano (perdida de acero, recubrimiento perdido) y su refuerzo (camisa, acero adicional), y los analisis en el estado original, el actual y el reforzado: momento-curvatura, modal, pushover comparado (su Vmax va a A.10.5.2 b) y tiempo-historia con acelerogramas escalados al espectro. Cada corrida trae su script de OpenSees.",
+    "NUEVO - EL MODELO DE ETABS O SAP2000 EN OPENSEES (escritorio): se lee el modelo abierto por la API (barras con su seccion y su refuerzo, muros, cargas D y L), se traduce y se valida contra el programa: periodos y pesos lado a lado.",
+    "NUEVO - ANALISIS ELASTICO PARA A.10 SIN ETABS: espectral de OpenSees con CQC, ajuste del cortante de A.5.4.5, torsion accidental, combinaciones de B.2.4 y B.2.3 y derivas sin dividir por R. En Indices A.10 → Analisis aparecen los publicados (ETABS u OpenSees) y «Usar en este equipo» los trae para los indices.",
     "MEJOR - EL INFORME SE LEE ESCRITO POR UN INGENIERO, NO POR UNA PLANTILLA: la teoria de cada ensayo (criterio de Chauvenet, NTC 2275, depuracion de nucleos y C.5.6.5, ley de Fick, recubrimiento, cuantia minima, la convencion del signo de la nivelacion) sale UNA sola vez por documento. En el informe por bloques se repetia en cada estructura: Zapayan traia los mismos parrafos de norma doce veces. Con tres bloques el texto baja un 20 %.",
     "CORREGIDO - FRASES DE PLANTILLA CON EL NUMERO PEGADO: «Se abrieron 1 regatas», «1 quedan por fuera de los limites», «Se encuentra 1 o mas datos atipicos», «Se ejecutaron 1 determinaciones», «6 de los 6 ensayos, es decir el 100 por ciento», «Se corrio 1 linea de nivelacion en 1 ensayo» y «el grupo mas debil corresponde a otro» (el grupo «Otro» ya no entra en la comparacion). Y el analisis de la esclerometria ya no dice que la muestra «mezcla muros, vigas y columnas de varios niveles» si no los tiene: nombra los grupos reales.",
     "MEJOR - SIN FRASES DE EFECTO: se reescribieron «el dato que gobierna el diagnostico no es el promedio sino la dispersion», «La lectura del conjunto es la siguiente», «tres consecuencias», «Leidas una por una…», «Ahi esta el corte…», y el relleno de la presentacion, el marco normativo, el alcance y la vegetacion. La comparacion entre bloques ya no cierra cada vineta con la misma frase: la dice una vez. Ninguna cifra ni norma cambio.",
@@ -85,6 +93,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.49.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.50.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
