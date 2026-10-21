@@ -1,8 +1,9 @@
 {
-  "version": "2.99.54",
+  "version": "2.99.55",
   "fecha": "2026-10-21",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - EL PLAN DE AUSCULTAMIENTO SE IMPRIME A SU TAMANO REAL: al imprimir, la app seguia ocupando su ancho aunque no se viera, la pagina quedaba mas ancha que la carta y el navegador encogia el plan para que cupiera (salia a mas o menos la mitad). Ahora el plan se imprime solo, al 100 %.",
     "NUEVO - LOS CUADROS DE «FALTA» LLEVAN A DONDE SE LLENA: en la Estacion de analisis (y en los Indices A.10) cada aviso de lo que falta —el grupo de uso, R′, el municipio, el perfil de suelo, las secciones de A.10, la calificacion A.10.2.2, el Modelo 3D— es un boton «Llenarlo en …» que abre ese modulo ENCIMA, en la pestana y el campo exactos (resaltado en naranja). Al volver con «← Volver a la Estacion de analisis» el cuadro ya sale bien; la Estacion no se pierde: el ETABS conectado, los pasos hechos y las corridas siguen ahi.",
     "NUEVO - MODELADOR: ESPECTRO DE RESPUESTA COMO ETABS: Definir → Funciones de espectro (la NSR-10 con Aa, Av del municipio del proyecto, el perfil de suelo e I, o una tabla T–Sa pegada) y Casos de espectro de respuesta (U1/U2, factor g o g/R, ζ). Cada modo responde con Sa(T) y se combina con CQC; las derivas, el cortante de piso y las fuerzas por estacion se combinan modo por modo. Un caso de espectro, o una combinacion que lo lleve, sale como envolvente: maximo y minimo en los diagramas y en las tablas.",
     "NUEVO - MODELADOR: SISMO ESTATICO (FHE) «USER COEFFICIENT»: V = C·W y Fx = Cvx·V con el exponente k, en las masas de cada piso, con la excentricidad accidental de 0,05·B (+, − o sin ella). «Usar C y k de la NSR-10» los calcula con Ta = Ct·h^α, Cu, T ≤ Cu·Ta (el del modal si se corrio) y Sa(T). Las combinaciones de la NSR-10 se arman con cada sismo en los dos sentidos (SX+, SX−…) y con cada espectro.",
@@ -111,6 +112,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.54.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.55.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
