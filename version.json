@@ -1,8 +1,10 @@
 {
-  "version": "2.99.56",
+  "version": "2.99.57",
   "fecha": "2026-10-21",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - EL ESCRITORIO SE ACTUALIZA SOLO: busca la version nueva al abrirse y cada media hora, la baja en segundo plano (solo lo que cambio) y avisa «Actualizacion lista»: REINICIAR Y ACTUALIZAR la instala y vuelve a abrir el escritorio, o AL CERRAR la instala cuando se cierre. Ya no hay que bajar el .exe en cada version. Esta 2.99.57 se instala a mano una ultima vez; de ahi en adelante, sola.",
+    "NUEVO - DIBUJO EN VIVO DE LAS SECCIONES DE A.10 (Indices A.10 → Secciones): al lado de los datos de cada columna, viga o zapata se dibuja el corte (en la zapata, la planta y el alzado) mientras se escribe. El dato que se esta llenando se resalta y abajo se explica que es: t2 y t3 con los ejes locales 2 y 3, las barras por cara ⟂ 2 y ⟂ 3 (con las esquinas y su nombre en ETABS), las ramas ∥ 2 y ∥ 3 y el recubrimiento libre. Lo que falta sale con un valor de ejemplo y «?». Los ganchos suplementarios se escogen tocando las barras intermedias del dibujo, verticales y horizontales, y las ramas se ajustan solas.",
     "CORREGIDO - TODOS LOS INFORMES Y FORMATOS SE IMPRIMEN A SU TAMANO REAL: el anexo de ensayos, el informe gerencial, los reportes de cada ensayo, el formato imprimible, la memoria de calculo y los demas salian encogidos porque la app, aunque no se viera, seguia ocupando su ancho en la pagina. Ahora, al imprimir, la app sale de la pagina y la hoja queda al 100 %.",
     "MEJOR - EL ESCRITORIO TIENE SU PROPIO ICONO: el mismo compas con pi de la app, en navy con las patas en cian, para no confundir el .exe con la APK (negro sobre blanco) ni con la web (blanco sobre negro).",
     "CORREGIDO - EL PLAN DE AUSCULTAMIENTO SE IMPRIME A SU TAMANO REAL: al imprimir, la app seguia ocupando su ancho aunque no se viera, la pagina quedaba mas ancha que la carta y el navegador encogia el plan para que cupiera (salia a mas o menos la mitad). Ahora el plan se imprime solo, al 100 %.",
@@ -114,6 +116,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.56.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.57.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
