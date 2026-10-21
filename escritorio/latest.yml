@@ -1,0 +1,8 @@
+version: 2.99.57
+files:
+  - url: https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v2.99.57/DIAGNOSTRUCT-Escritorio-2.99.57.exe
+    sha512: 0CjGCFxo/mCMqhAcHtvLOSf0BGa7F2XGTAc7qwbA8snuyo/pgMWtVyfTw1tnmXcqI1iBI2Ff2ijLnz31DnUdOg==
+    size: 147608920
+path: https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v2.99.57/DIAGNOSTRUCT-Escritorio-2.99.57.exe
+sha512: 0CjGCFxo/mCMqhAcHtvLOSf0BGa7F2XGTAc7qwbA8snuyo/pgMWtVyfTw1tnmXcqI1iBI2Ff2ijLnz31DnUdOg==
+releaseDate: '2026-10-21T19:54:08.308Z'
