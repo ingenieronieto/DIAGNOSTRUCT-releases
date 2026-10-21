@@ -1,8 +1,13 @@
 {
-  "version": "2.99.50",
+  "version": "2.99.51",
   "fecha": "2026-10-21",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - EL PLAN DE AUSCULTAMIENTO IMPRIMIBLE SALE CON EL FORMATO ING. NIETO: la portada del informe del Edificio Oro PH (titulo cian, banda con el proyecto, franja gris, fotografia de fachada y logo), hoja carta, membrete de texto, titulos en Montserrat, cuerpo en Libre Franklin, tablas sin rejilla y pie de tres lineas con la pagina. Ya no lleva la contraportada de versiones y APROBO, que es de QATRO. Los proyectos de QATRO conservan su formato.",
+    "MEJOR - EL ENCABEZADO QATRO DEL PLAN SE MODERNIZO: rejilla fina gris, Montserrat, cada dato con su rotulo (pagina, informe, version, localizacion, contratante) y el logo centrado en su celda.",
+    "NUEVO - SIN PLANOS, LA LOCALIZACION LO DICE: si el plan todavia no tiene planos cargados, la seccion 4 dice «No se tienen planos de la edificacion para localizar los ensayos», y la tabla de auscultaciones ya no lista planos sin imagen.",
+    "NUEVO - EL CRONOGRAMA DICE QUE DIA SE RETOMAN LABORES: junto a «Pausa despues» la tarjeta de la actividad muestra «se retoma el Dia 4 (jue 29 oct)», o que la pausa no alarga nada si es la ultima actividad.",
+    "CORREGIDO - LA APP AVISA LA VERSION NUEVA AUNQUE ESTE ABIERTA: el aviso solo se revisaba al abrir la app y al volver la senal; una pestana o una tablet abierta desde antes de publicar seguia con la version vieja sin enterarse. Ahora tambien revisa al volver a la ventana y cada media hora.",
     "NUEVO - CRONOGRAMA CON VISITA TECNICA INICIAL Y LEVANTAMIENTO DE LESIONES (Plan de auscultamiento): las dos actividades van arriba de la lista y se miden en horas de toda la cuadrilla (una visita de 4 h dura 4 h aunque vayan dos personas).",
     "NUEVO - PAUSAS EN EL CRONOGRAMA: cada actividad tiene «Pausa despues (dias habiles)» y un motivo opcional. Visita el dia 1 con pausa 2: los dias 2 y 3 quedan sin labores y los ensayos arrancan el dia 4. Los dias de pausa salen en gris en el Gantt, en la agenda y en el reporte impreso.",
     "CORREGIDO - EL MAPA DEL PLAN YA NO TOMA UNA ACTIVIDAD COMO ENSAYO A UBICAR: la visita, el levantamiento y la reparacion no se marcan en los planos.",
@@ -93,6 +98,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.50.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.51.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
