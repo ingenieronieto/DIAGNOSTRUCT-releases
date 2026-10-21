@@ -1,8 +1,14 @@
 {
-  "version": "2.99.53",
+  "version": "2.99.54",
   "fecha": "2026-10-21",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - LOS CUADROS DE «FALTA» LLEVAN A DONDE SE LLENA: en la Estacion de analisis (y en los Indices A.10) cada aviso de lo que falta —el grupo de uso, R′, el municipio, el perfil de suelo, las secciones de A.10, la calificacion A.10.2.2, el Modelo 3D— es un boton «Llenarlo en …» que abre ese modulo ENCIMA, en la pestana y el campo exactos (resaltado en naranja). Al volver con «← Volver a la Estacion de analisis» el cuadro ya sale bien; la Estacion no se pierde: el ETABS conectado, los pasos hechos y las corridas siguen ahi.",
+    "NUEVO - MODELADOR: ESPECTRO DE RESPUESTA COMO ETABS: Definir → Funciones de espectro (la NSR-10 con Aa, Av del municipio del proyecto, el perfil de suelo e I, o una tabla T–Sa pegada) y Casos de espectro de respuesta (U1/U2, factor g o g/R, ζ). Cada modo responde con Sa(T) y se combina con CQC; las derivas, el cortante de piso y las fuerzas por estacion se combinan modo por modo. Un caso de espectro, o una combinacion que lo lleve, sale como envolvente: maximo y minimo en los diagramas y en las tablas.",
+    "NUEVO - MODELADOR: SISMO ESTATICO (FHE) «USER COEFFICIENT»: V = C·W y Fx = Cvx·V con el exponente k, en las masas de cada piso, con la excentricidad accidental de 0,05·B (+, − o sin ella). «Usar C y k de la NSR-10» los calcula con Ta = Ct·h^α, Cu, T ≤ Cu·Ta (el del modal si se corrio) y Sa(T). Las combinaciones de la NSR-10 se arman con cada sismo en los dos sentidos (SX+, SX−…) y con cada espectro.",
+    "NUEVO - MODELADOR: MAS DE ETABS: Asignar → modificadores de propiedad (A, J, I2, I3 y peso; «agrietadas NSR-10» = 0,70 columnas y 0,35 vigas), carga puntual en barras y masa adicional en nudos; fuente de masa con masa vertical. Editar → replicar lineal y en espejo, mover, dividir barras y unir nudos. Tablas → Story Forces, Base Reactions, masas y centros de masa por piso, los sismos piso por piso y el espectro.",
+    "MEJOR - VERIFICADO CONTRA EL EJEMPLO 1-021 DE SAP2000 Y ETABS (Bathe y Wilson, portico de 10 vanos y 9 pisos): ω² = 0,589541 · 5,52695 · 16,5878, igual que CSI, en OpenSees y en el solucionador de la app. El modal de la app ahora separa bien los modos de frecuencia cercana (antes el sismo en X se colaba en Y).",
+    "CORREGIDO - EXPORTAR A ETABS CONTABA DOS VECES EL PESO PROPIO DE LAS BARRAS: el patron D sale con SELFWEIGHT 1 y ademas se exportaban las cargas de peso propio que genera la app. Ya no se exportan (las de las losas si, porque las losas no viajan en el .e2k).",
     "NUEVO - CADA PROYECTO ELIGE QUIEN FIRMA: en los datos del proyecto, «Firmantes del proyecto» admite hasta seis asociados y cada uno tiene su interruptor «Firma / No firma». Los informes, el plan y los formatos toman solo a los que firman. Si se apagan todos, no firma nadie: la app ya no pone al primer firmante de la empresa, que fue lo que hizo salir a otra persona en el pie de un proyecto que no era suyo.",
     "CORREGIDO - EL PLAN DE AUSCULTAMIENTO SE IMPRIME BIEN EN ING. NIETO: las hojas centraban el contenido a lo alto y dejaban un hueco grande bajo el encabezado; la ultima seccion se iba contra el borde y la impresion la partia. Ahora el contenido arranca bajo el encabezado, la hoja no mete paginas en blanco y el Gantt no parte las horas en dos renglones.",
     "NUEVO - MODELADOR ESTRUCTURAL COMO ETABS Y SAP2000 (Vulnerabilidad Sismica → Modelador estructural): menus, barra de herramientas, explorador, ventanas de planta, elevacion y 3D lado a lado, propiedades y barra de estado. Modelo nuevo desde plantilla (ejes A, B… y 1, 2… con espacios como «3@5» o «5, 5, 4», pisos con su altura, columnas, vigas, losas, apoyos y cargas D y L) o la grilla sola para dibujar a mano. Es el mismo Modelo 3D del proyecto.",
@@ -105,6 +111,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.53.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.54.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
