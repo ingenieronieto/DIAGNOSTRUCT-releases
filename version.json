@@ -1,8 +1,10 @@
 {
-  "version": "2.99.52",
+  "version": "2.99.53",
   "fecha": "2026-10-21",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - CADA PROYECTO ELIGE QUIEN FIRMA: en los datos del proyecto, «Firmantes del proyecto» admite hasta seis asociados y cada uno tiene su interruptor «Firma / No firma». Los informes, el plan y los formatos toman solo a los que firman. Si se apagan todos, no firma nadie: la app ya no pone al primer firmante de la empresa, que fue lo que hizo salir a otra persona en el pie de un proyecto que no era suyo.",
+    "CORREGIDO - EL PLAN DE AUSCULTAMIENTO SE IMPRIME BIEN EN ING. NIETO: las hojas centraban el contenido a lo alto y dejaban un hueco grande bajo el encabezado; la ultima seccion se iba contra el borde y la impresion la partia. Ahora el contenido arranca bajo el encabezado, la hoja no mete paginas en blanco y el Gantt no parte las horas en dos renglones.",
     "NUEVO - MODELADOR ESTRUCTURAL COMO ETABS Y SAP2000 (Vulnerabilidad Sismica → Modelador estructural): menus, barra de herramientas, explorador, ventanas de planta, elevacion y 3D lado a lado, propiedades y barra de estado. Modelo nuevo desde plantilla (ejes A, B… y 1, 2… con espacios como «3@5» o «5, 5, 4», pisos con su altura, columnas, vigas, losas, apoyos y cargas D y L) o la grilla sola para dibujar a mano. Es el mismo Modelo 3D del proyecto.",
     "NUEVO - DIBUJAR, SELECCIONAR Y ASIGNAR COMO EN ETABS: columnas, vigas, diagonales y losas con clic en la grilla, replicar a otros pisos, seleccion por ventana o cruce, por piso, por tipo o por seccion; apoyos, secciones, liberaciones de momento, cargas en barras, nudos y losas por patron, espesor de losa y peso propio. Deshacer y rehacer.",
     "NUEVO - ANALISIS POR PATRON Y MODAL: en el escritorio corre en OpenSees (con diafragma rigido opcional); en la web y la tablet, con el solucionador de la app. Combinaciones de la NSR-10 con los patrones que hay, masa D + 0,25 L, deformada por patron, combinacion o modo, diagramas de M, V y P en elevacion (el momento del lado de la traccion) y tablas de desplazamientos, reacciones con su suma, fuerzas, derivas por piso y modos con su participacion.",
@@ -103,6 +105,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.52.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.53.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
