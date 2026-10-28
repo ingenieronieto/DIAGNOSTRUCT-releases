@@ -2,6 +2,13 @@
   "generado": "2026-10-28",
   "versiones": [
     {
+      "version": "2.99.61",
+      "fecha": "2026-10-28",
+      "notas": [
+        "CORREGIDO - EL INDICE P-M-M DE LAS COLUMNAS SE CALCULA SOBRE EL RAYO, SIN CASCO CONVEXO (Indices A.10 → Columnas P-M-M): se busca el punto nominal que tiene la misma excentricidad de la demanda y se le aplica el φ de su deformacion (C.9.3.2), con el bloque de Whitney exacto. El casco convexo, que queda para dibujar la cebolla, salta la zona donde φ pasa de 0,65 a 0,90 y entre sus 40 profundidades corta por cuerdas, asi que el indice podia quedar hasta 0,02 por debajo o por encima. En una columna 40x60 con 20 #7 y demanda biaxial da 1,139 (antes 1,128); en una uniaxial, 0,477, igual al calculo a mano (antes 0,469). Verificado contra una implementacion aparte con 60.000 fibras: diferencia de 0,0001. La sugerencia de refuerzo y la lista de columnas usan el mismo calculo."
+      ]
+    },
+    {
       "version": "2.99.60",
       "fecha": "2026-10-28",
       "notas": [
