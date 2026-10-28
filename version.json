@@ -1,8 +1,11 @@
 {
-  "version": "2.99.58",
-  "fecha": "2026-10-22",
+  "version": "2.99.59",
+  "fecha": "2026-10-23",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - EXPORTAR A SAP2000: LA TORSION SALE IGUAL QUE EN LA APP: con diafragmas, la masa va como la calcula la app: la de cada nudo como masa adicional y la de las losas en un nudo en el centro de masa de cada diafragma (CM_...), con su inercia rotacional. Antes SAP2000 dejaba la masa de la losa en los nudos de las vigas y el modo de torsion salia mas largo (0,3254 s frente a 0,2797 s en el portico de prueba). Probado en SAP2000 24: las cargas, los sismos, el espectro y los periodos dan lo mismo que la app.",
+    "CORREGIDO - EXPORTAR A SAP2000: el .s2k sale con las tablas y los campos de SAP2000 24: una fila por seccion con sus propiedades, materiales, losas y muros, un diafragma por nivel, apoyos, liberaciones, modificadores, patrones con su peso propio, sismos «User Coefficient», las cargas de las losas a sus vigas («Uniform to Frame»), fuente de masa, el espectro NSR-10, casos y combinaciones. Antes partia cada seccion en varias filas y no llevaba areas, patrones ni combinaciones. Importar de SAP2000 tambien lee «Uniform to Frame», la masa rotacional de los nudos y las longitudes de extremo con sus campos reales.",
+    "CORREGIDO - MODELADOR: EL PESO PROPIO DE LAS LOSAS VA COMO CARGA DE AREA: «Generar el peso propio» ponia el peso de cada losa en sus cuatro esquinas, y la masa en las esquinas alargaba el modo de torsion. Ahora es carga de area en D (densidad x espesor), que se reparte a las vigas por areas aferentes y cuya masa va al diafragma con la inercia de la losa: la torsion sale igual que en ETABS (0,2797 s; antes 0,3075 s en el portico de prueba). Las cargas que puso el usuario se conservan.",
     "NUEVO - DETALLADO DE REFUERZO Y PLANOS COMO ETABS MATE (Diseno estructural → Detallado de refuerzo y planos): desde el Modelo 3D del proyecto o un .e2k de ETABS (o .s2k de SAP2000), la app arma el despiece de vigas, columnas y muros con la NSR-10. Vigas: corridas y bastones por la envolvente, anclaje con gancho en las columnas de los extremos, traslapos fuera de las zonas confinadas, estribos por zonas (2h, centro, traslapo) con el cortante de capacidad de C.21.5.4, estribos de suspension donde llega una viga secundaria y el refuerzo de torsion. El refuerzo requerido sale del analisis de la app, de las fuerzas de ETABS (Element Forces) o de sus tablas de diseno.",
     "NUEVO - DETALLADO: COLUMNAS, MUROS Y EDICION A MANO: las columnas se arman contra la superficie P-M-M con todas las combinaciones, con Ash, lo y so, el empalme en la mitad central (con conector mecanico si el traslapo no cabe en el piso) y sus grupos (C-1) y tipos (TC-1); los muros, con sus cortinas y los elementos de borde. Cada viga se edita a mano (barras, bastones y estribos) y se revisa contra lo requerido. Las combinaciones se escogen aparte para vigas y columnas: las de deriva (DER), cimentacion (CIM) y umbral de dano no entran, y las VIG y COL de sobrerresistencia entran solo en su elemento.",
     "NUEVO - DETALLADO: CANTIDADES Y PLANOS EN DXF PARA AUTOCAD: cuadro de despiece por posiciones (figura, medidas, largo de corte, cantidad y peso), acero por piso, elemento y diametro, concreto, kg de acero por m3 y la lista de compra en barras de 6, 9 o 12 m, a Excel, CSV o TXT. Planos: plantas con las cargas de losas y vigas, perfil longitudinal y cortes de cada viga, cuadro y elevacion de columnas, muros y cuadro de despiece, en DXF que abre cualquier AutoCAD (capas con color, sin bloques), SVG, PNG o impresion con las capas que se elijan. Todo es configurable: DES/DMO/DMI, empalmes, factor de ld, barras permitidas, corte de bastones, ubicacion de empalmes, ganchos y tipo de estribo.",
@@ -123,6 +126,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.58.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.59.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
