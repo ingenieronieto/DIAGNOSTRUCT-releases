@@ -1,8 +1,14 @@
 {
-  "version": "2.99.59",
-  "fecha": "2026-10-23",
+  "version": "2.99.60",
+  "fecha": "2026-10-28",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - TERMINOS DE USO Y DATOS PERSONALES: al entrar, cada usuario lee y acepta los Terminos y condiciones de uso, la Politica de tratamiento de datos personales (Ley 1581 de 2012), el aviso de Propiedad intelectual y la nota de Responsabilidad profesional. Se pide una vez por usuario y por version de los textos; si ya se acepto en otro equipo, la cuenta lo sabe y no se vuelve a preguntar. Sin senal se acepta igual y la constancia se sube al volver la red. Los textos se leen tambien desde el inicio de sesion y desde Configuracion → Legal y privacidad.",
+    "NUEVO - DIAGNOSTRUCT ES SOFTWARE PROPIETARIO DE SU AUTOR: cada archivo publicado lleva el aviso de derechos de Francisco Alejandro Nieto Franco, el inicio de sesion lo muestra y el repositorio tiene su licencia. La marca de agua de autoria sale del mismo lugar.",
+    "CORREGIDO - LA WEB PUBLICA YA NO TRAE DATOS DE PROYECTOS DE CLIENTES: los importadores de Velodromo, Clinica Farallones, Zapayan, Alpina Sopo y UAN Quibdo viajaban con sus fichas, lecturas y planos dentro de la app, y cualquiera podia bajarlos sin iniciar sesion. Se retiraron; los proyectos ya cargados en la nube no se tocan. La revision de fotos de lesiones en el servidor queda para cualquier proyecto (Configuracion → Datos y respaldo).",
+    "CORREGIDO - SE RETIRA EL FORMATO QATRO: el informe de patologia, el informe gerencial, el anexo fotografico y el plan de auscultamiento salen siempre con la composicion propia. La plantilla, el logo y los datos de contacto de QATRO ya no estan en la app.",
+    "NUEVO - EL LOGO DEL CONTRATANTE SALE EN EL ENCABEZADO: el que se carga en el informe de patologia va en la casilla CONTRATANTE del encabezado de las hojas, encima del nombre, en el Word del informe y en las entregas de la app (anexo fotografico, informe gerencial, plan de auscultamiento, diagnostico, evolucion y fitosanitario). Antes solo lo imprimia el formato QATRO.",
+    "MEJOR - PANEL DE CONFIGURACION ORDENADO: el menu va en cuatro bloques (Empresa, Firmas y entregas, Ensayos, Sistema) y cada seccion dice que toca. «Informe y veredictos» se partio en «Informe de patologia» (el CUMPLE / NO CUMPLE, que rige el informe y el gerencial) y «Laboratorio y nucleos» (lo que solo sale en la hoja de nucleos). Las firmas de la hoja de nucleos pasaron a «Firmantes», asi todas las firmas estan en un solo sitio; los textos de guia se llaman «Guia de esclerometria», el unico formulario que los usa, y los ejemplos con codigos de otra empresa se cambiaron por ejemplos neutros.",
     "NUEVO - EXPORTAR A SAP2000: LA TORSION SALE IGUAL QUE EN LA APP: con diafragmas, la masa va como la calcula la app: la de cada nudo como masa adicional y la de las losas en un nudo en el centro de masa de cada diafragma (CM_...), con su inercia rotacional. Antes SAP2000 dejaba la masa de la losa en los nudos de las vigas y el modo de torsion salia mas largo (0,3254 s frente a 0,2797 s en el portico de prueba). Probado en SAP2000 24: las cargas, los sismos, el espectro y los periodos dan lo mismo que la app.",
     "CORREGIDO - EXPORTAR A SAP2000: el .s2k sale con las tablas y los campos de SAP2000 24: una fila por seccion con sus propiedades, materiales, losas y muros, un diafragma por nivel, apoyos, liberaciones, modificadores, patrones con su peso propio, sismos «User Coefficient», las cargas de las losas a sus vigas («Uniform to Frame»), fuente de masa, el espectro NSR-10, casos y combinaciones. Antes partia cada seccion en varias filas y no llevaba areas, patrones ni combinaciones. Importar de SAP2000 tambien lee «Uniform to Frame», la masa rotacional de los nudos y las longitudes de extremo con sus campos reales.",
     "CORREGIDO - MODELADOR: EL PESO PROPIO DE LAS LOSAS VA COMO CARGA DE AREA: «Generar el peso propio» ponia el peso de cada losa en sus cuatro esquinas, y la masa en las esquinas alargaba el modo de torsion. Ahora es carga de area en D (densidad x espesor), que se reparte a las vigas por areas aferentes y cuya masa va al diafragma con la inercia de la losa: la torsion sale igual que en ETABS (0,2797 s; antes 0,3075 s en el portico de prueba). Las cargas que puso el usuario se conservan.",
@@ -126,6 +132,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.59.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.60.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
