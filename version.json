@@ -1,8 +1,10 @@
 {
-  "version": "2.99.62",
+  "version": "2.99.63",
   "fecha": "2026-11-01",
   "minima": "1.70.0",
   "notas": [
+    "MEJOR - MODELADOR: LAS COLUMNAS QUE ARRANCAN EN LA BASE QUEDAN EMPOTRADAS AL DIBUJARLAS: con la herramienta Columna (clic o ventana) y con una barra vertical que sale de la base, el nudo del pie queda empotrado, como en la plantilla de modelo nuevo, y la barra de estado dice cuantos nudos se apoyaron. Antes quedaban sueltas y habia que asignar el apoyo a mano antes de analizar. Un pie que ya tenia apoyo (articulado, por ejemplo) lo conserva, y al replicar una columna de la base en planta la copia lleva el apoyo de la original. Se cambia con Asignar → Apoyos.",
+    "MEJOR - EL MODELADOR SE VERIFICO EN EXCEL CON OCHO EJERCICIOS: a los seis anteriores se sumaron el espectro con CQC en una columna de dos masas y la torsion en planta con diafragma rigido. Las 28 magnitudes nuevas dan lo mismo en OpenSees y en el solucionador de la app que en el calculo a mano.",
     "CORREGIDO - MODELADOR: LA TABLA «FUERZAS EN BARRAS» SALE CON LOS EJES Y LOS SIGNOS DE ETABS (Mostrar → Tablas): P, V2, V3, T, M2 y M3 como en «Element Forces», tambien en combinaciones y espectros. Antes tenia esos rotulos pero mostraba la convencion interna de la app, y en las vigas M3 y V3 salian con el signo contrario: una viga apoyada de 6 m con 20 kN/m daba −90 kN·m al centro, donde ETABS da +90. Las magnitudes y los diagramas no cambian.",
     "CORREGIDO - MODELADOR: EL MODULO DE ELASTICIDAD DEL CONCRETO ES 4700·√f'c SIN REDONDEAR (NSR-10 C.8.5.1): el catalogo traia 21,5 GPa para 21 MPa, que son 21,54, y las flechas salian 0,18 % mayores que en ETABS (en 28, 35 y 42 MPa el redondeo movia menos). Con el valor exacto, la viga apoyada, el voladizo y la viga continua dan lo mismo que el calculo a mano. Los modelos que ya existen cambian en esa misma proporcion.",
     "CORREGIDO - MODELADOR: «MZ EXCENTR.» DEL SISMO ESTATICO YA NO SALE EN CERO CON DIAFRAGMA RIGIDO (Mostrar → Tablas → Sismos estaticos): la tabla dice el momento que se aplica, F·e·B en cada piso. La torsion accidental si se aplicaba; solo la tabla mostraba 0. Ademas, en un piso con diafragma y con nudos que tienen masa fuera de el, los nudos libres llevan solo su parte del momento: antes se llevaban el de todo el piso y la torsion quedaba de mas.",
@@ -138,6 +140,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.62.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.63.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

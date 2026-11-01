@@ -2,6 +2,14 @@
   "generado": "2026-11-01",
   "versiones": [
     {
+      "version": "2.99.63",
+      "fecha": "2026-11-01",
+      "notas": [
+        "MEJOR - MODELADOR: LAS COLUMNAS QUE ARRANCAN EN LA BASE QUEDAN EMPOTRADAS AL DIBUJARLAS: con la herramienta Columna (clic o ventana) y con una barra vertical que sale de la base, el nudo del pie queda empotrado, como en la plantilla de modelo nuevo, y la barra de estado dice cuantos nudos se apoyaron. Antes quedaban sueltas y habia que asignar el apoyo a mano antes de analizar. Un pie que ya tenia apoyo (articulado, por ejemplo) lo conserva, y al replicar una columna de la base en planta la copia lleva el apoyo de la original. Se cambia con Asignar → Apoyos.",
+        "MEJOR - EL MODELADOR SE VERIFICO EN EXCEL CON OCHO EJERCICIOS: a los seis anteriores se sumaron el espectro con CQC en una columna de dos masas y la torsion en planta con diafragma rigido. Las 28 magnitudes nuevas dan lo mismo en OpenSees y en el solucionador de la app que en el calculo a mano."
+      ]
+    },
+    {
       "version": "2.99.62",
       "fecha": "2026-11-01",
       "notas": [
