@@ -1,8 +1,13 @@
 {
-  "version": "2.99.61",
-  "fecha": "2026-10-28",
+  "version": "2.99.62",
+  "fecha": "2026-11-01",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - MODELADOR: LA TABLA «FUERZAS EN BARRAS» SALE CON LOS EJES Y LOS SIGNOS DE ETABS (Mostrar → Tablas): P, V2, V3, T, M2 y M3 como en «Element Forces», tambien en combinaciones y espectros. Antes tenia esos rotulos pero mostraba la convencion interna de la app, y en las vigas M3 y V3 salian con el signo contrario: una viga apoyada de 6 m con 20 kN/m daba −90 kN·m al centro, donde ETABS da +90. Las magnitudes y los diagramas no cambian.",
+    "CORREGIDO - MODELADOR: EL MODULO DE ELASTICIDAD DEL CONCRETO ES 4700·√f'c SIN REDONDEAR (NSR-10 C.8.5.1): el catalogo traia 21,5 GPa para 21 MPa, que son 21,54, y las flechas salian 0,18 % mayores que en ETABS (en 28, 35 y 42 MPa el redondeo movia menos). Con el valor exacto, la viga apoyada, el voladizo y la viga continua dan lo mismo que el calculo a mano. Los modelos que ya existen cambian en esa misma proporcion.",
+    "CORREGIDO - MODELADOR: «MZ EXCENTR.» DEL SISMO ESTATICO YA NO SALE EN CERO CON DIAFRAGMA RIGIDO (Mostrar → Tablas → Sismos estaticos): la tabla dice el momento que se aplica, F·e·B en cada piso. La torsion accidental si se aplicaba; solo la tabla mostraba 0. Ademas, en un piso con diafragma y con nudos que tienen masa fuera de el, los nudos libres llevan solo su parte del momento: antes se llevaban el de todo el piso y la torsion quedaba de mas.",
+    "CORREGIDO - MODELADOR: «BASE REACTIONS» CON LOS MOMENTOS RESPECTO DEL ORIGEN, COMO ETABS: MX, MY y MZ suman el momento de cada reaccion (r × F) ademas del momento de cada apoyo, asi que se comparan directo con la tabla de ETABS. Antes se sumaban solo los momentos de los apoyos. En un sismo de 8 pisos el volcamiento da 42.553 kN·m, igual a Σ F·h.",
+    "MEJOR - EL MODELADOR SE VERIFICO A MANO EN EXCEL: seis ejercicios (viga apoyada, voladizo, viga continua, portico de un vano con su matriz de rigidez, periodo y fuerza horizontal equivalente de 8 pisos) dan lo mismo con OpenSees y con el solucionador de la app. De ahi salieron las cuatro correcciones de esta version.",
     "CORREGIDO - EL INDICE P-M-M DE LAS COLUMNAS SE CALCULA SOBRE EL RAYO, SIN CASCO CONVEXO (Indices A.10 → Columnas P-M-M): se busca el punto nominal que tiene la misma excentricidad de la demanda y se le aplica el φ de su deformacion (C.9.3.2), con el bloque de Whitney exacto. El casco convexo, que queda para dibujar la cebolla, salta la zona donde φ pasa de 0,65 a 0,90 y entre sus 40 profundidades corta por cuerdas, asi que el indice podia quedar hasta 0,02 por debajo o por encima. En una columna 40x60 con 20 #7 y demanda biaxial da 1,139 (antes 1,128); en una uniaxial, 0,477, igual al calculo a mano (antes 0,469). Verificado contra una implementacion aparte con 60.000 fibras: diferencia de 0,0001. La sugerencia de refuerzo y la lista de columnas usan el mismo calculo.",
     "NUEVO - TERMINOS DE USO Y DATOS PERSONALES: al entrar, cada usuario lee y acepta los Terminos y condiciones de uso, la Politica de tratamiento de datos personales (Ley 1581 de 2012), el aviso de Propiedad intelectual y la nota de Responsabilidad profesional. Se pide una vez por usuario y por version de los textos; si ya se acepto en otro equipo, la cuenta lo sabe y no se vuelve a preguntar. Sin senal se acepta igual y la constancia se sube al volver la red. Los textos se leen tambien desde el inicio de sesion y desde Configuracion → Legal y privacidad.",
     "NUEVO - DIAGNOSTRUCT ES SOFTWARE PROPIETARIO DE SU AUTOR: cada archivo publicado lleva el aviso de derechos de Francisco Alejandro Nieto Franco, el inicio de sesion lo muestra y el repositorio tiene su licencia. La marca de agua de autoria sale del mismo lugar.",
@@ -133,6 +138,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.61.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.62.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
