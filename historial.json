@@ -1,6 +1,24 @@
 {
-  "generado": "2026-11-01",
+  "generado": "2026-11-02",
   "versiones": [
+    {
+      "version": "2.99.65",
+      "fecha": "2026-11-02",
+      "notas": [
+        "CORREGIDO - IMPORTAR DE ETABS: LOS PERFILES DE CUBIERTA ENTRAN COMPLETOS: canal, doble canal (con su separacion) y C de lamina delgada con pestañas y dobleces se importan con el area y las inercias que calcula ETABS (iguales en canal y doble canal; a 0,03 % en la C de lamina). Antes se quedaban por fuera: en la Bodega 10-11 de Puertas del Sol eran los 40 tramos de arco y las 28 correas, 68 de 145 barras. Tambien entra la seccion «General» como la escribe ETABS (AREA y TORSION), que antes se descartaba.",
+        "CORREGIDO - MODELADOR: LA MASA DE LOS NUDOS POR ENCIMA DEL ULTIMO PISO PASA AL PISO, como hace ETABS con «Lump lateral mass at story levels»: en una cubierta en arco la masa se quedaba en el arco, que fuera de su plano es flexible, y la respuesta sismica cambiaba (en la Bodega 10-11, el nudo del arco se movia 32,7 mm en X donde ETABS da 19,3 y el cortante basal salia 1,15 % bajo). Un nudo entre pisos sin nudo en la misma planta ni diafragma lleva su masa al nudo mas cercano del nivel.",
+        "CORREGIDO - MODELADOR: UNA LOSA MEMBRANA SIN DIAFRAGMA (MODELOS DE ETABS) YA NO SE MALLA EN CUADROS DE 1 M: como la malla «Default» de ETABS para membranas, cada paño entre vigas es un solo elemento y las vigas de su borde no se parten. Con la malla fina la viga entre dos paños trabajaba con la losa: en la Bodega 10-11, 37,4 kN de axial por sismo donde ETABS da 7,0. Ahora da 8,5.",
+        "MEJOR - VERIFICADO CON UNA ESTRUCTURA REAL CONTRA ETABS 21: la Bodega 10-11 de Puertas del Sol (pórtico de 4 pisos con cubierta en arco, f'c medido en los nucleos). Con estas correcciones el modelo de ETABS entra tal cual y da lo mismo: periodos a 0,64 %, reacciones en la base a 0,41 %, derivas a 1,1 %, fuerzas en columnas a 2,2 % y en vigas a 4,4 %; peso, sobrecargas y masas a 0,01 %."
+      ]
+    },
+    {
+      "version": "2.99.64",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - MODELADOR: MAPA DE SOBREESFUERZOS A.10 (boton «Sobreesfuerzos» o Analizar → Mapa de sobreesfuerzos A.10): cada barra se pinta de verde a rojo por su indice de sobreesfuerzo (A.10.4.3), con las secciones de A.10, la ficha y φc·φe de la estructura; rojo desde 1. La parte sismica de las combinaciones va con E = Fs/R′ (si el espectro del modelo ya viene dividido por un R, como el de ETABS, se lee de su factor). Al tocar un elemento se ve su indice y que lo gobierna: flexion, cortante, torsion o, en columnas, la P-M-M exacta de «Columnas P-M-M». El panel resume por piso (con el indice de flexibilidad) y por eje, lista los mas esforzados y deja asignar a las secciones del modelo su seccion de A.10. Con el mapa abierto, cada cambio del modelo se vuelve a analizar solo. Lo que falta para calcular lleva al modulo donde se llena.",
+        "NUEVO - MODELADOR: BOTON DE PUSHOVER: corre de una vez el pushover de OpenSees del escritorio (fibras de A.10, W = D + 0,25 L, desplazamiento objetivo de FEMA 356) sobre el modelo abierto, solo si estan todos los datos. Si falta algo, el boton dice cuantos y el cuadro dice cuales y donde se llenan: el escritorio con OpenSees, la estructura, los apoyos, la gravedad en los patrones D y L, las secciones de A.10 de las columnas, el municipio, el perfil de suelo, el grupo de uso y R′."
+      ]
+    },
     {
       "version": "2.99.63",
       "fecha": "2026-11-01",
