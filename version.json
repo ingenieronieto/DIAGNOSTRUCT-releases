@@ -1,8 +1,10 @@
 {
-  "version": "2.99.69",
+  "version": "2.99.70",
   "fecha": "2026-11-02",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR: BOTON «REFORZAR» (PRIMER ANALISIS DEL REFORZAMIENTO): sobre el mapa de sobreesfuerzos A.10, cada elemento que pasa del objetivo de A.10.9.2 recibe la ruta que lo resuelve, ordenada por menos intrusiva, menor costo (con los precios que ponga el ingeniero) o mas facil: FRP a cortante, a flexion o confinamiento (ACI 440.2R, con su limite de refuerzo), encamisado de columna, encamisado de viga en U o completo. Cada una se evalua con las mismas demandas del mapa y muestra el indice antes y despues, con sus cantidades. Al tocar un elemento se ven sus alternativas y se fija una a mano (capas, espesor, barras).",
+    "NUEVO - REFORZAR: PANTALLAS PARA LA FLEXIBILIDAD Y VERIFICACION CON EL MODELO REFORZADO: con la flexibilidad por encima del limite, propone los vanos donde pueden ir pantallas (perimetrales y simetricos; sin diafragma rigido, una por portico) y pregunta cuales se pueden cerrar. «Verificar el refuerzo» analiza una copia del modelo con las camisas y las pantallas (la rigidez nueva redistribuye) y «Ronda N» vuelve a proponer con esas demandas hasta que cierre; la Bodega 10-11 cerro en 4 rondas.",
     "NUEVO - MODELADOR: DIAGRAMAS DE LO SELECCIONADO: al elegir una viga, una columna, un nudo o una losa, al costado salen sus diagramas de momento, cortante y axial (M3/M2, V2/V3, P/T) en el caso que se muestra, con los signos de ETABS y el momento del lado de la tension. El mouse los recorre a la vez, da los valores en cada punto y marca el punto en la planta, la elevacion y el 3D; un clic fija el cursor y las flechas lo mueven. Varias vigas o columnas seguidas salen en un solo diagrama continuo; un nudo trae las barras que llegan a el y una losa las vigas de su borde. Con espectro, maximo y minimo. Se apaga en Mostrar.",
     "CORREGIDO - MODELADOR: LOS DIAGRAMAS DE LA ELEVACION NO VEIAN LA CARGA DE LAS LOSAS NI EL PESO PROPIO: esas cargas van en tramos lineales y el dibujo no los leia, asi que el momento de una viga cargada por losa salia recto entre los extremos. Ahora sale con su forma (los valores de los extremos y las tablas no cambian).",
     "NUEVO - MODELADOR: ETIQUETAS DE NUDOS, LINEAS Y AREAS POR SEPARADO: en la barra de herramientas, «Etiquetas: Nudos · Lineas · Areas» prende y apaga cada rotulo por su lado, en la planta, la elevacion y el 3D (tambien en Ver). Arrancan apagadas, asi el 3D ya no sale tapado de numeros; el elemento elegido siempre lleva su rotulo.",
@@ -151,6 +153,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.69.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.70.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
