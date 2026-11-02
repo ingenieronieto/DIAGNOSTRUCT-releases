@@ -1,8 +1,9 @@
 {
-  "version": "2.99.71",
+  "version": "2.99.72",
   "fecha": "2026-11-02",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - REFORZAR: LA HOLGURA POR DEFECTO PASA DE 0,90 A 0,95: medido en la Bodega 10-11 con las seis pantallas que propone la app, sin holgura cierra en 4 rondas, con 0,95 en 3 y con 0,90 se trababa en cuatro vigas (mas camisas dan mas rigidez y mas momento en las vigas que llegan a las pantallas). Con las ocho pantallas marcadas a mano no cierra con ninguna holgura: dos vigas que se apoyan en las pantallas quedan sin tecnica que las baje de 1, y la bitacora las nombra. La holgura se sigue cambiando en el panel.",
     "CORREGIDO - REFORZAR: LAS RONDAS YA NO SALTAN SIN CERRAR: en la Bodega 10-11 siete rondas iban de 1,06 a 1,62 y volvian, porque cada ronda escogia desde cero (una camisa pasaba a FRP y al reves, y eso movia las demandas) y el FRP quedaba al filo, en 0,99. Ahora cada refuerzo se busca con holgura (bajo 0,90 por defecto; se cambia en el panel) y en la ronda siguiente lo reforzado se queda (=) o sube (↑), nunca baja. Si a una barra no la deja bajo 1 ninguna tecnica del catalogo, la bitacora la nombra con su indice.",
     "NUEVO - REFORZAR: «VERIFICAR Y AJUSTAR HASTA CERRAR»: corre solo las rondas (verifica, propone con las demandas del modelo reforzado y vuelve a verificar) hasta que nada pase del objetivo, hasta que una ronda no cambie nada o hasta 8 rondas, con una bitacora de cada una (maximo, barras sobre 1 y flexibilidad). «Solo verificar» y la ronda a mano siguen.",
     "MEJOR - REFORZAR: PANTALLAS MAS CLARAS: sin diafragma rigido dice lo que le falta a cada portico contra lo que da una pantalla (en la Bodega, 1.210 kN/m contra 48.191: una por portico la pide la falta de diafragma, no la rigidez), cuanto pesan las pantallas marcadas frente al peso sismico de la estructura (ese peso entra al sismo del modelo reforzado) y, si los vanos se marcaron a mano, cual es la propuesta automatica.",
@@ -157,6 +158,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.71.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.72.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

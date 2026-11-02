@@ -2,6 +2,13 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.72",
+      "fecha": "2026-11-02",
+      "notas": [
+        "CORREGIDO - REFORZAR: LA HOLGURA POR DEFECTO PASA DE 0,90 A 0,95: medido en la Bodega 10-11 con las seis pantallas que propone la app, sin holgura cierra en 4 rondas, con 0,95 en 3 y con 0,90 se trababa en cuatro vigas (mas camisas dan mas rigidez y mas momento en las vigas que llegan a las pantallas). Con las ocho pantallas marcadas a mano no cierra con ninguna holgura: dos vigas que se apoyan en las pantallas quedan sin tecnica que las baje de 1, y la bitacora las nombra. La holgura se sigue cambiando en el panel."
+      ]
+    },
+    {
       "version": "2.99.71",
       "fecha": "2026-11-02",
       "notas": [
