@@ -2,6 +2,14 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.73",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - REFORZAR: EL CORTE DE CADA ELEMENTO, EXISTENTE Y REFORZADO: al tocar un elemento, su detalle abre con la seccion transversal: la existente en gris y, encima, la camisa, las barras y los estribos nuevos en navy o el CFRP en negro (mas grueso con mas capas), con la tabla existente contra reforzada (seccion, f'c, As, estribos). Sobre el mismo dibujo, con - y +, se cambian las barras de arriba y de abajo, el diametro, el espesor de la camisa, las barras por cara de la columna, las capas de FRP y el escarificado; queda fijado a mano y el indice se recalcula con las mismas demandas. Poner la primera barra arriba pasa la camisa en U a la completa (perforando la losa) y quitar la ultima la devuelve. Si las barras de arriba no caben en el canal de la camisa, se avisa. Los elementos que no necesitan refuerzo tambien muestran su corte.",
+        "NUEVO - REFORZAR: LA INTERFAZ DE LAS CAMISAS DE VIGA (NSR-10 C.17.5.3): la camisa y la viga existente trabajan juntas solo si la interfaz pasa el cortante horizontal. Escarificada a 6 mm, Vnh = (1,8 + 0,6·ρv·fy)·bv·d, hasta 3,5·bv·d, con los estribos de la camisa como amarres; sin escarificar, 0,55·bv·d; bv es la cara de abajo de la viga existente. Entra al indice de la camisa (por defecto, escarificada) y a la verificacion con el modelo reforzado. En la Bodega 10-11, la B12 del piso 3 con camisa de 100 mm queda en 0,26 escarificada y en 1,42 sin escarificar. La interfaz de las camisas de columna sigue pendiente."
+      ]
+    },
+    {
       "version": "2.99.72",
       "fecha": "2026-11-02",
       "notas": [
