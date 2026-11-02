@@ -2,6 +2,15 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.74",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - REFORZAR: LA VIGA CONTINUA COMPLETA, COMO EN EL DC-CAD3: desde el detalle de una viga, «Ver la viga continua completa» abre el eje de punta a punta con sus columnas y sus ejes: el alzado con el color del indice de cada vano (existente o con el refuerzo), la envolvente de momentos (positivo abajo), el indice a lo largo de la viga (gris el existente, navy con el refuerzo, la linea de 1,0 marca donde falta) y el acero existente y nuevo de cada vano, con el CFRP donde va. Se escoge un vano, varios (Shift) o toda la viga y se les aplica FRP, camisa en U o camisa completa con sus capas, espesor, barras y escarificado; cada vano se recalcula con las mismas demandas. Un vano que cumple tambien se puede reforzar, por continuidad.",
+        "NUEVO - REFORZAR: CADA ALTERNATIVA CON SU ESQUEMA: el FRP en la viga, la camisa en U, la camisa completa, la envoltura de FRP y la camisa de columna traen un alzado y un corte de la intervencion: tiras en U en las zonas de cortante, lamina abajo y lamina arriba sobre la losa cruzando el apoyo (en las zonas donde pasa el indice), estribos en U anclados a la losa o cerrados a traves de ella, barras por el canal de la losa y barras de columna ancladas a la cimentacion.",
+        "NUEVO - MODELADOR: SHIFT PARA ESCOGER VARIOS EN EL 3D: con Shift (o Ctrl) se suman o se quitan elementos en la vista 3D, y quedan resaltados todos. En Reforzar, con varios escogidos, «Aplicar a todos» copia la ruta del primero a los del mismo tipo."
+      ]
+    },
+    {
       "version": "2.99.73",
       "fecha": "2026-11-02",
       "notas": [
