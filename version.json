@@ -1,8 +1,9 @@
 {
-  "version": "2.99.78",
+  "version": "2.99.79",
   "fecha": "2026-11-02",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - REFORZAR: LAS PANTALLAS SE PONEN A MANO Y SOLO EN PORTICOS QUE YA EXISTEN: ninguna pantalla se marca sola; se ponen segun los sobreesfuerzos, y cada vano dice el indice que manda en sus columnas y vigas. Solo salen los vanos entre dos columnas que siguen desde la base con viga en cada piso, y hasta el ultimo piso con viga: entre columnas sin viga (como el interior de una bodega con porticos solo en el perimetro) la pantalla crearia vigas nuevas, y el reforzamiento no las crea. La sugerencia por rigidez queda a la vista con «Marcar los sugeridos», sin aplicarse. Los vanos que ya no valen se caen solos del plan.",
     "NUEVO - REFORZAR: GUARDAR COMO MODELO NUEVO: despues de verificar, «Guardar como modelo nuevo» deja las camisas y las pantallas de lo verificado en un modelo propio del proyecto («<modelo> · reforzado»), para planos, memoria y el pushover del escenario reforzado; el modelo original no cambia. Las secciones de A.10 de las camisas viajan con el modelo nuevo (la lista de A.10 de la estructura existente no cambia) y el FRP, que no cambia la rigidez, queda en el plan de Reforzar del modelo nuevo con sus mismas capas. Trae el registro de cada elemento intervenido y de cada pantalla, y si se vuelve a reforzar, la camisa nueva va sobre la anterior.",
     "NUEVO - MODELADOR: EL ANEXO ABRE CON LA HOJA DE VALIDACION Y TRAZABILIDAD (NSR-10 A.1.5.3.1): los principios del modelo digital y de su analisis (solucionador, elementos, diafragmas, masa, modal, sismo, combinaciones, P-Delta), la validacion del programa contra ETABS con su porcentaje de igualdad y donde estan los archivos para repetirla, la huella SHA-256 de los datos de entrada y de los resultados (si cambia un dato, cambia la huella; volver a imprimir desde el mismo proyecto da la misma), el origen de cada dato de la patologia (f'c de nucleos, fy de traccion, refuerzo del ferroscan y las regatas, con los ensayos que lo soportan, o escrito por el ingeniero) y cierra con la declaracion de A.1.5.3.1 y el bloque de firma del ingeniero responsable (el de la ficha de A.10). El Excel lleva las mismas hojas.",
     "NUEVO - TODA LA APP: EL NOMBRE DE LOS ARCHIVOS: el PDF ya no sale como DIAGNOSTRUCT - Diagnostico estructural. Al imprimir, el archivo se llama con el tipo de documento, el proyecto, la estructura y la fecha (por ejemplo: Anexo de entrada y salida - Bodegas Puertas del Sol - Bodega 10-11 - 2026-11-02). Aplica a los informes de ensayo, el informe de diagnostico, de evolucion, fitosanitario, gerencial y del plan de auscultamiento, el anexo fotografico, la memoria de calculo y la de vulnerabilidad, la cartilla de lesiones, la lista de chequeo de peritaje, el registro fotografico, el ferroscan, los planos y el anexo de entrada y salida, con su Excel y su HTML. Lo que no dice que es sale como Documento con el proyecto y la fecha.",
@@ -171,6 +172,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.78.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.79.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

@@ -2,6 +2,13 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.79",
+      "fecha": "2026-11-02",
+      "notas": [
+        "CORREGIDO - REFORZAR: LAS PANTALLAS SE PONEN A MANO Y SOLO EN PORTICOS QUE YA EXISTEN: ninguna pantalla se marca sola; se ponen segun los sobreesfuerzos, y cada vano dice el indice que manda en sus columnas y vigas. Solo salen los vanos entre dos columnas que siguen desde la base con viga en cada piso, y hasta el ultimo piso con viga: entre columnas sin viga (como el interior de una bodega con porticos solo en el perimetro) la pantalla crearia vigas nuevas, y el reforzamiento no las crea. La sugerencia por rigidez queda a la vista con «Marcar los sugeridos», sin aplicarse. Los vanos que ya no valen se caen solos del plan."
+      ]
+    },
+    {
       "version": "2.99.78",
       "fecha": "2026-11-02",
       "notas": [
