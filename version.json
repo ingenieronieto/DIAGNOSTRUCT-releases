@@ -1,8 +1,11 @@
 {
-  "version": "2.99.74",
+  "version": "2.99.75",
   "fecha": "2026-11-02",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR: EL ANEXO DE ENTRADA Y SALIDA (Archivo -> Imprimir el anexo de entrada y salida, o el boton Anexo junto a Tablas): el PDF en carta, en blanco y negro y con el encabezado y el pie de la empresa, con el isometrico de la estructura, la planta de cada piso y la elevacion de cada eje en X y en Y; los pisos, ejes, nudos y conectividad; materiales y secciones; la seccion de cada barra, apoyos y diafragmas; patrones, sismo, espectro, casos, combinaciones, fuente de masa y cargas asignadas (con las plantas de cargas), y los resultados: modal, masas, reacciones en la base, fuerzas por piso, derivas y la envolvente de nudos, apoyos y barras en i, al centro y en j. Se escogen los capitulos al imprimir.",
+    "NUEVO - MODELADOR: EL ANEXO CON LA VULNERABILIDAD Y EL REFORZAMIENTO: con A.10 hecha suma los parametros (R', phi c y phi e, el factor del sismo), las secciones de A.10 con lo medido en la patologia, el f'c del modelo junto al de los ensayos, los indices de sobreesfuerzo por elemento y los de flexibilidad, con sus colores en el isometrico y en las elevaciones; con el plan de Reforzar, la tecnica de cada elemento con su indice antes y despues y su corte existente contra reforzado.",
+    "NUEVO - MODELADOR: EL EXCEL COMPLETO DEL ANEXO, CLON DE LAS TABLAS DE ETABS: cada caso y combinacion en cada estacion, una hoja por tabla con el formato de exportacion de ETABS (TABLE:, campos, unidades) y sus mismos nombres y columnas (Point Object Connectivity, Load Combination Definitions, Joint Reactions, Element Forces...). Las estaciones son las de ETABS por defecto: en las vigas cada 0,5 m desde la cara de la columna y en las columnas tres, hasta la cara de la viga. Con la Bodega 10-11 contra ETABS 21: 99,1 % de valores iguales (entrada 100 %, salida 99,1 %); lo que difiere es la masa del arco de la cubierta y las vigas del borde de la losa de oficinas con el sismo en Y, ya vistos el 1-nov.",
     "NUEVO - REFORZAR: LA VIGA CONTINUA COMPLETA, COMO EN EL DC-CAD3: desde el detalle de una viga, «Ver la viga continua completa» abre el eje de punta a punta con sus columnas y sus ejes: el alzado con el color del indice de cada vano (existente o con el refuerzo), la envolvente de momentos (positivo abajo), el indice a lo largo de la viga (gris el existente, navy con el refuerzo, la linea de 1,0 marca donde falta) y el acero existente y nuevo de cada vano, con el CFRP donde va. Se escoge un vano, varios (Shift) o toda la viga y se les aplica FRP, camisa en U o camisa completa con sus capas, espesor, barras y escarificado; cada vano se recalcula con las mismas demandas. Un vano que cumple tambien se puede reforzar, por continuidad.",
     "NUEVO - REFORZAR: CADA ALTERNATIVA CON SU ESQUEMA: el FRP en la viga, la camisa en U, la camisa completa, la envoltura de FRP y la camisa de columna traen un alzado y un corte de la intervencion: tiras en U en las zonas de cortante, lamina abajo y lamina arriba sobre la losa cruzando el apoyo (en las zonas donde pasa el indice), estribos en U anclados a la losa o cerrados a traves de ella, barras por el canal de la losa y barras de columna ancladas a la cimentacion.",
     "NUEVO - MODELADOR: SHIFT PARA ESCOGER VARIOS EN EL 3D: con Shift (o Ctrl) se suman o se quitan elementos en la vista 3D, y quedan resaltados todos. En Reforzar, con varios escogidos, «Aplicar a todos» copia la ruta del primero a los del mismo tipo.",
@@ -163,6 +166,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.74.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.75.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

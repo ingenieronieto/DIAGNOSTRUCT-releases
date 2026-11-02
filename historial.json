@@ -2,6 +2,15 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.75",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - MODELADOR: EL ANEXO DE ENTRADA Y SALIDA (Archivo -> Imprimir el anexo de entrada y salida, o el boton Anexo junto a Tablas): el PDF en carta, en blanco y negro y con el encabezado y el pie de la empresa, con el isometrico de la estructura, la planta de cada piso y la elevacion de cada eje en X y en Y; los pisos, ejes, nudos y conectividad; materiales y secciones; la seccion de cada barra, apoyos y diafragmas; patrones, sismo, espectro, casos, combinaciones, fuente de masa y cargas asignadas (con las plantas de cargas), y los resultados: modal, masas, reacciones en la base, fuerzas por piso, derivas y la envolvente de nudos, apoyos y barras en i, al centro y en j. Se escogen los capitulos al imprimir.",
+        "NUEVO - MODELADOR: EL ANEXO CON LA VULNERABILIDAD Y EL REFORZAMIENTO: con A.10 hecha suma los parametros (R', phi c y phi e, el factor del sismo), las secciones de A.10 con lo medido en la patologia, el f'c del modelo junto al de los ensayos, los indices de sobreesfuerzo por elemento y los de flexibilidad, con sus colores en el isometrico y en las elevaciones; con el plan de Reforzar, la tecnica de cada elemento con su indice antes y despues y su corte existente contra reforzado.",
+        "NUEVO - MODELADOR: EL EXCEL COMPLETO DEL ANEXO, CLON DE LAS TABLAS DE ETABS: cada caso y combinacion en cada estacion, una hoja por tabla con el formato de exportacion de ETABS (TABLE:, campos, unidades) y sus mismos nombres y columnas (Point Object Connectivity, Load Combination Definitions, Joint Reactions, Element Forces...). Las estaciones son las de ETABS por defecto: en las vigas cada 0,5 m desde la cara de la columna y en las columnas tres, hasta la cara de la viga. Con la Bodega 10-11 contra ETABS 21: 99,1 % de valores iguales (entrada 100 %, salida 99,1 %); lo que difiere es la masa del arco de la cubierta y las vigas del borde de la losa de oficinas con el sismo en Y, ya vistos el 1-nov."
+      ]
+    },
+    {
       "version": "2.99.74",
       "fecha": "2026-11-02",
       "notas": [
