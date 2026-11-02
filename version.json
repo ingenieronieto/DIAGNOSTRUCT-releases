@@ -1,8 +1,9 @@
 {
-  "version": "2.99.65",
+  "version": "2.99.66",
   "fecha": "2026-11-02",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - CARGAS DE TANQUE ACI 350.3-06 (MODELO 3D): tres errores que salieron al cotejar con el libro de tanques de ING. NIETO. En el tanque rectangular la altura convectiva hc usaba el coeficiente 3,68 del circular (12 x 8 m con 4 m de agua: 2,218 m; ahora 2,167 m). En el circular el peso del agua salia como L x B x HL en vez de pi x D2/4 x HL (27 % de mas en Wi, Wc y todas las fuerzas) y el periodo impulsivo Ti se calculaba como el voladizo de un muro rectangular (unas 7 veces mayor); ahora usa el coeficiente Cw del ACI. Si ya aplicaste cargas de tanque a un modelo, vuelve a aplicarlas.",
     "CORREGIDO - IMPORTAR DE ETABS: LOS PERFILES DE CUBIERTA ENTRAN COMPLETOS: canal, doble canal (con su separacion) y C de lamina delgada con pestañas y dobleces se importan con el area y las inercias que calcula ETABS (iguales en canal y doble canal; a 0,03 % en la C de lamina). Antes se quedaban por fuera: en la Bodega 10-11 de Puertas del Sol eran los 40 tramos de arco y las 28 correas, 68 de 145 barras. Tambien entra la seccion «General» como la escribe ETABS (AREA y TORSION), que antes se descartaba.",
     "CORREGIDO - MODELADOR: LA MASA DE LOS NUDOS POR ENCIMA DEL ULTIMO PISO PASA AL PISO, como hace ETABS con «Lump lateral mass at story levels»: en una cubierta en arco la masa se quedaba en el arco, que fuera de su plano es flexible, y la respuesta sismica cambiaba (en la Bodega 10-11, el nudo del arco se movia 32,7 mm en X donde ETABS da 19,3 y el cortante basal salia 1,15 % bajo). Un nudo entre pisos sin nudo en la misma planta ni diafragma lleva su masa al nudo mas cercano del nivel.",
     "CORREGIDO - MODELADOR: UNA LOSA MEMBRANA SIN DIAFRAGMA (MODELOS DE ETABS) YA NO SE MALLA EN CUADROS DE 1 M: como la malla «Default» de ETABS para membranas, cada paño entre vigas es un solo elemento y las vigas de su borde no se parten. Con la malla fina la viga entre dos paños trabajaba con la losa: en la Bodega 10-11, 37,4 kN de axial por sismo donde ETABS da 7,0. Ahora da 8,5.",
@@ -146,6 +147,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.65.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.66.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
