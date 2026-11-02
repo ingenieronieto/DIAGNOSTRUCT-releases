@@ -1,8 +1,11 @@
 {
-  "version": "2.99.67",
+  "version": "2.99.69",
   "fecha": "2026-11-02",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR: DIAGRAMAS DE LO SELECCIONADO: al elegir una viga, una columna, un nudo o una losa, al costado salen sus diagramas de momento, cortante y axial (M3/M2, V2/V3, P/T) en el caso que se muestra, con los signos de ETABS y el momento del lado de la tension. El mouse los recorre a la vez, da los valores en cada punto y marca el punto en la planta, la elevacion y el 3D; un clic fija el cursor y las flechas lo mueven. Varias vigas o columnas seguidas salen en un solo diagrama continuo; un nudo trae las barras que llegan a el y una losa las vigas de su borde. Con espectro, maximo y minimo. Se apaga en Mostrar.",
+    "CORREGIDO - MODELADOR: LOS DIAGRAMAS DE LA ELEVACION NO VEIAN LA CARGA DE LAS LOSAS NI EL PESO PROPIO: esas cargas van en tramos lineales y el dibujo no los leia, asi que el momento de una viga cargada por losa salia recto entre los extremos. Ahora sale con su forma (los valores de los extremos y las tablas no cambian).",
+    "NUEVO - MODELADOR: ETIQUETAS DE NUDOS, LINEAS Y AREAS POR SEPARADO: en la barra de herramientas, «Etiquetas: Nudos · Lineas · Areas» prende y apaga cada rotulo por su lado, en la planta, la elevacion y el 3D (tambien en Ver). Arrancan apagadas, asi el 3D ya no sale tapado de numeros; el elemento elegido siempre lleva su rotulo.",
     "CORREGIDO - CARGAS DE TANQUE ACI 350.3-06 (MODELO 3D), SEGUNDA PARTE: las fuerzas de muros y cubierta eran de un solo muro y media cubierta mientras las del agua eran del tanque completo, y asi se aplicaban al modelo. Ahora todo es del tanque completo (en el rectangular, los dos muros perpendiculares con epsilon, los dos paralelos y la cubierta entera; en el circular, el cascaron completo); la fuerza de un muro sigue a la vista para su diseno. Ademas: epsilon con tope 1,0; Cc con tope 1,5 SDS; momento de vuelco sobre la cimentacion (IBP), aceleracion vertical uv (con su minimo 0,2 SDS) y altura de oleaje dmax contra el borde libre. Si ya aplicaste cargas de tanque a un modelo, vuelve a aplicarlas.",
     "CORREGIDO - CARGAS DE TANQUE ACI 350.3-06 (MODELO 3D): tres errores que salieron al cotejar con el libro de tanques de ING. NIETO. En el tanque rectangular la altura convectiva hc usaba el coeficiente 3,68 del circular (12 x 8 m con 4 m de agua: 2,218 m; ahora 2,167 m). En el circular el peso del agua salia como L x B x HL en vez de pi x D2/4 x HL (27 % de mas en Wi, Wc y todas las fuerzas) y el periodo impulsivo Ti se calculaba como el voladizo de un muro rectangular (unas 7 veces mayor); ahora usa el coeficiente Cw del ACI. Si ya aplicaste cargas de tanque a un modelo, vuelve a aplicarlas.",
     "CORREGIDO - IMPORTAR DE ETABS: LOS PERFILES DE CUBIERTA ENTRAN COMPLETOS: canal, doble canal (con su separacion) y C de lamina delgada con pestañas y dobleces se importan con el area y las inercias que calcula ETABS (iguales en canal y doble canal; a 0,03 % en la C de lamina). Antes se quedaban por fuera: en la Bodega 10-11 de Puertas del Sol eran los 40 tramos de arco y las 28 correas, 68 de 145 barras. Tambien entra la seccion «General» como la escribe ETABS (AREA y TORSION), que antes se descartaba.",
@@ -148,6 +151,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.67.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.69.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
