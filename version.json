@@ -1,8 +1,12 @@
 {
-  "version": "2.99.70",
+  "version": "2.99.71",
   "fecha": "2026-11-02",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - REFORZAR: LAS RONDAS YA NO SALTAN SIN CERRAR: en la Bodega 10-11 siete rondas iban de 1,06 a 1,62 y volvian, porque cada ronda escogia desde cero (una camisa pasaba a FRP y al reves, y eso movia las demandas) y el FRP quedaba al filo, en 0,99. Ahora cada refuerzo se busca con holgura (bajo 0,90 por defecto; se cambia en el panel) y en la ronda siguiente lo reforzado se queda (=) o sube (↑), nunca baja. Si a una barra no la deja bajo 1 ninguna tecnica del catalogo, la bitacora la nombra con su indice.",
+    "NUEVO - REFORZAR: «VERIFICAR Y AJUSTAR HASTA CERRAR»: corre solo las rondas (verifica, propone con las demandas del modelo reforzado y vuelve a verificar) hasta que nada pase del objetivo, hasta que una ronda no cambie nada o hasta 8 rondas, con una bitacora de cada una (maximo, barras sobre 1 y flexibilidad). «Solo verificar» y la ronda a mano siguen.",
+    "MEJOR - REFORZAR: PANTALLAS MAS CLARAS: sin diafragma rigido dice lo que le falta a cada portico contra lo que da una pantalla (en la Bodega, 1.210 kN/m contra 48.191: una por portico la pide la falta de diafragma, no la rigidez), cuanto pesan las pantallas marcadas frente al peso sismico de la estructura (ese peso entra al sismo del modelo reforzado) y, si los vanos se marcaron a mano, cual es la propuesta automatica.",
+    "MEJOR - REFORZAR: EL PANEL SE LEE DE ARRIBA ABAJO: los colores del modelo quedan fijos arriba, el detalle de cada elemento se abre debajo de su fila (y al tocar la barra en el modelo, la lista la trae a la vista), las perforaciones dicen de donde salen (dos por estribo en las camisas de viga, una por barra nueva en las de columna) y el panel ya no se corta en pantallas angostas ni con los diagramas abiertos.",
     "NUEVO - MODELADOR: BOTON «REFORZAR» (PRIMER ANALISIS DEL REFORZAMIENTO): sobre el mapa de sobreesfuerzos A.10, cada elemento que pasa del objetivo de A.10.9.2 recibe la ruta que lo resuelve, ordenada por menos intrusiva, menor costo (con los precios que ponga el ingeniero) o mas facil: FRP a cortante, a flexion o confinamiento (ACI 440.2R, con su limite de refuerzo), encamisado de columna, encamisado de viga en U o completo. Cada una se evalua con las mismas demandas del mapa y muestra el indice antes y despues, con sus cantidades. Al tocar un elemento se ven sus alternativas y se fija una a mano (capas, espesor, barras).",
     "NUEVO - REFORZAR: PANTALLAS PARA LA FLEXIBILIDAD Y VERIFICACION CON EL MODELO REFORZADO: con la flexibilidad por encima del limite, propone los vanos donde pueden ir pantallas (perimetrales y simetricos; sin diafragma rigido, una por portico) y pregunta cuales se pueden cerrar. «Verificar el refuerzo» analiza una copia del modelo con las camisas y las pantallas (la rigidez nueva redistribuye) y «Ronda N» vuelve a proponer con esas demandas hasta que cierre; la Bodega 10-11 cerro en 4 rondas.",
     "NUEVO - MODELADOR: DIAGRAMAS DE LO SELECCIONADO: al elegir una viga, una columna, un nudo o una losa, al costado salen sus diagramas de momento, cortante y axial (M3/M2, V2/V3, P/T) en el caso que se muestra, con los signos de ETABS y el momento del lado de la tension. El mouse los recorre a la vez, da los valores en cada punto y marca el punto en la planta, la elevacion y el 3D; un clic fija el cursor y las flechas lo mueven. Varias vigas o columnas seguidas salen en un solo diagrama continuo; un nudo trae las barras que llegan a el y una losa las vigas de su borde. Con espectro, maximo y minimo. Se apaga en Mostrar.",
@@ -153,6 +157,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.70.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.71.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
