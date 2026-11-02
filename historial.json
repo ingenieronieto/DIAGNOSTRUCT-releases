@@ -2,6 +2,15 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.76",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - TODA LA APP: EL NOMBRE DE LOS ARCHIVOS: el PDF ya no sale como DIAGNOSTRUCT - Diagnostico estructural. Al imprimir, el archivo se llama con el tipo de documento, el proyecto, la estructura y la fecha (por ejemplo: Anexo de entrada y salida - Bodegas Puertas del Sol - Bodega 10-11 - 2026-11-02). Aplica a los informes de ensayo, el informe de diagnostico, de evolucion, fitosanitario, gerencial y del plan de auscultamiento, el anexo fotografico, la memoria de calculo y la de vulnerabilidad, la cartilla de lesiones, la lista de chequeo de peritaje, el registro fotografico, el ferroscan, los planos y el anexo de entrada y salida, con su Excel y su HTML. Lo que no dice que es sale como Documento con el proyecto y la fecha.",
+        "NUEVO - MODELADOR: EL ANEXO CON EL ISOMETRICO DESPUES DEL REFORZAMIENTO: al imprimir el anexo con el plan de Reforzar se verifica con el modelo reforzado (camisas y pantallas) y el capitulo de reforzamiento trae el isometrico de ese modelo, con las pantallas, coloreado con los indices despues de intervenir, y la tabla de cada elemento con el indice antes, el del primer analisis y el del modelo reforzado.",
+        "NUEVO - MODELADOR: CUMPLIMIENTO NSR-10 DEL REFORZAMIENTO EN EL ANEXO: lo que pide A.10.9 contra lo obtenido, con CUMPLE en verde y NO CUMPLE en rojo: el nivel de seguridad que aplica (equivalente o limitada, con el memorial protocolizado cuando es limitada), el indice de sobreesfuerzo y los elementos que siguen sobre el limite, el indice de flexibilidad, la deriva maxima de A.6.4.1 y las derivas piso por piso antes y despues, la interfaz de las camisas de viga (C.17.5.3), el limite del FRP (ACI 440.2R 9.2) y lo que la app no calcula (requisitos constructivos A.10.9.3, no estructurales, anclajes y cimentacion de pantallas), marcado A verificar."
+      ]
+    },
+    {
       "version": "2.99.75",
       "fecha": "2026-11-02",
       "notas": [
