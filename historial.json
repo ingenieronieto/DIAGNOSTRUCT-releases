@@ -2,6 +2,13 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.77",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - MODELADOR: EL ANEXO ABRE CON LA HOJA DE VALIDACION Y TRAZABILIDAD (NSR-10 A.1.5.3.1): los principios del modelo digital y de su analisis (solucionador, elementos, diafragmas, masa, modal, sismo, combinaciones, P-Delta), la validacion del programa contra ETABS con su porcentaje de igualdad y donde estan los archivos para repetirla, la huella SHA-256 de los datos de entrada y de los resultados (si cambia un dato, cambia la huella; volver a imprimir desde el mismo proyecto da la misma), el origen de cada dato de la patologia (f'c de nucleos, fy de traccion, refuerzo del ferroscan y las regatas, con los ensayos que lo soportan, o escrito por el ingeniero) y cierra con la declaracion de A.1.5.3.1 y el bloque de firma del ingeniero responsable (el de la ficha de A.10). El Excel lleva las mismas hojas."
+      ]
+    },
+    {
       "version": "2.99.76",
       "fecha": "2026-11-02",
       "notas": [
