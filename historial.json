@@ -2,6 +2,20 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.83",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - MODELADOR: LA VIGA CONTINUA CON LOS LIMITES DE SU SECCION, COMO EL DC-CAD3: con el mapa de sobreesfuerzos prendido, al seleccionar una viga sale abajo, de lado a lado, la viga entera con sus columnas (basta tocar un vano). A lo largo, la envolvente de momento y de cortante de las combinaciones de resistencia contra la capacidad de la seccion de cada vano (φc·φe·φMn+ abajo, φc·φe·φMn− arriba y φc·φe·φVn, en linea punteada). En rojo, donde la demanda pasa la seccion: ahi va mas refuerzo; donde la envolvente queda lejos de la linea, la seccion sobra. Al lado, la lista de donde falta (vano, M+, M− o cortante, de donde a donde desde el eje, cuanto falta y el As aproximado contra el que tiene) y la capacidad de cada vano. El mouse recorre la viga y marca el punto en las vistas."
+      ]
+    },
+    {
+      "version": "2.99.82",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - MODELADOR Y MODELO 3D: EL CATALOGO DE SECCIONES Y MATERIALES CON PERFILES, LAMINA, MAMPOSTERIA Y GUADUA. Las secciones pasan de 11 a 614: IPE, HEA y W (los 310 perfiles de la hoja de acero), UPN, canales C y angulos de lados iguales ASTM A6 (los de venta en Colombia, en pulgadas), tubos PTE circulares, cuadrados y rectangulares, perfiles PHR C, Z y cajon de lamina delgada y guadua de uno a tres culmos, cada familia con la hoja o la tabla de donde sale. Mamposteria de arcilla y de bloque de concreto, maciza y de perforacion vertical (tambien con celdas llenas), con Em de la NSR-10 D.5.2 (750 o 900 f'm), Gm = 0,4 Em y el peso del muro de la Tabla B.3.4.2-4; guadua con E0,5 = 9 500 MPa y 800 kg/m3 (G.12). Las listas salen por familia y «Definir - Secciones de barra» filtra por familia, busca y muestra las secciones del modelo importado. Las once secciones de antes no cambian."
+      ]
+    },
+    {
       "version": "2.99.81",
       "fecha": "2026-11-02",
       "notas": [
