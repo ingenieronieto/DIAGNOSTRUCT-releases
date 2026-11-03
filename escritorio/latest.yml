@@ -1,8 +1,8 @@
-version: 2.99.78
+version: 2.99.80
 files:
-  - url: https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v2.99.78/DIAGNOSTRUCT-Escritorio-2.99.78.exe
-    sha512: yVxJpIGaw3SQp146tZoHD0ex9yzderLtxDpX04RlYpoT/S6jBy2mD6A+23x+tdJpFA45MvWqO9iJhuP/SJi/RA==
-    size: 137191196
-path: https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v2.99.78/DIAGNOSTRUCT-Escritorio-2.99.78.exe
-sha512: yVxJpIGaw3SQp146tZoHD0ex9yzderLtxDpX04RlYpoT/S6jBy2mD6A+23x+tdJpFA45MvWqO9iJhuP/SJi/RA==
-releaseDate: '2026-11-02T21:12:04.160Z'
+  - url: https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v2.99.80/DIAGNOSTRUCT-Escritorio-2.99.80.exe
+    sha512: ZrJ/LiuH2rgp01AtVdBOfZO5FHFstLIt51CpyTkHN5Q4efya8CRs3nHMMYJZDgavyiXon/4BMxwrgtpx2gygag==
+    size: 137194658
+path: https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v2.99.80/DIAGNOSTRUCT-Escritorio-2.99.80.exe
+sha512: ZrJ/LiuH2rgp01AtVdBOfZO5FHFstLIt51CpyTkHN5Q4efya8CRs3nHMMYJZDgavyiXon/4BMxwrgtpx2gygag==
+releaseDate: '2026-11-03T00:03:21.705Z'
