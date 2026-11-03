@@ -2,6 +2,14 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.85",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - DISENO DE ELEMENTOS: LAS 17 HOJAS DE CALCULO DE ING. NIETO DENTRO DE LA APP: en Diseño estructural → Diseño de elementos, una seccion nueva con los 17 libros por material (concreto: vigas, columnas, losas, muros, cimentaciones, contencion, tanques, anclajes, preesforzado y dosificacion; acero: vigas y columnas y conexiones; mamposteria; madera y guadua; cargas; sismo; vias y pavimentos). La app corre las mismas formulas de cada libro: las 36 255 formulas y los 354 casos de las hojas «Verificacion» dan lo mismo que Excel. Cada hoja se ve como en el libro, con sus esquemas, CUMPLE / NO CUMPLE y el numeral, se imprime con el formato de la app y lo que se escribe queda guardado en el proyecto («Volver a los valores del libro» lo deshace).",
+        "NUEVO - MODELADOR Y DISENO: DISENAR ESTE ELEMENTO: al seleccionar una barra en el Modelador sale «Diseñar este elemento», que abre la hoja que le toca (vigas, columnas, acero o guadua) ya llena con su seccion, su material y las fuerzas de la combinacion o la envolvente; y cada una de esas hojas tiene «Traer del modelo». El Modelador con Reforzar tambien se abre desde Diseño estructural."
+      ]
+    },
+    {
       "version": "2.99.84",
       "fecha": "2026-11-02",
       "notas": [
