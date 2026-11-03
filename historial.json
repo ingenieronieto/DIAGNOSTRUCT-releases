@@ -2,6 +2,13 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.86",
+      "fecha": "2026-11-02",
+      "notas": [
+        "NUEVO - DISENO DE ELEMENTOS PARA REFORZAMIENTO: EL PLAN DE REFORZAR LLENA LAS CALCULADORAS. Con un modelo guardado desde Reforzar («Guardar como modelo nuevo»), la pantalla lista cada elemento intervenido con su tecnica, sus parametros y su indice antes y despues: la camisa de columna abre el encamisado con la seccion original, el espesor y el acero de la camisa; el FRP de columna abre el confinamiento y el FRP de viga la flexion, con sus capas; las pantallas abren la adicion de muros con el muro mas largo, cuantos son, su espesor y su f'c. Con «Analizar» tambien llevan Pu, Vu y Mu del modelo reforzado. Las camisas de viga se siguen revisando en Reforzar."
+      ]
+    },
+    {
       "version": "2.99.85",
       "fecha": "2026-11-02",
       "notas": [
