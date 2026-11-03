@@ -1,8 +1,9 @@
 {
-  "version": "2.99.96",
+  "version": "2.99.97",
   "fecha": "2026-11-03",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - MODELADOR, MODELOS IMPORTADOS DE ETABS: los muros y paneles trapeciales (la tolva de un silo, un hastial) van con la membrana de ETABS medida en siete trapecios, que es la de los paralelogramos con un cambio de grados de libertad en el giro; en el silo de verificacion el axial de la viga anillo paso de 52 % a 2,2 % de ETABS y los giros de la boca de la tolva de 86 % a 8 %. Y una viga que llega oblicua a una columna descuenta de su largo (D·cos²α + B·sin²α)/2, como ETABS, y no hasta la cara: el anillo del silo y las plantas de 8 y 12 lados pesaban 0,3 % de menos.",
     "CORREGIDO - MODELADOR, MODELOS IMPORTADOS DE ETABS: en cada nudo de un muro al que llega una viga o una columna, ETABS amarra el giro del nudo con el del borde del muro con un resorte; quedo medido en ETABS 21 y la app ya lo tiene. Los porticos con muros de relleno, el tanque elevado, los nucleos, los duales y los muros acoplados quedan practicamente iguales a ETABS (derivas del tanque elevado de 4,4 % a 0,01 %; cortantes de las columnas de los porticos con relleno de 13 % a 0,1 %; derivas del silo de 10 % a 0,2 %). Tambien en todos los modelos: la carga de un area que no es un paralelogramo (un trapecio) se reparte a sus esquinas como en ETABS, el lado ancho lleva mas. La placa de los cascarones se midio en ETABS y es la misma de la app.",
     "CORREGIDO - MODELADOR, MODELOS IMPORTADOS DE ETABS: los muros y membranas van con el elemento de membrana de ETABS 21 (identificado elemento por elemento) y, en los muros con ventanas, el machon queda entero con el antepecho y el dintel amarrados a su borde, como hace ETABS (restriccion de borde). En la bateria de 90 modelos contra ETABS, los que quedan dentro del 5 % pasan de 78 a 85, y las derivas de los muros con ventanas bajan de 5 a 9 % a 2 a 5 %. Los modelos hechos en la app no cambian.",
     "NUEVO - MODELADOR, VERIFICACION CONTRA ETABS: quedo identificado el elemento de membrana de ETABS 21 (muros y membranas de un elemento), medido elemento por elemento en ETABS: la app lo reproduce exacto en rectangulos y paralelogramos. Por ahora va como opcion de analisis y la membrana de siempre sigue por defecto, hasta llevar al solucionador la restriccion de borde que usa ETABS en los muros con ventanas.",
@@ -195,6 +196,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.96.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.97.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

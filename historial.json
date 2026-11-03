@@ -2,6 +2,13 @@
   "generado": "2026-11-03",
   "versiones": [
     {
+      "version": "2.99.97",
+      "fecha": "2026-11-03",
+      "notas": [
+        "CORREGIDO - MODELADOR, MODELOS IMPORTADOS DE ETABS: los muros y paneles trapeciales (la tolva de un silo, un hastial) van con la membrana de ETABS medida en siete trapecios, que es la de los paralelogramos con un cambio de grados de libertad en el giro; en el silo de verificacion el axial de la viga anillo paso de 52 % a 2,2 % de ETABS y los giros de la boca de la tolva de 86 % a 8 %. Y una viga que llega oblicua a una columna descuenta de su largo (D·cos²α + B·sin²α)/2, como ETABS, y no hasta la cara: el anillo del silo y las plantas de 8 y 12 lados pesaban 0,3 % de menos."
+      ]
+    },
+    {
       "version": "2.99.96",
       "fecha": "2026-11-03",
       "notas": [
