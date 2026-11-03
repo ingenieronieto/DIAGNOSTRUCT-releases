@@ -2,6 +2,13 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.81",
+      "fecha": "2026-11-02",
+      "notas": [
+        "MEJORADO - MODELADOR: EL ANALISIS CON EL SOLUCIONADOR DE LA APP CORRE EN SEGUNDO PLANO. «Correr» ya no congela la pantalla: muestra la etapa (armado, factorizacion, patrones, modal, resultados) con los segundos que lleva y se puede cancelar; al terminar dice cuanto tardo. El mapa de sobreesfuerzos en tiempo real tambien se recalcula aparte, se puede seguir editando y un cambio nuevo cancela el calculo anterior. Los resultados son los mismos de antes."
+      ]
+    },
+    {
       "version": "2.99.80",
       "fecha": "2026-11-02",
       "notas": [

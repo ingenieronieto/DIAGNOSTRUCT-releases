@@ -1,8 +1,9 @@
 {
-  "version": "2.99.80",
+  "version": "2.99.81",
   "fecha": "2026-11-02",
   "minima": "1.70.0",
   "notas": [
+    "MEJORADO - MODELADOR: EL ANALISIS CON EL SOLUCIONADOR DE LA APP CORRE EN SEGUNDO PLANO. «Correr» ya no congela la pantalla: muestra la etapa (armado, factorizacion, patrones, modal, resultados) con los segundos que lleva y se puede cancelar; al terminar dice cuanto tardo. El mapa de sobreesfuerzos en tiempo real tambien se recalcula aparte, se puede seguir editando y un cambio nuevo cancela el calculo anterior. Los resultados son los mismos de antes.",
     "CORREGIDO - MODELADOR: 12 EJERCICIOS NUEVOS CONTRA ETABS (EXCENTRICIDAD, PISOS DE DISTINTA ALTURA, RETROCESOS, PLANTA EN O, MAMPOSTERIA NO CONFINADA, CONFINADA Y REFORZADA, MUROS DE CONCRETO, ACERO, MURO DE CONTENCION, TANQUE Y PUENTE PEATONAL): el importador de ETABS lee las aberturas de las losas, la liberacion «PINNED», el espesor de los tubos circulares, las columnas dentro de un mismo piso y los resortes asignados a cada nudo; los muros con malla «Default» van de un elemento por paño, como en ETABS, y su base queda apoyada en todo el borde. La losa que se apoya en muros les pasa la carga a lo largo del muro, la presion del agua o de la tierra sobre un muro ya no se cuenta como masa y el peso de los muros no entra en el corte de las fuerzas por piso. Con estos arreglos: masas por piso iguales, periodos dentro del 0,2 % en porticos y del 2,3 % en muros, cortante basal dentro del 1,7 %.",
     "CORREGIDO - REFORZAR: LAS PANTALLAS SE PONEN A MANO Y SOLO EN PORTICOS QUE YA EXISTEN: ninguna pantalla se marca sola; se ponen segun los sobreesfuerzos, y cada vano dice el indice que manda en sus columnas y vigas. Solo salen los vanos entre dos columnas que siguen desde la base con viga en cada piso, y hasta el ultimo piso con viga: entre columnas sin viga (como el interior de una bodega con porticos solo en el perimetro) la pantalla crearia vigas nuevas, y el reforzamiento no las crea. La sugerencia por rigidez queda a la vista con «Marcar los sugeridos», sin aplicarse. Los vanos que ya no valen se caen solos del plan.",
     "NUEVO - REFORZAR: GUARDAR COMO MODELO NUEVO: despues de verificar, «Guardar como modelo nuevo» deja las camisas y las pantallas de lo verificado en un modelo propio del proyecto («<modelo> · reforzado»), para planos, memoria y el pushover del escenario reforzado; el modelo original no cambia. Las secciones de A.10 de las camisas viajan con el modelo nuevo (la lista de A.10 de la estructura existente no cambia) y el FRP, que no cambia la rigidez, queda en el plan de Reforzar del modelo nuevo con sus mismas capas. Trae el registro de cada elemento intervenido y de cada pantalla, y si se vuelve a reforzar, la camisa nueva va sobre la anterior.",
@@ -173,6 +174,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.80.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.81.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
