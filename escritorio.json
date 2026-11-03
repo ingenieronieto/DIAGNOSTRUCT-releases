@@ -1,7 +1,7 @@
 {
-  "version": "3.0.0",
+  "version": "3.0.1",
   "fecha": "2026-11-03",
-  "url": "https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v3.0.0/DIAGNOSTRUCT-Escritorio-3.0.0.exe",
-  "sha256": "3b13f3399a1b605c49c8636e62936d506e41b42639f299a470ab41511d938639",
-  "notas": ["DIAGNOSTRUCT Escritorio 3.0.0"]
+  "url": "https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v3.0.1/DIAGNOSTRUCT-Escritorio-3.0.1.exe",
+  "sha256": "c1d65e62ee28bab441042f53af8d294c79266f284ba636a8e45bb47b684f69bb",
+  "notas": ["DIAGNOSTRUCT Escritorio 3.0.1"]
 }
