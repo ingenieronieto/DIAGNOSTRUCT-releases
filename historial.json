@@ -2,6 +2,13 @@
   "generado": "2026-11-03",
   "versiones": [
     {
+      "version": "3.0.1",
+      "fecha": "2026-11-03",
+      "notas": [
+        "NUEVO - MODELADOR: DEL PORTICO A LA UNION, COMO EL ENLACE DE ETABS CON IDEA STATICA. En una estructura de acero (o con refuerzo en acero), al seleccionar un nudo donde una viga de acero llega al ala de una columna de acero, el panel de la derecha muestra «Union de acero» y «Disenar la union con ...». El boton abre la union con placa extrema ya armada con los perfiles del modelo (sus medidas tal cual), el acero de la columna, una placa y un gramil que caben, y las fuerzas del extremo de la viga en cada combinacion de resistencia del modelo; escoge la de mayor momento y analiza la union sola, y arriba se cambia de combinacion. Una viga que llega al alma de la columna dice que esa union todavia no esta, y en una estructura de concreto no aparece nada. Si el modelo no tiene combinaciones de resistencia (un .e2k con patrones Dead y Live), la pantalla pide crearlas en Definir -> Combinaciones."
+      ]
+    },
+    {
       "version": "3.0.0",
       "fecha": "2026-11-03",
       "notas": [
