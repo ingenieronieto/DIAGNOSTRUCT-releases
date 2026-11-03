@@ -1,7 +1,7 @@
 {
-  "version": "2.99.78",
-  "fecha": "2026-11-02",
-  "url": "https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v2.99.78/DIAGNOSTRUCT-Escritorio-2.99.78.exe",
-  "sha256": "bd4821f811fbd8aa3fe41831b8de5cd688ecb34af5f3f63784ef3cd4e7988e05",
-  "notas": ["DIAGNOSTRUCT Escritorio 2.99.78"]
+  "version": "2.99.80",
+  "fecha": "2026-11-03",
+  "url": "https://github.com/ingenieronieto/DIAGNOSTRUCT-releases/releases/download/escritorio-v2.99.80/DIAGNOSTRUCT-Escritorio-2.99.80.exe",
+  "sha256": "ba114dba706c585201fbd0dba0544f6b2db8f71a14cae962f0ba1a7571607447",
+  "notas": ["DIAGNOSTRUCT Escritorio 2.99.80"]
 }
