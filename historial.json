@@ -2,6 +2,13 @@
   "generado": "2026-11-03",
   "versiones": [
     {
+      "version": "2.99.99",
+      "fecha": "2026-11-03",
+      "notas": [
+        "NUEVO - MOTOR DE CONEXIONES METALICAS, PRIMERA PARTE (TODAVIA SIN PANTALLA): la app ya calcula uniones de acero por elementos finitos con el metodo que usa IDEA StatiCa (CBFEM), construido desde su teoria publicada: placas de acero que fluyen (von Mises, limite de 5 % de deformacion plastica), pernos a traccion y corte con las resistencias de la NSR-10 F.2.10.3 (AISC J3), soldaduras de filete y contacto entre placas. La union viga-columna con placa extrema se arma sola con sus medidas (columna con rigidizadores, placa extendida, pernos y cordones) y se analiza con M, V y N en la cara de la columna. Validado contra soluciones de mano, el T-stub de EN 1993-1-8 y la placa extrema de AISC DG4. Solo se activa en estructuras metalicas o con refuerzo en acero. La pantalla con los mapas de esfuerzos y los chequeos viene en la siguiente entrega."
+      ]
+    },
+    {
       "version": "2.99.98",
       "fecha": "2026-11-03",
       "notas": [

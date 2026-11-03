@@ -1,8 +1,9 @@
 {
-  "version": "2.99.98",
+  "version": "2.99.99",
   "fecha": "2026-11-03",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MOTOR DE CONEXIONES METALICAS, PRIMERA PARTE (TODAVIA SIN PANTALLA): la app ya calcula uniones de acero por elementos finitos con el metodo que usa IDEA StatiCa (CBFEM), construido desde su teoria publicada: placas de acero que fluyen (von Mises, limite de 5 % de deformacion plastica), pernos a traccion y corte con las resistencias de la NSR-10 F.2.10.3 (AISC J3), soldaduras de filete y contacto entre placas. La union viga-columna con placa extrema se arma sola con sus medidas (columna con rigidizadores, placa extendida, pernos y cordones) y se analiza con M, V y N en la cara de la columna. Validado contra soluciones de mano, el T-stub de EN 1993-1-8 y la placa extrema de AISC DG4. Solo se activa en estructuras metalicas o con refuerzo en acero. La pantalla con los mapas de esfuerzos y los chequeos viene en la siguiente entrega.",
     "CORREGIDO - MODELADOR, MODELOS IMPORTADOS DE ETABS: MUROS CON VENTANAS Y MAMPOSTERIA CONFINADA. El antepecho y el dintel ya no se mueven pegados al costado del machon: van unidos a el como ETABS, por un resorte con la rigidez de dos barras de la seccion del muro, medido en ETABS. En la mamposteria confinada de verificacion las derivas pasaron de 2,7-3,4 % a 0,2-0,3 % de ETABS, los periodos de 1,9-2,2 % a 0,4-1,0 % y las fuerzas en columnetas y vigas de amarre de 5-17 % a 0,15 %; en los muros de concreto con ventanas, las derivas de 4-5 % a 1,2-2,0 %. Y un material con Poisson 0 se analiza con Poisson 0 (antes tomaba 0,2).",
     "NUEVO - REFORZAR, CAMISAS POR NIVEL DE DISIPACION DE ENERGIA (DMI, DMO Y DES): los estribos, los ganchos y los traslapos de las camisas de viga y de columna siguen la NSR-10 en cada nivel. En vigas, zonas de 2h desde la cara de los apoyos en DES y DMO, ganchos sismicos de 135 grados, traslapo clase B y anclaje, y donde no se permite traslapar. En columnas, la longitud lo, la separacion y el Ash de C.21.3.5 en DMO (antes traia los valores del ACI 318), ganchos suplementarios con su perforacion y traslapos en la mitad central.",
     "CORREGIDO - MODELADOR, MODELOS IMPORTADOS DE ETABS: los muros y paneles trapeciales (la tolva de un silo, un hastial) van con la membrana de ETABS medida en siete trapecios, que es la de los paralelogramos con un cambio de grados de libertad en el giro; en el silo de verificacion el axial de la viga anillo paso de 52 % a 2,2 % de ETABS y los giros de la boca de la tolva de 86 % a 8 %. Y una viga que llega oblicua a una columna descuenta de su largo (D·cos²α + B·sin²α)/2, como ETABS, y no hasta la cara: el anillo del silo y las plantas de 8 y 12 lados pesaban 0,3 % de menos.",
@@ -198,6 +199,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.98.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.2.99.99.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
