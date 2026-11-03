@@ -2,6 +2,14 @@
   "generado": "2026-11-03",
   "versiones": [
     {
+      "version": "2.99.98",
+      "fecha": "2026-11-03",
+      "notas": [
+        "CORREGIDO - MODELADOR, MODELOS IMPORTADOS DE ETABS: MUROS CON VENTANAS Y MAMPOSTERIA CONFINADA. El antepecho y el dintel ya no se mueven pegados al costado del machon: van unidos a el como ETABS, por un resorte con la rigidez de dos barras de la seccion del muro, medido en ETABS. En la mamposteria confinada de verificacion las derivas pasaron de 2,7-3,4 % a 0,2-0,3 % de ETABS, los periodos de 1,9-2,2 % a 0,4-1,0 % y las fuerzas en columnetas y vigas de amarre de 5-17 % a 0,15 %; en los muros de concreto con ventanas, las derivas de 4-5 % a 1,2-2,0 %. Y un material con Poisson 0 se analiza con Poisson 0 (antes tomaba 0,2).",
+        "NUEVO - REFORZAR, CAMISAS POR NIVEL DE DISIPACION DE ENERGIA (DMI, DMO Y DES): los estribos, los ganchos y los traslapos de las camisas de viga y de columna siguen la NSR-10 en cada nivel. En vigas, zonas de 2h desde la cara de los apoyos en DES y DMO, ganchos sismicos de 135 grados, traslapo clase B y anclaje, y donde no se permite traslapar. En columnas, la longitud lo, la separacion y el Ash de C.21.3.5 en DMO (antes traia los valores del ACI 318), ganchos suplementarios con su perforacion y traslapos en la mitad central."
+      ]
+    },
+    {
       "version": "2.99.97",
       "fecha": "2026-11-03",
       "notas": [
