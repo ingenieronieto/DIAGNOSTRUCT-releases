@@ -2,6 +2,14 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.84",
+      "fecha": "2026-11-02",
+      "notas": [
+        "CORREGIDO - MODELADOR: 100 CASOS MAS CONTRA ETABS (BATERIA DE LOS EJERCICIOS 22 A 121): porticos de hasta 20 pisos, plantas en L, T, U, C, H, giradas y oblicuas, transferencias, ladera, mezanine, columnas inclinadas, acero con riostras en X, V, K y excentricas, modulares, bodegas, cerchas, puentes, mamposteria, muros de concreto, madera, guadua, tanques, chimenea, silo, reforzamientos y diez variantes reales de la Bodega 10-11. En 66 de los 90 casos generados los periodos, las reacciones, las masas, las derivas, las fuerzas de piso y los desplazamientos quedan dentro del 1 % de ETABS. Se corrigio: la torsion accidental del espectro por piso en edificios altos (derivas de 3,4 % a 0,1 %), las riostras en X que se cruzan sin nudo (ETABS las une), la masa de la losa en los porticos excentricos, las reacciones de base en ladera (respecto de la cota de la base), las longitudes de extremo de las vigas de transferencia, las vigas inclinadas de una bodega y las derivas como las mide ETABS: en el vertice de unas riostras en V y en una columna inclinada, contra el pie de la barra; en la columna de doble altura junto a un mezanine, con su altura entera. Lo que sigue abierto (muros con ventanas de un elemento por pano, losas de mas de cuatro lados, silo) queda en el LEEME de la bateria.",
+        "MEJORADO - MODELADOR: LAS ETIQUETAS DE EJES SE PUEDEN APAGAR: el boton «Ejes» de la barra de etiquetas (junto a Nudos, Lineas y Areas) y «Ver → Etiquetas de ejes» apagan las burbujas de los ejes de la grilla (A·B·1·2) en la planta, la elevacion y el 3D, y las flechas +X, +Y, +Z del visor 3D. Las lineas de los ejes quedan."
+      ]
+    },
+    {
       "version": "2.99.83",
       "fecha": "2026-11-02",
       "notas": [
