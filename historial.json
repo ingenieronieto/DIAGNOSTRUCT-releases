@@ -2,6 +2,13 @@
   "generado": "2026-11-02",
   "versiones": [
     {
+      "version": "2.99.87",
+      "fecha": "2026-11-02",
+      "notas": [
+        "CORREGIDO - CALCULADORAS DE CONCRETO, MADERA Y MEZCLAS, CONTRA LOS LIBROS DE ING. NIETO Y LA NSR-10: la longitud de desarrollo de la Tabla C.12.2.2 ya no cuenta ψs dos veces (daba 20 % menos si se escribia 0,8), la barra No. 6 de 19,1 mm va con 2,1 y no con 1,7 (el despiece la alargaba 24 %) y se puede elegir el caso «otros» (1,4 y 1,1); el ρ maximo de vigas y losas es el de εt = 0,004 (C.10.3.5) y no el de 0,005, que reprobaba secciones que la norma acepta; en muros DES y DMO el φ de cortante es 0,60 solo si Vn es menor que el cortante asociado a Mn (C.9.3.4 a) y 0,75 si no, y la calculadora dice cual uso y por que; el punzonamiento de una columna de borde o de esquina toma 3 y 2 lados del perimetro; la madera ES6 tiene Ft = 9,0 MPa (Tabla G.2.2-1; decia 9,5); y el f'cr con registro de ensayos resta 3,5 MPa en C.5-2 (restaba 3,45). Cada correccion se compara con la hoja del libro que la calcula (626 comparaciones). La placa base (φc = 0,65) y el Fnv de los pernos A325 (372 MPa) ya estaban bien: son los de la NSR-10 vigente (F.2.10.8 y Tabla F.2.10.3-2)."
+      ]
+    },
+    {
       "version": "2.99.86",
       "fecha": "2026-11-02",
       "notas": [
