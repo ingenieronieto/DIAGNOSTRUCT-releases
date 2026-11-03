@@ -2,6 +2,13 @@
   "generado": "2026-11-03",
   "versiones": [
     {
+      "version": "3.0.0",
+      "fecha": "2026-11-03",
+      "notas": [
+        "NUEVO - CONEXIONES METALICAS COMO IDEA STATICA: UNION VIGA-COLUMNA CON PLACA EXTREMA (Diseno estructural -> Diseno de elementos -> Union con placa extrema (CBFEM)). Se escogen la columna y la viga del catalogo (IPE, HEA, W), el acero, la placa (espesor, ancho y extensiones), los pernos (diametro, grado y gramil), los filetes de alas y alma, los rigidizadores y las cargas M, V y N en la cara de la columna. La app arma sola la union en placas, pernos, cordones y contacto, y la analiza por elementos finitos con el metodo de componentes (CBFEM) en un hilo aparte, con avance y Cancelar. El resultado en 3D: el mapa de von Mises, el de deformacion plastica (limite 5 %) o el de desplazamientos, con la malla y la deformada a escala, y los pernos y los cordones en verde, ambar o rojo segun su uso. Los chequeos: cada placa contra el 5 %, cada perno a traccion, a corte con aplastamiento y con la interaccion de la NSR-10 F.2.10.3 (AISC 360 J3.7), y cada cordon de filete (J2.4); un cordon en su resistencia fluye y le pasa carga a los vecinos, como en IDEA, y cumple mientras no pase del 5 % de deformacion plastica. Validado contra soluciones de mano, el T-stub de EN 1993-1-8 y la placa extrema de AISC DG4. Pasa a la version 3.0.0: despues de la 2.99.99 la siguiente seria 2.99.100, que el APK no puede distinguir de la 3.0.0."
+      ]
+    },
+    {
       "version": "2.99.99",
       "fecha": "2026-11-03",
       "notas": [
