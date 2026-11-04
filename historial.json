@@ -2,6 +2,15 @@
   "generado": "2026-11-04",
   "versiones": [
     {
+      "version": "3.0.5",
+      "fecha": "2026-11-04",
+      "notas": [
+        "NUEVO - MOTOR DE CONEXIONES METALICAS (CBFEM), OCHO UNIONES MAS: la viga que llega al alma de la columna con placa extrema; la rodilla del portico con el cabio inclinado hasta 30 grados; la union a cortante con placa (el extremo articulado del modelo va solo a ella); la placa base de columna con anclajes (ACI 318 cap. 17) y el concreto (AISC J8); el empalme de viga con cubrejuntas atornillados; la riostra de tubo redondo ranurado con cartela sobre la viga o de esquina, a viga y columna (con la comparacion contra la fuerza uniforme); y el angulo simple o doble de torres y cerchas atornillado a cartela. Cada una con sus chequeos de mano de AISC 360 donde el CBFEM no ve (Whitmore, pandeo de Thornton, bloque de cortante, seccion neta con retraso de cortante, desgarre), su pantalla en Diseno de elementos y su boton en el nudo del Modelador, que trae los perfiles y las fuerzas de cada combinacion.",
+        "MEJOR - CONEXIONES: los pernos pasan el corte en la cara de contacto de las placas y cada perno actua en su centro (antes el par de la excentricidad quedaba suelto y algunos pernos quedaban corridos hasta 9 mm). El equilibrio de momentos cierra exacto; en la placa extrema los pernos de afuera quedan donde van y en el empalme desaparece una traccion falsa de los pernos de las alas.",
+        "MEJOR - IMPORTAR DE ETABS: los tubos redondos traen su diametro y su espesor."
+      ]
+    },
+    {
       "version": "3.0.4",
       "fecha": "2026-11-04",
       "notas": [
