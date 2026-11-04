@@ -2,6 +2,13 @@
   "generado": "2026-11-03",
   "versiones": [
     {
+      "version": "3.0.3",
+      "fecha": "2026-11-03",
+      "notas": [
+        "NUEVO - MODELADOR, MATERIALIDAD EN ABRIR UN MODELO: la lista de modelos del proyecto dice de que esta hecho cada uno (acero, concreto, mamposteria, madera, guadua, o la mezcla, segun sus barras y sus muros; las losas no cuentan) y arriba hay un filtro por material, para encontrar por ejemplo los de acero. Los modelos guardados antes la calculan una vez por equipo."
+      ]
+    },
+    {
       "version": "3.0.2",
       "fecha": "2026-11-03",
       "notas": [
