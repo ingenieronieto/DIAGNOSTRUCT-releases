@@ -2,6 +2,13 @@
   "generado": "2026-11-03",
   "versiones": [
     {
+      "version": "3.0.2",
+      "fecha": "2026-11-03",
+      "notas": [
+        "NUEVO - MODELADOR, IMPORTAR VARIOS MODELOS A LA VEZ: en Importar de ETABS o SAP2000 se pueden escoger varios archivos (.e2k, .$et, .s2k, .$2k) de una vez; cada uno queda como un modelo nuevo del proyecto con el nombre del archivo, y se muestra cuales no se pudieron leer o guardar."
+      ]
+    },
+    {
       "version": "3.0.1",
       "fecha": "2026-11-03",
       "notas": [
