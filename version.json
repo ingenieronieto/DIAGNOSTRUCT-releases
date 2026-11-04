@@ -1,8 +1,9 @@
 {
-  "version": "3.0.3",
-  "fecha": "2026-11-03",
+  "version": "3.0.4",
+  "fecha": "2026-11-04",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR, COMBINACIONES Y SISMO DEL PROYECTO (NSR-10): las combinaciones de B.2.4 y B.2.3 ya salen con los patrones de un modelo de ETABS (Dead y SuperDead entran juntos como D, Live como L, Roof Live como Lr), como en nuestros modelos. En Definir -> Sismo del proyecto se arma el espectro A.2.6 con Aa, Av y el perfil del municipio del proyecto y el I del grupo de uso, y los casos SX y SY con g/R y excentricidad 0,05. Con eso la lista suma las que la NSR-10 pide con el sismo: 100 % en una direccion + 30 % en la otra (A.3.6.3.2, para las columnas del sistema de resistencia sismica), DER = D + 0,25 L +- Fs para las derivas sin dividir por R (A.6), CIM1 a CIM4 para el suelo y los cimientos con R = 1 (H.2.4) y, si se da Omega0, OM1 y OM2 con la sobrerresistencia (A.3.3.9). En A.10 las derivas DER ya no se vuelven a multiplicar por R, y las de cimentacion y Omega0 no entran a los indices.",
     "NUEVO - MODELADOR, MATERIALIDAD EN ABRIR UN MODELO: la lista de modelos del proyecto dice de que esta hecho cada uno (acero, concreto, mamposteria, madera, guadua, o la mezcla, segun sus barras y sus muros; las losas no cuentan) y arriba hay un filtro por material, para encontrar por ejemplo los de acero. Los modelos guardados antes la calculan una vez por equipo.",
     "NUEVO - MODELADOR, IMPORTAR VARIOS MODELOS A LA VEZ: en Importar de ETABS o SAP2000 se pueden escoger varios archivos (.e2k, .$et, .s2k, .$2k) de una vez; cada uno queda como un modelo nuevo del proyecto con el nombre del archivo, y se muestra cuales no se pudieron leer o guardar.",
     "NUEVO - MODELADOR: DEL PORTICO A LA UNION, COMO EL ENLACE DE ETABS CON IDEA STATICA. En una estructura de acero (o con refuerzo en acero), al seleccionar un nudo donde una viga de acero llega al ala de una columna de acero, el panel de la derecha muestra «Union de acero» y «Disenar la union con ...». El boton abre la union con placa extrema ya armada con los perfiles del modelo (sus medidas tal cual), el acero de la columna, una placa y un gramil que caben, y las fuerzas del extremo de la viga en cada combinacion de resistencia del modelo; escoge la de mayor momento y analiza la union sola, y arriba se cambia de combinacion. Una viga que llega al alma de la columna dice que esa union todavia no esta, y en una estructura de concreto no aparece nada. Si el modelo no tiene combinaciones de resistencia (un .e2k con patrones Dead y Live), la pantalla pide crearlas en Definir -> Combinaciones.",
@@ -203,6 +204,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.3.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.4.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

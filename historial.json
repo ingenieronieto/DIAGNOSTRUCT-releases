@@ -1,6 +1,13 @@
 {
-  "generado": "2026-11-03",
+  "generado": "2026-11-04",
   "versiones": [
+    {
+      "version": "3.0.4",
+      "fecha": "2026-11-04",
+      "notas": [
+        "NUEVO - MODELADOR, COMBINACIONES Y SISMO DEL PROYECTO (NSR-10): las combinaciones de B.2.4 y B.2.3 ya salen con los patrones de un modelo de ETABS (Dead y SuperDead entran juntos como D, Live como L, Roof Live como Lr), como en nuestros modelos. En Definir -> Sismo del proyecto se arma el espectro A.2.6 con Aa, Av y el perfil del municipio del proyecto y el I del grupo de uso, y los casos SX y SY con g/R y excentricidad 0,05. Con eso la lista suma las que la NSR-10 pide con el sismo: 100 % en una direccion + 30 % en la otra (A.3.6.3.2, para las columnas del sistema de resistencia sismica), DER = D + 0,25 L +- Fs para las derivas sin dividir por R (A.6), CIM1 a CIM4 para el suelo y los cimientos con R = 1 (H.2.4) y, si se da Omega0, OM1 y OM2 con la sobrerresistencia (A.3.3.9). En A.10 las derivas DER ya no se vuelven a multiplicar por R, y las de cimentacion y Omega0 no entran a los indices."
+      ]
+    },
     {
       "version": "3.0.3",
       "fecha": "2026-11-03",
