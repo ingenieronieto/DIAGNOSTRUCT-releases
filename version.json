@@ -1,8 +1,9 @@
 {
-  "version": "3.0.7",
+  "version": "3.0.8",
   "fecha": "2026-11-05",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR: AYUDA CON LOS CATALOGOS Y LOS EJEMPLOS. En el menu Ayuda del Modelador, «Catalogos…» abre una ventana con lo que hace el Modelador (cada menu con lo que hace), las 614 secciones por familia con area, inercias, J y peso, los materiales y mampuestos (concreto, acero, mamposteria con su Em y su peso por m2, guadua G.12 y madera ES1 a ES6), los aceros (barras, mallas, tipos de refuerzo y grados ASTM) y las conexiones de acero (cada union del motor, como se abre desde un nudo, pernos y soldaduras). «Ejemplos y ejercicios…» lista los 124 ejercicios de la verificacion del Modelador, del 1 al 121, por grupo y con buscador, con la diferencia contra ETABS o contra el calculo a mano; los 105 que traen modelo se abren con «Abrir» como un modelo nuevo del proyecto. Los casos reales de la Bodega 10-11 se listan sin modelo: son de un proyecto.",
     "NUEVO - CONEXIONES: UNION DE ASIENTO SIN RIGIDIZAR (Diseno de elementos -> Union viga-columna -> Asiento): la viga se apoya con su ala de abajo en un angulo de asiento atornillado o soldado al ala de la columna, con dos pernos de montaje, y un angulo delgado arriba la sostiene de lado y de giro (articulada). El CBFEM lleva el apoyo por contacto y la reaccion en el centro del largo de apoyo, como el Manual de AISC. A mano: el alma de la viga sobre el apoyo (fluencia local J10.2 y aplastamiento J10.3, con el largo de apoyo que piden) y el ala del asiento a flexion y a cortante (Manual de AISC, parte 10). El radio de acuerdo de los perfiles del catalogo ya entra en k.",
     "NUEVO - MOTOR DE CONEXIONES METALICAS (CBFEM), SEIS UNIONES MAS: los tubos PTE soldados en T, Y y K sobre un cordon (con el capitulo K de AISC 360); la viga secundaria a la viga principal con los despuntes que pone sola donde la secundaria llegaria a un ala (flexion del alma despuntada y bloque de cortante); los angulos de cortante dobles al ala de la columna; el empalme de columna con los extremos a tope (la compresion pasa directo por el contacto); la union de momento con las alas soldadas a tope (CJP) y el alma atornillada; y la placa extrema a ras. Cada una con su pantalla en Diseno de elementos y su boton en el nudo del Modelador.",
     "NUEVO - CONEXIONES: CARTELA BAJO LA VIGA (HAUNCH) EN LA PLACA EXTREMA, tambien con el cabio inclinado de la rodilla de una bodega: el alma triangular y el ala inclinada de una pieza con la viga, la placa baja hasta la cartela con sus filas de pernos y el rigidizador de compresion pasa al ala de la cartela. Con 200 kN·m el perno mas traccionado baja de 147 a 103 kN y la union pasa de semirrigida a rigida.",
@@ -214,6 +215,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.7.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.8.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

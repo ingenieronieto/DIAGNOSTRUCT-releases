@@ -2,6 +2,13 @@
   "generado": "2026-11-05",
   "versiones": [
     {
+      "version": "3.0.8",
+      "fecha": "2026-11-05",
+      "notas": [
+        "NUEVO - MODELADOR: AYUDA CON LOS CATALOGOS Y LOS EJEMPLOS. En el menu Ayuda del Modelador, «Catalogos…» abre una ventana con lo que hace el Modelador (cada menu con lo que hace), las 614 secciones por familia con area, inercias, J y peso, los materiales y mampuestos (concreto, acero, mamposteria con su Em y su peso por m2, guadua G.12 y madera ES1 a ES6), los aceros (barras, mallas, tipos de refuerzo y grados ASTM) y las conexiones de acero (cada union del motor, como se abre desde un nudo, pernos y soldaduras). «Ejemplos y ejercicios…» lista los 124 ejercicios de la verificacion del Modelador, del 1 al 121, por grupo y con buscador, con la diferencia contra ETABS o contra el calculo a mano; los 105 que traen modelo se abren con «Abrir» como un modelo nuevo del proyecto. Los casos reales de la Bodega 10-11 se listan sin modelo: son de un proyecto."
+      ]
+    },
+    {
       "version": "3.0.7",
       "fecha": "2026-11-05",
       "notas": [
