@@ -1,6 +1,18 @@
 {
-  "generado": "2026-11-04",
+  "generado": "2026-11-05",
   "versiones": [
+    {
+      "version": "3.0.6",
+      "fecha": "2026-11-05",
+      "notas": [
+        "NUEVO - MOTOR DE CONEXIONES METALICAS (CBFEM), SEIS UNIONES MAS: los tubos PTE soldados en T, Y y K sobre un cordon (con el capitulo K de AISC 360); la viga secundaria a la viga principal con los despuntes que pone sola donde la secundaria llegaria a un ala (flexion del alma despuntada y bloque de cortante); los angulos de cortante dobles al ala de la columna; el empalme de columna con los extremos a tope (la compresion pasa directo por el contacto); la union de momento con las alas soldadas a tope (CJP) y el alma atornillada; y la placa extrema a ras. Cada una con su pantalla en Diseno de elementos y su boton en el nudo del Modelador.",
+        "NUEVO - CONEXIONES: CARTELA BAJO LA VIGA (HAUNCH) EN LA PLACA EXTREMA, tambien con el cabio inclinado de la rodilla de una bodega: el alma triangular y el ala inclinada de una pieza con la viga, la placa baja hasta la cartela con sus filas de pernos y el rigidizador de compresion pasa al ala de la cartela. Con 200 kN·m el perno mas traccionado baja de 147 a 103 kN y la union pasa de semirrigida a rigida.",
+        "NUEVO - CONEXIONES: RIGIDEZ DE LA UNION Y SU CLASIFICACION: Sj = M/φ con el primer paso elastico, clasificada por AISC 360 B3.4 (K = Sj·L/EI) y por EN 1993-1-8; con la luz de la viga en la pantalla.",
+        "NUEVO - CONEXIONES: EL NUDO COMPLETO VIGA-COLUMNA-DIAGONAL: la cartela de esquina con la viga unida a la columna por placa de cortante atornillada y con las fuerzas de la viga, que el Modelador trae por combinacion.",
+        "NUEVO - CONEXIONES: REVISION DE LA GEOMETRIA ANTES DE ANALIZAR: piezas que se atraviesan, distancias al borde y entre pernos (AISC J3.3 y J3.4M), cabeza y tuerca que chocan, espacio para la llave y filete minimo (J2.4), con los choques en rojo en el 3D. Y el 3D muestra los espesores reales: placas como solidos, pernos con cabeza y tuerca hexagonales y cordones con su garganta (o la superficie media, con un boton).",
+        "MEJOR - CONEXIONES: en la placa extrema las filas de pernos se suben, bajan, agregan y quitan. Los filetes del ala inclinada del cabio actuan en la arista contra la placa, y el equilibrio de momentos cierra exacto."
+      ]
+    },
     {
       "version": "3.0.5",
       "fecha": "2026-11-04",
