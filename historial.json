@@ -2,6 +2,13 @@
   "generado": "2026-11-05",
   "versiones": [
     {
+      "version": "3.0.7",
+      "fecha": "2026-11-05",
+      "notas": [
+        "NUEVO - CONEXIONES: UNION DE ASIENTO SIN RIGIDIZAR (Diseno de elementos -> Union viga-columna -> Asiento): la viga se apoya con su ala de abajo en un angulo de asiento atornillado o soldado al ala de la columna, con dos pernos de montaje, y un angulo delgado arriba la sostiene de lado y de giro (articulada). El CBFEM lleva el apoyo por contacto y la reaccion en el centro del largo de apoyo, como el Manual de AISC. A mano: el alma de la viga sobre el apoyo (fluencia local J10.2 y aplastamiento J10.3, con el largo de apoyo que piden) y el ala del asiento a flexion y a cortante (Manual de AISC, parte 10). El radio de acuerdo de los perfiles del catalogo ya entra en k."
+      ]
+    },
+    {
       "version": "3.0.6",
       "fecha": "2026-11-05",
       "notas": [

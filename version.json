@@ -1,8 +1,9 @@
 {
-  "version": "3.0.6",
+  "version": "3.0.7",
   "fecha": "2026-11-05",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - CONEXIONES: UNION DE ASIENTO SIN RIGIDIZAR (Diseno de elementos -> Union viga-columna -> Asiento): la viga se apoya con su ala de abajo en un angulo de asiento atornillado o soldado al ala de la columna, con dos pernos de montaje, y un angulo delgado arriba la sostiene de lado y de giro (articulada). El CBFEM lleva el apoyo por contacto y la reaccion en el centro del largo de apoyo, como el Manual de AISC. A mano: el alma de la viga sobre el apoyo (fluencia local J10.2 y aplastamiento J10.3, con el largo de apoyo que piden) y el ala del asiento a flexion y a cortante (Manual de AISC, parte 10). El radio de acuerdo de los perfiles del catalogo ya entra en k.",
     "NUEVO - MOTOR DE CONEXIONES METALICAS (CBFEM), SEIS UNIONES MAS: los tubos PTE soldados en T, Y y K sobre un cordon (con el capitulo K de AISC 360); la viga secundaria a la viga principal con los despuntes que pone sola donde la secundaria llegaria a un ala (flexion del alma despuntada y bloque de cortante); los angulos de cortante dobles al ala de la columna; el empalme de columna con los extremos a tope (la compresion pasa directo por el contacto); la union de momento con las alas soldadas a tope (CJP) y el alma atornillada; y la placa extrema a ras. Cada una con su pantalla en Diseno de elementos y su boton en el nudo del Modelador.",
     "NUEVO - CONEXIONES: CARTELA BAJO LA VIGA (HAUNCH) EN LA PLACA EXTREMA, tambien con el cabio inclinado de la rodilla de una bodega: el alma triangular y el ala inclinada de una pieza con la viga, la placa baja hasta la cartela con sus filas de pernos y el rigidizador de compresion pasa al ala de la cartela. Con 200 kN·m el perno mas traccionado baja de 147 a 103 kN y la union pasa de semirrigida a rigida.",
     "NUEVO - CONEXIONES: RIGIDEZ DE LA UNION Y SU CLASIFICACION: Sj = M/φ con el primer paso elastico, clasificada por AISC 360 B3.4 (K = Sj·L/EI) y por EN 1993-1-8; con la luz de la viga en la pantalla.",
@@ -213,6 +214,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.6.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.7.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
