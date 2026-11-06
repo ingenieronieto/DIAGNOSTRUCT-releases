@@ -1,8 +1,12 @@
 {
-  "version": "3.0.11",
-  "fecha": "2026-11-05",
+  "version": "3.0.12",
+  "fecha": "2026-11-06",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - CONTROL A.V.F., VISTA 3D DEL CONJUNTO (paso 6): cada niveleta sale con el color de su asentamiento en el control elegido (bandas de 1, 2, 3 y 5 mm; gris si no tiene lectura) y cada fisurometro con el de su movimiento en mm; cada diana lleva una flecha con su desplome. Las torres dibujadas como areas se inclinan con el desplome promedio de sus dianas y muestran arriba su altura, el desplome y la relacion 1/N; tambien entran a la revision de conflictos. La camara encuadra el modelo entero y hay botones de vista (Iso, Planta, Norte, Sur, Oriente, Occidente), la exageracion de la inclinacion se ajusta de x1 a x200, los instrumentos pueden llevar rotulo con su codigo y su valor (o mostrarlo al pasar el mouse) y la captura para el reporte sale a doble resolucion.",
+    "NUEVO - CONEXIONES: DIAGONAL DE CANAL (C o 2C espalda con espalda) O DE PERFIL W ATORNILLADA POR EL ALMA A LA CARTELA, en Diseno de elementos, con su boton en el Modelador y su ejemplo en Catalogos.",
+    "NUEVO - CONEXIONES: DIAGONAL DE ANGULO ATORNILLADA DIRECTO AL MONTANTE (torres, sin cartela), en Diseno de elementos, con su boton en el Modelador y su ejemplo en Catalogos.",
+    "NUEVO - CONEXIONES: TUBOS REDONDOS SOLDADOS EN T, Y Y K (AISC 360-16, tabla K3.1): el cordon y los ramales como cilindros, cada ramal cortado por la superficie del cordon, con su revision por la tabla K3.1.",
     "NUEVO - MODELADOR Y CONEXIONES: EMPALME DE VIGAS CON PLACAS EXTREMAS (recto y cumbrera). En un nudo donde se encuentran dos vigas I en linea, o en cumbrera con su pendiente, el panel de propiedades ofrece «Disenar el empalme con placas extremas» o «Disenar la cumbrera», junto al empalme con cubrejuntas que ya existia: abre la placa extrema de viga a viga en Diseno de elementos con los perfiles del nudo y sus fuerzas en cada combinacion, y la analiza por elementos finitos (CBFEM) con las dos placas espalda con espalda, la otra viga en espejo, los pernos, el contacto entre placas y los cordones de soldadura.",
     "NUEVO - MODELADOR, AYUDA → CATALOGOS → CONEXIONES DE ACERO: CADA UNION CON SU EJEMPLO EN 3D. Cada ficha muestra la union armada como sale en su calculadora (perfiles, placas, pernos y cordones de soldadura, con espesores o en superficie media) y se gira con el mouse o el dedo: viga IPE 400 a columna HEA 300 con placa extrema, placa base de una HEA 300, empalme de una IPE 400, diagonal de tubo con cartela, angulo a cartela, tubos PTE en K y viga IPE 300 al alma de una IPE 450. El boton «Analizar este ejemplo en Diseño de elementos» abre esa union en su calculadora para correr el analisis por elementos finitos.",
     "CORREGIDO - CONEXIONES: EL CORTANTE DE LOS PERNOS CON LA NSR-10 VIGENTE (Tabla F.2.10.3-2): el A325 con la rosca excluida del plano de corte y el A490 con la rosca incluida resisten Fnv = 457 MPa (68 ksi); el motor traia 469 MPa, el valor de la version SI de AISC 360-16 (2,6 % mas). Los demas valores ya eran los de la NSR-10 (A325 con rosca incluida 372, A490 con rosca excluida 579, A307 188 MPa). Cambia la resistencia a corte de esos pernos en todas las uniones; la tabla de Catalogos dice de donde sale.",
@@ -218,6 +222,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.11.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.12.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

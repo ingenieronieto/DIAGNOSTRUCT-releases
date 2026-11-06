@@ -1,6 +1,16 @@
 {
-  "generado": "2026-11-05",
+  "generado": "2026-11-06",
   "versiones": [
+    {
+      "version": "3.0.12",
+      "fecha": "2026-11-06",
+      "notas": [
+        "NUEVO - CONTROL A.V.F., VISTA 3D DEL CONJUNTO (paso 6): cada niveleta sale con el color de su asentamiento en el control elegido (bandas de 1, 2, 3 y 5 mm; gris si no tiene lectura) y cada fisurometro con el de su movimiento en mm; cada diana lleva una flecha con su desplome. Las torres dibujadas como areas se inclinan con el desplome promedio de sus dianas y muestran arriba su altura, el desplome y la relacion 1/N; tambien entran a la revision de conflictos. La camara encuadra el modelo entero y hay botones de vista (Iso, Planta, Norte, Sur, Oriente, Occidente), la exageracion de la inclinacion se ajusta de x1 a x200, los instrumentos pueden llevar rotulo con su codigo y su valor (o mostrarlo al pasar el mouse) y la captura para el reporte sale a doble resolucion.",
+        "NUEVO - CONEXIONES: DIAGONAL DE CANAL (C o 2C espalda con espalda) O DE PERFIL W ATORNILLADA POR EL ALMA A LA CARTELA, en Diseno de elementos, con su boton en el Modelador y su ejemplo en Catalogos.",
+        "NUEVO - CONEXIONES: DIAGONAL DE ANGULO ATORNILLADA DIRECTO AL MONTANTE (torres, sin cartela), en Diseno de elementos, con su boton en el Modelador y su ejemplo en Catalogos.",
+        "NUEVO - CONEXIONES: TUBOS REDONDOS SOLDADOS EN T, Y Y K (AISC 360-16, tabla K3.1): el cordon y los ramales como cilindros, cada ramal cortado por la superficie del cordon, con su revision por la tabla K3.1."
+      ]
+    },
     {
       "version": "3.0.11",
       "fecha": "2026-11-05",
