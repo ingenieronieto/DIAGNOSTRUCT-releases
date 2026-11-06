@@ -2,6 +2,15 @@
   "generado": "2026-11-06",
   "versiones": [
     {
+      "version": "3.0.13",
+      "fecha": "2026-11-06",
+      "notas": [
+        "MEJORADO - CONTROL A.V.F., VISTA 3D: la camara encuadra el conjunto entero, con las torres y sus rotulos dentro del cuadro, y el rotulo de cada torre (altura, desplome y 1/N) ya no se monta sobre el de la torre vecina.",
+        "MEJORADO - INGRESO: el correo de la ultima cuenta que entro en el equipo llega escrito y el cursor queda en la contrasena. La contrasena no se guarda.",
+        "NUEVO - CONEXIONES: RIGIDIZADORES DE LA COLUMNA EN LA UNION A MOMENTO SOLDADA (AISC 360-16 J10): placas de continuidad a la altura de las alas de la viga, con la revision de J10.1, J10.2, J10.3 y J10.6 y, con rigidizadores, J10.7 y J10.8. Casilla y espesor en la pantalla."
+      ]
+    },
+    {
       "version": "3.0.12",
       "fecha": "2026-11-06",
       "notas": [

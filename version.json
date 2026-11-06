@@ -1,8 +1,11 @@
 {
-  "version": "3.0.12",
+  "version": "3.0.13",
   "fecha": "2026-11-06",
   "minima": "1.70.0",
   "notas": [
+    "MEJORADO - CONTROL A.V.F., VISTA 3D: la camara encuadra el conjunto entero, con las torres y sus rotulos dentro del cuadro, y el rotulo de cada torre (altura, desplome y 1/N) ya no se monta sobre el de la torre vecina.",
+    "MEJORADO - INGRESO: el correo de la ultima cuenta que entro en el equipo llega escrito y el cursor queda en la contrasena. La contrasena no se guarda.",
+    "NUEVO - CONEXIONES: RIGIDIZADORES DE LA COLUMNA EN LA UNION A MOMENTO SOLDADA (AISC 360-16 J10): placas de continuidad a la altura de las alas de la viga, con la revision de J10.1, J10.2, J10.3 y J10.6 y, con rigidizadores, J10.7 y J10.8. Casilla y espesor en la pantalla.",
     "NUEVO - CONTROL A.V.F., VISTA 3D DEL CONJUNTO (paso 6): cada niveleta sale con el color de su asentamiento en el control elegido (bandas de 1, 2, 3 y 5 mm; gris si no tiene lectura) y cada fisurometro con el de su movimiento en mm; cada diana lleva una flecha con su desplome. Las torres dibujadas como areas se inclinan con el desplome promedio de sus dianas y muestran arriba su altura, el desplome y la relacion 1/N; tambien entran a la revision de conflictos. La camara encuadra el modelo entero y hay botones de vista (Iso, Planta, Norte, Sur, Oriente, Occidente), la exageracion de la inclinacion se ajusta de x1 a x200, los instrumentos pueden llevar rotulo con su codigo y su valor (o mostrarlo al pasar el mouse) y la captura para el reporte sale a doble resolucion.",
     "NUEVO - CONEXIONES: DIAGONAL DE CANAL (C o 2C espalda con espalda) O DE PERFIL W ATORNILLADA POR EL ALMA A LA CARTELA, en Diseno de elementos, con su boton en el Modelador y su ejemplo en Catalogos.",
     "NUEVO - CONEXIONES: DIAGONAL DE ANGULO ATORNILLADA DIRECTO AL MONTANTE (torres, sin cartela), en Diseno de elementos, con su boton en el Modelador y su ejemplo en Catalogos.",
@@ -222,6 +225,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.12.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.13.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
