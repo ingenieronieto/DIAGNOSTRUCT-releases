@@ -1,6 +1,20 @@
 {
-  "generado": "2026-11-06",
+  "generado": "2026-11-07",
   "versiones": [
+    {
+      "version": "3.0.14",
+      "fecha": "2026-11-07",
+      "notas": [
+        "NUEVO - CONEXIONES: INFORME DE LA UNION (como el de IDEA StatiCa). Boton en las nueve uniones: hoja imprimible con el membrete de la empresa activa, el metodo y las normas, los materiales, los pernos con su apriete, las cargas, la vista 3D del visor y cada chequeo (placas, pandeo, pernos, soldaduras, concreto, chequeos de mano y rigidez). Se imprime o se guarda en PDF.",
+        "NUEVO - CONEXIONES: ANALISIS LINEAL DE PANDEO DE LAS PLACAS (como IDEA StatiCa): el factor critico de cada modo y la placa que pandea, juzgados con AISC 360-16 (J4.4 y los limites de pandeo local), y el mapa del modo en el visor.",
+        "NUEVO - CONEXIONES: DISENO POR CAPACIDAD SISMICO de la union viga-columna (AISC 358-10): Mpr, Sh, Vu y Mf para el momento soldado y la placa extrema extendida, con la viga elastica en el modelo.",
+        "NUEVO - CONEXIONES: PERNOS PRETENSADOS DE DESLIZAMIENTO CRITICO (AISC 360-16 J3.8 y J3.9), clase A o B, en las seis uniones con pernos.",
+        "NUEVO - CONEXIONES, TUBOS: union en cruz (X) y K traslapada, en PTE y en redondos (AISC 360-16 capitulo K).",
+        "NUEVO - CONEXIONES: la columna revisada a mano con placa extrema (AISC DG4) y la placa de enchape del panel (J10.9) en el momento soldado y en la placa extrema.",
+        "MEJORADO - CONEXIONES, VISOR 3D: los pernos (fucsia) y las soldaduras (violeta) resaltan sobre el mapa de esfuerzos; el boton de color fijo o por uso los cambia.",
+        "MEJORADO - MODELADOR: el corte de la seccion sale tambien en las barras sin seccion de A.10 (guadua, acero, lamina), en Sobreesfuerzos y en Reforzar."
+      ]
+    },
     {
       "version": "3.0.13",
       "fecha": "2026-11-06",

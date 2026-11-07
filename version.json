@@ -1,8 +1,16 @@
 {
-  "version": "3.0.13",
-  "fecha": "2026-11-06",
+  "version": "3.0.14",
+  "fecha": "2026-11-07",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - CONEXIONES: INFORME DE LA UNION (como el de IDEA StatiCa). Boton en las nueve uniones: hoja imprimible con el membrete de la empresa activa, el metodo y las normas, los materiales, los pernos con su apriete, las cargas, la vista 3D del visor y cada chequeo (placas, pandeo, pernos, soldaduras, concreto, chequeos de mano y rigidez). Se imprime o se guarda en PDF.",
+    "NUEVO - CONEXIONES: ANALISIS LINEAL DE PANDEO DE LAS PLACAS (como IDEA StatiCa): el factor critico de cada modo y la placa que pandea, juzgados con AISC 360-16 (J4.4 y los limites de pandeo local), y el mapa del modo en el visor.",
+    "NUEVO - CONEXIONES: DISENO POR CAPACIDAD SISMICO de la union viga-columna (AISC 358-10): Mpr, Sh, Vu y Mf para el momento soldado y la placa extrema extendida, con la viga elastica en el modelo.",
+    "NUEVO - CONEXIONES: PERNOS PRETENSADOS DE DESLIZAMIENTO CRITICO (AISC 360-16 J3.8 y J3.9), clase A o B, en las seis uniones con pernos.",
+    "NUEVO - CONEXIONES, TUBOS: union en cruz (X) y K traslapada, en PTE y en redondos (AISC 360-16 capitulo K).",
+    "NUEVO - CONEXIONES: la columna revisada a mano con placa extrema (AISC DG4) y la placa de enchape del panel (J10.9) en el momento soldado y en la placa extrema.",
+    "MEJORADO - CONEXIONES, VISOR 3D: los pernos (fucsia) y las soldaduras (violeta) resaltan sobre el mapa de esfuerzos; el boton de color fijo o por uso los cambia.",
+    "MEJORADO - MODELADOR: el corte de la seccion sale tambien en las barras sin seccion de A.10 (guadua, acero, lamina), en Sobreesfuerzos y en Reforzar.",
     "MEJORADO - CONTROL A.V.F., VISTA 3D: la camara encuadra el conjunto entero, con las torres y sus rotulos dentro del cuadro, y el rotulo de cada torre (altura, desplome y 1/N) ya no se monta sobre el de la torre vecina.",
     "MEJORADO - INGRESO: el correo de la ultima cuenta que entro en el equipo llega escrito y el cursor queda en la contrasena. La contrasena no se guarda.",
     "NUEVO - CONEXIONES: RIGIDIZADORES DE LA COLUMNA EN LA UNION A MOMENTO SOLDADA (AISC 360-16 J10): placas de continuidad a la altura de las alas de la viga, con la revision de J10.1, J10.2, J10.3 y J10.6 y, con rigidizadores, J10.7 y J10.8. Casilla y espesor en la pantalla.",
@@ -225,6 +233,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.13.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.14.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
