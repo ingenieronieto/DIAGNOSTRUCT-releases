@@ -1,6 +1,23 @@
 {
-  "generado": "2026-11-07",
+  "generado": "2026-11-09",
   "versiones": [
+    {
+      "version": "3.0.15",
+      "fecha": "2026-11-09",
+      "notas": [
+        "NUEVO - CONEXIONES: NUDO GENERAL, VARIAS VIGAS A UNA COLUMNA (como IDEA StatiCa). Una union en cada cara que se use: las alas (+X, -X) y el alma (+Y, -Y) de una columna I, o las cuatro caras de un tubo PTE con diafragmas interiores. Cada union se arma como sola y el nudo las monta sobre una sola columna; el CBFEM lleva todo junto y a mano sale el cortante del panel (AISC 360-16 J10.6). Se abre desde un nudo del Modelador con las vigas, la columna y las fuerzas de cada combinacion.",
+        "NUEVO - CONEXIONES, NUDO GENERAL: la rigidez de cada viga de momento (cargada sola) con su clasificacion; las vigas inclinadas (cabios hasta 30 grados, con placa extrema) y las oblicuas en planta (placa de cortante hasta 30 grados); las vigas articuladas con M = 0 y arriostradas de lado; el momento al alma con rigidizadores extendidos.",
+        "NUEVO - CONEXIONES, NUDO GENERAL CON DIAGONALES: la viga con su diagonal de tubo ranurado y la cartela de esquina (sube, baja o las dos, el portico arriostrado en X), al ala, al alma o al tubo; y la diagonal sin viga, con la cartela soldada solo a la columna. Desde el Modelador, la diagonal va con la viga de su lado o sola a la cara sin viga.",
+        "NUEVO - CONEXIONES: PLACA EXTREMA A UNA COLUMNA TUBULAR (PTE), con pernos ciegos (Hollo-bolt, Flowdrill) en la parte plana de la cara o pernos pasantes de lado a lado del tubo, y diafragmas interiores. Sola, en el nudo general y desde el Modelador. AISC 358 no la precalifica: diseno por analisis.",
+        "NUEVO - CONEXIONES, DIEZ UNIONES MAS: momento con placas atornilladas en las alas (BFP, AISC 358-16 cap. 7); asiento rigidizado; te de cortante (WT) y placa extrema de cortante flexible; viga a columna tubular con placa de cortante (simple o pasante) y a momento (soldada o BFP); placa base de columna tubular (PTE y redonda) con rigidizadores y llave de cortante; cartela en V invertida (chevron); viga continua sobre la columna (placa de tapa); empalme de tubos con bridas atornilladas y correa sobre el cabio con clip.",
+        "MEJORADO - CONEXIONES: el solver del CBFEM 20 veces mas rapido en el nudo general y con busqueda lineal cuando el paso de Newton hace ciclos o se va.",
+        "NUEVO - MODELADO 3D: la deformada medida del Control A.V.F. sobre el modelo asociado (asentamiento y verticalidad aparte, flechas de plomada, rumbo y dianas, color por criterio: rojo solo si pasa el limite), el asentamiento impuesto en la cimentacion (individual o placa flotante), las juntas de dilatacion que separan los cuerpos en la deformada y el analisis, y el entorno del control bajo el modelo (mapa, relieve, curvas y vecinos).",
+        "NUEVO - CONTROL A.V.F.: el terreno en 3D bajo el mapa, con curvas de nivel de separacion a escoger; la vista 3D del conjunto con el mapa, el modelo estructural, los vecinos y las figuras del informe.",
+        "MEJORADO - INFORMES: una sola linea grafica para patologia, vulnerabilidad, reforzamiento y A.V.F. Patologia: sin estudio geotecnico no sale el numeral de geologia, sin frases de efecto ni verificaciones adicionales, y la metodologia ya no califica conforme al capitulo A.10. A.V.F.: empates, clase inapreciable, meses y plantas con instrumentos.",
+        "NUEVO - SUPERMODULOS Y ENTREGAS POR SUPERMODULO, con los informes de vulnerabilidad y de reforzamiento.",
+        "MEJORADO - TEXTOS LEGALES: titularidad al dia y la politica de datos con el NIT, el domicilio y la direccion del responsable (Decreto 1377, art. 13)."
+      ]
+    },
     {
       "version": "3.0.14",
       "fecha": "2026-11-07",
