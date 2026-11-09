@@ -1,8 +1,11 @@
 {
-  "version": "3.0.15",
+  "version": "3.0.16",
   "fecha": "2026-11-09",
   "minima": "1.70.0",
   "notas": [
+    "MEJORADO - CONTROL A.V.F.: el desplome de cada torre sale de sus dianas por minimos cuadrados; el informe trae la figura 8 (el conjunto sobre el terreno) y figuras mas legibles, cada una en su propio lienzo.",
+    "MEJORADO - CONTROL A.V.F. Y MODELADO 3D: el suelo bajo el terreno, achurado, con color y opacidad.",
+    "MEJORADO - TEXTOS LEGALES: las condiciones de pago de los modulos con precio (sin IVA y sin plan preseleccionado). Los textos se aceptan de nuevo al entrar.",
     "NUEVO - CONEXIONES: NUDO GENERAL, VARIAS VIGAS A UNA COLUMNA (como IDEA StatiCa). Una union en cada cara que se use: las alas (+X, -X) y el alma (+Y, -Y) de una columna I, o las cuatro caras de un tubo PTE con diafragmas interiores. Cada union se arma como sola y el nudo las monta sobre una sola columna; el CBFEM lleva todo junto y a mano sale el cortante del panel (AISC 360-16 J10.6). Se abre desde un nudo del Modelador con las vigas, la columna y las fuerzas de cada combinacion.",
     "NUEVO - CONEXIONES, NUDO GENERAL: la rigidez de cada viga de momento (cargada sola) con su clasificacion; las vigas inclinadas (cabios hasta 30 grados, con placa extrema) y las oblicuas en planta (placa de cortante hasta 30 grados); las vigas articuladas con M = 0 y arriostradas de lado; el momento al alma con rigidizadores extendidos.",
     "NUEVO - CONEXIONES, NUDO GENERAL CON DIAGONALES: la viga con su diagonal de tubo ranurado y la cartela de esquina (sube, baja o las dos, el portico arriostrado en X), al ala, al alma o al tubo; y la diagonal sin viga, con la cartela soldada solo a la columna. Desde el Modelador, la diagonal va con la viga de su lado o sola a la cara sin viga.",
@@ -244,6 +247,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.15.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.16.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

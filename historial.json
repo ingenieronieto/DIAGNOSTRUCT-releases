@@ -2,6 +2,15 @@
   "generado": "2026-11-09",
   "versiones": [
     {
+      "version": "3.0.16",
+      "fecha": "2026-11-09",
+      "notas": [
+        "MEJORADO - CONTROL A.V.F.: el desplome de cada torre sale de sus dianas por minimos cuadrados; el informe trae la figura 8 (el conjunto sobre el terreno) y figuras mas legibles, cada una en su propio lienzo.",
+        "MEJORADO - CONTROL A.V.F. Y MODELADO 3D: el suelo bajo el terreno, achurado, con color y opacidad.",
+        "MEJORADO - TEXTOS LEGALES: las condiciones de pago de los modulos con precio (sin IVA y sin plan preseleccionado). Los textos se aceptan de nuevo al entrar."
+      ]
+    },
+    {
       "version": "3.0.15",
       "fecha": "2026-11-09",
       "notas": [
