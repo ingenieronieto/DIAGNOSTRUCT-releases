@@ -1,6 +1,19 @@
 {
-  "generado": "2026-11-09",
+  "generado": "2026-11-10",
   "versiones": [
+    {
+      "version": "3.0.18",
+      "fecha": "2026-11-10",
+      "notas": [
+        "NUEVO - CONEXIONES, NUDO GENERAL: la viga oblicua en planta de momento, con placa extrema (hasta 30 grados, al ala, al alma o a un tubo), y la oblicua e inclinada a la vez: el ala corta la placa en una linea inclinada y la placa y las filas de pernos se corren lo que pide. Desde el Modelador, la de momento va con placa extrema y la articulada con placa de cortante.",
+        "NUEVO - CONEXIONES: la placa de cortante oblicua al alma de la columna. Si la viga no cabe entre las alas, empieza fuera de ellas y la placa se extiende (Manual de AISC parte 10). Tambien en la union sola, con su angulo en planta.",
+        "NUEVO - CONEXIONES, NUDO CON COLUMNA TUBULAR: pernos pasantes con la cara de enfrente ocupada. Dos placas extremas enfrentadas comparten los pernos de placa a placa; con otra union enfrente, se revisa que las tuercas no choquen con sus piezas.",
+        "MEJORADO - CONEXIONES: el largo de cada tramo de soldadura se mide con la distancia real entre nudos.",
+        "NUEVO - REFORZAR: pantallas con su propio concreto, sus columnas y vigas como parte del muro y diseno con el 100 % del sismo; perfil metalico adosado bajo la viga como ultimo recurso, verificado sobre el modelo reforzado; la camisa de columna se busca hasta 300 mm por cara; el FRP y el perfil adosado se escogen de nuevo en cada ronda.",
+        "MEJORADO - INDICES A.10: la flexo-compresion de las columnas sobre el rayo P-M-M, como el Modelador, y la seccion de cada barra tambien desde el encabezado SectProp.",
+        "MEJORADO - INFORME DE REFORZAMIENTO Y ANEXO DEL MODELO REFORZADO: los indices de partida en el panel, la coma decimal en las cuantias de pantallas y el perfil adosado como tecnica de acero; el anexo imprime lo que cierra Reforzar (rondas, pantallas, acero existente) y el corte dibuja el perfil W."
+      ]
+    },
     {
       "version": "3.0.17",
       "fecha": "2026-11-09",
