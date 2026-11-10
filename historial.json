@@ -2,6 +2,17 @@
   "generado": "2026-11-09",
   "versiones": [
     {
+      "version": "3.0.17",
+      "fecha": "2026-11-09",
+      "notas": [
+        "MEJORADO - REFORZAR (CAMISA DE COLUMNA): los estribos siguen por el nudo de arriba, en la altura de la viga mas alta (DES: C.21.7.3.1, o la mitad del Ash a 150 mm con vigas en las cuatro caras, C.21.7.3.2; DMO y DMI: el minimo de C.11.10.2), con una perforacion por viga en cada estribo del nudo.",
+        "NUEVO - REFORZAR (DMO): el procedimiento alterno de C.21.3.5.9 (No. 3 a 100 mm, ramas a no mas de 200 mm, f'c hasta 35 MPa) en vez del Ash. Queda el que menos perfore y el texto dice por que; se puede pedir o descartar a mano.",
+        "MEJORADO - REFORZAR: la verificacion con el modelo reforzado revisa cada camisa fila por fila con las demandas nuevas y manda el mayor entre eso y el mapa.",
+        "NUEVO - CONEXIONES: dos diagonales sin viga en una cara (arriostramiento en K), con una sola placa en K soldada a la columna; y el nudo general con solo diagonales, sin vigas, desde el Modelador.",
+        "CORREGIDO - CONTROL A.V.F.: las dianas sin fachada toman la de su torre segun su ubicacion en el plano, y el desplome, los conflictos y las figuras ya no salen torcidos por eso."
+      ]
+    },
+    {
       "version": "3.0.16",
       "fecha": "2026-11-09",
       "notas": [
