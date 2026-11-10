@@ -1,8 +1,9 @@
 {
-  "version": "3.0.18",
+  "version": "3.0.19",
   "fecha": "2026-11-10",
   "minima": "1.70.0",
   "notas": [
+    "MEJORADO - REFORZAR (PANTALLAS): las barras de los elementos de borde tienen que caber con su separacion libre (C.7.6.1) fuera de la columna existente, tomada por su lado en la direccion del muro; si no caben, sube el diametro o se alarga el borde de 100 en 100 mm, y el texto dice cuantas barras son de la columna.",
     "NUEVO - CONEXIONES, NUDO GENERAL: la viga oblicua en planta de momento, con placa extrema (hasta 30 grados, al ala, al alma o a un tubo), y la oblicua e inclinada a la vez: el ala corta la placa en una linea inclinada y la placa y las filas de pernos se corren lo que pide. Desde el Modelador, la de momento va con placa extrema y la articulada con placa de cortante.",
     "NUEVO - CONEXIONES: la placa de cortante oblicua al alma de la columna. Si la viga no cabe entre las alas, empieza fuera de ellas y la placa se extiende (Manual de AISC parte 10). Tambien en la union sola, con su angulo en planta.",
     "NUEVO - CONEXIONES, NUDO CON COLUMNA TUBULAR: pernos pasantes con la cara de enfrente ocupada. Dos placas extremas enfrentadas comparten los pernos de placa a placa; con otra union enfrente, se revisa que las tuercas no choquen con sus piezas.",
@@ -259,6 +260,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.18.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.19.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }

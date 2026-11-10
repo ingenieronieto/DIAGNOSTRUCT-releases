@@ -2,6 +2,13 @@
   "generado": "2026-11-10",
   "versiones": [
     {
+      "version": "3.0.19",
+      "fecha": "2026-11-10",
+      "notas": [
+        "MEJORADO - REFORZAR (PANTALLAS): las barras de los elementos de borde tienen que caber con su separacion libre (C.7.6.1) fuera de la columna existente, tomada por su lado en la direccion del muro; si no caben, sube el diametro o se alarga el borde de 100 en 100 mm, y el texto dice cuantas barras son de la columna."
+      ]
+    },
+    {
       "version": "3.0.18",
       "fecha": "2026-11-10",
       "notas": [
