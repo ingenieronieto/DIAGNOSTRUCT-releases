@@ -1,8 +1,16 @@
 {
-  "version": "3.0.19",
-  "fecha": "2026-11-10",
+  "version": "3.0.20",
+  "fecha": "2026-11-12",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - DETALLADO: barras en paquete (NSR-10 C.7.6.6). Vigas y columnas aceptan de 1 a 4 barras por paquete (por ejemplo 4 paquetes de 3 #3); en vigas nada mayor que la #11 y los cortes escalonados 40 db; para separacion y recubrimiento el paquete es una barra de su diametro equivalente. Ld y ldh suben 20 % con 3 barras y 33 % con 4 (C.12.4) y los traslapos de un paquete no se superponen (C.12.14.2.2). La P-M-M, el Mn, los indices A.10 y las camisas de Reforzar ponen cada barra en su sitio; despiece, kg y lista de compra cuentan cada barra y los cortes las dibujan juntas.",
+    "CORREGIDO - DETALLADO: las puntas de los traslapos de vigas se redondean hacia afuera (antes un traslapo podia quedar hasta 5 cm corto); el gancho pedido (135 o 180 grados) llega al despiece y a los rotulos; el estribo cerrado se corta por su eje; la piel de C.10.6.7 va en toda la altura con la separacion de C.10.6.4.",
+    "MEJORADO - MODELADOR E IMPORTAR DE SAP2000: el modelo de SAP2000 da lo mismo en la app: longitudes de extremo automaticas, el caso P-Delta de SAP2000 (tambien dentro de la barra), los elementos de area (membrana y cascaron) con sus fuerzas, modos verticales, resortes repetidos, Uniform to Frame en una direccion, masa vertical de nudo, barras con I23 por ejes principales y avisos de lo que no entra. En el sismo estatico, la masa de los muros entre pisos va a los dos niveles vecinos, como ETABS.",
+    "MEJORADO - EXPORTAR A SAP2000 Y A ETABS: el .s2k lleva las propiedades y los nudos sueltos; el .e2k cierra bien, define D con el peso propio y usa las estaciones de ETABS.",
+    "CORREGIDO - REFORZAR: las pantallas del modelo reforzado llevan su peso propio; el cortante del perfil W adosado se revisa con G2.1; la P-M-M de la camisa da exacta con momento en una sola direccion.",
+    "CORREGIDO - ESCLEROMETRIA: las lecturas se descartan a mas de 6 unidades del promedio, segun la NTC 3692:2018 (9.1), vigente; antes se usaba 7 unidades de la version de 1995.",
+    "CORREGIDO - HOJAS DE ENSAYO: cada equipo se compara con la fecha del ensayo y el vencido sale marcado VENCIDO; ya no se afirma que la calibracion garantiza los resultados.",
+    "VALIDACION DEL MOTOR: ejercicios a tres bandas (la app, el programa comercial y Excel): 93 contra SAP2000 24 y 40 contra Tekla 2023 cumplen, ademas de los 121 contra ETABS 21.",
     "MEJORADO - REFORZAR (PANTALLAS): las barras de los elementos de borde tienen que caber con su separacion libre (C.7.6.1) fuera de la columna existente, tomada por su lado en la direccion del muro; si no caben, sube el diametro o se alarga el borde de 100 en 100 mm, y el texto dice cuantas barras son de la columna.",
     "NUEVO - CONEXIONES, NUDO GENERAL: la viga oblicua en planta de momento, con placa extrema (hasta 30 grados, al ala, al alma o a un tubo), y la oblicua e inclinada a la vez: el ala corta la placa en una linea inclinada y la placa y las filas de pernos se corren lo que pide. Desde el Modelador, la de momento va con placa extrema y la articulada con placa de cortante.",
     "NUEVO - CONEXIONES: la placa de cortante oblicua al alma de la columna. Si la viga no cabe entre las alas, empieza fuera de ellas y la placa se extiende (Manual de AISC parte 10). Tambien en la union sola, con su angulo en planta.",
@@ -260,6 +268,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.19.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.20.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
