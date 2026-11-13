@@ -1,8 +1,19 @@
 {
-  "version": "3.0.20",
-  "fecha": "2026-11-12",
+  "version": "3.0.21",
+  "fecha": "2026-11-13",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR: pandeo lineal (Buckling). En Correr el analisis se marca Pandeo lineal, se escoge el caso de referencia y salen los factores lambda con la forma de cada modo. Verificado contra Euler (voladizo y biarticulada, exacto).",
+    "NUEVO - MODELADOR: balasto (Winkler) en vigas y losas de cimentacion, con el modulo de reaccion ks del estudio de suelos (Asignar > Barra o Losa > Balasto). Verificado contra la solucion de Hetenyi.",
+    "NUEVO - MODELADOR: importar IFC (Tekla, Revit, Allplan) por Archivo > Importar: columnas, vigas y riostras con su perfil, material y giro; las vigas que llegan a la cara de la columna se unen a su eje y la cota mas baja queda empotrada.",
+    "MEJORADO - PUSHOVER DEL MODELADOR: la gravedad sale de la fuente de masa del modelo con todos sus patrones; un modelo importado de ETABS ya no queda bloqueado.",
+    "CORREGIDO - MODELADOR: la articulacion de una barra va en la cara del nudo, como ETABS (los postes cortos bajo una viga, como en un puente, daban cortantes muy bajos).",
+    "MEJORADO - REGATAS: la cuantia de muros de concreto cuenta lo medido en las dos caras, y el esquema de vigas, zapatas y losas se dibuja por caras.",
+    "MEJORADO - TANQUES ACI 350.3: el factor de importancia con los tres grupos de la Tabla 4.1.1(a).",
+    "MEJORADO - REVISION DE COLUMNAS: la eficiencia a P constante (como DC-CAD3) al lado del indice P-M-M.",
+    "MEJORADO - CODIGOS DE ACTIVACION: un codigo puede habilitar varios modulos a la vez.",
+    "MEJORADO - HOJAS DE CALCULO Y CATALOGO DE NORMAS: libros de cargas, conexiones, vigas y acero corregidos con la NSR-10 vigente; fichas nuevas de Helene, EHE-08 Anejo 9 y ALCONPAT 2022.",
+    "MEJORADO - DETALLADO: traslapos y anclajes con el f'c menor del eje.",
     "NUEVO - DETALLADO: barras en paquete (NSR-10 C.7.6.6). Vigas y columnas aceptan de 1 a 4 barras por paquete (por ejemplo 4 paquetes de 3 #3); en vigas nada mayor que la #11 y los cortes escalonados 40 db; para separacion y recubrimiento el paquete es una barra de su diametro equivalente. Ld y ldh suben 20 % con 3 barras y 33 % con 4 (C.12.4) y los traslapos de un paquete no se superponen (C.12.14.2.2). La P-M-M, el Mn, los indices A.10 y las camisas de Reforzar ponen cada barra en su sitio; despiece, kg y lista de compra cuentan cada barra y los cortes las dibujan juntas.",
     "CORREGIDO - DETALLADO: las puntas de los traslapos de vigas se redondean hacia afuera (antes un traslapo podia quedar hasta 5 cm corto); el gancho pedido (135 o 180 grados) llega al despiece y a los rotulos; el estribo cerrado se corta por su eje; la piel de C.10.6.7 va en toda la altura con la separacion de C.10.6.4.",
     "MEJORADO - MODELADOR E IMPORTAR DE SAP2000: el modelo de SAP2000 da lo mismo en la app: longitudes de extremo automaticas, el caso P-Delta de SAP2000 (tambien dentro de la barra), los elementos de area (membrana y cascaron) con sus fuerzas, modos verticales, resortes repetidos, Uniform to Frame en una direccion, masa vertical de nudo, barras con I23 por ejes principales y avisos de lo que no entra. En el sismo estatico, la masa de los muros entre pisos va a los dos niveles vecinos, como ETABS.",
@@ -268,6 +279,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.20.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.21.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
