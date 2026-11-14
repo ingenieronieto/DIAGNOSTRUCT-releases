@@ -1,8 +1,23 @@
 {
-  "version": "3.0.21",
+  "version": "3.0.22",
   "fecha": "2026-11-13",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - ENSAYOS: seis ensayos nuevos con su tabla de lecturas y su lugar en el informe de patologia: petrografia, perfil de cloruros, pull-off, pull-out, pipeta Karsten y apiques y calas. ID TRABAJO trae la fila Otro en los ensayos para concreto.",
+    "NUEVO - ESCRITORIO: pushover con rotulas de ASCE 41-17 contra IO, LS y CP, desplazamiento objetivo de ASCE 41-17 y punto de desempeno de FEMA 440. La curva dice por que se corta.",
+    "MEJORADO - PUSHOVER DEL ESCRITORIO: rotulas integradas como SAP2000 (cinco empujes de prueba dentro del 5 % de SAP2000 en rigidez inicial, Vy, Vmax, desplazamiento objetivo y T1), la curva se mide desde la posicion que deja la gravedad y la rigidez inicial ya no depende del tamano del paso.",
+    "NUEVO - A.10: muros de mamposteria por capacidad (Titulo D) con las fuerzas de pier de ETABS; en el Modelador, las fuerzas de pier y los muros con el color de su pier en el mapa de sobreesfuerzos.",
+    "CORREGIDO - MICROZONIFICACION DE BOGOTA: Tablas 4 y 5 del Decreto 523 leidas del decreto (Tabla 4 con Ae; Tabla 5 con su rampa).",
+    "MEJORADO - A.10, ZAPATAS: el borde libre del punzonamiento sale de la geometria (ex, ey de la columna).",
+    "NUEVO - REFORZAR: las pantallas salen con su despiece real: concreto entre las caras de las columnas y bajo las vigas, acero barra por barra con los estribos de los bordes y perforaciones en vigas y columnas; las horizontales se anclan con epoxico, atravesando la columna con gancho o hasta su cara (selector en el panel).",
+    "MEJORADO - REFORZAR: precios por defecto con la lista de APU propia de ING. NIETO.",
+    "MEJORADO - REFORZAR: los estribos de las camisas de columna y de viga se miden por el eje con sus dobleces (antes salian 2 a 3 % mas largos); el acero de las cantidades baja 0,5 a 1 %.",
+    "NUEVO - DETALLADO: muros con esquinas amarradas y aberturas (machones y dintel); vigas y columnas inclinadas, vigas junto a muros en su plano y columnas sobre vigas; muros mallados agrupados por plano y por piso; rho_s de espiral y aros y barras metricas. Comparado con Tekla.",
+    "MEJORADO - PLAN DE AUSCULTAMIENTO: la metodologia de los diez ensayos con ilustraciones sobre fotos reales.",
+    "MEJORADO - ESCLEROMETRIA: guia de campo con la NTC 3692 (50 mm a bordes, descarte por lectura) y metodologia ilustrada en el plan de auscultamiento, junto con la extraccion de nucleos.",
+    "MEJORADO - MEDICION DE ESPESORES Y DUROMETRIA: el esmerilado como preparacion de la superficie.",
+    "CORREGIDO - NUCLEOS E INFORME DE PATOLOGIA: la tabla Kn es del criterio de Chauvenet, no de la NSR-10 ni de la NTC 2275.",
+    "MEJORADO - CATALOGO DE NORMAS: fichas cotejadas con los PDF de la bibliografia y fichas nuevas ISO 16859-1 y NTC 3353 para durometria.",
     "NUEVO - MODELADOR: pandeo lineal (Buckling). En Correr el analisis se marca Pandeo lineal, se escoge el caso de referencia y salen los factores lambda con la forma de cada modo. Verificado contra Euler (voladizo y biarticulada, exacto).",
     "NUEVO - MODELADOR: balasto (Winkler) en vigas y losas de cimentacion, con el modulo de reaccion ks del estudio de suelos (Asignar > Barra o Losa > Balasto). Verificado contra la solucion de Hetenyi.",
     "NUEVO - MODELADOR: importar IFC (Tekla, Revit, Allplan) por Archivo > Importar: columnas, vigas y riostras con su perfil, material y giro; las vigas que llegan a la cara de la columna se unen a su eje y la cota mas baja queda empotrada.",
@@ -279,6 +294,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.21.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.22.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
