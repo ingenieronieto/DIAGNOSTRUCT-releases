@@ -1,8 +1,17 @@
 {
-  "version": "3.0.22",
-  "fecha": "2026-11-13",
+  "version": "3.0.23",
+  "fecha": "2026-11-15",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR: cada pantalla trabaja en el modo de su tipo de obra, con sus menus, su barra y su color: edificaciones (plata), estructuras civiles (oro), conexiones (esmeralda), detallado acero (cobre) y detallado concreto (zafiro). La ficha de la estructura pide el tipo de obra y el Modelador escoge el modo solo; en la barra de titulo se cambia a mano y lleva al paso siguiente (detallado o conexiones).",
+    "NUEVO - OBRA CIVIL: plantillas de tanque rectangular y circular, muro de contencion y losa sobre el terreno, ya malladas sobre balasto con el agua y la tierra; sismo de tanque por ACI 350.3, presion de contacto del balasto y analisis con pandeo lineal. Un modelo solo de muros y losas ya se puede correr.",
+    "NUEVO - IMPORTAR IFC: lee los IFC que exporta Tekla Structures 2023 (perfiles por su contorno, tubos y el eje de cada pieza, aunque el archivo no traiga el eje aparte); antes no entraba ninguna pieza.",
+    "MEJORADO - MODELADOR: la membrana de los cuadrilateros que no son paralelogramos es la de SAP2000 y ETABS, y las fuerzas de piso con cubierta en arco, las rampas, las graderias, las derivas con columnas de varios pisos y las losas de mas de cuatro lados salen como en ETABS (en una planta de ocho lados, vigas del 59-64 % al 0,09 % y columnas del 24-29 % al 0,08 %). En la bateria de 100 casos contra ETABS quedan 80, 92 y 99 dentro del 1, 2 y 5 % (antes 78, 83 y 91).",
+    "MEJORADO - DETALLADO: ninguna barra pasa del largo comercial (las horizontales de muro de mas de 12 m se parten con traslapos escalonados, con aviso) y la torsion aplica los minimos de la NSR-10 C.11.5; la viga que recibe un voladizo sin columna toma la torsion completa, con aviso.",
+    "MEJORADO - REFORZAR: el perfil adosado (con sus perforaciones) y el FRP se cuentan entre las caras de las columnas, la envoltura de columna con esquinas redondeadas en la altura libre y la U de FRP con 2(h - losa) + b.",
+    "CORREGIDO - LECTURA DE ETABS: la tabla de diseno de columnas de ETABS 21 se lee bien, y las fuerzas con tres decimales o en kN-mm ya no salen mil veces mayores.",
+    "CORREGIDO - CONEXIONES: el nudo general con dos diagonales en X ya calcula (antes no completaba ningun paso). El motor vuelve a armar la rigidez cuando un contacto o un perno cambia de estado, y las demas uniones van igual o mas rapido.",
+    "VERIFICACION - EJERCICIOS DEL MOTOR: la serie T queda completa contra Tekla y Excel (100 de 100) y empieza la serie I de uniones contra IDEA StatiCa 26.1 (I001 a I006, I011 e I014: placas extremas, viga oblicua y rodilla).",
     "NUEVO - ENSAYOS: seis ensayos nuevos con su tabla de lecturas y su lugar en el informe de patologia: petrografia, perfil de cloruros, pull-off, pull-out, pipeta Karsten y apiques y calas. ID TRABAJO trae la fila Otro en los ensayos para concreto.",
     "NUEVO - ESCRITORIO: pushover con rotulas de ASCE 41-17 contra IO, LS y CP, desplazamiento objetivo de ASCE 41-17 y punto de desempeno de FEMA 440. La curva dice por que se corta.",
     "MEJORADO - PUSHOVER DEL ESCRITORIO: rotulas integradas como SAP2000 (cinco empujes de prueba dentro del 5 % de SAP2000 en rigidez inicial, Vy, Vmax, desplazamiento objetivo y T1), la curva se mide desde la posicion que deja la gravedad y la rigidez inicial ya no depende del tamano del paso.",
@@ -294,6 +303,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.22.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.23.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
