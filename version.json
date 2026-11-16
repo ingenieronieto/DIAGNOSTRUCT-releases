@@ -1,8 +1,13 @@
 {
-  "version": "3.0.25",
+  "version": "3.0.26",
   "fecha": "2026-11-16",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR: logo propio y pantalla de carga animada: la estructura se arma linea por linea y nudo por nudo mientras abre el Modelador.",
+    "NUEVO - DETALLADO: revision de los nudos viga-columna en DES y DMO: columna fuerte-viga debil (C.21.6.2, C.21.3.6.2) y cortante del nudo (C.21.7.4).",
+    "NUEVO - DETALLADO: cortante por capacidad de las columnas DES y DMO (C.21.6.5, C.21.3.3.2).",
+    "MEJORADO - DETALLADO: vigas con seccion controlada por traccion y acero a compresion, Av minimo y cortante por capacidad en DES y DMO.",
+    "VERIFICACION - EJERCICIOS DEL MOTOR: nueva serie D de diseno de vigas, columnas y nudos contra ETABS 21 (ACI 318-19, con la banda 318-08), con las diferencias de norma separadas de las de la app; el acero minimo sigue siendo el completo de C.10.5.1.",
     "NUEVO - MODO OSCURO: boton APARIENCIA en la barra de arriba (Sistema, Claro u Oscuro); los informes y formatos impresos siguen en blanco y negro.",
     "NUEVO - MODELADOR: areas triangulares como en SAP2000 (membrana y placa del triangulo de CSI); los fondos y tolvas mallados con triangulos ya no quedan con huecos.",
     "NUEVO - IMPORTAR DE SAP2000: tanques, PTAP y PTAR con la presion del agua y de la tierra por patron de nudos, resortes de suelo en fondos, muros curvos y tolvas, y nudos en coordenadas cilindricas; avisa cuando la presion del agua no se equilibra o el fondo esta cargado al reves.",
@@ -321,6 +326,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.25.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.26.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
