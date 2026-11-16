@@ -1,8 +1,16 @@
 {
-  "version": "3.0.23",
+  "version": "3.0.24",
   "fecha": "2026-11-15",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - VIENTO: el Modelador calcula el viento de la NSR-10 (B.6.5) con la region de la Fig. B.6.4-1, fuerzas por piso (barlovento a qz y sotavento a qh), patrones WX y WY con la torsion del Caso 2 y sus combinaciones; toma la forma real de la planta (H, retrocesos, caras a 60 grados y huecos de losa), las caras a la sombra quedan en succion y una vista muestra como llega el viento a la estructura.",
+    "NUEVO - PUENTES: plantilla de puente peatonal, vehicular o paso elevado con la CCP-14: camion, tandem y carril CC-14 que recorren el puente por lineas de influencia (camion de 4,3 a 9,0 m y dos vehiculos), presencia multiple e IM, andenes, frenado y viento sobre la carga viva a 1,8 m, galibo y colision contra pilas, viento y espectro, fatiga, vehiculo de mantenimiento peatonal, movimiento termico y vibracion peatonal, con Resistencia, Servicio y Evento Extremo.",
+    "MEJORADO - MODELADOR: los muros de mamposteria con ventanas y la excentricidad del espectro con columnas de varios pisos salen como en ETABS (bodega con derivas de 5,7 % a 0,53 %). En la bateria de 100 casos contra ETABS quedan 84, 98 y 100 dentro del 1, 2 y 5 % (antes 80, 92 y 99).",
+    "MEJORADO - DETALLADO: la losa ya no cuenta dos veces el concreto que comparte con las vigas y los aros llevan ganchos sismicos de 135 grados.",
+    "MEJORADO - IMPORTAR IFC: las riostras en X que llegan de Tekla se unen en el cruce, como en ETABS.",
+    "MEJORADO - CONEXIONES: el modelo de la union se ve con los colores de IDEA StatiCa (miembros, placas, pernos y soldaduras).",
+    "CORREGIDO - EXTRACCION DE ACERO: el alargamiento minimo es el de la NTC 2289 (14, 12 y 10 %), no el de la ASTM A615; el plan de auscultamiento trae la metodologia de extraccion de acero, inclinometria y nivelacion.",
+    "VERIFICACION - EJERCICIOS DEL MOTOR: la serie I contra IDEA StatiCa 26.1 llega a 19 uniones (viga al alma, oblicuas, cartelas, empalmes y momento soldado); las series contra SAP2000 (105) y Tekla (106) siguen completas.",
     "NUEVO - MODELADOR: cada pantalla trabaja en el modo de su tipo de obra, con sus menus, su barra y su color: edificaciones (plata), estructuras civiles (oro), conexiones (esmeralda), detallado acero (cobre) y detallado concreto (zafiro). La ficha de la estructura pide el tipo de obra y el Modelador escoge el modo solo; en la barra de titulo se cambia a mano y lleva al paso siguiente (detallado o conexiones).",
     "NUEVO - OBRA CIVIL: plantillas de tanque rectangular y circular, muro de contencion y losa sobre el terreno, ya malladas sobre balasto con el agua y la tierra; sismo de tanque por ACI 350.3, presion de contacto del balasto y analisis con pandeo lineal. Un modelo solo de muros y losas ya se puede correr.",
     "NUEVO - IMPORTAR IFC: lee los IFC que exporta Tekla Structures 2023 (perfiles por su contorno, tubos y el eje de cada pieza, aunque el archivo no traiga el eje aparte); antes no entraba ninguna pieza.",
@@ -303,6 +311,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.23.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.24.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
