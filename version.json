@@ -1,8 +1,18 @@
 {
-  "version": "3.0.24",
-  "fecha": "2026-11-15",
+  "version": "3.0.25",
+  "fecha": "2026-11-16",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODO OSCURO: boton APARIENCIA en la barra de arriba (Sistema, Claro u Oscuro); los informes y formatos impresos siguen en blanco y negro.",
+    "NUEVO - MODELADOR: areas triangulares como en SAP2000 (membrana y placa del triangulo de CSI); los fondos y tolvas mallados con triangulos ya no quedan con huecos.",
+    "NUEVO - IMPORTAR DE SAP2000: tanques, PTAP y PTAR con la presion del agua y de la tierra por patron de nudos, resortes de suelo en fondos, muros curvos y tolvas, y nudos en coordenadas cilindricas; avisa cuando la presion del agua no se equilibra o el fondo esta cargado al reves.",
+    "NUEVO - MODELADOR: carga de temperatura uniforme en barras. Puentes CCP-14 con TU (Tabla 3.12.2.1-1), colision a 0 y 15 grados en los dos sentidos, todas las combinaciones que pide la norma y gamma EQ fijado por proyecto.",
+    "MEJORADO - MODELADOR: secciones de concreto predeterminadas (506 rectangulares de 10x15 a 120x120 cm y 22 circulares), derivas contra el limite de A.6.4 en rojo, cortante basal (A.5.4.5) y masa (A.5.4.2) en Tablas, microzonificacion de Bogota (Decreto 523), uso en tablet, diagramas flotantes, franja de siguiente paso, rotulos de los diagramas sin montarse y ficha completa del objeto elegido en el panel derecho.",
+    "CORREGIDO - MODELADOR: reemplazar la carga muerta de una losa ya no borra su peso propio, y las secciones propias de la empresa se reconocen desde Disenar este elemento y se pueden borrar.",
+    "MEJORADO - DETALLADO: analiza el modelo al abrirlo y avisa cuando el despiece va sin fuerzas o cuando la capacidad de disipacion no cuadra con el R del modelo.",
+    "MEJORADO - CONEXIONES: las placas se analizan con 0,9 Fy (AISC 360-16 Ap. 1.3.2c) y la columna de las uniones de momento queda apoyada solo abajo, como el miembro de apoyo de IDEA StatiCa (una union justa puede pasar a no cumplir); el cortante de cada perno cuenta su traccion (J3.7); el filete del alma de la cartela va en su altura libre y su malla ya no muestra plastificacion falsa en la punta.",
+    "MEJORADO - PLAN DE AUSCULTAMIENTO: 20 imagenes de metodologia rehechas sobre fotos reales, inclinometria sin plomada y la metodologia sin hojas a medio llenar.",
+    "MEJORADO - PROYECTOS: el proyecto nuevo entra directo al sub-estudio, el clima es opcional en diseno y borrar un proyecto ya no pide doble confirmacion.",
     "NUEVO - VIENTO: el Modelador calcula el viento de la NSR-10 (B.6.5) con la region de la Fig. B.6.4-1, fuerzas por piso (barlovento a qz y sotavento a qh), patrones WX y WY con la torsion del Caso 2 y sus combinaciones; toma la forma real de la planta (H, retrocesos, caras a 60 grados y huecos de losa), las caras a la sombra quedan en succion y una vista muestra como llega el viento a la estructura.",
     "NUEVO - PUENTES: plantilla de puente peatonal, vehicular o paso elevado con la CCP-14: camion, tandem y carril CC-14 que recorren el puente por lineas de influencia (camion de 4,3 a 9,0 m y dos vehiculos), presencia multiple e IM, andenes, frenado y viento sobre la carga viva a 1,8 m, galibo y colision contra pilas, viento y espectro, fatiga, vehiculo de mantenimiento peatonal, movimiento termico y vibracion peatonal, con Resistencia, Servicio y Evento Extremo.",
     "MEJORADO - MODELADOR: los muros de mamposteria con ventanas y la excentricidad del espectro con columnas de varios pisos salen como en ETABS (bodega con derivas de 5,7 % a 0,53 %). En la bateria de 100 casos contra ETABS quedan 84, 98 y 100 dentro del 1, 2 y 5 % (antes 80, 92 y 99).",
@@ -311,6 +321,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.24.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.25.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
