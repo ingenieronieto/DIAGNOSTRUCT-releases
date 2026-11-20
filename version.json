@@ -1,8 +1,17 @@
 {
-  "version": "3.0.26",
-  "fecha": "2026-11-16",
+  "version": "3.0.27",
+  "fecha": "2026-11-19",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR: solucionador disperso para modelos grandes (tanques, PTAP y PTAR mallados); entra solo cuando el modelo lo requiere y los modelos de siempre siguen con el mismo solucionador y los mismos resultados. El filtro percolador de Acacias, que no cabia, corre en el navegador.",
+    "NUEVO - MODELADOR: Revisar el modelo antes de correr (nudos duplicados o sueltos, barras sin conectar o cruzadas sin nudo); un mecanismo se avisa como estructura inestable con los nudos que se mueven y la carga que no llega a los apoyos, y la rigidez desproporcionada como mal condicionamiento.",
+    "NUEVO - MODELADOR: Vista 3D (plan, elevacion y apertura, vistas rapidas) y Vista 2D (plano, coordenada, de frente o de atras) como SAP2000 y ETABS; seleccion por ventana tambien en 3D (se gira con el clic derecho), linea que cruza, por propiedades, por grupo, en un plano, invertir, anterior, deseleccionar y filtro por tipo; grupos (Definir, Asignar, Seleccionar); cerrar una ventana con su X y abrir la segunda con + Ventana.",
+    "NUEVO - DETALLADO: pestana Nudos con la columna fuerte y el cortante de cada nudo, y aviso cuando hay columnas con lu/r mayor que 22 y el analisis no es P-Delta.",
+    "NUEVO - DETALLADO: esbeltez de columnas por magnificacion de momentos (NSR-10 C.10.10.6) en cada eje.",
+    "CORREGIDO - MODELADOR: en un modelo importado de ETABS o SAP2000 el peso propio y la masa ya no se cuentan dos veces sin aviso, la fuente de masa se edita de verdad y el P-Delta basado en la masa corre con toda la masa. Los modelos de mas de 60 000 ecuaciones ya no fallan en el navegador.",
+    "MEJORADO - CONEXIONES: el filete interior del ala se interrumpe donde llega el alma, como se suelda, y el filete del alma ya no queda por debajo de IDEA StatiCa. Nueva opcion de la union: la columna apoyada solo abajo (por defecto) o continua arriba y abajo, con aviso; el informe dice cual se uso.",
+    "CORREGIDO - INFORMES: en modo oscuro las tablas de los informes ya no salen en blanco.",
+    "VERIFICACION - EJERCICIOS DEL MOTOR: la serie D de diseno contra ETABS 21 (ACI 318-19) queda con 20 de 20 casos bajo 5 % en errores de la app; las diferencias de norma (como el cortante de columnas DMO, literal NSR-10) quedan escritas aparte.",
     "NUEVO - MODELADOR: logo propio y pantalla de carga animada: la estructura se arma linea por linea y nudo por nudo mientras abre el Modelador.",
     "NUEVO - DETALLADO: revision de los nudos viga-columna en DES y DMO: columna fuerte-viga debil (C.21.6.2, C.21.3.6.2) y cortante del nudo (C.21.7.4).",
     "NUEVO - DETALLADO: cortante por capacidad de las columnas DES y DMO (C.21.6.5, C.21.3.3.2).",
@@ -326,6 +335,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.26.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.27.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
