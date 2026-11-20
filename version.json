@@ -1,8 +1,14 @@
 {
-  "version": "3.0.28",
+  "version": "3.0.29",
   "fecha": "2026-11-20",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - PROYECTOS: al recargar la pagina dentro de un proyecto ya no desaparecen sus planos ni sus ensayos (antes los niveles volvian a 'Subir plano' con el plano ya guardado y la tarjeta del inicio decia 0 planos).",
+    "CORREGIDO - A.10: el mapa de sobreesfuerzos toma la flexion positiva maxima entre estaciones, no solo en las estaciones fijas (antes quedaba corto del lado inseguro).",
+    "NUEVO - A.10: la esbeltez de las columnas (NSR-10 C.10.10.6) entra en el indice de sobreesfuerzo, con aviso de cuantas columnas se magnificaron, en cuantas gobierna y la mayor delta ns.",
+    "MEJORADO - MODELADOR: los modelos de ETABS quedan mas cerca de ETABS: la masa de una cubierta en arco se reparte entre los dos ultimos niveles, la losa cascaron con diafragma queda unida al borde de los muros en toda su malla, la masa de un nudo unido al borde de un muro queda en ese nudo y la masa del peso propio de las vigas se reparte sobre su luz libre (bateria contra ETABS: 99 de 100 casos dentro del 1 %).",
+    "MEJORADO - DETALLADO: las reglas de 1/2 y 1/4 (1/3 y 1/5) de la NSR-10 C.21.5.2.2 y C.21.3.4.4 se aplican sobre la resistencia a momento, y un baston mas largo que la barra comercial se parte con traslapo en zona permitida.",
+    "MEJORADO - CONEXIONES: la rigidez axial del perno sigue VDI 2230, sin el 1,6 del metodo de componentes, que en el calculo por elementos finitos se contaba dos veces.",
     "NUEVO - LEGAL: DIAGNOSTRUCT hace parte del ecosistema de programas del Ingeniero Francisco Alejandro Nieto Franco (M.P. 091037-0603457 CND), junto con CONCREAPUS; la leyenda se ve al iniciar sesion y en Legal y privacidad.",
     "NUEVO - MODELADOR: solucionador disperso para modelos grandes (tanques, PTAP y PTAR mallados); entra solo cuando el modelo lo requiere y los modelos de siempre siguen con el mismo solucionador y los mismos resultados. El filtro percolador de Acacias, que no cabia, corre en el navegador.",
     "NUEVO - MODELADOR: Revisar el modelo antes de correr (nudos duplicados o sueltos, barras sin conectar o cruzadas sin nudo); un mecanismo se avisa como estructura inestable con los nudos que se mueven y la carga que no llega a los apoyos, y la rigidez desproporcionada como mal condicionamiento.",
@@ -336,6 +342,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.28.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.29.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
