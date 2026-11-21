@@ -1,8 +1,17 @@
 {
-  "version": "3.0.29",
-  "fecha": "2026-11-20",
+  "version": "3.0.30",
+  "fecha": "2026-11-21",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - MODELADOR: la temperatura uniforme y el gradiente de temperatura en barras (g2, g3) pasan a ETABS y SAP2000 y vuelven al importar.",
+    "CORREGIDO - ESCRITORIO: la temperatura (uniforme y gradientes) llega a OpenSees; antes se perdia sin aviso.",
+    "NUEVO - PUENTES CCP-14: Servicio III y IV con preesfuerzo, y el gradiente de temperatura TG en las vigas de concreto.",
+    "MEJORADO - MODELADOR: la masa de un nudo entre pisos entra al diafragma en su nudo mas cercano, como ETABS, y la longitud de extremo automatica tambien se calcula con columnas de tubo, cajon o canal.",
+    "MEJORADO - A.10: el maximo entre estaciones tambien se revisa en el primer y el ultimo tramo de cada barra.",
+    "MEJORADO - CONEXIONES: el calculo por elementos finitos usa E = 200 000 MPa, el de AISC 360-16 y NSR-10 F.2 (antes 210 000, el de EN 1993-1-1).",
+    "MEJORADO - REFORZAR: los perfiles W con las medidas de AISC sin redondear.",
+    "MEJORADO - EXPORTAR A SAP2000: los muros van mallados como los malla la app, con sus nudos y su masa.",
+    "MEJORADO - VALIDACION: todos los casos contra SAP2000 y ETABS quedan dentro del 1 %; las fuerzas en barras de la serie S, dentro del 0,01 %.",
     "CORREGIDO - PROYECTOS: al recargar la pagina dentro de un proyecto ya no desaparecen sus planos ni sus ensayos (antes los niveles volvian a 'Subir plano' con el plano ya guardado y la tarjeta del inicio decia 0 planos).",
     "CORREGIDO - A.10: el mapa de sobreesfuerzos toma la flexion positiva maxima entre estaciones, no solo en las estaciones fijas (antes quedaba corto del lado inseguro).",
     "NUEVO - A.10: la esbeltez de las columnas (NSR-10 C.10.10.6) entra en el indice de sobreesfuerzo, con aviso de cuantas columnas se magnificaron, en cuantas gobierna y la mayor delta ns.",
@@ -342,6 +351,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.29.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.30.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
