@@ -1,8 +1,20 @@
 {
-  "version": "3.0.30",
-  "fecha": "2026-11-21",
+  "version": "3.0.31",
+  "fecha": "2026-11-24",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - ESQUEMAS ANIMADOS: el pushover contado paso a paso sobre el portico (fuerzas, resultante, reaccion, rotulas por rango de ASCE 41-17 y curva enlazada), con sus etapas, P1...Pn, Ke y Vmax; y antes y despues del reforzamiento con el mismo desplazamiento de techo.",
+    "NUEVO - ESQUEMAS ANIMADOS: el desplazamiento objetivo armado coeficiente por coeficiente (ASCE 41-17) y la respuesta lineal contra la no lineal (NSR-10 A.10.4.2.8, E = Fs/R).",
+    "NUEVO - DISENO DE ELEMENTOS: la herramienta Esquemas con columna corta (con foto de obra opcional), columna fuerte-viga debil, piso blando, FHE y derivas, empalmes, aberturas en muros, columnetas, espectro, carbonatacion, corrosion y nucleos, cada uno con su numeral de la NSR-10.",
+    "NUEVO - MODELADOR: el indice de sobreesfuerzo por eje como esquema, desde el mapa de sobreesfuerzos.",
+    "NUEVO - INFORMES DE VULNERABILIDAD Y DE REFORZAMIENTO: los esquemas como figuras (eje que manda, pushover, desplazamiento objetivo, lineal contra no lineal, antes y despues), sacados del pushover publicado y del mapa del Modelador.",
+    "NUEVO - CONEXIONES: Nueva union con un asistente de tres columnas (geometria, plantillas y propiedades); el choque de soldadura y el choque del refuerzo en el nudo viga-columna.",
+    "NUEVO - PUENTES CCP-14: Resistencia II con el vehiculo del propietario, planta curva con la fuerza centrifuga CE, vigas de acero compuestas con la losa y su gradiente TG, y Fatiga I en puentes peatonales con la AASHTO Signs.",
+    "NUEVO - REVISAR EL MODELO: barras superpuestas, areas repetidas o mal formadas, y relacion de aspecto y alabeo de las areas con los limites de CSI.",
+    "MEJORADO - ESCRITORIO: el triangulo de CSI (ShellCSIT) en OpenSees propio, y el aviso de inestabilidad por P-Delta separado del de mecanismo.",
+    "MEJORADO - MODELADOR: la masa de las cargas con signo, como CSI; el peso sismico cuenta la malla entre la base y el primer piso; la torsion accidental del espectro se aplica a la fuerza del diafragma.",
+    "MEJORADO - VIGAS: C.10.5.3 (4/3 del acero del analisis en lugar del minimo) tambien fuera de los porticos DES y DMO.",
+    "MEJORADO - COMPARAR CON ETABS: el area de cortante y el nudo mas cercano de ETABS como dato, y la longitud de extremo de las vigas inclinadas por su planta.",
     "NUEVO - MODELADOR: la temperatura uniforme y el gradiente de temperatura en barras (g2, g3) pasan a ETABS y SAP2000 y vuelven al importar.",
     "CORREGIDO - ESCRITORIO: la temperatura (uniforme y gradientes) llega a OpenSees; antes se perdia sin aviso.",
     "NUEVO - PUENTES CCP-14: Servicio III y IV con preesfuerzo, y el gradiente de temperatura TG en las vigas de concreto.",
@@ -351,6 +363,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.30.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.31.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
