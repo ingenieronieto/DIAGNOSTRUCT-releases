@@ -1,8 +1,13 @@
 {
-  "version": "3.0.31",
-  "fecha": "2026-11-24",
+  "version": "3.0.32",
+  "fecha": "2026-11-26",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - CONEXIONES: la pantalla de cada union se parece a IDEA StatiCa: pestanas Diseno, Verificacion e Informe, cinta con el mapa (Von Mises, deformacion plastica, desplazamiento, modo de pandeo) y la deformada, y el resumen de la verificacion en la esquina del visor. En las 12 uniones.",
+    "MEJORADO - CONEXIONES: el perno a cortante con el resorte por perno del CBFEM de IDEA StatiCa; el empalme con cubrejuntas queda referido a IDEA. Y la malla de IDEA StatiCa como opcion en la placa de cortante y el momento soldado.",
+    "MEJORADO - PLACA BASE: el rigidizador con destaje de 20 mm, para que el filete del ala pase continuo.",
+    "MEJORADO - CONEXIONES: la resistencia del filete por mm con el largo total del cordon.",
+    "NUEVO - ESQUEMAS: fuerzas de inercia por piso (F = m*a) y las columnas sobre su diagrama de interaccion en el pushover.",
     "NUEVO - ESQUEMAS ANIMADOS: el pushover contado paso a paso sobre el portico (fuerzas, resultante, reaccion, rotulas por rango de ASCE 41-17 y curva enlazada), con sus etapas, P1...Pn, Ke y Vmax; y antes y despues del reforzamiento con el mismo desplazamiento de techo.",
     "NUEVO - ESQUEMAS ANIMADOS: el desplazamiento objetivo armado coeficiente por coeficiente (ASCE 41-17) y la respuesta lineal contra la no lineal (NSR-10 A.10.4.2.8, E = Fs/R).",
     "NUEVO - DISENO DE ELEMENTOS: la herramienta Esquemas con columna corta (con foto de obra opcional), columna fuerte-viga debil, piso blando, FHE y derivas, empalmes, aberturas en muros, columnetas, espectro, carbonatacion, corrosion y nucleos, cada uno con su numeral de la NSR-10.",
@@ -363,6 +368,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.31.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.32.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
