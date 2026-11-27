@@ -3,7 +3,7 @@
   "fecha": "2026-11-27",
   "minima": "1.70.0",
   "notas": [
-    "CORREGIDO - DETALLADO: al detallar un .e2k (tambien el que exporta la app), las combinaciones de servicio S1 a S8 y las de sobrerresistencia OM1 y OM2 ya no entran por omision como de resistencia; se pueden escoger a mano en Requisitos.",
+    "CORREGIDO - DETALLADO: al detallar un .e2k (tambien el que exporta la app), las combinaciones de servicio S1 a S8 y las de sobrerresistencia OM1 y OM2 ya no entran por omision como de resistencia; se pueden escoger a mano en Requisitos. Lo mismo en las verificaciones de A.10 y en los sobreesfuerzos.",
     "MEJORADO - MODELADOR: avisa si el modal da menos modos que los pedidos o un valor propio no positivo, y si un area de 4 nudos tiene un angulo fuera de 45 a 135 grados.",
     "MEJORADO - INCLINOMETRIA: tres lecturas en la misma cara, de abajo hacia arriba, con el inclinometro digital de caja; el calculo usa el promedio. Los ensayos de una sola lectura siguen igual. La metodologia trae los pasos y las imagenes nuevas.",
     "MEJORADO - MODELADOR: la liberacion con zona rigida parcial va en la cara del apoyo (como CSI), columna vertical con el criterio de CSI, diafragmas de un solo nudo con su carga y su masa, y avisos nuevos al revisar el modelo.",
@@ -11,7 +11,7 @@
     "MEJORADO - A.10: las verificaciones comparan los indices sin el redondeo a 0,001 (la app los sigue mostrando a 0,001).",
     "MEJORADO - SAP2000: la masa por cargas reparte la carga de la barra inclinada por ejes locales.",
     "MEJORADO - CONEXIONES: placa extrema con la malla de IDEA StatiCa como opcion (agujeros y restricciones) y choques de cabeza y tuerca revisados a lo largo de los lados.",
-    "MEJORADO - DETALLADO: el largo de corte de las barras se trunca al milimetro, como Tekla.",
+    "MEJORADO - DETALLADO: el largo de corte de las barras y las medidas de la figura del despiece se truncan al milimetro, como Tekla.",
     "MEJORADO - ESCRITORIO: el OpenSees propio viene apagado y solo se activa con su clave; sin ella usa el OpenSees de pip.",
     "NUEVO - CONEXIONES: la pantalla de cada union se parece a IDEA StatiCa: pestanas Diseno, Verificacion e Informe, cinta con el mapa (Von Mises, deformacion plastica, desplazamiento, modo de pandeo) y la deformada, y el resumen de la verificacion en la esquina del visor. En las 12 uniones.",
     "MEJORADO - CONEXIONES: el perno a cortante con el resorte por perno del CBFEM de IDEA StatiCa; el empalme con cubrejuntas queda referido a IDEA. Y la malla de IDEA StatiCa como opcion en la placa de cortante y el momento soldado.",
