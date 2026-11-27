@@ -10,7 +10,7 @@ descargar apuntando al commit en el que se publicó.
 | Versión | Publicada | Commit | Tamaño | SHA-256 del APK |
 |---|---|---|---|---|
 | 3.0.34 | 2026-11-27 | `b9ef6e47ac5a5232650a8b60560c75a287aa8ce6` | 22.0 MB | `335da4be689dc1d37b1e67dc42d5cc54b38fdbe740c8be4eb8d44fed1f56d2ab` |
-| 3.0.34 | 2026-11-27 | `ca757ed5f0148502284ebe68470e4caa223dfade` | 22.0 MB | `56dca2d5eea5403eed28cf838b19aa84f8578512da133ccc2e3d6d6cbb7581a5` |
+| 3.0.34 (reemplazada a los segundos por la fila de arriba, mismo número; repo f1aa745) | 2026-11-27 | `ca757ed5f0148502284ebe68470e4caa223dfade` | 22.0 MB | `56dca2d5eea5403eed28cf838b19aa84f8578512da133ccc2e3d6d6cbb7581a5` |
 | 3.0.33 | 2026-11-27 | `693f4407d6e087385975af8920420f56828840e7` | 22.0 MB | `474ea49f6f6c316e7750d4ce15f455244f00587a273dbe0b8d4b060417886ace` |
 | 3.0.32 | 2026-11-26 | `7b4800e21a505c888e6085e50b73d9a2cabad965` | 22.2 MB | `e542246936cfcc2c9f7551922967da76175917b1245b634bdd2a27a8c092b137` |
 | 3.0.31 | 2026-11-24 | `6ea8da729df00237dc3a49c9175b47dbe362a07b` | 22.2 MB | `60aad5b9952ff7fb3ff190b8d64a008c6f3324a484d05bfdd700b48006a3676a` |
