@@ -1,8 +1,10 @@
 {
-  "version": "3.0.33",
+  "version": "3.0.34",
   "fecha": "2026-11-27",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - DETALLADO: al detallar un .e2k (tambien el que exporta la app), las combinaciones de servicio S1 a S8 y las de sobrerresistencia OM1 y OM2 ya no entran por omision como de resistencia; se pueden escoger a mano en Requisitos.",
+    "MEJORADO - MODELADOR: avisa si el modal da menos modos que los pedidos o un valor propio no positivo, y si un area de 4 nudos tiene un angulo fuera de 45 a 135 grados.",
     "MEJORADO - INCLINOMETRIA: tres lecturas en la misma cara, de abajo hacia arriba, con el inclinometro digital de caja; el calculo usa el promedio. Los ensayos de una sola lectura siguen igual. La metodologia trae los pasos y las imagenes nuevas.",
     "MEJORADO - MODELADOR: la liberacion con zona rigida parcial va en la cara del apoyo (como CSI), columna vertical con el criterio de CSI, diafragmas de un solo nudo con su carga y su masa, y avisos nuevos al revisar el modelo.",
     "MEJORADO - PUSHOVER: ASCE 41-17 ec. 7-33 con el efecto P-Delta en alfa e; mu max ya no sale alto.",
@@ -376,6 +378,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.33.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.34.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
