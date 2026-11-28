@@ -1,5 +1,6 @@
 package com.diagnostruct.os.ui
 
+import android.app.ActivityManager
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -167,8 +168,26 @@ class TechnicianActivity : AppCompatActivity() {
      */
     private fun backToApp() {
         KioskConfig.endMaintenanceWindow(this)
+        // Abierto desde la aplicacion, el panel vive en su propia tarea y al
+        // cerrarlo no queda debajo la pantalla de inicio. Fuera del anclaje
+        // (mantenimiento recien cerrado) se la llama explicitamente para que
+        // reabra DIAGNOSTRUCT anclada; dentro del anclaje no hace falta, y
+        // pedirla mostraria el aviso de "aplicacion fijada".
+        if (!enModoBloqueado()) {
+            runCatching {
+                startActivity(
+                    Intent(this, KioskLauncherActivity::class.java)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                )
+            }
+        }
         finish()
     }
+
+    private fun enModoBloqueado(): Boolean = runCatching {
+        val am = getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+        am.lockTaskModeState != ActivityManager.LOCK_TASK_MODE_NONE
+    }.getOrDefault(false)
 
     private fun refreshDiagnostics() {
         val appVersion = installedAppVersion() ?: getString(R.string.tecnico_app_ausente)
@@ -211,6 +230,14 @@ class TechnicianActivity : AppCompatActivity() {
 
         /** Duracion de la tregua al salir a Ajustes. */
         private const val MAINTENANCE_MINUTES = 10
+
+        /**
+         * Accion publica del panel. DIAGNOSTRUCT la usa desde su Configuracion
+         * para llegar aqui sin reiniciar la tablet: con la aplicacion anclada,
+         * la ventana de tres segundos al encender era la unica puerta. El PIN
+         * sigue mandando; abrir el panel no concede nada por si solo.
+         */
+        const val ACTION_PANEL = "com.diagnostruct.os.action.PANEL_TECNICO"
 
         fun start(context: Context) {
             context.startActivity(Intent(context, TechnicianActivity::class.java))

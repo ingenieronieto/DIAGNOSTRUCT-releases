@@ -56,13 +56,27 @@
             </intent-filter>
         </activity>
 
-        <!-- Panel tecnico protegido por PIN (Wi-Fi, actualizacion, salida). -->
+        <!--
+          Panel tecnico protegido por PIN (Wi-Fi, actualizacion, salida).
+          Exportado para que DIAGNOSTRUCT lo abra desde su Configuracion; el
+          PIN es quien protege, no la visibilidad. Lleva tarea propia: abierto
+          desde la aplicacion anclada entra como tarea nueva de un paquete
+          autorizado, en vez de traer al frente la de inicio, que el anclaje
+          no deja mostrar.
+        -->
         <activity
             android:name=".ui.TechnicianActivity"
-            android:exported="false"
+            android:exported="true"
             android:launchMode="singleTop"
+            android:taskAffinity="com.diagnostruct.os.tecnico"
+            android:excludeFromRecents="true"
             android:parentActivityName=".ui.KioskLauncherActivity"
-            android:theme="@style/Theme.DiagnostructOs" />
+            android:theme="@style/Theme.DiagnostructOs">
+            <intent-filter>
+                <action android:name="com.diagnostruct.os.action.PANEL_TECNICO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <!--
           Aprovisionamiento gestionado: el sistema lanza esta actividad durante

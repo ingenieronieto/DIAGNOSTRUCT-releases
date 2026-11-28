@@ -2,6 +2,7 @@ package com.diagnostruct.os.policy
 
 import android.content.Context
 import android.util.Log
+import com.diagnostruct.os.KioskConfig
 import androidx.work.CoroutineWorker
 import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequestBuilder
@@ -30,6 +31,15 @@ class PolicyWorker(
         // lo arreglaria: eso se resuelve volviendo a dar de alta el equipo.
         if (!policy.isDeviceOwner) {
             Log.w(TAG, "Sin Device Owner: no hay politica que aplicar")
+            return@withContext Result.success()
+        }
+
+        // En mantenimiento el tecnico esta trabajando sobre el equipo: instalar
+        // una aplicacion dispara PACKAGE_ADDED, y reaplicar aqui volvia a
+        // bloquearlo todo y a ocultar lo recien instalado a mitad de la tarea.
+        // La politica se repone al pulsar "Volver al kiosco".
+        if (!KioskConfig.kioskEnabled(applicationContext)) {
+            Log.i(TAG, "Kiosco en mantenimiento: no se reaplica la politica")
             return@withContext Result.success()
         }
 

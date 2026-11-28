@@ -108,6 +108,11 @@ prisa.
 
 > Para entrar en una tablet ya en marcha: apagarla y encenderla, y tocar «Panel
 > tecnico» durante la cuenta atras. Tambien vale mantener pulsado el logotipo.
+>
+> Desde el launcher 1.1.0 hay una puerta mas comoda: en DIAGNOSTRUCT,
+> **Configuracion → Kiosco de la tablet → Abrir panel del kiosco**. Abre el mismo
+> panel, con el mismo PIN, sin reiniciar. El boton solo aparece si el kiosco
+> instalado es 1.1.0 o posterior y la app trae el puente (DIAGNOSTRUCT 3.0.36+).
 
 El PIN **frena los intentos**: a partir del cuarto fallo hay que esperar, y la
 espera se dobla en cada intento hasta un cuarto de hora. Reiniciar el equipo la
@@ -118,7 +123,7 @@ levanta. Desde el panel:
 | Ajustes de Wi-Fi | Cambiar de red al llegar a una obra nueva. Abre una tregua de 10 minutos durante la que el kiosco no reancla nada; se cierra con «Volver a DIAGNOSTRUCT». |
 | Buscar actualizacion ahora | Forzar la puesta al dia sin esperar las seis horas |
 | Reaplicar politica | Recomponer el kiosco tras una actualizacion del fabricante |
-| Entrar en mantenimiento | Levantar el kiosco entero para poder trabajar sobre el equipo |
+| Entrar en mantenimiento | Levantar el kiosco entero para poder trabajar sobre el equipo: Ajustes, Play Store, cuentas e instalar aplicaciones. Dura hasta «Volver al modo kiosco», tambien tras reiniciar. Desde la 1.1.0 instalar una aplicacion ya no reaplica el kiosco a mitad del trabajo (antes la ocultaba y volvia a bloquear todo). |
 | Cambiar el PIN | Sustituir el PIN de fabrica, que esta publicado en este repositorio |
 
 **El PIN de fabrica (`285713`) no protege nada**: esta escrito en un repositorio
