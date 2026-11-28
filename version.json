@@ -1,8 +1,10 @@
 {
-  "version": "3.0.35",
+  "version": "3.0.36",
   "fecha": "2026-11-28",
   "minima": "1.70.0",
   "notas": [
+    "NUEVO - TABLETS CON KIOSCO: Configuracion trae el bloque 'Kiosco de la tablet' con el boton 'Abrir panel del kiosco'. Abre el panel tecnico (pide el PIN) sin reiniciar la tablet; desde ahi, 'Entrar en mantenimiento' deja usar la tablet libremente (Ajustes, Play Store, otras aplicaciones). Solo aparece en tablets con el kiosco DIAGNOSTRUCT OS 1.1.0 o posterior.",
+    "MEJORADO - TABLETS CON KIOSCO: al volver a abrir DIAGNOSTRUCT despues del mantenimiento, el kiosco se reactiva solo y la app queda anclada otra vez. No hay que pasar por el panel para volver al modo kiosco.",
     "CORREGIDO - ESCLEROMETRIA: al escribir el ID a mano (por ejemplo para dejar libres los numeros de ensayos que se van a repetir) el consecutivo interno sigue al ID; antes quedaba en el primer numero libre y el siguiente ensayo chocaba. Un ID que ya existe en el proyecto no deja guardar.",
     "NUEVO - DISENO ESTRUCTURAL: Memoria de diseno: la app genera en Word la memoria de diseno del edificio desde Diseno estructural, boton Memoria de diseno.",
     "NUEVO - CONEXIONES: cartela de esquina con la diagonal atornillada: placa de nudo con pernos a corte simple, con su excentricidad, J3.10, D2/D3, Whitmore y pandeo; el panel avisa si faltan pernos.",
@@ -381,6 +383,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.35.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.36.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
