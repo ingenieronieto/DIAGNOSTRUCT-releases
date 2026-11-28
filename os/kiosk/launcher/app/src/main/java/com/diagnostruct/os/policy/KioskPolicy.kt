@@ -64,7 +64,13 @@ class KioskPolicy(context: Context) {
             addCategory(Intent.CATEGORY_DEFAULT)
         }
         val home = ComponentName(context, HOME_ACTIVITY)
-        dpm.clearPackagePersistentPreferredActivities(admin, context.packageName)
+        // La preferencia se borra por paquete de DESTINO. En mantenimiento se
+        // fija el escritorio de fabrica (setSystemHomeAsPreferred); si al volver
+        // solo se borrara la propia, esa seguiria viva y podria ganar al kiosco.
+        // Por eso se limpian todos los HOME instalados antes de poner el propio.
+        (homePackages() + context.packageName).forEach { pkg ->
+            runCatching { dpm.clearPackagePersistentPreferredActivities(admin, pkg) }
+        }
         dpm.addPersistentPreferredActivity(admin, filter, home)
     }
 
@@ -231,8 +237,7 @@ class KioskPolicy(context: Context) {
         dpm.addPersistentPreferredActivity(admin, filter, home)
     }
 
-    /** El escritorio del fabricante: cualquier HOME que no sea este launcher. */
-    fun systemHome(): ComponentName? {
+    private fun homeActivities() = run {
         val intent = Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME)
         val pm = context.packageManager
         val results = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
@@ -241,8 +246,14 @@ class KioskPolicy(context: Context) {
             @Suppress("DEPRECATION")
             pm.queryIntentActivities(intent, PackageManager.MATCH_ALL)
         }
-        return results
-            .mapNotNull { it.activityInfo }
+        results.mapNotNull { it.activityInfo }
+    }
+
+    private fun homePackages(): Set<String> = homeActivities().map { it.packageName }.toSet()
+
+    /** El escritorio del fabricante: cualquier HOME que no sea este launcher. */
+    fun systemHome(): ComponentName? {
+        return homeActivities()
             .firstOrNull { it.packageName != context.packageName && it.packageName != "com.android.settings" }
             ?.let { ComponentName(it.packageName, it.name) }
     }
