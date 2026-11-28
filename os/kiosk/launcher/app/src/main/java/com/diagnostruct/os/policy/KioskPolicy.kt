@@ -208,10 +208,43 @@ class KioskPolicy(context: Context) {
         if (!isDeviceOwner) return
         runCatching { dpm.setLockTaskPackages(admin, arrayOf(context.packageName)) }
         runCatching { dpm.clearPackagePersistentPreferredActivities(admin, context.packageName) }
+        runCatching { setSystemHomeAsPreferred() }
         runCatching { dpm.setKeyguardDisabled(admin, false) }
         RESTRICTIONS.forEach { runCatching { dpm.clearUserRestriction(admin, it) } }
         runCatching { dpm.clearUserRestriction(admin, UserManager.DISALLOW_DEBUGGING_FEATURES) }
         showAllApps()
+    }
+
+    /**
+     * En mantenimiento el boton de inicio tiene que llevar al escritorio de
+     * fabrica. Sin esto seguia ganando este launcher (prioridad 1000 en el
+     * manifiesto) y el tecnico quedaba encerrado en la pantalla de
+     * "Mantenimiento", sin forma de llegar a Ajustes ni a la tienda. Al volver
+     * al kiosco, [setPersistentHome] borra esta preferencia y pone la propia.
+     */
+    private fun setSystemHomeAsPreferred() {
+        val home = systemHome() ?: return
+        val filter = IntentFilter(Intent.ACTION_MAIN).apply {
+            addCategory(Intent.CATEGORY_HOME)
+            addCategory(Intent.CATEGORY_DEFAULT)
+        }
+        dpm.addPersistentPreferredActivity(admin, filter, home)
+    }
+
+    /** El escritorio del fabricante: cualquier HOME que no sea este launcher. */
+    fun systemHome(): ComponentName? {
+        val intent = Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME)
+        val pm = context.packageManager
+        val results = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            pm.queryIntentActivities(intent, PackageManager.ResolveInfoFlags.of(PackageManager.MATCH_ALL.toLong()))
+        } else {
+            @Suppress("DEPRECATION")
+            pm.queryIntentActivities(intent, PackageManager.MATCH_ALL)
+        }
+        return results
+            .mapNotNull { it.activityInfo }
+            .firstOrNull { it.packageName != context.packageName && it.packageName != "com.android.settings" }
+            ?.let { ComponentName(it.packageName, it.name) }
     }
 
     /**

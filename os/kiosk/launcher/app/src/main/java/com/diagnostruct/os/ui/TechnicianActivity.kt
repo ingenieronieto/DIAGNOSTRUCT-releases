@@ -134,6 +134,18 @@ class TechnicianActivity : AppCompatActivity() {
             policy.suspendKiosk()
             runCatching { stopLockTask() }
             toast(getString(R.string.tecnico_mantenimiento_activo))
+            // Directo al escritorio de fabrica: quedarse en el panel obligaba
+            // a adivinar como salir, y el boton de inicio no se veia.
+            policy.systemHome()?.let { home ->
+                runCatching {
+                    startActivity(
+                        Intent(Intent.ACTION_MAIN)
+                            .addCategory(Intent.CATEGORY_HOME)
+                            .setComponent(home)
+                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    )
+                }
+            }
         } else {
             KioskConfig.setKioskEnabled(this, true)
             PolicyScheduler.applyNow(this)

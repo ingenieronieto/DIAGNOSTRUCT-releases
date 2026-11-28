@@ -79,6 +79,22 @@
         </activity>
 
         <!--
+          Icono "Panel del kiosco" en el escritorio de fabrica. En mantenimiento
+          el inicio lleva a ese escritorio, y esta es la puerta para volver al
+          kiosco sin reiniciar. En modo kiosco no se ve: no hay escritorio.
+        -->
+        <activity-alias
+            android:name=".ui.PanelTecnicoIcono"
+            android:targetActivity=".ui.TechnicianActivity"
+            android:label="@string/icono_panel"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!--
           Aprovisionamiento gestionado: el sistema lanza esta actividad durante
           el alta por QR/NFC para elegir el modo y confirmar el cumplimiento.
         -->
