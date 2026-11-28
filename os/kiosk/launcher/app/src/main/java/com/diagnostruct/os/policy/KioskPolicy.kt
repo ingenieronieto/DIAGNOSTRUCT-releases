@@ -51,7 +51,23 @@ class KioskPolicy(context: Context) {
         ok = runStep("proteccion de la aplicacion") { protectApp() } && ok
         ok = runStep("actualizaciones del sistema") { deferSystemUpdates() } && ok
         ok = runStep("ocultado de aplicaciones") { hideNonEssentialApps() } && ok
+        runStep("VPN de acceso remoto") { keepRemoteAccessVpn() }
         return ok
+    }
+
+    /**
+     * Tailscale como VPN siempre activa: Android la levanta sola al encender y
+     * la relanza si se cae, sin que nadie toque la tablet. Sin bloqueo de red
+     * (lockdown = false): si Tailscale falla, la tablet sigue teniendo internet
+     * para trabajar y sincronizar. Si no esta instalada no se toca nada.
+     */
+    private fun keepRemoteAccessVpn() {
+        if (!isInstalled(EssentialPackages.TAILSCALE)) return
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) return
+        runCatching { dpm.setApplicationHidden(admin, EssentialPackages.TAILSCALE, false) }
+        if (dpm.getAlwaysOnVpnPackage(admin) != EssentialPackages.TAILSCALE) {
+            dpm.setAlwaysOnVpnPackage(admin, EssentialPackages.TAILSCALE, false)
+        }
     }
 
     /**

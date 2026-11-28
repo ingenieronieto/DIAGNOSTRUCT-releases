@@ -66,9 +66,18 @@ object EssentialPackages {
         packages += cameraApps(context)
         packages += filePickerApps(context)
         packages += inputMethods(context)
+        packages += REMOTE_ACCESS
         if (!KioskConfig.hideStore(context)) packages += STORES
         return packages
     }
+
+    /**
+     * Acceso remoto del administrador. Si el kiosco la ocultara al volver del
+     * mantenimiento, la VPN se caeria y la tablet quedaria inalcanzable desde
+     * fuera, que es justo cuando hace falta.
+     */
+    const val TAILSCALE = "com.tailscale.ipn"
+    val REMOTE_ACCESS = setOf(TAILSCALE)
 
     /**
      * Paquetes autorizados a ejecutarse en modo bloqueado. Es un subconjunto de
