@@ -1,8 +1,11 @@
 {
-  "version": "3.0.34",
-  "fecha": "2026-11-27",
+  "version": "3.0.35",
+  "fecha": "2026-11-28",
   "minima": "1.70.0",
   "notas": [
+    "CORREGIDO - ESCLEROMETRIA: al escribir el ID a mano (por ejemplo para dejar libres los numeros de ensayos que se van a repetir) el consecutivo interno sigue al ID; antes quedaba en el primer numero libre y el siguiente ensayo chocaba. Un ID que ya existe en el proyecto no deja guardar.",
+    "NUEVO - DISENO ESTRUCTURAL: Memoria de diseno: la app genera en Word la memoria de diseno del edificio desde Diseno estructural, boton Memoria de diseno.",
+    "NUEVO - CONEXIONES: cartela de esquina con la diagonal atornillada: placa de nudo con pernos a corte simple, con su excentricidad, J3.10, D2/D3, Whitmore y pandeo; el panel avisa si faltan pernos.",
     "CORREGIDO - DETALLADO: al detallar un .e2k (tambien el que exporta la app), las combinaciones de servicio S1 a S8 y las de sobrerresistencia OM1 y OM2 ya no entran por omision como de resistencia; se pueden escoger a mano en Requisitos. Lo mismo en las verificaciones de A.10 y en los sobreesfuerzos.",
     "MEJORADO - MODELADOR: avisa si el modal da menos modos que los pedidos o un valor propio no positivo, y si un area de 4 nudos tiene un angulo fuera de 45 a 135 grados.",
     "MEJORADO - INCLINOMETRIA: tres lecturas en la misma cara, de abajo hacia arriba, con el inclinometro digital de caja; el calculo usa el promedio. Los ensayos de una sola lectura siguen igual. La metodologia trae los pasos y las imagenes nuevas.",
@@ -378,6 +381,6 @@
     "NUEVO - EVOLUCION ENTRE INSPECCIONES: las lesiones guardan su inspeccion (columna inspeccion_id, requiere el SQL) y el informe compara las dos inspecciones mas recientes: nuevas, crecieron, estables, mejoraron, ya no aparecen."
   ],
   "apkUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/DIAGNOSTRUCT-SDK.apk",
-  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.34.apk",
+  "apkNombre": "DIAGNOSTRUCT-SDK V.3.0.35.apk",
   "historialUrl": "https://raw.githubusercontent.com/ingenieronieto/DIAGNOSTRUCT-releases/main/historial.json"
 }
