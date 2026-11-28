@@ -79,6 +79,23 @@
         </activity>
 
         <!--
+          DIAGNOSTRUCT la llama al abrirse fuera del anclaje: si el kiosco esta
+          en mantenimiento, lo reactiva. Sin PIN porque solo puede bloquear.
+        -->
+        <activity
+            android:name=".ui.ReactivarActivity"
+            android:exported="true"
+            android:taskAffinity="com.diagnostruct.os.reactivar"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.diagnostruct.os.action.REACTIVAR_KIOSCO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--
           Icono "Panel del kiosco" en el escritorio de fabrica. En mantenimiento
           el inicio lleva a ese escritorio, y esta es la puerta para volver al
           kiosco sin reiniciar. En modo kiosco no se ve: no hay escritorio.

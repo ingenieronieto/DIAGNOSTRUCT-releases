@@ -123,7 +123,7 @@ levanta. Desde el panel:
 | Ajustes de Wi-Fi | Cambiar de red al llegar a una obra nueva. Abre una tregua de 10 minutos durante la que el kiosco no reancla nada; se cierra con «Volver a DIAGNOSTRUCT». |
 | Buscar actualizacion ahora | Forzar la puesta al dia sin esperar las seis horas |
 | Reaplicar politica | Recomponer el kiosco tras una actualizacion del fabricante |
-| Entrar en mantenimiento | Levantar el kiosco entero para poder trabajar sobre el equipo: Ajustes, Play Store, cuentas e instalar aplicaciones. Dura hasta «Volver al modo kiosco», tambien tras reiniciar. Desde la 1.1.0 instalar una aplicacion ya no reaplica el kiosco a mitad del trabajo (antes la ocultaba y volvia a bloquear todo). |
+| Entrar en mantenimiento | Salida temporal: lleva al escritorio de fabrica para usar la tablet libremente (Ajustes, Play Store, cuentas, instalar). **Al abrir DIAGNOSTRUCT otra vez el kiosco se reactiva solo** (app 3.0.36+), y cada encendido arranca en kiosco. Tambien vuelve con el icono «Panel del kiosco» → «Volver al modo kiosco». Desde la 1.1.0 instalar una aplicacion ya no reaplica el kiosco a mitad del trabajo (antes la ocultaba y volvia a bloquear todo). |
 | Cambiar el PIN | Sustituir el PIN de fabrica, que esta publicado en este repositorio |
 
 **El PIN de fabrica (`285713`) no protege nada**: esta escrito en un repositorio

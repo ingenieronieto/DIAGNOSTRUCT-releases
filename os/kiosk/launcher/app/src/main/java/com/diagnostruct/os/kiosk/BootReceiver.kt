@@ -4,6 +4,8 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
+import com.diagnostruct.os.KioskConfig
+import com.diagnostruct.os.policy.KioskPolicy
 import com.diagnostruct.os.policy.PolicyScheduler
 import com.diagnostruct.os.update.UpdateScheduler
 
@@ -26,6 +28,20 @@ class BootReceiver : BroadcastReceiver() {
         // disponible y WorkManager no puede consultar su base de datos; se
         // espera al arranque completo para encolar nada.
         if (action == Intent.ACTION_LOCKED_BOOT_COMPLETED) return
+
+        // Cada encendido arranca en kiosco, aunque se apagara en mantenimiento:
+        // el mantenimiento es una salida temporal, no un estado del equipo.
+        val veniaDeMantenimiento = !KioskConfig.kioskEnabled(context)
+        KioskConfig.setKioskEnabled(context, true)
+        KioskConfig.endMaintenanceWindow(context)
+        if (veniaDeMantenimiento) {
+            // Se apago en mantenimiento: el sistema ya abrio el escritorio de
+            // fabrica como inicio. Se pone el propio en el acto y se vuelve al
+            // kiosco; como propietario del equipo, Android le permite abrir
+            // actividades desde aqui.
+            KioskPolicy(context).reactivate()
+            AppLauncher.returnToKiosk(context)
+        }
 
         runCatching { PolicyScheduler.applyNow(context) }
             .onFailure { Log.e(TAG, "No se pudo encolar la politica en el arranque", it) }

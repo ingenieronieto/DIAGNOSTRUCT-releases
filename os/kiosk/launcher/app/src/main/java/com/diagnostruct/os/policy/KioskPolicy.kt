@@ -55,6 +55,19 @@ class KioskPolicy(context: Context) {
     }
 
     /**
+     * Vuelta rapida al kiosco: lo imprescindible para anclar se aplica en el
+     * acto (inicio propio y lista de anclaje), y el resto se encola. Lo usa
+     * [com.diagnostruct.os.ui.ReactivarActivity], que corre mientras la
+     * aplicacion espera para anclarse.
+     */
+    fun reactivate() {
+        if (!isDeviceOwner) return
+        runStep("actividad de inicio") { setPersistentHome() }
+        runStep("modo bloqueado") { configureLockTask() }
+        PolicyScheduler.applyNow(context)
+    }
+
+    /**
      * Fija este launcher como pantalla de inicio permanente. Sin esto el
      * sistema preguntaria que launcher usar en el primer pulsado de inicio.
      */
